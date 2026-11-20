@@ -654,6 +654,13 @@ function dialog(title, body, foot = '') {
   if (!dlg.open) dlg.showModal();
 }
 const closeDlg = () => { dlg.close(); dlg.onclick = null; };
+// L'évènement « close » est envoyé en différé : quand une fenêtre se ferme et qu'une autre s'ouvre aussitôt
+// (menu → confirmation), la nouvelle recevrait la fermeture de l'ancienne. On ignore donc toute fermeture
+// arrivée alors que la fenêtre est de nouveau ouverte.
+function onRealClose(fn) {
+  const h = () => { if (dlg.open) return; dlg.removeEventListener('close', h); fn(); };
+  dlg.addEventListener('close', h);
+}
 function ask(title, label, val = '') {
   return new Promise((resolve) => {
     dialog(title, `<div class="field"><label>${label}</label><input id="ask-in" value="${esc(val)}"></div>`, `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="ask-ok">OK</button>`);
@@ -661,14 +668,14 @@ function ask(title, label, val = '') {
     const ok = () => { const v = inp.value; closeDlg(); resolve(v); };
     dlg.querySelector('#ask-ok').onclick = ok;
     inp.onkeydown = (e) => { if (e.key === 'Enter') ok(); };
-    dlg.addEventListener('close', () => resolve(null), { once: true });
+    onRealClose(() => resolve(null));
   });
 }
 function confirmDlg(title, txt) {
   return new Promise((resolve) => {
     dialog(title, `<p>${txt}</p>`, `<button class="btn" data-dact="close">Non</button><button class="btn pri" id="cf-ok">Oui</button>`);
     dlg.querySelector('#cf-ok').onclick = () => { closeDlg(); resolve(true); };
-    dlg.addEventListener('close', () => resolve(false), { once: true });
+    onRealClose(() => resolve(false));
   });
 }
 
@@ -1236,7 +1243,7 @@ function handleDlgClick(e) {
       confirmDlg('Supprimer', `Supprimer définitivement ${esc(c.nom)} ?`).then((ok) => { if (ok) { store.remove(c.id); render(); } });
   }
 }
-dlg.addEventListener('close', () => { rollState = null; });
+dlg.addEventListener('close', () => { if (!dlg.open) rollState = null; });
 
 // Champs de formulaire (carnet)
 document.addEventListener('change', (e) => {

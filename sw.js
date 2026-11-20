@@ -1,5 +1,5 @@
 // Service worker : l'appli fonctionne hors connexion.
-const CACHE = 'insmv-v5';
+const CACHE = 'insmv-v6';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'js/app.js', 'js/rules.js', 'js/store.js', 'js/cloud.js', 'js/config.js', 'js/data/superieurs.js', 'js/data/descriptions.js', 'js/data/pouvoirs.js',
