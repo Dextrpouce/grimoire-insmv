@@ -1,5 +1,6 @@
 import * as R from './rules.js';
 import { store } from './store.js';
+import { table, errText } from './table.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -35,7 +36,13 @@ function toast(msg) {
   t.textContent = msg; t.classList.add('show');
   clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2600);
 }
-function commit(rerender = true) { const c = C(); if (c) c.updatedAt = Date.now(); store.save(); if (rerender) render(); }
+function commit(rerender = true) {
+  const c = C();
+  if (c) c.updatedAt = Date.now();
+  store.save();
+  if (c?.table) table.schedule(c, () => { store.save(); const el = document.getElementById('table-status'); if (el) el.textContent = tableStatus(c); });
+  if (rerender) render();
+}
 const F = {
   text: (name, label, val, cls = '', attrs = '') => `<div class="field ${cls}"><label>${label}</label><input name="${name}" value="${esc(val)}" ${attrs}></div>`,
   num: (name, label, val, cls = '', attrs = '') => `<div class="field ${cls}"><label>${label}</label><input type="number" inputmode="numeric" name="${name}" value="${esc(val)}" ${attrs}></div>`,
@@ -51,6 +58,8 @@ const ui = {
   tab: localStorage.getItem('insmv.tab') || 'fiche',
   mode: 'normal', // normal | prog | libre | crea
   biblio: 'pouvoirs', q: '', onlyAccess: true, talFilter: 'tous', open: {},
+  screen: localStorage.getItem('insmv.screen') || 'perso', // perso | mj
+  mjTab: 'vue', mjChar: null,
 };
 const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
 const MODES = {
@@ -63,6 +72,7 @@ const isProg = () => ui.mode === 'prog';
 
 // ================= Rendu principal =================
 function render() {
+  if (ui.screen === 'mj') { document.body.className = 'camp-mj'; $app.innerHTML = renderMJ(); return; }
   const c = C();
   document.body.className = c ? 'camp-' + (R.typeOf(c).camp) : '';
   if (!c) { $app.innerHTML = renderHome(); return; }
@@ -94,6 +104,7 @@ function renderHome() {
       <button class="btn pri" data-act="new">${icon('plus')} Créer un personnage</button>
       <button class="btn" data-act="import">Importer un fichier</button>
     </div>
+    ${store.configured ? `<div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>` : ''}
     ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (compte Google)</button>
       <p class="small muted d">${store.status.state === 'needauth' ? 'Tes personnages créés sur un autre appareil apparaîtront ici après connexion.' : esc(store.status.message || '')}</p></div>` : ''}
     <div class="row" style="justify-content:center;margin-top:24px;gap:24px">
@@ -395,6 +406,7 @@ function renderCarnet(c) {
     }).join('')}` : ''}
     <p class="small muted" style="margin-bottom:0">L'administration ne communique jamais le total de PA : c'est le MJ qui les distribue. Passer en mode « PA » (bouton en haut) pour les dépenser.</p>
   </section>` : ''}
+  ${renderTableCard(c)}
   <section class="card">
     <h2>Limitations</h2>
     ${c.limitations.map((l, i) => `<div class="trow"><div class="tn"><span class="badge ${l.k === 'Blâme' ? 'no' : ''}">${esc(l.k)}</span> ${esc(l.txt)}</div><button class="ibtn" style="width:30px;height:30px" data-act="lim-del" data-i="${i}">${icon('x')}</button></div>`).join('') || '<div class="empty">Aucune</div>'}
@@ -475,17 +487,19 @@ function renderRegles() {
 
 // ================= Lanceur de dés =================
 let rollState = null;
+const NOBODY = { type: 'humain', car: { fo: 4, ag: 4, pe: 4, vo: 4, pr: 4, foi: 4 }, blessures: [] }; // lancer sans personnage (écran MJ)
 function openRoll(opts) {
   const c = C();
   rollState = {
     label: opts.label, r: opts.r ?? 4, levels: opts.levels || null, shift: 0, diff: 'difficile', risk: 0, prec: opts.prec || 0,
     opp: false, oppR: 4, wound: opts.wound !== false, result: null, after: opts.after || null, free: !!opts.free, kind: opts.kind || 'test',
+    char: opts.char || null,
   };
   if (rollState.levels) rollState.r = rollState.levels[rollState.levels.length - 1][1];
   showRoll();
 }
 function showRoll() {
-  const s = rollState; const c = C();
+  const s = rollState; const c = s.char || C() || NOBODY;
   const malus = s.wound ? R.woundMalus(c) : 0;
   const diff = R.DIFFICULTES.find((d) => d.k === s.diff);
   const totalShift = (diff.s || 0) + s.shift + s.prec + malus;
@@ -525,7 +539,7 @@ function showRoll() {
   if (!dlg.open) dlg.showModal();
 }
 function doRoll() {
-  const s = rollState; const c = C();
+  const s = rollState; const c = s.char || C() || NOBODY;
   const malus = s.wound ? R.woundMalus(c) : 0;
   const diff = R.DIFFICULTES.find((d) => d.k === s.diff);
   const totalShift = (diff.s || 0) + s.shift + s.prec + malus;
@@ -1023,6 +1037,7 @@ function menuDialog() {
     <button class="choice" data-dact="import"><span><b>Importer un fichier</b></span></button>
     ${c ? `<button class="choice" data-dact="print"><span><b>Imprimer la fiche</b><small>Version papier simplifiée</small></span></button>` : ''}
     ${c && c.creation !== 'crea' ? `<button class="choice" data-dact="recrea"><span><b>Reprendre en création sur mesure</b><small>Affiche le bilan des PA et les quotas</small></span></button>` : ''}
+    ${store.configured ? `<button class="choice" data-dact="mj"><span><b>Mode maître de jeu</b><small>Créer une table et consulter en direct les fiches de tes joueurs</small></span></button>` : ''}
     <button class="choice" data-dact="cloud"><span><b>Sauvegarde en ligne</b><small>${store.configured ? esc(store.status.message || 'Configurée') : 'Facultatif : synchronise entre appareils (Firebase gratuit)'}</small></span></button>
     ${c ? `<button class="choice" data-dact="delete" style="border-color:#5a1a1d"><span><b style="color:#ff8a8f">Supprimer ce personnage</b></span></button>` : ''}
     <p class="small muted">Données enregistrées sur l'appareil. Règles : In Nomine Satanis / Magna Veritas 4e édition (Siroz / Asmodée), Les Petites Apocalypses, La Bible à Dudule.</p>`);
@@ -1061,6 +1076,250 @@ function printSheet() {
   w.document.close();
 }
 
+// ================= Table de jeu : côté joueur =================
+function ago(t) {
+  if (!t) return '—';
+  const m = Math.round((Date.now() - t) / 60000);
+  return m < 1 ? 'à l\'instant' : m < 60 ? `il y a ${m} min` : m < 1440 ? `il y a ${Math.round(m / 60)} h` : 'le ' + new Date(t).toLocaleDateString('fr-FR');
+}
+function tableStatus(c) { return c.tableErr ? 'Erreur : ' + c.tableErr : c.tableSent ? 'Dernier envoi ' + ago(c.tableSent) : 'Envoi en cours…'; }
+function renderTableCard(c) {
+  if (!store.configured) return '';
+  return `<section class="card">
+    <h2>Table de jeu <span class="tag">partage avec le MJ</span></h2>
+    ${c.table ? `<p style="margin-top:0">Fiche partagée avec la table <b>${esc(c.tableName || c.table)}</b> (code <span class="type">${esc(c.table)}</span>).<br>
+      <span class="small muted" id="table-status">${esc(tableStatus(c))}</span></p>
+      <label class="small"><input type="checkbox" data-act="table-private" ${c.notesPrivees ? 'checked' : ''}> Ne pas montrer mes notes au MJ</label>
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="table-push">Envoyer maintenant</button><button class="btn sm danger" data-act="table-stop">Arrêter le partage</button></div>`
+    : `<div class="row"><input class="inp" id="table-code" style="max-width:170px;text-transform:uppercase" placeholder="Code de la table" autocomplete="off"><button class="btn pri" data-act="table-share">Partager ma fiche</button></div>`}
+    <p class="small muted" style="margin-bottom:0">Le MJ voit ta fiche en lecture seule (caractéristiques, talents, pouvoirs, PF, PP, blessures…) ; elle se met à jour toute seule quelques secondes après chaque modification.</p>
+  </section>`;
+}
+
+// ================= Table de jeu : écran du maître de jeu =================
+function enterMJ() {
+  ui.screen = 'mj'; localStorage.setItem('insmv.screen', 'mj');
+  if (table.openId && !table.current) table.open(table.openId);
+  render(); window.scrollTo(0, 0);
+}
+function renderMJ() {
+  const t = table.current; const openId = table.openId;
+  const sub = openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  return `<header class="top">
+    <button class="ibtn" data-act="mj-exit" title="Retour à mes personnages">${icon('folder')}</button>
+    <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
+    <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
+  </header>
+  <main>${openId ? renderMJTable() : renderMJTables()}</main>`;
+}
+function renderMJTables() {
+  return `<section class="card">
+    <h2>Mes tables</h2>
+    ${table.mine.map((x) => `<div class="trow click" data-act="mj-open" data-key="${esc(x.id)}"><div class="tn"><b>${esc(x.name)}</b><br><small>code ${esc(x.id)}</small></div>
+      <button class="ibtn" style="width:34px;height:34px" data-act="mj-forget" data-key="${esc(x.id)}" title="Oublier sur cet appareil">${icon('trash')}</button></div>`).join('') || '<div class="empty">Aucune table pour l\'instant</div>'}
+    <h3>Nouvelle table</h3>
+    <div class="row"><input class="inp" id="mj-name" placeholder="Nom de la campagne ou du groupe" style="flex:1;min-width:160px"><button class="btn pri" data-act="mj-create">${icon('plus')} Créer</button></div>
+    <h3>Retrouver une table sur cet appareil</h3>
+    <div class="row"><input class="inp" id="mj-code" placeholder="Code" style="max-width:150px;text-transform:uppercase"><button class="btn" data-act="mj-add">Ajouter</button></div>
+    <p class="small muted" style="margin-bottom:0">Crée une table et donne son code à tes joueurs. Dans le <b>Carnet</b> de leur personnage, carte « Table de jeu », ils saisissent le code et touchent « Partager ma fiche ». Leurs fiches apparaissent alors ici et se mettent à jour en direct. Chacun doit être connecté avec son compte Google.</p>
+  </section>`;
+}
+function mjBar(cur, max, cls = '') {
+  return `<div class="tracker"><span class="lab">${cls === 'pf' ? 'PF' : 'PP'}</span>${bar(cur, max, cls)}</div>`;
+}
+function renderMJTable() {
+  const t = table.current;
+  if (!t) {
+    return `<section class="card"><p>${table.error ? '⚠ ' + esc(table.error) : 'Connexion à la table…'}</p>
+      <div class="row"><button class="btn" data-act="mj-close">Changer de table</button>${table.error ? '<button class="btn pri" data-act="mj-retry">Réessayer</button>' : ''}</div></section>`;
+  }
+  const list = table.characters();
+  const sel = list.find((x) => x.id === ui.mjChar);
+  if (ui.mjTab === 'fiche' && !sel) ui.mjTab = 'vue';
+  const tabs = [['vue', 'Vue d\'ensemble'], ['comp', 'Comparatif'], ...(sel ? [['fiche', sel.c.nom || 'Fiche']] : [])];
+  let body;
+  if (!list.length) body = `<section class="card"><div class="empty">Aucune fiche partagée pour l'instant.</div><p class="small muted">Donne le code <b class="type">${esc(t.id)}</b> à tes joueurs : Carnet de leur personnage > Table de jeu > Partager ma fiche.</p></section>`;
+  else if (ui.mjTab === 'comp') body = renderMJComp(list);
+  else if (ui.mjTab === 'fiche') body = renderMJFiche(sel);
+  else body = list.map(renderMJCard).join('');
+  return `<section class="card dark">
+      <div class="row"><div style="flex:1"><div class="small muted d">Code à donner aux joueurs</div><div class="type" style="font-size:28px;letter-spacing:.15em">${esc(t.id)}</div></div>
+        <button class="btn sm" data-act="mj-copy">Copier</button><button class="btn sm" data-act="mj-close">Changer de table</button></div>
+      <div class="small muted d" style="margin-top:4px">${list.length} fiche(s) partagée(s) · mise à jour ${esc(ago(t.updatedAt))}${table.error ? ' · ⚠ ' + esc(table.error) : ''}</div>
+    </section>
+    <div class="seg" style="margin-bottom:10px">${tabs.map(([k, l]) => `<button class="${ui.mjTab === k ? 'on' : ''}" data-act="mj-tab" data-v="${k}">${esc(l)}</button>`).join('')}</div>
+    ${body}`;
+}
+function supLine(c) {
+  const ty = R.typeOf(c); const sup = R.supByName(c.superieur);
+  return [ty.n + (ty.tierName ? ' (' + ty.tierName + ')' : ''), sup ? 'de ' + sup.n : '', ty.sup ? 'grade ' + (c.grade || 0) : ''].filter(Boolean).join(' · ');
+}
+function renderMJCard(x) {
+  const c = x.c; const a = R.annexes(c); const ty = R.typeOf(c); const ppm = R.ppMax(c);
+  const pf = c.pfCur ?? a.pf; const pp = c.ppCur ?? ppm; const malus = R.woundMalus(c);
+  const open = c.blessures.filter((b) => b.ouverte);
+  const pill = (lab, val, kind, key) => `<button class="pill light" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${kind}" data-key="${esc(key)}">${lab} <b>${val}</b></button>`;
+  return `<section class="card">
+    <h2><span data-act="mj-char" data-key="${esc(x.id)}" style="cursor:pointer;text-decoration:underline dotted">${esc(c.nom || 'Sans nom')}</span><span class="tag">${esc(x.player || '')} · ${esc(ago(x.updatedAt))}</span></h2>
+    <div class="small muted" style="margin:-4px 0 8px">${esc(supLine(c))}</div>
+    ${mjBar(pf, a.pf, 'pf')}${ty.nopp ? '' : `<div style="margin-top:6px">${mjBar(pp, ppm)}</div>`}
+    <div class="annexes">
+      ${open.length ? open.map((b) => `<span class="pill" style="background:${b.g === 'BL' ? '#8a7a3a' : b.g === 'BG' ? '#b0601c' : b.g === 'BF' ? 'var(--red)' : '#000'}">${b.g}${b.note ? ' · ' + esc(b.note) : ''}</span>`).join('') + `<span class="pill light">malus <b>${malus}</b></span>` : '<span class="pill light">aucune blessure ouverte</span>'}
+    </div>
+    <div class="annexes">
+      ${pill('Défense', L(R.talentLevel(c, 'Défense')), 'tal', 'Défense')}${pill('Pe', L(c.car.pe), 'car', 'pe')}${pill('Vo', L(c.car.vo), 'car', 'vo')}${pill(c.chance ? 'Ch' : 'Foi', L(c.car.foi), 'car', 'foi')}
+      <span class="pill light">BL <b>${a.bl}</b> BG <b>${a.bg}</b> BF <b>${a.bf}</b> MS <b>${a.ms}</b></span>
+    </div>
+    ${c.limitations.length ? `<div class="small" style="margin-top:6px">${c.limitations.map((l) => `<span class="badge ${l.k === 'Blâme' ? 'no' : ''}">${esc(l.k)}</span> ${esc(l.txt)}`).join('<br>')}</div>` : ''}
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="mj-char" data-key="${esc(x.id)}">Voir la fiche</button></div>
+  </section>`;
+}
+const MJ_COLS = [['car', 'fo', 'Fo'], ['car', 'ag', 'Ag'], ['car', 'pe', 'Pe'], ['car', 'vo', 'Vo'], ['car', 'pr', 'Pr'], ['car', 'foi', 'Foi'],
+  ['tal', 'Défense', 'Déf.'], ['tal', 'Fouille', 'Fouille'], ['tal', 'Discrétion', 'Discr.'], ['tal', 'Enquête', 'Enquête'], ['tal', 'Discussion', 'Discus.'],
+  ['tal', 'Baratin', 'Baratin'], ['tal', 'Séduction', 'Séduc.'], ['tal', 'Médecine', 'Méd.'], ['tal', 'Sixième sens', '6e sens']];
+function renderMJComp(list) {
+  return `<section class="card"><h2>Comparatif <span class="tag">toucher une valeur pour lancer en secret</span></h2>
+    <div style="overflow-x:auto"><table class="ref comp"><tr><th>Personnage</th>${MJ_COLS.map(([, , l]) => `<th>${l}</th>`).join('')}<th>PF</th><th>PP</th><th>Malus</th></tr>
+    ${list.map((x) => {
+      const c = x.c; const a = R.annexes(c);
+      return `<tr><td><b data-act="mj-char" data-key="${esc(x.id)}" style="cursor:pointer">${esc(c.nom || '?')}</b></td>${MJ_COLS.map(([k, key]) => {
+        const v = k === 'car' ? c.car[key] : R.talentLevel(c, key);
+        return `<td><button class="cell" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${k}" data-key="${esc(key)}">${L(v)}</button></td>`;
+      }).join('')}<td>${c.pfCur ?? a.pf}/${a.pf}</td><td>${R.typeOf(c).nopp ? '—' : `${c.ppCur ?? R.ppMax(c)}/${R.ppMax(c)}`}</td><td>${R.woundMalus(c) || ''}</td></tr>`;
+    }).join('')}</table></div>
+    <p class="small muted" style="margin-bottom:0">Règle du grand secret : le MJ peut lancer lui-même les tests de Perception, Fouille ou Sixième sens sans que les joueurs connaissent le résultat.</p></section>`;
+}
+function renderMJFiche(x) {
+  const c = x.c; const a = R.annexes(c); const ty = R.typeOf(c); const sup = R.supByName(c.superieur); const ppm = R.ppMax(c);
+  const id = c.identite || {};
+  const roll = (kind, key, label, val) => `<button class="pill light" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${kind}" data-key="${esc(key)}">${esc(label)} <b>${val}</b></button>`;
+  const talents = R.TALENTS.filter((t) => t.kind !== 'm' && t.kind !== 'lang' && (t.cat === 'p' || c.tal[t.n]));
+  const av = (+c.pa?.total || 0) - (+c.pa?.spent || 0);
+  return `
+  <section class="card">
+    <h2>${esc(c.nom || 'Sans nom')} <span class="tag">${esc(x.player || '')} · ${esc(ago(x.updatedAt))}</span></h2>
+    <div class="small">${esc(supLine(c))}${sup ? ` — <i>${esc(sup.titre)}</i>` : ''}</div>
+    ${id.corps || id.metier || id.age ? `<div class="small muted" style="margin-top:4px">${esc([id.corps, id.age && id.age + ' ans', id.metier].filter(Boolean).join(' · '))}</div>` : ''}
+    ${id.apparence ? `<p class="small" style="white-space:pre-line">${esc(id.apparence)}</p>` : ''}
+    ${ty.sup ? `<div class="small" style="margin-top:6px">PA : <b>${c.pa?.total || 0}</b> gagnés, <b>${av}</b> disponibles${sup?.rec ? ` · Récupération : ${esc(sup.rec)}` : ''}</div>` : ''}
+  </section>
+  <section class="card">
+    <h2>Caractéristiques</h2>
+    <div class="annexes">${R.CARACS.map((k) => roll('car', k.k, R.caracName(c, k.k), L(c.car[k.k]))).join('')}</div>
+    ${mjBar(c.pfCur ?? a.pf, a.pf, 'pf')}${ty.nopp ? '' : `<div style="margin-top:6px">${mjBar(c.ppCur ?? ppm, ppm)}</div>`}
+    <div class="seuils" style="margin-top:8px"><div>BL<b>${a.bl}</b></div><div>BG<b>${a.bg}</b></div><div>BF<b>${a.bf}</b></div><div>MS<b>${a.ms}</b></div></div>
+    <h3>Blessures</h3>
+    ${c.blessures.map((b) => `<div class="wound"><span class="g ${b.g}">${b.g}</span><div class="tn" style="flex:1">${R.BLESSURES[b.g].n} ${b.note ? '<small class="muted">' + esc(b.note) + '</small>' : ''}<br><small class="muted">${b.ouverte ? 'Ouverte' : 'Refermée'}</small></div></div>`).join('') || '<div class="empty">Aucune</div>'}
+  </section>
+  <section class="card">
+    <h2>Talents <span class="tag">toucher pour lancer</span></h2>
+    <div class="cols2">${talents.map((t) => {
+      const T = c.tal[t.n] || {};
+      return `<div class="trow click" data-act="mj-roll" data-id="${esc(x.id)}" data-k="tal" data-key="${esc(t.n)}"><div class="tn">${esc(t.n)}${T.spe ? ` <span class="spe">${esc(T.spe)} ${L(R.talentSpe(c, t.n))}</span>` : ''}</div><div class="tl ${+T.r ? '' : 'base'}">${L(R.talentLevel(c, t.n))}</div></div>`;
+    }).join('')}
+    ${c.multi.map((m) => `<div class="trow"><div class="tn">${esc(m.t)} <span class="spe">${esc(m.label)}</span></div><div class="tl">${L(2 + (+m.r || 0))}</div></div>`).join('')}</div>
+    ${c.langues.length ? `<div class="small" style="margin-top:6px">Langues : ${esc(c.langues.join(', '))}</div>` : ''}
+  </section>
+  <section class="card">
+    <h2>Pouvoirs</h2>
+    ${c.pouvoirs.map((p, i) => {
+      const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const k = 'mj' + x.id + i;
+      return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div><div class="pl">${p.r ? L(p.r) : '—'}</div></div>
+        <div class="meta">${d.nat ? `<span class="badge ${d.nat}">${d.nat}</span>` : ''}${esc(d.act || par?.act || '')}${d.q && d.q !== '—' ? ' · ' + esc(d.q) : ''}</div>
+        <div class="row" style="margin-top:6px">${p.r ? `<button class="btn sm" data-act="mj-roll" data-id="${esc(x.id)}" data-k="pow" data-key="${i}">Test de pouvoir</button>` : ''}<button class="btn sm ghost" data-act="toggle" data-key="${k}">${ui.open[k] ? 'Masquer' : 'Description'}</button></div>
+        ${ui.open[k] ? `<div class="desc">${esc(d.d || par?.d || '')}</div>` : ''}</div>`;
+    }).join('') || '<div class="empty">Aucun</div>'}
+    ${sup?.dom ? `<div class="small" style="margin-top:6px">Pouvoirs de grade : ${esc(sup.dom.split(',').map((dm) => { const n = dm.trim().replace('*', ''); return n + ' ' + (+c.gradeDom?.[n] || 0); }).join(', '))}</div>` : ''}
+  </section>
+  <section class="card">
+    <h2>Combat</h2>
+    ${roll('tal', 'Défense', 'Défense', L(R.talentLevel(c, 'Défense')))}
+    ${c.armes.map((w, i) => `<div class="trow"><div class="tn"><b>${esc(w.n)}</b><br><small>${esc(w.talent)}${w.spe ? ' (' + esc(w.spe) + ')' : ''} ${L(weaponLevel(c, w))} · préc. ${sgn(+w.prec || 0)} · puiss. ${sgn(+w.puis || 0)}</small></div>
+      <button class="btn sm pri" data-act="mj-attack" data-id="${esc(x.id)}" data-key="${i}">Attaquer</button></div>`).join('') || '<div class="empty">Aucune arme</div>'}
+    ${c.armures.length ? `<div class="small" style="margin-top:6px">Protections : ${esc(c.armures.map((p) => `${p.n} ${p.p}${p.portee === false ? ' (rangée)' : ''}`).join(', '))}</div>` : ''}
+  </section>
+  ${c.limitations.length || c.possessions || c.notes ? `<section class="card"><h2>Carnet</h2>
+    ${c.limitations.map((l) => `<div><span class="badge ${l.k === 'Blâme' ? 'no' : ''}">${esc(l.k)}</span> ${esc(l.txt)}</div>`).join('')}
+    ${c.possessions ? `<h3>Possessions</h3><p class="small" style="white-space:pre-line">${esc(c.possessions)}</p>` : ''}
+    ${c.notes ? `<h3>Notes du joueur</h3><p class="small" style="white-space:pre-line">${esc(c.notes)}</p>` : ''}</section>` : ''}
+  <section class="card">
+    <h2>Mes notes de MJ <span class="tag">gardées sur cet appareil</span></h2>
+    <div class="field"><textarea id="mj-note" data-key="${esc(x.id)}" placeholder="Secrets, plans, rancunes du supérieur…">${esc(table.note(x.id))}</textarea></div>
+    <div class="row end" style="margin-top:8px"><button class="btn sm danger" data-act="mj-kick" data-key="${esc(x.id)}">Retirer de la table</button></div>
+  </section>`;
+}
+function mjCharById(id) { return table.characters().find((x) => x.id === id); }
+function attackRoll(c, w, char) {
+  const fo = R.lvlInt(c.car.fo);
+  return openRoll({ label: 'Attaque : ' + w.n, r: weaponLevel(c, w), prec: +w.prec || 0, char, after: (res) => {
+    const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
+    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense adverse${/multiple/i.test(w.q || '') ? ' ; arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)' : ''}.`;
+  } });
+}
+async function mjAction(act, b) {
+  const key = b.dataset.key;
+  try {
+    switch (act) {
+      case 'mj-enter': return enterMJ();
+      case 'mj-exit': ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
+      case 'mj-create': {
+        const name = document.getElementById('mj-name').value.trim();
+        if (!name) return toast('Donne un nom à la table');
+        const id = await table.create(name);
+        toast(`Table créée : code ${id}`); return render();
+      }
+      case 'mj-add': { const n = await table.add(document.getElementById('mj-code').value); toast(`Table « ${n} » ajoutée`); return render(); }
+      case 'mj-open': ui.mjTab = 'vue'; ui.mjChar = null; table.open(key); return render();
+      case 'mj-forget': if (await confirmDlg('Oublier la table', 'Retirer cette table de cet appareil ? (Les fiches partagées ne sont pas effacées.)')) table.forget(key); return render();
+      case 'mj-close': table.close(); return render();
+      case 'mj-retry': table.open(table.openId); return render();
+      case 'mj-copy': {
+        const code = table.current?.id; if (!code) return;
+        try { await navigator.clipboard.writeText(code); toast('Code copié'); } catch { toast('Code : ' + code); }
+        return;
+      }
+      case 'mj-tab': ui.mjTab = b.dataset.v; render(); return window.scrollTo(0, 0);
+      case 'mj-char': ui.mjChar = key; ui.mjTab = 'fiche'; render(); return window.scrollTo(0, 0);
+      case 'mj-roll': {
+        const x = mjCharById(b.dataset.id); if (!x) return;
+        const c = x.c; const k = b.dataset.k;
+        if (k === 'car') return openRoll({ label: `${c.nom} — ${R.caracName(c, key)}`, r: c.car[key], char: c });
+        if (k === 'pow') { const p = c.pouvoirs[+key]; return openRoll({ label: `${c.nom} — ${p.n}`, r: p.r, char: c }); }
+        const T = c.tal[key];
+        const levels = T?.spe ? [['Général', R.talentLevel(c, key)], [T.spe, R.talentSpe(c, key)]] : null;
+        return openRoll({ label: `${c.nom} — ${key}`, r: R.talentLevel(c, key), levels, char: c });
+      }
+      case 'mj-attack': { const x = mjCharById(b.dataset.id); if (x) return attackRoll(x.c, x.c.armes[+key], x.c); return; }
+      case 'mj-kick': {
+        const x = mjCharById(key);
+        if (!(await confirmDlg('Retirer', `Retirer la fiche de ${esc(x?.c.nom || '?')} de la table ? Le joueur pourra la partager à nouveau.`))) return;
+        await table.kick(key); ui.mjTab = 'vue'; ui.mjChar = null; return render();
+      }
+    }
+  } catch (e) { toast(errText(e)); }
+}
+async function tableAction(act, b, c) {
+  try {
+    if (act === 'table-share') {
+      const code = document.getElementById('table-code').value;
+      const name = await table.share(c, code);
+      store.save(); render(); return toast(`Fiche partagée avec « ${name} »`);
+    }
+    if (act === 'table-push') { await table.push(c); store.save(); render(); return toast('Fiche envoyée au MJ'); }
+    if (act === 'table-stop') {
+      if (!(await confirmDlg('Arrêter le partage', 'Le MJ ne verra plus cette fiche. Continuer ?'))) return;
+      await table.unshare(c); store.save(); return render();
+    }
+    if (act === 'table-private') { c.notesPrivees = b.checked; store.save(); table.schedule(c, () => store.save()); }
+  } catch (e) { c.tableErr = errText(e); toast(errText(e)); render(); }
+}
+table.onChange(() => {
+  if (ui.screen !== 'mj' || dlg.open) return;
+  const a = document.activeElement;
+  if (a && (a.tagName === 'TEXTAREA' || a.tagName === 'INPUT') && $app.contains(a)) return; // ne pas interrompre une saisie
+  render();
+});
+
 // ================= Évènements =================
 document.addEventListener('click', async (e) => {
   if (dlg.open && dlg.contains(e.target)) return handleDlgClick(e);
@@ -1068,6 +1327,8 @@ document.addEventListener('click', async (e) => {
   if (tabBtn) { ui.tab = tabBtn.dataset.tab; localStorage.setItem('insmv.tab', ui.tab); render(); window.scrollTo(0, 0); return; }
   const b = e.target.closest('[data-act]'); if (!b) return;
   const act = b.dataset.act; const c = C();
+  if (act.startsWith('mj-')) return mjAction(act, b);
+  if (act.startsWith('table-')) return tableAction(act, b, c);
   const i = +b.dataset.i; const key = b.dataset.key;
   switch (act) {
     case 'new': return startGenerator();
@@ -1145,14 +1406,7 @@ document.addEventListener('click', async (e) => {
       rollState.diff = d; rollState.after = (res) => { c.blessures[i].ouverte = false; commit(false); return 'Blessure refermée.'; };
       return showRoll();
     }
-    case 'attack': {
-      const w = c.armes[i];
-      const fo = R.lvlInt(c.car.fo);
-      return openRoll({ label: 'Attaque : ' + w.n, r: weaponLevel(c, w), prec: +w.prec || 0, after: (res) => {
-        const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
-        return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense adverse${/multiple/i.test(w.q) ? ' ; arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)' : ''}.`;
-      } });
-    }
+    case 'attack': return attackRoll(c, c.armes[i]);
     case 'defense': return openRoll({ label: 'Défense', r: R.talentLevel(c, 'Défense'), after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
     case 'weapon-add': return weaponDialog();
     case 'weapon-del': c.armes.splice(i, 1); return commit();
@@ -1240,7 +1494,9 @@ function handleDlgClick(e) {
     case 'setmode': ui.mode = d.dataset.v; closeDlg(); return render();
     case 'delete':
       closeDlg();
-      confirmDlg('Supprimer', `Supprimer définitivement ${esc(c.nom)} ?`).then((ok) => { if (ok) { store.remove(c.id); render(); } });
+      confirmDlg('Supprimer', `Supprimer définitivement ${esc(c.nom)} ?`).then((ok) => { if (ok) { if (c.table) table.unshare(c); store.remove(c.id); render(); } });
+      return;
+    case 'mj': closeDlg(); return enterMJ();
   }
 }
 dlg.addEventListener('close', () => { if (!dlg.open) rollState = null; });
@@ -1249,6 +1505,7 @@ dlg.addEventListener('close', () => { if (!dlg.open) rollState = null; });
 document.addEventListener('change', (e) => {
   const el = e.target;
   if (dlg.contains(el)) return;
+  if (el.id === 'mj-note') { table.setNote(el.dataset.key, el.value); return; }
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;
   if (el.name.startsWith('identite.')) c.identite[el.name.slice(9)] = v;

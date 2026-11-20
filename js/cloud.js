@@ -41,6 +41,55 @@ export async function pull() {
   });
   return { characters, deleted };
 }
+// ----- Table de jeu (module MJ) : groups/{code} -----
+// Même collection et mêmes champs que les groupes du Grimoire WFRP (les règles Firestore existantes s'appliquent).
+// json = { kind: 'insmv', gm: { uid, name }, chars: { [idPerso]: { owner, player, json, updatedAt } } }
+const tableDoc = (id) => fb.doc(db, 'groups', id);
+const me = () => { const u = user(); if (!u) throw Object.assign(new Error('Non connecté'), { auth: true }); return u; };
+const meName = (u) => u.displayName || u.email || 'Joueur';
+
+export async function createTable(id, name) {
+  const u = me();
+  const state = { kind: 'insmv', gm: { uid: u.uid, name: meName(u) }, chars: {} };
+  await fb.setDoc(tableDoc(id), {
+    name, members: [u.uid], memberNames: { [u.uid]: meName(u) },
+    json: JSON.stringify(state), updatedAt: Date.now(), createdAt: Date.now(),
+  });
+}
+export async function joinTable(id) {
+  const u = me();
+  return fb.runTransaction(db, async (tx) => {
+    const snap = await tx.get(tableDoc(id));
+    if (!snap.exists()) throw new Error('Code de table inconnu');
+    const d = snap.data();
+    const st = JSON.parse(d.json || '{}');
+    if (st.kind !== 'insmv') throw new Error('Ce code n\'est pas une table INS/MV');
+    if (!d.members.includes(u.uid)) {
+      tx.update(tableDoc(id), { members: [...d.members, u.uid], memberNames: { ...d.memberNames, [u.uid]: meName(u) } });
+    }
+    return d.name;
+  });
+}
+// fn(state, uid, nom) modifie l'état ; renvoie false pour ne rien écrire
+export async function updateTable(id, fn) {
+  const u = me();
+  return fb.runTransaction(db, async (tx) => {
+    const snap = await tx.get(tableDoc(id));
+    if (!snap.exists()) throw new Error('Table introuvable');
+    const st = JSON.parse(snap.data().json || '{}');
+    if (fn(st, u.uid, meName(u)) === false) return false;
+    tx.update(tableDoc(id), { json: JSON.stringify(st), updatedAt: Date.now() });
+    return true;
+  });
+}
+export function watchTable(id, onData, onError) {
+  return fb.onSnapshot(tableDoc(id), (snap) => {
+    if (!snap.exists()) { onError?.(new Error('Table introuvable')); return; }
+    const d = snap.data();
+    onData({ id, name: d.name, members: d.memberNames || {}, state: JSON.parse(d.json || '{}'), updatedAt: d.updatedAt || 0 });
+  }, (e) => onError?.(e));
+}
+
 export async function push(characters, deleted, since) {
   const c = col();
   const batch = fb.writeBatch(db);

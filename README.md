@@ -19,6 +19,12 @@ Application pour téléphone, tablette et ordinateur qui crée et gère tes pers
 - **Carnet** : identité, supérieur (récupération des PP, gain de PA, domaines), grade, points d'administration avec historique et annulation, limitations (avertissements, blâmes), possessions, notes.
 - **Biblio** : les 223 pouvoirs (filtrés selon ce qui est accessible au personnage, coût en PA), tous les supérieurs avec leur présentation (résumée des livrets INS, MV et des Bibles à Dudule), les talents, les armes et armures, un résumé des règles (table UM, MR, grades).
 - **Trois modes de fiche** (bouton en haut) : **Jeu** (verrouillé), **PA** (dépenser les points d'administration gagnés : caractéristique 2 PA/rang, talent 1 PA avec un rang secondaire offert, pouvoir selon son coût, PP 1 PA, dans les limites du grade), **Libre** (corriger sans coût).
+- **Module maître de jeu** (menu ⋮ > Mode maître de jeu, ou depuis l'accueil) : le MJ crée une **table** et donne son code aux joueurs ; chaque joueur saisit ce code dans le Carnet de son personnage (carte « Table de jeu ») pour partager sa fiche. Le MJ voit alors toutes les fiches **en direct** :
+  - **vue d'ensemble** : PF et PP actuels, blessures ouvertes et malus, Défense, Perception, Volonté, Foi, seuils de blessure, limitations ;
+  - **comparatif** : caractéristiques et talents clés de tout le groupe dans un tableau ; toucher une valeur lance le test en secret (avec le malus de blessure du personnage) ;
+  - **fiche détaillée** en lecture seule : identité, supérieur, talents, pouvoirs avec description, armes (attaque lançable), protections, limitations, possessions, notes du joueur (sauf s'il les garde privées) ;
+  - **notes de MJ** privées par personnage, gardées sur l'appareil du MJ.
+  La table utilise la même base Firebase et le même mécanisme de groupe que le Grimoire WFRP : chacun doit être connecté avec son compte Google.
 - Plusieurs personnages, export/import en fichier JSON, impression de la fiche.
 
 Les données des règles viennent des livres du dossier `Bouquins` (scans passés à la reconnaissance de texte). Les tables, coûts et supérieurs ont été relus sur les pages ; les longues descriptions de pouvoirs peuvent contenir quelques coquilles.
@@ -74,4 +80,5 @@ Les personnages sont rangés dans `users/{ton-compte}/insmv`, à part de ceux du
 | `js/data/pouvoirs.js` | Pouvoirs (accès, coûts, qualités, descriptions) |
 | `js/app.js` | Interface : fiche, combat, pouvoirs, carnet, biblio, dés, générateur |
 | `js/store.js`, `js/cloud.js` | Enregistrement sur l'appareil et synchro Firebase |
+| `js/table.js` | Table de jeu : partage des fiches avec le MJ (collection Firestore `groups`) |
 | `sw.js` | Fonctionnement hors ligne (penser à changer `CACHE` après une mise à jour) |

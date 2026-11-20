@@ -91,6 +91,14 @@ export const store = {
       if (again) { again = false; scheduleSync(); }
     }
   },
+  // Connexion Google (fenêtre) si nécessaire ; utilisé par le module de table
+  async ensureUser() {
+    const cfg = config();
+    if (!cfg) throw new Error('Sauvegarde en ligne non configurée');
+    await cloud.init(cfg);
+    if (!cloud.user()) await cloud.signIn();
+    return cloud.user();
+  },
   async disconnect() { await cloud.signOut(); meta.lastPush = 0; persist(); setStatus('needauth', 'Déconnecté'); },
 };
 
