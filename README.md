@@ -40,9 +40,11 @@ puis ouvrir <http://localhost:8766>.
 3. **Settings** > **Pages** > Branch `main`, dossier `/ (root)` > **Save**.
 4. L'appli est en ligne à `https://TON-PSEUDO.github.io/grimoire-insmv/`. Sur Android, menu de Chrome > **Ajouter à l'écran d'accueil**.
 
-## Sauvegarde en ligne (facultatif, Firebase gratuit)
+## Sauvegarde en ligne (Firebase gratuit)
 
-Sans cette étape, tout est enregistré sur l'appareil. Pour synchroniser plusieurs appareils :
+La version en ligne utilise déjà le projet Firebase du Grimoire WFRP (`js/config.js`) : touche le nuage en haut de l'écran et connecte-toi avec ton compte Google. Tes personnages sont alors synchronisés entre tes appareils.
+
+Pour utiliser un autre projet Firebase :
 
 1. Sur <https://console.firebase.google.com>, crée un projet (ou réutilise celui du Grimoire WFRP).
 2. **Authentication** > activer **Google** ; dans **Paramètres** > **Domaines autorisés**, ajouter `TON-PSEUDO.github.io`.
