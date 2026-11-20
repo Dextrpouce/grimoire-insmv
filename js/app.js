@@ -94,6 +94,8 @@ function renderHome() {
       <button class="btn pri" data-act="new">${icon('plus')} Créer un personnage</button>
       <button class="btn" data-act="import">Importer un fichier</button>
     </div>
+    ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (compte Google)</button>
+      <p class="small muted d">${store.status.state === 'needauth' ? 'Tes personnages créés sur un autre appareil apparaîtront ici après connexion.' : esc(store.status.message || '')}</p></div>` : ''}
     <div class="row" style="justify-content:center;margin-top:24px;gap:24px">
       <img src="img/mv.webp" style="width:min(300px,42vw);border-radius:8px" alt="Magna Veritas">
       <img src="img/ins.webp" style="width:min(300px,42vw);border-radius:8px" alt="In Nomine Satanis">
@@ -1256,7 +1258,10 @@ document.addEventListener('input', (e) => {
   }
 });
 
-store.onStatus((s, info) => { if (info?.reloaded) render(); else { const el = document.querySelector('.sync'); if (el) el.className = 'sync ' + s.state; } });
+store.onStatus((s, info) => {
+  if (info?.reloaded || (!C() && !dlg.open)) { render(); if (s.state === 'error' || s.state === 'synced') toast(s.message); return; }
+  if (s.state === 'error') toast(s.message);
+  { const el = document.querySelector('.sync'); if (el) el.className = 'sync ' + s.state; } });
 render();
 if (store.configured) store.sync();
 if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(() => {});
