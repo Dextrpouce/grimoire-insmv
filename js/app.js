@@ -1268,7 +1268,15 @@ function scenAlerts(npcs) {
   return (esq.length ? `<div class="alert">⚠ Prévenir les joueurs avant leurs <b>attaques physiques</b> (Esquive acrobatique) : ${esc(esq.join(', '))}</div>` : '')
     + (vol.length ? `<div class="alert">⚠ Prévenir les joueurs avant leurs <b>attaques mentales</b> (Volonté supra-normale) : ${esc(vol.join(', '))}</div>` : '');
 }
+// PNJ en cours d'édition : type du bestiaire ou PNJ d'une scène
+function npcTarget(s) {
+  const e = ui.npcEdit; if (!e) return null;
+  if (e.type) return scen.getType(e.type);
+  return curScene(s, e.scene)?.npcs.find((x) => x.id === e.npc) || null;
+}
+const npcSummary = (n) => { const st = npcStats(n); const w = n.armes[0]; return `${w ? `Att. ${L(w.att)} (${w.n}) · ` : ''}Déf. ${L(n.def)} · Vo ${L(n.car.vo)} · PF ${st.pf} · ${st.bl}/${st.bg}/${st.bf}/${st.ms}${st.pp ? ` · ${st.pp} PP` : ''}`; };
 function renderScen(s) {
+  if (ui.npcEdit?.type) { const t = scen.getType(ui.npcEdit.type); if (t) return renderNpcEdit(s, null, t); ui.npcEdit = null; }
   if (!s) return renderScenList();
   const sc = ui.npcEdit && curScene(s, ui.npcEdit.scene);
   const n = sc && sc.npcs.find((x) => x.id === ui.npcEdit.npc);
@@ -1302,7 +1310,26 @@ function renderScenList() {
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
     <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
     <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
+  </section>
+  ${renderBestiaire()}`;
+}
+function renderBestiaire() {
+  const types = scen.types();
+  return `<section class="card">
+    <h2>Bestiaire <span class="tag">types d'ennemis réutilisables</span></h2>
+    ${types.map((t) => `<div class="trow click" data-act="sc-type-edit" data-key="${esc(t.id)}"><div class="tn"><b>${esc(t.nom)}</b>${t.source ? ` <small>· ${esc(t.source)}</small>` : ''}<br><small>${esc(npcSummary(t))}</small></div><div class="tl">›</div></div>`).join('') || '<div class="empty">Aucun type d\'ennemi pour l\'instant</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
+      ${types.length ? '<span class="spacer"></span><button class="btn sm" data-act="sc-type-export">Exporter le bestiaire</button>' : ''}</div>
+    <p class="small muted" style="margin-bottom:0">Prépare une fois un type d'ennemi (sbire de la Mafia, démon de Baal, soldat de Dieu…), puis ajoute-le à n'importe quelle scène en choisissant combien il en faut : bouton « Depuis le bestiaire » d'une scène, ou « Renfort » pendant un combat.</p>
   </section>`;
+}
+// Demande un nombre d'exemplaires
+async function askQty(nom, def = 1) {
+  const v = await ask(nom, 'Combien ?', String(def));
+  if (v === null) return 0;
+  const q = Math.floor(+v);
+  if (!(q >= 1)) { toast('Nombre invalide'); return 0; }
+  return Math.min(q, 50);
 }
 function renderSceneCard(s, sc, i) {
   const k = 'scn' + sc.id; const edit = ui.open[k];
@@ -1323,7 +1350,8 @@ function renderSceneCard(s, sc, i) {
     ${sc.npcs.length ? `<div style="overflow-x:auto;margin-top:6px"><table class="ref comp npcs"><tr><th>PNJ (source)</th><th></th><th>Attaque</th><th>Déf.</th><th>Vol.</th><th>Foi</th><th>Per</th><th>BL/BG/BF/MS</th><th>PF</th><th>PP</th><th>Prot.</th></tr>${rows}</table></div>
       ${scenAlerts(sc.npcs)}` : '<div class="empty">Pas d\'adversaire préparé (scène sans combat ?)</div>'}
     <div class="row" style="margin-top:8px">
-      <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ</button>
+      <button class="btn sm pri" data-act="sc-npc-best" data-scene="${esc(sc.id)}">${icon('plus')} Depuis le bestiaire</button>
+      <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ unique</button>
       <button class="btn sm" data-act="sc-npc-import" data-scene="${esc(sc.id)}">Depuis un personnage</button>
       ${edit ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${icon('edit')} Modifier</button>`}
       <span class="spacer"></span>
@@ -1333,16 +1361,21 @@ function renderSceneCard(s, sc, i) {
 }
 function renderNpcEdit(s, sc, n) {
   const st = npcStats(n); const a = R.annexes(npcChar(n));
-  const at = `data-scene="${esc(sc.id)}" data-key="${esc(n.id)}"`;
+  const isType = !sc;
+  const at = isType ? `data-key="${esc(n.id)}"` : `data-scene="${esc(sc.id)}" data-key="${esc(n.id)}"`;
   const nf = (f) => `data-nf="${f}"`;
-  return `<section class="card dark"><div class="row"><button class="btn sm ghost" data-act="sc-npc-done">← ${esc(sc.nom)}</button><span class="spacer"></span>
-      <button class="btn sm" data-act="sc-npc-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-npc-del" ${at}>Supprimer</button></div></section>
+  const fromType = !isType && n.typeId && scen.getType(n.typeId);
+  return `<section class="card dark"><div class="row"><button class="btn sm ghost" data-act="sc-npc-done">← ${isType ? 'Bestiaire' : esc(sc.nom)}</button><span class="spacer"></span>
+      ${isType ? `<button class="btn sm" data-act="sc-type-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-type-del" ${at}>Supprimer du bestiaire</button>`
+        : `<button class="btn sm" data-act="sc-npc-tobest" ${at}>${fromType ? 'Mettre à jour le type du bestiaire' : 'Enregistrer dans le bestiaire'}</button><button class="btn sm" data-act="sc-npc-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-npc-del" ${at}>Supprimer</button>`}</div>
+      ${isType ? '<div class="small muted d" style="margin-top:6px">Type d\'ennemi du bestiaire : les scènes qui l\'utilisent en ont une copie, modifier le type ne change pas les scènes déjà préparées.</div>'
+        : fromType ? `<div class="small muted d" style="margin-top:6px">Créé à partir du type « ${esc(fromType.nom)} » du bestiaire.</div>` : ''}</section>
   <div data-scform>
   <section class="card">
     <h2>Identité</h2>
     <div class="grid g2">${F.text('', 'Nom', n.nom, '', nf('nom'))}${F.text('', 'Source (supérieur, organisation…)', n.source, '', nf('source') + ' placeholder="Ex. Démon de Baal, sbire de la Mafia"')}
       ${F.select('', 'Type (seuils, Foi/Chance, 111/666)', n.type, Object.entries(R.TYPES).map(([k2, t]) => [k2, t.n])).replace('<select ', `<select ${nf('type')} `)}
-      ${F.num('', 'Nombre d\'exemplaires', n.qty, '', nf('qty') + ' min="1"')}</div>
+      ${isType ? '' : F.num('', 'Nombre d\'exemplaires', n.qty, '', nf('qty') + ' min="1"')}</div>
   </section>
   <section class="card">
     <h2>Caractéristiques</h2>
@@ -1474,13 +1507,13 @@ function npcAttack(u, n, w) {
   } });
 }
 function scenChange(el) {
-  const s = scen.get(ui.scenId); if (!s) return;
+  const s = scen.get(ui.scenId);
   const d = el.dataset; let v = el.type === 'checkbox' ? el.checked : el.value;
   let redraw = el.tagName === 'SELECT' || el.type === 'checkbox';
-  if (d.sf) { s[d.sf] = v; if (d.sf === 'nom') redraw = true; }
+  if (d.sf) { if (!s) return; s[d.sf] = v; if (d.sf === 'nom') redraw = true; }
   else if (d.scf) { const sc = curScene(s, d.scene); if (sc) sc[d.scf] = v; }
   else {
-    const sc = ui.npcEdit && curScene(s, ui.npcEdit.scene); const n = sc?.npcs.find((x) => x.id === ui.npcEdit.npc); if (!n) return;
+    const n = npcTarget(s); if (!n) return;
     if (d.nf) {
       const [f, sub] = d.nf.split('.');
       if (f === 'car') n.car[sub] = +v;
@@ -1498,7 +1531,7 @@ function scenChange(el) {
 async function scenAction(act, b) {
   const key = b.dataset.key; const s = scen.get(ui.scenId);
   const sc = s && curScene(s, b.dataset.scene || ui.npcEdit?.scene || ui.live);
-  const n = sc && ui.npcEdit ? sc.npcs.find((x) => x.id === ui.npcEdit.npc) : null;
+  const n = npcTarget(s);
   const go = (id) => { ui.scenId = id; ui.npcEdit = null; ui.live = null; if (id) localStorage.setItem('insmv.scen', id); else localStorage.removeItem('insmv.scen'); localStorage.removeItem('insmv.live'); render(); window.scrollTo(0, 0); };
   const save = () => { scen.save(s); render(); };
   switch (act) {
@@ -1511,8 +1544,38 @@ async function scenAction(act, b) {
     }
     case 'sc-import': {
       const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json,application/json';
-      inp.onchange = async () => { try { toast(`${scen.importJSON(await inp.files[0].text())} scénario(s) importé(s)`); render(); } catch (e) { toast('Fichier illisible : ' + e.message); } };
+      inp.onchange = async () => { try { toast(`${scen.importJSON(await inp.files[0].text())} élément(s) importé(s) (scénarios, types d'ennemis)`); render(); } catch (e) { toast('Fichier illisible : ' + e.message); } };
       return inp.click();
+    }
+    // ---- bestiaire ----
+    case 'sc-type-new': { const t = scen.newType(); ui.npcEdit = { type: t.id }; render(); return window.scrollTo(0, 0); }
+    case 'sc-type-edit': ui.npcEdit = { type: key }; render(); return window.scrollTo(0, 0);
+    case 'sc-type-dup': { const t = scen.dupType(key); ui.npcEdit = { type: t.id }; toast('Type dupliqué'); render(); return window.scrollTo(0, 0); }
+    case 'sc-type-del':
+      if (!(await confirmDlg('Supprimer', `Retirer « ${esc(n.nom)} » du bestiaire ? Les PNJ déjà placés dans des scènes sont conservés.`))) return;
+      scen.removeType(key); ui.npcEdit = null; render(); return window.scrollTo(0, 0);
+    case 'sc-type-export': return download('bestiaire-insmv.json', scen.exportTypes());
+    case 'sc-type-char': {
+      const list = store.list();
+      if (!list.length) return toast('Aucun personnage dans le Grimoire');
+      return chooseList('Type depuis un personnage', list.map((c) => ({ c, label: c.nom || 'Sans nom', sub: supLine(c) })), (it) => {
+        const t = scen.saveAsType(npcFromCharacter(it.c, weaponLevel)); toast(`${t.nom} ajouté au bestiaire`); render();
+      });
+    }
+    case 'sc-npc-best': {
+      const types = scen.types();
+      if (!types.length) return toast('Bestiaire vide : crée d\'abord un type d\'ennemi (liste des scénarios)');
+      return chooseList('Depuis le bestiaire', types.map((t) => ({ t, label: t.nom, sub: [t.source, npcSummary(t)].filter(Boolean).join(' · ') })), async (it) => {
+        const q = await askQty(it.t.nom); if (!q) return;
+        const ex = sc.npcs.find((x) => x.typeId === it.t.id && x.nom === it.t.nom);
+        if (ex) ex.qty = (+ex.qty || 1) + q; else sc.npcs.push(scen.instantiate(it.t.id, q));
+        scen.save(s); toast(`${q} × ${it.t.nom}${ex ? ` (${ex.qty} en tout)` : ''}`); render();
+      });
+    }
+    case 'sc-npc-tobest': {
+      const upd = n.typeId && scen.getType(n.typeId);
+      if (upd && !(await confirmDlg('Bestiaire', `Remplacer le type « ${esc(upd.nom)} » du bestiaire par ce PNJ ? (Les autres scènes ne changent pas.)`))) return;
+      scen.saveAsType(n); toast(upd ? 'Type mis à jour' : `${n.nom} enregistré dans le bestiaire`); return save();
     }
     case 'sc-export': return download(s.nom.replace(/\W+/g, '_') + '.scenario.json', scen.exportOne(s.id));
     case 'sc-dup': toast('Scénario dupliqué'); return go(scen.duplicate(s.id).id);
@@ -1559,10 +1622,18 @@ async function scenAction(act, b) {
       if (!(await confirmDlg('Terminer le combat', 'Effacer le suivi de ce combat (PF, blessures) ? Les PNJ préparés sont conservés et le combat pourra être relancé.'))) return;
       sc.live = null; ui.live = null; localStorage.removeItem('insmv.live'); return save();
     case 'lv-add':
-      return chooseList('Renfort', sc.npcs.map((x) => ({ x, label: x.nom, sub: x.source })), (it) => {
-        const st = npcStats(it.x); const same = sc.live.units.filter((u) => u.npc === it.x.id).length;
-        sc.live.units.push({ uid: newNpc().id, npc: it.x.id, label: `${it.x.nom} ${same + 1}`, pf: st.pf, pp: st.pp, bl: [], out: false }); save();
-      }, { search: false });
+      return chooseList('Renfort', [
+        ...sc.npcs.map((x) => ({ x, label: x.nom, sub: [x.source, 'déjà dans la scène'].filter(Boolean).join(' · ') })),
+        ...scen.types().filter((t) => !sc.npcs.some((x) => x.typeId === t.id)).map((t) => ({ t, label: t.nom, sub: [t.source, 'bestiaire'].filter(Boolean).join(' · ') })),
+      ], async (it) => {
+        const q = await askQty(it.label); if (!q) return;
+        let x = it.x;
+        if (!x) { x = scen.instantiate(it.t.id, 0); x.qty = 0; sc.npcs.push(x); }
+        const st = npcStats(x); const same = sc.live.units.filter((u) => u.npc === x.id).length;
+        for (let k = 1; k <= q; k++) sc.live.units.push({ uid: newNpc().id, npc: x.id, label: `${x.nom} ${same + k}`, pf: st.pf, pp: st.pp, bl: [], out: false });
+        x.qty = (+x.qty || 0) + (it.x ? 0 : q);
+        save();
+      });
   }
   if (!act.startsWith('lv-') || !sc?.live) return;
   const { u, n: un, st, c } = liveCtx(s, sc, b.dataset.u); if (!u || !un) return;

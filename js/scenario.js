@@ -4,9 +4,10 @@ import * as R from './rules.js';
 
 const KEY = 'insmv.scenarios';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
-const data = Object.assign({ list: {} }, load());
+const data = Object.assign({ list: {}, types: {} }, load()); // types : bestiaire (types d'ennemis réutilisables)
 const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch { /* stockage plein ou bloqué */ } };
-export const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+const clone = (o) => JSON.parse(JSON.stringify(o));
+export const uid =() => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
 
 export function newNpc(over = {}) {
   return {
@@ -73,12 +74,31 @@ export const scen = {
     const s = JSON.parse(JSON.stringify(data.list[id])); s.id = uid(); s.nom += ' (copie)'; s.createdAt = s.updatedAt = Date.now();
     s.scenes.forEach((sc) => { sc.live = null; }); data.list[s.id] = s; persist(); return s;
   },
-  exportOne(id) { return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [data.list[id]] }, null, 2); },
+  // ---- Bestiaire : types d'ennemis communs à tous les scénarios ----
+  types() { return Object.values(data.types).sort((a, b) => (a.nom || '').localeCompare(b.nom || '', 'fr')); },
+  getType(id) { return data.types[id] || null; },
+  newType() { const t = newNpc({ nom: 'Nouveau type d\'ennemi' }); delete t.qty; data.types[t.id] = t; persist(); return t; },
+  // Enregistre une copie d'un PNJ comme type ; met à jour le type d'origine s'il existe encore
+  saveAsType(n) {
+    const t = clone(n); delete t.qty; delete t.typeId;
+    t.id = n.typeId && data.types[n.typeId] ? n.typeId : uid();
+    data.types[t.id] = t; n.typeId = t.id; persist(); return t;
+  },
+  dupType(id) { const t = clone(data.types[id]); t.id = uid(); t.nom += ' (copie)'; data.types[t.id] = t; persist(); return t; },
+  removeType(id) { delete data.types[id]; persist(); },
+  // PNJ d'une scène créé à partir d'un type, en qty exemplaires
+  instantiate(typeId, qty) { const t = data.types[typeId]; return t ? { ...clone(t), id: uid(), qty: Math.max(1, qty || 1), typeId } : null; },
+  exportOne(id) {
+    const s = data.list[id]; const used = new Set(s.scenes.flatMap((sc) => sc.npcs.map((n) => n.typeId).filter(Boolean)));
+    return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [s], bestiaire: [...used].map((t) => data.types[t]).filter(Boolean) }, null, 2);
+  },
+  exportTypes() { return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [], bestiaire: this.types() }, null, 2); },
   importJSON(json) {
     const x = JSON.parse(json);
     const list = x.format === 'insmv-scenario' ? x.scenarios : null;
     if (!Array.isArray(list)) throw new Error('ce n\'est pas un scénario du Grimoire');
     let n = 0;
+    for (const t of x.bestiaire || []) if (t?.id && !data.types[t.id]) { data.types[t.id] = t; n++; }
     for (const s of list) {
       if (!s || !Array.isArray(s.scenes)) continue;
       s.id = data.list[s.id] ? uid() : s.id || uid(); s.updatedAt = Date.now();
