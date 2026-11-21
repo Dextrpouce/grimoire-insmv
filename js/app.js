@@ -1,7 +1,7 @@
 import * as R from './rules.js';
 import { store } from './store.js';
 import { table, errText } from './table.js';
-import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive } from './scenario.js';
+import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK } from './scenario.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -1308,7 +1308,7 @@ function renderScenList() {
     }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
-    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario ou un bestiaire (fichier)</button></div>
     <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
   </section>
   ${renderBestiaire()}`;
@@ -1318,10 +1318,16 @@ function renderBestiaire() {
   return `<section class="card">
     <h2>Bestiaire <span class="tag">types d'ennemis réutilisables</span></h2>
     ${types.map((t) => `<div class="trow click" data-act="sc-type-edit" data-key="${esc(t.id)}"><div class="tn"><b>${esc(t.nom)}</b>${t.source ? ` <small>· ${esc(t.source)}</small>` : ''}<br><small>${esc(npcSummary(t))}</small></div><div class="tl">›</div></div>`).join('') || '<div class="empty">Aucun type d\'ennemi pour l\'instant</div>'}
-    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
-      ${types.length ? '<span class="spacer"></span><button class="btn sm" data-act="sc-type-export">Exporter le bestiaire</button>' : ''}</div>
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-book">${icon('book')} Bestiaire des livres (${BOOK.length})</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
+      <span class="spacer"></span><button class="btn sm" data-act="sc-import">Importer</button>${types.length ? '<button class="btn sm" data-act="sc-type-export">Exporter</button>' : ''}</div>
     <p class="small muted" style="margin-bottom:0">Prépare une fois un type d'ennemi (sbire de la Mafia, démon de Baal, soldat de Dieu…), puis ajoute-le à n'importe quelle scène en choisissant combien il en faut : bouton « Depuis le bestiaire » d'une scène, ou « Renfort » pendant un combat.</p>
   </section>`;
+}
+// Choix d'un type : bestiaire personnel puis fiches des livres pas encore copiées
+function typeItems(exclude = () => false) {
+  const mine = scen.types().filter((t) => !exclude(t)).map((t) => ({ t, label: t.nom, sub: [t.source, npcSummary(t)].filter(Boolean).join(' · ') }));
+  const book = BOOK.filter((t) => !scen.getType(t.id) && !exclude(t)).map((t) => ({ t, book: true, label: t.nom, sub: `📖 ${t.book}${t.source ? ' · ' + t.source : ''} · ${npcSummary(t)}` }));
+  return [...mine, ...book];
 }
 // Demande un nombre d'exemplaires
 async function askQty(nom, def = 1) {
@@ -1555,6 +1561,11 @@ async function scenAction(act, b) {
       if (!(await confirmDlg('Supprimer', `Retirer « ${esc(n.nom)} » du bestiaire ? Les PNJ déjà placés dans des scènes sont conservés.`))) return;
       scen.removeType(key); ui.npcEdit = null; render(); return window.scrollTo(0, 0);
     case 'sc-type-export': return download('bestiaire-insmv.json', scen.exportTypes());
+    case 'sc-type-book':
+      return chooseList('Bestiaire des livres', BOOK.map((t) => ({ t, label: (scen.getType(t.id) ? '✓ ' : '') + t.nom, sub: `${t.book}${t.source ? ' · ' + t.source : ''} · ${npcSummary(t)}` })), (it) => {
+        const had = scen.getType(it.t.id); const t = scen.adoptBook(it.t);
+        ui.npcEdit = { type: t.id }; toast(had ? 'Déjà dans ton bestiaire' : `${t.nom} ajouté à ton bestiaire`); render(); window.scrollTo(0, 0);
+      });
     case 'sc-type-char': {
       const list = store.list();
       if (!list.length) return toast('Aucun personnage dans le Grimoire');
@@ -1563,9 +1574,8 @@ async function scenAction(act, b) {
       });
     }
     case 'sc-npc-best': {
-      const types = scen.types();
-      if (!types.length) return toast('Bestiaire vide : crée d\'abord un type d\'ennemi (liste des scénarios)');
-      return chooseList('Depuis le bestiaire', types.map((t) => ({ t, label: t.nom, sub: [t.source, npcSummary(t)].filter(Boolean).join(' · ') })), async (it) => {
+      return chooseList('Depuis le bestiaire', typeItems(), async (it) => {
+        if (it.book) it.t = scen.adoptBook(it.t);
         const q = await askQty(it.t.nom); if (!q) return;
         const ex = sc.npcs.find((x) => x.typeId === it.t.id && x.nom === it.t.nom);
         if (ex) ex.qty = (+ex.qty || 1) + q; else sc.npcs.push(scen.instantiate(it.t.id, q));
@@ -1624,8 +1634,9 @@ async function scenAction(act, b) {
     case 'lv-add':
       return chooseList('Renfort', [
         ...sc.npcs.map((x) => ({ x, label: x.nom, sub: [x.source, 'déjà dans la scène'].filter(Boolean).join(' · ') })),
-        ...scen.types().filter((t) => !sc.npcs.some((x) => x.typeId === t.id)).map((t) => ({ t, label: t.nom, sub: [t.source, 'bestiaire'].filter(Boolean).join(' · ') })),
+        ...typeItems((t) => sc.npcs.some((x) => x.typeId === t.id)),
       ], async (it) => {
+        if (it.book) it.t = scen.adoptBook(it.t);
         const q = await askQty(it.label); if (!q) return;
         let x = it.x;
         if (!x) { x = scen.instantiate(it.t.id, 0); x.qty = 0; sc.npcs.push(x); }
