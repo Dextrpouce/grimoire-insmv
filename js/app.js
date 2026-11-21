@@ -1,6 +1,7 @@
 import * as R from './rules.js';
 import { store } from './store.js';
 import { table, errText } from './table.js';
+import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive } from './scenario.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -60,6 +61,9 @@ const ui = {
   biblio: 'pouvoirs', q: '', onlyAccess: true, talFilter: 'tous', open: {},
   screen: localStorage.getItem('insmv.screen') || 'perso', // perso | mj
   mjTab: 'vue', mjChar: null,
+  mjSec: localStorage.getItem('insmv.mjsec') || (store.configured ? 'table' : 'scen'), // table | scen
+  scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
+  live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
 };
 const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
 const MODES = {
@@ -104,7 +108,7 @@ function renderHome() {
       <button class="btn pri" data-act="new">${icon('plus')} Créer un personnage</button>
       <button class="btn" data-act="import">Importer un fichier</button>
     </div>
-    ${store.configured ? `<div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>` : ''}
+    <div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>
     ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (compte Google)</button>
       <p class="small muted d">${store.status.state === 'needauth' ? 'Tes personnages créés sur un autre appareil apparaîtront ici après connexion.' : esc(store.status.message || '')}</p></div>` : ''}
     <div class="row" style="justify-content:center;margin-top:24px;gap:24px">
@@ -1037,7 +1041,7 @@ function menuDialog() {
     <button class="choice" data-dact="import"><span><b>Importer un fichier</b></span></button>
     ${c ? `<button class="choice" data-dact="print"><span><b>Imprimer la fiche</b><small>Version papier simplifiée</small></span></button>` : ''}
     ${c && c.creation !== 'crea' ? `<button class="choice" data-dact="recrea"><span><b>Reprendre en création sur mesure</b><small>Affiche le bilan des PA et les quotas</small></span></button>` : ''}
-    ${store.configured ? `<button class="choice" data-dact="mj"><span><b>Mode maître de jeu</b><small>Créer une table et consulter en direct les fiches de tes joueurs</small></span></button>` : ''}
+    <button class="choice" data-dact="mj"><span><b>Mode maître de jeu</b><small>Préparer scénarios et combats ; table partagée pour suivre en direct les fiches des joueurs</small></span></button>
     <button class="choice" data-dact="cloud"><span><b>Sauvegarde en ligne</b><small>${store.configured ? esc(store.status.message || 'Configurée') : 'Facultatif : synchronise entre appareils (Firebase gratuit)'}</small></span></button>
     ${c ? `<button class="choice" data-dact="delete" style="border-color:#5a1a1d"><span><b style="color:#ff8a8f">Supprimer ce personnage</b></span></button>` : ''}
     <p class="small muted">Données enregistrées sur l'appareil. Règles : In Nomine Satanis / Magna Veritas 4e édition (Siroz / Asmodée), Les Petites Apocalypses, La Bible à Dudule.</p>`);
@@ -1099,18 +1103,24 @@ function renderTableCard(c) {
 // ================= Table de jeu : écran du maître de jeu =================
 function enterMJ() {
   ui.screen = 'mj'; localStorage.setItem('insmv.screen', 'mj');
-  if (table.openId && !table.current) table.open(table.openId);
+  if (store.configured && table.openId && !table.current) table.open(table.openId);
   render(); window.scrollTo(0, 0);
 }
 function renderMJ() {
-  const t = table.current; const openId = table.openId;
-  const sub = openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  const t = table.current; const openId = store.configured ? table.openId : null;
+  const s = ui.mjSec === 'scen' ? scen.get(ui.scenId) : null;
+  const sub = ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  const body = ui.mjSec === 'scen' ? renderScen(s)
+    : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google.</p>
+      <div class="row"><button class="btn pri" data-act="mj-cloud">${icon('cloud')} Configurer la sauvegarde en ligne</button></div>
+      <p class="small muted" style="margin-bottom:0">Les <b>scénarios</b> (scènes, combats préparés, PNJ) fonctionnent sans connexion.</p></section>`
+    : openId ? renderMJTable() : renderMJTables();
   return `<header class="top">
     <button class="ibtn" data-act="mj-exit" title="Retour à mes personnages">${icon('folder')}</button>
     <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main>${openId ? renderMJTable() : renderMJTables()}</main>`;
+  <main><div class="seg mjnav">${[['table', 'Table des joueurs'], ['scen', 'Scénarios & combats']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
 }
 function renderMJTables() {
   return `<section class="card">
@@ -1248,6 +1258,340 @@ function renderMJFiche(x) {
     <div class="row end" style="margin-top:8px"><button class="btn sm danger" data-act="mj-kick" data-key="${esc(x.id)}">Retirer de la table</button></div>
   </section>`;
 }
+// ================= Scénarios : préparation des scènes et des combats =================
+const lvlOpts = (max = 16) => Array.from({ length: max + 1 }, (_, r) => [r, L(r)]);
+const GCOL = { BL: '#8a7a3a', BG: '#b0601c', BF: 'var(--red)', MS: '#000' };
+function curScene(s, id) { return s?.scenes.find((x) => x.id === id) || null; }
+function scenAlerts(npcs) {
+  const st = npcs.map((n) => [n, npcStats(n)]);
+  const esq = st.filter(([, x]) => x.esquive).map(([n]) => n.nom); const vol = st.filter(([, x]) => x.volonte).map(([n]) => n.nom);
+  return (esq.length ? `<div class="alert">⚠ Prévenir les joueurs avant leurs <b>attaques physiques</b> (Esquive acrobatique) : ${esc(esq.join(', '))}</div>` : '')
+    + (vol.length ? `<div class="alert">⚠ Prévenir les joueurs avant leurs <b>attaques mentales</b> (Volonté supra-normale) : ${esc(vol.join(', '))}</div>` : '');
+}
+function renderScen(s) {
+  if (!s) return renderScenList();
+  const sc = ui.npcEdit && curScene(s, ui.npcEdit.scene);
+  const n = sc && sc.npcs.find((x) => x.id === ui.npcEdit.npc);
+  if (n) return renderNpcEdit(s, sc, n);
+  const live = curScene(s, ui.live);
+  if (live?.live) return renderLive(s, live);
+  const nbPnj = s.scenes.reduce((t, x) => t + x.npcs.reduce((u, y) => u + (+y.qty || 1), 0), 0);
+  return `<section class="card dark">
+      <div class="row"><button class="btn sm ghost" data-act="sc-back">← Scénarios</button><span class="spacer"></span>
+        <button class="btn sm" data-act="sc-export">Exporter</button><button class="btn sm" data-act="sc-dup">Dupliquer</button><button class="btn sm danger" data-act="sc-del">Supprimer</button></div>
+      <div class="small muted d" style="margin-top:6px">${s.scenes.length} scène(s) · ${nbPnj} PNJ · modifié ${esc(ago(s.updatedAt))}</div>
+    </section>
+    <section class="card" data-scform>
+      <h2>Synopsis</h2>
+      <div class="grid">${F.text('', 'Titre du scénario', s.nom, '', 'data-sf="nom"')}
+        <div class="field"><label>Résumé (ce que les joueurs vont vivre)</label><textarea data-sf="resume" placeholder="Accroche, enjeux, mission confiée par le supérieur…">${esc(s.resume)}</textarea></div>
+        <div class="field"><label>Secrets du MJ</label><textarea data-sf="notes" placeholder="Ce qui se passe vraiment, PNJ importants, fils à tirer…">${esc(s.notes)}</textarea></div></div>
+    </section>
+    ${s.scenes.map((sc, i) => renderSceneCard(s, sc, i)).join('')}
+    <div class="row" style="justify-content:center;margin-bottom:12px"><button class="btn pri" data-act="sc-scene-add">${icon('plus')} Ajouter une scène</button></div>`;
+}
+function renderScenList() {
+  const list = scen.all();
+  return `<section class="card">
+    <h2>Mes scénarios <span class="tag">gardés sur cet appareil</span></h2>
+    ${list.map((s) => {
+      const fights = s.scenes.filter((x) => x.npcs.length).length; const running = s.scenes.filter((x) => x.live).length;
+      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b><br><small>${s.scenes.length} scène(s) · ${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
+    }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
+    <h3>Nouveau scénario</h3>
+    <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
+    <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
+  </section>`;
+}
+function renderSceneCard(s, sc, i) {
+  const k = 'scn' + sc.id; const edit = ui.open[k];
+  const rows = sc.npcs.map((n) => {
+    const st = npcStats(n); const w = n.armes[0];
+    return `<tr class="click" data-act="sc-npc-edit" data-scene="${esc(sc.id)}" data-key="${esc(n.id)}">
+      <td><b>${esc(n.nom)}</b>${n.source ? `<br><small class="muted">${esc(n.source)}</small>` : ''}</td><td>${(+n.qty || 1) > 1 ? '×' + n.qty : ''}</td>
+      <td>${w ? `${L(w.att)}<br><small class="muted">${esc(w.n)}${n.armes.length > 1 ? ' +' + (n.armes.length - 1) : ''}</small>` : '—'}</td>
+      <td>${L(n.def)}</td><td>${L(n.car.vo)}</td><td>${L(n.car.foi)}</td><td>${L(n.car.pe)}</td>
+      <td class="nowrap">${st.bl}/${st.bg}/${st.bf}/${st.ms}</td><td>${st.pf}</td><td>${st.pp || '—'}</td><td>${+n.prot || ''}</td></tr>`;
+  }).join('');
+  return `<section class="card">
+    <h2>${i + 1}. ${esc(sc.nom)}${sc.live ? '<span class="stamp" style="margin-left:6px">En cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
+    ${edit ? `<div class="grid g2" data-scform>${F.text('', 'Nom de la scène', sc.nom, '', `data-scf="nom" data-scene="${esc(sc.id)}"`)}${F.text('', 'Lieu', sc.lieu, '', `data-scf="lieu" data-scene="${esc(sc.id)}"`)}
+      <div class="field" style="grid-column:1/-1"><label>Déroulement, indices, réactions des PNJ</label><textarea data-scf="notes" data-scene="${esc(sc.id)}">${esc(sc.notes)}</textarea></div></div>
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-scene-up" data-key="${esc(sc.id)}" ${i ? '' : 'disabled'}>↑ Monter</button><button class="btn sm danger" data-act="sc-scene-del" data-key="${esc(sc.id)}">Supprimer la scène</button><span class="spacer"></span><button class="btn sm pri" data-act="toggle" data-key="${k}">Terminé</button></div>`
+    : sc.notes ? `<p class="small" style="white-space:pre-line;margin-top:0">${esc(sc.notes)}</p>` : ''}
+    ${sc.npcs.length ? `<div style="overflow-x:auto;margin-top:6px"><table class="ref comp npcs"><tr><th>PNJ (source)</th><th></th><th>Attaque</th><th>Déf.</th><th>Vol.</th><th>Foi</th><th>Per</th><th>BL/BG/BF/MS</th><th>PF</th><th>PP</th><th>Prot.</th></tr>${rows}</table></div>
+      ${scenAlerts(sc.npcs)}` : '<div class="empty">Pas d\'adversaire préparé (scène sans combat ?)</div>'}
+    <div class="row" style="margin-top:8px">
+      <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ</button>
+      <button class="btn sm" data-act="sc-npc-import" data-scene="${esc(sc.id)}">Depuis un personnage</button>
+      ${edit ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${icon('edit')} Modifier</button>`}
+      <span class="spacer"></span>
+      ${sc.npcs.length ? `<button class="btn sm pri" data-act="sc-live" data-scene="${esc(sc.id)}">${icon('sword')} ${sc.live ? `Reprendre (round ${sc.live.round})` : 'Lancer le combat'}</button>` : ''}
+    </div>
+  </section>`;
+}
+function renderNpcEdit(s, sc, n) {
+  const st = npcStats(n); const a = R.annexes(npcChar(n));
+  const at = `data-scene="${esc(sc.id)}" data-key="${esc(n.id)}"`;
+  const nf = (f) => `data-nf="${f}"`;
+  return `<section class="card dark"><div class="row"><button class="btn sm ghost" data-act="sc-npc-done">← ${esc(sc.nom)}</button><span class="spacer"></span>
+      <button class="btn sm" data-act="sc-npc-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-npc-del" ${at}>Supprimer</button></div></section>
+  <div data-scform>
+  <section class="card">
+    <h2>Identité</h2>
+    <div class="grid g2">${F.text('', 'Nom', n.nom, '', nf('nom'))}${F.text('', 'Source (supérieur, organisation…)', n.source, '', nf('source') + ' placeholder="Ex. Démon de Baal, sbire de la Mafia"')}
+      ${F.select('', 'Type (seuils, Foi/Chance, 111/666)', n.type, Object.entries(R.TYPES).map(([k2, t]) => [k2, t.n])).replace('<select ', `<select ${nf('type')} `)}
+      ${F.num('', 'Nombre d\'exemplaires', n.qty, '', nf('qty') + ' min="1"')}</div>
+  </section>
+  <section class="card">
+    <h2>Caractéristiques</h2>
+    <div class="grid g3 g-md-6">${R.CARACS.map((k2) => F.select('', k2.k === 'foi' && R.TYPES[n.type]?.chance ? 'Chance' : k2.n, n.car[k2.k], lvlOpts(14)).replace('<select ', `<select ${nf('car.' + k2.k)} `)).join('')}</div>
+    <h3>Combat</h3>
+    <div class="grid g3 g-md-6">
+      ${F.select('', 'Défense', n.def, lvlOpts()).replace('<select ', `<select ${nf('def')} `)}
+      ${F.num('', 'Protection', n.prot, '', nf('prot'))}
+      ${F.num('', 'PP', n.pp, '', nf('pp'))}
+      ${F.num('', 'PF', n.pfFix ?? '', '', nf('pfFix') + ` placeholder="${a.pf}"`)}</div>
+    <div class="grid g3 g-md-6" style="margin-top:8px">${['BL', 'BG', 'BF', 'MS'].map((g, j) => F.num('', 'Seuil ' + g, n.seuilsFix?.[j] ?? '', '', nf('seuilsFix.' + j) + ` placeholder="${[a.bl, a.bg, a.bf, a.ms][j]}"`)).join('')}</div>
+    <p class="small muted" style="margin-bottom:0">Calculé d'après les règles : PF ${a.pf} (Fo/2 + Vo/2), seuils ${a.bl}/${a.bg}/${a.bf}/${a.ms} (Fo/2 + ${R.TYPES[n.type]?.bl ?? 2}, ×2, ×3, ×4). Laisser vide pour garder le calcul ; retenu : PF <b>${st.pf}</b>, seuils <b>${st.bl}/${st.bg}/${st.bf}/${st.ms}</b>.</p>
+  </section>
+  <section class="card">
+    <h2>Attaques</h2>
+    ${n.armes.map((w, i) => `<div class="grid g3 g-md-6 weap">${F.text('', 'Arme', w.n, '', `data-wf="n" data-i="${i}"`)}
+      ${F.select('', 'Niveau d\'attaque', w.att, lvlOpts()).replace('<select ', `<select data-wf="att" data-i="${i}" `)}
+      ${F.num('', 'Précision', w.prec, '', `data-wf="prec" data-i="${i}"`)}${F.num('', 'Puissance', w.puis, '', `data-wf="puis" data-i="${i}"`)}
+      <label class="small chk"><input type="checkbox" data-wf="melee" data-i="${i}" ${w.melee ? 'checked' : ''}> Contact (+Force)</label>
+      <div class="field"><label>&nbsp;</label><button class="btn sm danger" data-act="sc-w-del" data-i="${i}">Retirer</button></div></div>`).join('') || '<div class="empty">Aucune attaque</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-w-add">${icon('plus')} Arme du livre</button><button class="btn sm" data-act="sc-w-free">${icon('plus')} Attaque libre (griffes, pouvoir…)</button></div>
+  </section>
+  <section class="card">
+    <h2>Pouvoirs</h2>
+    ${n.pouvoirs.map((p, i) => {
+      const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const k = 'npw' + n.id + i;
+      return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div>
+        <select class="inp" style="width:auto" data-pw="${i}">${lvlOpts(14).map(([r, l]) => `<option value="${r}" ${r === +p.r ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+        <div class="meta">${d.nat ? `<span class="badge ${d.nat}">${d.nat}</span>` : ''}${esc(d.act || par?.act || '')}${d.q && d.q !== '—' ? ' · ' + esc(d.q) : ''}</div>
+        <div class="row" style="margin-top:6px">${d.d || par?.d ? `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${ui.open[k] ? 'Masquer' : 'Description'}</button>` : ''}<button class="btn sm danger" data-act="sc-p-del" data-i="${i}">Retirer</button></div>
+        ${ui.open[k] ? `<div class="desc">${esc(d.d || par?.d || '')}</div>` : ''}</div>`;
+    }).join('') || '<div class="empty">Aucun</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-p-add">${icon('plus')} Pouvoir</button></div>
+    <label class="small chk" style="margin-top:8px"><input type="checkbox" data-nf="esquive" ${n.esquive ? 'checked' : ''}> Esquive acrobatique : les joueurs doivent annoncer leurs attaques physiques</label>
+    <label class="small chk"><input type="checkbox" data-nf="volonte" ${n.volonte ? 'checked' : ''}> Volonté supra-normale : les joueurs doivent annoncer leurs attaques mentales</label>
+  </section>
+  <section class="card">
+    <h2>Talents et notes</h2>
+    <div class="field"><label>Talents utiles</label><textarea data-nf="talents" style="min-height:60px" placeholder="Discrétion 3, Intimidation 4, Conduite 2…">${esc(n.talents)}</textarea></div>
+    <div class="field" style="margin-top:8px"><label>Notes (tactique, motivations, butin…)</label><textarea data-nf="notes">${esc(n.notes)}</textarea></div>
+  </section></div>`;
+}
+
+// ---- Combat en cours ----
+function liveCtx(s, sc, unitId) {
+  const u = sc.live.units.find((x) => x.uid === unitId); if (!u) return {};
+  const n = sc.npcs.find((x) => x.id === u.npc);
+  return { u, n, st: n ? npcStats(n) : null, c: n ? npcChar(n, u.bl) : null };
+}
+function renderLive(s, sc) {
+  const lv = sc.live;
+  const alive = lv.units.filter((u) => !u.out);
+  const pjs = store.configured && table.current ? table.characters() : [];
+  return `<section class="card dark">
+      <div class="row"><button class="btn sm ghost" data-act="lv-back">← ${esc(s.nom)}</button><span class="spacer"></span>
+        <span>Round</span><span class="stepper"><button data-act="lv-round" data-v="-1">–</button><b>${lv.round}</b><button data-act="lv-round" data-v="1">+</button></span></div>
+      <h2 style="margin:10px 0 0">${icon('sword')} ${esc(sc.nom)}</h2>
+      <div class="small muted d">${alive.length} adversaire(s) debout sur ${lv.units.length}${sc.lieu ? ' · ' + esc(sc.lieu) : ''}</div>
+      ${scenAlerts(sc.npcs.filter((n) => alive.some((u) => u.npc === n.id)))}
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="lv-add">${icon('plus')} Renfort</button><span class="spacer"></span><button class="btn sm danger" data-act="lv-end">Terminer le combat</button></div>
+    </section>
+    ${pjs.length ? `<section class="card"><h2>Personnages joueurs <span class="tag">toucher pour lancer en secret</span></h2>
+      <div style="overflow-x:auto"><table class="ref comp"><tr><th>PJ</th><th>Per</th><th>Vol.</th><th>Foi</th><th>Déf.</th><th>BL/BG/BF/MS</th><th>PF</th><th>Malus</th></tr>
+      ${pjs.map((x) => { const c = x.c; const a = R.annexes(c); const cell = (k2, key, v) => `<td><button class="cell" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${k2}" data-key="${esc(key)}">${L(v)}</button></td>`;
+        return `<tr><td><b>${esc(c.nom || '?')}</b></td>${cell('car', 'pe', c.car.pe)}${cell('car', 'vo', c.car.vo)}${cell('car', 'foi', c.car.foi)}${cell('tal', 'Défense', R.talentLevel(c, 'Défense'))}
+          <td>${a.bl}/${a.bg}/${a.bf}/${a.ms}</td><td>${c.pfCur ?? a.pf}/${a.pf}</td><td>${R.woundMalus(c) || ''}</td></tr>`; }).join('')}</table></div></section>` : ''}
+    ${lv.units.map((u) => renderUnit(sc, u)).join('')}`;
+}
+function renderUnit(sc, u) {
+  const n = sc.npcs.find((x) => x.id === u.npc);
+  if (!n) return '';
+  const st = npcStats(n); const c = npcChar(n, u.bl); const malus = R.woundMalus(c);
+  const at = (extra = '') => `data-u="${esc(u.uid)}" ${extra}`;
+  const pill = (lab, r, kind, key) => `<button class="pill light" data-act="lv-roll" ${at(`data-k="${kind}" data-key="${esc(key)}"`)}>${lab} <b>${L(r)}</b></button>`;
+  const open = u.bl.map((b, i) => ({ b, i }));
+  return `<section class="card unit ${u.out ? 'out' : ''}">
+    <h2>${esc(u.label)}${u.out ? '<span class="stamp" style="margin-left:6px">Hors de combat</span>' : ''}<span class="tag">${esc(n.source || R.TYPES[n.type]?.n || '')}</span></h2>
+    <div class="tracker"><span class="lab">PF</span>${bar(u.pf, st.pf, 'pf')}<span class="stepper"><button data-act="lv-pf" ${at('data-v="-1"')}>–</button><button data-act="lv-pf" ${at('data-v="1"')}>+</button></span></div>
+    ${st.pp ? `<div class="tracker" style="margin-top:6px"><span class="lab">PP</span>${bar(u.pp, st.pp)}<span class="stepper"><button data-act="lv-pp" ${at('data-v="-1"')}>–</button><button data-act="lv-pp" ${at('data-v="1"')}>+</button></span></div>` : ''}
+    <div class="annexes">
+      ${n.armes.map((w, i) => `<button class="btn sm pri" data-act="lv-attack" ${at(`data-i="${i}"`)}>${icon('sword')} ${esc(w.n)} ${L(w.att)}</button>`).join('')}
+      ${pill('Défense', n.def, 'def', '')}${pill('Vo', n.car.vo, 'car', 'vo')}${pill('Pe', n.car.pe, 'car', 'pe')}${pill(c.chance ? 'Ch' : 'Foi', n.car.foi, 'car', 'foi')}
+    </div>
+    <div class="annexes"><span class="pill light">BL <b>${st.bl}</b> BG <b>${st.bg}</b> BF <b>${st.bf}</b> MS <b>${st.ms}</b></span>${+n.prot ? `<span class="pill light">Prot. <b>${n.prot}</b></span>` : ''}
+      ${malus ? `<span class="pill" style="background:var(--red)">malus <b>${malus}</b></span>` : ''}</div>
+    ${open.length ? `<div style="margin-top:6px">${open.map(({ b, i }) => `<div class="wound"><span class="g ${b.g}">${b.g}</span><div class="tn" style="flex:1">${R.BLESSURES[b.g].n}${b.note ? ' <small class="muted">' + esc(b.note) + '</small>' : ''}${b.ouverte ? '' : ' <small class="muted">(refermée)</small>'}</div>
+      ${b.ouverte ? `<button class="btn sm" data-act="lv-wclose" ${at(`data-i="${i}"`)}>Refermer</button>` : ''}<button class="ibtn" style="width:32px;height:32px" data-act="lv-wdel" ${at(`data-i="${i}"`)}>${icon('x')}</button></div>`).join('')}</div>` : ''}
+    ${n.pouvoirs.length ? `<div class="small" style="margin-top:8px">${n.pouvoirs.map((p, i) => {
+      const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const cost = ppCostOf(d.act || par?.act);
+      return `<button class="pill light" data-act="lv-pow" ${at(`data-i="${i}"`)} title="${esc(d.act || par?.act || '')}">${esc(p.n)} <b>${p.r ? L(p.r) : '—'}</b>${cost ? ` <small>${cost} PP</small>` : ''}</button>`;
+    }).join(' ')}</div>` : ''}
+    ${n.talents ? `<div class="small muted" style="margin-top:6px">${esc(n.talents)}</div>` : ''}
+    ${n.notes ? `<details class="small" style="margin-top:6px"><summary class="muted">Notes ▾</summary><div style="white-space:pre-line">${esc(n.notes)}</div></details>` : ''}
+    <div class="row" style="margin-top:8px"><button class="btn sm dark" data-act="lv-hit" ${at()}>Encaisser un coup</button><span class="spacer"></span><button class="btn sm ghost" data-act="lv-out" ${at()}>${u.out ? 'Remettre en jeu' : 'Hors de combat'}</button></div>
+  </section>`;
+}
+function lvHit(s, sc, u, n) {
+  const st = npcStats(n);
+  dialog('Encaisser : ' + esc(u.label), `<div class="grid g2">${F.num('dmg', 'Niveau de dommage reçu', '')}${F.num('prot', 'Protection à retirer', +n.prot || 0)}${F.text('note', 'Localisation, arme…', '', 'full')}</div>
+    <div id="hit-res" class="verdict" style="margin-top:10px"></div><p class="small muted">Seuils : BL ${st.bl}, BG ${st.bg}, BF ${st.bf}, MS ${st.ms}. Couverture partielle : armure ignorée sur un double ou un triple ; importante : sur un triple.</p>`,
+  `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="hit-ok">Appliquer</button>`);
+  const calc = () => {
+    const g = gravite((+dlg.querySelector('[name=dmg]').value || 0) - (+dlg.querySelector('[name=prot]').value || 0), st);
+    dlg.querySelector('#hit-res').textContent = g ? `${R.BLESSURES[g].n} (–${R.BLESSURES[g].pf} PF)` : 'Pas de blessure';
+    return g;
+  };
+  dlg.querySelectorAll('input').forEach((x) => { x.oninput = calc; });
+  dlg.querySelector('[name=dmg]').focus();
+  dlg.querySelector('#hit-ok').onclick = () => {
+    const g = calc(); const note = dlg.querySelector('[name=note]').value; closeDlg();
+    if (g) {
+      u.bl.push({ g, ouverte: true, note });
+      u.pf -= R.BLESSURES[g].pf;
+      const c = npcChar(n);
+      if (g === 'MS') toast(R.typeOf(c).camp === 'neutre' && c.chance ? `${u.label} : mort subite, il meurt…` : `${u.label} : mort subite ! Test standard de Force pour survivre`);
+      else if (u.pf <= 0) toast(`${u.label} : plus de PF, hors de combat`);
+      else toast(`${u.label} : ${R.BLESSURES[g].n}, –${R.BLESSURES[g].pf} PF`);
+      if (u.pf <= 0 || g === 'MS') u.out = true;
+      scen.save(s);
+    }
+    render();
+  };
+}
+function npcAttack(u, n, w) {
+  const fo = R.lvlInt(n.car.fo);
+  return openRoll({ label: `${u.label} — ${w.n}`, r: w.att, prec: +w.prec || 0, char: npcChar(n, u.bl), after: (res) => {
+    const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
+    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense du PJ, puis sa protection.`;
+  } });
+}
+function scenChange(el) {
+  const s = scen.get(ui.scenId); if (!s) return;
+  const d = el.dataset; let v = el.type === 'checkbox' ? el.checked : el.value;
+  let redraw = el.tagName === 'SELECT' || el.type === 'checkbox';
+  if (d.sf) { s[d.sf] = v; if (d.sf === 'nom') redraw = true; }
+  else if (d.scf) { const sc = curScene(s, d.scene); if (sc) sc[d.scf] = v; }
+  else {
+    const sc = ui.npcEdit && curScene(s, ui.npcEdit.scene); const n = sc?.npcs.find((x) => x.id === ui.npcEdit.npc); if (!n) return;
+    if (d.nf) {
+      const [f, sub] = d.nf.split('.');
+      if (f === 'car') n.car[sub] = +v;
+      else if (f === 'seuilsFix') { n.seuilsFix ||= ['', '', '', '']; n.seuilsFix[+sub] = v === '' ? '' : +v; if (n.seuilsFix.every((x) => x === '')) n.seuilsFix = null; redraw = true; }
+      else if (f === 'pfFix') { n.pfFix = v === '' ? null : +v; redraw = true; }
+      else if (['def', 'prot', 'pp'].includes(f)) n[f] = +v || 0;
+      else if (f === 'qty') n.qty = Math.max(1, +v || 1);
+      else n[f] = v;
+    } else if (d.wf) { const w = n.armes[+d.i]; if (w) w[d.wf] = d.wf === 'n' ? v : d.wf === 'melee' ? v : +v || 0; }
+    else if (d.pw != null) { n.pouvoirs[+d.pw].r = +v; }
+  }
+  scen.save(s);
+  if (redraw) render();
+}
+async function scenAction(act, b) {
+  const key = b.dataset.key; const s = scen.get(ui.scenId);
+  const sc = s && curScene(s, b.dataset.scene || ui.npcEdit?.scene || ui.live);
+  const n = sc && ui.npcEdit ? sc.npcs.find((x) => x.id === ui.npcEdit.npc) : null;
+  const go = (id) => { ui.scenId = id; ui.npcEdit = null; ui.live = null; if (id) localStorage.setItem('insmv.scen', id); else localStorage.removeItem('insmv.scen'); localStorage.removeItem('insmv.live'); render(); window.scrollTo(0, 0); };
+  const save = () => { scen.save(s); render(); };
+  switch (act) {
+    case 'sc-open': return go(key);
+    case 'sc-back': return go(null);
+    case 'sc-create': {
+      const nom = document.getElementById('sc-name').value.trim();
+      if (!nom) return toast('Donne un titre au scénario');
+      return go(scen.create(nom).id);
+    }
+    case 'sc-import': {
+      const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json,application/json';
+      inp.onchange = async () => { try { toast(`${scen.importJSON(await inp.files[0].text())} scénario(s) importé(s)`); render(); } catch (e) { toast('Fichier illisible : ' + e.message); } };
+      return inp.click();
+    }
+    case 'sc-export': return download(s.nom.replace(/\W+/g, '_') + '.scenario.json', scen.exportOne(s.id));
+    case 'sc-dup': toast('Scénario dupliqué'); return go(scen.duplicate(s.id).id);
+    case 'sc-del': if (await confirmDlg('Supprimer', `Supprimer définitivement le scénario « ${esc(s.nom)} » ?`)) { scen.remove(s.id); go(null); } return;
+    case 'sc-scene-add': { const x = newScene(`Scène ${s.scenes.length + 1}`); s.scenes.push(x); ui.open['scn' + x.id] = true; return save(); }
+    case 'sc-scene-up': { const i = s.scenes.findIndex((x) => x.id === key); if (i > 0) s.scenes.splice(i - 1, 0, s.scenes.splice(i, 1)[0]); return save(); }
+    case 'sc-scene-del': {
+      const x = curScene(s, key);
+      if (!(await confirmDlg('Supprimer', `Supprimer la scène « ${esc(x.nom)} » et ses ${x.npcs.length} PNJ ?`))) return;
+      s.scenes = s.scenes.filter((y) => y.id !== key); return save();
+    }
+    case 'sc-npc-add': { const x = newNpc(); sc.npcs.push(x); scen.save(s); ui.npcEdit = { scene: sc.id, npc: x.id }; render(); return window.scrollTo(0, 0); }
+    case 'sc-npc-import': {
+      const list = store.list();
+      if (!list.length) return toast('Aucun personnage dans le Grimoire');
+      return chooseList('PNJ depuis un personnage', list.map((c) => ({ c, label: c.nom || 'Sans nom', sub: supLine(c) })), (it) => {
+        const x = npcFromCharacter(it.c, weaponLevel); sc.npcs.push(x); scen.save(s); toast(`${x.nom} ajouté`); render();
+      });
+    }
+    case 'sc-npc-edit': ui.npcEdit = { scene: sc.id, npc: key }; render(); return window.scrollTo(0, 0);
+    case 'sc-npc-done': ui.npcEdit = null; render(); return window.scrollTo(0, 0);
+    case 'sc-npc-dup': { const x = { ...JSON.parse(JSON.stringify(n)), id: newNpc().id, nom: n.nom + ' (copie)' }; sc.npcs.splice(sc.npcs.indexOf(n) + 1, 0, x); ui.npcEdit.npc = x.id; toast('PNJ dupliqué'); return save(); }
+    case 'sc-npc-del':
+      if (!(await confirmDlg('Supprimer', `Supprimer ${esc(n.nom)} ?`))) return;
+      sc.npcs = sc.npcs.filter((x) => x.id !== n.id); ui.npcEdit = null; return save();
+    case 'sc-w-add': {
+      const items = R.ARMES.flatMap(([g, l]) => l.map(([nm, p, pu, q]) => ({ label: nm, sub: `${g} · préc. ${sgn(p)} · puiss. ${sgn(pu)}${q ? ' · ' + q : ''}`, p, pu, melee: R.MELEE_GROUPS.includes(g) })));
+      return chooseList('Arme', items, (it) => { n.armes.push({ n: it.label, att: n.armes[0]?.att ?? 4, prec: it.p, puis: it.pu, melee: it.melee }); save(); });
+    }
+    case 'sc-w-free': n.armes.push({ n: 'Griffes', att: n.armes[0]?.att ?? 4, prec: 0, puis: 0, melee: true }); return save();
+    case 'sc-w-del': n.armes.splice(+b.dataset.i, 1); return save();
+    case 'sc-p-add': {
+      const items = R.POUVOIRS.filter((p) => !p.multi).map((p) => ({ label: p.n, sub: [p.nat, p.act].filter(Boolean).join(' · ') }));
+      return chooseList('Pouvoir', items, (it) => { n.pouvoirs.push({ n: it.label, r: 4 }); save(); });
+    }
+    case 'sc-p-del': n.pouvoirs.splice(+b.dataset.i, 1); return save();
+    // ---- combat en cours ----
+    case 'sc-live':
+      if (!sc.live) startLive(sc);
+      ui.live = sc.id; localStorage.setItem('insmv.live', sc.id); scen.save(s); render(); return window.scrollTo(0, 0);
+    case 'lv-back': ui.live = null; localStorage.removeItem('insmv.live'); render(); return window.scrollTo(0, 0);
+    case 'lv-round': sc.live.round = Math.max(1, sc.live.round + +b.dataset.v); return save();
+    case 'lv-end':
+      if (!(await confirmDlg('Terminer le combat', 'Effacer le suivi de ce combat (PF, blessures) ? Les PNJ préparés sont conservés et le combat pourra être relancé.'))) return;
+      sc.live = null; ui.live = null; localStorage.removeItem('insmv.live'); return save();
+    case 'lv-add':
+      return chooseList('Renfort', sc.npcs.map((x) => ({ x, label: x.nom, sub: x.source })), (it) => {
+        const st = npcStats(it.x); const same = sc.live.units.filter((u) => u.npc === it.x.id).length;
+        sc.live.units.push({ uid: newNpc().id, npc: it.x.id, label: `${it.x.nom} ${same + 1}`, pf: st.pf, pp: st.pp, bl: [], out: false }); save();
+      }, { search: false });
+  }
+  if (!act.startsWith('lv-') || !sc?.live) return;
+  const { u, n: un, st, c } = liveCtx(s, sc, b.dataset.u); if (!u || !un) return;
+  const i = +b.dataset.i;
+  switch (act) {
+    case 'lv-pf': u.pf = Math.min(st.pf, u.pf + +b.dataset.v); return save();
+    case 'lv-pp': u.pp = Math.max(0, Math.min(st.pp, u.pp + +b.dataset.v)); return save();
+    case 'lv-out': u.out = !u.out; return save();
+    case 'lv-hit': return lvHit(s, sc, u, un);
+    case 'lv-wclose': u.bl[i].ouverte = false; return save();
+    case 'lv-wdel': { const w = u.bl.splice(i, 1)[0]; if (w?.ouverte) u.pf = Math.min(st.pf, u.pf + R.BLESSURES[w.g].pf); return save(); }
+    case 'lv-attack': return npcAttack(u, un, un.armes[i]);
+    case 'lv-roll': {
+      const k = b.dataset.k;
+      if (k === 'def') return openRoll({ label: `${u.label} — Défense`, r: un.def, char: c, after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
+      return openRoll({ label: `${u.label} — ${R.caracName(c, b.dataset.key)}`, r: un.car[b.dataset.key], char: c });
+    }
+    case 'lv-pow': {
+      const p = un.pouvoirs[i]; const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const cost = ppCostOf(d.act || par?.act);
+      if (cost && st.pp) {
+        if (u.pp < cost) toast(`${u.label} n'a plus assez de PP (${u.pp}/${cost})`);
+        else { u.pp -= cost; scen.save(s); toast(`${p.n} : –${cost} PP (reste ${u.pp})`); }
+      }
+      if (!p.r) return render();
+      return openRoll({ label: `${u.label} — ${p.n}`, r: p.r, char: c });
+    }
+  }
+}
+
 function mjCharById(id) { return table.characters().find((x) => x.id === id); }
 function attackRoll(c, w, char) {
   const fo = R.lvlInt(c.car.fo);
@@ -1261,6 +1605,8 @@ async function mjAction(act, b) {
   try {
     switch (act) {
       case 'mj-enter': return enterMJ();
+      case 'mj-sec': ui.mjSec = b.dataset.v; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
+      case 'mj-cloud': return cloudDialog();
       case 'mj-exit': ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
       case 'mj-create': {
         const name = document.getElementById('mj-name').value.trim();
@@ -1329,6 +1675,7 @@ document.addEventListener('click', async (e) => {
   const act = b.dataset.act; const c = C();
   if (act.startsWith('mj-')) return mjAction(act, b);
   if (act.startsWith('table-')) return tableAction(act, b, c);
+  if (act.startsWith('sc-') || act.startsWith('lv-')) return scenAction(act, b);
   const i = +b.dataset.i; const key = b.dataset.key;
   switch (act) {
     case 'new': return startGenerator();
@@ -1506,6 +1853,7 @@ document.addEventListener('change', (e) => {
   const el = e.target;
   if (dlg.contains(el)) return;
   if (el.id === 'mj-note') { table.setNote(el.dataset.key, el.value); return; }
+  if (el.closest('[data-scform]')) return scenChange(el);
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;
   if (el.name.startsWith('identite.')) c.identite[el.name.slice(9)] = v;

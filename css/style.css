@@ -258,3 +258,18 @@ table.comp td:first-child, table.comp th:first-child { text-align: left; positio
 .cell { border: 0; background: none; font-family: var(--font-title); font-size: 16px; font-weight: 600; color: var(--ink); cursor: pointer; padding: 2px 6px; border-radius: 6px; }
 .cell:hover { background: var(--card2); }
 #mj-note { min-height: 120px; }
+/* Scénarios et combats préparés */
+.mjnav { margin-bottom: 12px; }
+.alert { margin-top: 8px; padding: 6px 10px; border-radius: 8px; background: #fff3cd; color: #5a4300; border: 1px solid #e6c65c; font-size: 13.5px; }
+.chk { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
+.weap { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px dashed var(--line); align-items: end; }
+table.npcs tr.click { cursor: pointer; }
+table.npcs tr.click:hover td { background: var(--card2); }
+table.npcs td { vertical-align: top; }
+table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; white-space: normal; }
+.nowrap { white-space: nowrap; }
+.card.unit.out { opacity: .55; }
+.card.unit .tracker .stepper button { width: 30px; height: 30px; }
+.card .stepper button { background: #fff; color: var(--ink); border-color: var(--line); }
+.card.dark .stepper button { background: #0e0e11; color: var(--on-dark); border-color: #34343d; }
+.card.dark .btn.ghost { color: var(--on-dark); border-color: #4a4a55; }
