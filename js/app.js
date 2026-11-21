@@ -1,7 +1,7 @@
 import * as R from './rules.js';
 import { store } from './store.js';
 import { table, errText } from './table.js';
-import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK } from './scenario.js';
+import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice } from './scenario.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -61,7 +61,8 @@ const ui = {
   biblio: 'pouvoirs', q: '', onlyAccess: true, talFilter: 'tous', open: {},
   screen: localStorage.getItem('insmv.screen') || 'perso', // perso | mj
   mjTab: 'vue', mjChar: null,
-  mjSec: localStorage.getItem('insmv.mjsec') || (store.configured ? 'table' : 'scen'), // table | scen
+  mjSec: localStorage.getItem('insmv.mjsec') || (store.configured ? 'table' : 'scen'), // table | scen | memo
+  memoF: { open: false, pj: '', scen: '' }, // filtres du journal des choix
   scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
   live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
 };
@@ -1109,8 +1110,8 @@ function enterMJ() {
 function renderMJ() {
   const t = table.current; const openId = store.configured ? table.openId : null;
   const s = ui.mjSec === 'scen' ? scen.get(ui.scenId) : null;
-  const sub = ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
-  const body = ui.mjSec === 'scen' ? renderScen(s)
+  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'scen' ? renderScen(s)
     : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google.</p>
       <div class="row"><button class="btn pri" data-act="mj-cloud">${icon('cloud')} Configurer la sauvegarde en ligne</button></div>
       <p class="small muted" style="margin-bottom:0">Les <b>scénarios</b> (scènes, combats préparés, PNJ) fonctionnent sans connexion.</p></section>`
@@ -1120,7 +1121,7 @@ function renderMJ() {
     <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main><div class="seg mjnav">${[['table', 'Table des joueurs'], ['scen', 'Scénarios & combats']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+  <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
 }
 function renderMJTables() {
   return `<section class="card">
@@ -1295,6 +1296,7 @@ function renderScen(s) {
         <div class="field"><label>Résumé (ce que les joueurs vont vivre)</label><textarea data-sf="resume" placeholder="Accroche, enjeux, mission confiée par le supérieur…">${esc(s.resume)}</textarea></div>
         <div class="field"><label>Secrets du MJ</label><textarea data-sf="notes" placeholder="Ce qui se passe vraiment, PNJ importants, fils à tirer…">${esc(s.notes)}</textarea></div></div>
     </section>
+    ${renderScenMemo(s)}
     ${s.scenes.map((sc, i) => renderSceneCard(s, sc, i)).join('')}
     <div class="row" style="justify-content:center;margin-bottom:12px"><button class="btn pri" data-act="sc-scene-add">${icon('plus')} Ajouter une scène</button></div>`;
 }
@@ -1308,7 +1310,7 @@ function renderScenList() {
     }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
-    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario ou un bestiaire (fichier)</button></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
     <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
   </section>
   ${renderBestiaire()}`;
@@ -1319,7 +1321,7 @@ function renderBestiaire() {
     <h2>Bestiaire <span class="tag">types d'ennemis réutilisables</span></h2>
     ${types.map((t) => `<div class="trow click" data-act="sc-type-edit" data-key="${esc(t.id)}"><div class="tn"><b>${esc(t.nom)}</b>${t.source ? ` <small>· ${esc(t.source)}</small>` : ''}<br><small>${esc(npcSummary(t))}</small></div><div class="tl">›</div></div>`).join('') || '<div class="empty">Aucun type d\'ennemi pour l\'instant</div>'}
     <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-book">${icon('book')} Bestiaire des livres (${BOOK.length})</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
-      <span class="spacer"></span><button class="btn sm" data-act="sc-import">Importer</button>${types.length ? '<button class="btn sm" data-act="sc-type-export">Exporter</button>' : ''}</div>
+      <span class="spacer"></span><button class="btn sm" data-act="sc-type-import">Importer un bestiaire</button>${types.length ? '<button class="btn sm" data-act="sc-type-export">Exporter le bestiaire</button>' : ''}</div>
     <p class="small muted" style="margin-bottom:0">Prépare une fois un type d'ennemi (sbire de la Mafia, démon de Baal, soldat de Dieu…), puis ajoute-le à n'importe quelle scène en choisissant combien il en faut : bouton « Depuis le bestiaire » d'une scène, ou « Renfort » pendant un combat.</p>
   </section>`;
 }
@@ -1328,6 +1330,12 @@ function typeItems(exclude = () => false) {
   const mine = scen.types().filter((t) => !exclude(t)).map((t) => ({ t, label: t.nom, sub: [t.source, npcSummary(t)].filter(Boolean).join(' · ') }));
   const book = BOOK.filter((t) => !scen.getType(t.id) && !exclude(t)).map((t) => ({ t, book: true, label: t.nom, sub: `📖 ${t.book}${t.source ? ' · ' + t.source : ''} · ${npcSummary(t)}` }));
   return [...mine, ...book];
+}
+// Choisit un fichier JSON et le passe à fn (qui renvoie le message de confirmation)
+function pickJSON(fn) {
+  const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json,application/json';
+  inp.onchange = async () => { try { toast(fn(await inp.files[0].text())); render(); } catch (e) { toast(e instanceof SyntaxError ? 'Fichier illisible' : 'Import impossible : ' + e.message); } };
+  inp.click();
 }
 // Demande un nombre d'exemplaires
 async function askQty(nom, def = 1) {
@@ -1355,6 +1363,7 @@ function renderSceneCard(s, sc, i) {
     : sc.notes ? `<p class="small" style="white-space:pre-line;margin-top:0">${esc(sc.notes)}</p>` : ''}
     ${sc.npcs.length ? `<div style="overflow-x:auto;margin-top:6px"><table class="ref comp npcs"><tr><th>PNJ (source)</th><th></th><th>Attaque</th><th>Déf.</th><th>Vol.</th><th>Foi</th><th>Per</th><th>BL/BG/BF/MS</th><th>PF</th><th>PP</th><th>Prot.</th></tr>${rows}</table></div>
       ${scenAlerts(sc.npcs)}` : '<div class="empty">Pas d\'adversaire préparé (scène sans combat ?)</div>'}
+    ${renderChoices(s, sc, edit)}
     <div class="row" style="margin-top:8px">
       <button class="btn sm pri" data-act="sc-npc-best" data-scene="${esc(sc.id)}">${icon('plus')} Depuis le bestiaire</button>
       <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ unique</button>
@@ -1425,6 +1434,122 @@ function renderNpcEdit(s, sc, n) {
   </section></div>`;
 }
 
+// ---- Mémoire des choix des joueurs ----
+const KIND = Object.fromEntries(KINDS);
+const fmtDay = (t) => new Date(t).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' });
+const isOpen = (e) => !!e.suite && !e.done; // fil en suspens : une suite reste à jouer
+function memoWhere(e) { const s = scen.get(e.scen); const sc = s && curScene(s, e.scene); return s ? s.nom + (sc ? ' › ' + sc.nom : '') : ''; }
+// PJ proposés : ceux de la table ouverte et ceux déjà cités dans le journal
+function memoPjNames() {
+  const t = store.configured && table.current ? table.characters().map((x) => x.c.nom).filter(Boolean) : [];
+  return [...new Set([...t, ...scen.pjNames()])].sort((a, b) => a.localeCompare(b, 'fr'));
+}
+function memoItem(e, here = null) {
+  const rap = e.rappel && e.rappel !== here && scen.get(e.rappel); const where = memoWhere(e);
+  return `<div class="memo ${e.done ? 'done' : ''}">
+    <div class="mh"><span class="badge k-${esc(e.kind)}">${esc(KIND[e.kind] || e.kind)}</span>${e.pjs.map((p) => `<span class="pj">${esc(p)}</span>`).join('')}<span class="spacer"></span><small class="muted">${fmtDay(e.at)}</small></div>
+    <div class="mt">${esc(e.txt)}</div>
+    ${e.suite ? `<div class="ms"><b>${e.done ? 'Suite' : 'À suivre'} :</b> ${esc(e.suite)}${rap ? ` <small class="muted">(à faire ressortir dans « ${esc(rap.nom)} »)</small>` : ''}</div>` : ''}
+    ${e.done && e.res ? `<div class="small muted" style="margin-top:4px">Fil refermé : ${esc(e.res)}</div>` : ''}
+    <div class="row" style="margin-top:6px"><small class="muted" style="flex:1">${esc(where)}</small>
+      ${e.suite ? `<button class="btn sm ${e.done ? 'ghost' : ''}" data-act="sc-memo-done" data-key="${esc(e.id)}">${e.done ? 'Rouvrir' : 'Refermer le fil'}</button>` : ''}
+      <button class="btn sm ghost" data-act="sc-memo-edit" data-key="${esc(e.id)}">${icon('edit')} Modifier</button></div>
+  </div>`;
+}
+function renderMemo() {
+  const all = scen.journal(); const f = ui.memoF; const names = memoPjNames(); const scens = scen.all();
+  if (f.pj && !names.includes(f.pj)) f.pj = '';
+  if (f.scen && !scen.get(f.scen)) f.scen = '';
+  const open = all.filter(isOpen);
+  const list = all.filter((e) => (!f.open || isOpen(e)) && (!f.pj || e.pjs.includes(f.pj)) && (!f.scen || e.scen === f.scen || e.rappel === f.scen));
+  const sel = (id, label, val, opts) => `<div class="field"><label>${label}</label><select id="${id}">${opts.map(([v, l]) => `<option value="${esc(v)}" ${v === val ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select></div>`;
+  return `<section class="card dark">
+      <div class="row"><div style="flex:1"><div class="type" style="font-size:22px">${all.length} choix noté(s)</div><div class="small muted d">${open.length} fil(s) en suspens${open.filter((e) => !e.rappel).length ? ` · ${open.filter((e) => !e.rappel).length} sans scénario prévu` : ''}</div></div>
+        <button class="btn sm pri" data-act="sc-memo-new">${icon('plus')} Noter un choix</button></div>
+    </section>
+    <section class="card">
+      <div class="seg">${[['0', 'Tout le journal'], ['1', `Fils en suspens (${open.length})`]].map(([v, l]) => `<button class="${(f.open ? '1' : '0') === v ? 'on' : ''}" data-act="sc-memo-f" data-v="${v}">${l}</button>`).join('')}</div>
+      <div class="grid g2" style="margin-top:8px">${sel('memo-pj', 'Personnage', f.pj, [['', 'Tous'], ...names.map((p) => [p, p])])}${sel('memo-scen', 'Scénario', f.scen, [['', 'Tous'], ...scens.map((x) => [x.id, x.nom])])}</div>
+      <div style="margin-top:6px">${list.map((e) => memoItem(e)).join('') || `<div class="empty">${all.length ? 'Rien avec ces filtres' : 'Aucun choix noté pour l\'instant'}</div>`}</div>
+    </section>
+    <section class="card">
+      <h2>Comment ça marche</h2>
+      <p class="small" style="margin-top:0">Note ici ce que les joueurs ont décidé (épargner un PNJ, promettre un service à un démon, trahir leur supérieur…) et la <b>suite</b> qu'il faudra leur faire vivre. Une suite non refermée est un <b>fil en suspens</b> ; choisis le scénario où la faire ressortir : elle s'affichera en tête de ce scénario. Dans une scène, prépare les <b>choix possibles</b> (bouton « Modifier » de la scène) : le jour de la partie, touche l'option choisie et c'est noté.</p>
+      <div class="row"><button class="btn sm" data-act="sc-memo-import">Importer une mémoire</button>${all.length ? '<button class="btn sm" data-act="sc-memo-export">Exporter la mémoire</button>' : ''}</div>
+      <p class="small muted" style="margin-bottom:0">Le journal est gardé sur cet appareil ; l'export d'un scénario emporte aussi les choix qui le concernent.</p>
+    </section>`;
+}
+function renderScenMemo(s) {
+  const all = scen.journal();
+  const rap = all.filter((e) => e.rappel === s.id && !e.done);
+  const here = all.filter((e) => e.scen === s.id && !rap.includes(e));
+  const open = all.filter(isOpen).length;
+  return `<section class="card">
+    <h2>Choix des joueurs <span class="tag">${here.length + rap.filter((e) => e.scen === s.id).length} noté(s) ici</span></h2>
+    ${rap.length ? `<div class="alert">↩ <b>À faire ressortir dans ce scénario</b> : conséquences de choix passés.</div>${rap.map((e) => memoItem(e, s.id)).join('')}` : ''}
+    ${here.length ? `<details ${rap.length ? '' : 'open'}><summary class="small muted" style="margin-top:6px">Notés pendant ce scénario (${here.length})</summary>${here.map((e) => memoItem(e, s.id)).join('')}</details>` : ''}
+    ${rap.length || here.length ? '' : '<div class="empty">Rien de noté pour l\'instant</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-memo-new" data-sid="${esc(s.id)}">${icon('plus')} Noter un choix</button><span class="spacer"></span>
+      <button class="btn sm ghost" data-act="sc-memo-all">${open ? `${open} fil(s) en suspens dans la campagne` : 'Journal de la campagne'} ›</button></div>
+  </section>`;
+}
+// Choix possibles préparés dans une scène
+function renderChoices(s, sc, edit) {
+  const list = sc.choix || [];
+  if (!list.length && !edit) return '';
+  const at = (ch, extra = '') => `data-scene="${esc(sc.id)}" data-key="${esc(ch.id)}" ${extra}`;
+  return `<div class="choix"><h3>Choix possibles</h3>
+    ${list.map((ch) => {
+      const e = ch.entry && scen.entry(ch.entry);
+      return `<div class="ch"><div class="cq"><b>${esc(ch.q)}</b>${edit ? `<button class="btn sm ghost" data-act="sc-ch-edit" ${at(ch)}>${icon('edit')}</button><button class="btn sm danger" data-act="sc-ch-del" ${at(ch)}>${icon('trash')}</button>` : ''}</div>
+        ${e ? `<div class="small" style="margin-top:4px"><span class="badge ok">Tranché</span> ${esc(e.txt)}${e.pjs.length ? ` <span class="muted">— ${esc(e.pjs.join(', '))}</span>` : ''}</div>
+          <div class="row" style="margin-top:4px"><button class="btn sm ghost" data-act="sc-memo-edit" data-key="${esc(e.id)}">${icon('edit')} Modifier</button><button class="btn sm ghost" data-act="sc-ch-undo" ${at(ch)}>Annuler ce choix</button></div>`
+        : `<div class="annexes">${ch.opts.map((o, j) => `<button class="pill light" data-act="sc-ch-pick" ${at(ch, `data-i="${j}"`)}>${esc(o.t)}</button>`).join('')}<button class="pill light" data-act="sc-ch-pick" ${at(ch, 'data-i="-1"')}>Autre…</button></div>
+          ${ch.opts.some((o) => o.suite) ? `<div class="small muted" style="margin-top:4px">${ch.opts.filter((o) => o.suite).map((o) => `<b>${esc(o.t)}</b> → ${esc(o.suite)}`).join('<br>')}</div>` : ''}`}
+      </div>`;
+    }).join('')}
+    ${edit ? `<div class="row" style="margin-top:6px"><button class="btn sm" data-act="sc-ch-add" data-scene="${esc(sc.id)}">${icon('plus')} Choix possible</button></div>` : ''}</div>`;
+}
+function choiceDialog(ch, done) {
+  dialog('Choix possible', `<div class="grid">${F.text('q', 'Situation ou dilemme', ch.q, '', 'placeholder="Livrer le traître à Laurent ou le laisser filer ?"')}
+    <div class="field"><label>Options, une par ligne (conséquence après « => »)</label><textarea name="opts" style="min-height:120px" placeholder="Le livrer => Laurent leur doit une faveur&#10;Le laisser filer => il revient avec les hommes de Baal">${esc(ch.opts.map((o) => o.t + (o.suite ? ' => ' + o.suite : '')).join('\n'))}</textarea></div></div>`,
+  `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="ch-ok">Enregistrer</button>`);
+  dlg.querySelector('[name=q]').focus();
+  dlg.querySelector('#ch-ok').onclick = () => {
+    const q = dlg.querySelector('[name=q]').value.trim(); if (!q) return toast('Décris la situation');
+    ch.q = q;
+    ch.opts = dlg.querySelector('[name=opts]').value.split('\n').map((l) => l.trim()).filter(Boolean)
+      .map((l) => { const [t, ...r] = l.split('=>'); return { t: t.trim(), suite: r.join('=>').trim() }; }).filter((o) => o.t);
+    closeDlg(); done();
+  };
+}
+function memoDialog(e, onSaved) {
+  const isNew = !scen.entry(e.id);
+  const names = [...new Set([...memoPjNames(), ...e.pjs])];
+  const scens = scen.all(); const sOpts = scens.map((x) => [x.id, x.nom]);
+  dialog(isNew ? 'Noter un choix' : 'Choix des joueurs', `<div class="grid g2">
+    ${F.select('kind', 'Nature', e.kind, KINDS)}${F.select('scen', 'Arrivé pendant', e.scen || '', [['', '—'], ...sOpts])}
+    <div class="field full"><label>Ce que les joueurs ont fait ou décidé</label><textarea name="txt" placeholder="Ont épargné le vampire de la rue Saint-Denis contre ses informations">${esc(e.txt)}</textarea></div>
+    <div class="field full"><label>Personnages concernés</label><div class="annexes" style="margin-top:0">${names.map((p) => `<label class="chk pjchk"><input type="checkbox" name="pj" value="${esc(p)}" ${e.pjs.includes(p) ? 'checked' : ''}> ${esc(p)}</label>`).join('') || '<span class="small muted">Aucun PJ connu : saisis leurs noms ci-dessous.</span>'}</div>
+      <input name="pjx" style="margin-top:6px" placeholder="Autres noms (séparés par des virgules)"></div>
+    <div class="field full"><label>Suite à faire vivre (vide si rien à rappeler)</label><textarea name="suite" placeholder="Il leur doit un service… ou les vendra à Baal">${esc(e.suite)}</textarea></div>
+    ${F.select('rappel', 'À faire ressortir dans le scénario', e.rappel || '', [['', '— pas encore prévu'], ...sOpts], 'full')}
+    ${isNew ? '' : `<label class="chk full"><input type="checkbox" name="done" ${e.done ? 'checked' : ''}> Fil refermé</label>${F.text('res', 'Comment il s\'est refermé', e.res, 'full')}`}
+  </div>`, `${isNew ? '' : `<button class="btn danger" id="me-del">${icon('trash')}</button><span class="spacer"></span>`}<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="me-ok">Enregistrer</button>`);
+  const g = (n) => dlg.querySelector(`[name=${n}]`);
+  const t = g('txt'); t.focus(); t.setSelectionRange(t.value.length, t.value.length);
+  dlg.querySelector('#me-ok').onclick = () => {
+    const txt = g('txt').value.trim(); if (!txt) return toast('Décris ce qu\'ont fait les joueurs');
+    const pjs = [...dlg.querySelectorAll('[name=pj]:checked')].map((x) => x.value).concat(g('pjx').value.split(',').map((x) => x.trim()).filter(Boolean));
+    const sid = g('scen').value || null;
+    Object.assign(e, { kind: g('kind').value, txt, pjs: [...new Set(pjs)], suite: g('suite').value.trim(), rappel: g('rappel').value || null, scene: sid === e.scen ? e.scene : null, scen: sid });
+    if (g('done')) { e.done = g('done').checked; e.res = g('res').value.trim(); }
+    scen.saveEntry(e); closeDlg(); toast(isNew ? 'Choix noté' : 'Enregistré'); onSaved?.(e); render();
+  };
+  const del = dlg.querySelector('#me-del');
+  if (del) del.onclick = async () => { closeDlg(); if (await confirmDlg('Supprimer', 'Retirer ce choix du journal ?')) { scen.removeEntry(e.id); render(); } };
+}
+
 // ---- Combat en cours ----
 function liveCtx(s, sc, unitId) {
   const u = sc.live.units.find((x) => x.uid === unitId); if (!u) return {};
@@ -1441,7 +1566,7 @@ function renderLive(s, sc) {
       <h2 style="margin:10px 0 0">${icon('sword')} ${esc(sc.nom)}</h2>
       <div class="small muted d">${alive.length} adversaire(s) debout sur ${lv.units.length}${sc.lieu ? ' · ' + esc(sc.lieu) : ''}</div>
       ${scenAlerts(sc.npcs.filter((n) => alive.some((u) => u.npc === n.id)))}
-      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="lv-add">${icon('plus')} Renfort</button><span class="spacer"></span><button class="btn sm danger" data-act="lv-end">Terminer le combat</button></div>
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="lv-add">${icon('plus')} Renfort</button><button class="btn sm" data-act="sc-memo-new" data-sid="${esc(s.id)}" data-scene="${esc(sc.id)}">${icon('edit')} Noter un choix</button><span class="spacer"></span><button class="btn sm danger" data-act="lv-end">Terminer le combat</button></div>
     </section>
     ${pjs.length ? `<section class="card"><h2>Personnages joueurs <span class="tag">toucher pour lancer en secret</span></h2>
       <div style="overflow-x:auto"><table class="ref comp"><tr><th>PJ</th><th>Per</th><th>Vol.</th><th>Foi</th><th>Déf.</th><th>BL/BG/BF/MS</th><th>PF</th><th>Malus</th></tr>
@@ -1548,10 +1673,42 @@ async function scenAction(act, b) {
       if (!nom) return toast('Donne un titre au scénario');
       return go(scen.create(nom).id);
     }
-    case 'sc-import': {
-      const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json,application/json';
-      inp.onchange = async () => { try { toast(`${scen.importJSON(await inp.files[0].text())} élément(s) importé(s) (scénarios, types d'ennemis)`); render(); } catch (e) { toast('Fichier illisible : ' + e.message); } };
-      return inp.click();
+    case 'sc-import': return pickJSON((txt) => {
+      const r = scen.importScenarios(txt);
+      return `${r.scenarios} scénario(s) importé(s)${r.types ? `, ${r.types} type(s) d'ennemis ajouté(s) au bestiaire` : ''}${r.memo ? `, ${r.memo} choix des joueurs` : ''}`;
+    });
+    case 'sc-type-import': return pickJSON((txt) => {
+      const r = scen.importTypes(txt);
+      return `${r.types} type(s) d'ennemis ajouté(s) au bestiaire${r.already ? ` (${r.already} déjà présent(s))` : ''}`;
+    });
+    // ---- mémoire des choix ----
+    case 'sc-memo-new': return memoDialog(newEntry({ scen: b.dataset.sid || (ui.mjSec === 'memo' && ui.memoF.scen) || null, scene: b.dataset.scene || null }));
+    case 'sc-memo-edit': { const e = scen.entry(key); return e && memoDialog(e); }
+    case 'sc-memo-done': {
+      const e = scen.entry(key); if (!e) return;
+      if (e.done) { e.done = false; scen.saveEntry(e); return render(); }
+      const res = await ask('Refermer le fil', 'Comment ça s\'est terminé ? (facultatif)', e.res);
+      if (res === null) return;
+      e.done = true; e.res = res.trim(); scen.saveEntry(e); toast('Fil refermé'); return render();
+    }
+    case 'sc-memo-all': ui.mjSec = 'memo'; ui.memoF = { open: true, pj: '', scen: '' }; localStorage.setItem('insmv.mjsec', 'memo'); render(); return window.scrollTo(0, 0);
+    case 'sc-memo-f': ui.memoF.open = b.dataset.v === '1'; return render();
+    case 'sc-memo-export': return download('memoire-campagne-insmv.json', scen.exportJournal());
+    case 'sc-memo-import': return pickJSON((txt) => { const r = scen.importJournal(txt); return `${r.memo} choix ajouté(s) au journal${r.already ? ` (${r.already} déjà présent(s))` : ''}`; });
+    case 'sc-ch-add': { const ch = newChoice(); return choiceDialog(ch, () => { (sc.choix ||= []).push(ch); save(); }); }
+    case 'sc-ch-edit': case 'sc-ch-del': case 'sc-ch-pick': case 'sc-ch-undo': {
+      const ch = (sc?.choix || []).find((x) => x.id === key); if (!ch) return;
+      if (act === 'sc-ch-edit') return choiceDialog(ch, save);
+      if (act === 'sc-ch-del') {
+        if (!(await confirmDlg('Supprimer', `Retirer le choix « ${esc(ch.q)} » de la scène ?${ch.entry ? ' (Ce qui a été noté dans le journal est conservé.)' : ''}`))) return;
+        sc.choix = sc.choix.filter((x) => x !== ch); return save();
+      }
+      if (act === 'sc-ch-undo') {
+        if (!(await confirmDlg('Annuler ce choix', 'Effacer ce qui a été noté dans le journal pour ce choix ?'))) return;
+        scen.removeEntry(ch.entry); ch.entry = null; return save();
+      }
+      const o = ch.opts[+b.dataset.i];
+      return memoDialog(newEntry({ scen: s.id, scene: sc.id, txt: `${ch.q} → ${o ? o.t : ''}`, suite: o?.suite || '' }), (e) => { ch.entry = e.id; scen.save(s); });
     }
     // ---- bestiaire ----
     case 'sc-type-new': { const t = scen.newType(); ui.npcEdit = { type: t.id }; render(); return window.scrollTo(0, 0); }
@@ -1935,6 +2092,7 @@ document.addEventListener('change', (e) => {
   const el = e.target;
   if (dlg.contains(el)) return;
   if (el.id === 'mj-note') { table.setNote(el.dataset.key, el.value); return; }
+  if (el.id === 'memo-pj' || el.id === 'memo-scen') { ui.memoF[el.id.slice(5)] = el.value; return render(); }
   if (el.closest('[data-scform]')) return scenChange(el);
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;

@@ -5,7 +5,8 @@ import { BESTIAIRE } from './data/bestiaire.js';
 
 const KEY = 'insmv.scenarios';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
-const data = Object.assign({ list: {}, types: {} }, load()); // types : bestiaire (types d'ennemis réutilisables)
+// types : bestiaire (types d'ennemis réutilisables) ; journal : mémoire des choix des joueurs
+const data = Object.assign({ list: {}, types: {}, journal: [] }, load());
 const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch { /* stockage plein ou bloqué */ } };
 const clone = (o) => JSON.parse(JSON.stringify(o));
 export const uid =() => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
@@ -20,7 +21,16 @@ export function newNpc(over = {}) {
     ...over,
   };
 }
-export const newScene = (nom = 'Nouvelle scène') => ({ id: uid(), nom, lieu: '', notes: '', combat: true, npcs: [], live: null });
+export const newScene = (nom = 'Nouvelle scène') => ({ id: uid(), nom, lieu: '', notes: '', combat: true, npcs: [], live: null, choix: [] });
+
+// ---- Mémoire des choix des joueurs ----
+// Entrée du journal : ce que les PJ ont fait, et la suite qu'il faudra leur faire payer (ou récompenser).
+// scen/scene : où c'est arrivé ; rappel : scénario dans lequel la suite doit ressortir ; done/res : fil refermé et comment.
+export const KINDS = [['choix', 'Choix'], ['promesse', 'Promesse'], ['dette', 'Dette / faveur'], ['ennemi', 'Ennemi'], ['allie', 'Allié'],
+  ['secret', 'Secret découvert'], ['superieur', 'Supérieur / hiérarchie'], ['mort', 'Mort / destruction']];
+export const newEntry = (over = {}) => ({ id: uid(), at: Date.now(), scen: null, scene: null, kind: 'choix', txt: '', pjs: [], suite: '', rappel: null, done: false, res: '', ...over });
+// Embranchement préparé dans une scène : question, options (avec leur conséquence) ; entry : entrée du journal une fois tranché
+export const newChoice = (q = '') => ({ id: uid(), q, opts: [], entry: null });
 
 // Fiche minimale compatible avec les règles (seuils, PF, malus, camp pour 111/666)
 export function npcChar(n, blessures = []) {
@@ -109,12 +119,27 @@ export const scen = {
   all() { return Object.values(data.list).sort((a, b) => (b.updatedAt || 0) - (a.updatedAt || 0)); },
   get(id) { return data.list[id] || null; },
   create(nom) { const s = { id: uid(), nom, resume: '', notes: '', scenes: [newScene('Scène 1')], createdAt: Date.now(), updatedAt: Date.now() }; data.list[s.id] = s; persist(); return s; },
-  remove(id) { delete data.list[id]; persist(); },
+  remove(id) {
+    delete data.list[id];
+    data.journal.forEach((e) => { if (e.rappel === id) e.rappel = null; }); // les entrées restent (la campagne s'en souvient)
+    persist();
+  },
   save(s) { if (s) s.updatedAt = Date.now(); persist(); },
   duplicate(id) {
     const s = JSON.parse(JSON.stringify(data.list[id])); s.id = uid(); s.nom += ' (copie)'; s.createdAt = s.updatedAt = Date.now();
-    s.scenes.forEach((sc) => { sc.live = null; }); data.list[s.id] = s; persist(); return s;
+    s.scenes.forEach((sc) => { sc.live = null; (sc.choix || []).forEach((ch) => { ch.entry = null; }); }); data.list[s.id] = s; persist(); return s;
   },
+  // ---- Journal des choix (commun à toute la campagne) ----
+  journal() { return [...data.journal].sort((a, b) => b.at - a.at); },
+  entry(id) { return data.journal.find((e) => e.id === id) || null; },
+  saveEntry(e) { if (!data.journal.includes(e)) { const i = data.journal.findIndex((x) => x.id === e.id); if (i >= 0) data.journal[i] = e; else data.journal.push(e); } persist(); return e; },
+  removeEntry(id) {
+    data.journal = data.journal.filter((e) => e.id !== id);
+    Object.values(data.list).forEach((s) => s.scenes.forEach((sc) => (sc.choix || []).forEach((ch) => { if (ch.entry === id) ch.entry = null; })));
+    persist();
+  },
+  // Noms des PJ déjà cités dans le journal (pour les proposer hors connexion)
+  pjNames() { return [...new Set(data.journal.flatMap((e) => e.pjs))].sort((a, b) => a.localeCompare(b, 'fr')); },
   // ---- Bestiaire : types d'ennemis communs à tous les scénarios ----
   types() { return Object.values(data.types).sort((a, b) => (a.nom || '').localeCompare(b.nom || '', 'fr')); },
   getType(id) { return data.types[id] || null; },
@@ -133,20 +158,40 @@ export const scen = {
   instantiate(typeId, qty) { const t = data.types[typeId]; return t ? { ...clone(t), id: uid(), qty: Math.max(1, qty || 1), typeId } : null; },
   exportOne(id) {
     const s = data.list[id]; const used = new Set(s.scenes.flatMap((sc) => sc.npcs.map((n) => n.typeId).filter(Boolean)));
-    return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [s], bestiaire: [...used].map((t) => data.types[t]).filter(Boolean) }, null, 2);
+    return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [s], bestiaire: [...used].map((t) => data.types[t]).filter(Boolean),
+      memoire: data.journal.filter((e) => e.scen === id || e.rappel === id) }, null, 2);
   },
-  exportTypes() { return JSON.stringify({ format: 'insmv-scenario', version: 1, scenarios: [], bestiaire: this.types() }, null, 2); },
-  importJSON(json) {
+  exportJournal() { return JSON.stringify({ format: 'insmv-memoire', version: 1, memoire: this.journal() }, null, 2); },
+  importJournal(json) {
     const x = JSON.parse(json);
-    const list = x.format === 'insmv-scenario' ? x.scenarios : null;
-    if (!Array.isArray(list)) throw new Error('ce n\'est pas un scénario du Grimoire');
+    if (x.format !== 'insmv-memoire' || !Array.isArray(x.memoire)) throw new Error('ce n\'est pas une mémoire de campagne du Grimoire');
     let n = 0;
-    for (const t of x.bestiaire || []) if (t?.id && !data.types[t.id]) { data.types[t.id] = t; n++; }
-    for (const s of list) {
-      if (!s || !Array.isArray(s.scenes)) continue;
-      s.id = data.list[s.id] ? uid() : s.id || uid(); s.updatedAt = Date.now();
-      data.list[s.id] = s; n++;
+    for (const e of x.memoire) if (e?.id && !data.journal.some((y) => y.id === e.id)) { data.journal.push(newEntry({ ...e, pjs: Array.isArray(e.pjs) ? e.pjs : [] })); n++; }
+    persist(); return { memo: n, already: x.memoire.length - n };
+  },
+  exportTypes() { return JSON.stringify({ format: 'insmv-bestiaire', version: 1, bestiaire: this.types() }, null, 2); },
+  // Ajoute les types d'ennemis absents ; retourne le nombre ajouté
+  _addTypes(list) { let n = 0; for (const t of list || []) if (t?.id && Array.isArray(t.armes) && !data.types[t.id]) { data.types[t.id] = t; n++; } return n; },
+  // Fichier de scénario : les scénarios, plus les types du bestiaire qu'ils utilisent
+  importScenarios(json) {
+    const x = JSON.parse(json);
+    const list = x.format === 'insmv-scenario' && Array.isArray(x.scenarios) ? x.scenarios.filter((s) => s && Array.isArray(s.scenes)) : [];
+    if (!list.length) throw new Error(x.format === 'insmv-bestiaire' ? 'c\'est un bestiaire : importe-le depuis la carte Bestiaire' : 'ce n\'est pas un scénario du Grimoire');
+    const ids = {}; // ancien id → nouvel id (si le scénario existe déjà ici)
+    for (const s of list) { const old = s.id; s.id = data.list[s.id] ? uid() : s.id || uid(); ids[old] = s.id; s.updatedAt = Date.now(); data.list[s.id] = s; }
+    const types = this._addTypes(x.bestiaire);
+    let memo = 0;
+    for (const e of Array.isArray(x.memoire) ? x.memoire : []) {
+      if (!e?.id || data.journal.some((y) => y.id === e.id)) continue;
+      data.journal.push(newEntry({ ...e, scen: ids[e.scen] ?? e.scen, rappel: ids[e.rappel] ?? e.rappel, pjs: Array.isArray(e.pjs) ? e.pjs : [] })); memo++;
     }
-    persist(); return n;
+    persist(); return { scenarios: list.length, types, memo };
+  },
+  // Fichier de bestiaire (ou bestiaire joint à un scénario exporté) : seulement les types d'ennemis
+  importTypes(json) {
+    const x = JSON.parse(json);
+    const list = ['insmv-bestiaire', 'insmv-scenario'].includes(x.format) && Array.isArray(x.bestiaire) ? x.bestiaire : null;
+    if (!list || !list.length) throw new Error(x.format === 'insmv-scenario' ? 'ce scénario ne contient pas de types d\'ennemis : importe-le depuis Mes scénarios' : 'ce n\'est pas un bestiaire du Grimoire');
+    const n = this._addTypes(list); persist(); return { types: n, already: list.length - n };
   },
 };
