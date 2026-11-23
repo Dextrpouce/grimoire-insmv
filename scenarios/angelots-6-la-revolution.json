@@ -1,0 +1,3066 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "ag6-la-revolution",
+      "nom": "Angelots en gelée – La révolution n'est pas un dîner de gala",
+      "resume": "Scénario de Magna Veritas, parodique, pour des anges diplomates et pas trop intégristes. Notre-Dame envoie les PJ en Bolivie retrouver deux anges disparus en enquêtant sur une novice stigmatisée (Pilar, en fait une succube qui s'ignore). Ils découvrent qu'Alberto Suarez, ministre de l'Agriculture et démon d'Uphir, prépare avec ses complices (Nicanor, Abigaël, Ramon) l'épandage d'un défoliant monstrueux et sa prise de pouvoir. Ils doivent rallier les forces du Bien locales, brouillées entre elles (Tupac, guérillero de Michel, et Douglas, officier US de Laurent), et l'empêcher de devenir président.",
+      "notes": "Source : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.\nTon : la Bolivie est un pays de bande dessinée (« relisez Tintin ») ; inutile d'être réaliste.\n\nHistoire secrète (résumé) : Suarez veut devenir président provisoire à la prochaine crise pour épandre, sous couvert de lutte anti-coca, la « malédiction de Choquenard & Faugne », produit expérimental d'Uphir mis en fûts à Maldita Cruz. Greta Banzer le revend à l'État sans savoir ce que c'est ; Douglas, manipulé, veut l'épandre. Nicanor attise la haine entre Douglas et Tupac. Stanley, Livingstone et Chico sont morts à Maldita Cruz, tués par le service d'ordre ; ils ne sont jamais allés voir Pilar.\nFil de l'enquête : La Paz (Douglas, dîner à l'Austria, Greta) → Chacomambo (Pilar, fausse piste) → harcèlement et faux témoins (Buddy) vers Tupac → Huallap (Carmelito) → Maldita Cruz (preuves) → crise présidentielle à La Paz.\n\nRègle locale « grèves et barrages » (p. 96) :\n• Chaque fois qu'un joueur fait un double aux dés, l'électricité est coupée dans toute la région pendant RU heures.\n• Sur un triple, les routes sont bloquées pendant RU/2 jours : marche à pied, ou baratiner les indios en colère aux barrages (l'ELP peut aussi faire passer les PJ).\n• Transports : un seul train dans le pays ; bus solidaires de la contestation ou 4×4 de location. Durées données en 4×4 (La Paz → Chacomambo 5 h, La Paz → Huallap 15 h) ; doubler pour le bus. L'armée embarque des particuliers contre paiement sur ses vieux avions de liaison.\n• Les villes ont téléphone, Internet, une gare de bus bruyante et une place d'armes pour les manifestations.\n\nEncadrés de contexte : la Bolivie (capitale officielle Sucre, élus à La Paz ; indios aymaras, quechuas, guaranis, catholiques mais fidèles à Pachamama ; soulèvement populaire comme sport national) et la coca (plante sacrée mâchée depuis des millénaires, culture éradiquée sous pression des États-Unis).\nLangue : jet difficile de Volonté pour se débrouiller en espagnol (automatique à Volonté 4+).\nRécompenses : le livre ne donne pas de barème de PA ; à évaluer selon que Suarez est arrêté, le défoliant détruit, les alliés préservés (Tupac, Douglas, Alcazar, Pilar) et le massacre évité. Exécuter Pilar ou se faire adorer comme des idoles peut valoir des ennuis au retour.\nFiches : 10 PNJ chiffrés (p. 95-97) ; Tupac et les démons de combat repris du bestiaire de l'application. Troupes (Commando Jaguar, narcos, mercenaires) estimées ; soldats de l'ELP = section légère de l'écran.",
+      "scenes": [
+        {
+          "id": "ag6-sc-mission",
+          "nom": "1. La niña santa",
+          "lieu": "Cafétéria de Roissy, puis vol Delta pour La Paz",
+          "notes": "Briefing : un bagagiste bègue confie la mission au nom de Notre-Dame. Une novice indienne, sœur Pilar Mantes (17 ans, mission de Santa Lucia à Chacomambo, 200 km à l'est de La Paz), aurait des stigmates chaque Noël. Les pères Stanley (ange de Dominique) et Livingstone (ange de Joseph), envoyés enquêter avec un guide novalis drogué nommé Chico, ne donnent plus de nouvelles depuis dix jours : on craint une mort violente. Un ange de Laurent les accueillera.\nLa malle remise : appareils photo, guides, sombreros, dossier sur les trois disparus (vertus mais pas pouvoirs).\nArrivée : La Paz, 4000 m, froid, pays en ébullition, personne ne porte de sombrero.\nRègle « Vamos a la playa » : un ange qui veut apprendre l'espagnol pendant le voyage réussit un jet difficile de Volonté (automatique à Volonté 4 ou plus) ; il ne note pas la langue mais peut se débrouiller.\n\nContexte MJ : Suarez, ministre de l'Agriculture et démon d'Uphir, veut devenir président provisoire et épandre un défoliant toxique. Il attend cette seconde équipe de pied ferme.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag6-sc-aeroport",
+          "nom": "2. America perdida",
+          "lieu": "Aéroport de La Paz, puis QG de Douglas (ancien hôtel)",
+          "notes": "Accueil par une haie de bérets verts, Douglas Backtouch (ange de Laurent, commandant américain) et le clairon Brandon O'Fish.\nLe camion de Douglas explose au démarrage : blessure légère pour tous (truquer les dés ; une détection du danger « ne marche pas »). C'est un test des démons pour vérifier que les arrivants sont des anges ; ils n'étaient pas vraiment visés. Parmi les hommes de Douglas, des blessés et un mort (un expert du FMI, par infarctus).\nDouglas accuse aussitôt Tupac (ange déviant de Michel, lié selon lui à Nisroch et à la 3e Force). Au QG, il équipe les PJ d'une jeep et d'armes, prière et Évangile à l'appui. Il est fier de son unité spéciale de la DEA contre la coca, curieux de la mission des PJ, et pense que Tupac a tué les prêtres (avec la complicité de Chico). Pour lui, Pilar est une affabulation d'indiens superstitieux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag6-douglas-1",
+              "nom": "Douglas Backtouch",
+              "source": "Ange de Laurent, grade 1 (commandant américain de la DEA ; nom d'ange : Potdemiel)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 7), Défense 5, Tir 3 (armes automatiques 5), Savoir militaire 2 (Chargez ! 4), Se faire rouler dans la farine 4+, Jouer des chansons country à la guitare 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brave crétin, pieux, bavard, à la tête d'une centaine d'agents (soldats de Dieu à diplomates). Croit que Tupac est le coupable de tout et que Suarez est un ministre intègre ; il est l'indic inconscient des démons. Prépare avec Suarez l'épandage d'un défoliant « qui ne touche que la coca ». Brouillé avec Tupac pour le surnom d'« El lobo ».\nÀ la fin : difficile à motiver, mais s'il a la preuve que Suarez et Nicanor sont des démons, il sera le premier à charger.\nLe livre écrit « Juste lame » : nom des règles, Juste-lame. PS 7 du livre pris comme PF. Fusil automatique estimé (Tir armes automatiques 5, arme de la table).\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : lunettes de poseur, bel uniforme, idées préconçues sur les indiens, guitare sèche, nostalgie du Colorado.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-douglas"
+            },
+            {
+              "id": "ag6-brandon-2",
+              "nom": "Brandon O'Fish",
+              "source": "Jeune clairon parachutiste de Douglas (soldat de Dieu)",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Enthousiaste, joue du clairon à l'arrivée des PJ ; il faut le frapper pour qu'il se taise. Reste à attendre les secours après l'explosion du camion.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-brandon"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag6-sc-lapaz",
+          "nom": "3. Good morning Bolivia",
+          "lieu": "La Paz : QG de Douglas, ville en grève, restaurant l'Austria",
+          "notes": "L'enquête sur la bombe ne mène nulle part : le camion est resté au garage, gardé par un soldat endormi ; tout le monde savait que les PJ arrivaient, grâce à Douglas.\nDouglas est l'indic inconscient des démons : il a jadis massacré les démons de Nisroch, sauf Abigaël, qui s'est allié aux démons locaux pour le manipuler.\nIndices : Douglas prépare avec le ministre Suarez (réputé intègre) l'épandage d'un défoliant de la société Banzer sur les champs de coca des Youngas, censé ne toucher que la coca. Il en a confié un échantillon à Chico. Il présente ses alliés lors d'un dîner à l'Austria :\n• Greta Banzer : revend comme neufs de « vieux fonds de cuves » que lui cède Suarez ; ignore que c'est un produit expérimental d'Uphir. Démasquée, elle donne le site de reconditionnement, sous-traité à Air Conditioned Sky.\n• Nicanor Duende (démon de Malphas), écrivain mondain : veut devenir l'ami des PJ et les pousser à tuer Douglas ou Tupac.\n• Esteban Alcazar, lieutenant-colonel intègre, demande aux PJ d'aider à dissuader Douglas ; il prend du grade à chaque retour des PJ à La Paz.\nSuarez est injoignable (Santa-Cruz, « mère mourante »). Le président Tortilla vient d'accepter d'enterrer des déchets électroniques contre une somme disparue : mineurs, campesinos et indios marchent sur La Paz ; bâtiments publics fermés, répression, chaos croissant. Quitter ou rejoindre La Paz demande du temps (barrages des cocaleros) : voir la règle des grèves dans les notes.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag6-douglas-3",
+              "nom": "Douglas Backtouch",
+              "source": "Ange de Laurent, grade 1 (commandant américain de la DEA ; nom d'ange : Potdemiel)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 7), Défense 5, Tir 3 (armes automatiques 5), Savoir militaire 2 (Chargez ! 4), Se faire rouler dans la farine 4+, Jouer des chansons country à la guitare 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brave crétin, pieux, bavard, à la tête d'une centaine d'agents (soldats de Dieu à diplomates). Croit que Tupac est le coupable de tout et que Suarez est un ministre intègre ; il est l'indic inconscient des démons. Prépare avec Suarez l'épandage d'un défoliant « qui ne touche que la coca ». Brouillé avec Tupac pour le surnom d'« El lobo ».\nÀ la fin : difficile à motiver, mais s'il a la preuve que Suarez et Nicanor sont des démons, il sera le premier à charger.\nLe livre écrit « Juste lame » : nom des règles, Juste-lame. PS 7 du livre pris comme PF. Fusil automatique estimé (Tir armes automatiques 5, arme de la table).\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : lunettes de poseur, bel uniforme, idées préconçues sur les indiens, guitare sèche, nostalgie du Colorado.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-douglas"
+            },
+            {
+              "id": "ag6-greta-4",
+              "nom": "Greta Banzer",
+              "source": "Femme d'affaires bolivienne, société de chimie Banzer (quarante ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 4 (estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ronde et blonde, héritière d'un grand-père qui a fui l'Allemagne. Fournit le défoliant : Suarez lui cède pour rien de « vieux fonds de cuves » qu'elle réétiquette et revend à l'État, et ils partagent. Elle ignore que c'est un produit expérimental d'Uphir. A été interrogée en cachette par Stanley et Livingstone. Percée à jour, elle avoue et donne le site de reconditionnement (sous-traité à Air Conditioned Sky).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talent estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-greta"
+            },
+            {
+              "id": "ag6-nicanor-5",
+              "nom": "Nicanor Duende",
+              "source": "Démon de Malphas, grade 2 (écrivain mondain, bras droit de Suarez)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 10,
+                "vo": 10,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 29,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Jet de flammes",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 4
+                },
+                {
+                  "n": "Discorde",
+                  "r": 10
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Rêve",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 7, Baratin 6, Défense 4, Tir 2+ (jet de flammes 3+), Hobby (embrouiller les PJ) 4+, Métier (devenir votre ami) 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dandy au look de retraité de la salsa, ami de tout le monde, entremetteur entre Douglas et le gratin bolivien. Entretient la discorde entre Douglas et Tupac (il était témoin de leur brouille) et cherche à faire tuer l'un des deux anges par les PJ, idéalement les deux. A refait la mémoire de Buddy. Fuit dès que ça tourne mal.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : panama, chemise décontractée, sourire fripé, lunettes noires, canne de dandy.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-nicanor"
+            },
+            {
+              "id": "ag6-alcazar-6",
+              "nom": "Esteban Alcazar",
+              "source": "Lieutenant-colonel de l'armée bolivienne, seul ami sincère de Douglas",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune, ambitieux mais intègre, veut lutter contre le trafic sans écraser la population ; redoute l'ordre de tirer sur les manifestants. Demande aux PJ de dissuader Douglas d'épandre le défoliant. Prend du grade à chaque retour des PJ à La Paz, jusqu'à général à la fin : un allié précieux, voire un bon candidat à la présidence.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Arme de service estimée.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-alcazar"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag6-ch-greta",
+              "q": "Les PJ percent-ils Greta Banzer à jour ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Aveux et emplacement du site de reconditionnement (Air Conditioned Sky) : piste directe vers Maldita Cruz."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Elle vante sa société de chimie et ne dit rien ; il faudra retrouver la piste des prêtres par Huallap."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag6-sc-chacomambo",
+          "nom": "4. Amers indiens",
+          "lieu": "Chacomambo, mission de Santa Lucia (ruine coloniale au-dessus du village)",
+          "notes": "Cinq heures de jeep sur une piste de montagne. Six sœurs et une douzaine d'orphelins dans une ruine rafistolée de sacs poubelle ; les PJ doivent négocier pour y loger (sinon le Gringo Paradise Guest House, à cinq heures de marche, à Guaga).\nMère Rosalia ne croit pas qu'ils soient envoyés du Ciel, sauf si l'un d'eux est prêtre ; un petit miracle est toléré ici, mais il faut surtout prouver ses bonnes intentions et sa connaissance de la Foi.\nPilar est une succube qui s'ignore et simule ses stigmates par illusion : voir sa fiche. Le village vit de sa « sainte » et est prêt à lyncher ou jeter dans un ravin quiconque la menace.\nPersonne n'a vu les deux pères : ils ne sont jamais venus à Chacomambo.\nSe faire bien voir des indios (Chacomambo et Huallap) : jouer avec les enfants, réparer le minibus, retrouver un lama perdu… Ils renseignent alors les PJ (un groupe de soldats et des narcos sont sur leur piste) et mentent pour les cacher. Abus de pouvoirs : risque d'être adorés comme des idoles (ennuis au retour en France). Mépris : un villageois les livre à la bande d'Abigaël.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag6-rosalia-7",
+              "nom": "Mère Rosalia",
+              "source": "Vieille mère supérieure de la mission de Santa Lucia",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sait que Pilar simule ses stigmates et s'en accommode (elle en est en partie l'instigatrice, pour faire vivre la mission) ; serait la première surprise d'apprendre que c'est de la vraie magie, donc une diablerie. Aime Pilar comme sa fille. Méfiante envers des étrangers qui se disent envoyés du Très-Haut.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-rosalia"
+            },
+            {
+              "id": "ag6-pilar-8",
+              "nom": "Sœur Pilar Mantes",
+              "source": "Fausse vierge miraculeuse et vraie succube (novice de 17 ans, mission de Santa Lucia)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 10,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 2
+                },
+                {
+                  "n": "Gag absurde",
+                  "r": 2
+                },
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Défense 2, Prestidigitation 4, Survie 2 (altiplano 3), Simuler des crises mystiques 2, Rêver d'Hollywood 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Métisse abandonnée, recueillie par les sœurs. Succube qui s'ignore : elle se croit mutante (façon comics), ne croit pas en Dieu et simule ses stigmates à Noël avec ses illusions pour faire venir les dons à l'orphelinat. Rêve de La Paz et de cinéma. Son aura se grise par endroits : elle est aux limites de l'apostasie.\nSi on lui laisse découvrir le Grand Jeu, elle sera terrifiée d'appartenir au Mal et se fera violence pour rejoindre les anges ; les PJ peuvent aussi l'exécuter, à eux d'assumer (le village l'adore).\nLe livre donne « Aura d'apaisement 1 » : rendu par Aura de pacification, le pouvoir le plus proche des règles. Aucune attaque dans le livre : coup de poing niveau 1 estimé. PS 5 du livre pris comme PF.\nÉquipement : tenue de nonne en piètre état, illusions sur le monde.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-pilar"
+            },
+            {
+              "id": "ag6-indio-9",
+              "nom": "Indio typique",
+              "source": "Villageois aymara ou quechua",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                13
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Défense 1+, Maudire ces enfoirés de gringos 2, Rêver d'avoir un pick-up 2, Savoir occulte 1 (catholicisme maison 2), Survie 2 (altiplano 3), Technique 1 (mécanique 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Analphabète mais accueillant ; très catholique et fidèle à Pachamama. Prêt à l'irréparable pour défendre sa « sainte ». Pas d'attaque dans le livre : coup de poing niveau 1 estimé.\nÉquipement : poncho, couvertures en laine de lama, chapeau ridicule.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-indio"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag6-ch-pilar",
+              "q": "Que font les PJ de Pilar ?",
+              "opts": [
+                {
+                  "t": "Ils lui révèlent le Grand Jeu et la protègent",
+                  "suite": "Terrifiée, elle se range du côté des anges : un atout pour la fin (illusions, ferveur populaire)."
+                },
+                {
+                  "t": "Ils l'exécutent",
+                  "suite": "Créature du Mal éliminée, mais le village (et Rosalia) les haïssent ; risque de lynchage, informations coupées."
+                },
+                {
+                  "t": "Ils la laissent tranquille",
+                  "suite": "Rien ne change ; elle reste une inconnue pour la suite."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "ag6-ch-village",
+              "q": "Comment les villageois perçoivent-ils les PJ ?",
+              "opts": [
+                {
+                  "t": "Serviables et sympathiques",
+                  "suite": "Informations, repas gratuits, protection ; on les prévient des soldats et narcos qui les suivent."
+                },
+                {
+                  "t": "Méprisants ou faiseurs de miracles à tout va",
+                  "suite": "Méfiance ou adoration encombrante ; un indio excédé peut les livrer à Abigaël."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag6-sc-harcelement",
+          "nom": "5. Quand lama fâché…",
+          "lieu": "Routes de l'Altiplano et de la Cordillera Real",
+          "notes": "Buddy, touriste australien insupportable, croise les PJ où qu'ils soient : il aurait vu dix jours plus tôt deux prêtres et un indien partir voir Tupac à Choruro. Faux témoignage implanté par Nicanor, qui prépare d'autres « témoins » contre Tupac (une vieille indienne accusant de meurtre et de trafic…) et risque d'en faire trop.\nFilature : Nicanor et Ramon, avec le Commando Jaguar (cinq jeeps), à une demi-journée ; Ramon observe parfois sous forme de lama. Abigaël et une douzaine d'hommes font du tir aux anges : snipers guaranis de très loin, pour harceler et pousser les PJ vers Tupac. Il paie des gamins pour cacher de la cocaïne dans leurs affaires et prévient la police (qui veut surtout de l'argent).\nSi les PJ semblent dangereux : embuscade des servants humains sur une route de montagne à pic, puis poursuite (circulation alternée, pas de bitume, camions). Ensuite, les démons les font passer pour des hors-la-loi recherchés (ordre appliqué mollement).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag6-buddy-10",
+              "nom": "Buddy",
+              "source": "Touriste australien, la quarantaine, plein aux as",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Exaspérant, parle fort de son zoom. Prétend avoir pris dans son bus, dix jours plus tôt, deux prêtres et un indien en panne dans la Cordillera Real, descendus à Choruro pour voir Tupac. Faux témoin : Nicanor lui a refait la mémoire pour accuser Tupac.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-buddy"
+            },
+            {
+              "id": "ag6-narcos-11",
+              "nom": "Narcos d'Abigaël",
+              "source": "Narco-guérilleros (douzaine d'hommes, dont des snipers guaranis)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil à lunette (snipers)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Conduite 2, Défense 2, Discrétion 2, Survie 2 (jungle 3), Tir 2 (fusil à lunette 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tirent de très loin pour harceler, pas pour tuer ; plus de dégâts collatéraux que de mal aux anges. Montent l'embuscade routière si l'équipe a l'air dangereuse.\nAucune caractéristique dans le livre : profil entièrement estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-narcos"
+            },
+            {
+              "id": "ag6-jaguars-12",
+              "nom": "Commando Jaguar",
+              "source": "Forces spéciales boliviennes de Ramon (humains)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "M-16",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau de combat",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Combat 3, Conduite 3, Défense 3, Discrétion 3, Savoir militaire 2, Survie 2 (altiplano 3), Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Unité d'élite de Ramon ; cinq jeeps suivent les PJ à une demi-journée. Gardent aussi le parlement à la fin.\nAucune caractéristique dans le livre : profil de soldat d'élite entièrement estimé (proche des miliciens de l'écran, mieux armés).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-jaguars"
+            },
+            {
+              "id": "ag6-abigael-13",
+              "nom": "Abigaël Linarès",
+              "source": "Démon de Nisroch, grade 2 (narco, ancien du Sentier Lumineux)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Langue barbelée",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Kalachnikov",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Accoutumance",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : langue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4, Défense 6, Discrétion 4, Tir 3 (armes d'assaut 6), Hobby (inventer des citations marxistes) 3+, Savoir criminel 2 (narco guérilla 6), Savoir militaire 2 (guérilla 3), Survie 3 (altiplano 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dernier démon de Nisroch survivant après que Douglas a massacré les autres : au lieu de se venger, il s'est associé aux démons du coin pour manipuler l'ange. Harcèle les PJ avec une douzaine d'hommes et des snipers guaranis, pour s'amuser plutôt que pour tuer ; paie des gamins pour glisser de la cocaïne dans leurs affaires puis les dénonce.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : petit livre rouge, sac de cocaïne, kalachnikov.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-abigael"
+            },
+            {
+              "id": "ag6-ramon-14",
+              "nom": "Ramon « el perro » Carne",
+              "source": "Démon de Caym, grade 2 (commandant du Commando Jaguar, vétéran du plan Condor)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "M-16",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Éventration",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Transformation",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 6, Défense 6, Discrétion 6, Tir 3 (arme d'assaut 6), Savoir militaire 3 (représailles sur les civils 4), Hobby (tresser des colliers d'oreilles) 2, Survie 3 (Altiplano 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chasseur d'hommes sadique ; fait très bien le lama (Transformation) pour observer les PJ. Suit les PJ à une demi-journée avec Nicanor et des hommes du Commando Jaguar (cinq jeeps). Avec Abigaël, un jeu de quinze ans : celui qui a fait le plus de victimes civiles dans l'année se fait offrir le dîner de Noël.\nLe livre donne « Augmentation temporaire de perception 3 » : rendu par Augmentation de Perception.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : tête de gendre idéal, bel uniforme, nombreuses médailles.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-ramon"
+            },
+            {
+              "id": "ag6-nicanor-15",
+              "nom": "Nicanor Duende",
+              "source": "Démon de Malphas, grade 2 (écrivain mondain, bras droit de Suarez)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 10,
+                "vo": 10,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 29,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Jet de flammes",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 4
+                },
+                {
+                  "n": "Discorde",
+                  "r": 10
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Rêve",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 7, Baratin 6, Défense 4, Tir 2+ (jet de flammes 3+), Hobby (embrouiller les PJ) 4+, Métier (devenir votre ami) 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dandy au look de retraité de la salsa, ami de tout le monde, entremetteur entre Douglas et le gratin bolivien. Entretient la discorde entre Douglas et Tupac (il était témoin de leur brouille) et cherche à faire tuer l'un des deux anges par les PJ, idéalement les deux. A refait la mémoire de Buddy. Fuit dès que ça tourne mal.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : panama, chemise décontractée, sourire fripé, lunettes noires, canne de dandy.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-nicanor"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag6-sc-tupac",
+          "nom": "6. Hasta la victoria, siempre !",
+          "lieu": "Montagnes de l'Altiplano : hameau abandonné de cinq maisons, camp de l'ELP",
+          "notes": "Tupac entend parler des gringos et vient leur tendre une embuscade « amicale » : il ne tire pas tout de suite, et pas du tout s'ils se montrent anges. Les PJ gagnent sa confiance s'ils ne sont pas rigoristes (ses hommes sacrifient bière et cigarettes à Pachamama). Son camp est presque introuvable : les indios ne trahissent pas leur bienfaiteur.\nCe que disent les soldats de Dieu de l'ELP :\n• Ils n'ont pas vu Stanley et Livingstone, mais on parle de deux prêtres européens disparus vers Huallap.\n• Tupac est l'ami de Marco Moralès, leader indien qui coordonne les manifestations à La Paz ; il compte y aller en simple manifestant. L'ELP peut faire passer les PJ aux barrages des cocaleros.\n• Douglas et Tupac se connaissent : il y a cinq ans, ils ont failli s'entendre, puis se sont brouillés pour le surnom d'« El lobo ». Depuis, les hélicos de la DEA ont mitraillé l'ancien camp de Tupac, qui a juré la perte de Douglas. Nicanor assistait à l'entrevue et a attisé la querelle avec ses pouvoirs.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag6-tupac-16",
+              "nom": "Tupac « el lobo »",
+              "source": "Ange de Michel, grade 1 (guérillero aymara, chef de l'ELP)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 10,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Lance bénite mineure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Kalachnikov",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                }
+              ],
+              "talents": "Acrobatie 5, Combat 4 (lance 7), Discrétion 5, Tir 4 (armes automatiques 7), Savoir militaire 3 (guérilla 4), Survie 3 (Altiplano 4+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Robin des bois de l'Altiplano : braquages et détournements de camions de vivres au profit des pauvres. Vit caché dans un hameau abandonné de cinq maisons avec une demi-douzaine de soldats de Dieu peu orthodoxes ; peut lever quatre cents volontaires mal armés. Ami de Marco Moralès. Déteste Douglas depuis leur brouille sur le surnom « El lobo » et le mitraillage de son camp par la DEA.\nDéfense non donnée par le livre (valeur du bestiaire).\nÉquipement : poncho miteux, bonnet andin, kalachnikov, idées préconçues sur les gringos, photo du Che.\nSource : Angelots en gelée (scénario), p. 97.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "book": "Angelots en gelée (scénario), p. 97",
+              "typeId": "type-ag6-tupac"
+            },
+            {
+              "id": "ag6-elp-17",
+              "nom": "Soldats de Dieu de l'ELP",
+              "source": "Armée de libération populaire de Tupac (demi-douzaine)",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 2
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 3, Athlétisme 3, Conduite 3, Corps à corps 3, Défense 3, Discrétion 4, Intimidation 2, Savoir militaire 2 (reconnaissance 3), Tir 2 (armes de poing 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Soldats de Dieu peu orthodoxes, qui craignent encore les esprits de l'Altiplano et sacrifient bière et cigarettes à Pachamama. Le livre ne les chiffre pas : profil « section légère » de l'écran du maître, à équiper de kalachnikovs au besoin.\nUne grenade fumigène. Section de six hommes ; peut être assignée à tout un groupe d'anges (coût en PA partagé).\nSource : Livret de l'écran du maître, p. 14.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "book": "Livret de l'écran du maître, p. 14",
+              "typeId": "type-ag6-elp"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag6-ch-tupac",
+              "q": "Comment se passe la rencontre avec Tupac ?",
+              "opts": [
+                {
+                  "t": "Ils se font reconnaître et gagnent sa confiance",
+                  "suite": "Allié : infos, passage des barrages, quatre cents volontaires pour la fin."
+                },
+                {
+                  "t": "L'affrontement tourne mal",
+                  "suite": "Combat contre un ange de Michel redoutable et ses hommes : les démons ont gagné une manche."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag6-sc-huallap",
+          "nom": "7. Huallap",
+          "lieu": "Huallap, village au pied de Maldita Cruz (15 h de jeep au sud de La Paz)",
+          "notes": "Les pères ne sont jamais allés voir Pilar : à La Paz, leurs pouvoirs ont révélé la corruption ; ils ont enguirlandé Douglas, enquêté sur Banzer et Suarez, puis sont partis avec Chico fouiller Maldita Cruz, où le service d'ordre les a taillés en pièces.\nLes 300 habitants se souviennent d'eux mais se taisent : les forces spéciales les ont menacés. Leur mutisme apeuré est déjà un indice. Avec patience, gentillesse et indépendance affichée envers le pouvoir, les PJ obtiennent un rendez-vous dans la montagne avec Carmelito : il a hébergé les trois hommes, partis de nuit vers Maldita Cruz.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag6-carmelito-18",
+              "nom": "Carmelito",
+              "source": "Jeune homme de Huallap",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A hébergé Stanley, Livingstone et Chico, partis de nuit vers Maldita Cruz pour ne jamais revenir. Ne parle qu'en rendez-vous secret dans la montagne, après que les PJ ont gagné la confiance du village, et supplie qu'on n'attire pas les représailles de l'armée.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-carmelito"
+            },
+            {
+              "id": "ag6-indio-19",
+              "nom": "Indio typique",
+              "source": "Villageois aymara ou quechua",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                13
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Défense 1+, Maudire ces enfoirés de gringos 2, Rêver d'avoir un pick-up 2, Savoir occulte 1 (catholicisme maison 2), Survie 2 (altiplano 3), Technique 1 (mécanique 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Analphabète mais accueillant ; très catholique et fidèle à Pachamama. Prêt à l'irréparable pour défendre sa « sainte ». Pas d'attaque dans le livre : coup de poing niveau 1 estimé.\nÉquipement : poncho, couvertures en laine de lama, chapeau ridicule.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-indio"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag6-sc-maldita",
+          "nom": "8. La malédiction de Choquenard et Faugne",
+          "lieu": "Maldita Cruz : site de reconditionnement dans une vallée encaissée, sur un vieux cimetière indien",
+          "notes": "Une large piste, un bus d'ouvriers (arrivée 7 h, départ 19 h), une grille en lambeaux, une douzaine de mercenaires anglophones : l'approche paraît facile.\nEn réalité : Paul Choquenard (polytechnicien dément, adorateur d'Uphir) et Faugne mettent en fûts pour Air Conditioned Sky la « malédiction de Choquenard & Faugne », qui favorise la coca au détriment des autres plantes et fait naître des enfants aux yeux globuleux. Ils sont téléguidés par Viiv' n' dyys, le familier de Suarez posé sur le bureau, qui alerte les démons par télépathie.\nAu sous-sol interdit : Az'ed'eff et Toho T'aal, démons de combat d'Uphir, gardent le stock. Choquenard les lâche (et sacrifie gardes et ouvriers en diversion) dès que les PJ menacent le site.\nLe bureau de Choquenard contient toutes les preuves : effets du produit, implication et nature démoniaque de Suarez, ses projets, et un dossier de chantage contre Greta Banzer.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag6-mercenaires-20",
+              "nom": "Mercenaires de Maldita Cruz",
+              "source": "Soldats de fortune anglophones (une douzaine)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Corps à corps 3, Défense 3, Savoir militaire 2, Tir 3, Vigilance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gardent le site depuis des années ; Choquenard n'hésite pas à les sacrifier en diversion. Ils ignorent l'existence des démons de combat.\nAucune caractéristique dans le livre : profil entièrement estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-mercenaires"
+            },
+            {
+              "id": "ag6-choquenard-21",
+              "nom": "Paul Choquenard",
+              "source": "Polytechnicien français dément, adorateur d'Uphir, patron de Maldita Cruz",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Science 4 (chimie, estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gère la mise en fûts du défoliant avec Faugne pour leur société Air Conditioned Sky ; prend le familier de Suarez pour une divinité de Pluton. Son bureau contient tout : effets du produit, implication et vraie nature de Suarez, et un dossier pour faire chanter Greta Banzer. Lâche les démons de combat ou les gardes sans scrupule.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talent estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-choquenard"
+            },
+            {
+              "id": "ag6-faugne-22",
+              "nom": "Faugne",
+              "source": "Condisciple de Choquenard, adorateur d'Uphir",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Recruté dans l'annuaire des anciens de Polytechnique ; co-inventeur de la « malédiction de Choquenard & Faugne ».\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-faugne"
+            },
+            {
+              "id": "ag6-viiv-23",
+              "nom": "Viiv' n' dyys",
+              "source": "Familier de Suarez (shoggoth de table)",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Élastique",
+                  "r": 2
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                }
+              ],
+              "talents": "Défense 3, Discrétion 3, Onduler sur des rythmes antédiluviens 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Posé comme une idole impie sur le bureau de Choquenard, qui le prend pour une divinité venue de Pluton ; téléguide les deux polytechniciens et prévient les démons par télépathie au moindre problème.\nRessemble à une éponge de bain couverte d'yeux et de petits tentacules. Pas d'attaque dans le livre.\nLe livre écrit « Élasticité 1 » : nom des règles, Élastique. PS 4 du livre pris comme PF.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-viiv"
+            },
+            {
+              "id": "ag6-combat-uphir-24",
+              "nom": "Az'ed'eff et Toho T'aal",
+              "source": "Démons de combat d'Uphir (gardiens du stock de Maldita Cruz)",
+              "type": "combat",
+              "qty": 2,
+              "car": {
+                "fo": 14,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 14,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Tentacules",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Jet d'acide",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Apparence horrifique",
+                  "r": 10
+                },
+                {
+                  "n": "Élastique",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Immunité contre l'acide",
+                  "r": 0
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique : tentacules",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Vengeance toxique",
+                  "r": 2
+                }
+              ],
+              "talents": "Coup de tentacule 6, Intimidation 5, Tir 1 (jet d'acide 4), Contempler l'abîme du temps 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Deux horreurs vertes et gluantes à tentacules, qui vivent comme des bêtes dans le sous-sol interdit au personnel et gardent le stock de défoliant. Lâchés contre les PJ par Choquenard ou le familier.\nSource : Angelots en gelée (scénario), p. 97.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "book": "Angelots en gelée (scénario), p. 97",
+              "typeId": "type-ag6-combat-uphir"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag6-ch-preuves",
+              "q": "Les PJ récupèrent-ils les preuves du bureau ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "De quoi convaincre Douglas et Alcazar, et faire chanter Greta Banzer."
+                },
+                {
+                  "t": "Non (site détruit ou fuite)",
+                  "suite": "Le stock est peut-être perdu, mais il faudra convaincre Douglas sans preuve."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag6-sc-pueblo",
+          "nom": "9. Un pueblo unido jamás será vencido",
+          "lieu": "La Paz : barrages, rues en révolte, parlement colonial",
+          "notes": "Au moment choisi par le MJ, le président Carlos Tortilla y Queso meurt d'un infarctus dans sa villa (prostituées mineures et trafiquants vendent le scoop à la télé). Le vice-président est en fuite aux États-Unis : les élus se ruent sur La Paz à travers les barrages.\nSuarez est le favori : ramené par un avion de Ramon, il doit s'imposer devant une assemblée encerclée par le Commando Jaguar ; ses premières décisions : mitrailler les manifestants, puis épandre le produit.\nLes PJ apprennent la vacance du pouvoir par la radio ou des alliés, en même temps que leurs ennemis. Atouts : Tupac et l'ELP, Alcazar (qui ferait un bon candidat), Pilar. Il faut foncer sur La Paz, passer les barrages et empêcher Suarez d'entrer au parlement (ou d'en sortir vivant).\nDouglas, proche du pouvoir soutenu par Washington, est dur à convaincre ; avec la preuve que Suarez et Nicanor sont des démons, il charge le premier.\nRamon, Abigaël et leurs hommes défendent leur chef jusqu'au bout, retranchés s'il le faut dans le bâtiment. Les leaders indiens tentent d'y entrer en force : boucherie, sauf si les PJ, en bons termes avec l'ELP, l'empêchent.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag6-suarez-25",
+              "nom": "Alberto Suarez",
+              "source": "Démon d'Uphir, grade 2 (ministre de l'Agriculture de Bolivie)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 29,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Tentacules",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Esprits multiples",
+                  "r": 4
+                },
+                {
+                  "n": "Graisse",
+                  "r": 6
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique : tentacules",
+                  "r": 0
+                },
+                {
+                  "n": "Peau acide",
+                  "r": 6
+                },
+                {
+                  "n": "Vengeance toxique",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 7, Baratin 6, Combat 5, Défense 4, Tir 1+ (jet d'acide 5), Métier (détruire le monde) 3+, Savoir criminel 2 (politique 6), Science 2 (chimie 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le grand méchant : escroc, élu véreux, secrétaire d'État, puis ministre. Veut devenir président provisoire à la prochaine crise pour faire épandre des milliers de tonnes de défoliant (la « malédiction de Choquenard & Faugne ») sous prétexte de lutte anti-coca. Retiré à Santa-Cruz pendant les troubles (« au chevet de sa mère »), injoignable.\nJet d'acide : pouvoir sans attaque chiffrée dans le livre (Tir jet d'acide 5), à gérer avec le pouvoir.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : costume hors de prix, carnet d'adresses fourni, belle tête de méchant.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-suarez"
+            },
+            {
+              "id": "ag6-ramon-26",
+              "nom": "Ramon « el perro » Carne",
+              "source": "Démon de Caym, grade 2 (commandant du Commando Jaguar, vétéran du plan Condor)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "M-16",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Éventration",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Transformation",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 6, Défense 6, Discrétion 6, Tir 3 (arme d'assaut 6), Savoir militaire 3 (représailles sur les civils 4), Hobby (tresser des colliers d'oreilles) 2, Survie 3 (Altiplano 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chasseur d'hommes sadique ; fait très bien le lama (Transformation) pour observer les PJ. Suit les PJ à une demi-journée avec Nicanor et des hommes du Commando Jaguar (cinq jeeps). Avec Abigaël, un jeu de quinze ans : celui qui a fait le plus de victimes civiles dans l'année se fait offrir le dîner de Noël.\nLe livre donne « Augmentation temporaire de perception 3 » : rendu par Augmentation de Perception.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : tête de gendre idéal, bel uniforme, nombreuses médailles.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-ramon"
+            },
+            {
+              "id": "ag6-abigael-27",
+              "nom": "Abigaël Linarès",
+              "source": "Démon de Nisroch, grade 2 (narco, ancien du Sentier Lumineux)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Langue barbelée",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Kalachnikov",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Accoutumance",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : langue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4, Défense 6, Discrétion 4, Tir 3 (armes d'assaut 6), Hobby (inventer des citations marxistes) 3+, Savoir criminel 2 (narco guérilla 6), Savoir militaire 2 (guérilla 3), Survie 3 (altiplano 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dernier démon de Nisroch survivant après que Douglas a massacré les autres : au lieu de se venger, il s'est associé aux démons du coin pour manipuler l'ange. Harcèle les PJ avec une douzaine d'hommes et des snipers guaranis, pour s'amuser plutôt que pour tuer ; paie des gamins pour glisser de la cocaïne dans leurs affaires puis les dénonce.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : petit livre rouge, sac de cocaïne, kalachnikov.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-abigael"
+            },
+            {
+              "id": "ag6-nicanor-28",
+              "nom": "Nicanor Duende",
+              "source": "Démon de Malphas, grade 2 (écrivain mondain, bras droit de Suarez)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 10,
+                "vo": 10,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 29,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Jet de flammes",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 4
+                },
+                {
+                  "n": "Discorde",
+                  "r": 10
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Rêve",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 7, Baratin 6, Défense 4, Tir 2+ (jet de flammes 3+), Hobby (embrouiller les PJ) 4+, Métier (devenir votre ami) 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dandy au look de retraité de la salsa, ami de tout le monde, entremetteur entre Douglas et le gratin bolivien. Entretient la discorde entre Douglas et Tupac (il était témoin de leur brouille) et cherche à faire tuer l'un des deux anges par les PJ, idéalement les deux. A refait la mémoire de Buddy. Fuit dès que ça tourne mal.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : panama, chemise décontractée, sourire fripé, lunettes noires, canne de dandy.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-nicanor"
+            },
+            {
+              "id": "ag6-jaguars-29",
+              "nom": "Commando Jaguar",
+              "source": "Forces spéciales boliviennes de Ramon (humains)",
+              "type": "humain",
+              "qty": 8,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "M-16",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau de combat",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Combat 3, Conduite 3, Défense 3, Discrétion 3, Savoir militaire 2, Survie 2 (altiplano 3), Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Unité d'élite de Ramon ; cinq jeeps suivent les PJ à une demi-journée. Gardent aussi le parlement à la fin.\nAucune caractéristique dans le livre : profil de soldat d'élite entièrement estimé (proche des miliciens de l'écran, mieux armés).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-jaguars"
+            },
+            {
+              "id": "ag6-douglas-30",
+              "nom": "Douglas Backtouch",
+              "source": "Ange de Laurent, grade 1 (commandant américain de la DEA ; nom d'ange : Potdemiel)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 7), Défense 5, Tir 3 (armes automatiques 5), Savoir militaire 2 (Chargez ! 4), Se faire rouler dans la farine 4+, Jouer des chansons country à la guitare 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brave crétin, pieux, bavard, à la tête d'une centaine d'agents (soldats de Dieu à diplomates). Croit que Tupac est le coupable de tout et que Suarez est un ministre intègre ; il est l'indic inconscient des démons. Prépare avec Suarez l'épandage d'un défoliant « qui ne touche que la coca ». Brouillé avec Tupac pour le surnom d'« El lobo ».\nÀ la fin : difficile à motiver, mais s'il a la preuve que Suarez et Nicanor sont des démons, il sera le premier à charger.\nLe livre écrit « Juste lame » : nom des règles, Juste-lame. PS 7 du livre pris comme PF. Fusil automatique estimé (Tir armes automatiques 5, arme de la table).\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : lunettes de poseur, bel uniforme, idées préconçues sur les indiens, guitare sèche, nostalgie du Colorado.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-douglas"
+            },
+            {
+              "id": "ag6-tupac-31",
+              "nom": "Tupac « el lobo »",
+              "source": "Ange de Michel, grade 1 (guérillero aymara, chef de l'ELP)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 10,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Lance bénite mineure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Kalachnikov",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                }
+              ],
+              "talents": "Acrobatie 5, Combat 4 (lance 7), Discrétion 5, Tir 4 (armes automatiques 7), Savoir militaire 3 (guérilla 4), Survie 3 (Altiplano 4+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Robin des bois de l'Altiplano : braquages et détournements de camions de vivres au profit des pauvres. Vit caché dans un hameau abandonné de cinq maisons avec une demi-douzaine de soldats de Dieu peu orthodoxes ; peut lever quatre cents volontaires mal armés. Ami de Marco Moralès. Déteste Douglas depuis leur brouille sur le surnom « El lobo » et le mitraillage de son camp par la DEA.\nDéfense non donnée par le livre (valeur du bestiaire).\nÉquipement : poncho miteux, bonnet andin, kalachnikov, idées préconçues sur les gringos, photo du Che.\nSource : Angelots en gelée (scénario), p. 97.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "book": "Angelots en gelée (scénario), p. 97",
+              "typeId": "type-ag6-tupac"
+            },
+            {
+              "id": "ag6-alcazar-32",
+              "nom": "Esteban Alcazar",
+              "source": "Lieutenant-colonel de l'armée bolivienne, seul ami sincère de Douglas",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune, ambitieux mais intègre, veut lutter contre le trafic sans écraser la population ; redoute l'ordre de tirer sur les manifestants. Demande aux PJ de dissuader Douglas d'épandre le défoliant. Prend du grade à chaque retour des PJ à La Paz, jusqu'à général à la fin : un allié précieux, voire un bon candidat à la présidence.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Arme de service estimée.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-alcazar"
+            },
+            {
+              "id": "ag6-morales-33",
+              "nom": "Marco Moralès",
+              "source": "Leader syndicaliste aymara, candidat déçu à la présidence",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ami de Tupac, coordonne les manifestations à La Paz. Simple humain… ou, si le MJ veut, agent du Sanctuaire (voir Les Petites Apocalypses).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+              "typeId": "type-ag6-morales"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag6-ch-douglas",
+              "q": "Douglas intervient-il ?",
+              "opts": [
+                {
+                  "t": "Oui, convaincu par les preuves",
+                  "suite": "Il charge avec ses agents : le rapport de force bascule."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Il soutient le gouvernement « légal » ; les PJ n'ont que leurs autres alliés."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "ag6-ch-fin",
+              "q": "Suarez prend-il le pouvoir ?",
+              "opts": [
+                {
+                  "t": "Il est arrêté ou tué",
+                  "suite": "Défoliant abandonné ; Alcazar finit général, voire candidat. La Bolivie est sauvée… jusqu'à la prochaine insurrection."
+                },
+                {
+                  "t": "Massacre devant le parlement",
+                  "suite": "Les leaders indiens donnent l'assaut : nombreuses victimes, la victoire a un goût amer."
+                },
+                {
+                  "t": "Il devient président",
+                  "suite": "Manifestants mitraillés, épandage du produit : échec cuisant pour les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795358245748,
+      "updatedAt": 1795358245748
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-ag6-pilar",
+      "nom": "Sœur Pilar Mantes",
+      "source": "Fausse vierge miraculeuse et vraie succube (novice de 17 ans, mission de Santa Lucia)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 8,
+        "vo": 6,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 10,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de pacification",
+          "r": 2
+        },
+        {
+          "n": "Gag absurde",
+          "r": 2
+        },
+        {
+          "n": "Illusions",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 4, Défense 2, Prestidigitation 4, Survie 2 (altiplano 3), Simuler des crises mystiques 2, Rêver d'Hollywood 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Métisse abandonnée, recueillie par les sœurs. Succube qui s'ignore : elle se croit mutante (façon comics), ne croit pas en Dieu et simule ses stigmates à Noël avec ses illusions pour faire venir les dons à l'orphelinat. Rêve de La Paz et de cinéma. Son aura se grise par endroits : elle est aux limites de l'apostasie.\nSi on lui laisse découvrir le Grand Jeu, elle sera terrifiée d'appartenir au Mal et se fera violence pour rejoindre les anges ; les PJ peuvent aussi l'exécuter, à eux d'assumer (le village l'adore).\nLe livre donne « Aura d'apaisement 1 » : rendu par Aura de pacification, le pouvoir le plus proche des règles. Aucune attaque dans le livre : coup de poing niveau 1 estimé. PS 5 du livre pris comme PF.\nÉquipement : tenue de nonne en piètre état, illusions sur le monde.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-ramon",
+      "nom": "Ramon « el perro » Carne",
+      "source": "Démon de Caym, grade 2 (commandant du Commando Jaguar, vétéran du plan Condor)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 8,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 12,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "M-16",
+          "att": 8,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de Perception",
+          "r": 6
+        },
+        {
+          "n": "Caméléon",
+          "r": 6
+        },
+        {
+          "n": "Éventration",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Transformation",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 6, Défense 6, Discrétion 6, Tir 3 (arme d'assaut 6), Savoir militaire 3 (représailles sur les civils 4), Hobby (tresser des colliers d'oreilles) 2, Survie 3 (Altiplano 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Chasseur d'hommes sadique ; fait très bien le lama (Transformation) pour observer les PJ. Suit les PJ à une demi-journée avec Nicanor et des hommes du Commando Jaguar (cinq jeeps). Avec Abigaël, un jeu de quinze ans : celui qui a fait le plus de victimes civiles dans l'année se fait offrir le dîner de Noël.\nLe livre donne « Augmentation temporaire de perception 3 » : rendu par Augmentation de Perception.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : tête de gendre idéal, bel uniforme, nombreuses médailles.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-abigael",
+      "nom": "Abigaël Linarès",
+      "source": "Démon de Nisroch, grade 2 (narco, ancien du Sentier Lumineux)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 8,
+        "vo": 10,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Langue barbelée",
+          "att": 8,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Kalachnikov",
+          "att": 8,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Accoutumance",
+          "r": 6
+        },
+        {
+          "n": "Caméléon",
+          "r": 6
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : langue barbelée",
+          "r": 0
+        },
+        {
+          "n": "Polymorphie",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 6, Combat 4, Défense 6, Discrétion 4, Tir 3 (armes d'assaut 6), Hobby (inventer des citations marxistes) 3+, Savoir criminel 2 (narco guérilla 6), Savoir militaire 2 (guérilla 3), Survie 3 (altiplano 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dernier démon de Nisroch survivant après que Douglas a massacré les autres : au lieu de se venger, il s'est associé aux démons du coin pour manipuler l'ange. Harcèle les PJ avec une douzaine d'hommes et des snipers guaranis, pour s'amuser plutôt que pour tuer ; paie des gamins pour glisser de la cocaïne dans leurs affaires puis les dénonce.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : petit livre rouge, sac de cocaïne, kalachnikov.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-nicanor",
+      "nom": "Nicanor Duende",
+      "source": "Démon de Malphas, grade 2 (écrivain mondain, bras droit de Suarez)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 10,
+        "vo": 10,
+        "pr": 8,
+        "foi": 10
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 29,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Jet de flammes",
+          "att": 14,
+          "prec": 0,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Esprits multiples",
+          "r": 4
+        },
+        {
+          "n": "Discorde",
+          "r": 10
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Rêve",
+          "r": 8
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Aisance sociale 7, Baratin 6, Défense 4, Tir 2+ (jet de flammes 3+), Hobby (embrouiller les PJ) 4+, Métier (devenir votre ami) 7+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dandy au look de retraité de la salsa, ami de tout le monde, entremetteur entre Douglas et le gratin bolivien. Entretient la discorde entre Douglas et Tupac (il était témoin de leur brouille) et cherche à faire tuer l'un des deux anges par les PJ, idéalement les deux. A refait la mémoire de Buddy. Fuit dès que ça tourne mal.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : panama, chemise décontractée, sourire fripé, lunettes noires, canne de dandy.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-suarez",
+      "nom": "Alberto Suarez",
+      "source": "Démon d'Uphir, grade 2 (ministre de l'Agriculture de Bolivie)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 8,
+        "foi": 8
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 29,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Tentacules",
+          "att": 14,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Esprits multiples",
+          "r": 4
+        },
+        {
+          "n": "Graisse",
+          "r": 6
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique : tentacules",
+          "r": 0
+        },
+        {
+          "n": "Peau acide",
+          "r": 6
+        },
+        {
+          "n": "Vengeance toxique",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Aisance sociale 7, Baratin 6, Combat 5, Défense 4, Tir 1+ (jet d'acide 5), Métier (détruire le monde) 3+, Savoir criminel 2 (politique 6), Science 2 (chimie 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le grand méchant : escroc, élu véreux, secrétaire d'État, puis ministre. Veut devenir président provisoire à la prochaine crise pour faire épandre des milliers de tonnes de défoliant (la « malédiction de Choquenard & Faugne ») sous prétexte de lutte anti-coca. Retiré à Santa-Cruz pendant les troubles (« au chevet de sa mère »), injoignable.\nJet d'acide : pouvoir sans attaque chiffrée dans le livre (Tir jet d'acide 5), à gérer avec le pouvoir.\nLe livre écrit « Esprit multiple 2 » : nom des règles, Esprits multiples.\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : costume hors de prix, carnet d'adresses fourni, belle tête de méchant.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-douglas",
+      "nom": "Douglas Backtouch",
+      "source": "Ange de Laurent, grade 1 (commandant américain de la DEA ; nom d'ange : Potdemiel)",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 23,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Sabre de cavalerie",
+          "att": 14,
+          "prec": 0,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 10,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Juste-lame",
+          "r": 8
+        },
+        {
+          "n": "Lumière céleste",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 4 (épées 7), Défense 5, Tir 3 (armes automatiques 5), Savoir militaire 2 (Chargez ! 4), Se faire rouler dans la farine 4+, Jouer des chansons country à la guitare 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Brave crétin, pieux, bavard, à la tête d'une centaine d'agents (soldats de Dieu à diplomates). Croit que Tupac est le coupable de tout et que Suarez est un ministre intègre ; il est l'indic inconscient des démons. Prépare avec Suarez l'épandage d'un défoliant « qui ne touche que la coca ». Brouillé avec Tupac pour le surnom d'« El lobo ».\nÀ la fin : difficile à motiver, mais s'il a la preuve que Suarez et Nicanor sont des démons, il sera le premier à charger.\nLe livre écrit « Juste lame » : nom des règles, Juste-lame. PS 7 du livre pris comme PF. Fusil automatique estimé (Tir armes automatiques 5, arme de la table).\nAttaques au format du livre (seuil, RU+X, M+Y) : attaque = X×2, puissance Y.\nÉquipement : lunettes de poseur, bel uniforme, idées préconçues sur les indiens, guitare sèche, nostalgie du Colorado.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-tupac",
+      "nom": "Tupac « el lobo »",
+      "source": "Ange de Michel, grade 1 (guérillero aymara, chef de l'ELP)",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 10,
+        "vo": 6,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 25,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Lance bénite mineure",
+          "att": 16,
+          "prec": 0,
+          "puis": 8,
+          "melee": false
+        },
+        {
+          "n": "Kalachnikov",
+          "att": 14,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 6
+        },
+        {
+          "n": "Caméléon",
+          "r": 8
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 6
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Maîtrise martiale",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 6
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        }
+      ],
+      "talents": "Acrobatie 5, Combat 4 (lance 7), Discrétion 5, Tir 4 (armes automatiques 7), Savoir militaire 3 (guérilla 4), Survie 3 (Altiplano 4+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Robin des bois de l'Altiplano : braquages et détournements de camions de vivres au profit des pauvres. Vit caché dans un hameau abandonné de cinq maisons avec une demi-douzaine de soldats de Dieu peu orthodoxes ; peut lever quatre cents volontaires mal armés. Ami de Marco Moralès. Déteste Douglas depuis leur brouille sur le surnom « El lobo » et le mitraillage de son camp par la DEA.\nDéfense non donnée par le livre (valeur du bestiaire).\nÉquipement : poncho miteux, bonnet andin, kalachnikov, idées préconçues sur les gringos, photo du Che.\nSource : Angelots en gelée (scénario), p. 97.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+      "book": "Angelots en gelée (scénario), p. 97"
+    },
+    {
+      "id": "type-ag6-combat-uphir",
+      "nom": "Az'ed'eff et Toho T'aal",
+      "source": "Démons de combat d'Uphir (gardiens du stock de Maldita Cruz)",
+      "type": "combat",
+      "car": {
+        "fo": 14,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 14,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Tentacules",
+          "att": 16,
+          "prec": 0,
+          "puis": 8,
+          "melee": false
+        },
+        {
+          "n": "Jet d'acide",
+          "att": 12,
+          "prec": 0,
+          "puis": 7,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Apparence horrifique",
+          "r": 10
+        },
+        {
+          "n": "Élastique",
+          "r": 4
+        },
+        {
+          "n": "Forme de combat",
+          "r": 10
+        },
+        {
+          "n": "Immunité contre l'acide",
+          "r": 0
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique : tentacules",
+          "r": 0
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Vengeance toxique",
+          "r": 2
+        }
+      ],
+      "talents": "Coup de tentacule 6, Intimidation 5, Tir 1 (jet d'acide 4), Contempler l'abîme du temps 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Deux horreurs vertes et gluantes à tentacules, qui vivent comme des bêtes dans le sous-sol interdit au personnel et gardent le stock de défoliant. Lâchés contre les PJ par Choquenard ou le familier.\nSource : Angelots en gelée (scénario), p. 97.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+      "book": "Angelots en gelée (scénario), p. 97"
+    },
+    {
+      "id": "type-ag6-viiv",
+      "nom": "Viiv' n' dyys",
+      "source": "Familier de Suarez (shoggoth de table)",
+      "type": "familier",
+      "car": {
+        "fo": 2,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 8,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [
+        {
+          "n": "Élastique",
+          "r": 2
+        },
+        {
+          "n": "Télépathie",
+          "r": 4
+        }
+      ],
+      "talents": "Défense 3, Discrétion 3, Onduler sur des rythmes antédiluviens 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Posé comme une idole impie sur le bureau de Choquenard, qui le prend pour une divinité venue de Pluton ; téléguide les deux polytechniciens et prévient les démons par télépathie au moindre problème.\nRessemble à une éponge de bain couverte d'yeux et de petits tentacules. Pas d'attaque dans le livre.\nLe livre écrit « Élasticité 1 » : nom des règles, Élastique. PS 4 du livre pris comme PF.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-indio",
+      "nom": "Indio typique",
+      "source": "Villageois aymara ou quechua",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 3,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        13
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Défense 1+, Maudire ces enfoirés de gringos 2, Rêver d'avoir un pick-up 2, Savoir occulte 1 (catholicisme maison 2), Survie 2 (altiplano 3), Technique 1 (mécanique 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Analphabète mais accueillant ; très catholique et fidèle à Pachamama. Prêt à l'irréparable pour défendre sa « sainte ». Pas d'attaque dans le livre : coup de poing niveau 1 estimé.\nÉquipement : poncho, couvertures en laine de lama, chapeau ridicule.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-jaguars",
+      "nom": "Commando Jaguar",
+      "source": "Forces spéciales boliviennes de Ramon (humains)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 6,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "M-16",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau de combat",
+          "att": 6,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 3, Combat 3, Conduite 3, Défense 3, Discrétion 3, Savoir militaire 2, Survie 2 (altiplano 3), Tir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Unité d'élite de Ramon ; cinq jeeps suivent les PJ à une demi-journée. Gardent aussi le parlement à la fin.\nAucune caractéristique dans le livre : profil de soldat d'élite entièrement estimé (proche des miliciens de l'écran, mieux armés).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-narcos",
+      "nom": "Narcos d'Abigaël",
+      "source": "Narco-guérilleros (douzaine d'hommes, dont des snipers guaranis)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Kalachnikov",
+          "att": 4,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Fusil à lunette (snipers)",
+          "att": 6,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 2, Conduite 2, Défense 2, Discrétion 2, Survie 2 (jungle 3), Tir 2 (fusil à lunette 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tirent de très loin pour harceler, pas pour tuer ; plus de dégâts collatéraux que de mal aux anges. Montent l'embuscade routière si l'équipe a l'air dangereuse.\nAucune caractéristique dans le livre : profil entièrement estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-mercenaires",
+      "nom": "Mercenaires de Maldita Cruz",
+      "source": "Soldats de fortune anglophones (une douzaine)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Fusil d'assaut",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 3, Corps à corps 3, Défense 3, Savoir militaire 2, Tir 3, Vigilance 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gardent le site depuis des années ; Choquenard n'hésite pas à les sacrifier en diversion. Ils ignorent l'existence des démons de combat.\nAucune caractéristique dans le livre : profil entièrement estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-elp",
+      "nom": "Soldats de Dieu de l'ELP",
+      "source": "Armée de libération populaire de Tupac (demi-douzaine)",
+      "type": "soldat",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver gros calibre",
+          "att": 7,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Adhérence",
+          "r": 2
+        },
+        {
+          "n": "Caméléon",
+          "r": 2
+        }
+      ],
+      "talents": "Acrobatie 3, Athlétisme 3, Conduite 3, Corps à corps 3, Défense 3, Discrétion 4, Intimidation 2, Savoir militaire 2 (reconnaissance 3), Tir 2 (armes de poing 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Soldats de Dieu peu orthodoxes, qui craignent encore les esprits de l'Altiplano et sacrifient bière et cigarettes à Pachamama. Le livre ne les chiffre pas : profil « section légère » de l'écran du maître, à équiper de kalachnikovs au besoin.\nUne grenade fumigène. Section de six hommes ; peut être assignée à tout un groupe d'anges (coût en PA partagé).\nSource : Livret de l'écran du maître, p. 14.\nUtilisé dans : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97.",
+      "book": "Livret de l'écran du maître, p. 14"
+    },
+    {
+      "id": "type-ag6-greta",
+      "nom": "Greta Banzer",
+      "source": "Femme d'affaires bolivienne, société de chimie Banzer (quarante ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 4 (estimé)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ronde et blonde, héritière d'un grand-père qui a fui l'Allemagne. Fournit le défoliant : Suarez lui cède pour rien de « vieux fonds de cuves » qu'elle réétiquette et revend à l'État, et ils partagent. Elle ignore que c'est un produit expérimental d'Uphir. A été interrogée en cachette par Stanley et Livingstone. Percée à jour, elle avoue et donne le site de reconditionnement (sous-traité à Air Conditioned Sky).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talent estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-alcazar",
+      "nom": "Esteban Alcazar",
+      "source": "Lieutenant-colonel de l'armée bolivienne, seul ami sincère de Douglas",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Pistolet de service",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune, ambitieux mais intègre, veut lutter contre le trafic sans écraser la population ; redoute l'ordre de tirer sur les manifestants. Demande aux PJ de dissuader Douglas d'épandre le défoliant. Prend du grade à chaque retour des PJ à La Paz, jusqu'à général à la fin : un allié précieux, voire un bon candidat à la présidence.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Arme de service estimée.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-rosalia",
+      "nom": "Mère Rosalia",
+      "source": "Vieille mère supérieure de la mission de Santa Lucia",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sait que Pilar simule ses stigmates et s'en accommode (elle en est en partie l'instigatrice, pour faire vivre la mission) ; serait la première surprise d'apprendre que c'est de la vraie magie, donc une diablerie. Aime Pilar comme sa fille. Méfiante envers des étrangers qui se disent envoyés du Très-Haut.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-buddy",
+      "nom": "Buddy",
+      "source": "Touriste australien, la quarantaine, plein aux as",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Exaspérant, parle fort de son zoom. Prétend avoir pris dans son bus, dix jours plus tôt, deux prêtres et un indien en panne dans la Cordillera Real, descendus à Choruro pour voir Tupac. Faux témoin : Nicanor lui a refait la mémoire pour accuser Tupac.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-choquenard",
+      "nom": "Paul Choquenard",
+      "source": "Polytechnicien français dément, adorateur d'Uphir, patron de Maldita Cruz",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Science 4 (chimie, estimé)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gère la mise en fûts du défoliant avec Faugne pour leur société Air Conditioned Sky ; prend le familier de Suarez pour une divinité de Pluton. Son bureau contient tout : effets du produit, implication et vraie nature de Suarez, et un dossier pour faire chanter Greta Banzer. Lâche les démons de combat ou les gardes sans scrupule.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talent estimé.\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-faugne",
+      "nom": "Faugne",
+      "source": "Condisciple de Choquenard, adorateur d'Uphir",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Recruté dans l'annuaire des anciens de Polytechnique ; co-inventeur de la « malédiction de Choquenard & Faugne ».\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-carmelito",
+      "nom": "Carmelito",
+      "source": "Jeune homme de Huallap",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A hébergé Stanley, Livingstone et Chico, partis de nuit vers Maldita Cruz pour ne jamais revenir. Ne parle qu'en rendez-vous secret dans la montagne, après que les PJ ont gagné la confiance du village, et supplie qu'on n'attire pas les représailles de l'armée.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-brandon",
+      "nom": "Brandon O'Fish",
+      "source": "Jeune clairon parachutiste de Douglas (soldat de Dieu)",
+      "type": "soldat",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Enthousiaste, joue du clairon à l'arrivée des PJ ; il faut le frapper pour qu'il se taise. Reste à attendre les secours après l'explosion du camion.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    },
+    {
+      "id": "type-ag6-morales",
+      "nom": "Marco Moralès",
+      "source": "Leader syndicaliste aymara, candidat déçu à la présidence",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ami de Tupac, coordonne les manifestations à La Paz. Simple humain… ou, si le MJ veut, agent du Sanctuaire (voir Les Petites Apocalypses).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « La révolution n'est pas un dîner de gala » (P. Bouas), p. 88-97."
+    }
+  ],
+  "memoire": []
+}

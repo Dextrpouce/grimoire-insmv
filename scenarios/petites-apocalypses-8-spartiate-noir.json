@@ -1,0 +1,1014 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa8-spartiate-noir",
+      "nom": "Petites Apocalypses – Le spartiate noir",
+      "resume": "Mini-scénario pour agents de la troisième Force employés par la DTC d'Hercule. Un tueur en armure de spartiate noir s'attaque à des membres de la troisième Force. Casimir Groulard, psionique rescapé, engage la DTC. Le coupable est Iphiclès, jumeau d'Hercule et ange de Didier, asservi par la sorcière Médée qui se venge de ses anciens amants. Démasqué, le tueur a le visage d'Hercule : les PJ doivent démêler l'affaire sans froisser leur patron, puis affronter Médée.",
+      "notes": "Source : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.\n\nStructure : comme le Kiti-Kon, un mini-scénario peu détaillé, à placer entre deux scénarios ou au milieu d'un autre.\nLe ressort : le coupable a les traits du patron. Hercule n'y est pour rien ; la bagarre doit laisser fuir le spartiate après que les PJ ont vu son visage, puis le retour à la DTC joue sur le doute et la susceptibilité d'Hercule.\nLes victimes : les ex-amants de Médée, tués un par un, d'abord discrètement ; Casimir, le dernier rescapé, est la prochaine cible.\n\nAdaptations : le ch. 14 (p. 115-116) ne propose rien pour ce mini-scénario. Suggestion : en MV, remplacer Hercule par le supérieur ou un ange connu des PJ ; Iphiclès, ange de Didier, rend l'affaire naturelle pour des anges de Didier. En INS, des démons peuvent vouloir exploiter (ou faire durer) la confusion entre les jumeaux.\n\nRécompenses : le livre n'en donne pas. Suggestion : contrat payé par Casimir via la DTC, et la gratitude (ou la rancune) d'Hercule selon la façon dont il a été traité.\n\nFiches : Médée et Iphiclès reprises du livre (p. 112-113) ; Hercule repris du ch. 4 (p. 21) ; Casimir sans caractéristiques (fiche minimale).",
+      "scenes": [
+        {
+          "id": "pa8-sc-rumeur",
+          "nom": "1. La rumeur et le client",
+          "lieu": "Milieu de la troisième Force, puis locaux de la DTC",
+          "notes": "En coulisses : le spartiate noir tue discrètement les ex de Médée. Un témoin assiste un jour à une exécution ; son récit circule et grossit, et toute disparition d'un surnaturel est bientôt mise sur le compte du tueur en armure.\nLes PJ peuvent entendre la rumeur au détour d'un autre scénario (Chez Régis, par exemple). Hercule en rit, jusqu'au jour où Casimir Groulard vient le voir : il a survécu de peu à une attaque et veut être protégé. Il paie : enquête officielle, confiée aux PJ. Mission : identifier l'assassin et l'arrêter.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa8-hercule-1",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Se moque d'abord de la rumeur, puis prend l'affaire au sérieux quand Casimir, qui peut payer, vient le voir. Soupçonné par les PJ : il n'a d'alibi ni pour l'agression de Casimir ni pour la bagarre. Clame son innocence, sur la défensive et très susceptible.\nPeut se joindre à l'assaut final pour laver son honneur ; le sort d'Iphiclès le regarde.\nFiche reprise du ch. 4 (p. 21), comme dans le fichier de la campagne (massue : précision +4, puissance +9 ; 66/RU+10/M+16).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-hercule"
+            },
+            {
+              "id": "pa8-casimir-2",
+              "nom": "Casimir Groulard",
+              "source": "Psionique d'envergure, client de la DTC, ex-amant de Médée",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Agressé par le spartiate noir, il s'en sort de justesse grâce à ses pouvoirs, mais vit dans la peur. Il a de quoi payer : la rumeur devient une enquête officielle de la DTC.\nIl connaît l'identité terrestre actuelle de Médée : leur liaison est récente et elle vient seulement de le laisser tranquille. C'est à peu près sa seule ennemie connue. Au MJ de le jouer pudique (il faut lui arracher les détails) ou parfaitement coopératif.\nAppât idéal : Médée veut l'achever avant de passer au suivant.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-casimir"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa8-sc-piste",
+          "nom": "2. Sur la piste du spartiate",
+          "lieu": "Paris : chez Casimir, archives, lieux des meurtres",
+          "notes": "Peu d'indices : laisser les joueurs proposer leurs idées. Deux voies prévues :\n• le piège : Médée tient à finir Casimir avant de passer au suivant ; s'en servir comme appât fait venir le spartiate ;\n• Médée : Casimir peut donner l'identité actuelle de son ex (Clémentine Pinares). La liste partielle des victimes et une enquête de routine confirment qu'elles ont toutes été ses amants.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa8-casimir-3",
+              "nom": "Casimir Groulard",
+              "source": "Psionique d'envergure, client de la DTC, ex-amant de Médée",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Agressé par le spartiate noir, il s'en sort de justesse grâce à ses pouvoirs, mais vit dans la peur. Il a de quoi payer : la rumeur devient une enquête officielle de la DTC.\nIl connaît l'identité terrestre actuelle de Médée : leur liaison est récente et elle vient seulement de le laisser tranquille. C'est à peu près sa seule ennemie connue. Au MJ de le jouer pudique (il faut lui arracher les détails) ou parfaitement coopératif.\nAppât idéal : Médée veut l'achever avant de passer au suivant.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-casimir"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa8-ch-piste",
+              "q": "Quelle voie les PJ choisissent-ils ?",
+              "opts": [
+                {
+                  "t": "Tendre un piège avec Casimir",
+                  "suite": "Le spartiate noir vient achever Casimir : bagarre directe (scène 4)."
+                },
+                {
+                  "t": "Aller voir Médée",
+                  "suite": "Elle paraît saine d'esprit et innocente (scène 3), puis envoie son spartiate sur les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa8-sc-visite",
+          "nom": "3. Visite chez Médée",
+          "lieu": "Domicile de Clémentine Pinares",
+          "notes": "Médée fait un effort et donne le change : charmante, raisonnable, étonnée. Elle tient tant que l'entretien ne dure pas trop ; un PJ attentif peut sentir que quelque chose cloche.\nDès que les PJ sont partis, elle fulmine et lâche le spartiate noir sur eux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa8-medee-4",
+              "nom": "Médée (Clémentine Pinares)",
+              "source": "Sorcière païenne, manipulatrice du spartiate noir",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 4,
+                "vo": 10,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 10,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 4, Corps à corps 2, Défense 4, Discrétion 3, Discussion 5, Séduction 5 ; Basse sorcellerie 8, Haute sorcellerie 6, Pentacle 4, Invocation 6, Demande 6, Contrôle 6, Lien 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mangeuse d'hommes à travers toutes ses incarnations : humains, surnaturels, héros païens. Possessive, jalouse, mythomane, sujette aux hallucinations ; jadis, elle découpait ses victimes et les faisait bouillir. Ses ex la fuient (changement de numéro, déménagement).\nEn panne de séduction depuis deux ans, elle craque : par sa sorcellerie (Contrôle), elle asservit son dernier amant, Iphiclès, lui coud un costume de spartiate noir et l'envoie tuer un à un ses prédécesseurs.\nMéthodique : elle veut d'abord achever Casimir avant de passer au suivant. Face aux PJ, elle peut donner le change un moment et paraître saine d'esprit, puis leur envoie son pantin dès qu'ils sont partis.\nType « humain » dans l'application (sorcière) ; seuils, PF et PP du livre.\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-medee"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa8-sc-bagarre",
+          "nom": "4. Bagarre avec le spartiate noir",
+          "lieu": "Selon la piste : chez Casimir, dans la rue après la visite chez Médée",
+          "notes": "Combat contre Iphiclès en armure noire. Il ne doit pas poser trop de problèmes aux PJ, mais il doit s'enfuir (talisman de Téléportation, Vitesse, ou Médée cachée non loin qui l'aide).\nPoint clé : son casque tombe. Surpris et déstabilisé, il s'arrête un instant puis fuit. Les PJ, eux, viennent de voir le visage d'Hercule, et peuvent interpréter ce temps d'arrêt comme la gêne d'un coupable reconnu.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa8-iphicles-5",
+              "nom": "Iphiclès, le spartiate noir (Geoffroy Jeupleur-Delanège)",
+              "source": "Ange de Didier, grade 2, jumeau d'Hercule, contrôlé par Médée",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 5,
+              "pfFix": 10,
+              "pp": 29,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Épée magique mineure",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 8
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 8
+                },
+                {
+                  "n": "Parasite intellectuel",
+                  "r": 8
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 12
+                }
+              ],
+              "talents": "Combat 5 (épées 8), Défense 7, Discussion 6, Enquête 6, Fouille 6, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jumeau d'Hercule, presque identique à lui de visage. Mortel sans pouvoirs il y a près de deux mille ans, passé par le Purgatoire puis le Paradis, recruté par Didier comme simple ange ; il ignore son passé légendaire. Brave type un peu naïf : il a voulu rompre poliment avec Médée, qui l'a asservi.\nEn costume de spartiate noir et casque qui masque ses traits. Démasqué, il marque un temps d'arrêt (surpris et déstabilisé) puis fuit : les PJ croient avoir reconnu Hercule.\nÉquipement : épée magique mineure permanente (précision +2, puissance +4 ; 66/RU+9/M+10 dans le livre, reprise au format livre), armure magique permanente (protection 5, couverture importante, renforcée), talisman de Téléportation (utile pour fuir).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-iphicles"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa8-sc-retour-dtc",
+          "nom": "5. Retour à la DTC",
+          "lieu": "Locaux de la DTC",
+          "notes": "Les PJ préviennent ou cuisinent Hercule, selon la confiance qu'ils lui accordent. Problème : il n'a pas d'alibi, ni pour la bagarre ni pour l'agression de Casimir. Il jure qu'il est innocent ; c'est le patron, les PJ ont intérêt à le croire. Scène à jouer avec un Hercule susceptible et sur la défensive.\nPistes de résolution : penser au jumeau, Iphiclès (contacter Alain, selon le livre, pour savoir où le trouver : il n'est pas chez lui, mais des photos de sa liaison avec Médée traînent) ; ou retourner directement chez Médée si les PJ ne l'ont pas crue.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa8-hercule-6",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Se moque d'abord de la rumeur, puis prend l'affaire au sérieux quand Casimir, qui peut payer, vient le voir. Soupçonné par les PJ : il n'a d'alibi ni pour l'agression de Casimir ni pour la bagarre. Clame son innocence, sur la défensive et très susceptible.\nPeut se joindre à l'assaut final pour laver son honneur ; le sort d'Iphiclès le regarde.\nFiche reprise du ch. 4 (p. 21), comme dans le fichier de la campagne (massue : précision +4, puissance +9 ; 66/RU+10/M+16).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-hercule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa8-ch-soupcon",
+              "q": "Comment les PJ traitent-ils Hercule ?",
+              "opts": [
+                {
+                  "t": "Ils le croient",
+                  "suite": "Hercule, rassuré, peut proposer de les accompagner pour laver son honneur."
+                },
+                {
+                  "t": "Ils le soupçonnent",
+                  "suite": "Ambiance tendue ; Hercule vexé. Il faudra prouver l'existence du jumeau pour se racheter."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa8-ch-voie",
+              "q": "Par où les PJ remontent-ils à Médée ?",
+              "opts": [
+                {
+                  "t": "Par Iphiclès",
+                  "suite": "Ils pensent au jumeau, le cherchent et trouvent chez lui les photos de sa liaison avec Médée."
+                },
+                {
+                  "t": "Directement chez Médée",
+                  "suite": "Ils ne l'ont pas crue la première fois et y retournent."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa8-sc-final",
+          "nom": "6. Résolution chez Médée",
+          "lieu": "Domicile de Médée",
+          "notes": "Médée est furieuse : son pantin s'est fait battre, on a vu son visage et il a même perdu son masque. Elle passe ses nerfs sur Iphiclès quand les PJ arrivent. Plus question de discuter : baston contre la sorcière et son spartiate.\nSi Hercule accompagne les PJ, la bataille n'en est que plus épique.\nAprès : le sort d'Iphiclès regarde Hercule (et donc le MJ) ; libéré du contrôle, c'est un ange de Didier qui ne se souvient pas de ses actes. Médée, si elle survit, finit définitivement folle.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa8-medee-7",
+              "nom": "Médée (Clémentine Pinares)",
+              "source": "Sorcière païenne, manipulatrice du spartiate noir",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 4,
+                "vo": 10,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 10,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 4, Corps à corps 2, Défense 4, Discrétion 3, Discussion 5, Séduction 5 ; Basse sorcellerie 8, Haute sorcellerie 6, Pentacle 4, Invocation 6, Demande 6, Contrôle 6, Lien 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mangeuse d'hommes à travers toutes ses incarnations : humains, surnaturels, héros païens. Possessive, jalouse, mythomane, sujette aux hallucinations ; jadis, elle découpait ses victimes et les faisait bouillir. Ses ex la fuient (changement de numéro, déménagement).\nEn panne de séduction depuis deux ans, elle craque : par sa sorcellerie (Contrôle), elle asservit son dernier amant, Iphiclès, lui coud un costume de spartiate noir et l'envoie tuer un à un ses prédécesseurs.\nMéthodique : elle veut d'abord achever Casimir avant de passer au suivant. Face aux PJ, elle peut donner le change un moment et paraître saine d'esprit, puis leur envoie son pantin dès qu'ils sont partis.\nType « humain » dans l'application (sorcière) ; seuils, PF et PP du livre.\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-medee"
+            },
+            {
+              "id": "pa8-iphicles-8",
+              "nom": "Iphiclès, le spartiate noir (Geoffroy Jeupleur-Delanège)",
+              "source": "Ange de Didier, grade 2, jumeau d'Hercule, contrôlé par Médée",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 5,
+              "pfFix": 10,
+              "pp": 29,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Épée magique mineure",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 8
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 8
+                },
+                {
+                  "n": "Parasite intellectuel",
+                  "r": 8
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 12
+                }
+              ],
+              "talents": "Combat 5 (épées 8), Défense 7, Discussion 6, Enquête 6, Fouille 6, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jumeau d'Hercule, presque identique à lui de visage. Mortel sans pouvoirs il y a près de deux mille ans, passé par le Purgatoire puis le Paradis, recruté par Didier comme simple ange ; il ignore son passé légendaire. Brave type un peu naïf : il a voulu rompre poliment avec Médée, qui l'a asservi.\nEn costume de spartiate noir et casque qui masque ses traits. Démasqué, il marque un temps d'arrêt (surpris et déstabilisé) puis fuit : les PJ croient avoir reconnu Hercule.\nÉquipement : épée magique mineure permanente (précision +2, puissance +4 ; 66/RU+9/M+10 dans le livre, reprise au format livre), armure magique permanente (protection 5, couverture importante, renforcée), talisman de Téléportation (utile pour fuir).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-iphicles"
+            },
+            {
+              "id": "pa8-hercule-9",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Se moque d'abord de la rumeur, puis prend l'affaire au sérieux quand Casimir, qui peut payer, vient le voir. Soupçonné par les PJ : il n'a d'alibi ni pour l'agression de Casimir ni pour la bagarre. Clame son innocence, sur la défensive et très susceptible.\nPeut se joindre à l'assaut final pour laver son honneur ; le sort d'Iphiclès le regarde.\nFiche reprise du ch. 4 (p. 21), comme dans le fichier de la campagne (massue : précision +4, puissance +9 ; 66/RU+10/M+16).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114.",
+              "typeId": "type-pa8-hercule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa8-ch-iphicles",
+              "q": "Que devient Iphiclès ?",
+              "opts": [
+                {
+                  "t": "Libéré et confié à Hercule",
+                  "suite": "Retrouvailles de jumeaux ; un ange de Didier qui découvre son passé légendaire, et un futur contact ou une complication."
+                },
+                {
+                  "t": "Tué dans la bataille",
+                  "suite": "Hercule le prend très mal ; les anges de Didier voudront des explications."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa8-ch-medee",
+              "q": "Que devient Médée ?",
+              "opts": [
+                {
+                  "t": "Tuée ou neutralisée",
+                  "suite": "Fin des meurtres ; Casimir est sauvé et paie."
+                },
+                {
+                  "t": "Elle survit, folle à lier",
+                  "suite": "Menace latente : elle pourrait revenir hanter les PJ ou ses autres ex."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795358011048,
+      "updatedAt": 1795358011048
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa8-medee",
+      "nom": "Médée (Clémentine Pinares)",
+      "source": "Sorcière païenne, manipulatrice du spartiate noir",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 6,
+        "pe": 4,
+        "vo": 10,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 10,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 8
+        },
+        {
+          "n": "Charme",
+          "r": 8
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 4, Corps à corps 2, Défense 4, Discrétion 3, Discussion 5, Séduction 5 ; Basse sorcellerie 8, Haute sorcellerie 6, Pentacle 4, Invocation 6, Demande 6, Contrôle 6, Lien 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Mangeuse d'hommes à travers toutes ses incarnations : humains, surnaturels, héros païens. Possessive, jalouse, mythomane, sujette aux hallucinations ; jadis, elle découpait ses victimes et les faisait bouillir. Ses ex la fuient (changement de numéro, déménagement).\nEn panne de séduction depuis deux ans, elle craque : par sa sorcellerie (Contrôle), elle asservit son dernier amant, Iphiclès, lui coud un costume de spartiate noir et l'envoie tuer un à un ses prédécesseurs.\nMéthodique : elle veut d'abord achever Casimir avant de passer au suivant. Face aux PJ, elle peut donner le change un moment et paraître saine d'esprit, puis leur envoie son pantin dès qu'ils sont partis.\nType « humain » dans l'application (sorcière) ; seuils, PF et PP du livre.\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114."
+    },
+    {
+      "id": "type-pa8-iphicles",
+      "nom": "Iphiclès, le spartiate noir (Geoffroy Jeupleur-Delanège)",
+      "source": "Ange de Didier, grade 2, jumeau d'Hercule, contrôlé par Médée",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 8,
+        "pe": 10,
+        "vo": 8,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 14,
+      "prot": 5,
+      "pfFix": 10,
+      "pp": 29,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Épée magique mineure",
+          "att": 18,
+          "prec": 0,
+          "puis": 10,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Caméléon",
+          "r": 8
+        },
+        {
+          "n": "Couche de glace",
+          "r": 8
+        },
+        {
+          "n": "Éclats de glace",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        },
+        {
+          "n": "Langage universel",
+          "r": 0
+        },
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Paralysie",
+          "r": 8
+        },
+        {
+          "n": "Parasite intellectuel",
+          "r": 8
+        },
+        {
+          "n": "Vitesse",
+          "r": 12
+        }
+      ],
+      "talents": "Combat 5 (épées 8), Défense 7, Discussion 6, Enquête 6, Fouille 6, Séduction 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jumeau d'Hercule, presque identique à lui de visage. Mortel sans pouvoirs il y a près de deux mille ans, passé par le Purgatoire puis le Paradis, recruté par Didier comme simple ange ; il ignore son passé légendaire. Brave type un peu naïf : il a voulu rompre poliment avec Médée, qui l'a asservi.\nEn costume de spartiate noir et casque qui masque ses traits. Démasqué, il marque un temps d'arrêt (surpris et déstabilisé) puis fuit : les PJ croient avoir reconnu Hercule.\nÉquipement : épée magique mineure permanente (précision +2, puissance +4 ; 66/RU+9/M+10 dans le livre, reprise au format livre), armure magique permanente (protection 5, couverture importante, renforcée), talisman de Téléportation (utile pour fuir).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114."
+    },
+    {
+      "id": "type-pa8-hercule",
+      "nom": "Hercule (Héraclès Merkios)",
+      "source": "Héros romain, patron de la DTC",
+      "type": "paien",
+      "car": {
+        "fo": 14,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 10,
+        "foi": 12
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 55,
+      "seuilsFix": [
+        9,
+        19,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Massue magique ancienne",
+          "att": 20,
+          "prec": 0,
+          "puis": 16,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 14,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 10
+        },
+        {
+          "n": "Némésis",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 14
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Vol",
+          "r": 8
+        }
+      ],
+      "talents": "Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Se moque d'abord de la rumeur, puis prend l'affaire au sérieux quand Casimir, qui peut payer, vient le voir. Soupçonné par les PJ : il n'a d'alibi ni pour l'agression de Casimir ni pour la bagarre. Clame son innocence, sur la défensive et très susceptible.\nPeut se joindre à l'assaut final pour laver son honneur ; le sort d'Iphiclès le regarde.\nFiche reprise du ch. 4 (p. 21), comme dans le fichier de la campagne (massue : précision +4, puissance +9 ; 66/RU+10/M+16).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114."
+    },
+    {
+      "id": "type-pa8-casimir",
+      "nom": "Casimir Groulard",
+      "source": "Psionique d'envergure, client de la DTC, ex-amant de Médée",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Agressé par le spartiate noir, il s'en sort de justesse grâce à ses pouvoirs, mais vit dans la peur. Il a de quoi payer : la rumeur devient une enquête officielle de la DTC.\nIl connaît l'identité terrestre actuelle de Médée : leur liaison est récente et elle vient seulement de le laisser tranquille. C'est à peu près sa seule ennemie connue. Au MJ de le jouer pudique (il faut lui arracher les détails) ou parfaitement coopératif.\nAppât idéal : Médée veut l'achever avant de passer au suivant.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 13 « Le spartiate noir » (mini-scénario), p. 112-114."
+    }
+  ],
+  "memoire": []
+}

@@ -1,0 +1,1110 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa4-langues-et-secateur",
+      "nom": "Petites Apocalypses – Langues et sécateur",
+      "resume": "Scénario pour agents de la troisième Force employés par la DTC d'Hercule (adaptable en INS/MV). Igor, sorcier flemmard et malhonnête, a volé le grimoire de son ami Jean-Louis et coupe des langues d'enfants au sécateur pour invoquer un démon de Kobal. De Paris à Dunkerque en plein carnaval, les PJ le traquent jusqu'à son démon, Charles-Otto, dont le Gag absurde (un faux 666 du MJ) les plonge dans une illusion où ils se croient des joueurs de 2560 sortant d'une séance de réalité virtuelle. Une fois sortis, baston, puis arrestation du « Chat ».",
+      "notes": "Source : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83 ; adaptations p. 116.\n\nPrincipe : le MJ triche une fois, en feignant d'avoir obtenu un 666 naturel lors de l'action de Charles-Otto. Cela justifie un Gag absurde d'une ampleur inouïe et signale aux joueurs attentifs qu'il se passe quelque chose. L'illusion dure quelques minutes dans la réalité mais des jours pour les PJ ; elle doit les faire douter de la réalité et leur faire jouer des rôles à contre-emploi.\n\nContexte : Jean-Louis invite Igor à dîner et lui montre un grimoire rare (en araméen) qu'il vient de chiner. Igor y repère un sort d'invocation et de lien d'un démon de Kobal, minimise l'ouvrage puis l'empoche. Une semaine plus tard, la lecture des faits divers fait comprendre à Jean-Louis ce qui s'est passé ; Igor est injoignable. Il va à la DTC.\nComposantes du sort : cinq langues d'enfants de moins de 14 ans, une part de flan, une salade, de la cardamome, de la glu.\nChronologie d'Igor : quatre agressions à Paris du 10 au 14 mars (la dernière ratée), départ pour Dunkerque avec un utilitaire Loutonoto loué frauduleusement, agressions près d'Arras, de Douai et à Wormhout, embauche au Roi de la Frite, invocation dans un entrepôt du port.\n\nAdaptations (ch. 14, p. 116) :\n• MV : aucun problème. Un archange choqué par l'affaire (Christophe ou Jean-Luc, par exemple) envoie l'équipe. Il faut amener les PJ jusqu'à Jean-Louis, qui détient les infos de départ : ils le croisent plusieurs fois sur les lieux des agressions (il cherche à confirmer ou à démentir ses soupçons), il les aborde de lui-même en les voyant enquêter, ou ils entendent parler de lui quand il va témoigner à la police.\n• INS : le plus dur est de motiver des démons. Idée du livre : Kobal ou l'un de ses sbires sait qu'il existe un rituel pour les invoquer à base de langues d'enfants et veut arrêter le sorcier avant qu'il ne frappe. Ensuite, on procède comme pour les anges.\n• Dans les deux cas, ajuster la puissance de Charles-Otto à celle des PJ.\n\nRécompenses : le livre n'en donne pas. Suggestion : contrat payé par la DTC (ou PA accordés par le supérieur en INS/MV) selon que le démon, Igor et le grimoire sont récupérés.\nSuites : il est peu probable que les PJ aient déjà croisé ces deux sorciers. Ils pourront suivre le procès du Chat aux infos ; Jean-Louis peut devenir un contact (peu utile mais enthousiaste), par exemple face à des sorciers comme Médée.\n\nFiches : caractéristiques des sorciers et du démon reprises du livre ; armes non précisées estimées et signalées dans les notes. Les cinq identités de l'illusion sont décrites dans la scène 7 (pas de fiches).",
+      "scenes": [
+        {
+          "id": "pa4-sc-dtc",
+          "nom": "1. La DTC entre en jeu",
+          "lieu": "Locaux de la DTC, Paris – mi-mars",
+          "notes": "Jean-Louis vient raconter son histoire à Hercule : le dîner, le grimoire chiné en brocante, sa disparition après la visite d'Igor, puis les faits divers des langues coupées. Il se souvient qu'un sort du livre demandait des langues humaines, mais pas de ce qu'il faisait. Il ne peut pas aller à la police (on le prendrait pour un fou) et se sent coupable d'avoir fanfaronné.\nHercule fixe le prix, fait signer le contrat et convoque les PJ : ramener Igor (Hercule décidera de son sort) et le grimoire.\n\nCe que sait Jean-Louis : nom et numéro de téléphone d'Igor, qu'il habite Paris (adresse inconnue), description physique et quelques traits de caractère (il refuse de jouer les psychologues : il se rend compte qu'il le connaissait mal). Igor travaillait dans une boutique de jeux de rôles dont le nom contient « alcool » (indice : vin → Vingt naturel).\nPistes : l'adresse se retrouve à partir du numéro (relations, piratage) ; la boutique dans l'annuaire, si les PJ font le lien alcool-vin-vingt.\n\nFaits divers (pour les joueurs) : du 10 au 14 mars, quatre agressions à Paris par un homme blond armé d'un sécateur qui coupe la langue d'enfants de 6 à 12 ans à la tombée de la nuit, hors de vue des parents (trois squares ou jardins d'enfants, une cour d'immeuble). Une patte de chat tamponnée retrouvée à chaque fois sauf la dernière. Le 14, le père de la fillette visée a fait fuir l'agresseur et l'a perdu dans les rues. Rien depuis ; énorme mobilisation policière. Exemple : le 10 mars, Romain Navarres, 7 ans, square Bolivar, langue coupée pendant que sa mère le perdait de vue quelques minutes ; ni témoin ni trace, tampon de patte de chat sur son manteau.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa4-jean-louis-1",
+              "nom": "Jean-Louis Lafrange",
+              "source": "Sorcier, chimiste, commanditaire volé",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 2,
+                "vo": 5,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Hobby : cuisine 3+, Kama-sutra 2, Séduction 3 ; Basse sorcellerie 2+, Haute sorcellerie 2+, Pentacle 1+, Invocation 1+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, très grand (1,95 m), maigre, brun, nez immense, oreilles décollées, grand sourire sympathique. Enthousiaste, sujet à de gros coups de déprime. Chimiste, divorcé, couche avec sa patronne (et le regrette). Sorcier moyen qui collectionne les vieux grimoires chinés en brocante sans tout comprendre ; excellent cuisinier.\nVoit Igor une fois par mois, sans amitié véritable. Se sent responsable des agressions et vient chercher l'aide de la DTC.\nAprès le scénario : allié mineur possible (consultant en sorcellerie, par exemple face à Médée).\nDéfense et attaque non données : estimées au niveau 1.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-jean-louis"
+            },
+            {
+              "id": "pa4-hercule-2",
+              "nom": "Hercule",
+              "source": "Patron de la DTC, héros païen",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Commanditaire : fixe le tarif, fait signer le contrat à Jean-Louis et envoie les PJ ramener Igor et le grimoire. Les faits divers sur « le Chat » l'ont horrifié : il est ravi de faire arrêter ce malade.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa4-sc-paris",
+          "nom": "2. L'enquête parisienne",
+          "lieu": "Paris : appartement d'Igor, le Vingt naturel, le Chat qui rit",
+          "notes": "En coulisses : Igor a cessé d'aller travailler, partage son temps entre la traduction (laborieuse) du sort araméen et la collecte des composantes : cinq langues d'enfants de moins de 14 ans, plus une part de flan, une salade, de la cardamome et de la glu achetées au Multiprix. Ravi de son surnom de super-méchant, il craint pourtant la police : il ferme ses comptes, loue un utilitaire chez Loutonoto et part pour Dunkerque, où le Roi de la Frite recrute.\n\nChez Igor : studio insalubre sous les toits (4e étage, sanitaires communs à l'étage du dessous). Meubles laissés sur place, étagères vidées mais sans poussière, ustensiles de cuisine manquants. Indices :\n• bulletins de salaire : nom et adresse du Vingt naturel ;\n• dans la pagaille du bureau : contrat de location Loutonoto pour un utilitaire ;\n• sur le canapé-lit, un journal avec un article découpé : un exemplaire intact (bibliothèque) montre au recto l'ouverture d'une salle de spectacle, « le Chat qui rit », et au verso l'annonce de recrutement du Roi de la Frite (Paris, Caen, Le Havre, Lille, Dunkerque) ;\n• des feuilles d'essais de pattes de chat imprimées.\n\nAu Vingt naturel : voir Ludovic. Il confirme l'adresse et l'histoire de l'utilitaire loué au nom du magasin.\n\nFausse piste, le Chat qui rit : petite salle rétro (affiches façon Toulouse-Lautrec) dans un immeuble rénové, fermée le jour : il faut entrer par effraction. Pièces sombres, bruits incongrus en coulisses ou sous la scène… un simple chat et un vieux gardien endormi. À faire durer selon le goût de la table.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa4-ludovic-3",
+              "nom": "Ludovic",
+              "source": "Patron du Vingt naturel (boutique de jeux de rôles, Paris)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "N'a pas vu Igor de la semaine et s'en réjouit (vendeur nul, méprisant envers les clients). Connaît son adresse (bulletins de salaire). Loutonoto l'a appelé : Igor a loué un utilitaire au nom du magasin avec un vieux chéquier de la boutique et ne l'a pas rendu.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-ludovic"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa4-ch-coupure",
+              "q": "Quelle piste les PJ tirent-ils de la coupure de journal ?",
+              "opts": [
+                {
+                  "t": "Le Chat qui rit",
+                  "suite": "Fausse piste : ambiance inquiétante, mais rien qu'un chat et un gardien endormi. Temps perdu."
+                },
+                {
+                  "t": "Le Roi de la Frite",
+                  "suite": "Bonne piste, mais cinq villes possibles : il faut attendre de nouvelles agressions pour trancher."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa4-sc-nord",
+          "nom": "3. Le Chat frappe dans le Nord",
+          "lieu": "Paris puis route du Nord",
+          "notes": "En coulisses : Igor prend la route au petit matin et « cueille » une langue près d'Arras, une près de Douai, puis une en rab à Wormhout (près de Dunkerque). À Dunkerque, il se fait embaucher au Roi de la Frite (personne d'autre ne veut de ces conditions de travail), loue une chambre minable dans un quartier pourri, y installe mini-four, bouilloire et dictionnaires, termine la traduction et lance son sort dans un entrepôt désaffecté du port : Charles-Otto apparaît et lui obéit.\n\nLes PJ apprennent (radio, télé, ou Hercule en dernier recours) les agressions d'Arras, de Douai, puis de Wormhout. Laisser les joueurs chercher sur une carte : le recoupement avec l'annonce désigne Dunkerque, d'autant que Wormhout est la plus récente.\nVariante sadique : retarder la nouvelle de Wormhout pour que les PJ hésitent (et filent peut-être à Lille).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa4-ch-ville",
+              "q": "Où les PJ vont-ils chercher Igor ?",
+              "opts": [
+                {
+                  "t": "Dunkerque",
+                  "suite": "Bonne pioche : ils arrivent en plein carnaval."
+                },
+                {
+                  "t": "Lille (ou autre)",
+                  "suite": "Le Roi de la Frite local présente ses nouvelles recrues : aucune n'est Igor. Retour vers Dunkerque, avec du retard."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa4-sc-dunkerque",
+          "nom": "4. Dunkerque, son Roi de la Frite, son carnaval",
+          "lieu": "Dunkerque : le Roi de la Frite (rue Poincaré), quartier de la chambre d'Igor",
+          "notes": "Carnaval annuel : foule déguisée, tambour-major, « bande » de fêtards bras dessus bras dessous avec les costauds devant, chahuts dont le rigodon final, et le maire qui lance des homards du balcon de la mairie. Tout cela doit parasiter la poursuite à venir.\nRoi de la Frite : voir le patron. Il oriente vers des logements ; les suivre prend du temps, mais l'utilitaire Loutonoto garé près de chez Igor peut le trahir.\nQuoi qu'il arrive, Igor, paranoïaque, remarque que des inconnus le cherchent (à la friterie ou près de chez lui). Son sort étant déjà lancé, il envoie Charles-Otto les neutraliser et prépare son départ pendant ce temps, en comptant récupérer son démon au passage.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa4-patron-frite-4",
+              "nom": "Le patron du Roi de la Frite",
+              "source": "Gérant de la friterie de Dunkerque, rue Poincaré",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand gaillard rigolard et accueillant. Confirme avoir embauché un homme correspondant à Igor (petit CDD de 15 h). S'inquiète : police ? quels ennuis ? Demande qu'on le laisse tranquille pendant le carnaval (les frites se vendent bien). Ne connaît pas l'adresse d'Igor mais lui a suggéré des logements.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-patron-frite"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa4-sc-poursuite",
+          "nom": "5. Course-poursuite dans le carnaval",
+          "lieu": "Rues de Dunkerque en plein carnaval",
+          "notes": "Charles-Otto se fait remarquer exprès (filature trop voyante à distance prudente), puis s'enfuit en espérant être suivi ; si les PJ ne mordent pas, il revient les appâter. Son but : les attirer dans l'entrepôt désaffecté du port où Igor a lancé son sort.\nRythme trépidant : il traverse le cortège, chipe un masque, se fait perdre puis retrouver ; les PJ doivent se croire semés puis malins de l'avoir rattrapé. Gags de carnaval : homard reçu en pleine figure, horde de fêtards qui veut le récupérer, bande compacte impossible à traverser.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa4-charles-otto-5",
+              "nom": "Charles-Otto Frèz",
+              "source": "Démon de Kobal, grade 2, invoqué et lié par Igor",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 17,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 33,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Gag absurde",
+                  "r": 13
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Perturbation de pouvoir",
+                  "r": 8
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 10
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Acrobatie 6+, Athlétisme 5+, Corps à corps 6+, Défense 8+, Humour 8, Intimidation 4+, Pickpocket 4+, Séduction 5+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit (1,60 m), châtain foncé, petits yeux noirs ; très vif, très fort, réflexes hors norme. Rictus inquiétant permanent, ricanements de dément en combat. Adore être un démon ; manipulateur et malin, il joue au chat et à la souris.\nGriffes : 66/RU+6/M+10 dans le livre, 2 PP pour les sortir.\nMoment clé : quand il est en difficulté, le MJ simule un 666 sur son Gag absurde, qui projette les PJ dans l'illusion Virtuavie (voir scène 7). Il n'a aucune envie de mourir pour Igor et fuit dès la fin de l'illusion.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-charles-otto"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa4-sc-entrepot",
+          "nom": "6. Bagarre à l'entrepôt",
+          "lieu": "Entrepôt désaffecté sur le port de Dunkerque",
+          "notes": "Charles-Otto arrive avec de l'avance. Si les PJ ne savent pas dans quel hangar il est entré, il les attire ou le MJ leur en fait fouiller quelques-uns. Changement de rythme : silence, suspense, PJ sur leurs gardes.\nIl joue la ruse et cherche à isoler ou écarter temporairement quelques PJ pour ne pas les affronter tous à la fois. Ricanements de dément, sourire à la Joker.\n\nLA TRICHE : laisser le combat s'engager. Au tour de Charles-Otto, de préférence quand il est en difficulté, lancer les dés et feindre la réaction d'un 666 naturel (sans en faire trop). Son Gag absurde réussit au-delà de tout : les PJ basculent dans l'illusion (scène 7). Dans la réalité, cela ne dure que quelques instants ; pour eux, des heures voire des jours.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa4-charles-otto-6",
+              "nom": "Charles-Otto Frèz",
+              "source": "Démon de Kobal, grade 2, invoqué et lié par Igor",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 17,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 33,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Gag absurde",
+                  "r": 13
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Perturbation de pouvoir",
+                  "r": 8
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 10
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Acrobatie 6+, Athlétisme 5+, Corps à corps 6+, Défense 8+, Humour 8, Intimidation 4+, Pickpocket 4+, Séduction 5+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit (1,60 m), châtain foncé, petits yeux noirs ; très vif, très fort, réflexes hors norme. Rictus inquiétant permanent, ricanements de dément en combat. Adore être un démon ; manipulateur et malin, il joue au chat et à la souris.\nGriffes : 66/RU+6/M+10 dans le livre, 2 PP pour les sortir.\nMoment clé : quand il est en difficulté, le MJ simule un 666 sur son Gag absurde, qui projette les PJ dans l'illusion Virtuavie (voir scène 7). Il n'a aucune envie de mourir pour Igor et fuit dès la fin de l'illusion.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-charles-otto"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa4-sc-illusion",
+          "nom": "7. L'illusion : Virtuavie, an 2560",
+          "lieu": "Salle de réalité virtuelle de Virtuavie, puis une ville française vers 2560, 21 h",
+          "notes": "Écran de neige façon télé en panne, puis la voix de Joseph : la séance est finie, il faut libérer la place. Les PJ se réveillent sur des couchettes en cuir usé, casques sur la tête et bracelets aux poignets reliés à un globe crépitant suspendu au plafond. Ils se reconnaissent, mais sont différents. Joseph les envoie à la salle de relaxation (six ou sept chaises, trois vieux magazines) où les attendent leurs affaires, repérées grâce au numéro tamponné sur leur main.\nCe qu'ils doivent comprendre : toutes leurs aventures n'étaient qu'un jeu de rôle virtuel, payé 167 nouveaux euros chacun. Affiches et magazines datés autour de 2560, technologie très avancée. Le but : semer le doute ne serait-ce qu'une minute sur la « vraie » réalité.\n\nNouvelles identités proposées (à adapter, à contre-emploi des PJ : le costaud devient gringalet, le macho devient femme, le filou devient ennemi public ou ténor du barreau) ; ils gardent un détail reconnaissable (voix, cicatrice, tic…). Point commun : une équipe soudée de cyber-jeu de rôles dans un univers d'anges, démons, psis et sorciers.\n• Spart Maxis (Alli Maxence) : se rêve en preux chevalier moderne, honnête et serviable, look d'aviateur des années 1950, expressions désuètes ; contrôleur de « tube » (métro).\n• Prillia Bonzo : brusque, langage fleuri ; étudiante en « samalologie » et serveuse dans un boui-boui du quartier mal famé.\n• Arthur Millefeuille : sympathique, cernes énormes, apprenti plombier surmené, bricoleur de génie ; amoureux de Desmoneda.\n• Desmoneda Papakicri : très mince, fort accent grec, vendeuse, sensible, s'évanouit pour un rien après une formule tirée de ses romans à l'eau de rose.\n• Esmer Labille : lunettes, cheveux en pétard, rêveur ; brillant étudiant boursier en synthèse d'organes, gringalet.\n\nLe monde : proche du nôtre, technologie avancée (médecine, aéronautique) mais société en piteux état ; Chine dominante, États-Unis affaiblis ; aucune créature surnaturelle. Dans leurs poches : carte d'identification unique, portable minuscule (comptes en banque à découvert ou presque), carte-clé du logement, grignotages chimiques aux noms bizarres, carte de voiture pour au moins l'un d'eux, gadgets inutiles. Dehors : nuit, rues désertes, architecture dépouillée mais colorée mêlée de bâtiments anciens, mini-caméras sur les lampadaires, magasins fermés par des rideaux hermétiques, quelques restaurants ouverts.\n\nSorties possibles (les idées des joueurs priment) : voir le choix ci-dessous. Se répéter « c'est une illusion » ne suffit pas. Si la table décroche, dissiper l'illusion tout de suite : elle doit cesser un jour de toute façon.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa4-joseph-7",
+              "nom": "Joseph",
+              "source": "Opérateur de Virtuavie (illusion)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Antillais énergique au grand sourire et à l'accent chantant ; appelle tout le monde « les zogs ». Retire les casques, vérifie que tout va bien et pousse les PJ vers la salle de relaxation. Prend toute protestation (amnésie, autre identité) pour une tentative de se faire rembourser et éclate de rire.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-joseph"
+            },
+            {
+              "id": "pa4-simimz-8",
+              "nom": "Simimz",
+              "source": "Épicier de nuit (illusion)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit gros d'allure méditerranéenne, moustache qu'il roule en réfléchissant. Sa boutique ouverte tard prétend vendre « tout ce dont vous avez besoin ». Écoute les PJ et propose une sortie (pilules, portail au bout d'un tunnel sous sa boutique…) contre un service ou un paiement.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-simimz"
+            },
+            {
+              "id": "pa4-feirrera-9",
+              "nom": "Simon Feirrera",
+              "source": "Conférencier sur les mondes parallèles (illusion)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Considéré comme un doux dingue, ses conférences font salle vide. Propose sa machine bricolée et visiblement dangereuse ; avoue des « mésaventures » (cobayes devenus fous) mais affirme avoir voyagé lui-même entre les univers. Au MJ de le rendre crédible ou inquiétant.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-feirrera"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa4-ch-sortie",
+              "q": "Comment les PJ sortent-ils de l'illusion ?",
+              "opts": [
+                {
+                  "t": "Une nouvelle séance chez Virtuavie",
+                  "suite": "Ouvert jour et nuit ; il faut réunir une petite somme : petit boulot, prêt, ou plan louche qui risque de finir derrière les barreaux (et de les retarder)."
+                },
+                {
+                  "t": "Le marché de Simimz",
+                  "suite": "Pilules, portail sous la boutique… contre un service ou un paiement."
+                },
+                {
+                  "t": "La machine de Simon Feirrera",
+                  "suite": "Engin bricolé et dangereux ; au MJ d'en faire un vrai passage ou une source d'angoisse."
+                },
+                {
+                  "t": "Le MJ dissipe l'illusion",
+                  "suite": "Si la scène s'essouffle : retour immédiat à l'entrepôt."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa4-sc-baston",
+          "nom": "8. Après l'illusion, baston !",
+          "lieu": "Entrepôt du port puis alentours",
+          "notes": "Retour brutal : quelques secondes seulement ont passé. Charles-Otto, en difficulté avant son coup d'éclat, n'a aucune envie de mourir pour Igor et file. Cette fois, pas de triche : les PJ le rattrapent ou non, et peuvent se défouler.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa4-charles-otto-10",
+              "nom": "Charles-Otto Frèz",
+              "source": "Démon de Kobal, grade 2, invoqué et lié par Igor",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 17,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 33,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Gag absurde",
+                  "r": 13
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Perturbation de pouvoir",
+                  "r": 8
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 10
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Acrobatie 6+, Athlétisme 5+, Corps à corps 6+, Défense 8+, Humour 8, Intimidation 4+, Pickpocket 4+, Séduction 5+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit (1,60 m), châtain foncé, petits yeux noirs ; très vif, très fort, réflexes hors norme. Rictus inquiétant permanent, ricanements de dément en combat. Adore être un démon ; manipulateur et malin, il joue au chat et à la souris.\nGriffes : 66/RU+6/M+10 dans le livre, 2 PP pour les sortir.\nMoment clé : quand il est en difficulté, le MJ simule un 666 sur son Gag absurde, qui projette les PJ dans l'illusion Virtuavie (voir scène 7). Il n'a aucune envie de mourir pour Igor et fuit dès la fin de l'illusion.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-charles-otto"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa4-ch-demon",
+              "q": "Charles-Otto est-il mis hors d'état de nuire ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Très bon point pour la mission ; Igor attend en vain son démon."
+                },
+                {
+                  "t": "Il s'échappe",
+                  "suite": "Il retourne auprès d'Igor ou disparaît dans la nature, libre ou toujours lié : à reprendre plus tard."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa4-sc-igor",
+          "nom": "9. Cueillir le Chat",
+          "lieu": "Chambre d'Igor à Dunkerque, ou son utilitaire coincé dans les embouteillages du carnaval",
+          "notes": "Igor boucle fiévreusement ses affaires en attendant le retour victorieux de son démon (le livre écrit « Jean-Louis » à cet endroit : c'est bien Igor). On le cueille chez lui ou un peu plus loin, utilitaire bloqué par le carnaval. Il a le grimoire avec lui. Il ne se bat pas physiquement et tente sa sorcellerie, sans grand effet : il est bien meilleur en sorts mijotés qu'instantanés.\nPreuves pour la police : une langue en rab, les tampons de patte de chat, la facture et l'utilitaire Loutonoto. S'il parle de sorcellerie ou de la DTC, personne ne le croira.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa4-igor-11",
+              "nom": "Igor Tovniak, « le Chat »",
+              "source": "Sorcier, voleur du grimoire et coupeur de langues",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 6,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Sécateur",
+                  "att": 2,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 0+, Baratin 2, Défense 2, Discrétion 2, Discussion 4 ; Basse sorcellerie 3, Haute sorcellerie 2, Pentacle 2, Invocation 3, Demande 3, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, blond aux yeux bleus, visage carré, 1,75 m ; marmonne au lieu d'articuler. Brillant mais flemmard, têtu, ronchon, pessimiste, malhonnête et odieux (surtout avec les femmes). Études abandonnées, petits boulots enchaînés ; vendeur au Vingt naturel jusqu'au vol.\nIl vole le grimoire araméen de Jean-Louis, coupe des langues d'enfants au sécateur (signature : une patte de chat au tampon, d'où son surnom médiatique) et invoque puis lie Charles-Otto. Bien meilleur en sorts longs et préparés qu'en sorts instantanés : face aux PJ, sa sorcellerie ne va pas loin, et il ne se bat pas physiquement.\nCorps à corps non donné : sécateur estimé au niveau 1 (profil d'arme du cran d'arrêt).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83.",
+              "typeId": "type-pa4-igor"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa4-ch-sort",
+              "q": "Que font les PJ d'Igor ?",
+              "opts": [
+                {
+                  "t": "Ils le livrent à la police",
+                  "suite": "Fin du Chat : les PJ suivront son procès à la radio. Le Roi de la Frite doit repasser une annonce."
+                },
+                {
+                  "t": "Ils le ramènent à Hercule",
+                  "suite": "Conforme au contrat : Hercule décide de son sort."
+                },
+                {
+                  "t": "Autre (vengeance, marché…)",
+                  "suite": "À juger selon le camp et la morale des PJ."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa4-ch-grimoire",
+              "q": "Qu'advient-il du grimoire ?",
+              "opts": [
+                {
+                  "t": "Rendu à Jean-Louis",
+                  "suite": "Client satisfait, contrat rempli ; Jean-Louis devient un contact reconnaissant."
+                },
+                {
+                  "t": "Gardé par la DTC (ou les PJ)",
+                  "suite": "Un sort d'invocation de démon de Kobal entre de nouvelles mains."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340308776,
+      "updatedAt": 1795340308776
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa4-igor",
+      "nom": "Igor Tovniak, « le Chat »",
+      "source": "Sorcier, voleur du grimoire et coupeur de langues",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 6,
+        "pr": 3,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Sécateur",
+          "att": 2,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Aisance sociale 0+, Baratin 2, Défense 2, Discrétion 2, Discussion 4 ; Basse sorcellerie 3, Haute sorcellerie 2, Pentacle 2, Invocation 3, Demande 3, Lien 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La quarantaine, blond aux yeux bleus, visage carré, 1,75 m ; marmonne au lieu d'articuler. Brillant mais flemmard, têtu, ronchon, pessimiste, malhonnête et odieux (surtout avec les femmes). Études abandonnées, petits boulots enchaînés ; vendeur au Vingt naturel jusqu'au vol.\nIl vole le grimoire araméen de Jean-Louis, coupe des langues d'enfants au sécateur (signature : une patte de chat au tampon, d'où son surnom médiatique) et invoque puis lie Charles-Otto. Bien meilleur en sorts longs et préparés qu'en sorts instantanés : face aux PJ, sa sorcellerie ne va pas loin, et il ne se bat pas physiquement.\nCorps à corps non donné : sécateur estimé au niveau 1 (profil d'arme du cran d'arrêt).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-jean-louis",
+      "nom": "Jean-Louis Lafrange",
+      "source": "Sorcier, chimiste, commanditaire volé",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 2,
+        "vo": 5,
+        "pr": 6,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Hobby : cuisine 3+, Kama-sutra 2, Séduction 3 ; Basse sorcellerie 2+, Haute sorcellerie 2+, Pentacle 1+, Invocation 1+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La quarantaine, très grand (1,95 m), maigre, brun, nez immense, oreilles décollées, grand sourire sympathique. Enthousiaste, sujet à de gros coups de déprime. Chimiste, divorcé, couche avec sa patronne (et le regrette). Sorcier moyen qui collectionne les vieux grimoires chinés en brocante sans tout comprendre ; excellent cuisinier.\nVoit Igor une fois par mois, sans amitié véritable. Se sent responsable des agressions et vient chercher l'aide de la DTC.\nAprès le scénario : allié mineur possible (consultant en sorcellerie, par exemple face à Médée).\nDéfense et attaque non données : estimées au niveau 1.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-charles-otto",
+      "nom": "Charles-Otto Frèz",
+      "source": "Démon de Kobal, grade 2, invoqué et lié par Igor",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 4,
+        "vo": 8,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 17,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 33,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 12,
+          "prec": 0,
+          "puis": 10,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Adhérence",
+          "r": 4
+        },
+        {
+          "n": "Corps liquide",
+          "r": 0
+        },
+        {
+          "n": "Détection du danger",
+          "r": 6
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Gag absurde",
+          "r": 13
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Perturbation de pouvoir",
+          "r": 8
+        },
+        {
+          "n": "Rebond",
+          "r": 8
+        },
+        {
+          "n": "Vitesse",
+          "r": 10
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Acrobatie 6+, Athlétisme 5+, Corps à corps 6+, Défense 8+, Humour 8, Intimidation 4+, Pickpocket 4+, Séduction 5+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit (1,60 m), châtain foncé, petits yeux noirs ; très vif, très fort, réflexes hors norme. Rictus inquiétant permanent, ricanements de dément en combat. Adore être un démon ; manipulateur et malin, il joue au chat et à la souris.\nGriffes : 66/RU+6/M+10 dans le livre, 2 PP pour les sortir.\nMoment clé : quand il est en difficulté, le MJ simule un 666 sur son Gag absurde, qui projette les PJ dans l'illusion Virtuavie (voir scène 7). Il n'a aucune envie de mourir pour Igor et fuit dès la fin de l'illusion.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-hercule",
+      "nom": "Hercule",
+      "source": "Patron de la DTC, héros païen",
+      "type": "paien",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Commanditaire : fixe le tarif, fait signer le contrat à Jean-Louis et envoie les PJ ramener Igor et le grimoire. Les faits divers sur « le Chat » l'ont horrifié : il est ravi de faire arrêter ce malade.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-ludovic",
+      "nom": "Ludovic",
+      "source": "Patron du Vingt naturel (boutique de jeux de rôles, Paris)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "N'a pas vu Igor de la semaine et s'en réjouit (vendeur nul, méprisant envers les clients). Connaît son adresse (bulletins de salaire). Loutonoto l'a appelé : Igor a loué un utilitaire au nom du magasin avec un vieux chéquier de la boutique et ne l'a pas rendu.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-patron-frite",
+      "nom": "Le patron du Roi de la Frite",
+      "source": "Gérant de la friterie de Dunkerque, rue Poincaré",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand gaillard rigolard et accueillant. Confirme avoir embauché un homme correspondant à Igor (petit CDD de 15 h). S'inquiète : police ? quels ennuis ? Demande qu'on le laisse tranquille pendant le carnaval (les frites se vendent bien). Ne connaît pas l'adresse d'Igor mais lui a suggéré des logements.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-joseph",
+      "nom": "Joseph",
+      "source": "Opérateur de Virtuavie (illusion)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Antillais énergique au grand sourire et à l'accent chantant ; appelle tout le monde « les zogs ». Retire les casques, vérifie que tout va bien et pousse les PJ vers la salle de relaxation. Prend toute protestation (amnésie, autre identité) pour une tentative de se faire rembourser et éclate de rire.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-simimz",
+      "nom": "Simimz",
+      "source": "Épicier de nuit (illusion)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit gros d'allure méditerranéenne, moustache qu'il roule en réfléchissant. Sa boutique ouverte tard prétend vendre « tout ce dont vous avez besoin ». Écoute les PJ et propose une sortie (pilules, portail au bout d'un tunnel sous sa boutique…) contre un service ou un paiement.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    },
+    {
+      "id": "type-pa4-feirrera",
+      "nom": "Simon Feirrera",
+      "source": "Conférencier sur les mondes parallèles (illusion)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Considéré comme un doux dingue, ses conférences font salle vide. Propose sa machine bricolée et visiblement dangereuse ; avoue des « mésaventures » (cobayes devenus fous) mais affirme avoir voyagé lui-même entre les univers. Au MJ de le rendre crédible ou inquiétant.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 9 « Langues et sécateur », p. 74-83."
+    }
+  ],
+  "memoire": []
+}

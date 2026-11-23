@@ -1,0 +1,3271 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-16-fin-du-monde",
+      "nom": "Fire and Ice (scénario 16) – Le jour où nous sommes allés voir la fin du monde",
+      "resume": "Dies Irae, scénario 16 (INS), final de la campagne Fire and Ice. Andrealphus, capturée par la Garde carmine, appelle les PJ au secours depuis Montgrumeau (Cantal) ; depuis le sort de Hornet, toutes les créatures surnaturelles ressentent la douleur. Fausses pistes (ovni, vaches malades, Cantal.net), embuscade, base militaire noyautée, puis découverte du rituel de Belial dans le cratère du puy de Dôme. Les PJ lèvent une armée en sollicitant tous leurs alliés de la campagne, livrent une grande bataille (règles « Casus Belli »), assistent à la mort de Belial, puis rattrapent Satan et Gabriel à La Bourboule : Gabriel tue Samaël, les PJ doivent tuer Andrealphus avec l'épée de l'archange et Lucifer renaît dans Damien.",
+      "notes": "Source : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141. Aides de jeu utilisées : « Casus Belli » (p. 157-159, résumé dans la scène 10), tableau de puissance des troupes (p. 136-137, scène 9), « Lux Aeterna » (p. 150-152, scène 13), « Tempus Fugit » (p. 152-154), « Dramatis Personae » (p. 155-156 : fiches de Marie-Jolie et Hornet).\nTrois parties : 1) Montgrumeau (enquête, embuscade, base) ; 2) le volcan et la diplomatie (lever une armée à Paris) ; 3) la bataille, la course vers La Bourboule et la fin du monde.\nRègle spéciale : les démons (et tous leurs adversaires surnaturels) ressentent la douleur comme des humains pendant tout le scénario.\n\nRécompenses : le livre ne donne pas de PA ; au jour 12, le nouveau monarque des Enfers offre aux PJ les récompenses de leur choix (nature, avantages administratifs, pouvoirs, position) et leur propose de servir directement le Boss. Gilbert a sans doute encore une Accolade du Respect en réserve.\n\nChronologie (Tempus Fugit) : J-2 mois, le démon de Malthus commence à empoisonner les vaches ; J-1 mois, le premier démon de Belial s'incarne et élimine les officiers ; J-3 semaines, Yolande Jolimont se planque chez les gitans du Cantal ; J-3 jours, repérée par la Garde carmine, elle fuit, les Belial déclenchent un incendie de forêt (rumeur d'ovni), l'armée boucle le secteur ; J-2 jours, fausses preuves du crash ; J1, Hornet lance son sort de douleur, les PJ partent dans le Massif central ; J2-3, enquête à Montgrumeau, vétérinaire de Malthus ; J3-5, piste jusqu'à Vulcania, découverte de la plate-forme d'invocation ; J3-10, levée des troupes ; J10, minuit, invocation, bataille, mort de Belial, enlèvement d'Andrealphus par Satan, course à La Bourboule, exécution de Lucifer et sauvetage du monde. Suite des événements : voir la scène 12.\n\nMystères de la campagne (Lux Aeterna, « Les cahiers du labyrinthe ») : voir la scène 13.\n\nFiches : Monsieur Fabien et Gilbert reprennent la fiche du Centre de Tri (Fire and Ice, p. 24-26). Garde carmine : fiche de « Run like Hell » (p. 65), comme le suggère le texte. Marie-Jolie et Hornet : fiches de prince (Dramatis Personae). Les alliés des PJ ne figurent dans aucune scène de combat ; la bataille se résout avec Casus Belli. Valeurs estimées signalées dans chaque fiche.",
+      "scenes": [
+        {
+          "id": "fi16-sc-prologue",
+          "nom": "1. Prologue : living in harmony",
+          "lieu": "Centre de Tri, Paris – jour 1",
+          "notes": "Contexte : à la fin du scénario précédent, Belial a enfin capturé Andrealphus (enceinte de Damien, sous les traits de Yolande Jolimont). Poursuivie par la Garde carmine, elle a brûlé tous ses PP et utilisé les derniers pour appeler au secours les seuls en qui elle a confiance : les PJ. Direction Montgrumeau, dans le Cantal, où Belial prépare justement son rituel d'invocation de « la meuf ».\nLe même jour, Hornet lance son sort expérimental : toutes les créatures surnaturelles incarnées ressentent désormais la douleur comme des humains (à rappeler dès le premier combat, adversaires compris).\nSi les PJ repassent au Centre de Tri : Beleth (sous l'apparence de Monsieur Fabien) ne dort plus depuis des jours, cernes énormes, migraine, la voix de Hornet dans la tête. Il leur donne carte blanche et leur avoue que quelque chose ne tourne plus rond.\nTrajet : avion jusqu'à Clermont-Ferrand, puis une centaine de kilomètres de route ; panneaux vantant Vulcania et les cures de La Bourboule.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-fabien-1",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans ce scénario : Beleth, sous l'apparence de Fabien, ne dort plus depuis des jours (cernes énormes) et a la migraine : la voix de Hornet le hante. Donne carte blanche aux PJ pour retrouver Andrealphus, leur avoue que quelque chose cloche (les démons ressentent la douleur). Déconseille de passer par la hiérarchie, conseille sur les alliés à solliciter, gère la logistique (cars, hôtels, coups de fil) mais n'apporte pas d'aide militaire.\nFin de campagne (Tempus Fugit) : au jour 12 il accompagne le nouveau monarque des Enfers chez Chez Régis pour les explications finales et les récompenses.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi16-fabien"
+            },
+            {
+              "id": "fi16-gilbert-2",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans ce scénario : se joint d'office aux PJ pour l'assaut final (« ben ouais, les p'tits gars ») ; PS 26 dans le tableau de bataille. Au jour 1 après la fin du monde, débriefing au Centre de Tri avec lui.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi16-gilbert"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-montgrumeau",
+          "nom": "2. La petite maison dans la prairie",
+          "lieu": "Montgrumeau (Cantal), gîte de la ferme Ferdinand – jours 2-3",
+          "notes": "Montgrumeau : 21 548 habitants, à flanc de montagne, une trentaine de kilomètres au nord-ouest d'Aurillac ; commune étendue, fermes éloignées, vent du sud et buissons qui roulent comme dans un western. « Première commune câblée du Cantal ». Visages fermés, camions militaires partout, fermes délabrées et vaches faméliques, mais centre-ville rutilant refait à neuf et quelques maisons très luxueuses.\nSources de tension : camp de bohémiens mal accepté, rachat des fermes par Cantal.net, vaches malades, présence très active de l'armée depuis que « quelque chose » s'est écrasé dans la forêt (en grande partie calcinée).\nPas d'hôtel : le plus grand gîte rural est la ferme des Ferdinand (pavillon près de la grange, odeur de bouse). Laura est la porte d'entrée : la seule à parler des problèmes (ovni, vaches) ; elle oriente vers le père Dugros.\nAmbiance : méfiance générale, villageois qui se taisent ou quittent le bar à l'arrivée des PJ.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-laura-3",
+              "nom": "Laura Ferdinand",
+              "source": "Humaine, 17 ans, fille des propriétaires du gîte",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brune, pulpeuse, rêve de Paris et d'hommes plus âgés « avec une vraie voiture » ; son petit ami vient la chercher en 103 SP. Intelligente mais naïve : la seule de la famille qui parle facilement aux PJ.\nInfos : les villageois croient à un crash d'ovni, les vaches dépérissent et donnent de moins en moins de lait ; elle oriente vers le père Dugros. Au retour des PJ en ville, elle les prévient que des soldats sont venus poser des questions sur eux.\nCaractéristiques non fournies par le livre : valeurs estimées.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-laura"
+            },
+            {
+              "id": "fi16-ferdinand-4",
+              "nom": "Famille Ferdinand",
+              "source": "Éleveurs, tenanciers du plus grand gîte de Montgrumeau",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Fusil de chasse (Willy)",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Charles (brun sec et barbu, bleu de travail, taciturne) et Caroline (grande blonde bavarde à voix haut perchée, s'occupe des hôtes et des comptes), la cinquantaine. Willy, 30 ans, conseiller financier à la banque de la ville, méprise les « bouseux » et adore sa mère. Albert, 27 ans, près de deux mètres, s'occupe des bêtes, intelligent mais muet comme son père.\nAu retour des PJ, Willy les accueille fusil en main et Caroline les prie de partir.\nFiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-ferdinand"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-fausses-pistes",
+          "nom": "3. Pour une poignée d'euros",
+          "lieu": "Montgrumeau et environs – jours 2-3",
+          "notes": "Fausses pistes qui retardent les démons (ils se méfient a priori de l'armée, tant l'infiltration de la troupe par les anges est connue : rappeler la discrétion).\n• Le père Dugros, meilleur fromager du coin : tout est une affaire de gros sous ; Cantal.net rachète les fermes pour une usine électronique et rend les vaches malades avec l'aide du vétérinaire.\n• Cantal.net : Armand Rouvillois et René Mangeot, trentenaires informaticiens de Clermont, au bout du rouleau (René aime en secret Chantal, la femme d'Armand). Câblage subventionné avec l'appui du maire communiste Paul Lebaron (soixante ans, replet, roublard, qui a refait son centre-ville avec l'argent et multiplie les recours contre les gitans). Les fonds viennent en réalité de l'armée, qui les utilise comme prête-noms sans explication ; ils ne l'avouent que sous la pression.\n• Didier Szymkowiak, le vétérinaire : innocent, parle de l'incendie (la nuit de la disparition d'Andrealphus) et a vu une jeune femme enceinte ressemblant à Yolande chez les nomades.\n• Dominique, l'idiot du village (quarantaine, obèse, hirsute, phrases de trois mots) : la nuit de l'incendie, des « hommes en noir » lui ont dit de rentrer chez lui ; il en a conclu à des espions cachant un vaisseau extraterrestre. Rien d'autre.\n• La forêt : à quelques kilomètres, un cratère d'une trentaine de mètres avec quelques débris métalliques.\n• Les gens du voyage : une trentaine, mobile homes et caravanes, famille Turasca menée par le patriarche Lazaros, sorcier qui devine la nature des PJ. Andrealphus est restée trois semaines chez eux et a disparu la nuit de l'incendie après une visite des militaires.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-szymkowiak-5",
+              "nom": "Didier Szymkowiak",
+              "source": "Humain, vétérinaire de Montgrumeau",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ashkénaze athée de 43 ans, grand, chauve, yeux verts malicieux, petites lunettes rondes ; a fui Paris par amour de la nature. Accusé par les villageois d'empoisonner les vaches pour Cantal.net : totalement innocent et démuni (la Direction régionale des services vétérinaires ne répond pas).\nUn des seuls à parler de l'incendie, amusé par la rumeur d'ovni. A vu chez les gens du voyage une jeune femme enceinte correspondant à Yolande (Andrealphus).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-szymkowiak"
+            },
+            {
+              "id": "fi16-lazaros-6",
+              "nom": "Lazaros Turasca",
+              "source": "Sorcier gitan, patriarche des gens du voyage",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 5,
+                "vo": 8,
+                "pr": 6,
+                "foi": 7
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Bâton",
+                  "att": 8,
+                  "prec": 1,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Histoire des Gitans 4+, Combat 4, Discussion 3, Conte 3+ ; sorcellerie : Pentacle pour ange 4, Invocation d'un ange 3, Demande à un ange 4, Contrôle d'un ange 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Près de cent ans, peau parcheminée et tatouée, très mince, longs cheveux blancs ; appelle les PJ « Mule ». Devine facilement leur nature (comme il avait deviné celle d'Andrealphus, sans savoir que c'était un prince en fuite). Accueillant si les démons se tiennent bien.\nAndrealphus a vécu trois semaines dans la communauté (appréciée, se nourrissait à Aurillac) ; elle est partie quand des militaires sont venus poser des questions, et a disparu la nuit de l'incendie.\nArme non précisée (talent Combat 4) : bâton retenu. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-lazaros"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-embuscade",
+          "nom": "4. Mon nom est personne",
+          "lieu": "Route de la ferme Ferdinand – jour 3",
+          "notes": "Au retour en ville : état de siège, militaires armés en patrouille, habitants cloîtrés. À la ferme, Willy les accueille fusil en main et Caroline les prie de partir ; Laura leur glisse que des soldats les recherchent.\nVérité : la Garde carmine nettoie la région. Ce sont les démons de Belial qui ont mis le feu à la forêt en poursuivant le prince ; ils ont exploité la rumeur d'ovni, posé de faux débris puis lancé une fausse opération militaire pour boucler le périmètre.\nUn comité d'accueil de démons de Belial surveille la route de la ferme et suit les PJ jusqu'à un endroit tranquille pour les attaquer. Rappel : tout le monde ressent la douleur.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi16-brule-7",
+              "nom": "Brûle, Crame, Grille et Rôti",
+              "source": "Démons de Belial, grade 0 (démons de base)",
+              "type": "demon",
+              "qty": 4,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 5
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Incendie",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 5
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 4, Défense 3, Corps à corps 3+ ; avertissements sans frais : couleur des yeux, cicatrice, phobie des croix, mythomanie",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quatre types en treillis et rangers armés de fusils d'assaut. Fiche type des démons de base de Belial : comité d'accueil sur la route de la ferme, patrouilles du puy de Dôme (avec un membre de la Garde carmine), cinquante démons de base (PS 20) dans la bataille.\nFusil d'assaut rendu en fusil-mitrailleur (table des règles).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-brule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-base",
+          "nom": "5. La base militaire",
+          "lieu": "Caserne de Montgrumeau – jours 3-5",
+          "notes": "À la fin du combat, une démone de Malthus (secrétaire de la base) aborde les PJ et leur décrit la base (voir sa fiche) : quinze démons de Belial incarnés, contamination partie d'un officier supérieur il y a un mois, vingt soldats en patrouilles de quatre avec un officier démon, plus de cent hommes normaux, une dizaine de nouveau-nés de Belial en formation. Le plan de Belial aura lieu dans une semaine.\nInfiltration déconseillée mais possible : un peu plus d'un kilomètre carré, grilles de cinq mètres barbelées ; se déguiser en militaire et rester discret. La base grouille ; un convoi se prépare (une dizaine de camions), des « scientifiques » à tête de sorciers errent. Andrealphus est inapprochable : gardée par deux groupes de la Garde carmine dans un entrepôt, dans le coma.\nEn surveillant, les PJ voient charger un container d'acier de la taille d'un cercueil dans un camion ; un convoi d'une demi-douzaine de véhicules part vers le nord, rejoint l'autoroute de Clermont-Ferrand, dépasse Vulcania et prend la route du puy de Dôme, où un check point militaire bloque tout le monde (prétendue activité volcanique).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-malthus-8",
+              "nom": "La secrétaire de Malthus",
+              "source": "Démone de Malthus incarnée dans une secrétaire de la base",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentaine, cheveux roux en chignon serré, acné juvénile, petites lunettes. Aborde les PJ à la fin de l'embuscade. Responsable de la maladie des vaches (deux mois) et du rachat des fermes par Cantal.net avec l'argent détourné de la base : simple semeuse de zizanie, aucun projet occulte.\nInfos : quinze démons de Belial incarnés dans la base en plus des assaillants ; tout a commencé il y a un mois par un officier supérieur possédé qui a éliminé les gradés un à un ; vingt soldats patrouillent par quatre avec un officier démon, dix démons restent à la base avec plus de cent hommes normaux ; centre de formation d'une dizaine de « nouveau-nés » de Belial. Base d'un kilomètre carré, grilles de cinq mètres barbelées. Elle sait qu'un prisonnier a été pris le jour de l'incendie, qu'il va être exfiltré et que le plan aura lieu dans une semaine.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-malthus"
+            },
+            {
+              "id": "fi16-soldats-9",
+              "nom": "Soldats de la garnison",
+              "source": "Militaires humains (caserne noyautée par Belial)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 1+ (armes d'épaule 3+), Savoir militaire 2 (tactique 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Kaki dehors, caca dedans : 20-40 ans, cheveux ras, vocabulaire limité ; des imbéciles engagés faute de mieux et une minorité de fachos. Patrouilles de quatre encadrées par un officier démoniaque dans Montgrumeau ; dix au check point du puy de Dôme.\nFusil d'assaut (illustration) rendu en fusil-mitrailleur, au niveau des armes d'épaule. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-soldats"
+            },
+            {
+              "id": "fi16-garde-carmine-10",
+              "nom": "Garde carmine",
+              "source": "Démons de Belial, grade 1 (équipe d'élite)",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes hommes petits, poilus et lunetteux, déguisés en pompiers ou en militaires, vans noirs. Ont pourchassé Andrealphus et allumé l'incendie de forêt, puis monté la fausse affaire d'ovni et la fausse opération militaire. Deux membres au check point, un par patrouille sur le volcan, vingt-cinq dans la bataille (PS 28).\nLe scénario renvoie aux « précédents PNJ » : fiche de l'équipe de Run like Hell.\nSource : Fire and Ice 2, « Run like Hell », p. 65 (fiche de la Garde carmine, recyclée comme le suggère le scénario).",
+              "typeId": "type-fi16-garde-carmine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-base",
+              "q": "Comment les PJ suivent-ils la piste d'Andrealphus ?",
+              "opts": [
+                {
+                  "t": "Ils observent la base de l'extérieur",
+                  "suite": "Ils voient le container partir avec le convoi et le suivent jusqu'au check point du puy de Dôme."
+                },
+                {
+                  "t": "Ils s'infiltrent dans la base",
+                  "suite": "Très risqué : un repérage déclenche une bataille perdue d'avance contre plus de cent hommes et une vingtaine de démons ; au mieux ils confirment le coma d'Andrealphus et le départ imminent."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi16-sc-volcan",
+          "nom": "6. Un être s'éteint, un volcan s'éveille",
+          "lieu": "Vulcania, Clermont-Ferrand et puy de Dôme – jours 3-5",
+          "notes": "Belial a choisi le puy de Dôme pour sa conjonction : les volcans lui permettent, à lui et ses serviteurs, de récupérer vite de la puissance, et il compte s'en servir pour booster l'invocation quitte à noyer la région sous la lave. Il reste une semaine à compter de l'arrivée d'Andrealphus. Rapport de force : un contre dix ; il faudra rentrer à Paris lever une armée.\n• Vulcania : grand musée en béton au cône central ; à Clermont, on apprend que l'armée est là depuis un mois « en prévision d'une éruption ». Les volcanologues n'y croient pas (le puy de Dôme dort pour longtemps ; il faudrait évacuer, pas déployer des soldats).\n• Martin Abrahamovitch, exovolcanologue de près de quatre-vingts ans, ours polaire à fort accent clermontois et un peu cinglé : selon lui une race extraterrestre déclenche l'Apocalypse par les volcans. Il a des échantillons : forte activité, prête à l'éruption. Il indique un sentier évitant les patrouilles : une heure de marche jusqu'à un trou d'un mètre d'où monte une fumée âcre au-dessus d'un puits de lave (activité doublée en quinze jours).\n• Cratère principal : aux jumelles, baraquements préfabriqués, hommes en armes, vans noirs de la Garde carmine. Ascension difficile : au moins six heures, nombreux tests de Perception, possible rencontre d'une patrouille de démons de Belial.\n• Au sommet : une demi-douzaine de baraquements, une dizaine de transports de troupes de l'armée, des véhicules de la Garde carmine ; derrière la crête, un camp retranché (deux grands entrepôts, une vingtaine de baraques, des dizaines d'hommes armés). Dans le cratère, lave et jets de plusieurs mètres ; cent mètres plus bas, un plateau rocheux accessible par des marches taillées : autel de pierre au centre d'un pentacle rouge d'une cinquantaine de mètres, pics de trois mètres à chaque pointe avec chaînes et traces de sang coagulé.\nLibérer Andrealphus seuls est suicidaire : retour à Paris (Beleth les presse de revenir s'en occuper eux-mêmes, il n'a pas le temps de gérer les renforts).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi16-garde-carmine-11",
+              "nom": "Garde carmine",
+              "source": "Démons de Belial, grade 1 (équipe d'élite)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes hommes petits, poilus et lunetteux, déguisés en pompiers ou en militaires, vans noirs. Ont pourchassé Andrealphus et allumé l'incendie de forêt, puis monté la fausse affaire d'ovni et la fausse opération militaire. Deux membres au check point, un par patrouille sur le volcan, vingt-cinq dans la bataille (PS 28).\nLe scénario renvoie aux « précédents PNJ » : fiche de l'équipe de Run like Hell.\nSource : Fire and Ice 2, « Run like Hell », p. 65 (fiche de la Garde carmine, recyclée comme le suggère le scénario).",
+              "typeId": "type-fi16-garde-carmine"
+            },
+            {
+              "id": "fi16-brule-12",
+              "nom": "Brûle, Crame, Grille et Rôti",
+              "source": "Démons de Belial, grade 0 (démons de base)",
+              "type": "demon",
+              "qty": 3,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 5
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Incendie",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 5
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 4, Défense 3, Corps à corps 3+ ; avertissements sans frais : couleur des yeux, cicatrice, phobie des croix, mythomanie",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quatre types en treillis et rangers armés de fusils d'assaut. Fiche type des démons de base de Belial : comité d'accueil sur la route de la ferme, patrouilles du puy de Dôme (avec un membre de la Garde carmine), cinquante démons de base (PS 20) dans la bataille.\nFusil d'assaut rendu en fusil-mitrailleur (table des règles).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-brule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-diplomacy",
+          "nom": "7. Diplomacy : lever une armée",
+          "lieu": "Paris – jours 3-10",
+          "notes": "Beleth déconseille la hiérarchie (le chaos règne chez les forces du Mal). Les PJ font jouer leurs relations ; partie très ouverte, improviser au besoin. Pour chaque allié : condition → aide (PS individuelles du tableau de la scène 9).\n• Andromalius, via Salomon (suite à l'hôtel Crillon, joue les transfuges) : exposer toute l'affaire et lui fournir les preuves du complot contre lui (dossier de Run like Hell, ou piste d'Alonzo jusqu'à Aurélie) → une dizaine de « démons » dont la moitié sont des anges (deux équipes du Labyrinthe) à Vulcania la nuit d'avant.\n• Ange (via Ignace, lapin au premier rendez-vous, bar place Saint-Michel) : jouer l'équilibre Bien/Mal et garantir sa sécurité → trois anges vaudouisants et Ignace, à Clermont la veille.\n• Baalberith : très mauvaise idée. Charmant, il loue une villa près de Clermont et prête trois serviteurs… et prévient Belial : une vingtaine de démons attaquent la villa à l'arme lourde. Pas d'effet de surprise.\n• L'Aphte : Malphas en personne ; en échange, faire peur sans le tuer à Girfalko, ange de Blandine grade 3 « intouchable » → logistique : effectifs exacts de Belial et rumeur d'une attaque à Toulouse (Belial redéploie dix démons).\n• Baskin Robbins (Nosferax) : Samigina refuse.\n• Boul'Mich (Delikatessen, si bonne entente au scénario 9) : Haagenti trouve ça marrant → familles cannibales (transport à fournir) et trois bouchers de la « 103e division de gastronomie ».\n• Chez Régis : Jésus refuse (neutre, a piscine) ; trois ou quatre démons recrutables parmi les clients selon le roleplay.\n• Crocell (si aidé au scénario 8) : une dizaine de démons (moitié renégats) et une trentaine de Flocons de sang.\n• Centre de Tri : conseils et logistique ; Gilbert participe à l'assaut.\n• Deprofundis : vient avec ses zombies lettrés, sans véhicule ni permis (transport à organiser).\n• Furfur : introuvable sauf au concert de 2MBC dans un squat de banlieue trois jours avant l'invocation ; il faut pogoter dans le pit → cinq serviteurs et une douzaine de teufeurs défoncés aux acides (squat à Clermont).\n• Marie-Jolie (via Fabien) : bar du Ritz avec Thomas Hobbes et Baal ; tout expliquer à Baal → dix serviteurs de Baal, Marie-Jolie, ses deux corbeaux, Thomas Hobbes, et une demi-douzaine d'anges de Michel en renfort de dernier recours.\n• Ouikka (paranoïaque, cabines téléphoniques, intermédiaires) : Pablo, autonomiste basque grade 3 ; insister sur la revanche de Crocell → accès au dépôt d'armes de la police de Mantes-la-Jolie.\n• Paulo et Rotka : refus net ; Rotka prévient Belial (pas d'effet de surprise).\n• Penthouse 69 : en échange, faire la leçon à Albert Cassis → armes automatiques et beaucoup d'argent (hôtel, villa, voire hélicoptère).\n• Le Professeur (Kronos), via un attaché parlementaire au Café des ministres, rendez-vous à 11 h 11 dans un atelier du quartier de l'Horloge, neuf minutes d'entretien : ponctualité, politesse, « préserver le Grand Jeu » → il appelle au début de la bataille et anticipe les manœuvres de Belial.\n• Sechepine : faire taire le chihuahua de sa voisine → Kobal, à une pièce d'Ibsen à la Comédie-Française, exige une blague qui le fasse rire en deux minutes → division « Runaway », une douzaine de démons incarnés dans des lapins blancs.\n• Les sorciers : la Rose mène à Hornet lui-même. Aide : non.\n• Zombies des galeries (si alliés au scénario 9) : tuer Julien Strauss, chef des skins → une dizaine de zombies (transport).\n• U-Boat Crew (Vephar) : retrouver Marguerite, anaconda familier de trente mètres bleu pastel, capturée par les services vétérinaires (zoo de Vincennes) → Marguerite (transport).\n• Uphir (si le miniscénario « Magie, magie et vos idées ont du génie » a été joué) : rendez-vous via Super Phénix → une dizaine de bourrins en camion antédiluvien.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-fabien-13",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans ce scénario : Beleth, sous l'apparence de Fabien, ne dort plus depuis des jours (cernes énormes) et a la migraine : la voix de Hornet le hante. Donne carte blanche aux PJ pour retrouver Andrealphus, leur avoue que quelque chose cloche (les démons ressentent la douleur). Déconseille de passer par la hiérarchie, conseille sur les alliés à solliciter, gère la logistique (cars, hôtels, coups de fil) mais n'apporte pas d'aide militaire.\nFin de campagne (Tempus Fugit) : au jour 12 il accompagne le nouveau monarque des Enfers chez Chez Régis pour les explications finales et les récompenses.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi16-fabien"
+            },
+            {
+              "id": "fi16-marie-jolie-14",
+              "nom": "Marie-Jolie",
+              "source": "Succube, grade 3 de Baal (future prince du sexe)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 14,
+                "pe": 10,
+                "vo": 12,
+                "pr": 16,
+                "foi": 16
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 90,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Hache de bataille maudite ancienne (inadaptée à la parade)",
+                  "att": 19,
+                  "prec": 6,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption d'énergie sexuelle",
+                  "r": 24
+                },
+                {
+                  "n": "Absorption de douleur",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 12
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 12
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Déguisement superficiel",
+                  "r": 16
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 12
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 12
+                },
+                {
+                  "n": "Humanité",
+                  "r": 12
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 14
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 12
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 8
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 14
+                },
+                {
+                  "n": "Malédiction : stérilité",
+                  "r": 12
+                },
+                {
+                  "n": "Membre exotique : petites cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 16
+                },
+                {
+                  "n": "Obscurité",
+                  "r": 8
+                },
+                {
+                  "n": "Orgasme mortel",
+                  "r": 22
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 16
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 16
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 14
+                }
+              ],
+              "talents": "Acrobatie 9+, Aisance sociale 10+, Athlétisme 8, Baratin 10, Combat 7+ (haches 9+), Contorsionnisme 9, Corps à corps 7, Défense 9, Discrétion 9, Discussion 9+, Enquête 8, Fouille 6+, Intimidation 9, Intrusion 10, Kama Sutra 13, Médecine 5, Savoir militaire 6 (tactique 9), Séduction 13, Sixième sens 8, Torture 8",
+              "esquive": false,
+              "volonte": false,
+              "notes": "En contact permanent avec Monsieur Fabien. Rencontre les PJ au bar du Ritz avec Thomas Hobbes et Baal en personne (costume Armani noir, cravate Mickey rouge). Si on expose toute l'affaire à Baal : dix serviteurs de Baal, Marie-Jolie (PS 38) et ses deux corbeaux (PS 15), Thomas Hobbes (PS 40, stratège), plus une demi-douzaine d'anges de Michel envoyés en renfort (n'interviennent que si la situation devient désespérée).\nAprès la campagne (jour 11), elle devient prince du sexe et peut proposer aux PJ de passer à son service. Au combat, se jette au contact à la hache.\nFiche : celle du prince (Dramatis Personae, valeurs « +8 » lues comme niveau 8) ; ses caractéristiques d'avant sa promotion sont dans New World Order, p. 71. Facteur d'invocation : incroyable ; communication : 2.\nSource : Fire and Ice 2, « Dramatis Personae », p. 155-156 ; rôle : p. 134.",
+              "typeId": "type-fi16-marie-jolie"
+            },
+            {
+              "id": "fi16-hobbes-15",
+              "nom": "Thomas Hobbes (Leviathan)",
+              "source": "Démon stratège, allié de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Plus souriant que jamais au bar du Ritz. Dans la bataille, c'est lui (« Leviathan ») qui fait manœuvrer les troupes pour ouvrir aux PJ une percée vers le plateau du pentacle. PS 40.\nFiche minimale : ses caractéristiques sont dans « Run like Hell ».\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-hobbes"
+            },
+            {
+              "id": "fi16-hornet-16",
+              "nom": "Hornet",
+              "source": "Sorcier mort-vivant, futur prince des morts (usurpateur de Bifrons)",
+              "type": "mortvivant",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 13,
+                "pe": 15,
+                "vo": 16,
+                "pr": 13,
+                "foi": 10
+              },
+              "def": 21,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 98,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Dague maudite ancienne",
+                  "att": 21,
+                  "prec": 6,
+                  "puis": 6,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 14
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Conversion physique",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Douleur",
+                  "r": 12
+                },
+                {
+                  "n": "Larves sous-cutanées",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 8
+                },
+                {
+                  "n": "Malédiction : vieillissement",
+                  "r": 18
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Némésis",
+                  "r": 12
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 25
+                },
+                {
+                  "n": "Peur",
+                  "r": 18
+                },
+                {
+                  "n": "Poison",
+                  "r": 12
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 25
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 10
+                }
+              ],
+              "talents": "Acrobatie 6, Aisance sociale 7, Athlétisme 9+, Baratin 7, Corps à corps 10+, Défense 10+, Discrétion 9, Discussion 7, Enquête 8, Fouille 9, Intimidation 12, Médecine 10, Savoir militaire 6 (stratégie 9), Séduction 7, Sixième sens 10, Torture 8 ; sorcellerie : tous les talents à 10+ et plusieurs dizaines de sorts",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque fini d'absorber les pouvoirs de Bifrons, il a lancé (jour 1) un sort expérimental : toutes les créatures surnaturelles incarnées ressentent la douleur comme des humains. Sa voix hante Beleth.\nPiste des sorciers : en contactant la Rose, les PJ obtiennent un rendez-vous avec Hornet lui-même, qui cherche surtout à en apprendre le plus possible. Aide : aucune.\nAprès la mort d'Andrealphus, Bifrons meurt et Hornet devient en secret prince des morts. Évite le combat (morts-vivants, familiers) sauf poussé à bout.\nFiche : celle du prince (Dramatis Personae) ; valeurs antérieures dans le Guide de la troisième force, p. 221. Facteur d'invocation : incroyable ; communication : 3.\nSource : Fire and Ice 2, « Dramatis Personae », p. 156 ; rôle : p. 124-125, 135, 154.",
+              "typeId": "type-fi16-hornet"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-princes",
+              "q": "Quels grands alliés les PJ ont-ils ralliés ?",
+              "opts": [
+                {
+                  "t": "Baal et Marie-Jolie",
+                  "suite": "Marie-Jolie (PS 38), ses deux corbeaux (PS 15), Thomas Hobbes (PS 40), 10 démons (PS 30) ; 12 anges de Michel (PS 30) seulement en cas de situation désespérée."
+                },
+                {
+                  "t": "Andromalius (Salomon)",
+                  "suite": "5 démons (PS 25) et 5 anges du Labyrinthe (PS 30)."
+                },
+                {
+                  "t": "Crocell",
+                  "suite": "3 grade 3 (PS 27) et 7 démons (PS 21), plus des Flocons de sang."
+                },
+                {
+                  "t": "Furfur",
+                  "suite": "5 démons (PS 24) et 12 teufeurs (PS 1,5)."
+                },
+                {
+                  "t": "Ange (Ignace)",
+                  "suite": "3 anges vaudouisants (PS 30) et Ignace (PS 30)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi16-ch-petits",
+              "q": "Quels autres renforts ont-ils obtenus ?",
+              "opts": [
+                {
+                  "t": "Boul'Mich",
+                  "suite": "3 démons (PS 22) et jusqu'à 40 cannibales (PS 1,5)."
+                },
+                {
+                  "t": "Chez Régis",
+                  "suite": "3 ou 4 démons (PS 20, 21, 18, 20)."
+                },
+                {
+                  "t": "Deprofundis",
+                  "suite": "Deprofundis (PS 28) et 3 zombies (PS 8)."
+                },
+                {
+                  "t": "Sechepine (Kobal)",
+                  "suite": "12 lapins (PS 20)."
+                },
+                {
+                  "t": "Zombies des galeries",
+                  "suite": "10 zombies (PS 6)."
+                },
+                {
+                  "t": "U-Boat Crew",
+                  "suite": "Marguerite (PS 26)."
+                },
+                {
+                  "t": "Uphir",
+                  "suite": "10 démons (PS 18)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi16-ch-soutien",
+              "q": "Quel soutien logistique ou quelle gaffe ?",
+              "opts": [
+                {
+                  "t": "L'Aphte (Malphas)",
+                  "suite": "PS de Belial −200 (10 démons de moins, envoyés à Toulouse) et effectifs connus."
+                },
+                {
+                  "t": "Le Professeur",
+                  "suite": "Bonus de 3 colonnes aux tests de Savoir militaire (stratégie) du chef des PJ."
+                },
+                {
+                  "t": "Ouikka ou Penthouse 69",
+                  "suite": "Armes pour 12 PS (dépôt de Mantes) ou beaucoup d'argent."
+                },
+                {
+                  "t": "Baalberith ou Paulo et Rotka",
+                  "suite": "Belial est prévenu : pas d'effet de surprise et PS de Belial +200 (non cumulatif). Avec Baalberith, attaque de la villa par une vingtaine de démons."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi16-sc-services",
+          "nom": "8. Petits services",
+          "lieu": "Paris et banlieue – jours 3-10",
+          "notes": "Missions annexes exigées par certains alliés ; chacune peut tourner à la baston.\n• Girfalko (pour Malphas) : appartement dans le 6e, lui faire peur sans le tuer ; il fuit à la première occasion. Grade 3 surveillé par les forces du Mal : être discret.\n• Albert Cassis (pour Penthouse 69) : enlever et interroger une de ses filles, puis lui donner une vraie leçon dans son restaurant du 8e.\n• Julien Strauss (pour les zombies des galeries) : le repérer à la sortie d'un match au Parc des Princes avec ses cinq copains skins, ou le suivre jusque chez lui.\n• Dépôt de Mantes-la-Jolie (pour Ouikka) : Pablo neutralise alarme et caméras, il reste cinq flics.\n• Marguerite (pour l'U-Boat Crew) : organiser son évasion des services vétérinaires du zoo de Vincennes sans se faire repérer.\n• Le chihuahua de la voisine de Sechepine ; le pogo au concert de 2MBC pour Furfur ; la blague pour Kobal (le meujeu juge).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi16-girfalko-17",
+              "nom": "Girfalko",
+              "source": "Ange de Blandine, grade 3",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 8,
+                "vo": 10,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Rêve divin",
+                  "r": 8
+                },
+                {
+                  "n": "Rêve",
+                  "r": 6
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                },
+                {
+                  "n": "Absorption de gentillesse",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 6
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 2
+                }
+              ],
+              "talents": "Discussion 5, Discrétion 4, Baratin 3, Défense 3, Intrusion 2 ; avertissement sans frais : interdit (musique)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, taille moyenne, cheveux blonds rasés sur les côtés et queue de cheval, blouson de cuir élimé, velours côtelé noir, cols roulés pastel. Fuit à la première occasion.\nCible du « petit service » demandé par Malphas : il fouine sur l'Aphte depuis l'affaire New World Order ; il faut lui faire peur sans le tuer (appartement dans le 6e). Grade 3 « intouchable » surveillé par les forces du Mal : discrétion impérative.\nPas d'arme : coup de poing estimé au niveau 1.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-girfalko"
+            },
+            {
+              "id": "fi16-cassis-18",
+              "nom": "Albert Cassis",
+              "source": "Humain, spécialiste du maquereau (proxénète guadeloupéen)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 2,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Revolver",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Cuisine 3, Corps à corps 3, Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Près de cinquante ans, dents du bonheur, cheveux crépus presque blancs, costumes immaculés à larges épaulettes, chemise ouverte sur ses médailles en or. Restaurant dans le 8e. Agréable puis arrogant quand on le menace, avant de ramper pour sa vie.\nCible du service demandé par Claude et Claude (Penthouse 69) : son réseau de prostituées africaines leur fait concurrence. On remonte à lui en enlevant et interrogeant une fille ; il faut une vraie leçon (restaurant brûlé, dénonciation, passage à tabac).\nArme non précisée : revolver estimé. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-cassis"
+            },
+            {
+              "id": "fi16-strauss-19",
+              "nom": "Julien Strauss",
+              "source": "Ange de Daniel, grade 2 (chef des skinheads)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 4,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 18,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée longue bénie",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pétrification",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 4
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 5, Défense 4+, Chants de supporters 2 ; avantage en nature : skinheads ; avertissement sans frais : intégrisme",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Hooligan du kop de Boulogne, crâne rasé, grand crucifix tatoué sur chaque dos de main ; a des potes des deux côtés de la batte. Sûr de lui en bande, se bat jusqu'à la mort contre des démons avérés.\nCible du service des zombies des galeries : le tuer désorganise les skins qui harcèlent les catacombes. Repérable à la sortie d'un match, avec ses cinq copains skins (ou en le suivant jusque chez lui).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-strauss"
+            },
+            {
+              "id": "fi16-skins-20",
+              "nom": "Copains skins de Julien",
+              "source": "Hooligans skinheads",
+              "type": "humain",
+              "qty": 5,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de pied (rangers)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Intimidation 2, Chants de supporters 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-skins"
+            },
+            {
+              "id": "fi16-flics-21",
+              "nom": "Gardiens du dépôt de Mantes-la-Jolie",
+              "source": "Policiers",
+              "type": "humain",
+              "qty": 5,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de service",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Conduite 2, Tir 2+, Corps à corps 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Les cinq flics qui gardent encore le dépôt d'armes de la police une fois que Pablo (grade 3 de Ouikka) a coupé l'alarme et les caméras. À l'intérieur : armes à feu, quelques kilos d'explosifs, de la drogue.\nFiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-flics"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-approche",
+          "nom": "9. Vulcania, la veille",
+          "lieu": "Vulcania, Clermont-Ferrand, route du puy de Dôme – jour 10",
+          "notes": "Les renforts arrivent à Vulcania ou à Clermont la veille. Les PJ doivent jouer les touristes et décourager les curieux de s'intéresser à leurs amis très bizarres. Option vicieuse : quelques espions de Belial dans les parages repèrent les nouveaux venus ; il faut s'en débarrasser avant qu'ils ne préviennent le prince.\nJuste avant le départ, un homme grand, large d'épaules, aux cheveux blond presque blanc se présente : « Gabriel, archange du feu », venu observer. L'agresser est une mauvaise idée. Il demande à les accompagner, reste en retrait et traverse les combats sans que personne ne s'en inquiète (c'est Satan déguisé).\nTiming idéal : minuit du septième jour après le transfert d'Andrealphus, début de l'invocation, quand Belial est trop concentré pour sa sécurité. Conditions de la surprise :\n• Neutraliser le check point : dix soldats et deux membres de la Garde carmine.\n• Éviter les trois patrouilles du volcan (chacune un membre de la Garde carmine et trois démons de base).\n• Piste carrossable en lacets : couper les moteurs et finir à pied le dernier kilomètre.\nRécapitulatif des forces (PS individuelles) : Andromalius 5 démons (25) et 5 anges (30) ; Ange 3 anges vaudouisants (30) et Ignace (30) ; Baalberith : pas de surprise, Belial +200* ; Aphte : Belial −200 ; Baskin Robbins : rien ; Boul'Mich 3 démons (22) et jusqu'à 40 cannibales (1,5) ; Chez Régis 3-4 démons (20, 21, 18, 20) ; Crocell 3 grade 3 (27) et 7 démons (21) ; Centre de Tri Gilbert (26) ; Deprofundis (28) et 3 zombies (8) ; Furfur 5 démons (24) et 12 teufeurs (1,5) ; Marie-Jolie (38), deux corbeaux (15), Thomas Hobbes (40), 10 démons (30), 12 anges (30) ; Ouikka armes pour 12 PS ; Paulo et Rotka : pas de surprise, Belial +200* ; Penthouse 69 : argent ; Le Professeur +3 colonnes en stratégie ; Sechepine 12 lapins (20) ; sorciers : rien ; zombies des galeries 10 zombies (6) ; U-Boat Crew Marguerite (26) ; Uphir 10 démons (18). (* non cumulatif.)\nAjuster selon les scénarios précédents (moins de cannibales si le Boul'Mich a été décimé pendant « Nuit bleue »…). Une armée bien montée dépasse 2 000 PS, hors PJ (à calculer).\nBelial : 25 Garde carmine (PS 28), 50 démons de base (PS 20), 3 camions blindés (PS 30), 5 vans blindés à lance-flammes (PS 33) = 1 955 PS.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi16-soldats-22",
+              "nom": "Soldats de la garnison",
+              "source": "Militaires humains (caserne noyautée par Belial)",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 1+ (armes d'épaule 3+), Savoir militaire 2 (tactique 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Kaki dehors, caca dedans : 20-40 ans, cheveux ras, vocabulaire limité ; des imbéciles engagés faute de mieux et une minorité de fachos. Patrouilles de quatre encadrées par un officier démoniaque dans Montgrumeau ; dix au check point du puy de Dôme.\nFusil d'assaut (illustration) rendu en fusil-mitrailleur, au niveau des armes d'épaule. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-soldats"
+            },
+            {
+              "id": "fi16-garde-carmine-23",
+              "nom": "Garde carmine",
+              "source": "Démons de Belial, grade 1 (équipe d'élite)",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes hommes petits, poilus et lunetteux, déguisés en pompiers ou en militaires, vans noirs. Ont pourchassé Andrealphus et allumé l'incendie de forêt, puis monté la fausse affaire d'ovni et la fausse opération militaire. Deux membres au check point, un par patrouille sur le volcan, vingt-cinq dans la bataille (PS 28).\nLe scénario renvoie aux « précédents PNJ » : fiche de l'équipe de Run like Hell.\nSource : Fire and Ice 2, « Run like Hell », p. 65 (fiche de la Garde carmine, recyclée comme le suggère le scénario).",
+              "typeId": "type-fi16-garde-carmine"
+            },
+            {
+              "id": "fi16-brule-24",
+              "nom": "Brûle, Crame, Grille et Rôti",
+              "source": "Démons de Belial, grade 0 (démons de base)",
+              "type": "demon",
+              "qty": 3,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 5
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Incendie",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 5
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 4, Défense 3, Corps à corps 3+ ; avertissements sans frais : couleur des yeux, cicatrice, phobie des croix, mythomanie",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quatre types en treillis et rangers armés de fusils d'assaut. Fiche type des démons de base de Belial : comité d'accueil sur la route de la ferme, patrouilles du puy de Dôme (avec un membre de la Garde carmine), cinquante démons de base (PS 20) dans la bataille.\nFusil d'assaut rendu en fusil-mitrailleur (table des règles).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-brule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-surprise",
+              "q": "Les PJ arrivent-ils sans être repérés ?",
+              "opts": [
+                {
+                  "t": "Oui, surprise préservée",
+                  "suite": "L'effet de surprise compense la position de Belial : résoudre en « Bataille rangée » (pertes +20 % pour les deux camps)."
+                },
+                {
+                  "t": "Non (alerte, patrouille, Baalberith ou Rotka)",
+                  "suite": "Résoudre en « Assaut » : la puissance de Belial compte double pour les dommages et les PJ subissent +10 % de pertes."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi16-sc-bataille",
+          "nom": "10. Baston sur le puy de Dôme",
+          "lieu": "Cratère du puy de Dôme – jour 10, minuit",
+          "notes": "Lune haute, lueur rouge montant du cratère, incantations déformées par l'écho, chaleur croissante. Mêlée générale : lance-flammes, armes automatiques, acide et jets de glace. En contrebas, sur le plateau : une trentaine de sorciers encapuchonnés de rouge psalmodient ; Belial chante au centre, en sueur, extatique ; aux pointes du pentacle, des jeunes filles nues égorgées ; la rune palpite au rythme d'une lueur rouge dans le ventre d'Andrealphus, attachée sur l'autel, hurlante. Il faut percer vers l'escalier : Thomas Hobbes (« Leviathan ») manœuvre pour ouvrir la voie ; reste un groupe de démons de Belial couverts de sang.\nLes anges de Michel n'interviennent que si la situation est vraiment désespérée. La victoire des PJ n'est pas nécessaire pour la suite.\nClimax : Belial lève les bras et hurle « Oui ! » ; la terre tremble, le volcan crache lave et fumée noire chargée de scories, les sorciers s'enfuient. « Gabriel » apparaît près d'Andrealphus et la prend dans ses bras. Si les PJ ont les moyens de battre Belial en combat singulier, les laisser faire ; sinon, au bout d'un ou deux tours, Baal (treillis noir, cravate Mickey) apparaît, sort une longue épée rouge, nargue Belial et le tue en quelques secondes.\nLes serviteurs de Belial cessent le combat. Un homme à l'épée de flammes rejoint les PJ : « Bonjour, je suis Gabriel ». Le faux Gabriel a disparu avec Andrealphus ; le vrai jure et disparaît à son tour. Les PJ restent seuls au milieu des cadavres, le volcan sur le point d'exploser.\n\nRègles « Casus Belli » (combat de masse, p. 157-159) :\n1. Puissance (PS) de chaque combattant = type + équipement + pouvoirs.\n• Types : humain normal 1, humain entraîné (flic, troufion) 2, humain très entraîné (commando, serviteur de Dieu) 2,5, soldat de Dieu 3, mort-vivant 2, familier 3, psi 1,5, démon 5, ange 5,5, héros 3,5, émanation d'un dieu 7, avatar de prince-démon 9,5, avatar d'archange 10, prince-démon 11, archange 11,5.\n• Équipement : arme de contact 0,5, arme de poing 1, arme d'épaule 1,5, arme lourde 3, arme très lourde 9, arme ou armure magique PA/10 ; moto 2, voiture citadine 4, berline 6, van 8, semi-remorque ou hélicoptère 10, blindage +5 ; armure légère 0,2, gilet pare-balles 0,5, armure lourde 1.\n• Pouvoirs : offensif à distance = coût en PP, membre exotique / arts martiaux / contact 1,5, défensif = PP/2, utilitaire 2.\n2. Type de combat (bonus multiplicateur sur les dommages infligés ; pertes majorées après tous les autres modificateurs) :\n• Escarmouche : aucun modificateur.\n• Bataille rangée : pertes +20 % pour les deux camps.\n• Assaut (A attaque une position tenue par B) : B ×2 ; pertes +10 % pour A.\n• Embuscade (A surprend B) : A ×1,5, B ×0,5 ; pertes +10 % pour B.\n3. Chefs : test résisté de Savoir militaire (tactique sous 30 combattants, stratégie au-delà) ; MR du vainqueur ×10 = % de pertes en plus infligées par son camp.\n4. Chaque tour (10 s), chaque camp inflige PS/10 (modifié par le type de combat) + % du type de combat + % du test des chefs ; le MJ retire d'abord la piétaille. Exemple du livre : 2 000 PS en embuscade contre 1 000 PS, test réussi MR 4 → 330 PS de dommages contre 70.\n5. Fuite : 20 % de pertes en plus pendant 2 tours et PS réduite de moitié (si le chef du fuyard gagne le test, MR ×10 = % de pertes en moins).\n6. PJ dans la mêlée : chaque tour, 1d6+2 PF de dommages (le MJ répartit en blessures) et perte de 25 % des PP. Une action d'éclat tous les trois tours (viser un véhicule, un chef) se résout en combat normal ; une cible détruite retire ses PS à son camp en plus des pertes.\n\nBelial (prince-démon) n'a pas de fiche chiffrée dans le livre : il n'est pas dans la liste des combattants. S'il entre dans la mêlée, traitez-le comme une force narrative (ou créez une fiche de prince à part).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi16-garde-carmine-25",
+              "nom": "Garde carmine",
+              "source": "Démons de Belial, grade 1 (équipe d'élite)",
+              "type": "demon",
+              "qty": 4,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes hommes petits, poilus et lunetteux, déguisés en pompiers ou en militaires, vans noirs. Ont pourchassé Andrealphus et allumé l'incendie de forêt, puis monté la fausse affaire d'ovni et la fausse opération militaire. Deux membres au check point, un par patrouille sur le volcan, vingt-cinq dans la bataille (PS 28).\nLe scénario renvoie aux « précédents PNJ » : fiche de l'équipe de Run like Hell.\nSource : Fire and Ice 2, « Run like Hell », p. 65 (fiche de la Garde carmine, recyclée comme le suggère le scénario).",
+              "typeId": "type-fi16-garde-carmine"
+            },
+            {
+              "id": "fi16-brule-26",
+              "nom": "Brûle, Crame, Grille et Rôti",
+              "source": "Démons de Belial, grade 0 (démons de base)",
+              "type": "demon",
+              "qty": 8,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 5
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Incendie",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 5
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 4, Défense 3, Corps à corps 3+ ; avertissements sans frais : couleur des yeux, cicatrice, phobie des croix, mythomanie",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quatre types en treillis et rangers armés de fusils d'assaut. Fiche type des démons de base de Belial : comité d'accueil sur la route de la ferme, patrouilles du puy de Dôme (avec un membre de la Garde carmine), cinquante démons de base (PS 20) dans la bataille.\nFusil d'assaut rendu en fusil-mitrailleur (table des règles).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-brule"
+            },
+            {
+              "id": "fi16-sorciers-27",
+              "nom": "Sorciers encapuchonnés de rouge",
+              "source": "Sorciers humains contraints par Belial",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Couteau rituel",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Les « scientifiques » de la base (faciès hermetica), une trentaine sur le plateau du pentacle qui psalmodient l'invocation. Ne combattent pas : ils fuient dans tous les sens quand le volcan entre en éruption.\nFiche estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-sorciers"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-belial",
+              "q": "Qui tue Belial ?",
+              "opts": [
+                {
+                  "t": "Les PJ, en combat singulier",
+                  "suite": "Gloire immense ; Baal se contente d'un sourire."
+                },
+                {
+                  "t": "Baal",
+                  "suite": "Baal l'exécute en quelques secondes à l'épée rouge."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi16-ch-issue",
+              "q": "Quelle issue pour la bataille ?",
+              "opts": [
+                {
+                  "t": "Victoire des forces des PJ",
+                  "suite": "Les survivants de Belial se rendent ou fuient dès la mort de leur prince."
+                },
+                {
+                  "t": "Déroute des PJ",
+                  "suite": "Pas grave pour la suite : Baal intervient quand même, et l'éruption balaie tout le monde."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi16-sc-bourboule",
+          "nom": "11. Épilogue : une fin du monde de plus",
+          "lieu": "Route du puy de Dôme à La Bourboule – nuit",
+          "notes": "Des joueurs malins comprennent que c'est Satan qui leur a joué ce tour et foncent à La Bourboule, où Dieu passe ses vacances. Sinon, Baal reconnaît Lucifer et se demande à voix haute ce qu'il faisait là : il lui avait murmuré avoir « un petit problème à régler » avant de prendre sa retraite… « Il n'irait quand même pas rendre visite à Dieu ? » Une trentaine de kilomètres.\nCourse contre le volcan en éruption : séismes, scories qui explosent, fumée noire brûlante qui calcine les poumons ; les morts se comptent par centaines, voire par milliers. Péripéties :\n• Un chêne centenaire en travers de la route : contourner par le flanc (test de Conduite très difficile) ou dégager à plusieurs (Force totale de 20).\n• Tempête de neige soudaine, même en août : deux colonnes de malus aux tests de Conduite.\n• Une jeune femme paniquée avec son bébé se jette devant la voiture : test de Conduite pour l'éviter ; s'arrêter pour la prendre fait perdre du terrain.\nArrivée : Satan et Gabriel, silhouettes nimbées de lumière sur une colline enneigée, Andrealphus à terre, à demi consciente. Gabriel refuse de détruire la Création ; Samaël, épuisé, explique que celui qui règne sur Dis doit avoir une foi pure et que l'épée de feu a été conçue pour cela, depuis le début. Il s'agenouille et offre son cou, demandant le pardon de Dieu.\nGabriel le décapite, puis s'effondre : son épée est la seule arme capable de tuer définitivement un ange ; Dieu les a créés par paires, l'un ne vit pas sans l'autre ; Samaël pensait que les PJ sauraient sauver le monde ; l'Univers ne peut exister si le trône des Enfers est vide. Éclair aveuglant : les deux frères ont disparu, l'épée de Gabriel reste plantée dans la neige. Le cosmos commence à se disloquer.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-samael-29",
+              "nom": "Satan (Samaël, Lucifer)",
+              "source": "Ange de lumière, ancien maître des Enfers",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Se présente aux PJ avant l'attaque sous l'apparence de Gabriel, demande à les accompagner et observe la bataille sans que personne ne songe à l'attaquer. Enlève Andrealphus pendant l'éruption et l'emmène à La Bourboule, à une trentaine de kilomètres, où Dieu passe ses vacances.\nFatigué, il veut que celui qui règne sur Dis ait une foi pure en sa cause : il offre son cou à Gabriel et confie aux PJ le soin de sauver l'Univers.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-samael"
+            },
+            {
+              "id": "fi16-gabriel-30",
+              "nom": "Gabriel",
+              "source": "Archange du feu",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, large d'épaules, cheveux blond presque blanc tombant sur le visage, épée de flammes. À la fin de la bataille, le vrai Gabriel rejoint les PJ : le « Gabriel » qui observait la bataille et a enlevé Andrealphus était Satan déguisé.\nÀ La Bourboule, Samaël lui demande de le tuer ; Gabriel le décapite puis meurt à son tour (Dieu les a créés par paires). Son épée, seule arme capable de tuer définitivement un ange, reste plantée dans la neige.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-gabriel"
+            },
+            {
+              "id": "fi16-andrealphus-31",
+              "nom": "Andrealphus (Yolande Jolimont)",
+              "source": "Prince-démon du sexe, enceinte de Damien",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A épuisé ses PP dans sa fuite et utilisé les derniers pour appeler les PJ au secours. Plongée dans un coma profond, transportée dans un container d'acier de la taille d'un cercueil, puis attachée sur l'autel du pentacle. Enlevée par « Gabriel » (Satan) pendant l'éruption.\nÀ La Bourboule, les PJ doivent la tuer avec l'épée de Gabriel pour sauver l'Univers : Lucifer (Damien) naît à sa place.\nFiche minimale (ses caractéristiques sont dans les règles du jeu ; ici elle n'a plus de PP).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-andrealphus"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi16-sc-fin",
+          "nom": "12. C'est la fin du monde…",
+          "lieu": "Colline enneigée près de La Bourboule – aube",
+          "notes": "Ciel embrasé, étoiles aveuglantes qui tombent, abîmes qui s'ouvrent dans le ciel et la terre, une comète pulvérise la montagne voisine. Andrealphus hurle, larmes de sang, ventre déformé et écarlate.\nPour sauver leur peau et le monde, les PJ doivent tuer le prince du sexe : chaque pas coûte des siècles, l'Univers résiste, les démons se sentent devenir transparents. Une fois en main, l'épée de Gabriel s'enflamme et pénètre sans peine la chair du prince. Éclair, oreilles qui saignent, le volcan s'est tu, plus de neige.\nÀ la place d'Andrealphus : un garçon d'environ treize ans, nu, longs cheveux presque blancs, yeux comme des gouffres. Lucifer (Damien) déclare que Samaël est mort et que son pouvoir est le sien, promet de récompenser les PJ et disparaît par une brèche vers l'Enfer. Quelque part, un vieillard dans une chambre d'hôtel rit doucement.\nUn petit postier fait signer un formulaire aux PJ, range l'épée dans un tube en carton et repart en mobylette en chantant « The End ». L'Univers se remet à tourner dans le bon sens ; plus trace de l'éruption ; un oiseau siffle à l'aube.\nSuite (Tempus Fugit) : jour 1, la césarienne tue Andrealphus ; Bifrons meurt et Hornet devient prince des morts en secret ; débriefing avec Gilbert. Jour 2, fin de la loi martiale. Jour 4, entrevue du jeune Satan avec Yves ; la zone de Gabriel est effacée. Jour 5, Cour exceptionnelle : Andromalius et Crocell réintégrés, Garde carmine, infiltrés et Flocons de sang dissous, Andrealphus déclaré renégat. Jour 8, Beleth va chercher la meuf dans la MRC. Jour 11, Marie-Jolie nommée prince du sexe. Jour 12, les PJ sont invités Chez Régis par le nouveau monarque, Beleth et Gilbert : explications finales et récompenses au choix (nature, avantages administratifs, pouvoirs, position), voire entrée dans l'unité secrète des démons agissant directement pour le Boss.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi16-andrealphus-32",
+              "nom": "Andrealphus (Yolande Jolimont)",
+              "source": "Prince-démon du sexe, enceinte de Damien",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A épuisé ses PP dans sa fuite et utilisé les derniers pour appeler les PJ au secours. Plongée dans un coma profond, transportée dans un container d'acier de la taille d'un cercueil, puis attachée sur l'autel du pentacle. Enlevée par « Gabriel » (Satan) pendant l'éruption.\nÀ La Bourboule, les PJ doivent la tuer avec l'épée de Gabriel pour sauver l'Univers : Lucifer (Damien) naît à sa place.\nFiche minimale (ses caractéristiques sont dans les règles du jeu ; ici elle n'a plus de PP).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-andrealphus"
+            },
+            {
+              "id": "fi16-postier-33",
+              "nom": "Le petit postier",
+              "source": "Mystérieux facteur de La Poste",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Après la renaissance de Lucifer, tousse pour attirer l'attention, fait signer un formulaire aux PJ, récupère l'épée de Gabriel dans un tube en carton et repart en mobylette en chantonnant « The End » des Doors. (Clin d'œil : sans doute un émissaire de Dieu.)\nFiche minimale.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141.",
+              "typeId": "type-fi16-postier"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-andrealphus",
+              "q": "Les PJ tuent-ils Andrealphus avec l'épée de Gabriel ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Lucifer renaît dans Damien, l'Univers est sauvé et les PJ seront récompensés."
+                },
+                {
+                  "t": "Non ou trop tard",
+                  "suite": "Le cosmos retourne au chaos premier : fin de partie (et de la gamme, selon les auteurs)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi16-sc-lux-aeterna",
+          "nom": "13. Toute la misère du monde",
+          "lieu": "Après la campagne",
+          "notes": "Six postfaces au choix (ou à panacher) pour ne pas laisser les joueurs sur une chute trop abrupte (Lux Aeterna, p. 151).\nFils restés ouverts (Les cahiers du labyrinthe) :\n• Les PJ : proches du grade 2, baroques et trop informés ; à faire sortir par une promotion ou à transformer en PNJ de luxe (contacts INS, adversaires récurrents à MV), voire scénario sur leur disparition.\n• Le nouveau patron : Damien n'est pas Samaël ; même puissance mais ni expérience ni souvenirs, plus viscéralement mauvais. Seuls les Premiers Nés savent ; certains princes pourraient enquêter et remonter jusqu'aux PJ.\n• Andromalius et Baalberith : « Lucifer » a blanchi Andromalius ; Baalberith redevenu sa carpette doit traquer… un traître qui n'est autre que lui-même (Kiel). Intrigues à tiroirs possibles.\n• Belial et Crocell : sévèrement recadrés, groupuscules dissous ; la plupart des princes leur sont hostiles ; le Conseil offensif est redistribué au profit de Baal et Bifrons (Caym, Furfur et Gaziel ramassent des miettes).\n• Hornet : la mort d'Andrealphus a tué Bifrons, qui lui avait cédé ses pouvoirs ; Hornet règne en secret sur les morts (Bifrons Connection). Seuls les PJ (et Yves) le savent.\n• Marie-Jolie : nommée prince du sexe après une réunion de crise ; peut proposer aux PJ de la servir (scénarios politiques pour adultes).\n• Beleth et la meuf : chargé de la faire disparaître, il l'a cachée dans un loft du Lupanar (MRC) et lui fait la cour ; une certaine Angela pourrait en parler à Blandine. Ménage à trois, voire à cinq avec Belial et Crocell.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi16-ch-fin",
+              "q": "Quelle fin pour la campagne ?",
+              "opts": [
+                {
+                  "t": "La fin abrupte",
+                  "suite": "Dès que l'épée est en sécurité, on range tout : aux joueurs de déduire le reste ; le MJ peut répondre hors jeu autour d'une bière."
+                },
+                {
+                  "t": "La fin descriptive",
+                  "suite": "Retour au Centre de Tri : Monsieur Fabien débriefe toute la campagne, façon Hercule Poirot dévoilant le coupable."
+                },
+                {
+                  "t": "La fin festive",
+                  "suite": "Grande beuverie Chez Régis : sangliers aux airelles, Jésus en tablier humoristique, Furfur ligoté derrière une baffle, princes et archanges qui tapent dans le dos des PJ."
+                },
+                {
+                  "t": "La fin glorieuse",
+                  "suite": "Quelques semaines plus tard, convocation au Harry's Bar par Fabien et un beau jeune homme : Damien remercie les PJ et leur propose de rejoindre l'unité d'élite qui œuvre directement pour le Grand Chef."
+                },
+                {
+                  "t": "La fin méta",
+                  "suite": "Le Centre de Tri est désert ; sur le bureau de Fabien, les nouvelles de conclusion du livre, à faire lire aux joueurs."
+                },
+                {
+                  "t": "La fin méta-méta",
+                  "suite": "Le Centre de Tri est désert ; au sous-sol, une table de jeu, un paravent et, derrière, les deux volumes de Fire and Ice à leur donner."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795376224159,
+      "updatedAt": 1795376224159
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi16-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dans ce scénario : Beleth, sous l'apparence de Fabien, ne dort plus depuis des jours (cernes énormes) et a la migraine : la voix de Hornet le hante. Donne carte blanche aux PJ pour retrouver Andrealphus, leur avoue que quelque chose cloche (les démons ressentent la douleur). Déconseille de passer par la hiérarchie, conseille sur les alliés à solliciter, gère la logistique (cars, hôtels, coups de fil) mais n'apporte pas d'aide militaire.\nFin de campagne (Tempus Fugit) : au jour 12 il accompagne le nouveau monarque des Enfers chez Chez Régis pour les explications finales et les récompenses.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi16-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dans ce scénario : se joint d'office aux PJ pour l'assaut final (« ben ouais, les p'tits gars ») ; PS 26 dans le tableau de bataille. Au jour 1 après la fin du monde, débriefing au Centre de Tri avec lui.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi16-laura",
+      "nom": "Laura Ferdinand",
+      "source": "Humaine, 17 ans, fille des propriétaires du gîte",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Brune, pulpeuse, rêve de Paris et d'hommes plus âgés « avec une vraie voiture » ; son petit ami vient la chercher en 103 SP. Intelligente mais naïve : la seule de la famille qui parle facilement aux PJ.\nInfos : les villageois croient à un crash d'ovni, les vaches dépérissent et donnent de moins en moins de lait ; elle oriente vers le père Dugros. Au retour des PJ en ville, elle les prévient que des soldats sont venus poser des questions sur eux.\nCaractéristiques non fournies par le livre : valeurs estimées.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-ferdinand",
+      "nom": "Famille Ferdinand",
+      "source": "Éleveurs, tenanciers du plus grand gîte de Montgrumeau",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Fusil de chasse (Willy)",
+          "att": 2,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Charles (brun sec et barbu, bleu de travail, taciturne) et Caroline (grande blonde bavarde à voix haut perchée, s'occupe des hôtes et des comptes), la cinquantaine. Willy, 30 ans, conseiller financier à la banque de la ville, méprise les « bouseux » et adore sa mère. Albert, 27 ans, près de deux mètres, s'occupe des bêtes, intelligent mais muet comme son père.\nAu retour des PJ, Willy les accueille fusil en main et Caroline les prie de partir.\nFiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-szymkowiak",
+      "nom": "Didier Szymkowiak",
+      "source": "Humain, vétérinaire de Montgrumeau",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 6,
+        "vo": 4,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ashkénaze athée de 43 ans, grand, chauve, yeux verts malicieux, petites lunettes rondes ; a fui Paris par amour de la nature. Accusé par les villageois d'empoisonner les vaches pour Cantal.net : totalement innocent et démuni (la Direction régionale des services vétérinaires ne répond pas).\nUn des seuls à parler de l'incendie, amusé par la rumeur d'ovni. A vu chez les gens du voyage une jeune femme enceinte correspondant à Yolande (Andrealphus).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-lazaros",
+      "nom": "Lazaros Turasca",
+      "source": "Sorcier gitan, patriarche des gens du voyage",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 5,
+        "vo": 8,
+        "pr": 6,
+        "foi": 7
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Bâton",
+          "att": 8,
+          "prec": 1,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Histoire des Gitans 4+, Combat 4, Discussion 3, Conte 3+ ; sorcellerie : Pentacle pour ange 4, Invocation d'un ange 3, Demande à un ange 4, Contrôle d'un ange 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Près de cent ans, peau parcheminée et tatouée, très mince, longs cheveux blancs ; appelle les PJ « Mule ». Devine facilement leur nature (comme il avait deviné celle d'Andrealphus, sans savoir que c'était un prince en fuite). Accueillant si les démons se tiennent bien.\nAndrealphus a vécu trois semaines dans la communauté (appréciée, se nourrissait à Aurillac) ; elle est partie quand des militaires sont venus poser des questions, et a disparu la nuit de l'incendie.\nArme non précisée (talent Combat 4) : bâton retenu. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-brule",
+      "nom": "Brûle, Crame, Grille et Rôti",
+      "source": "Démons de Belial, grade 0 (démons de base)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 8,
+        "vo": 6,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 12,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Fusil d'assaut",
+          "att": 8,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 5
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Incendie",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 5
+        },
+        {
+          "n": "Non-détection",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 4, Défense 3, Corps à corps 3+ ; avertissements sans frais : couleur des yeux, cicatrice, phobie des croix, mythomanie",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quatre types en treillis et rangers armés de fusils d'assaut. Fiche type des démons de base de Belial : comité d'accueil sur la route de la ferme, patrouilles du puy de Dôme (avec un membre de la Garde carmine), cinquante démons de base (PS 20) dans la bataille.\nFusil d'assaut rendu en fusil-mitrailleur (table des règles).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-garde-carmine",
+      "nom": "Garde carmine",
+      "source": "Démons de Belial, grade 1 (équipe d'élite)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 11,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 13,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Lance-flammes",
+          "att": 8,
+          "prec": -3,
+          "puis": 9,
+          "melee": false
+        },
+        {
+          "n": "Corps à corps",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        }
+      ],
+      "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeunes hommes petits, poilus et lunetteux, déguisés en pompiers ou en militaires, vans noirs. Ont pourchassé Andrealphus et allumé l'incendie de forêt, puis monté la fausse affaire d'ovni et la fausse opération militaire. Deux membres au check point, un par patrouille sur le volcan, vingt-cinq dans la bataille (PS 28).\nLe scénario renvoie aux « précédents PNJ » : fiche de l'équipe de Run like Hell.\nSource : Fire and Ice 2, « Run like Hell », p. 65 (fiche de la Garde carmine, recyclée comme le suggère le scénario)."
+    },
+    {
+      "id": "type-fi16-soldats",
+      "nom": "Soldats de la garnison",
+      "source": "Militaires humains (caserne noyautée par Belial)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil d'assaut",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 1+ (armes d'épaule 3+), Savoir militaire 2 (tactique 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Kaki dehors, caca dedans : 20-40 ans, cheveux ras, vocabulaire limité ; des imbéciles engagés faute de mieux et une minorité de fachos. Patrouilles de quatre encadrées par un officier démoniaque dans Montgrumeau ; dix au check point du puy de Dôme.\nFusil d'assaut (illustration) rendu en fusil-mitrailleur, au niveau des armes d'épaule. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-malthus",
+      "nom": "La secrétaire de Malthus",
+      "source": "Démone de Malthus incarnée dans une secrétaire de la base",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentaine, cheveux roux en chignon serré, acné juvénile, petites lunettes. Aborde les PJ à la fin de l'embuscade. Responsable de la maladie des vaches (deux mois) et du rachat des fermes par Cantal.net avec l'argent détourné de la base : simple semeuse de zizanie, aucun projet occulte.\nInfos : quinze démons de Belial incarnés dans la base en plus des assaillants ; tout a commencé il y a un mois par un officier supérieur possédé qui a éliminé les gradés un à un ; vingt soldats patrouillent par quatre avec un officier démon, dix démons restent à la base avec plus de cent hommes normaux ; centre de formation d'une dizaine de « nouveau-nés » de Belial. Base d'un kilomètre carré, grilles de cinq mètres barbelées. Elle sait qu'un prisonnier a été pris le jour de l'incendie, qu'il va être exfiltré et que le plan aura lieu dans une semaine.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-sorciers",
+      "nom": "Sorciers encapuchonnés de rouge",
+      "source": "Sorciers humains contraints par Belial",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Couteau rituel",
+          "att": 2,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Les « scientifiques » de la base (faciès hermetica), une trentaine sur le plateau du pentacle qui psalmodient l'invocation. Ne combattent pas : ils fuient dans tous les sens quand le volcan entre en éruption.\nFiche estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-belial",
+      "nom": "Belial",
+      "source": "Prince-démon du feu",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Prépare dans le cratère du puy de Dôme le rituel d'invocation de « la meuf » (la femme de la MRC qu'il aime) dans le fœtus d'Andrealphus, en puisant la puissance du volcan, quitte à raser la région. Au centre du pentacle, en sueur, extatique, trop concentré pour diriger la défense.\nSort : tué en combat singulier par les PJ s'ils en ont les moyens, sinon par Baal (longue épée rouge) en quelques secondes.\nFiche minimale (prince-démon, pas de caractéristiques dans le livre ; PS 11 + équipement selon Casus Belli).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-andrealphus",
+      "nom": "Andrealphus (Yolande Jolimont)",
+      "source": "Prince-démon du sexe, enceinte de Damien",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A épuisé ses PP dans sa fuite et utilisé les derniers pour appeler les PJ au secours. Plongée dans un coma profond, transportée dans un container d'acier de la taille d'un cercueil, puis attachée sur l'autel du pentacle. Enlevée par « Gabriel » (Satan) pendant l'éruption.\nÀ La Bourboule, les PJ doivent la tuer avec l'épée de Gabriel pour sauver l'Univers : Lucifer (Damien) naît à sa place.\nFiche minimale (ses caractéristiques sont dans les règles du jeu ; ici elle n'a plus de PP).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-marie-jolie",
+      "nom": "Marie-Jolie",
+      "source": "Succube, grade 3 de Baal (future prince du sexe)",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 14,
+        "pe": 10,
+        "vo": 12,
+        "pr": 16,
+        "foi": 16
+      },
+      "def": 18,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 90,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Hache de bataille maudite ancienne (inadaptée à la parade)",
+          "att": 19,
+          "prec": 6,
+          "puis": 9,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption d'énergie sexuelle",
+          "r": 24
+        },
+        {
+          "n": "Absorption de douleur",
+          "r": 12
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 12
+        },
+        {
+          "n": "Boomerang",
+          "r": 12
+        },
+        {
+          "n": "Caméléon",
+          "r": 8
+        },
+        {
+          "n": "Charme",
+          "r": 12
+        },
+        {
+          "n": "Déguisement superficiel",
+          "r": 16
+        },
+        {
+          "n": "Détection des ennemis",
+          "r": 12
+        },
+        {
+          "n": "Détection du bien",
+          "r": 12
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 12
+        },
+        {
+          "n": "Humanité",
+          "r": 12
+        },
+        {
+          "n": "Invisibilité",
+          "r": 14
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 12
+        },
+        {
+          "n": "Lecture d'aura",
+          "r": 8
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 14
+        },
+        {
+          "n": "Malédiction : stérilité",
+          "r": 12
+        },
+        {
+          "n": "Membre exotique : petites cornes",
+          "r": 0
+        },
+        {
+          "n": "Non-détection",
+          "r": 16
+        },
+        {
+          "n": "Obscurité",
+          "r": 8
+        },
+        {
+          "n": "Orgasme mortel",
+          "r": 22
+        },
+        {
+          "n": "Polymorphie",
+          "r": 16
+        },
+        {
+          "n": "Télékinésie",
+          "r": 8
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Téléportation",
+          "r": 16
+        },
+        {
+          "n": "Voix impérieuse",
+          "r": 14
+        }
+      ],
+      "talents": "Acrobatie 9+, Aisance sociale 10+, Athlétisme 8, Baratin 10, Combat 7+ (haches 9+), Contorsionnisme 9, Corps à corps 7, Défense 9, Discrétion 9, Discussion 9+, Enquête 8, Fouille 6+, Intimidation 9, Intrusion 10, Kama Sutra 13, Médecine 5, Savoir militaire 6 (tactique 9), Séduction 13, Sixième sens 8, Torture 8",
+      "esquive": false,
+      "volonte": false,
+      "notes": "En contact permanent avec Monsieur Fabien. Rencontre les PJ au bar du Ritz avec Thomas Hobbes et Baal en personne (costume Armani noir, cravate Mickey rouge). Si on expose toute l'affaire à Baal : dix serviteurs de Baal, Marie-Jolie (PS 38) et ses deux corbeaux (PS 15), Thomas Hobbes (PS 40, stratège), plus une demi-douzaine d'anges de Michel envoyés en renfort (n'interviennent que si la situation devient désespérée).\nAprès la campagne (jour 11), elle devient prince du sexe et peut proposer aux PJ de passer à son service. Au combat, se jette au contact à la hache.\nFiche : celle du prince (Dramatis Personae, valeurs « +8 » lues comme niveau 8) ; ses caractéristiques d'avant sa promotion sont dans New World Order, p. 71. Facteur d'invocation : incroyable ; communication : 2.\nSource : Fire and Ice 2, « Dramatis Personae », p. 155-156 ; rôle : p. 134."
+    },
+    {
+      "id": "type-fi16-hobbes",
+      "nom": "Thomas Hobbes (Leviathan)",
+      "source": "Démon stratège, allié de Baal",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Plus souriant que jamais au bar du Ritz. Dans la bataille, c'est lui (« Leviathan ») qui fait manœuvrer les troupes pour ouvrir aux PJ une percée vers le plateau du pentacle. PS 40.\nFiche minimale : ses caractéristiques sont dans « Run like Hell ».\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-hornet",
+      "nom": "Hornet",
+      "source": "Sorcier mort-vivant, futur prince des morts (usurpateur de Bifrons)",
+      "type": "mortvivant",
+      "car": {
+        "fo": 10,
+        "ag": 13,
+        "pe": 15,
+        "vo": 16,
+        "pr": 13,
+        "foi": 10
+      },
+      "def": 21,
+      "prot": 0,
+      "pfFix": 13,
+      "pp": 98,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Dague maudite ancienne",
+          "att": 21,
+          "prec": 6,
+          "puis": 6,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 14
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Charme",
+          "r": 12
+        },
+        {
+          "n": "Conversion physique",
+          "r": 12
+        },
+        {
+          "n": "Détection du danger",
+          "r": 12
+        },
+        {
+          "n": "Douleur",
+          "r": 12
+        },
+        {
+          "n": "Larves sous-cutanées",
+          "r": 18
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 8
+        },
+        {
+          "n": "Malédiction : vieillissement",
+          "r": 18
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Némésis",
+          "r": 12
+        },
+        {
+          "n": "Nécrose",
+          "r": 25
+        },
+        {
+          "n": "Peur",
+          "r": 18
+        },
+        {
+          "n": "Poison",
+          "r": 12
+        },
+        {
+          "n": "Résurrection macabre",
+          "r": 25
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 10
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Ténèbres sataniques",
+          "r": 10
+        }
+      ],
+      "talents": "Acrobatie 6, Aisance sociale 7, Athlétisme 9+, Baratin 7, Corps à corps 10+, Défense 10+, Discrétion 9, Discussion 7, Enquête 8, Fouille 9, Intimidation 12, Médecine 10, Savoir militaire 6 (stratégie 9), Séduction 7, Sixième sens 10, Torture 8 ; sorcellerie : tous les talents à 10+ et plusieurs dizaines de sorts",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Presque fini d'absorber les pouvoirs de Bifrons, il a lancé (jour 1) un sort expérimental : toutes les créatures surnaturelles incarnées ressentent la douleur comme des humains. Sa voix hante Beleth.\nPiste des sorciers : en contactant la Rose, les PJ obtiennent un rendez-vous avec Hornet lui-même, qui cherche surtout à en apprendre le plus possible. Aide : aucune.\nAprès la mort d'Andrealphus, Bifrons meurt et Hornet devient en secret prince des morts. Évite le combat (morts-vivants, familiers) sauf poussé à bout.\nFiche : celle du prince (Dramatis Personae) ; valeurs antérieures dans le Guide de la troisième force, p. 221. Facteur d'invocation : incroyable ; communication : 3.\nSource : Fire and Ice 2, « Dramatis Personae », p. 156 ; rôle : p. 124-125, 135, 154."
+    },
+    {
+      "id": "type-fi16-girfalko",
+      "nom": "Girfalko",
+      "source": "Ange de Blandine, grade 3",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 8,
+        "vo": 10,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Non-détection",
+          "r": 6
+        },
+        {
+          "n": "Rêve divin",
+          "r": 8
+        },
+        {
+          "n": "Rêve",
+          "r": 6
+        },
+        {
+          "n": "Sommeil",
+          "r": 8
+        },
+        {
+          "n": "Absorption de gentillesse",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 6
+        },
+        {
+          "n": "Charme",
+          "r": 6
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 2
+        }
+      ],
+      "talents": "Discussion 5, Discrétion 4, Baratin 3, Défense 3, Intrusion 2 ; avertissement sans frais : interdit (musique)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La quarantaine, taille moyenne, cheveux blonds rasés sur les côtés et queue de cheval, blouson de cuir élimé, velours côtelé noir, cols roulés pastel. Fuit à la première occasion.\nCible du « petit service » demandé par Malphas : il fouine sur l'Aphte depuis l'affaire New World Order ; il faut lui faire peur sans le tuer (appartement dans le 6e). Grade 3 « intouchable » surveillé par les forces du Mal : discrétion impérative.\nPas d'arme : coup de poing estimé au niveau 1.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-cassis",
+      "nom": "Albert Cassis",
+      "source": "Humain, spécialiste du maquereau (proxénète guadeloupéen)",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 2,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Revolver",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Cuisine 3, Corps à corps 3, Tir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Près de cinquante ans, dents du bonheur, cheveux crépus presque blancs, costumes immaculés à larges épaulettes, chemise ouverte sur ses médailles en or. Restaurant dans le 8e. Agréable puis arrogant quand on le menace, avant de ramper pour sa vie.\nCible du service demandé par Claude et Claude (Penthouse 69) : son réseau de prostituées africaines leur fait concurrence. On remonte à lui en enlevant et interrogeant une fille ; il faut une vraie leçon (restaurant brûlé, dénonciation, passage à tabac).\nArme non précisée : revolver estimé. Défense non donnée : 2.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-strauss",
+      "nom": "Julien Strauss",
+      "source": "Ange de Daniel, grade 2 (chef des skinheads)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 8,
+        "vo": 4,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 18,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée longue bénie",
+          "att": 10,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Pétrification",
+          "r": 6
+        },
+        {
+          "n": "Déphasage",
+          "r": 4
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 2
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Caméléon",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 5, Défense 4+, Chants de supporters 2 ; avantage en nature : skinheads ; avertissement sans frais : intégrisme",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Hooligan du kop de Boulogne, crâne rasé, grand crucifix tatoué sur chaque dos de main ; a des potes des deux côtés de la batte. Sûr de lui en bande, se bat jusqu'à la mort contre des démons avérés.\nCible du service des zombies des galeries : le tuer désorganise les skins qui harcèlent les catacombes. Repérable à la sortie d'un match, avec ses cinq copains skins (ou en le suivant jusque chez lui).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-skins",
+      "nom": "Copains skins de Julien",
+      "source": "Hooligans skinheads",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Batte de base-ball",
+          "att": 4,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de pied (rangers)",
+          "att": 4,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2, Intimidation 2, Chants de supporters 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-flics",
+      "nom": "Gardiens du dépôt de Mantes-la-Jolie",
+      "source": "Policiers",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver de service",
+          "att": 5,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 2, Conduite 2, Tir 2+, Corps à corps 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Les cinq flics qui gardent encore le dépôt d'armes de la police une fois que Pablo (grade 3 de Ouikka) a coupé l'alarme et les caméras. À l'intérieur : armes à feu, quelques kilos d'explosifs, de la drogue.\nFiche générique estimée (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-gabriel",
+      "nom": "Gabriel",
+      "source": "Archange du feu",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand, large d'épaules, cheveux blond presque blanc tombant sur le visage, épée de flammes. À la fin de la bataille, le vrai Gabriel rejoint les PJ : le « Gabriel » qui observait la bataille et a enlevé Andrealphus était Satan déguisé.\nÀ La Bourboule, Samaël lui demande de le tuer ; Gabriel le décapite puis meurt à son tour (Dieu les a créés par paires). Son épée, seule arme capable de tuer définitivement un ange, reste plantée dans la neige.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-samael",
+      "nom": "Satan (Samaël, Lucifer)",
+      "source": "Ange de lumière, ancien maître des Enfers",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Se présente aux PJ avant l'attaque sous l'apparence de Gabriel, demande à les accompagner et observe la bataille sans que personne ne songe à l'attaquer. Enlève Andrealphus pendant l'éruption et l'emmène à La Bourboule, à une trentaine de kilomètres, où Dieu passe ses vacances.\nFatigué, il veut que celui qui règne sur Dis ait une foi pure en sa cause : il offre son cou à Gabriel et confie aux PJ le soin de sauver l'Univers.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    },
+    {
+      "id": "type-fi16-postier",
+      "nom": "Le petit postier",
+      "source": "Mystérieux facteur de La Poste",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Après la renaissance de Lucifer, tousse pour attirer l'attention, fait signer un formulaire aux PJ, récupère l'épée de Gabriel dans un tube en carton et repart en mobylette en chantonnant « The End » des Doors. (Clin d'œil : sans doute un émissaire de Dieu.)\nFiche minimale.\nSource : Fire and Ice 2, « Le jour où nous sommes allés voir la fin du monde », p. 124-141."
+    }
+  ],
+  "memoire": []
+}

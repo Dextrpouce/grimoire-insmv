@@ -1,0 +1,1829 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-2-quatre-fragments",
+      "nom": "Fire and Ice (scénario 2) – Quatre fragments d'une chronologie du hasard",
+      "resume": "Nihil ex nihilo, scénario 2 (INS). Interlude : devenus « l'équipe d'intervention » du Centre de Tri, les démons traitent quatre dossiers en souffrance — un vieux Kobal paranoïaque dont le voisin est en fait l'archange Gabriel, une famille à éliminer pour un démon de Scox, un ravitaillement chez Deprofundis au fond des sous-sols de Paris, et la libération de séides invoqués par la Rose sur un cargo à Dunkerque, première trace du complot de Hornet. En coulisses, Beleth rencontre Damien et se met à chercher les PJ.",
+      "notes": "Source : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.\nDéroulement : affectation au Centre de Tri → quatre dossiers dans l'ordre de votre choix (Sechepine et son voisin, Poniatowsky, Deprofundis, Heterodosk/Dunkerque) → bilan. Rêves de Beleth tout au long (test de Volonté facile chaque nuit).\nScénario modulable : on peut ajouter d'autres missions d'intervention.\n\nRécompenses (fin du scénario) :\n• Restés en bons termes avec Sechepine : +1 PA\n• Ont exécuté sans râler toute la famille Poniatowsky : +1 PA\n• Sont devenus potes avec Deprofundis : +1 PA\n• Ont fait parler les sorciers de la Rose ou leurs prisonniers : +1 PA\nPuis une semaine de congés.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reporté en Foi). Valeurs estimées : Roumaines, famille Poniatowsky, zombies de Deprofundis ; Poniatowsky, Kisskool, Brad et Lumpen en fiches minimales. « Membre exotique (dents) » rendu par Membre exotique : crocs.",
+      "scenes": [
+        {
+          "id": "fi2-sc-beleth",
+          "nom": "0. En coulisses : Beleth et la Bête",
+          "lieu": "Marche des rêves – pendant tout le scénario",
+          "notes": "Secret MJ, à ne pas révéler aux joueurs.\nPrologue (château, phase B) : le docteur Theobaldy, sorcier, a orchestré des semaines d'invocations pour « Monsieur H. » (Hornet) et « Monsieur B. » (Bifrons) ; la phase suivante consiste à évacuer les séides et effacer toute trace, hommes de main compris. Bifrons massacre tout le monde, Theobaldy inclus. Ce sont ces séides qu'on retrouve au scénario « Boum boum boum boum ».\n\nYolande était Andréalphus ; dans son ventre grandit Damien, rejeton deux fois démoniaque. Elle se terre dans un hôtel de banlieue sordide à dévorer des steaks. Damien rêve, erre dans la Marche et rencontre Beleth : longue discussion qui fait basculer le Grand Jeu. Beleth part ensuite à la recherche des PJ, que Damien a vus par les yeux d'Andréalphus.\n\nEffet en jeu : pendant les missions de ce scénario, à chaque nuit de sommeil, test de Volonté facile pour chaque démon. Ceux qui s'en souviennent notent qu'un personnage de leur rêve (Zozo le lapin marrant, Torghul, Marcel le serveur de La Tour d'argent…) signale un type qui les cherche. RU ≥ 6 : description vague (grand gars sinistre, deux grandes ailes noires).\nUn démon de Beleth dans le groupe n'est pas concerné. Beleth retrouve les PJ assez vite ; suite au chapitre suivant.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi2-sc-affectation",
+          "nom": "1. Baby-sitting blues : l'équipe d'intervention",
+          "lieu": "Centre de Tri, Paris – dix jours après l'affaire Izmet",
+          "notes": "Aurélie convoque les PJ pour le lendemain : ils deviennent « l'équipe d'intervention », chargée des Missions d'Intervention (une sorte de SAV démoniaque : les démons affiliés au Centre y envoient leurs demandes).\n• Horaires : 8 h-14 h, du lundi au vendredi (hors jours fériés), jusqu'à épuisement de la pile ; l'après-midi reste libre pour les couvertures.\n• Accès à la salle de pause, soutien amical des démons du Centre ; Gilbert est très attentif et peut donner un coup de main musclé.\n• Quatre dossiers (pochettes avec la lettre du demandeur et un mot de Monsieur Fabien), sans date butoir.\n\nScénario d'interlude : missions courtes, à étoffer à volonté (le Centre de Tri peut fournir d'autres dossiers). But : faire oublier la disparition d'Izmet pendant que la campagne se met en place.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi2-sc-sechepine",
+          "nom": "2. Burlesque de boulevard : Conrad Sechepine",
+          "lieu": "HLM près de la place d'Italie, puis le quartier",
+          "notes": "Dossier 1 : lettre truffée de « poil au… » de Conrad Sechepine, vieux gradé de Kobal mis au placard depuis vingt ans. Monsieur Fabien : rester poli, inutile de le croire.\nL'appartement : Q.G. d'espionnage années 50 (longues-vues à chaque fenêtre, magnétophones à bandes, TSF dans la salle de bain, câbles et micros chromés, tableau noir couvert de plans), odeur de moisi. Sechepine ouvre en peignoir, salut militaire. Il exige d'abord ménage (frigo de produits périmés) et courses au Lidl ; s'ils refusent, il boude quelques heures.\nSes trois « enquêtes de voisinage » :\n• Le boucher-charcutier Benjamin Sachs serait un chef de guerre viking (photos floues au téléobjectif, « viande d'élan séchée »). Faux : simple humain, l'homme sur la photo est Justin Topère, instituteur gaucho ; Sachs n'a jamais mis les pieds en Scandinavie et va à la messe à Noël et à Pâques.\n• Les trois Roumaines qui mendient : la vieille serait un ange de Dominique, les jeunes des soldats de Dieu (signe de croix, « Que justice soit faite ! » à un policier). Difficiles à interroger (sans papiers, exploitées par un chef mafieux, feignent de ne pas comprendre). Faux : la vieille est négative à Détection du Mal.\n• Le voisin du dessus : voir scène suivante.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi2-sechepine-1",
+              "nom": "Conrad Sechepine",
+              "source": "Démon de Kobal, grade 2 (en préretraite)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 21,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Corps à corps 4+, Défense 3+, Technique 2 (électronique 4), Calembours foireux poil aux pneus 3, Deviens toi aussi un petit espion en seulement trois leçons 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quadragénaire aux cheveux noirs ternes, barbe mal taillée, énormes lunettes bricolées hérissées de fils, toujours en peignoir éponge. Appartement-Q.G. d'espionnage années 50 dans une barre HLM près de la place d'Italie.\nStar démoniaque parisienne des années 70, mis au placard par Kobal après une mission ratée pour Scox (capturé par des Rastas de Novalis, grosse perte de PA). Ne sort plus de chez lui depuis dix-huit ans.\nOdieux sous ses airs farfelus : méprise les « petits jeunes », ne supporte que ses propres blagues, fait d'abord faire le ménage et les courses aux PJ. Imprévisible ; très efficace sous stress, insupportable au repos. Avertissement sans frais : paranoïaque.\nArme : à mains nues (Corps à corps 4+).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-sechepine"
+            },
+            {
+              "id": "fi2-roumaines-2",
+              "nom": "Les trois Roumaines",
+              "source": "Mendiantes du quartier (suspectes de Sechepine)",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Mendicité agressive, vol à la roulotte, faire semblant de ne pas comprendre le français",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Une vieille gitane édentée et deux jeunes filles, sans papiers, exploitées par un chef de famille mafieux qui garde leurs papiers. Pas des anges ni des soldats de Dieu : la vieille est négative à Détection du Mal et tomberait d'une seule claque.\nCaractéristiques non fournies par le livre : valeurs estimées (humaines faibles).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-roumaines"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi2-sc-leminor",
+          "nom": "3. Barnabé is back : le voisin du cinquième",
+          "lieu": "Appartement de Gabriel Leminor, cinquième étage",
+          "notes": "Sechepine jure que son voisin Gabriel Leminor, emménagé comme chercheur d'emploi, est un ange de Laurent : il l'a vu sortir avec un objet long et rigide sous son manteau (une épée !) et a senti une aura hostile. Pas revu depuis trois semaines.\nSur le palier : test de Perception difficile pour entendre plusieurs voix ; MR ≥ 6 : elles parlent arabe. Dès qu'on sonne ou qu'on entre de force, silence : l'appartement est vide.\nFouille : aucune cachette possible ; départ depuis un moment (armoire presque vide, frigo vide, ordinateur débranché). Tapis de prière, Coran en arabe, photomatons (trentenaire aux cheveux très blonds en queue de cheval, yeux gris très clair, teint hâlé, sourire crispé), photocopies de passeports et calques de tampons (faux papiers). Disque dur effacé il y a trois semaines, mais l'historique du navigateur montre des sites arabo-musulmans, la SNCF et un site de cartes routières.\nSechepine, blasé, réclame un rapport circonstancié et propose aux PJ de loger chez lui pour l'aider.\n\nVérité MJ : pour une fois, Sechepine a raison. Leminor est l'archange Gabriel en personne, revenu en France depuis un an et demi pour retrouver son frère déchu, avec son épée de feu. Il a quitté Paris depuis plusieurs semaines et laissé trois djinns (les voix) qui l'ont prévenu de l'intrusion. Il ne reviendra pas de sitôt.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi2-sechepine-3",
+              "nom": "Conrad Sechepine",
+              "source": "Démon de Kobal, grade 2 (en préretraite)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 21,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Corps à corps 4+, Défense 3+, Technique 2 (électronique 4), Calembours foireux poil aux pneus 3, Deviens toi aussi un petit espion en seulement trois leçons 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quadragénaire aux cheveux noirs ternes, barbe mal taillée, énormes lunettes bricolées hérissées de fils, toujours en peignoir éponge. Appartement-Q.G. d'espionnage années 50 dans une barre HLM près de la place d'Italie.\nStar démoniaque parisienne des années 70, mis au placard par Kobal après une mission ratée pour Scox (capturé par des Rastas de Novalis, grosse perte de PA). Ne sort plus de chez lui depuis dix-huit ans.\nOdieux sous ses airs farfelus : méprise les « petits jeunes », ne supporte que ses propres blagues, fait d'abord faire le ménage et les courses aux PJ. Imprévisible ; très efficace sous stress, insupportable au repos. Avertissement sans frais : paranoïaque.\nArme : à mains nues (Corps à corps 4+).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-sechepine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi2-ch-rapport",
+              "q": "Les PJ font-ils remonter l'information ?",
+              "opts": [
+                {
+                  "t": "Oui, à Monsieur Fabien",
+                  "suite": "Monsieur Fabien monte un dossier confié à Aurélie pour l'Enfer… qui n'arrivera mystérieusement jamais à destination."
+                },
+                {
+                  "t": "Non, ils classent l'affaire",
+                  "suite": "Rien d'immédiat ; Gabriel reste hors de portée et a été prévenu par ses djinns."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi2-sc-poniatowsky",
+          "nom": "4. Bruit blanc : la famille Poniatowsky",
+          "lieu": "Centre de Tri, puis pavillon de Neuilly",
+          "notes": "Dossier 2, le plus sombre : l'équivalent démoniaque d'une « mission de facho ». Jean-Daniel Poniatowsky, démon de Scox grade 2 et psychiatre médiatique, veut que l'équipe élimine la famille de son corps d'accueil (sa femme Françoise et leurs trois enfants) pendant qu'il sera loin de Paris, en maquillant le tout (accident, cambriolage, incendie). Il fournit renseignements et clés.\nLes victimes sont une famille ordinaire et attachante : ne pas les rendre antipathiques. Aucune difficulté technique ; tout l'enjeu est moral.\nAprès coup, Poniatowsky invite les PJ au restaurant (gibier en sauce), plein d'entrain… mais chaque nuit, il voit le petit dernier lui demander en pleurant pourquoi il a fait mal à sa maman.\nÉpisode à rappeler plus tard dans la campagne, lorsque des choix graves se présenteront.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi2-poniatowsky-4",
+              "nom": "Jean-Daniel Poniatowsky",
+              "source": "Démon de Scox, grade 2 (psychiatre médiatique)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psychiatre de plateau télé sous un nom d'emprunt (caution intellectuelle des reportages sur les « décérébrés à la mode »). Incarné depuis deux ans ; trouve que la famille de son corps d'accueil l'entrave et demande à l'équipe de la faire disparaître pendant qu'il est loin de Paris. Fournit renseignements et clés.\nAprès la mission : invite les PJ au restaurant, jovial, mais hanté chaque nuit par le plus jeune enfant.\nCaractéristiques non fournies par le livre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-poniatowsky"
+            },
+            {
+              "id": "fi2-famille-5",
+              "nom": "Famille Poniatowsky",
+              "source": "Françoise (37 ans), Muriel (8), Clotilde (6), Benjamin (3)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gentille famille bourgeoise centriste, pavillon de Neuilly, deux vieux labradors. Humains ordinaires sans pouvoir ni capacité de résistance : ne pas les rendre antipathiques.\nCaractéristiques non fournies : valeurs estimées (Françoise ; les enfants sont encore plus fragiles).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-famille"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi2-ch-famille",
+              "q": "Que font les PJ du dossier Poniatowsky ?",
+              "opts": [
+                {
+                  "t": "Ils exécutent la mission",
+                  "suite": "+1 PA s'ils le font sans râler. Repas avec Poniatowsky ; souvenir pesant à réutiliser dans la campagne."
+                },
+                {
+                  "t": "Ils enterrent le dossier",
+                  "suite": "Quelques semaines plus tard, toute la famille meurt dans un carambolage autoroutier (18 morts, 46 blessés graves)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi2-sc-deprofundis",
+          "nom": "5. Une bien belle balade : chez Deprofundis",
+          "lieu": "Sous-sols de Paris, depuis la station Louvre",
+          "notes": "Dossier 3, détendu : un mot de Monsieur Fabien rappelle qu'il faut ravitailler Deprofundis (serviteur de Gaziel) tous les cinq ans. Liste d'une trentaine d'articles : les cinq premiers CD du top 50, trois litres de thé à la menthe, cinq Pléiade, dix piles de lampe de poche, un Jungle Speed, six jeux de cordes de guitare folk, une flûte à bec alto, un tapis de bain…\nGilbert peut les accompagner (ravi) ou fournir un plan détaillé mais complexe. Prévoir lampes, casques de spéléo, baudriers, cordes.\nItinéraire : local d'entretien du métro Louvre (éviter les agents en orange qui jouent à la belote), échelle, galeries bétonnées, lourde trappe (Force très difficile sans barre à mine), échelons jusqu'aux égouts, une demi-heure de traversée (rencontres au choix : égoutiers, rats affamés, valise de billets, anges de Daniel, guérilleros de la Terre Creuse, anaconda du U-Boat Crew), porte blindée intacte depuis la Libération, anciennes carrières de la Résistance (squelette au Luger), puits masqués par des planches pourries (10 à 15 m de chute).\nLe gardien : un homme assis dans une galerie demande qui va là ; un grondement monte. Il faut vite se présenter comme démons (aura, mot de passe…), sinon la galerie s'effondre.\nLe repaire : une centaine de grottes humides, en partie immergées (Anaérobiose requise). Grotte principale meublée à l'ancienne (acajou, armure, tentures, lampes à pétrole). Deprofundis et ses trois zombies, cultivés et charmants, sont enchantés. Démonstration de séisme sous Paris. Remontée : deux à trois heures en suivant le plan à l'envers.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi2-deprofundis-6",
+              "nom": "Deprofundis",
+              "source": "Démon de Gaziel, grade 3",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 6,
+                "pe": 4,
+                "vo": 10,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 28,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Violoncelle maudit mineur (non-létal)",
+                  "att": 9,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Séisme",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 2+ (armes improvisées 4+), Défense 4+, Savoir militaire 2 (tactique 4), Hobby (violoncelle) 4, Jeu 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné en 1886 dans un garçon boucher : petit, carré, très musclé, peau grisâtre, cheveux éclaircis. Habits d'époque pour les visiteurs (sinon nu), accent de titi parisien.\nVit depuis des décennies dans les profondeurs sous Paris avec trois zombies cultivés ; mission permanente : provoquer de petits séismes sous la capitale (banalisés depuis que les anges ont fourni des sismographes). Naïf, chaleureux, ravi des visites ; aidera volontiers plus tard s'il n'a pas à quitter ses sous-sols.\nAvertissement sans frais : naïveté. Avantage matériel : zombies. Violoncelle : attaque au talent Combat (armes improvisées 4+).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-deprofundis"
+            },
+            {
+              "id": "fi2-zombies-deprofundis-7",
+              "nom": "Zombies de Deprofundis",
+              "source": "Compagnons morts-vivants de Deprofundis",
+              "type": "mortvivant",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 4,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                }
+              ],
+              "talents": "Russe (Dostoïevski dans le texte) 3, Musique (un instrument chacun) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Un siècle de vie commune avec Deprofundis leur a donné un QI remarquable : citent Dostoïevski en russe, jouent chacun d'un instrument, accent parisien à couper au couteau. L'un d'eux garde l'accès au repaire et fait gronder la galerie si les intrus ne se présentent pas.\nCaractéristiques non fournies par le livre : valeurs estimées de mort-vivant ordinaire.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-zombies-deprofundis"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi2-ch-gardien",
+              "q": "Comment les PJ réagissent-ils face au zombie gardien ?",
+              "opts": [
+                {
+                  "t": "Ils se présentent vite comme démons",
+                  "suite": "Conduits au repaire ; accueil chaleureux. +1 PA s'ils deviennent potes avec Deprofundis."
+                },
+                {
+                  "t": "Ils hésitent ou se montrent hostiles",
+                  "suite": "Le grondement s'amplifie : effondrement de la galerie s'ils ne déguerpissent pas."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi2-sc-heterodosk",
+          "nom": "6. Bafouille baveuse : direction Dunkerque",
+          "lieu": "Centre de Tri, puis Dunkerque",
+          "notes": "Dossier 4 : un mot au crayon gras sur du papier toilette, signé Heterodosk (démon de Malphas). Il est retenu sur Terre par un sorcier, avec trois autres prisonniers dont deux anges, en route vers Dunkerque. Enveloppe non timbrée « au responsable des chaudières du Centre de Tri », tachée de boue, jetée d'un train et postée par un passant ; arrivée il y a quinze jours.\nSur demande, Monsieur Fabien, Gilbert ou Aurélie font un briefing sur la sorcellerie (invocation, lien, vrai nom…). Psychométrie sur l'enveloppe : elle raconte sa chute du train et son trajet par un champ de maïs de la Beauce.\n\nDunkerque : ville laide reconstruite à la va-vite, complexe pétrochimique, centre désert le samedi soir, hôtel abandonné aux ouvertures murées. Enquête de terrain (bars, journaux, interrogatoires) : cambriolage à l'usine sidérurgique Solac, pyromane d'animaux, expulsions de squatters de l'hôtel désaffecté, marins lituaniens bloqués au port depuis la faillite de leur armateur. Seule la dernière piste est la bonne ; laisser les PJ errer un peu.\n\nContexte MJ : Hornet a compris que Bifrons perd ses pouvoirs et c'est lui qui en profite. Avec les vrais noms fournis par Bifrons et une trentaine de sorciers européens de la Rose, il invoque anges et démons pour les interroger sur la situation au Paradis et en Enfer, puis les parque dans des planques. Il compte bien profiter de la guerre qui menace la Cour démoniaque.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi2-sc-cargo",
+          "nom": "7. Boum boum boum boum : le Bijelo Dugme",
+          "lieu": "Cargo lituanien en rade de Dunkerque",
+          "notes": "Cargo mixte de faible tonnage, vide depuis quatre mois ; le propriétaire a filé avec la caisse et la Rose paie les anciens marins comme matons.\nObservation à la jumelle : activité permanente, rondes jour et nuit. Tous les deux jours, un canot amène quatre marins en ville (courses, bars à matelots) : à cuisiner pour obtenir le nom de « Mister H. », un plan grossier et les forces en présence.\nForces à bord :\n• Une petite dizaine de marins lituaniens, guetteurs relayés toutes les trois heures par deux (souvent un seul en état aux heures sombres).\n• Quatre sorciers de la Rose (Barbara, Sven, Ulrike, Thomson), en poste depuis des mois, discipline relâchée.\n• Fish et Chips, démons de Caym liés, en requins blancs autour de la coque (1d6 en cas d'attaque : 4-5 un seul requin, 6 tous deux en cabine).\n• Tomo, Tommy, Lobo et Lobby, zombies spéciaux, arrivent 3 ou 4 tours après le début du combat.\n• Prisonniers à fond de cale, entravés, affamés : Kisskool, Brad, Lumpen (traumatisés par la torture en Forêt-Noire) et Heterodosk, encore lucide et prêt à se battre (Discorde contre les sorciers).\nLe cargo est assez loin du port pour une grosse bataille discrète. Tout tuer marche (les séides retournent d'où ils viennent), mais l'idéal est de garder vivants les prisonniers et un ou plusieurs sorciers.\nRenseignements obtenus si on fait parler les survivants : incarnation forcée, tortures dans une résidence de montagne, transport en train ; nombreux sorciers, zombies et « Monsieur H. » et « Monsieur B. » à la tête de l'organisation. Les sorciers donnent les coordonnées de la base de torture (relais et château en Allemagne, abandonnés) ; ils savent que Monsieur H. est Hornet (le cachent ou monnayent l'info) et que Monsieur B. est son très bon ami… qui lui ressemble beaucoup.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi2-marins-8",
+              "nom": "Marins lituaniens (Alojzy, Ludwig, Jaroslaw, Wojciech…)",
+              "source": "Équipage du Bijelo Dugme, matons pour la Rose",
+              "type": "humain",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Makarov 9 mm",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Uzi (deux marins seulement)",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Monter la garde 3, Corps à corps 3, Tir 2, Défense 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Une petite dizaine, du mousse à peine majeur au vieux briscard ex-sous-marinier de l'Armée rouge. Alcool fort, échecs, bagarres. Déprimés après quatre mois au mouillage : sautent sur la moindre occasion de cogner ; les plus sobres hésitent face à une opposition trop forte et se doutent que leurs patrons ne sont pas des indépendantistes basques. Un canot va en ville tous les deux jours (quatre marins) : persuadés (le surnaturel visible l'est toujours), ils parlent de « Mister H. » et peuvent fournir un plan grossier.\nMakarov : revolver petit calibre (R.ARMES) ; Uzi : pistolet-mitrailleur.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-marins"
+            },
+            {
+              "id": "fi2-barbara-9",
+              "nom": "Barbara",
+              "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de cuisine",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bourgeoise anglaise, robe rosâtre, chapeau ridicule, maquillée à outrance, fragile comme une porcelaine. Experte pour jouer les victimes et pousser des cris de souris. Couteau de cuisine (poignard de R.ARMES).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-barbara"
+            },
+            {
+              "id": "fi2-sven-10",
+              "nom": "Sven",
+              "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Grenade défensive (×3)",
+                  "att": 6,
+                  "prec": -4,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit Hollandais au visage sadique, yeux fous, gestes nerveux, se frotte les mains et ricane. Contrôle les deux démons de Caym (Fish et Chips) et leur parle en néerlandais. Trois grenades défensives (jet au talent Tir : estimation).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-sven"
+            },
+            {
+              "id": "fi2-ulrike-11",
+              "nom": "Ulrike",
+              "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov « Titine »",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune Allemande très grande, cheveux roux mi-longs, se met en retrait et se déprécie pour paraître faible. Moins bonne sorcière, mais la plus dangereuse au combat. Vieille Kalachnikov rouillée (fusil-mitrailleur de R.ARMES).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-ulrike"
+            },
+            {
+              "id": "fi2-thomson-12",
+              "nom": "Thomson",
+              "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Canne à pommeau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieux sorcier de famille : costard noir, tête de corbeau, canne à pommeau. Chef officiel, le plus savant et le moins impressionnable ; négocie âprement chaque renseignement (préfère mourir que trahir… mais préfère vivre que mourir). Sait que Mister H. est Hornet. Canne : matraque de R.ARMES (estimation).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-thomson"
+            },
+            {
+              "id": "fi2-fish-chips-13",
+              "nom": "Fish et Chips",
+              "source": "Démons de Caym, grade 1 – liés par les sorciers",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 11,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Morsure (forme de requin)",
+                  "att": 9,
+                  "prec": 3,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 2
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 4+, Athlétisme 3, Défense 4+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Contrôlés par Sven, ils rôdent autour de la coque en requins blancs et suivent les embarcations qui approchent. Ne peuvent pas garder la forme en permanence : en cas d'attaque, 1d6 → 1-3 les deux en mer, 4-5 un seul requin, 6 tous deux dans leur cabine à récupérer leurs PP. Reviennent à toute vitesse au rappel de leur sorcier.\nLe livre indique « Membre exotique (dents) » : rendu par Membre exotique : crocs (précision +3, puissance +1).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-fish-chips"
+            },
+            {
+              "id": "fi2-tomo-14",
+              "nom": "Tomo, Tommy, Lobo et Lobby",
+              "source": "Zombies spéciaux issus du Gothic Horror (fournis par Hornet et Bifrons)",
+              "type": "mortvivant",
+              "qty": 4,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 6,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Hachoir maudit mineur (inadapté à la parade)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Griffes",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Crocs",
+                  "att": 8,
+                  "prec": 3,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 4, Combat 3, Athlétisme 2, Défense 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grands, costauds, très laids, un peu pourris (vermisseaux dans le nez), peu bavards ; tenues de sport, deux portent des hauts-de-forme. Parqués dans des cabines loin des marins : arrivent 3 ou 4 tours après le début de la baston.\nHachoir au talent Combat ; griffes et crocs au Corps à corps. « Membre exotique (dents) » du livre rendu par Membre exotique : crocs.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-tomo"
+            },
+            {
+              "id": "fi2-heterodosk-15",
+              "nom": "Heterodosk",
+              "source": "Démon de Malphas, grade 0 (prisonnier)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 9,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Discorde",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 3, Défense 3, Corps à corps 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné dans une jeune fille frêle et presque diaphane. Seul prisonnier à avoir résisté au contrôle : joue la comédie, profil bas. Auteur de la lettre au Centre de Tri.\nLibéré avant la fin du combat, il sème la zizanie entre les sorciers grâce à Discorde. Ensuite, il demande aux PJ de le tuer (retour en Enfer) ainsi que ses trois compagnons.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-heterodosk"
+            },
+            {
+              "id": "fi2-kisskool-16",
+              "nom": "Kisskool",
+              "source": "Démon de Haagenti (prisonnier traumatisé)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné dans un petit garçon. Ne dit plus qu'un mot, « maison », sur tous les tons et dans toutes les langues ; se balance et bave.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-kisskool"
+            },
+            {
+              "id": "fi2-brad-17",
+              "nom": "Brad",
+              "source": "Ange de Janus (prisonnier traumatisé)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné dans une vieille dame. Débite d'une voix monocorde des phrases sans queue ni tête.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-brad"
+            },
+            {
+              "id": "fi2-lumpen-18",
+              "nom": "Lumpen",
+              "source": "Ange de Marc (prisonnier traumatisé)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné dans un ado néogothique. Paraît lucide jusqu'à ce qu'il hurle et frappe le sol de ses poings en invoquant Dieu.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55.",
+              "typeId": "type-fi2-lumpen"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi2-ch-approche",
+              "q": "Comment les PJ abordent-ils le cargo ?",
+              "opts": [
+                {
+                  "t": "Ils cuisinent d'abord les marins du canot",
+                  "suite": "Plan grossier, nom de Mister H. et effectifs connus : assaut mieux préparé."
+                },
+                {
+                  "t": "Assaut direct",
+                  "suite": "Aucun renseignement préalable ; les guetteurs donnent l'alerte selon leur état d'ébriété."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi2-ch-requins",
+              "q": "Jet de 1d6 pour Fish et Chips au moment de l'attaque",
+              "opts": [
+                {
+                  "t": "1-3 : les deux requins en mer",
+                  "suite": "Fish et Chips harcèlent toute embarcation qui approche."
+                },
+                {
+                  "t": "4-5 : un seul requin",
+                  "suite": "L'autre démon de Caym est à bord et revient au rappel de Sven."
+                },
+                {
+                  "t": "6 : tous deux en cabine",
+                  "suite": "Ils récupèrent leurs PP ; ils accourent à toute vitesse dès que Sven les rappelle."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi2-ch-survivants",
+              "q": "Qui reste vivant à la fin de l'assaut ?",
+              "opts": [
+                {
+                  "t": "Sorciers et prisonniers capturés",
+                  "suite": "+1 PA si on les fait parler : plan de Hornet en partie révélé."
+                },
+                {
+                  "t": "Seulement les prisonniers",
+                  "suite": "Témoignages sur l'incarnation forcée et les tortures ; aucun nom précis."
+                },
+                {
+                  "t": "Personne",
+                  "suite": "Les séides retournent d'où ils viennent ; aucune information."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi2-sc-bilan",
+          "nom": "8. Bravo les blaireaux ! : bilan",
+          "lieu": "Centre de Tri, Paris",
+          "notes": "Les PJ décident de faire remonter (ou non) les informations et du sort des prisonniers. Conseil de Monsieur Fabien : tuer les démons (retour en Enfer) et garder les anges pour les interroger. Il refuse de les héberger au Centre : aux PJ de trouver une planque s'ils les gardent. S'ils ont laissé du bazar sur le cargo, mieux vaut quitter Dunkerque vite.\nEnsuite, une semaine de congés loin du Centre.\nPoints d'aventure : voir les notes du scénario.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi2-ch-prisonniers",
+              "q": "Que font les PJ des prisonniers surnaturels ?",
+              "opts": [
+                {
+                  "t": "Ils suivent le conseil de Fabien",
+                  "suite": "Démons renvoyés en Enfer, anges gardés pour information (planque à trouver hors du Centre)."
+                },
+                {
+                  "t": "Ils les tuent tous",
+                  "suite": "Conforme à la demande d'Heterodosk ; aucune source d'information conservée."
+                },
+                {
+                  "t": "Ils les gardent tous",
+                  "suite": "Planque à organiser ; anges et démons traumatisés à surveiller."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795281301717,
+      "updatedAt": 1795281301717
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi2-sechepine",
+      "nom": "Conrad Sechepine",
+      "source": "Démon de Kobal, grade 2 (en préretraite)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 8,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 7,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 21,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 9,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Gag absurde",
+          "r": 8
+        },
+        {
+          "n": "Cauchemar",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Polymorphie",
+          "r": 4
+        },
+        {
+          "n": "Vol",
+          "r": 6
+        }
+      ],
+      "talents": "Corps à corps 4+, Défense 3+, Technique 2 (électronique 4), Calembours foireux poil aux pneus 3, Deviens toi aussi un petit espion en seulement trois leçons 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quadragénaire aux cheveux noirs ternes, barbe mal taillée, énormes lunettes bricolées hérissées de fils, toujours en peignoir éponge. Appartement-Q.G. d'espionnage années 50 dans une barre HLM près de la place d'Italie.\nStar démoniaque parisienne des années 70, mis au placard par Kobal après une mission ratée pour Scox (capturé par des Rastas de Novalis, grosse perte de PA). Ne sort plus de chez lui depuis dix-huit ans.\nOdieux sous ses airs farfelus : méprise les « petits jeunes », ne supporte que ses propres blagues, fait d'abord faire le ménage et les courses aux PJ. Imprévisible ; très efficace sous stress, insupportable au repos. Avertissement sans frais : paranoïaque.\nArme : à mains nues (Corps à corps 4+).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-roumaines",
+      "nom": "Les trois Roumaines",
+      "source": "Mendiantes du quartier (suspectes de Sechepine)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Mendicité agressive, vol à la roulotte, faire semblant de ne pas comprendre le français",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Une vieille gitane édentée et deux jeunes filles, sans papiers, exploitées par un chef de famille mafieux qui garde leurs papiers. Pas des anges ni des soldats de Dieu : la vieille est négative à Détection du Mal et tomberait d'une seule claque.\nCaractéristiques non fournies par le livre : valeurs estimées (humaines faibles).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-poniatowsky",
+      "nom": "Jean-Daniel Poniatowsky",
+      "source": "Démon de Scox, grade 2 (psychiatre médiatique)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psychiatre de plateau télé sous un nom d'emprunt (caution intellectuelle des reportages sur les « décérébrés à la mode »). Incarné depuis deux ans ; trouve que la famille de son corps d'accueil l'entrave et demande à l'équipe de la faire disparaître pendant qu'il est loin de Paris. Fournit renseignements et clés.\nAprès la mission : invite les PJ au restaurant, jovial, mais hanté chaque nuit par le plus jeune enfant.\nCaractéristiques non fournies par le livre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-famille",
+      "nom": "Famille Poniatowsky",
+      "source": "Françoise (37 ans), Muriel (8), Clotilde (6), Benjamin (3)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gentille famille bourgeoise centriste, pavillon de Neuilly, deux vieux labradors. Humains ordinaires sans pouvoir ni capacité de résistance : ne pas les rendre antipathiques.\nCaractéristiques non fournies : valeurs estimées (Françoise ; les enfants sont encore plus fragiles).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-deprofundis",
+      "nom": "Deprofundis",
+      "source": "Démon de Gaziel, grade 3",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 6,
+        "pe": 4,
+        "vo": 10,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 11,
+      "pp": 28,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Violoncelle maudit mineur (non-létal)",
+          "att": 9,
+          "prec": -1,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Séisme",
+          "r": 10
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Couche de glace",
+          "r": 4
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 2+ (armes improvisées 4+), Défense 4+, Savoir militaire 2 (tactique 4), Hobby (violoncelle) 4, Jeu 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné en 1886 dans un garçon boucher : petit, carré, très musclé, peau grisâtre, cheveux éclaircis. Habits d'époque pour les visiteurs (sinon nu), accent de titi parisien.\nVit depuis des décennies dans les profondeurs sous Paris avec trois zombies cultivés ; mission permanente : provoquer de petits séismes sous la capitale (banalisés depuis que les anges ont fourni des sismographes). Naïf, chaleureux, ravi des visites ; aidera volontiers plus tard s'il n'a pas à quitter ses sous-sols.\nAvertissement sans frais : naïveté. Avantage matériel : zombies. Violoncelle : attaque au talent Combat (armes improvisées 4+).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-zombies-deprofundis",
+      "nom": "Zombies de Deprofundis",
+      "source": "Compagnons morts-vivants de Deprofundis",
+      "type": "mortvivant",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 4,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        }
+      ],
+      "talents": "Russe (Dostoïevski dans le texte) 3, Musique (un instrument chacun) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Un siècle de vie commune avec Deprofundis leur a donné un QI remarquable : citent Dostoïevski en russe, jouent chacun d'un instrument, accent parisien à couper au couteau. L'un d'eux garde l'accès au repaire et fait gronder la galerie si les intrus ne se présentent pas.\nCaractéristiques non fournies par le livre : valeurs estimées de mort-vivant ordinaire.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-marins",
+      "nom": "Marins lituaniens (Alojzy, Ludwig, Jaroslaw, Wojciech…)",
+      "source": "Équipage du Bijelo Dugme, matons pour la Rose",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Makarov 9 mm",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Uzi (deux marins seulement)",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Monter la garde 3, Corps à corps 3, Tir 2, Défense 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Une petite dizaine, du mousse à peine majeur au vieux briscard ex-sous-marinier de l'Armée rouge. Alcool fort, échecs, bagarres. Déprimés après quatre mois au mouillage : sautent sur la moindre occasion de cogner ; les plus sobres hésitent face à une opposition trop forte et se doutent que leurs patrons ne sont pas des indépendantistes basques. Un canot va en ville tous les deux jours (quatre marins) : persuadés (le surnaturel visible l'est toujours), ils parlent de « Mister H. » et peuvent fournir un plan grossier.\nMakarov : revolver petit calibre (R.ARMES) ; Uzi : pistolet-mitrailleur.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-barbara",
+      "nom": "Barbara",
+      "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Couteau de cuisine",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Bourgeoise anglaise, robe rosâtre, chapeau ridicule, maquillée à outrance, fragile comme une porcelaine. Experte pour jouer les victimes et pousser des cris de souris. Couteau de cuisine (poignard de R.ARMES).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-sven",
+      "nom": "Sven",
+      "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Grenade défensive (×3)",
+          "att": 6,
+          "prec": -4,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit Hollandais au visage sadique, yeux fous, gestes nerveux, se frotte les mains et ricane. Contrôle les deux démons de Caym (Fish et Chips) et leur parle en néerlandais. Trois grenades défensives (jet au talent Tir : estimation).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-ulrike",
+      "nom": "Ulrike",
+      "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Kalachnikov « Titine »",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune Allemande très grande, cheveux roux mi-longs, se met en retrait et se déprécie pour paraître faible. Moins bonne sorcière, mais la plus dangereuse au combat. Vieille Kalachnikov rouillée (fusil-mitrailleur de R.ARMES).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-thomson",
+      "nom": "Thomson",
+      "source": "Sorcier de la Rose (geôlier du Bijelo Dugme)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Canne à pommeau",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 3, Combat 2, Défense 2, Haute sorcellerie 4, Demande à un démon 5, Demande à un ange 5, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts : Protection, Vrai nom, Lecture d'aura",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieux sorcier de famille : costard noir, tête de corbeau, canne à pommeau. Chef officiel, le plus savant et le moins impressionnable ; négocie âprement chaque renseignement (préfère mourir que trahir… mais préfère vivre que mourir). Sait que Mister H. est Hornet. Canne : matraque de R.ARMES (estimation).\nFiche commune aux quatre sorciers dans le livre. Sorts notés dans les talents (pas des pouvoirs).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-fish-chips",
+      "nom": "Fish et Chips",
+      "source": "Démons de Caym, grade 1 – liés par les sorciers",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 11,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Morsure (forme de requin)",
+          "att": 9,
+          "prec": 3,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Transformation",
+          "r": 6
+        },
+        {
+          "n": "Poison",
+          "r": 2
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 4+, Athlétisme 3, Défense 4+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Contrôlés par Sven, ils rôdent autour de la coque en requins blancs et suivent les embarcations qui approchent. Ne peuvent pas garder la forme en permanence : en cas d'attaque, 1d6 → 1-3 les deux en mer, 4-5 un seul requin, 6 tous deux dans leur cabine à récupérer leurs PP. Reviennent à toute vitesse au rappel de leur sorcier.\nLe livre indique « Membre exotique (dents) » : rendu par Membre exotique : crocs (précision +3, puissance +1).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-tomo",
+      "nom": "Tomo, Tommy, Lobo et Lobby",
+      "source": "Zombies spéciaux issus du Gothic Horror (fournis par Hornet et Bifrons)",
+      "type": "mortvivant",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 6,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Hachoir maudit mineur (inadapté à la parade)",
+          "att": 6,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Griffes",
+          "att": 8,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Crocs",
+          "att": 8,
+          "prec": 3,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 4, Combat 3, Athlétisme 2, Défense 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grands, costauds, très laids, un peu pourris (vermisseaux dans le nez), peu bavards ; tenues de sport, deux portent des hauts-de-forme. Parqués dans des cabines loin des marins : arrivent 3 ou 4 tours après le début de la baston.\nHachoir au talent Combat ; griffes et crocs au Corps à corps. « Membre exotique (dents) » du livre rendu par Membre exotique : crocs.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-heterodosk",
+      "nom": "Heterodosk",
+      "source": "Démon de Malphas, grade 0 (prisonnier)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 9,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Discorde",
+          "r": 4
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 3, Défense 3, Corps à corps 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné dans une jeune fille frêle et presque diaphane. Seul prisonnier à avoir résisté au contrôle : joue la comédie, profil bas. Auteur de la lettre au Centre de Tri.\nLibéré avant la fin du combat, il sème la zizanie entre les sorciers grâce à Discorde. Ensuite, il demande aux PJ de le tuer (retour en Enfer) ainsi que ses trois compagnons.\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-kisskool",
+      "nom": "Kisskool",
+      "source": "Démon de Haagenti (prisonnier traumatisé)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné dans un petit garçon. Ne dit plus qu'un mot, « maison », sur tous les tons et dans toutes les langues ; se balance et bave.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-brad",
+      "nom": "Brad",
+      "source": "Ange de Janus (prisonnier traumatisé)",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné dans une vieille dame. Débite d'une voix monocorde des phrases sans queue ni tête.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    },
+    {
+      "id": "type-fi2-lumpen",
+      "nom": "Lumpen",
+      "source": "Ange de Marc (prisonnier traumatisé)",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné dans un ado néogothique. Paraît lucide jusqu'à ce qu'il hurle et frappe le sol de ses poings en invoquant Dieu.\nContrôlé brutalement par les sorciers, traumatisé même après leur mort ; aucune animosité envers les autres prisonniers. Caractéristiques volontairement non fournies : trop à la masse pour combattre (fiche minimale).\nSource : Fire and Ice, « Quatre fragments d'une chronologie du hasard », p. 43-55."
+    }
+  ],
+  "memoire": []
+}

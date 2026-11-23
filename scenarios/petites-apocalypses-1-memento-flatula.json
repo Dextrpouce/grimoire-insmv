@@ -1,0 +1,1559 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa1-memento-flatula",
+      "nom": "Petites Apocalypses – Memento Flatula",
+      "resume": "Scénario d'ouverture de la campagne des Petites Apocalypses pour agents de la troisième Force employés par la DTC d'Hercule. Dans un chalet de Chamonix, un psi en fuite, Alexeï Smirnoff, doit vendre à la Comtesse (Santofer) les tablettes de Raämalû, fausse antiquité qui cache un DVD de recherches d'armement volé à Simiscience. Les PJ ont déjà lancé leur plan pour prendre la place de l'acheteuse quand le scénario commence ; quatre démons convoitent le même butin. Exercice d'improvisation où les joueurs inventent le contexte, qui se termine en bagarre.",
+      "notes": "Source : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.\nContexte :\n• Simiscience : filiale de la conpsi NRG, multinationale chimie/aéronautique à la vitrine exemplaire, qui développe en secret des armes vendues au plus offrant. Son patron, un psi, a déjà fait appel à la DTC.\n• Santofer : petite société française d'armement dépendant de la conpsi 3GU ; poussée par le gouvernement à devenir plus agressive, elle s'est dotée d'une équipe d'espions industriels menée par la Comtesse.\n• Démons : un démon haut placé chez Vapula a appris le vol par ses contacts chez Simiscience et a lâché quatre démons de grade 1 sur Smirnoff.\nChronologie : trois ans de recherche sur une arme révolutionnaire, prototypes en test ; le secret s'évente, tentatives d'effraction. Smirnoff copie les données sur DVD, le moule dans une imitation des tablettes de Raämalû (prophéties sur la fin du monde) et contacte Santofer. Hercule localise l'échange ; il sait seul que les données sont dans les tablettes et ne dit aux PJ que de récupérer l'objet.\nRécompenses : aucune en PA indiquée par le livre (à fixer par le MJ selon l'issue).\n\nAdaptations pour anges et démons (p. 115) :\n• INS : inverser les rôles des deux équipes ; les PJ démons remplacent les quatre démons et agissent pour leur propre mission, pas pour une conpsi. Au MJ de décider s'ils savent qu'ils cherchent un DVD ou les tablettes.\n• MV : soit les anges remplacent l'équipe de démons, soit ils s'ajoutent aux PNJ présents (la DTC devient alors une équipe PNJ). Motivations : Laurent ou Michel veulent l'arme révolutionnaire ; Francis, plus pacifiste, veut éviter ce fléau à l'humanité.\n• Dans tous les cas, ajuster la puissance des adversaires à celle des PJ.\n\nFiches : caractéristiques vérifiées sur les pages rendues (p. 21, 47-48). Attaques du livre au format « seuil/RU+X/M+Y ». Valeurs estimées signalées dans les notes des fiches.",
+      "scenes": [
+        {
+          "id": "pa1-sc-principe",
+          "nom": "0. Avant de jouer : la non-introduction",
+          "lieu": "Hors jeu",
+          "notes": "Premier scénario de la campagne : il sert à faire connaître les personnages. Pas d'introduction : on démarre en pleine action, et ce sont les joueurs qui inventent le contexte (raisons de leur présence, détails du plan) à partir de quelques phrases d'ouverture. Prévenez-les explicitement si besoin.\n• Le MJ ne donne que la ligne de départ et une description de l'environnement ; il dose la liberté selon la personnalité de chaque joueur.\n• Si un joueur contredit le scénario (ex. : « on est à Paris »), corriger de préférence par la bouche d'un PNJ, ou accepter et adapter la suite.\n• Règle d'or : rester constructif, ne pas chercher à coincer les autres joueurs ni le MJ.\n• Seules les scènes 1 à 3 sont indispensables (elles introduisent les PNJ). Choisir avec soin quel joueur ouvre le bal : le premier à improviser a la tâche la plus dure.\n\nLe plan des PJ (déjà lancé, conçu par Hercule ou par eux) : un PJ travesti remplace la Comtesse pour l'échange ; un autre retarde ou neutralise la vraie Comtesse dans sa chambre ; un troisième rampe dans le conduit d'aération au-dessus de la salle d'échange (aucune cachette dans la pièce), un quatrième attend dehors près de la fenêtre ; un dernier fouille la chambre de Smirnoff au cas où il n'aurait pas apporté l'objet. Une fois les tablettes obtenues, elles doivent filer au plus vite chez Hercule.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-chambre-comtesse",
+          "nom": "1. Dans la chambre de la Comtesse",
+          "lieu": "Chalet, chambre de la vraie Comtesse",
+          "notes": "PJ chargé de retarder la Comtesse. Chaque scène existe en trois versions, de la plus vague à la plus précise : plus vous donnez de détails, plus le joueur cherchera à recoller au plan ; moins vous en donnez, plus il improvisera. Le joueur doit compléter lui-même la situation (pourquoi il est là, ce qu'il dit).\nOuverture : il referme la porte, la neige recommence à tomber sur les pistes ; la Comtesse sort de la salle de bains, le fixe de ses yeux verts et, avec un fort accent russe, lui demande ce qu'il fait dans sa chambre. Version la plus précise : elle est pressée, tendue, et serre une petite mallette (l'argent de Santofer).\nDécrire la Comtesse servira aussi au PJ de la scène 2. Elle est très déterminée : la retenir ou la neutraliser n'est pas une formalité.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa1-comtesse-1",
+              "nom": "La Comtesse (Illyana Padje-Heudmo)",
+              "source": "Ex-espionne russe, cheffe de l'équipe de Santofer",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Défense 2, Enquête 4, Savoir d'espion 4, Séduction 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Âge certain, chignon gris, tailleur strict, regard vert scrutateur devenu légendaire ; fierté de ses succès passés au service de l'URSS puis de la Russie. Agit seule : elle a laissé ses deux gros bras au bar.\nOrdres de Santofer : échange loyal. Elle préférerait récupérer l'argent après coup.\nTenace et rusée : la capturer demande ingéniosité et persévérance. Hercule pourrait la recruter à la DTC.\nCoup de poing au niveau 1 : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-comtesse"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-echange",
+          "nom": "2. La fausse Comtesse",
+          "lieu": "Chalet, pièce de l'échange",
+          "notes": "PJ travesti (idéalement un personnage et un joueur masculins). Chaque scène existe en trois versions, de la plus vague à la plus précise : plus vous donnez de détails, plus le joueur cherchera à recoller au plan ; moins vous en donnez, plus il improvisera. Le joueur doit compléter lui-même la situation (pourquoi il est là, ce qu'il dit).\nOuverture : tailleur trop serré, perruque grise qui tient chaud, mallette en main ; Smirnoff entre, le regarde avec curiosité, salue « madame la Comtesse » et demande si elle a apporté ce qui était convenu. Le PJ doit répondre d'une voix féminine avec l'accent russe. Version la plus précise : la mallette est pleine de faux billets.\nSmirnoff est sur ses gardes : une réponse incongrue (« je vais l'exposer dans un musée ») peut l'amuser, le faire reculer (« Qui êtes-vous ? ») ou le pousser à tendre un piège (mot de passe inexistant). Il apporte les tablettes de Raämalû, objet pseudo-mésopotamien couvert de runes ; les PJ ignorent qu'un DVD est moulé à l'intérieur.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa1-smirnoff-2",
+              "nom": "Alexeï Smirnoff",
+              "source": "Psi, chercheur en fuite (ex-Simiscience)",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 5,
+                "vo": 9,
+                "pr": 5,
+                "foi": 2
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps digital",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 8
+                },
+                {
+                  "n": "Parasite intellectuel",
+                  "r": 4
+                }
+              ],
+              "talents": "Défense 2+, Discrétion 2+, Discussion 4+, Informatique 4+, Science 3 (électronique 4+), Technique 3 (électronique 4+), Pouvoirs dimensionnels 2, Pouvoirs psychiques 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, beau gars baraqué et élancé, châtain-roux aux yeux verts, polyglotte et bardé de diplômes ; né en France, ne se sent pas du tout slave. Supporte mal l'autorité, a la répartie facile, soupe au lait : les blagues sur la vodka le mettent hors de lui.\nAmoureux de Lolette, très dépensière, qui l'attend déjà à Madrid (choisie justement parce qu'il déteste l'Espagne). Appartement rendu, comptes liquidés, nouvelle identité prête ; lentilles à la place des lunettes et postiche sur sa calvitie : un air de lapin russe ébouriffé.\nPrudent mais pas assez : il ne sait pas que les démons le filent. Pas de mot de passe prévu pour l'échange (piège possible : « rappelez-moi le mot de passe… »).\nCoup de poing au niveau 1 : estimation (aucun talent de combat).\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-smirnoff"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-chambre-smirnoff",
+          "nom": "3. La tête dans les toilettes",
+          "lieu": "Chalet, chambre de Smirnoff",
+          "notes": "PJ venu fouiller la chambre de Smirnoff. Chaque scène existe en trois versions, de la plus vague à la plus précise : plus vous donnez de détails, plus le joueur cherchera à recoller au plan ; moins vous en donnez, plus il improvisera. Le joueur doit compléter lui-même la situation (pourquoi il est là, ce qu'il dit).\nOuverture : un des quatre types lui relève la tête de la cuvette ; ils ont tout fouillé sans rien trouver et exigent de savoir où sont cachées les informations, en l'appelant Smirnoff dans la version la plus précise (« tu ne les as pas déjà données à la vieille ? »).\nLes démons le prennent pour Smirnoff : soit ils pensent à une Polymorphie, soit ils ne sont pas physionomistes, soit ils sont simplement idiots. Le PJ peut baratiner pour s'en sortir, mais des démons lancés sont durs à arrêter. Combat possible.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa1-boner-3",
+              "nom": "Boner",
+              "source": "Démon de Baal, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Katana",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Katana exalté",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 8
+                },
+                {
+                  "n": "Art de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLe chef de file au combat : katana, exalté dès que ça chauffe.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-boner"
+            },
+            {
+              "id": "pa1-turgid-4",
+              "nom": "Turgid",
+              "source": "Démon de Malthus, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Poignard",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nL'homme des basses œuvres discrètes : Sommeil pour neutraliser, Détection du danger pour ne pas se faire surprendre.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-turgid"
+            },
+            {
+              "id": "pa1-bigdick-5",
+              "nom": "Big Dick",
+              "source": "Démon de Furfur, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Jet de flammes (2 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Conversion physique",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nJet de flammes : aire d'effet de rayon très court, inévitable, 2 PP. Le candidat idéal pour « faire sauter le chalet ».\nCoup de poing ajouté (niveau Combat 3) : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-bigdick"
+            },
+            {
+              "id": "pa1-chiken-6",
+              "nom": "Chiken-safe",
+              "source": "Démon d'Uphir, grade 1 (le seul asiatique de l'équipe)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Langue barbelée (2 PP)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : langue blindée",
+                  "r": 0
+                },
+                {
+                  "n": "Vengeance toxique",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLangue : portée très courte, 2 PP pour l'activer. Le livre parle de « langue blindée » dans les pouvoirs et de « langue barbelée » dans l'attaque : les deux sont conservés.\nSon surnom fait l'objet d'une blague graveleuse des autres démons.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-chiken"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-conduit",
+          "nom": "4. Le conduit d'aération",
+          "lieu": "Chalet, faux plafond au-dessus de la réception",
+          "notes": "PJ chargé de surgir par la trappe du plafond. Chaque scène existe en trois versions, de la plus vague à la plus précise : plus vous donnez de détails, plus le joueur cherchera à recoller au plan ; moins vous en donnez, plus il improvisera. Le joueur doit compléter lui-même la situation (pourquoi il est là, ce qu'il dit).\nOuverture : le conduit, trop étroit, craque, cède avec le faux plafond ; le PJ s'écrase deux mètres cinquante plus bas, dans les débris, devant un réceptionniste médusé (un peu benêt) qui lui demande poliment s'il peut l'aider. Raté : la fausse Comtesse devra se débrouiller seule.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-fenetre",
+          "nom": "5. Accroché à la fenêtre",
+          "lieu": "Chalet, façade extérieure",
+          "notes": "PJ posté dehors près d'une fenêtre. Chaque scène existe en trois versions, de la plus vague à la plus précise : plus vous donnez de détails, plus le joueur cherchera à recoller au plan ; moins vous en donnez, plus il improvisera. Le joueur doit compléter lui-même la situation (pourquoi il est là, ce qu'il dit).\nOuverture : la neige engourdit ses doigts ; près du but, la fenêtre où il s'agrippe s'ouvre et une créature blonde, nue et plantureuse se penche pour lui proposer de venir se réchauffer. Adapter l'« âme sœur » aux goûts du personnage. Version la plus précise : l'échange a lieu en ce moment même.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-bonus",
+          "nom": "5 bis. Situations pour plus de cinq joueurs",
+          "lieu": "Chalet et pistes",
+          "notes": "Idées supplémentaires, à déformer à volonté :\n• Descente à ski à toute allure dans la tempête : il faut atteindre le chalet avant 12 h 12, sinon… (au joueur de compléter : bombe, épisode des Télétubbies raté…).\n• Un homme s'effondre mort devant la porte ; une femme de ménage arrive, bouche grande ouverte : va-t-elle hurler ?\n• Le plan est enfin lancé ; appel à la réception : Hercule demande où ils en sont (objet, argent, Smirnoff ?) au moment où un PJ traverse le plafond dans un nuage de poussière. Que lui répondre ?",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa1-hercule-7",
+              "nom": "Hercule",
+              "source": "Héros romain (alias Héraclès, Alcide), patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Commanditaire des PJ (client : Simiscience). Leur a seulement dit de récupérer les tablettes de Raämalû, sans parler du DVD caché dedans. Joignable par téléphone à la réception ; reçoit les PJ au retour et examine les tablettes en connaisseur d'antiquités. Fan de gadgets technologiques.\nMassue magique ancienne : précision +4, puissance +9 (66/RU+10/M+16).\nVoyage intermarches 6 (spirituel, activé, 8 PP, propre à Hercule ; absent des règles de l'appli) : rater volontairement une marche pour voyager dans le Rien ; test de pouvoir pour partir (Très difficile depuis la Terre), puis un test par jour en cumulant les MR jusqu'à la distance du trajet (Olympe-Terre 30, le seul qu'il maîtrise) ; test de Savoir occulte quotidien pour trouver son chemin.\nFiche : Les Petites Apocalypses, chap. 4, p. 21.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa1-sc-bazar",
+          "nom": "6. Le joli bazar",
+          "lieu": "Chalet de Chamonix",
+          "notes": "Tout le monde est dans le chalet : Smirnoff, la Comtesse, Plazo et Mucid (au bar), les quatre démons et les PJ. La suite dépend entièrement des improvisations ; le but est de finir en bagarre générale.\n• Les démons veulent les informations et la mallette. S'ils les obtiennent, ils tentent de tuer tout le monde ou de faire sauter le chalet ; s'ils échouent, c'est pire.\n• La Comtesse veut l'objet, et si possible garder l'argent ; ses gros bras rappliquent si ça tourne mal.\n• Smirnoff, coincé, peut se téléporter, se réfugier dans un réseau (Corps digital) ou parasiter un esprit.\n• Mission principale : récupérer les tablettes. Ramener Smirnoff est secondaire, et le livrer à Simiscience revient à le condamner : on peut le dire aux PJ pour qu'ils choisissent.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa1-boner-8",
+              "nom": "Boner",
+              "source": "Démon de Baal, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Katana",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Katana exalté",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 8
+                },
+                {
+                  "n": "Art de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLe chef de file au combat : katana, exalté dès que ça chauffe.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-boner"
+            },
+            {
+              "id": "pa1-turgid-9",
+              "nom": "Turgid",
+              "source": "Démon de Malthus, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Poignard",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nL'homme des basses œuvres discrètes : Sommeil pour neutraliser, Détection du danger pour ne pas se faire surprendre.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-turgid"
+            },
+            {
+              "id": "pa1-bigdick-10",
+              "nom": "Big Dick",
+              "source": "Démon de Furfur, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Jet de flammes (2 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Conversion physique",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nJet de flammes : aire d'effet de rayon très court, inévitable, 2 PP. Le candidat idéal pour « faire sauter le chalet ».\nCoup de poing ajouté (niveau Combat 3) : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-bigdick"
+            },
+            {
+              "id": "pa1-chiken-11",
+              "nom": "Chiken-safe",
+              "source": "Démon d'Uphir, grade 1 (le seul asiatique de l'équipe)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Langue barbelée (2 PP)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : langue blindée",
+                  "r": 0
+                },
+                {
+                  "n": "Vengeance toxique",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLangue : portée très courte, 2 PP pour l'activer. Le livre parle de « langue blindée » dans les pouvoirs et de « langue barbelée » dans l'attaque : les deux sont conservés.\nSon surnom fait l'objet d'une blague graveleuse des autres démons.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-chiken"
+            },
+            {
+              "id": "pa1-smirnoff-12",
+              "nom": "Alexeï Smirnoff",
+              "source": "Psi, chercheur en fuite (ex-Simiscience)",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 5,
+                "vo": 9,
+                "pr": 5,
+                "foi": 2
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps digital",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 8
+                },
+                {
+                  "n": "Parasite intellectuel",
+                  "r": 4
+                }
+              ],
+              "talents": "Défense 2+, Discrétion 2+, Discussion 4+, Informatique 4+, Science 3 (électronique 4+), Technique 3 (électronique 4+), Pouvoirs dimensionnels 2, Pouvoirs psychiques 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, beau gars baraqué et élancé, châtain-roux aux yeux verts, polyglotte et bardé de diplômes ; né en France, ne se sent pas du tout slave. Supporte mal l'autorité, a la répartie facile, soupe au lait : les blagues sur la vodka le mettent hors de lui.\nAmoureux de Lolette, très dépensière, qui l'attend déjà à Madrid (choisie justement parce qu'il déteste l'Espagne). Appartement rendu, comptes liquidés, nouvelle identité prête ; lentilles à la place des lunettes et postiche sur sa calvitie : un air de lapin russe ébouriffé.\nPrudent mais pas assez : il ne sait pas que les démons le filent. Pas de mot de passe prévu pour l'échange (piège possible : « rappelez-moi le mot de passe… »).\nCoup de poing au niveau 1 : estimation (aucun talent de combat).\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-smirnoff"
+            },
+            {
+              "id": "pa1-comtesse-13",
+              "nom": "La Comtesse (Illyana Padje-Heudmo)",
+              "source": "Ex-espionne russe, cheffe de l'équipe de Santofer",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Défense 2, Enquête 4, Savoir d'espion 4, Séduction 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Âge certain, chignon gris, tailleur strict, regard vert scrutateur devenu légendaire ; fierté de ses succès passés au service de l'URSS puis de la Russie. Agit seule : elle a laissé ses deux gros bras au bar.\nOrdres de Santofer : échange loyal. Elle préférerait récupérer l'argent après coup.\nTenace et rusée : la capturer demande ingéniosité et persévérance. Hercule pourrait la recruter à la DTC.\nCoup de poing au niveau 1 : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-comtesse"
+            },
+            {
+              "id": "pa1-grosbras-14",
+              "nom": "Plazo et Mucid",
+              "source": "Gros bras de la Comtesse",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 7,
+                "ag": 4,
+                "pe": 4,
+                "vo": 5,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Petit calibre",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Discrétion 0+, Métier : gros bras 2, Tir 2 (armes de poing 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Empotés, la Comtesse ne leur fait pas confiance : pendant l'échange, ils sirotent un chocolat chaud au bar. Faciles à capturer, mais sans grand intérêt.\nDéfense non donnée : 2. Mêmes valeurs que le « Gros bras » du bestiaire.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-grosbras"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa1-ch-demons",
+              "q": "Que deviennent les démons ?",
+              "opts": [
+                {
+                  "t": "Vaincus ou chassés",
+                  "suite": "Le butin reste à portée des PJ."
+                },
+                {
+                  "t": "Ils s'emparent des tablettes ou de la mallette",
+                  "suite": "Ils cherchent à éliminer les témoins ou à faire sauter le chalet ; les informations partent chez Vapula."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa1-ch-comtesse",
+              "q": "Et la Comtesse et l'argent de Santofer ?",
+              "opts": [
+                {
+                  "t": "Capturée et ramenée à Hercule",
+                  "suite": "Hercule pourrait l'engager à la DTC."
+                },
+                {
+                  "t": "Elle s'échappe",
+                  "suite": "Santofer garde une dent contre la DTC ; l'argent suit qui l'a en main."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa1-sc-retour",
+          "nom": "7. Retour à la DTC",
+          "lieu": "Bureaux de la DTC",
+          "notes": "Si les PJ ont les tablettes : Hercule, amateur d'antiquités, admire les signes gravés ; l'homme de Simiscience, venu sur-le-champ, lui prend l'objet des mains et le brise. Dedans, un petit DVD. Il remercie froidement les PJ. Laisser un goût amer : mission accomplie, mais était-ce une bonne idée ? Hercule est mal à l'aise, encore plus si les PJ ont livré Smirnoff.\nSi les PJ ont échoué : Hercule leur passe un savon, voire pète un câble et menace de sanctions ; Simiscience est un client occasionnel mais prestigieux et généreux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa1-hercule-15",
+              "nom": "Hercule",
+              "source": "Héros romain (alias Héraclès, Alcide), patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Commanditaire des PJ (client : Simiscience). Leur a seulement dit de récupérer les tablettes de Raämalû, sans parler du DVD caché dedans. Joignable par téléphone à la réception ; reçoit les PJ au retour et examine les tablettes en connaisseur d'antiquités. Fan de gadgets technologiques.\nMassue magique ancienne : précision +4, puissance +9 (66/RU+10/M+16).\nVoyage intermarches 6 (spirituel, activé, 8 PP, propre à Hercule ; absent des règles de l'appli) : rater volontairement une marche pour voyager dans le Rien ; test de pouvoir pour partir (Très difficile depuis la Terre), puis un test par jour en cumulant les MR jusqu'à la distance du trajet (Olympe-Terre 30, le seul qu'il maîtrise) ; test de Savoir occulte quotidien pour trouver son chemin.\nFiche : Les Petites Apocalypses, chap. 4, p. 21.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-hercule"
+            },
+            {
+              "id": "pa1-agent-16",
+              "nom": "L'homme de Simiscience",
+              "source": "Émissaire de la conpsi cliente",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Apparaît à la DTC pour récupérer les données. Froid, cynique, désagréable ; casse les tablettes et remercie les PJ avec un sourire glaçant. Pas de caractéristiques : ne doit pas être combattu.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51.",
+              "typeId": "type-pa1-agent"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa1-ch-infos",
+              "q": "Les informations sont-elles récupérées ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Scène du DVD ; Simiscience satisfaite, la DTC conserve son client."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Hercule furieux, menaces de sanctions ; coup dur pour la réputation de la DTC."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa1-ch-smirnoff",
+              "q": "Que font les PJ de Smirnoff ?",
+              "opts": [
+                {
+                  "t": "Ils le livrent à Simiscience",
+                  "suite": "Mission remplie à la lettre ; Smirnoff est probablement condamné et Hercule encore plus gêné."
+                },
+                {
+                  "t": "Ils le laissent partir",
+                  "suite": "Il rejoint Lolette, pauvre mais entier ; Simiscience s'en remet tant qu'elle récupère ses données."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340313946,
+      "updatedAt": 1795340313946
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa1-boner",
+      "nom": "Boner",
+      "source": "Démon de Baal, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Katana",
+          "att": 10,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "Katana exalté",
+          "att": 12,
+          "prec": 0,
+          "puis": 10,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 8
+        },
+        {
+          "n": "Art de combat",
+          "r": 8
+        },
+        {
+          "n": "Caméléon",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLe chef de file au combat : katana, exalté dès que ça chauffe.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-turgid",
+      "nom": "Turgid",
+      "source": "Démon de Malthus, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Poignard",
+          "att": 10,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Caméléon",
+          "r": 8
+        },
+        {
+          "n": "Détection du danger",
+          "r": 8
+        },
+        {
+          "n": "Sommeil",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nL'homme des basses œuvres discrètes : Sommeil pour neutraliser, Détection du danger pour ne pas se faire surprendre.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-bigdick",
+      "nom": "Big Dick",
+      "source": "Démon de Furfur, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Jet de flammes (2 PP)",
+          "att": 14,
+          "prec": 0,
+          "puis": 6,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Conversion physique",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 8
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nJet de flammes : aire d'effet de rayon très court, inévitable, 2 PP. Le candidat idéal pour « faire sauter le chalet ».\nCoup de poing ajouté (niveau Combat 3) : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-chiken",
+      "nom": "Chiken-safe",
+      "source": "Démon d'Uphir, grade 1 (le seul asiatique de l'équipe)",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Langue barbelée (2 PP)",
+          "att": 10,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Forme de combat",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : langue blindée",
+          "r": 0
+        },
+        {
+          "n": "Vengeance toxique",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Look « Men in Black » : costume noir, lunettes noires au moindre rayon de soleil, se prennent beaucoup trop au sérieux ; la trentaine, baraqués, bruns ou châtains. Parlent comme des charretiers avec un accent de titi parisien. Envoyés par un démon haut placé chez Vapula pour récupérer les informations ET l'argent de Santofer ; ils filent Smirnoff depuis des jours sans qu'il s'en doute.\nLangue : portée très courte, 2 PP pour l'activer. Le livre parle de « langue blindée » dans les pouvoirs et de « langue barbelée » dans l'attaque : les deux sont conservés.\nSon surnom fait l'objet d'une blague graveleuse des autres démons.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-smirnoff",
+      "nom": "Alexeï Smirnoff",
+      "source": "Psi, chercheur en fuite (ex-Simiscience)",
+      "type": "psi",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 5,
+        "vo": 9,
+        "pr": 5,
+        "foi": 2
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Corps digital",
+          "r": 0
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Augmentation de Volonté",
+          "r": 8
+        },
+        {
+          "n": "Parasite intellectuel",
+          "r": 4
+        }
+      ],
+      "talents": "Défense 2+, Discrétion 2+, Discussion 4+, Informatique 4+, Science 3 (électronique 4+), Technique 3 (électronique 4+), Pouvoirs dimensionnels 2, Pouvoirs psychiques 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La quarantaine, beau gars baraqué et élancé, châtain-roux aux yeux verts, polyglotte et bardé de diplômes ; né en France, ne se sent pas du tout slave. Supporte mal l'autorité, a la répartie facile, soupe au lait : les blagues sur la vodka le mettent hors de lui.\nAmoureux de Lolette, très dépensière, qui l'attend déjà à Madrid (choisie justement parce qu'il déteste l'Espagne). Appartement rendu, comptes liquidés, nouvelle identité prête ; lentilles à la place des lunettes et postiche sur sa calvitie : un air de lapin russe ébouriffé.\nPrudent mais pas assez : il ne sait pas que les démons le filent. Pas de mot de passe prévu pour l'échange (piège possible : « rappelez-moi le mot de passe… »).\nCoup de poing au niveau 1 : estimation (aucun talent de combat).\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-comtesse",
+      "nom": "La Comtesse (Illyana Padje-Heudmo)",
+      "source": "Ex-espionne russe, cheffe de l'équipe de Santofer",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Défense 2, Enquête 4, Savoir d'espion 4, Séduction 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Âge certain, chignon gris, tailleur strict, regard vert scrutateur devenu légendaire ; fierté de ses succès passés au service de l'URSS puis de la Russie. Agit seule : elle a laissé ses deux gros bras au bar.\nOrdres de Santofer : échange loyal. Elle préférerait récupérer l'argent après coup.\nTenace et rusée : la capturer demande ingéniosité et persévérance. Hercule pourrait la recruter à la DTC.\nCoup de poing au niveau 1 : estimation.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-grosbras",
+      "nom": "Plazo et Mucid",
+      "source": "Gros bras de la Comtesse",
+      "type": "humain",
+      "car": {
+        "fo": 7,
+        "ag": 4,
+        "pe": 4,
+        "vo": 5,
+        "pr": 3,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        9,
+        13,
+        18
+      ],
+      "armes": [
+        {
+          "n": "Petit calibre",
+          "att": 4,
+          "prec": 0,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 3, Discrétion 0+, Métier : gros bras 2, Tir 2 (armes de poing 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Empotés, la Comtesse ne leur fait pas confiance : pendant l'échange, ils sirotent un chocolat chaud au bar. Faciles à capturer, mais sans grand intérêt.\nDéfense non donnée : 2. Mêmes valeurs que le « Gros bras » du bestiaire.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-hercule",
+      "nom": "Hercule",
+      "source": "Héros romain (alias Héraclès, Alcide), patron de la DTC",
+      "type": "paien",
+      "car": {
+        "fo": 14,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 10,
+        "foi": 12
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 55,
+      "seuilsFix": [
+        9,
+        19,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Massue magique ancienne",
+          "att": 20,
+          "prec": 0,
+          "puis": 16,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 10
+        },
+        {
+          "n": "Némésis",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 14
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Vol",
+          "r": 8
+        }
+      ],
+      "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Commanditaire des PJ (client : Simiscience). Leur a seulement dit de récupérer les tablettes de Raämalû, sans parler du DVD caché dedans. Joignable par téléphone à la réception ; reçoit les PJ au retour et examine les tablettes en connaisseur d'antiquités. Fan de gadgets technologiques.\nMassue magique ancienne : précision +4, puissance +9 (66/RU+10/M+16).\nVoyage intermarches 6 (spirituel, activé, 8 PP, propre à Hercule ; absent des règles de l'appli) : rater volontairement une marche pour voyager dans le Rien ; test de pouvoir pour partir (Très difficile depuis la Terre), puis un test par jour en cumulant les MR jusqu'à la distance du trajet (Olympe-Terre 30, le seul qu'il maîtrise) ; test de Savoir occulte quotidien pour trouver son chemin.\nFiche : Les Petites Apocalypses, chap. 4, p. 21.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    },
+    {
+      "id": "type-pa1-agent",
+      "nom": "L'homme de Simiscience",
+      "source": "Émissaire de la conpsi cliente",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Apparaît à la DTC pour récupérer les données. Froid, cynique, désagréable ; casse les tablettes et remercie les PJ avec un sourire glaçant. Pas de caractéristiques : ne doit pas être combattu.\nSource : Les Petites Apocalypses, chap. 6 « Memento Flatula », p. 44-51."
+    }
+  ],
+  "memoire": []
+}

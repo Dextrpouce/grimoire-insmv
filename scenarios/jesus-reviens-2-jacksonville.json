@@ -1,0 +1,3637 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "jesus-reviens-2-jacksonville",
+      "nom": "Jésus Reviens ! – 2. Jacksonville",
+      "resume": "Épisode de la campagne « Jésus Reviens ! » pour anges de grade 1 ou 2, envoyés par Ange et Alain (via Régine) pour monter le dossier de l'opération JR. À Jacksonville (Floride), Semper Fidelis, grade 3 de Laurent, dirige Dixie Holding et sa Confédération de soldats de Dieu, et réunit le Klonklave pour fusionner les Klans le jour de l'attentat contre la statue de la Liberté. Les PJ doivent infiltrer les Klans, le campus Dixie ou le camp d'Okefenoke pour obtenir ses dossiers, et empêcher la fusion.",
+      "notes": "Source : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47 ; modificateurs de TRIC et preuves : chapitre un, p. 9-12. Fichier cadre de la campagne : jesus-reviens-0-cadre (commanditaires Ange et Alain avec Yves, prévenus par Michel ; Georges est l'un des trois archanges visés par l'IA, pas un commanditaire).\nLecture du scan : pages imprimées 32-42 = PDF 36-46, 43-46 = PDF 32-35, 47 = PDF 47.\n\nContexte : Semper Fidelis (Gary Medlocke) dirige Dixie Holding (Dixie Securities LLC, Dixie Import Export, radio et productions National Alliance…) et, en secret, la Confédération : 250 soldats de Dieu, 50 serviteurs, plus 1 200 gardes et 300 employés humains. Le camp d'Okefenoke forme les soldats de Dieu des alliés de l'opération JR dans le monde. Il prépare la fusion des Klans (le Klonklave) et la sécession du Sud, en lien avec Moroni (Utah) et l'opération Big Queen (New York). Francesco l'a convaincu de lancer l'opération ; Laurent attend de voir (Lehi est sa taupe, intoxiquée par Semper). Sharah (New York), rival de Semper, a une taupe au Klonklave (Rudolf Gerardht).\nConseil : Dixie est quasi impénétrable par la force. L'infiltration des Klans est la voie la plus sûre ; le casse de la Tanière façon Mission impossible est possible mais doit rester exceptionnel.\n\nModificateurs de TRIC (Jacksonville) :\n• Fusion des Klans : +30, plus +1 par Klan qui les rejoint\n• Par société de Dixie Holding neutralisée : −1\n• Dixie Securities neutralisée : −5\n• Semper Fidelis neutralisé : −5\n• Par Klan neutralisé ou refusant la fusion : −1\n• Par ange de Semper Fidelis neutralisé : −1\n• Par semaine où Semper Fidelis agit à la tête du KKK fusionné : +3\n• Par semaine où Semper Fidelis agit impunément à la tête de Dixie Securities : +1\n• Le KKK soutient l'Utah dans sa sécession : +10\n\nPreuves de l'Index d'Accusation obtenables à Jacksonville :\n• Dossiers de la Confédération : 7L\n• Dossiers de Semper Fidelis : 9L + 1D\n• Témoignage de Semper Fidelis : 6L + 1D\n• Témoignages des soldats ou des serviteurs de Dieu : 1L (un seul valable)\n• Témoignage d'Elio : 0 à 2L\n• Témoignage de WWW : 0 à 1L\n• Témoignage de Lehi : −3 à +2L (selon le tri que les PJ font dans les intox qu'il a gobées)\n• Témoignage d'Onidah : 0 à 2L\n• Témoignage de James Hackard : 0\n• Témoignage des Klans : 0 (par Klan)\n• Dossiers du marais d'Okefenoke : 5L\n• Témoignage de Stonewall Jackson : 0 à 2L\n• Témoignage d'un Dixieman du marais (si Stonewall n'a pas témoigné) : 1L\n• Preuve de la « chasse au Nègre » : 1L\n\nSeuils de TRIC qui concernent Jacksonville (événements du cadre) :\n• 10 : début du Klonklave, une semaine avant Big Queen ; le samedi, si les PJ n'ont rien fait, la statue explose (+10) et les Klans fusionnent (+30, +1 par Klan).\n• 15 : Laurent signale Moroni à Semper, qui le fait libérer.\n• 50 : le Klan devient une machine de lobbying (élus, juges, shérifs).\n• 60 : si Moroni fait faire sécession à l'Utah et que les Klans ont fusionné, le Klan l'appuie (+10).\n• 65 : le Klan soutient ouvertement la ségrégation.\n• 80 : le Sud menace de faire sécession ; le Klan dépose un projet de partition raciale des USA.\n• 100 : les USA aux mains de la droite chrétienne, ségrégation de fait.\n\nLe KKK (lore du chapitre, résumé) :\n• Histoire : né après la guerre de Sécession, anéanti par le gouvernement fédéral, ressuscité en 1915 grâce au film Naissance d'une nation, puis émietté en dizaines de petits Klans rivaux et infiltrés par le FBI. Trois courants aujourd'hui : klanistes historiques, nazis, Identité chrétienne. Semper n'a invité que les Klans et quelques nazis.\n• Hiérarchie : Empire Invisible dirigé par le Grand Magicien (Magicien Impérial), royaumes (Grand Dragon), dominions (Grand Titan), provinces (Grand Géant), Tanières (Grand Cyclope) ; titres grotesques (Grand Turc, Grand Scribe, Klavalier, Klexter, Klarogo…). Lexique : Alien (non-membre), Klonvokation (congrès), Klavern (Tanière), Kloran (livre sacré), KBI (police interne), Wrecking Krew (groupe de choc).\n• Costumes : robe et cagoule pointue blanches (couleurs pour les officiers, noir pour les Wrecking Krews) ; les groupes paramilitaires préfèrent le treillis.\n• Signes de reconnaissance : « AYAK ? » (Are You A Klansman ?) – « AKIA ! » (A Klansman I Am !) ; « SANBOG ! » (Strangers Are Near, Be On Guard !).\n\nPA : le chapitre ne donne pas de barème ; les PA dépendent de l'IA (voir le cadre et l'épilogue).\nFiches : seuils, PF et armes du livre (« précision/puissance ») ; valeurs estimées signalées dans les notes. « Aura de confiance » (Stonewall, Zacharias) n'existe pas dans les règles de l'appli : laissée dans les talents. Troupes génériques : aucune n'existait dans le bestiaire ni dans les PNJ rapides (les fiches du livre sont reprises telles quelles).",
+      "scenes": [
+        {
+          "id": "jr2-sc-ville",
+          "nom": "1. Sweet Home Alabama : arrivée à Jacksonville",
+          "lieu": "Jacksonville (Floride), ville et banlieues",
+          "notes": "Plusieurs pistes (Paris, Moscou…) mènent à Dixie Securities LLC, société de gardiennage et de conseil en sécurité noyautée par le KKK, basée à Jacksonville, berceau du rock sudiste au nord de la Floride, collée à la Géorgie et très sudiste d'esprit. Ville immense et vide : une banlieue étale sur des dizaines de kilomètres autour d'un petit centre. Les habitants, chauvins et méfiants, cultivent la xénophobie et le racisme (« Nègres » et Yankees). Semper Fidelis y récolte un soutien massif : sa holding fait vivre la ville et finance la campagne du shérif Greg Pearce. La radio locale National Alliance est l'un des plus gros médias racistes du pays.\nEnquêter sur Dixie en ville : à peu près impossible de l'espionner, et les gens ne parlent pas aux étrangers. Les « Dixiemen » sont partout, admirés ou craints. Pistes : la population latino, noire ou asiatique, les nordistes, les bars des quartiers chicanos et noirs (les anti-Dixiemen, souvent plus nombreux qu'on ne croit, parlent sous couvert d'anonymat) ; dans les bons quartiers, autour d'une bière, certains habitants critiquent la holding pour des raisons personnelles. On peut ainsi apprendre l'organisation de Dixie, ses sociétés, les accointances politiques du shérif, l'imminence du Klonklave et la localisation du camp d'Okefenoke (son existence n'est pas un secret parmi les Dixiemen).\nLe shérif Pearce harcèle les étrangers trop curieux et rapporte tout à Dixie.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr2-pearce-1",
+              "nom": "Greg Pearce",
+              "source": "Shérif de Jacksonville",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 3,
+                "pr": 2,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2, Combat 1 (contondantes 2), Défense 2, Tir 1 (armes de poing 2), Fouille 3+, Enquête 1, Culture générale 1 (KKK 2), Métier (shérif) 1, Faire chier les étrangers 2, Roter de la Bud 1, Intimidation 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans, 143 kg. Beauf inculte, réformé des Marines pour insuffisance mentale (il accuse un Noir de lui avoir pris sa place). Doit son poste au soutien de Dixie, à qui il obéit au doigt et à l'œil ; rêve d'entrer au Klan. Ne connaît rien des enjeux réels.\nArmes non précisées : matraque et revolver choisis dans la table.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-pearce"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-approche",
+              "q": "Comment les PJ comptent-ils obtenir les dossiers de Semper Fidelis ?",
+              "opts": [
+                {
+                  "t": "Se présenter ouvertement en anges",
+                  "suite": "Scène 2 : Semper les reçoit selon leur couverture (Elio, fausse piste mormone, embuscade possible)."
+                },
+                {
+                  "t": "Infiltrer les Klans du Klonklave",
+                  "suite": "Scène 5 : l'option la plus sûre ; ouvre aussi l'accès au camp (scène 6)."
+                },
+                {
+                  "t": "Casse à la Tanière",
+                  "suite": "Scène 7 : très difficile, laisser leur une chance façon Mission impossible."
+                },
+                {
+                  "t": "Faire chanter Lehi",
+                  "suite": "Scène 3 : badges et codes, mais beaucoup d'intox."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-campus",
+          "nom": "2. Le campus Dixie et la réception de Semper",
+          "lieu": "Site de Dixie Holding, zone marécageuse à l'écart du centre",
+          "notes": "Le site regroupe une dizaine de bâtiments bas sur une île au milieu des marais infestés d'alligators ; une seule route y mène. Semper, paranoïaque, travaille illégalement avec la bénédiction tacite de son archange : sécurité maximale (soldats de Dieu, gardes armés, chiens, alligators, employés de bureau armés). Pas de plan : les bâtiments, dans l'ordre d'arrivée :\n• Guérite blindée avec chenil : cinq gardes sous l'œil d'un soldat de Dieu, reliée au QG de sécurité ; écrans de toutes les caméras du site, contrôlables depuis la console centrale.\n• Bâtiment d'accueil (parking visiteurs) : standard, hôtesses, une vingtaine de gardes. Tout visiteur non attendu est escorté du parking jusqu'à son départ.\n• Radio National Alliance et son local technique (le bâtiment le plus peuplé, près de deux cents employés, une dizaine de gardes) : centre d'écoute, la radio pirate les fréquences de la police.\n• Le « bazar » : long couloir de béton qui abrite une dizaine de petites sociétés extrémistes (éditions, sites, objets nazis), souvent attaquées en justice.\n• Studios National Alliance Production : « documentaires » et fictions sur la race blanche ; marotte de Semper, qui rêve d'un remake de Naissance d'une nation ; une dizaine de gardes.\n• Hangar de Dixie Import Export : le plus gros chiffre d'affaires ; blanchiment, armes, documents, fugitifs ; une trentaine de gardes et une dizaine de soldats de Dieu au déchargement.\n• Services généraux, centre de conférences et cafétéria cajun (auditorium du Klonklave, une demi-douzaine de gardes), garage (détecteurs de radars).\n• La Tanière : cinq étages, siège de Dixie Holding et de Dixie Securities et QG de la Confédération (voir scène 7).\n\nRéaction de Semper si les PJ le rencontrent :\n• Anges en mission : il les soigne aux petits oignons sans éveiller leurs soupçons sur l'ampleur de ses crimes, puis les appâte avec une fausse piste vers les mormons (qu'il juge sacrifiables). En dernier recours, il les entraîne dans un coin discret (les entrepôts) et les jette dans une embuscade (scène 4).\n• Anges intégristes voulant participer à l'opération JR (couverture crédible) : il est beaucoup plus bavard, s'emballe sur ses projets sans tout révéler. Il ne résiste pas à se vanter de l'attentat contre la statue de la Liberté par les Pink Queens (il y compte pour le Klonklave, et l'ironie de frapper le territoire de Sharah le ravit), évoque le retour de Moroni et montre un ciboire dédicacé par Moroni.\n• Dans tous les autres cas, il ne les reçoit pas et leur envoie Elio.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr2-semper-2",
+              "nom": "Semper Fidelis (Gary Medlocke)",
+              "source": "Ange de Laurent, grade 3, patron de Dixie Holding et de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 15,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 48,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie sudiste béni ancien",
+                  "att": 19,
+                  "prec": 7,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 18,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver",
+                  "att": 12,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 7 (épées 9+), Corps à corps 8, Défense 7, Tir 6 (armes d'épaule 9), Discussion 7, Athlétisme 8, Culture générale 4 (histoire du sud des USA, mythes et légendes du KKK 7), Savoir occulte 3 (hiérarchie de Laurent depuis trois siècles, opération JR 7), Métier (businessman) 5, Savoir militaire 5 (tactique de 1860 à nos jours 9), Survie 5 (marais 8), Hobby (théorie des complots) 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, 1,88 m, blond aux yeux bleus. Un des plus vieux et plus fidèles lieutenants de Laurent : près de cinq siècles sur Terre, pionnier du Nouveau Monde. Manichéen, xénophobe et intolérant : il hait les traîtres, les « mous » du Bien, les psis, les non-Blancs, les francs-maçons, puis l'Enfer. Aurait pu rejoindre la Terre Creuse si on lui avait offert un poste à sa mesure. La fin de la guerre froide l'a privé d'ennemi ; le 11 septembre l'a décidé. Francesco l'a convaincu d'agir avec lui, mais il ne lui fait qu'une confiance relative.\nLook de cowboy sudiste (bottes, chapeau, six-coups à la ceinture quand la loi de Floride le permet). Bonhomie de façade avec ses alliés et ceux qu'il veut berner ; en tribune, orateur haineux et charismatique.\nArme : M-16 = pénétration importante, portée longue ; revolver = pénétration importante, portée moyenne.\nVoir aussi la fiche minimale du cadre de campagne (type-jr0-semper).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-semper"
+            },
+            {
+              "id": "jr2-elio-3",
+              "nom": "Elio (Jack Poker)",
+              "source": "Ange de Laurent, grade 2 (relations publiques et DRH de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 13,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie majeure",
+                  "att": 12,
+                  "prec": 4,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4 (épées 6), Corps à corps 5, Défense 5, Discussion 5, Athlétisme 4, Culture générale 2 (sud des USA et Dixie Holding 4), Savoir occulte 1+ (opération JR et KKK 3), Métier (relations publiques et DRH) 5, Intimidation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, chauve aux yeux marron. Flagorneur et faire-valoir, carriériste, obéissant jusqu'à la bêtise, détesté de tous. Semper le garde pour son obéissance aveugle et comme bouc émissaire : c'est lui qui transmet les ordres impopulaires. C'est très probablement l'ange que Semper envoie aux PJ s'ils se présentent ouvertement chez Dixie.\nTir non donné : revolver estimé au niveau 1.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-elio"
+            },
+            {
+              "id": "jr2-onidah-4",
+              "nom": "Onidah (Nicolas Heintz)",
+              "source": "Ange de Laurent, grade 1, chef du service juridique de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de survie",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 2
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 4
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 3, Corps à corps 2, Défense 3, Aisance sociale 3, Métier (juriste) 4, Savoir occulte 2 (KKK, opération JR et Confédération de Laurent 4), Culture générale 1 (vie dans le sud des USA 2), Intimidation 2, Langue : espagnol, Savoir criminel 1+ (trafic d'armes et association de malfaiteurs 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "32 ans, blond aux yeux verts. Bilieux, sec et austère. Défend les « patriotes » poursuivis, connaît toutes les lois fédérales et celles des États du Sud, ouvre les portes et règle les ennuis juridiques de la Confédération. Il abuse de la loi sans jamais l'enfreindre et adore coincer un Yankee. Impopulaire, sauf quand on a un problème avec la justice.\nLe livre donne « Charme 1 » puis « Charme 2 » : Charme 2 retenu. Combat non donné : couteau au niveau de Corps à corps (2), estimé.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-onidah"
+            },
+            {
+              "id": "jr2-lehi-5",
+              "nom": "Lehi (Michael Schaeffer)",
+              "source": "Ange de Laurent, grade 1, conseiller en communication de Semper (taupe de Laurent)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 11,
+                "foi": 4
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret",
+                  "att": 8,
+                  "prec": 1,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet à crosse de nacre",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 2,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 2
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (épées 4), Défense 5, Discussion 6, Séduction 7, Tir 2 (armes de poing 4), Aisance sociale 6, Art 2 (arrangements floraux 5), Culture générale 2 (histoire des USA 4), Savoir occulte 0+ (KKK et opération JR 1+), Métier (relations publiques) 6, Langues : français, espagnol, Draguer en boîte homo 4, Backroom fucking 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "22 ans, blond aux yeux verts. Promu il y a quelques mois sur piston de Laurent : officiellement conseiller en communication, en réalité chargé par Laurent de jauger les chances de l'opération JR avant de s'y engager. Semper s'en doute et l'intoxique : réunions bidon, fausses informations exagérées que Lehi répercute à Laurent (d'où la neutralité bienveillante de l'archange).\nSecret : il est homosexuel et fréquente les lieux gays de Jacksonville. Semper le sait mais préfère garder ce levier plutôt que provoquer Laurent. Levier de chantage idéal pour les PJ (voir scène 3).\nArme à feu : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-lehi"
+            },
+            {
+              "id": "jr2-gardes-6",
+              "nom": "Gardes de Dixie Securities LLC",
+              "source": "1 200 gardes (humains)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 3,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil militaire semi-automatique",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Couteau",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Corps à corps 2, Défense 2, Fouille 3, Tir 2 (armes de poing 3), Athlétisme 2, Métier (agent de sécurité) 2, Intimidation 2, Culture générale 1 (KKK 2), Savoir militaire 1, Être un gros connard impérialiste 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Simples vigiles employés pour le gardiennage et le convoyage de fonds. Lourdement armés pour des gardiens, mais pas des soldats : ils craquent vite face à une vraie résistance.\nArmes à feu : pénétration importante (fusil portée longue, revolver portée moyenne).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-gardes"
+            },
+            {
+              "id": "jr2-employes-7",
+              "nom": "Employés des sociétés Dixie",
+              "source": "300 employés sur le site principal",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 3,
+                "pr": 3,
+                "foi": 5
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Métier (divers) 2, Culture générale 0+ (vie du sud des USA 1), Être un crétin inculte et bouffi d'orgueil 2, Savoir occulte 0+ (KKK 2), Tir 1 (armes de poing 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Citoyens plus ou moins bornés et opportunistes qui ignorent tout des desseins de Semper ; leur fanatisme varie, Semper garde les plus fiables aux postes sensibles.\nDéfense non donnée : 2.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-employes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-accueil",
+              "q": "Sous quelle couverture les PJ rencontrent-ils Semper ?",
+              "opts": [
+                {
+                  "t": "Anges en mission officielle",
+                  "suite": "Fausse piste mormone (Salt Lake City) ; embuscade aux entrepôts s'ils insistent (scène 4)."
+                },
+                {
+                  "t": "Anges intégristes candidats à l'opération JR",
+                  "suite": "Semper parle de Big Queen (New York) et de Moroni : Témoignage de Semper possible plus tard (6L + 1D)."
+                },
+                {
+                  "t": "Aucune, ils sont éconduits",
+                  "suite": "Elio les reçoit et les surveille."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-lehi",
+          "nom": "3. Le maillon faible : Michael Schaeffer",
+          "lieu": "Bars gays de Jacksonville, parking désert au bord d'une route",
+          "notes": "Lehi (Michael Schaeffer), conseiller de Semper, est le lieutenant le plus vulnérable : en creusant, les PJ apprennent qu'il fréquente les rares lieux homosexuels de la ville et un parking isolé où il drague. Un endroit bien connu des homos : le coincer sur le fait est facile. Il est prêt à beaucoup pour que son secret reste caché, car il se croit en danger de mort (Klan) et redoute aussi le Paradis.\nCe qu'il sait : une description très claire et précise… mais presque entièrement fausse de l'opération JR, l'intox que Semper lui sert pour Laurent (révolte mondiale avec l'appui du Pentagone, de l'OTAN, de l'armée française…). Le MJ peut en rajouter. Les seuls éléments vrais : Laurent a fait libérer Moroni, Francesco est l'autre cerveau de l'opération, un grade 3 de Dominique planqué en Espagne.\nCe qu'il peut faire : donner accès au cœur de la holding (mots de passe, badges, clés), mais pas au coffre des archives. Les PJ peuvent profiter de sa visite pour entrer, à condition de rester discrets.\nTémoignage de Lehi : de −3 à +2L selon le tri que les PJ font dans ses intox.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr2-lehi-8",
+              "nom": "Lehi (Michael Schaeffer)",
+              "source": "Ange de Laurent, grade 1, conseiller en communication de Semper (taupe de Laurent)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 11,
+                "foi": 4
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret",
+                  "att": 8,
+                  "prec": 1,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet à crosse de nacre",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 2,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 2
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (épées 4), Défense 5, Discussion 6, Séduction 7, Tir 2 (armes de poing 4), Aisance sociale 6, Art 2 (arrangements floraux 5), Culture générale 2 (histoire des USA 4), Savoir occulte 0+ (KKK et opération JR 1+), Métier (relations publiques) 6, Langues : français, espagnol, Draguer en boîte homo 4, Backroom fucking 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "22 ans, blond aux yeux verts. Promu il y a quelques mois sur piston de Laurent : officiellement conseiller en communication, en réalité chargé par Laurent de jauger les chances de l'opération JR avant de s'y engager. Semper s'en doute et l'intoxique : réunions bidon, fausses informations exagérées que Lehi répercute à Laurent (d'où la neutralité bienveillante de l'archange).\nSecret : il est homosexuel et fréquente les lieux gays de Jacksonville. Semper le sait mais préfère garder ce levier plutôt que provoquer Laurent. Levier de chantage idéal pour les PJ (voir scène 3).\nArme à feu : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-lehi"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-chantage",
+              "q": "Que font les PJ de Lehi ?",
+              "opts": [
+                {
+                  "t": "Chantage discret",
+                  "suite": "Badges, codes et accès à la Tanière (pas au coffre) ; son témoignage reste truffé d'intox."
+                },
+                {
+                  "t": "Ils le retournent en lui montrant l'intox de Semper",
+                  "suite": "Lehi peut prévenir Laurent : témoignage mieux trié (jusqu'à +2L)."
+                },
+                {
+                  "t": "Ils le dénoncent ou le neutralisent",
+                  "suite": "TRIC −1 (ange de Semper neutralisé) ; Semper perd son levier sur Laurent."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-embuscade",
+          "nom": "4. Embuscade aux entrepôts",
+          "lieu": "Hangar de Dixie Import Export, entrepôts du site",
+          "notes": "Si des anges « officiels » deviennent trop curieux, Semper les attire vers les entrepôts (visite, rendez-vous discret) et les fait tomber dans une embuscade démesurée : Elio en tête, sections de soldats de Dieu, gardes de Dixie. Ils ont peu de chances d'en sortir indemnes : leur laisser une issue (marais, camions, diversion).\nLes témoins humains de l'embuscade ne savent rien. Un soldat ou serviteur capturé vivant peut témoigner (1L, un seul valable). Chaque ange de Semper neutralisé : TRIC −1.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr2-elio-9",
+              "nom": "Elio (Jack Poker)",
+              "source": "Ange de Laurent, grade 2 (relations publiques et DRH de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 13,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie majeure",
+                  "att": 12,
+                  "prec": 4,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4 (épées 6), Corps à corps 5, Défense 5, Discussion 5, Athlétisme 4, Culture générale 2 (sud des USA et Dixie Holding 4), Savoir occulte 1+ (opération JR et KKK 3), Métier (relations publiques et DRH) 5, Intimidation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, chauve aux yeux marron. Flagorneur et faire-valoir, carriériste, obéissant jusqu'à la bêtise, détesté de tous. Semper le garde pour son obéissance aveugle et comme bouc émissaire : c'est lui qui transmet les ordres impopulaires. C'est très probablement l'ange que Semper envoie aux PJ s'ils se présentent ouvertement chez Dixie.\nTir non donné : revolver estimé au niveau 1.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-elio"
+            },
+            {
+              "id": "jr2-soldats-10",
+              "nom": "Soldats de Dieu de la Confédération",
+              "source": "250 soldats au service de Semper Fidelis",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau de survie",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (couteaux 3), Corps à corps 2, Défense 2, Tir 2 (armes d'épaule 3+), Athlétisme 2, Culture générale 0+ (KKK 2), Savoir occulte 0+ (opération JR 1), Hobby (ratonner les Nègres) 2, Survie 1 (marais 2), Métier (agent de sécurité) 3, Intimidation 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Très obéissants mais peu expérimentés malgré leur foi inébranlable ; tous blancs, racistes et convaincus. Regroupés en sections rivales (émulation, mais tendance à se tirer dans les pattes). Ils vouent une haine farouche à l'Union de Sharah et méprisent les gardes et employés humains.\nM-16 : pénétration importante, portée longue. Quantité de la scène à ajuster (250 au total).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-soldats"
+            },
+            {
+              "id": "jr2-gardes-11",
+              "nom": "Gardes de Dixie Securities LLC",
+              "source": "1 200 gardes (humains)",
+              "type": "humain",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 3,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil militaire semi-automatique",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Couteau",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Corps à corps 2, Défense 2, Fouille 3, Tir 2 (armes de poing 3), Athlétisme 2, Métier (agent de sécurité) 2, Intimidation 2, Culture générale 1 (KKK 2), Savoir militaire 1, Être un gros connard impérialiste 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Simples vigiles employés pour le gardiennage et le convoyage de fonds. Lourdement armés pour des gardiens, mais pas des soldats : ils craquent vite face à une vraie résistance.\nArmes à feu : pénétration importante (fusil portée longue, revolver portée moyenne).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-gardes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-issue",
+              "q": "Comment se termine l'embuscade ?",
+              "opts": [
+                {
+                  "t": "Les PJ s'échappent",
+                  "suite": "Semper sait qu'ils sont hostiles : sécurité renforcée, chasse aux anges au camp si on les y repère."
+                },
+                {
+                  "t": "Les PJ capturent un soldat ou Elio",
+                  "suite": "Témoignage d'un soldat (1L) ou d'Elio (0 à 2L)."
+                },
+                {
+                  "t": "Les PJ sont capturés",
+                  "suite": "Interrogatoire à la Tanière ; Semper hésite à tuer des anges, mais Stonewall obéira."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-klonklave",
+          "nom": "5. Le Klonklave : infiltrer les Klans",
+          "lieu": "Centre de conférences de Dixie, hôtels et motels de Jacksonville",
+          "notes": "Le moyen le plus simple : attaquer le maillon faible, les Klans en pleine négociation au Klonklave. Semper veut fédérer toutes les branches du KKK et retrouver le « Klan originel » (avec lui comme Magicien Impérial). Il a invité une dizaine de Klans et rallié quelques groupes nazis ; nombre de délégués limité par Klan, logés en ville dans des hôtels séparés par groupe (pour éviter les heurts) : c'est là qu'il faut frapper. Les Klansmen, moins disciplinés que les Dixiemen et ne connaissant pas les autres Klans, se laissent remplacer facilement. Invitations non nominatives ; certains Klans qui avaient refusé viennent quand même sans prévenir. Remplacer tout un groupe est plus simple que remplacer un seul membre (les autres le connaissent) : un kidnapping est le plus subtil. Ensuite, il faut se mettre au diapason des us, coutumes, rites et costumes (voir les notes du scénario) sans en faire trop.\nKlans présents (chef, âge) : United Klans of America (James Venable, 53), National Knights of the KKK (Zacharias alias « David Duke », 62, rival des UKA, veut protéger le camp d'Okefenoke), Invisible Empire (Elbert Wilkinson, 31 ; Grand Enseigne : Sardis), Confederation of Independent Orders (amicale d'une vingtaine de petits Klans : Texas, Mystic, White Camelia Knights…), National-Socialist Alliance (le plus vieux groupe nazi), New Order (William Perce, ultra-violent, camp en Virginie), American White Nationalist Party (Rudolf Gerardht, taupe de Sharah).\n\nProgramme (volontairement flou, Semper improvise) :\n• Lundi : accueil, présentation de Dixie Holding, visite, déjeuner, présentation du projet « Klan originel » à l'auditorium.\n• Mardi : entretiens Klan par Klan dans le bureau de Semper.\n• Mercredi : débat sur la restauration de la suprématie blanche ; James Hackard, envoyé de Moroni, annonce que l'Utah va devenir une théocratie et sera le premier domino. Discours enflammé, accueilli entre rires et sarcasmes.\n• Jeudi et vendredi : excursion au camp d'Okefenoke (scène 6).\n• Samedi : grande assemblée de fusion (scène 8).\nBut : le Klonklave n'est PAS l'objet du scénario, c'est une porte d'entrée : écouter Semper (Big Queen, fusion, théocratie aux USA, allusions à l'opération JR), interroger ses lieutenants (retour de Moroni, sympathisants en Europe et en Russie, Pink Queens entraînées en France…), et entrer au camp. Les Confédérés pérorent volontiers devant leurs invités.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr2-semper-12",
+              "nom": "Semper Fidelis (Gary Medlocke)",
+              "source": "Ange de Laurent, grade 3, patron de Dixie Holding et de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 15,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 48,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie sudiste béni ancien",
+                  "att": 19,
+                  "prec": 7,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 18,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver",
+                  "att": 12,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 7 (épées 9+), Corps à corps 8, Défense 7, Tir 6 (armes d'épaule 9), Discussion 7, Athlétisme 8, Culture générale 4 (histoire du sud des USA, mythes et légendes du KKK 7), Savoir occulte 3 (hiérarchie de Laurent depuis trois siècles, opération JR 7), Métier (businessman) 5, Savoir militaire 5 (tactique de 1860 à nos jours 9), Survie 5 (marais 8), Hobby (théorie des complots) 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, 1,88 m, blond aux yeux bleus. Un des plus vieux et plus fidèles lieutenants de Laurent : près de cinq siècles sur Terre, pionnier du Nouveau Monde. Manichéen, xénophobe et intolérant : il hait les traîtres, les « mous » du Bien, les psis, les non-Blancs, les francs-maçons, puis l'Enfer. Aurait pu rejoindre la Terre Creuse si on lui avait offert un poste à sa mesure. La fin de la guerre froide l'a privé d'ennemi ; le 11 septembre l'a décidé. Francesco l'a convaincu d'agir avec lui, mais il ne lui fait qu'une confiance relative.\nLook de cowboy sudiste (bottes, chapeau, six-coups à la ceinture quand la loi de Floride le permet). Bonhomie de façade avec ses alliés et ceux qu'il veut berner ; en tribune, orateur haineux et charismatique.\nArme : M-16 = pénétration importante, portée longue ; revolver = pénétration importante, portée moyenne.\nVoir aussi la fiche minimale du cadre de campagne (type-jr0-semper).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-semper"
+            },
+            {
+              "id": "jr2-elio-13",
+              "nom": "Elio (Jack Poker)",
+              "source": "Ange de Laurent, grade 2 (relations publiques et DRH de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 13,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie majeure",
+                  "att": 12,
+                  "prec": 4,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4 (épées 6), Corps à corps 5, Défense 5, Discussion 5, Athlétisme 4, Culture générale 2 (sud des USA et Dixie Holding 4), Savoir occulte 1+ (opération JR et KKK 3), Métier (relations publiques et DRH) 5, Intimidation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, chauve aux yeux marron. Flagorneur et faire-valoir, carriériste, obéissant jusqu'à la bêtise, détesté de tous. Semper le garde pour son obéissance aveugle et comme bouc émissaire : c'est lui qui transmet les ordres impopulaires. C'est très probablement l'ange que Semper envoie aux PJ s'ils se présentent ouvertement chez Dixie.\nTir non donné : revolver estimé au niveau 1.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-elio"
+            },
+            {
+              "id": "jr2-lehi-14",
+              "nom": "Lehi (Michael Schaeffer)",
+              "source": "Ange de Laurent, grade 1, conseiller en communication de Semper (taupe de Laurent)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 11,
+                "foi": 4
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret",
+                  "att": 8,
+                  "prec": 1,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet à crosse de nacre",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 2,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 2
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (épées 4), Défense 5, Discussion 6, Séduction 7, Tir 2 (armes de poing 4), Aisance sociale 6, Art 2 (arrangements floraux 5), Culture générale 2 (histoire des USA 4), Savoir occulte 0+ (KKK et opération JR 1+), Métier (relations publiques) 6, Langues : français, espagnol, Draguer en boîte homo 4, Backroom fucking 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "22 ans, blond aux yeux verts. Promu il y a quelques mois sur piston de Laurent : officiellement conseiller en communication, en réalité chargé par Laurent de jauger les chances de l'opération JR avant de s'y engager. Semper s'en doute et l'intoxique : réunions bidon, fausses informations exagérées que Lehi répercute à Laurent (d'où la neutralité bienveillante de l'archange).\nSecret : il est homosexuel et fréquente les lieux gays de Jacksonville. Semper le sait mais préfère garder ce levier plutôt que provoquer Laurent. Levier de chantage idéal pour les PJ (voir scène 3).\nArme à feu : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-lehi"
+            },
+            {
+              "id": "jr2-onidah-15",
+              "nom": "Onidah (Nicolas Heintz)",
+              "source": "Ange de Laurent, grade 1, chef du service juridique de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de survie",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 2
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 4
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 3, Corps à corps 2, Défense 3, Aisance sociale 3, Métier (juriste) 4, Savoir occulte 2 (KKK, opération JR et Confédération de Laurent 4), Culture générale 1 (vie dans le sud des USA 2), Intimidation 2, Langue : espagnol, Savoir criminel 1+ (trafic d'armes et association de malfaiteurs 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "32 ans, blond aux yeux verts. Bilieux, sec et austère. Défend les « patriotes » poursuivis, connaît toutes les lois fédérales et celles des États du Sud, ouvre les portes et règle les ennuis juridiques de la Confédération. Il abuse de la loi sans jamais l'enfreindre et adore coincer un Yankee. Impopulaire, sauf quand on a un problème avec la justice.\nLe livre donne « Charme 1 » puis « Charme 2 » : Charme 2 retenu. Combat non donné : couteau au niveau de Corps à corps (2), estimé.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-onidah"
+            },
+            {
+              "id": "jr2-www-16",
+              "nom": "WWW (Patrick Chenoir)",
+              "source": "Ange de Laurent, grade 1 (informaticien de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 11,
+                "pr": 3,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 11,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Souris informatique plombée",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps digital",
+                  "r": 0
+                },
+                {
+                  "n": "Corps électrique",
+                  "r": 0
+                },
+                {
+                  "n": "Champ électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (souris informatique plombée 4), Défense 3, Discussion 2, Culture générale 2 (milieu informatique 4), Informatique 8+, Savoir occulte 0+ (KKK et opération JR 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "32 ans, blond filasse. Incarné depuis quelques mois dans un informaticien, il s'est passionné pour les nouvelles technologies qu'il met au service de la Confédération (site du KKK fusionné, etc.). Plutôt naïf, apprécié pour sa gentillesse ; il se laisse aller (bedaine, T-shirts douteux). Peu conscient des enjeux réels.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-www"
+            },
+            {
+              "id": "jr2-zacharias-17",
+              "nom": "Zacharias (« David Duke »)",
+              "source": "Ange renégat de Michel, ancien grade 2 (Grand Magicien des National Knights of the KKK)",
+              "type": "renegat_a",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 27,
+              "seuilsFix": [
+                9,
+                18,
+                29,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Francisque bénie majeure",
+                  "att": 16,
+                  "prec": 4,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 6
+                },
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4 (haches 8), Corps à corps 7, Défense 8, Discrétion 4, Discussion 3, Athlétisme 4, Culture générale 3 (mythes et traditions du KKK 6), Acrobatie 3, Savoir occulte 1 (la Terre Creuse 4), Savoir militaire 1 (tactique 3), Intimidation 8. Pouvoir hors règles de l'appli : Aura de confiance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "62 ans, blond aux yeux verts. Un des derniers membres de la Terre Creuse, aigri d'avoir été lâché par le Paradis et par la purge récente de Daniel ; il fait profil bas. Il voit dans la fusion des Klans l'objectif que la Terre Creuse n'a jamais atteint et soutient le Klonklave, mais refuse de se faire avoir une seconde fois : il veut garder le pouvoir et négocier d'ange à ange avec Semper pour lui démontrer qu'il vaut mieux utiliser la Terre Creuse que la combattre.\nSeuils du livre conservés tels quels (BF 29).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-zacharias"
+            },
+            {
+              "id": "jr2-sardis-18",
+              "nom": "Sardis (David Findell)",
+              "source": "Démon renégat de Baal, ancien grade 1 (Grand Enseigne de l'Invisible Empire)",
+              "type": "renegat_d",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Tronçonneuse (dangereuse, inadaptée à la parade)",
+                  "att": 12,
+                  "prec": -4,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 6
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 3 (armes improvisées 6), Défense 4, Athlétisme 4, Intimidation 6, Hobby (découper des cadavres d'animaux à la tronçonneuse) 4, Art 0+ (sculpture d'animaux morts 4), Culture générale 1 (KKK 2), Savoir occulte 0+ (le Grand Jeu 1), Survie 1 (forêt 3), Savoir militaire 1 (tactique 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "34 ans, 1,92 m, brun aux yeux noirs. Autre rescapé de la Terre Creuse : ultraviolent et revanchard, il en veut au Paradis de ce qu'est devenue la Terre Creuse. Fou de joie à l'idée que le KKK renaisse par la fusion, il n'a pas tout compris à l'histoire et attend surtout la castagne.\nArmure corporelle : chitine.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-sardis"
+            },
+            {
+              "id": "jr2-hackard-19",
+              "nom": "James Hackard",
+              "source": "Missionnaire mormon, envoyé de Boyd Packer (Moroni)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 3,
+                "pe": 6,
+                "vo": 7,
+                "pr": 4,
+                "foi": 7
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Culture générale 1 (histoire de l'Utah 2), Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (missionnaire SDJ) 3, Langues : espagnol, portugais, Informatique 2, Hobby (généalogie) 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "34 ans, 122 kg. Mormon fanatique et mystique qui agace vite tout le monde ; missionnaire par vocation, ses collègues l'ont envoyé loin pour ne plus le supporter. Il vient au Klonklave (mercredi) annoncer que l'Utah deviendra bientôt une théocratie, premier domino du royaume de Dieu sur Terre.\nCorps à corps non donné : niveau 1 estimé.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-hackard"
+            },
+            {
+              "id": "jr2-gerardht-20",
+              "nom": "Rudolf Gerardht",
+              "source": "Führer de l'American White Nationalist Party (taupe de Sharah)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n42 ans. Chef d'un groupuscule nazi ultra-secret et paranoïaque, spécialiste des plasticages. Coincé par les agents de l'Union de Sharah, il est devenu leur taupe : c'est lui qui renseigne Sharah sur ce qui se trame dans le Sud, et il a insisté pour venir au Klonklave. Sharah ne le dénoncera aux PJ que si l'enjeu en vaut la peine. Allié potentiel (et piège pour des PJ trop zélés).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-gerardht"
+            },
+            {
+              "id": "jr2-venable-21",
+              "nom": "James Venable",
+              "source": "Engoulevent Impérial des United Klans of America",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n53 ans. Chef d'un des plus vieux Klans, très religieux, fondé par un pasteur, QG en Alabama : c'est le Klan qui plaît le plus à Semper. Grand rival des National Knights (Zacharias).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-venable"
+            },
+            {
+              "id": "jr2-wilkinson-22",
+              "nom": "Elbert Wilkinson",
+              "source": "Grand Magicien de l'Invisible Empire of the KKK",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n31 ans. Chef du plus gros Klan, relancé par une campagne marketing jeune ; les autres l'accusent de mollesse et de compromission. Son Grand Enseigne est Sardis.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-wilkinson"
+            },
+            {
+              "id": "jr2-perce-23",
+              "nom": "William Perce",
+              "source": "Président de New Order",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n43 ans. Organisation ultra-violente à la limite de la légalité (attaques de banques « juives » pour se financer), détestée par les courants traditionnels ; elle a son propre camp d'entraînement en Virginie (« Pocahontas »). Invitée pour sa puissance paramilitaire.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-perce"
+            },
+            {
+              "id": "jr2-klanistes-24",
+              "nom": "Klanistes",
+              "source": "Délégués et membres des Klans",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Batte",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de chasse",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Défense 1, Tir 1 (armes d'épaule 2), Culture générale 1 (mythes et traditions du KKK 2), Faire brûler des croix en criant Sieg Heil 3, Avoir l'air d'un con avec un chapeau pointu 3+, Savoir occulte 1+ (les complots cosmopo-juifs 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quelques rares « intellectuels » au milieu d'un troupeau d'aigris, de ratés et de bouseux en quête de bouc émissaire.\nArmes non précisées par le livre : batte et fusil de chasse (carabine) choisis dans la table d'après leurs talents.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-klanistes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-infiltration",
+              "q": "Comment les PJ s'introduisent-ils au Klonklave ?",
+              "opts": [
+                {
+                  "t": "Ils remplacent tout un Klan",
+                  "suite": "Le plus sûr ; un Klan neutralisé ou retiré de la fusion : TRIC −1."
+                },
+                {
+                  "t": "Ils remplacent un seul délégué",
+                  "suite": "Ses camarades le connaissent : jets de baratin fréquents."
+                },
+                {
+                  "t": "Ils démasquent Gerardht",
+                  "suite": "Sharah est furieux qu'on grille sa taupe, à moins que les PJ ne passent par lui."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr2-ch-zacharias",
+              "q": "Les PJ découvrent-ils les renégats de la Terre Creuse (Zacharias, Sardis) ?",
+              "opts": [
+                {
+                  "t": "Oui, et ils négocient",
+                  "suite": "Zacharias peut être retourné contre Semper pour garder son Klan."
+                },
+                {
+                  "t": "Oui, et ils les combattent",
+                  "suite": "Bagarre chez les Klans : l'infiltration risque d'être grillée."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Zacharias marchande avec Semper d'ange à ange."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-okefenoke",
+          "nom": "6. Vodoo Lake : le camp d'Okefenoke",
+          "lieu": "Camp d'entraînement dans le marais d'Okefenoke (frontière Floride-Géorgie)",
+          "notes": "Utilisé par les « amis » de Semper et par des anges réactionnaires, le camp est une vraie base militaire cachée au cœur du marais, sans autre accès que le bateau ; personne n'y est entré sans l'accord des occupants. Il est dirigé par Stonewall Jackson, qui mène à la baguette une petite centaine de soldats de Dieu, entraîne tous les stagiaires et n'hésite pas à jeter un lâche aux alligators. Un seul bâtiment en dur (en bois) ; le reste sous tente, sur les îles. Le parc naturel autour (des centaines de km²) est ouvert aux touristes en bateau ; les alligators y pullulent.\nLes archives : un coffre-fort de western au cœur du bâtiment révèle les noms, dates et état civil de presque tous les fascistes et racistes des USA et d'une bonne partie des groupes étrangers (Nova Russkia, légion Azul, « Mickey » japonais) : Dossiers du marais d'Okefenoke (5L). Y accéder est quasi impossible, sauf comme groupe raciste en visite (Klonklave) ou en stage d'entraînement : il faut alors subir au moins un stage (de l'eau jusqu'au cou, insultes, humiliations).\nPendant le Klonklave (jeudi-vendredi), Stonewall est là pour ses invités : illuminations, croix enflammées, saluts hitlériens, chansons, feux de camp. La nuit de jeudi à vendredi, après une cérémonie « Cross Lightning », a lieu la « chasse au Nègre » : cinq pauvres Afro-Américains raflés en Géorgie sont lâchés dans le marais avec un collier radio ; chaque Klan les traque (10 points par Noir ramené vivant, 5 mort). Les survivants sont crucifiés au matin. Preuve de la chasse : 1L. Si les PJ se sont fait repérer, ce sera une chasse aux anges ennemis, pour la plus grande joie de Semper et de ses soldats.\nTémoignage de Stonewall : 0 à 2L (s'il ne parle pas, un Dixieman du marais : 1L).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr2-stonewall-25",
+              "nom": "Stonewall Jackson (Robert J. Anderson)",
+              "source": "Ange de Laurent, grade 2, commandant du camp d'Okefenoke",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 13,
+                "vo": 12,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 27,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Canon de 1860 béni majeur",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 15,
+                  "melee": false
+                },
+                {
+                  "n": "Sabre d'infanterie",
+                  "att": 16,
+                  "prec": 1,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de la guerre de Sécession",
+                  "att": 14,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 12
+                },
+                {
+                  "n": "Arme exaltée",
+                  "r": 8
+                },
+                {
+                  "n": "Champ magnétique",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 8
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4 (épées 8), Défense 7, Tir 7 (armes d'épaule 9), Athlétisme 8, Culture générale 3 (histoire du sud des USA et de la guerre de Sécession 8), Savoir occulte 2 (KKK 4), Métier (gérer un camp militaire) 6, Savoir militaire 3 (stratégie du XIXe siècle et tactique moderne 7), Survie 3 (forêt et marais 8), Obéir 9, Raconter la bataille de Gettysburg 9+. Pouvoir hors règles de l'appli : Aura de confiance 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "51 ans, brun aux yeux bleus. Monomaniaque mais calme et maître de lui : il hurle sur les stagiaires sans jamais s'énerver vraiment. Surnommé d'après le général sudiste, il a survécu à toute la guerre de Sécession et garde son corps depuis : les Confédérés le vénèrent et lui font raconter Gettysburg à n'en plus finir. Curieusement peu de préjugés : en ange, il obéit et ne juge pas. Il obéit à Semper tant que Laurent ne dit pas le contraire, sans haine.\nCanon : portée longue ; revolver : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-stonewall"
+            },
+            {
+              "id": "jr2-soldats-26",
+              "nom": "Soldats de Dieu de la Confédération",
+              "source": "250 soldats au service de Semper Fidelis",
+              "type": "soldat",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau de survie",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (couteaux 3), Corps à corps 2, Défense 2, Tir 2 (armes d'épaule 3+), Athlétisme 2, Culture générale 0+ (KKK 2), Savoir occulte 0+ (opération JR 1), Hobby (ratonner les Nègres) 2, Survie 1 (marais 2), Métier (agent de sécurité) 3, Intimidation 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Très obéissants mais peu expérimentés malgré leur foi inébranlable ; tous blancs, racistes et convaincus. Regroupés en sections rivales (émulation, mais tendance à se tirer dans les pattes). Ils vouent une haine farouche à l'Union de Sharah et méprisent les gardes et employés humains.\nM-16 : pénétration importante, portée longue. Quantité de la scène à ajuster (250 au total).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-soldats"
+            },
+            {
+              "id": "jr2-alligators-27",
+              "nom": "Gentils alligators sauvages",
+              "source": "Faune du marais d'Okefenoke",
+              "type": "monstre",
+              "qty": 3,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 1,
+                "pr": 1,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 2,
+              "pfFix": 8,
+              "pp": 0,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Mâchoire",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Discrétion 4, Rester en attente dans l'eau 4, Corps à corps 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ils n'attaquent que des proies affaiblies, blessées ou de petite taille, et attendent longtemps d'être sûrs que la cible ne se défendra pas : attaques brusques venues de l'eau boueuse, jamais d'empoignade virile. Peau écailleuse : protection 2.\nDéfense non donnée : 2. Type « monstre » faute de type animal dans les règles.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-alligators"
+            },
+            {
+              "id": "jr2-sardis-28",
+              "nom": "Sardis (David Findell)",
+              "source": "Démon renégat de Baal, ancien grade 1 (Grand Enseigne de l'Invisible Empire)",
+              "type": "renegat_d",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Tronçonneuse (dangereuse, inadaptée à la parade)",
+                  "att": 12,
+                  "prec": -4,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 6
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 3 (armes improvisées 6), Défense 4, Athlétisme 4, Intimidation 6, Hobby (découper des cadavres d'animaux à la tronçonneuse) 4, Art 0+ (sculpture d'animaux morts 4), Culture générale 1 (KKK 2), Savoir occulte 0+ (le Grand Jeu 1), Survie 1 (forêt 3), Savoir militaire 1 (tactique 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "34 ans, 1,92 m, brun aux yeux noirs. Autre rescapé de la Terre Creuse : ultraviolent et revanchard, il en veut au Paradis de ce qu'est devenue la Terre Creuse. Fou de joie à l'idée que le KKK renaisse par la fusion, il n'a pas tout compris à l'histoire et attend surtout la castagne.\nArmure corporelle : chitine.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-sardis"
+            },
+            {
+              "id": "jr2-klanistes-29",
+              "nom": "Klanistes",
+              "source": "Délégués et membres des Klans",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Batte",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de chasse",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Défense 1, Tir 1 (armes d'épaule 2), Culture générale 1 (mythes et traditions du KKK 2), Faire brûler des croix en criant Sieg Heil 3, Avoir l'air d'un con avec un chapeau pointu 3+, Savoir occulte 1+ (les complots cosmopo-juifs 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quelques rares « intellectuels » au milieu d'un troupeau d'aigris, de ratés et de bouseux en quête de bouc émissaire.\nArmes non précisées par le livre : batte et fusil de chasse (carabine) choisis dans la table d'après leurs talents.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-klanistes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-chasse",
+              "q": "Que font les PJ pendant la « chasse au Nègre » ?",
+              "opts": [
+                {
+                  "t": "Ils sauvent les victimes",
+                  "suite": "Couverture probablement grillée : chasse aux anges ; preuve de la chasse (1L) si un rescapé témoigne."
+                },
+                {
+                  "t": "Ils documentent sans intervenir",
+                  "suite": "Preuve de la chasse (1L), mais cinq morts sur la conscience (et sur le rapport à Régine)."
+                },
+                {
+                  "t": "Ils profitent de la diversion pour le coffre",
+                  "suite": "Dossiers du marais d'Okefenoke (5L)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr2-ch-stonewall",
+              "q": "Que devient Stonewall Jackson ?",
+              "opts": [
+                {
+                  "t": "Il témoigne",
+                  "suite": "Il obéit tant que Laurent ne dit pas le contraire : un ordre convaincant venu d'en haut le fait parler (0 à 2L)."
+                },
+                {
+                  "t": "Il est neutralisé",
+                  "suite": "TRIC −1."
+                },
+                {
+                  "t": "Il reste en place",
+                  "suite": "Le camp continue à former les soldats de Dieu de l'opération JR."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-taniere",
+          "nom": "7. La Tanière : le casse des archives",
+          "lieu": "La Tanière, siège de Dixie Holding (cinq étages)",
+          "notes": "Bâtiment le plus haut du site, vu d'en haut en forme de peigne à six dents. Officiellement siège social de Dixie Holding et de Dixie Securities, en réalité QG de la Confédération. Les trois premiers étages abritent les bureaux officiels ; les deux derniers sont réservés aux « aware » munis d'un badge, et on ne peut y monter qu'en passant devant le QG de sécurité, au quatrième. Ce QG centralise la domotique, les alarmes et les communications. L'étage des archives est encore plus fermé : deux portes entièrement blindées mènent à ses sept salles, qui pourraient servir de banque.\nLes archives de la Confédération (les plus accessibles) et la salle d'archives où Semper garde tous ses dossiers depuis son arrivée dans le Nouveau Monde se trouvent dans un énorme coffre-fort ; seule une formule angélique prononcée par Semper (ou d'un certain ton) l'ouvre. Si les PJ y pénètrent, ils ont gagné la campagne… ou presque : dommage que ce soit à peu près impossible.\nDossiers de la Confédération : 7L. Dossiers de Semper Fidelis : 9L + 1D. WWW (informatique, domotique) peut être un point faible, ou un adversaire redoutable sur le réseau.\nLehi peut donner badges et codes (scène 3). En cas d'alerte : gardes, soldats de Dieu, Semper en personne.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr2-semper-30",
+              "nom": "Semper Fidelis (Gary Medlocke)",
+              "source": "Ange de Laurent, grade 3, patron de Dixie Holding et de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 15,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 48,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie sudiste béni ancien",
+                  "att": 19,
+                  "prec": 7,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 18,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver",
+                  "att": 12,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 7 (épées 9+), Corps à corps 8, Défense 7, Tir 6 (armes d'épaule 9), Discussion 7, Athlétisme 8, Culture générale 4 (histoire du sud des USA, mythes et légendes du KKK 7), Savoir occulte 3 (hiérarchie de Laurent depuis trois siècles, opération JR 7), Métier (businessman) 5, Savoir militaire 5 (tactique de 1860 à nos jours 9), Survie 5 (marais 8), Hobby (théorie des complots) 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, 1,88 m, blond aux yeux bleus. Un des plus vieux et plus fidèles lieutenants de Laurent : près de cinq siècles sur Terre, pionnier du Nouveau Monde. Manichéen, xénophobe et intolérant : il hait les traîtres, les « mous » du Bien, les psis, les non-Blancs, les francs-maçons, puis l'Enfer. Aurait pu rejoindre la Terre Creuse si on lui avait offert un poste à sa mesure. La fin de la guerre froide l'a privé d'ennemi ; le 11 septembre l'a décidé. Francesco l'a convaincu d'agir avec lui, mais il ne lui fait qu'une confiance relative.\nLook de cowboy sudiste (bottes, chapeau, six-coups à la ceinture quand la loi de Floride le permet). Bonhomie de façade avec ses alliés et ceux qu'il veut berner ; en tribune, orateur haineux et charismatique.\nArme : M-16 = pénétration importante, portée longue ; revolver = pénétration importante, portée moyenne.\nVoir aussi la fiche minimale du cadre de campagne (type-jr0-semper).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-semper"
+            },
+            {
+              "id": "jr2-www-31",
+              "nom": "WWW (Patrick Chenoir)",
+              "source": "Ange de Laurent, grade 1 (informaticien de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 11,
+                "pr": 3,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 11,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Souris informatique plombée",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps digital",
+                  "r": 0
+                },
+                {
+                  "n": "Corps électrique",
+                  "r": 0
+                },
+                {
+                  "n": "Champ électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (souris informatique plombée 4), Défense 3, Discussion 2, Culture générale 2 (milieu informatique 4), Informatique 8+, Savoir occulte 0+ (KKK et opération JR 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "32 ans, blond filasse. Incarné depuis quelques mois dans un informaticien, il s'est passionné pour les nouvelles technologies qu'il met au service de la Confédération (site du KKK fusionné, etc.). Plutôt naïf, apprécié pour sa gentillesse ; il se laisse aller (bedaine, T-shirts douteux). Peu conscient des enjeux réels.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-www"
+            },
+            {
+              "id": "jr2-gardes-32",
+              "nom": "Gardes de Dixie Securities LLC",
+              "source": "1 200 gardes (humains)",
+              "type": "humain",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 3,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil militaire semi-automatique",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Couteau",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Corps à corps 2, Défense 2, Fouille 3, Tir 2 (armes de poing 3), Athlétisme 2, Métier (agent de sécurité) 2, Intimidation 2, Culture générale 1 (KKK 2), Savoir militaire 1, Être un gros connard impérialiste 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Simples vigiles employés pour le gardiennage et le convoyage de fonds. Lourdement armés pour des gardiens, mais pas des soldats : ils craquent vite face à une vraie résistance.\nArmes à feu : pénétration importante (fusil portée longue, revolver portée moyenne).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-gardes"
+            },
+            {
+              "id": "jr2-soldats-33",
+              "nom": "Soldats de Dieu de la Confédération",
+              "source": "250 soldats au service de Semper Fidelis",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau de survie",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (couteaux 3), Corps à corps 2, Défense 2, Tir 2 (armes d'épaule 3+), Athlétisme 2, Culture générale 0+ (KKK 2), Savoir occulte 0+ (opération JR 1), Hobby (ratonner les Nègres) 2, Survie 1 (marais 2), Métier (agent de sécurité) 3, Intimidation 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Très obéissants mais peu expérimentés malgré leur foi inébranlable ; tous blancs, racistes et convaincus. Regroupés en sections rivales (émulation, mais tendance à se tirer dans les pattes). Ils vouent une haine farouche à l'Union de Sharah et méprisent les gardes et employés humains.\nM-16 : pénétration importante, portée longue. Quantité de la scène à ajuster (250 au total).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-soldats"
+            },
+            {
+              "id": "jr2-serviteurs-34",
+              "nom": "Serviteurs de Dieu de la Confédération",
+              "source": "50 serviteurs (cadres, informaticiens, enquêteurs)",
+              "type": "serviteur",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet discret",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 2,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Discussion 2, Enquête 2, Fouille 3, Intrusion 3, Informatique 3, Métier (divers) 3, Culture générale 1 (Dixie Holding et KKK 2), Tir 1 (armes de poing 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ultra-professionnels et superbement organisés : spécialistes administratifs, financiers et juridiques qui font tourner la holding et la Confédération. Fiers, méprisants envers les employés, ils détestent la rivalité des soldats.\nDéfense non donnée : 2. Pistolet : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-serviteurs"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-coffre",
+              "q": "Le casse réussit-il ?",
+              "opts": [
+                {
+                  "t": "Coffre ouvert",
+                  "suite": "Dossiers de la Confédération (7L) et de Semper Fidelis (9L + 1D) ; noms et projets de Francesco."
+                },
+                {
+                  "t": "Seulement les archives de la Confédération",
+                  "suite": "Dossiers de la Confédération (7L)."
+                },
+                {
+                  "t": "Échec et fuite",
+                  "suite": "Semper verrouille tout ; il accélère la fusion des Klans."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr2-ch-semper",
+              "q": "Semper Fidelis est-il neutralisé ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "TRIC −5 ; s'il est capturé et convaincu, Témoignage de Semper (6L + 1D)."
+                },
+                {
+                  "t": "Non",
+                  "suite": "TRIC +1 par semaine où il agit impunément à la tête de Dixie Securities."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-samedi",
+          "nom": "8. Samedi : l'assemblée de fusion",
+          "lieu": "Auditorium du centre de conférences de Dixie",
+          "notes": "Le Klonklave commence une semaine avant l'opération Big Queen (New York), prévue le sixième jour (un samedi) à 10 h. Si les PJ n'ont rien fait, la statue de la Liberté explose (+10 TRIC) et l'émotion permet la fusion des Klans (+30, +1 par Klan fusionné) : Semper devient le chef du KKK unifié. Il espère que l'attentat sera retransmis en direct pendant l'assemblée.\nSelon la TRIC et les actions des PJ (Klans neutralisés, renégats retournés, Semper discrédité, Big Queen déjouée), la fusion échoue, ne réunit qu'une partie des Klans ou triomphe.\nSuites possibles : le Klan fusionné soutient la sécession de l'Utah si Moroni devient prophète (+10, voir Salt Lake City) ; chaque semaine où Semper dirige le KKK fusionné : +3.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr2-semper-35",
+              "nom": "Semper Fidelis (Gary Medlocke)",
+              "source": "Ange de Laurent, grade 3, patron de Dixie Holding et de la Confédération",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 15,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 48,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Sabre de cavalerie sudiste béni ancien",
+                  "att": 19,
+                  "prec": 7,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "M-16 (attaque multiple)",
+                  "att": 18,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver",
+                  "att": 12,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 7 (épées 9+), Corps à corps 8, Défense 7, Tir 6 (armes d'épaule 9), Discussion 7, Athlétisme 8, Culture générale 4 (histoire du sud des USA, mythes et légendes du KKK 7), Savoir occulte 3 (hiérarchie de Laurent depuis trois siècles, opération JR 7), Métier (businessman) 5, Savoir militaire 5 (tactique de 1860 à nos jours 9), Survie 5 (marais 8), Hobby (théorie des complots) 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, 1,88 m, blond aux yeux bleus. Un des plus vieux et plus fidèles lieutenants de Laurent : près de cinq siècles sur Terre, pionnier du Nouveau Monde. Manichéen, xénophobe et intolérant : il hait les traîtres, les « mous » du Bien, les psis, les non-Blancs, les francs-maçons, puis l'Enfer. Aurait pu rejoindre la Terre Creuse si on lui avait offert un poste à sa mesure. La fin de la guerre froide l'a privé d'ennemi ; le 11 septembre l'a décidé. Francesco l'a convaincu d'agir avec lui, mais il ne lui fait qu'une confiance relative.\nLook de cowboy sudiste (bottes, chapeau, six-coups à la ceinture quand la loi de Floride le permet). Bonhomie de façade avec ses alliés et ceux qu'il veut berner ; en tribune, orateur haineux et charismatique.\nArme : M-16 = pénétration importante, portée longue ; revolver = pénétration importante, portée moyenne.\nVoir aussi la fiche minimale du cadre de campagne (type-jr0-semper).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-semper"
+            },
+            {
+              "id": "jr2-elio-36",
+              "nom": "Elio (Jack Poker)",
+              "source": "Ange de Laurent, grade 2 (relations publiques et DRH de la Confédération)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 10,
+                "vo": 13,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie majeure",
+                  "att": 12,
+                  "prec": 4,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 6, Combat 4 (épées 6), Corps à corps 5, Défense 5, Discussion 5, Athlétisme 4, Culture générale 2 (sud des USA et Dixie Holding 4), Savoir occulte 1+ (opération JR et KKK 3), Métier (relations publiques et DRH) 5, Intimidation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, chauve aux yeux marron. Flagorneur et faire-valoir, carriériste, obéissant jusqu'à la bêtise, détesté de tous. Semper le garde pour son obéissance aveugle et comme bouc émissaire : c'est lui qui transmet les ordres impopulaires. C'est très probablement l'ange que Semper envoie aux PJ s'ils se présentent ouvertement chez Dixie.\nTir non donné : revolver estimé au niveau 1.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-elio"
+            },
+            {
+              "id": "jr2-zacharias-37",
+              "nom": "Zacharias (« David Duke »)",
+              "source": "Ange renégat de Michel, ancien grade 2 (Grand Magicien des National Knights of the KKK)",
+              "type": "renegat_a",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 27,
+              "seuilsFix": [
+                9,
+                18,
+                29,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Francisque bénie majeure",
+                  "att": 16,
+                  "prec": 4,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 6
+                },
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4 (haches 8), Corps à corps 7, Défense 8, Discrétion 4, Discussion 3, Athlétisme 4, Culture générale 3 (mythes et traditions du KKK 6), Acrobatie 3, Savoir occulte 1 (la Terre Creuse 4), Savoir militaire 1 (tactique 3), Intimidation 8. Pouvoir hors règles de l'appli : Aura de confiance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "62 ans, blond aux yeux verts. Un des derniers membres de la Terre Creuse, aigri d'avoir été lâché par le Paradis et par la purge récente de Daniel ; il fait profil bas. Il voit dans la fusion des Klans l'objectif que la Terre Creuse n'a jamais atteint et soutient le Klonklave, mais refuse de se faire avoir une seconde fois : il veut garder le pouvoir et négocier d'ange à ange avec Semper pour lui démontrer qu'il vaut mieux utiliser la Terre Creuse que la combattre.\nSeuils du livre conservés tels quels (BF 29).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-zacharias"
+            },
+            {
+              "id": "jr2-sardis-38",
+              "nom": "Sardis (David Findell)",
+              "source": "Démon renégat de Baal, ancien grade 1 (Grand Enseigne de l'Invisible Empire)",
+              "type": "renegat_d",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Tronçonneuse (dangereuse, inadaptée à la parade)",
+                  "att": 12,
+                  "prec": -4,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 6
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 3 (armes improvisées 6), Défense 4, Athlétisme 4, Intimidation 6, Hobby (découper des cadavres d'animaux à la tronçonneuse) 4, Art 0+ (sculpture d'animaux morts 4), Culture générale 1 (KKK 2), Savoir occulte 0+ (le Grand Jeu 1), Survie 1 (forêt 3), Savoir militaire 1 (tactique 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "34 ans, 1,92 m, brun aux yeux noirs. Autre rescapé de la Terre Creuse : ultraviolent et revanchard, il en veut au Paradis de ce qu'est devenue la Terre Creuse. Fou de joie à l'idée que le KKK renaisse par la fusion, il n'a pas tout compris à l'histoire et attend surtout la castagne.\nArmure corporelle : chitine.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-sardis"
+            },
+            {
+              "id": "jr2-klanistes-39",
+              "nom": "Klanistes",
+              "source": "Délégués et membres des Klans",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Batte",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de chasse",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Défense 1, Tir 1 (armes d'épaule 2), Culture générale 1 (mythes et traditions du KKK 2), Faire brûler des croix en criant Sieg Heil 3, Avoir l'air d'un con avec un chapeau pointu 3+, Savoir occulte 1+ (les complots cosmopo-juifs 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quelques rares « intellectuels » au milieu d'un troupeau d'aigris, de ratés et de bouseux en quête de bouc émissaire.\nArmes non précisées par le livre : batte et fusil de chasse (carabine) choisis dans la table d'après leurs talents.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-klanistes"
+            },
+            {
+              "id": "jr2-gardes-40",
+              "nom": "Gardes de Dixie Securities LLC",
+              "source": "1 200 gardes (humains)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 3,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil militaire semi-automatique",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Couteau",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (contondantes 2), Corps à corps 2, Défense 2, Fouille 3, Tir 2 (armes de poing 3), Athlétisme 2, Métier (agent de sécurité) 2, Intimidation 2, Culture générale 1 (KKK 2), Savoir militaire 1, Être un gros connard impérialiste 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Simples vigiles employés pour le gardiennage et le convoyage de fonds. Lourdement armés pour des gardiens, mais pas des soldats : ils craquent vite face à une vraie résistance.\nArmes à feu : pénétration importante (fusil portée longue, revolver portée moyenne).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47.",
+              "typeId": "type-jr2-gardes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr2-ch-fusion",
+              "q": "La fusion des Klans a-t-elle lieu ?",
+              "opts": [
+                {
+                  "t": "Oui, complète",
+                  "suite": "TRIC +30, +1 par Klan ; +3 par semaine où Semper dirige le KKK fusionné."
+                },
+                {
+                  "t": "Partielle",
+                  "suite": "TRIC +30, +1 par Klan rallié et −1 par Klan qui refuse."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Pas de +30 ; −1 par Klan neutralisé ou refusant la fusion."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr2-sc-bilan",
+          "nom": "9. Bilan : TRIC et Index d'Accusation",
+          "lieu": "Rapport à Régine",
+          "notes": "Modificateurs de TRIC (Jacksonville) :\n• Fusion des Klans : +30, plus +1 par Klan qui les rejoint\n• Par société de Dixie Holding neutralisée : −1\n• Dixie Securities neutralisée : −5\n• Semper Fidelis neutralisé : −5\n• Par Klan neutralisé ou refusant la fusion : −1\n• Par ange de Semper Fidelis neutralisé : −1\n• Par semaine où Semper Fidelis agit à la tête du KKK fusionné : +3\n• Par semaine où Semper Fidelis agit impunément à la tête de Dixie Securities : +1\n• Le KKK soutient l'Utah dans sa sécession : +10\n\nPreuves de l'Index d'Accusation obtenables à Jacksonville :\n• Dossiers de la Confédération : 7L\n• Dossiers de Semper Fidelis : 9L + 1D\n• Témoignage de Semper Fidelis : 6L + 1D\n• Témoignages des soldats ou des serviteurs de Dieu : 1L (un seul valable)\n• Témoignage d'Elio : 0 à 2L\n• Témoignage de WWW : 0 à 1L\n• Témoignage de Lehi : −3 à +2L (selon le tri que les PJ font dans les intox qu'il a gobées)\n• Témoignage d'Onidah : 0 à 2L\n• Témoignage de James Hackard : 0\n• Témoignage des Klans : 0 (par Klan)\n• Dossiers du marais d'Okefenoke : 5L\n• Témoignage de Stonewall Jackson : 0 à 2L\n• Témoignage d'un Dixieman du marais (si Stonewall n'a pas témoigné) : 1L\n• Preuve de la « chasse au Nègre » : 1L\n\nPistes vers les autres villes : New York (opération Big Queen, Pink Queens, Sharah), Salt Lake City (Moroni, Hackard), Moscou (soldats de Dieu de Mémoire passés par Dixie), Tokyo (soldats de Dieu formés chez Dixie), Madrid (Francesco, légion Azul).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795376596249,
+      "updatedAt": 1795376596249
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-jr2-semper",
+      "nom": "Semper Fidelis (Gary Medlocke)",
+      "source": "Ange de Laurent, grade 3, patron de Dixie Holding et de la Confédération",
+      "type": "ange",
+      "car": {
+        "fo": 13,
+        "ag": 12,
+        "pe": 8,
+        "vo": 10,
+        "pr": 15,
+        "foi": 14
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 11,
+      "pp": 48,
+      "seuilsFix": [
+        9,
+        19,
+        28,
+        38
+      ],
+      "armes": [
+        {
+          "n": "Sabre de cavalerie sudiste béni ancien",
+          "att": 19,
+          "prec": 7,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "M-16 (attaque multiple)",
+          "att": 18,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Revolver",
+          "att": 12,
+          "prec": -3,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 12
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 16
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 10
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Caméléon",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 7 (épées 9+), Corps à corps 8, Défense 7, Tir 6 (armes d'épaule 9), Discussion 7, Athlétisme 8, Culture générale 4 (histoire du sud des USA, mythes et légendes du KKK 7), Savoir occulte 3 (hiérarchie de Laurent depuis trois siècles, opération JR 7), Métier (businessman) 5, Savoir militaire 5 (tactique de 1860 à nos jours 9), Survie 5 (marais 8), Hobby (théorie des complots) 7",
+      "esquive": false,
+      "volonte": false,
+      "notes": "48 ans, 1,88 m, blond aux yeux bleus. Un des plus vieux et plus fidèles lieutenants de Laurent : près de cinq siècles sur Terre, pionnier du Nouveau Monde. Manichéen, xénophobe et intolérant : il hait les traîtres, les « mous » du Bien, les psis, les non-Blancs, les francs-maçons, puis l'Enfer. Aurait pu rejoindre la Terre Creuse si on lui avait offert un poste à sa mesure. La fin de la guerre froide l'a privé d'ennemi ; le 11 septembre l'a décidé. Francesco l'a convaincu d'agir avec lui, mais il ne lui fait qu'une confiance relative.\nLook de cowboy sudiste (bottes, chapeau, six-coups à la ceinture quand la loi de Floride le permet). Bonhomie de façade avec ses alliés et ceux qu'il veut berner ; en tribune, orateur haineux et charismatique.\nArme : M-16 = pénétration importante, portée longue ; revolver = pénétration importante, portée moyenne.\nVoir aussi la fiche minimale du cadre de campagne (type-jr0-semper).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-elio",
+      "nom": "Elio (Jack Poker)",
+      "source": "Ange de Laurent, grade 2 (relations publiques et DRH de la Confédération)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 10,
+        "vo": 13,
+        "pr": 10,
+        "foi": 8
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 24,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée bénie majeure",
+          "att": 12,
+          "prec": 4,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Revolver de cowboy",
+          "att": 2,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 6
+        },
+        {
+          "n": "Vitesse",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 6, Combat 4 (épées 6), Corps à corps 5, Défense 5, Discussion 5, Athlétisme 4, Culture générale 2 (sud des USA et Dixie Holding 4), Savoir occulte 1+ (opération JR et KKK 3), Métier (relations publiques et DRH) 5, Intimidation 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "52 ans, chauve aux yeux marron. Flagorneur et faire-valoir, carriériste, obéissant jusqu'à la bêtise, détesté de tous. Semper le garde pour son obéissance aveugle et comme bouc émissaire : c'est lui qui transmet les ordres impopulaires. C'est très probablement l'ange que Semper envoie aux PJ s'ils se présentent ouvertement chez Dixie.\nTir non donné : revolver estimé au niveau 1.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-www",
+      "nom": "WWW (Patrick Chenoir)",
+      "source": "Ange de Laurent, grade 1 (informaticien de la Confédération)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 10,
+        "vo": 11,
+        "pr": 3,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 11,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Souris informatique plombée",
+          "att": 8,
+          "prec": -2,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Corps digital",
+          "r": 0
+        },
+        {
+          "n": "Corps électrique",
+          "r": 0
+        },
+        {
+          "n": "Champ électrique",
+          "r": 6
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        },
+        {
+          "n": "Télékinésie",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 2 (souris informatique plombée 4), Défense 3, Discussion 2, Culture générale 2 (milieu informatique 4), Informatique 8+, Savoir occulte 0+ (KKK et opération JR 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "32 ans, blond filasse. Incarné depuis quelques mois dans un informaticien, il s'est passionné pour les nouvelles technologies qu'il met au service de la Confédération (site du KKK fusionné, etc.). Plutôt naïf, apprécié pour sa gentillesse ; il se laisse aller (bedaine, T-shirts douteux). Peu conscient des enjeux réels.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-stonewall",
+      "nom": "Stonewall Jackson (Robert J. Anderson)",
+      "source": "Ange de Laurent, grade 2, commandant du camp d'Okefenoke",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 13,
+        "vo": 12,
+        "pr": 10,
+        "foi": 8
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 27,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Canon de 1860 béni majeur",
+          "att": 18,
+          "prec": 0,
+          "puis": 15,
+          "melee": false
+        },
+        {
+          "n": "Sabre d'infanterie",
+          "att": 16,
+          "prec": 1,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Revolver de la guerre de Sécession",
+          "att": 14,
+          "prec": -3,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Juste-lame",
+          "r": 12
+        },
+        {
+          "n": "Arme exaltée",
+          "r": 8
+        },
+        {
+          "n": "Champ magnétique",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Voix impérieuse",
+          "r": 4
+        },
+        {
+          "n": "Absorption de violence",
+          "r": 8
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 4 (épées 8), Défense 7, Tir 7 (armes d'épaule 9), Athlétisme 8, Culture générale 3 (histoire du sud des USA et de la guerre de Sécession 8), Savoir occulte 2 (KKK 4), Métier (gérer un camp militaire) 6, Savoir militaire 3 (stratégie du XIXe siècle et tactique moderne 7), Survie 3 (forêt et marais 8), Obéir 9, Raconter la bataille de Gettysburg 9+. Pouvoir hors règles de l'appli : Aura de confiance 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "51 ans, brun aux yeux bleus. Monomaniaque mais calme et maître de lui : il hurle sur les stagiaires sans jamais s'énerver vraiment. Surnommé d'après le général sudiste, il a survécu à toute la guerre de Sécession et garde son corps depuis : les Confédérés le vénèrent et lui font raconter Gettysburg à n'en plus finir. Curieusement peu de préjugés : en ange, il obéit et ne juge pas. Il obéit à Semper tant que Laurent ne dit pas le contraire, sans haine.\nCanon : portée longue ; revolver : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-lehi",
+      "nom": "Lehi (Michael Schaeffer)",
+      "source": "Ange de Laurent, grade 1, conseiller en communication de Semper (taupe de Laurent)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 10,
+        "vo": 8,
+        "pr": 11,
+        "foi": 4
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 9,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Fleuret",
+          "att": 8,
+          "prec": 1,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Pistolet à crosse de nacre",
+          "att": 8,
+          "prec": -2,
+          "puis": 2,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 2
+        },
+        {
+          "n": "Charme",
+          "r": 4
+        },
+        {
+          "n": "Aura de pacification",
+          "r": 6
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 2 (épées 4), Défense 5, Discussion 6, Séduction 7, Tir 2 (armes de poing 4), Aisance sociale 6, Art 2 (arrangements floraux 5), Culture générale 2 (histoire des USA 4), Savoir occulte 0+ (KKK et opération JR 1+), Métier (relations publiques) 6, Langues : français, espagnol, Draguer en boîte homo 4, Backroom fucking 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "22 ans, blond aux yeux verts. Promu il y a quelques mois sur piston de Laurent : officiellement conseiller en communication, en réalité chargé par Laurent de jauger les chances de l'opération JR avant de s'y engager. Semper s'en doute et l'intoxique : réunions bidon, fausses informations exagérées que Lehi répercute à Laurent (d'où la neutralité bienveillante de l'archange).\nSecret : il est homosexuel et fréquente les lieux gays de Jacksonville. Semper le sait mais préfère garder ce levier plutôt que provoquer Laurent. Levier de chantage idéal pour les PJ (voir scène 3).\nArme à feu : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-onidah",
+      "nom": "Onidah (Nicolas Heintz)",
+      "source": "Ange de Laurent, grade 1, chef du service juridique de la Confédération",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 9,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Couteau de survie",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 2
+        },
+        {
+          "n": "Aura de confusion",
+          "r": 4
+        },
+        {
+          "n": "Charme",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 3, Corps à corps 2, Défense 3, Aisance sociale 3, Métier (juriste) 4, Savoir occulte 2 (KKK, opération JR et Confédération de Laurent 4), Culture générale 1 (vie dans le sud des USA 2), Intimidation 2, Langue : espagnol, Savoir criminel 1+ (trafic d'armes et association de malfaiteurs 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "32 ans, blond aux yeux verts. Bilieux, sec et austère. Défend les « patriotes » poursuivis, connaît toutes les lois fédérales et celles des États du Sud, ouvre les portes et règle les ennuis juridiques de la Confédération. Il abuse de la loi sans jamais l'enfreindre et adore coincer un Yankee. Impopulaire, sauf quand on a un problème avec la justice.\nLe livre donne « Charme 1 » puis « Charme 2 » : Charme 2 retenu. Combat non donné : couteau au niveau de Corps à corps (2), estimé.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-zacharias",
+      "nom": "Zacharias (« David Duke »)",
+      "source": "Ange renégat de Michel, ancien grade 2 (Grand Magicien des National Knights of the KKK)",
+      "type": "renegat_a",
+      "car": {
+        "fo": 13,
+        "ag": 12,
+        "pe": 8,
+        "vo": 10,
+        "pr": 6,
+        "foi": 2
+      },
+      "def": 16,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 27,
+      "seuilsFix": [
+        9,
+        18,
+        29,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Francisque bénie majeure",
+          "att": 16,
+          "prec": 4,
+          "puis": 9,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 10
+        },
+        {
+          "n": "Absorption de violence",
+          "r": 6
+        },
+        {
+          "n": "Illusions",
+          "r": 6
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 4 (haches 8), Corps à corps 7, Défense 8, Discrétion 4, Discussion 3, Athlétisme 4, Culture générale 3 (mythes et traditions du KKK 6), Acrobatie 3, Savoir occulte 1 (la Terre Creuse 4), Savoir militaire 1 (tactique 3), Intimidation 8. Pouvoir hors règles de l'appli : Aura de confiance 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "62 ans, blond aux yeux verts. Un des derniers membres de la Terre Creuse, aigri d'avoir été lâché par le Paradis et par la purge récente de Daniel ; il fait profil bas. Il voit dans la fusion des Klans l'objectif que la Terre Creuse n'a jamais atteint et soutient le Klonklave, mais refuse de se faire avoir une seconde fois : il veut garder le pouvoir et négocier d'ange à ange avec Semper pour lui démontrer qu'il vaut mieux utiliser la Terre Creuse que la combattre.\nSeuils du livre conservés tels quels (BF 29).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-sardis",
+      "nom": "Sardis (David Findell)",
+      "source": "Démon renégat de Baal, ancien grade 1 (Grand Enseigne de l'Invisible Empire)",
+      "type": "renegat_d",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 10,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 12,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Tronçonneuse (dangereuse, inadaptée à la parade)",
+          "att": 12,
+          "prec": -4,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Art de combat",
+          "r": 6
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 3 (armes improvisées 6), Défense 4, Athlétisme 4, Intimidation 6, Hobby (découper des cadavres d'animaux à la tronçonneuse) 4, Art 0+ (sculpture d'animaux morts 4), Culture générale 1 (KKK 2), Savoir occulte 0+ (le Grand Jeu 1), Survie 1 (forêt 3), Savoir militaire 1 (tactique 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "34 ans, 1,92 m, brun aux yeux noirs. Autre rescapé de la Terre Creuse : ultraviolent et revanchard, il en veut au Paradis de ce qu'est devenue la Terre Creuse. Fou de joie à l'idée que le KKK renaisse par la fusion, il n'a pas tout compris à l'histoire et attend surtout la castagne.\nArmure corporelle : chitine.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-hackard",
+      "nom": "James Hackard",
+      "source": "Missionnaire mormon, envoyé de Boyd Packer (Moroni)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 3,
+        "pe": 6,
+        "vo": 7,
+        "pr": 4,
+        "foi": 7
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Culture générale 1 (histoire de l'Utah 2), Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (missionnaire SDJ) 3, Langues : espagnol, portugais, Informatique 2, Hobby (généalogie) 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "34 ans, 122 kg. Mormon fanatique et mystique qui agace vite tout le monde ; missionnaire par vocation, ses collègues l'ont envoyé loin pour ne plus le supporter. Il vient au Klonklave (mercredi) annoncer que l'Utah deviendra bientôt une théocratie, premier domino du royaume de Dieu sur Terre.\nCorps à corps non donné : niveau 1 estimé.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-pearce",
+      "nom": "Greg Pearce",
+      "source": "Shérif de Jacksonville",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 3,
+        "pr": 2,
+        "foi": 3
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Revolver de service",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2, Combat 1 (contondantes 2), Défense 2, Tir 1 (armes de poing 2), Fouille 3+, Enquête 1, Culture générale 1 (KKK 2), Métier (shérif) 1, Faire chier les étrangers 2, Roter de la Bud 1, Intimidation 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "38 ans, 143 kg. Beauf inculte, réformé des Marines pour insuffisance mentale (il accuse un Noir de lui avoir pris sa place). Doit son poste au soutien de Dixie, à qui il obéit au doigt et à l'œil ; rêve d'entrer au Klan. Ne connaît rien des enjeux réels.\nArmes non précisées : matraque et revolver choisis dans la table.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-gerardht",
+      "nom": "Rudolf Gerardht",
+      "source": "Führer de l'American White Nationalist Party (taupe de Sharah)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n42 ans. Chef d'un groupuscule nazi ultra-secret et paranoïaque, spécialiste des plasticages. Coincé par les agents de l'Union de Sharah, il est devenu leur taupe : c'est lui qui renseigne Sharah sur ce qui se trame dans le Sud, et il a insisté pour venir au Klonklave. Sharah ne le dénoncera aux PJ que si l'enjeu en vaut la peine. Allié potentiel (et piège pour des PJ trop zélés).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-venable",
+      "nom": "James Venable",
+      "source": "Engoulevent Impérial des United Klans of America",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n53 ans. Chef d'un des plus vieux Klans, très religieux, fondé par un pasteur, QG en Alabama : c'est le Klan qui plaît le plus à Semper. Grand rival des National Knights (Zacharias).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-wilkinson",
+      "nom": "Elbert Wilkinson",
+      "source": "Grand Magicien de l'Invisible Empire of the KKK",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n31 ans. Chef du plus gros Klan, relancé par une campagne marketing jeune ; les autres l'accusent de mollesse et de compromission. Son Grand Enseigne est Sardis.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-perce",
+      "nom": "William Perce",
+      "source": "Président de New Order",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche minimale : aucune caractéristique dans le livre (valeurs par défaut).\n43 ans. Organisation ultra-violente à la limite de la légalité (attaques de banques « juives » pour se financer), détestée par les courants traditionnels ; elle a son propre camp d'entraînement en Virginie (« Pocahontas »). Invitée pour sa puissance paramilitaire.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-soldats",
+      "nom": "Soldats de Dieu de la Confédération",
+      "source": "250 soldats au service de Semper Fidelis",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 5,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "M-16 (attaque multiple)",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau de survie",
+          "att": 6,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Augmentation de Perception",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 2 (couteaux 3), Corps à corps 2, Défense 2, Tir 2 (armes d'épaule 3+), Athlétisme 2, Culture générale 0+ (KKK 2), Savoir occulte 0+ (opération JR 1), Hobby (ratonner les Nègres) 2, Survie 1 (marais 2), Métier (agent de sécurité) 3, Intimidation 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Très obéissants mais peu expérimentés malgré leur foi inébranlable ; tous blancs, racistes et convaincus. Regroupés en sections rivales (émulation, mais tendance à se tirer dans les pattes). Ils vouent une haine farouche à l'Union de Sharah et méprisent les gardes et employés humains.\nM-16 : pénétration importante, portée longue. Quantité de la scène à ajuster (250 au total).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-serviteurs",
+      "nom": "Serviteurs de Dieu de la Confédération",
+      "source": "50 serviteurs (cadres, informaticiens, enquêteurs)",
+      "type": "serviteur",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 5,
+        "vo": 5,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Pistolet discret",
+          "att": 4,
+          "prec": -2,
+          "puis": 2,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        }
+      ],
+      "talents": "Discussion 2, Enquête 2, Fouille 3, Intrusion 3, Informatique 3, Métier (divers) 3, Culture générale 1 (Dixie Holding et KKK 2), Tir 1 (armes de poing 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ultra-professionnels et superbement organisés : spécialistes administratifs, financiers et juridiques qui font tourner la holding et la Confédération. Fiers, méprisants envers les employés, ils détestent la rivalité des soldats.\nDéfense non donnée : 2. Pistolet : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-gardes",
+      "nom": "Gardes de Dixie Securities LLC",
+      "source": "1 200 gardes (humains)",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 3,
+        "pr": 3,
+        "foi": 3
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Fusil militaire semi-automatique",
+          "att": 4,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Revolver de cowboy",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Matraque (non létale)",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Couteau",
+          "att": 2,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (contondantes 2), Corps à corps 2, Défense 2, Fouille 3, Tir 2 (armes de poing 3), Athlétisme 2, Métier (agent de sécurité) 2, Intimidation 2, Culture générale 1 (KKK 2), Savoir militaire 1, Être un gros connard impérialiste 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Simples vigiles employés pour le gardiennage et le convoyage de fonds. Lourdement armés pour des gardiens, mais pas des soldats : ils craquent vite face à une vraie résistance.\nArmes à feu : pénétration importante (fusil portée longue, revolver portée moyenne).\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-employes",
+      "nom": "Employés des sociétés Dixie",
+      "source": "300 employés sur le site principal",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 3,
+        "pr": 3,
+        "foi": 5
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver de cowboy",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (divers) 2, Culture générale 0+ (vie du sud des USA 1), Être un crétin inculte et bouffi d'orgueil 2, Savoir occulte 0+ (KKK 2), Tir 1 (armes de poing 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Citoyens plus ou moins bornés et opportunistes qui ignorent tout des desseins de Semper ; leur fanatisme varie, Semper garde les plus fiables aux postes sensibles.\nDéfense non donnée : 2.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-klanistes",
+      "nom": "Klanistes",
+      "source": "Délégués et membres des Klans",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Batte",
+          "att": 4,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Fusil de chasse",
+          "att": 4,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (contondantes 2), Défense 1, Tir 1 (armes d'épaule 2), Culture générale 1 (mythes et traditions du KKK 2), Faire brûler des croix en criant Sieg Heil 3, Avoir l'air d'un con avec un chapeau pointu 3+, Savoir occulte 1+ (les complots cosmopo-juifs 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quelques rares « intellectuels » au milieu d'un troupeau d'aigris, de ratés et de bouseux en quête de bouc émissaire.\nArmes non précisées par le livre : batte et fusil de chasse (carabine) choisis dans la table d'après leurs talents.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    },
+    {
+      "id": "type-jr2-alligators",
+      "nom": "Gentils alligators sauvages",
+      "source": "Faune du marais d'Okefenoke",
+      "type": "monstre",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 1,
+        "pr": 1,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 2,
+      "pfFix": 8,
+      "pp": 0,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Mâchoire",
+          "att": 6,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Discrétion 4, Rester en attente dans l'eau 4, Corps à corps 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ils n'attaquent que des proies affaiblies, blessées ou de petite taille, et attendent longtemps d'être sûrs que la cible ne se défendra pas : attaques brusques venues de l'eau boueuse, jamais d'empoignade virile. Peau écailleuse : protection 2.\nDéfense non donnée : 2. Type « monstre » faute de type animal dans les règles.\nSource : Jésus Reviens !, chapitre trois « The Last Rebel » (Jacksonville), p. 32-47."
+    }
+  ],
+  "memoire": []
+}

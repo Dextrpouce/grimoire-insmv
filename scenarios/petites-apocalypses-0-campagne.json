@@ -1,0 +1,4498 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa0-campagne",
+      "nom": "Petites Apocalypses – Une apocalypse, ce n'est pas la fin du monde",
+      "resume": "Campagne de fond pour PJ de la troisième Force (agents de la DTC d'Hercule). Les marches païennes se délitent ; Michel tente de faire accueillir les païens au Paradis (le nouveau Chaudron) et échoue ; pendant ce temps, Victor, jeune dragon fils d'Aubéron rendu insatiable par Haagenti, dévore un à un les panthéons et leurs pommes d'or. Tout se termine sur Mythopolis, refuge secret de Seth et Naama derrière Chez Régis, par une bataille finale et la fondation du Sanctuaire des troisièmes forces.",
+      "notes": "Source : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.\nCe n'est pas un scénario : ce sont des trames et des vignettes (de la simple discussion avec un PNJ à une courte aventure) à intercaler entre les scénarios du livre, comme l'arc de fond d'une saison de série télé. Chaque scène de ce fichier est une trame ou une vignette ; elles sont rangées par trame, pas dans l'ordre de jeu.\n\nComment l'intercaler (ordre conseillé) :\n• Début de campagne : Marches 1 en ouverture du premier scénario ; Marches 2 au fil des premières séances ; Victor 1-2 (licorne, Faërie) entre deux des premiers scénarios ou au milieu de l'un d'eux ; Michel 1 tôt si un PJ est viking ; Mythopolis 1 (Romain) n'importe quand.\n• Milieu : Michel 2-4 (premiers contacts, Ange, préparation) réparties entre plusieurs scénarios ; Entracte après Les kiwis se cachent pour mûrir ; Mythopolis 2 (Malachite) après Memento Flatula ; Victor 3 (Avalon) ; Michel 5 (le Conseil) vers les deux tiers, quand le nouveau Chaudron semble la seule solution ; puis Victor 4 (Isis et Osiris).\n• Fin : Mythopolis 3 (découverte) avant le final, sinon le final s'appuie sur un appel au secours ; Final 1 à 4 enchaînés, éventuellement sur une séance entière.\n• Marches 3 (attaques de démons) : en fond tout au long de la campagne, dès que les PJ se font remarquer.\nLes six scénarios du livre (Memento Flatula, Les kiwis se cachent pour mûrir, Un coup de fil à la patte, Langues et sécateur, On n'encule pas les mouches avec du vinaigre, La douloureuse absence de Clint Eastwood) et les deux mini-scénarios (L'épopée du Kiti-Kon, Le spartiate noir) sont indépendants : les placer librement entre les vignettes, ou écrire les vôtres.\n\nRésumé de l'arc : la naissance de Damien a fragilisé les marches ; les dieux cherchent une nouvelle maison. Michel propose le Paradis, le conseil refuse (manœuvre d'Yves). Victor dévore Faërie (Aubéron), Avalon, Héliopolis, l'Olympe, attaque Asgard puis Mythopolis. Les PJ, les dieux survivants et les fondateurs des conpsis l'affrontent et fondent le Sanctuaire avec l'appui de Michel, Ange et Alain. Dieu fait de Victor le nouvel archange du Feu.\n\nCréation des PJ (chapitre quatre) : psionique, héros païen de base ou renégat de grade 0 ; pour équilibrer, PA supplémentaires aux héros païens ou 120 PA pour tous.\nRègle de campagne : récupération des PP des héros païens ratée sur 1 au d6 (puis 1-2, 1-3 si la situation empire).\nRécompenses : le livre ne donne pas de barème de PA ; à fixer selon les scénarios joués.\n\nFiches : Jésus, Seth, Naama, guerriers elfes et Victor ont les caractéristiques du livre ; Hercule vient du chapitre quatre (p. 21). Les attaques « 66/RU+X/M+Y » sont saisies au format du livre (attaque X×2, puissance Y Force comprise, sans Force ajoutée). Michel, Ange, Alain, Isis, Osiris, Titania, le cuisinier, Manolar, Romain, Malachite et Pierre Carré n'ont pas de caractéristiques (fiches minimales). La licorne est estimée.",
+      "scenes": [
+        {
+          "id": "pa0-sc-barrance",
+          "nom": "Marches 1 – Barrance en couille",
+          "lieu": "Partout (rêves des héros, rencontres avec leurs dieux)",
+          "notes": "Quand : dès la première séance, en introduction du premier scénario. Cette trame donne le ton et la motivation de toute la campagne.\nContexte : l'apocalypse avortée de la naissance de Damien (Fire & Ice) a abîmé les marches et leurs passages. Des pans d'Asgard, de l'Olympe et d'Héliopolis ont glissé dans le Rien. Asgard résiste le mieux (les runes vikings ont leurs propres réserves de PP).\nDéroulement : les dieux contactent leurs héros (rêve, ou rencontre au comptoir) ; ils sont inquiets, perdent leurs pouvoirs, voient disparaître champs et palais. Ils chargent les PJ de trouver la cause et, si possible, d'y remédier.\nRègle : un héros païen regagne normalement 1 PP toutes les six heures sans utiliser de pouvoir. Dès le début de la campagne, lancer 1d6 à chaque récupération : sur 1, rien. Pour mettre la pression (ou si les PJ se désintéressent du problème), passer à 1-2, puis 1-3.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-hercule-1",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-pareil",
+          "nom": "Marches 2 – Pour tout le monde pareil",
+          "lieu": "Rencontres hors scénario, DTC",
+          "notes": "Quand : au fil des premiers scénarios, jusqu'à ce que les joueurs aient mesuré l'ampleur du problème.\nDéroulement : les PJ se renseignent sur les autres marches. Hercule confirme que l'Olympe va encore plus mal ; des héros ou dieux d'autres panthéons croisés pendant les scénarios répètent la même chose.\nSolutions envisagées : opérations « publicitaires » des dieux, peu efficaces (images trop floues dans l'esprit du public). Le mini-scénario L'épopée du Kiti-Kon illustre une tentative viking (idée de Njord) ; laisser faire les PJ s'ils ont des idées de ce genre. Réparer le lien avec la MRC est hors de portée.\nSolutions à long terme à faire émerger : le nouveau Chaudron de Michel, puis Mythopolis.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-hercule-2",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-baal",
+          "nom": "Marches 3 – Ça fait Baal ?",
+          "lieu": "Où les PJ manquent de discrétion",
+          "notes": "Quand : tout au long de la campagne.\nLes attaques de démons (surtout de Baal, Bélial et Caym) contre les troisièmes forces s'intensifient. Dès que les PJ se font remarquer, un ou plusieurs démons peuvent les attaquer dans les jours qui suivent.\nSecret : Baal a lancé un concours entre princes démons (Haagenti le gagnera grâce à Victor).\nAdversaires : prendre des démons de combat dans le bestiaire (par exemple « Démon de grade 1 (combattant) » des Petites Apocalypses).",
+          "combat": true,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-vikings",
+          "nom": "Michel 1 – Michel chez les vikings",
+          "lieu": "Bar parisien fréquenté par les vikings",
+          "notes": "Quand : tôt, si un PJ est viking (il peut déjà connaître Michel de réputation ou en personne).\nMichel boit avec des héros vikings, entre souvenirs de bataille, comparaison de cicatrices et sujets graves : l'avenir de la marche, la religion viking.\nÀ rappeler : les runes existent parce que l'usage des pouvoirs vidait Asgard plus vite que la MRC ne la remplissait ; elles ont leur propre réserve de PP.\nMichel évoque un « projet » pour aider les païens, sans en dire plus.\nContexte MJ : Michel, ancien héros de Thor converti par Laurent, a toujours protégé les derniers vikings ; depuis 1997 il recense ses alliés païens dans un cahier Clairefontaine et a ravivé le Chaudron (anges aux pouvoirs animistes).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-michel-3",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-contacts",
+          "nom": "Michel 2 – Premiers contacts",
+          "lieu": "Siège de la DTC",
+          "notes": "Michel, accompagné de Rollon, rencontre Hercule à la DTC. Faire assister les PJ, au moins en partie.\nArgumentaire de Michel (phrases courtes) : besoin de combattants sur Terre face à des démons de plus en plus violents ; valeur guerrière des héros païens (Ulysse, Achille, Hercule) ; les démons ont toujours été ennemis des dieux (Ragnarok, géants, titans). Le projet : une sorte de Légion étrangère des armées du Seigneur, ouverte à tous les héros païens volontaires.\nHercule éclate de rire. La réaction des joueurs est capitale.\nSur la fidélité aux dieux : les dieux seraient accueillis avec leurs héros ; mais pour Michel, la force des héros vient de leur foi, pas des dieux, et l'immortalité ne vient que de son Dieu.\nSi l'entrevue se passe bien, Michel revient régulièrement et utilise les PJ comme intermédiaires avec leurs propres panthéons.\nSecret : Yves fera échouer le projet en douce (il veut des troisièmes forces indépendantes, simples pions pour ralentir le Grand Jeu).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-michel-4",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            },
+            {
+              "id": "pa0-hercule-5",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa0-ch-michel",
+              "q": "Comment les PJ accueillent-ils le projet de Michel ?",
+              "opts": [
+                {
+                  "t": "Ouvertement hostiles",
+                  "suite": "Michel renonce à la DTC : plus de contact, les PJ suivent la suite par ouï-dire ; les autres troisièmes forces réagissent pareil et le conseil n'aura peut-être même pas lieu."
+                },
+                {
+                  "t": "Franchement pour",
+                  "suite": "Le projet est bien accueilli par les autres représentants de la troisième Force ; Michel monte son dossier plus vite."
+                },
+                {
+                  "t": "Mitigés ou pleins d'objections",
+                  "suite": "Michel argumente (conversions d'Ange et la sienne, expérience du Chaudron, buts communs contre les démons et pour l'humanité)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa0-sc-ange",
+          "nom": "Michel 3 – Présentation d'Ange",
+          "lieu": "Siège de la DTC",
+          "notes": "Quelque temps plus tard, Michel revient avec Ange, archange des Convertis : c'est son service qui ferait des anges de tout ce monde, et elle est en bons termes avec les troisièmes forces.\nElle se demande encore si l'idée est bonne et réalisable. Elle interroge les PJ sur leur vision du Bien par des dilemmes sans bonne réponse (sauver un homme ou réussir la mission ; tuer un démon qui fait vivre plusieurs enfants…).\nAprès cette visite, elle adopte à la DTC l'apparence d'une jeune femme en noir.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-ange-6",
+              "nom": "Ange",
+              "source": "Archange des Convertis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-ange"
+            },
+            {
+              "id": "pa0-michel-7",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa0-ch-ange",
+              "q": "Comment les PJ se comportent-ils face à Ange ?",
+              "opts": [
+                {
+                  "t": "Comme des sagouins",
+                  "suite": "Ange émet des doutes sur le projet."
+                },
+                {
+                  "t": "De façon irréprochable",
+                  "suite": "Ange devient enthousiaste."
+                },
+                {
+                  "t": "Correctement, sans plus",
+                  "suite": "Ange suit Michel avec réserve."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa0-sc-prepa",
+          "nom": "Michel 4 – Préparation du conseil",
+          "lieu": "Terrain, DTC, églises, Croix-Rouge…",
+          "notes": "Petites vignettes pour éprouver la valeur et la foi des futurs anges, et étendre le réseau de Michel :\n• accompagner des anges de Michel pour casser du démon ;\n• passer une journée à entraîner des soldats de Dieu ;\n• assister à une messe, réciter des passages de la Bible ;\n• faire du bénévolat à la Croix-Rouge ;\n• organiser des rencontres entre les deux archanges et d'autres représentants (Isis et Osiris, l'Ankou, etc.).\nIdéalement, au moment du conseil, le nouveau Chaudron doit apparaître aux joueurs comme la seule solution disponible.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa0-michel-8",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            },
+            {
+              "id": "pa0-ange-9",
+              "nom": "Ange",
+              "source": "Archange des Convertis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-ange"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-conseil",
+          "nom": "Michel 5 – Le Conseil",
+          "lieu": "DTC (le conseil a lieu hors champ, au Paradis)",
+          "notes": "Quand : vers les deux tiers de la campagne. Attention, des vétérans d'INS/MV pourraient croire que ce conseil conclut la campagne : il doit au contraire marquer le début des choses sérieuses.\nLa veille, Michel passe voir les PJ et rit bêtement, sans doute pour chasser le trac. Trois jours plus tard, il revient, ivre et chancelant, annoncer l'échec : le nouveau Chaudron ne se fera pas (Yves s'est abstenu en poussant les autres à voter contre). Michel sort affaibli, mais l'histoire continue.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-michel-10",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-regis",
+          "nom": "Entracte – Jésus chez Régis",
+          "lieu": "Chez Régis",
+          "notes": "Quand : après le scénario Les kiwis se cachent pour mûrir, où les PJ ont rencontré Jésus qui les invite.\nLes PJ sont seuls au bar ; Jésus bavarde, parle d'ajouter de la petite restauration. Entre un vieillard impressionnant, barbe blanche, toge bleutée, sandales : Dieu. Il jette un regard navré aux PJ et à Jésus, puis prend son fils à part, assez près pour qu'on entende.\nÉchange père-fils : reproches voilés, Jésus défend son bar (« il s'y passe des choses qui changent le monde ») et ses projets secrets, refuse encore de succéder à son père qui veut prendre sa retraite. Ça se termine autour d'un lait de chèvre.\nPas d'enjeu mécanique : une scène d'ambiance qui installe Chez Régis comme lieu clé (ragots, relance d'enquête, accès futur à Mythopolis).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-jesus-11",
+              "nom": "Jésus",
+              "source": "Archange des hommes, barman Chez Régis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 12,
+                "vo": 14,
+                "pr": 16,
+                "foi": 19
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 102,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Abondance",
+                  "r": 12
+                },
+                {
+                  "n": "Absorption du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 12
+                },
+                {
+                  "n": "Bénédiction : guérison de maladies",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Exorcisme",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 18
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 18
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 12
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 18
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (tout ce qu'on peut apprendre Chez Régis 9), Séduction 8, Survie 8 ; pouvoir Miracle 2 (propre à Jésus, absent des règles de l'application)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Barman Chez Régis, au courant de tous les ragots ; crétin ou génie, la question reste ouverte. S'intéresse à la survie des troisièmes forces et aide discrètement les PJ. Son arrière-salle donne sur Mythopolis.\nMiracle (spécial, 1 PP) : attire l'attention de Dieu ; transforme n'importe quel jet en 111 sur un test de pouvoir standard, ou exauce une prière précise (difficulté fixée par le MJ).\nPlus tous les pouvoirs gratuits des supérieurs (INS/MV, p. 96).\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-jesus"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-legende",
+          "nom": "Mythopolis 1 – La légende de la ville",
+          "lieu": "N'importe où (bar, rue), même en plein scénario",
+          "notes": "Un PJ est abordé par Romain, mage urbain clochard, qui délire sur une ville légendaire introuvable, Mythopolis. Impossible d'en tirer plus.\nContexte MJ : Seth et Naama, exilés dans le Rien (voir Habeas Corpus), sont tombés sur une marche stable et malléable : un nouveau jardin d'Eden entouré de quartiers évoquant Atlantis, Avalon, El Dorado, Utopie, Ur, R'lyeh, Laputa, Mildendo, Ys… Elle se nourrit des rêves de cités interdites et a hérité de leur discrétion : introuvable depuis la MRC. Les mages urbains la pressentent sans pouvoir la trouver. Seul accès : l'arrière-salle de Chez Régis.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-romain-12",
+              "nom": "Romain Journapassufipourlabatir",
+              "source": "Mage urbain clochard",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Puissant mais complètement à l'ouest : vit des poubelles, délire sur la ville légendaire introuvable. Impossible d'en tirer une information claire.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-romain"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-recherche",
+          "nom": "Mythopolis 2 – Malachite et la recherche",
+          "lieu": "Paris, sites de villes légendaires (Brocéliande…)",
+          "notes": "Plus tard (éventuellement bien plus tard), les PJ rencontrent Malachite, mage urbain sensé. Il connaît la légende et cherche une copie des tablettes de Raämalû, censée décrire un accès ; la piste mène à la DTC (scénario Memento Flatula, à la fin duquel la copie est détruite).\nLes PJ peuvent visiter des lieux légendaires : ils ne trouveront rien. Ne pas s'y attarder, sauf pour accrocher d'autres scénarios.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-malachite-13",
+              "nom": "Malachite N'Prophidjamé",
+              "source": "Mage urbain",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Présentable, sensé, moins puissant que Romain. Connaît la légende de Mythopolis et cherche une copie des tablettes de Raämalû (piste qui mène à la DTC, voir Memento Flatula ; la copie est détruite à la fin de ce scénario). Plus tard, il mène les PJ à Chez Régis sans le comprendre.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-malachite"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-trouvure",
+          "nom": "Mythopolis 3 – La trouvure de Mythopolis",
+          "lieu": "Chez Régis, puis Mythopolis",
+          "notes": "Quand : au moment choisi par le MJ, avant le grand final.\nMalachite dit avoir une piste et donne rendez-vous aux PJ dans un PMU, La Selle de Cuir. À l'adresse, il n'y a que Chez Régis ; Malachite est là, perplexe. Jésus salue les PJ et, entendant le sujet, leur montre la porte du fond : Mythopolis est juste derrière.\nSur place : rues grandioses, bâtiments de deux étages au plus, styles et matériaux changeant d'un quartier à l'autre, ciel de crépuscule étoilé. Au centre, le jardin d'Eden et ses deux seuls habitants, Seth et Naama, presque nus et main dans la main (plus d'un an de huis clos les a rendus fous d'amour).\nIls se méfient d'abord, puis assaillent les PJ de questions (comment entrer, sortir, que se passe-t-il sur Terre depuis cinq ans ?). Trop faibles pour sortir, ils veulent renouer avec leurs conpsis : les PJ peuvent donner « l'adresse » de Chez Régis à un contact psi (ce qui arrange Jésus).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa0-seth-14",
+              "nom": "Seth",
+              "source": "Fils d'Adam et Ève, psionique, exilé sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 14,
+                "pr": 12,
+                "foi": 12
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 60,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 12
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 12
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 12
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 6, Défense 6, Discrétion 6, Discussion 8, Savoir occulte 6, Science 6, Séduction 7, Technique 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Après l'échec de son projet de pomme onirique (voir Habeas Corpus), exilé en spectre avec sa sœur ; tous deux ont fini par tomber sur Mythopolis. Vit presque nu dans le jardin d'Eden, main dans la main avec Naama. Trop faible pour retourner sur Terre, il veut renouer avec les conpsis.\nCaractéristiques lues sur le tableau du livre (3 3 4 7 6 6) ; Ch reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-seth"
+            },
+            {
+              "id": "pa0-naama-15",
+              "nom": "Naama",
+              "source": "Fille d'Adam et Ève, psionique, exilée sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 12,
+                "pe": 6,
+                "vo": 12,
+                "pr": 12,
+                "foi": 10
+              },
+              "def": 20,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 11,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Arts martiaux",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                },
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de force",
+                  "r": 12
+                },
+                {
+                  "n": "Arme exaltée",
+                  "r": 12
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 8
+                },
+                {
+                  "n": "Aura de courage",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 16
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 16
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 16
+                }
+              ],
+              "talents": "Combat 7 (épées 9), Corps à corps 6, Défense 10, Discrétion 7, Médecine 6, Savoir criminel 5, Savoir d'espion 8, Savoir militaire 5, Séduction 8, Torture 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sœur et compagne d'exil de Seth. Elle n'a pas d'épée sur Mythopolis. Si les PJ arrivent en agresseurs, le couple lance une ou deux attaques puis se fond dans la ville.\nCh reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-naama"
+            },
+            {
+              "id": "pa0-malachite-16",
+              "nom": "Malachite N'Prophidjamé",
+              "source": "Mage urbain",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Présentable, sensé, moins puissant que Romain. Connaît la légende de Mythopolis et cherche une copie des tablettes de Raämalû (piste qui mène à la DTC, voir Memento Flatula ; la copie est détruite à la fin de ce scénario). Plus tard, il mène les PJ à Chez Régis sans le comprendre.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-malachite"
+            },
+            {
+              "id": "pa0-jesus-17",
+              "nom": "Jésus",
+              "source": "Archange des hommes, barman Chez Régis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 12,
+                "vo": 14,
+                "pr": 16,
+                "foi": 19
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 102,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Abondance",
+                  "r": 12
+                },
+                {
+                  "n": "Absorption du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 12
+                },
+                {
+                  "n": "Bénédiction : guérison de maladies",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Exorcisme",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 18
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 18
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 12
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 18
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (tout ce qu'on peut apprendre Chez Régis 9), Séduction 8, Survie 8 ; pouvoir Miracle 2 (propre à Jésus, absent des règles de l'application)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Barman Chez Régis, au courant de tous les ragots ; crétin ou génie, la question reste ouverte. S'intéresse à la survie des troisièmes forces et aide discrètement les PJ. Son arrière-salle donne sur Mythopolis.\nMiracle (spécial, 1 PP) : attire l'attention de Dieu ; transforme n'importe quel jet en 111 sur un test de pouvoir standard, ou exauce une prière précise (difficulté fixée par le MJ).\nPlus tous les pouvoirs gratuits des supérieurs (INS/MV, p. 96).\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-jesus"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa0-ch-seth",
+              "q": "Comment les PJ abordent-ils Seth et Naama ?",
+              "opts": [
+                {
+                  "t": "Pacifiquement",
+                  "suite": "Le couple se détend ; il deviendra un allié (et un appel au secours possible lors du final)."
+                },
+                {
+                  "t": "Agressivement",
+                  "suite": "Une ou deux attaques, puis Seth et Naama disparaissent dans la ville, introuvables."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa0-sc-licorne",
+          "nom": "Victor 1 – Un petit tour en Faërie : la licorne",
+          "lieu": "Bois de Boulogne, Paris",
+          "notes": "Quand : entre deux scénarios vers le début de la campagne, ou au milieu d'un autre.\nContexte MJ : Victor est né de France d'Argon (dragonne) et d'Aubéron ; élevé par Brand dans la haine de ses parents, il est devenu en un an un capitaine estimé de la rébellion de Faërie.\nMission : Manolar, proche d'Aubéron, demande à la DTC de retrouver une licorne échappée à Paris avant que des humains ne comprennent ce qu'elle est.\nPistes : entrefilet « hallucination collective » dans un journal local ; un psi qui l'a vue appelle la DTC ; chercher les zones boisées ou se souvenir du portail vers Faërie du Bois de Boulogne.\nCapture : plutôt de nuit, avec rencontres nocturnes cocasses au Bois et contrôle de police possible. La bête est rapide, puissante et se défend à coups de corne. Rester discret ; prévoir un bobard pour les témoins.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa0-manolar-18",
+              "nom": "Manolar",
+              "source": "Proche d'Aubéron, commanditaire de la mission licorne",
+              "type": "fee",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Veut récupérer la licorne avant que des humains ne comprennent ce qu'elle est. Sait seulement qu'elle a été perdue de vue dans Paris.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-manolar"
+            },
+            {
+              "id": "pa0-licorne-19",
+              "nom": "Licorne de Faërie",
+              "source": "Échappée dans le Bois de Boulogne",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Corne",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 6, Discrétion 4, Course 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pas de caractéristiques dans le livre : valeurs estimées (animal souple, puissant et rapide). Corne : attaque estimée au niveau 4, puissance de coup de poing + Force.\nElle se sert surtout de sa corne pour se défendre ; la capture doit être sportive mais rester discrète.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-licorne"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-faerie",
+          "nom": "Victor 2 – Faërie : le camp de la rébellion",
+          "lieu": "Faërie, campement d'elfes",
+          "notes": "Le portail du Bois de Boulogne s'ouvre par intermittence. Faërie est en pleine guerre civile (Aubéron et Titania contre Brand). Les PJ arrivent près d'un camp d'elfes armés jusqu'aux dents.\nVictor vient à eux, sous forme humaine (il ne montrera ni n'évoquera jamais sa forme de dragon) : il s'enquiert de leur mission, ne les empêche pas de rendre la licorne à Manolar, mais leur conseille de filer avant les grands combats qui se préparent. Il doit faire très forte impression : beauté inhumaine, regard terrible, intelligence, cruauté.\nLe cuisinier du camp, gros bonhomme loufoque qui chante à tue-tête, fait la meilleure cuisine de Faërie : c'est Haagenti, qui suit Victor de très près. Les PJ ne doivent pas l'apprendre.\nLes PJ peuvent apercevoir Aubéron. Retour sans difficulté.\nHors champ, après leur départ : Victor mène l'assaut final, affronte Aubéron en duel, le dévore et absorbe ses pouvoirs. Titania s'enfuit aux États-Unis.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-victor-20",
+              "nom": "Victor",
+              "source": "Grand dragon rouge, dauphin de Faërie et futur archange du Feu",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 18,
+                "ag": 10,
+                "pe": 10,
+                "vo": 14,
+                "pr": 16,
+                "foi": 17
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 16,
+              "pp": 58,
+              "seuilsFix": [
+                13,
+                26,
+                39,
+                52
+              ],
+              "armes": [
+                {
+                  "n": "Dents de sabre",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": false
+                },
+                {
+                  "n": "Grandes cornes",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 13,
+                  "melee": false
+                },
+                {
+                  "n": "Queue barbelée",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 12,
+                  "melee": false
+                },
+                {
+                  "n": "Jet de flammes (très courte portée, zone, inévitable)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Apparence horrifique",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 12
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 16
+                },
+                {
+                  "n": "Membre exotique : dents de sabre",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : queue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Rêve",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Vol",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 8, Défense 8 ; tous les autres talents utiles à 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils d'Aubéron et de France d'Argon, éclos avec des siècles d'avance, élevé par Brand dans la haine de ses parents. Magnifique, imposant, regard terrible, cruauté palpable.\nForme humaine : pas d'Apparence horrifique, d'Armure corporelle, de Membres exotiques, de Sens surdéveloppés ni de Vol. La métamorphose en dragon coûte 10 PP et active ces pouvoirs pour une durée illimitée.\nGuérison surnaturelle (dépense de PP pour refermer ses blessures). Sous forme de dragon, il peut porter plusieurs attaques par seconde.\nLe livre insiste : trichez avec cette fiche (santé, attaques, défenses, immunités) pour que le combat final reste dramatique.\nArmure corporelle 8 non convertie en protection : à appliquer selon le pouvoir.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-victor"
+            },
+            {
+              "id": "pa0-cuisinier-21",
+              "nom": "« Le cuisinier » (Haagenti)",
+              "source": "Prince démon de la Gourmandise, incognito dans le camp de Victor",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gros bonhomme loufoque qui chante à tue-tête en préparant une cuisine remarquable. En réalité Haagenti : c'est lui qui a rendu Victor insatiable, pour gagner un pari contre Baal. Les PJ ne doivent pas l'apprendre pendant la campagne (révélation finale facultative).\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-cuisinier"
+            },
+            {
+              "id": "pa0-manolar-22",
+              "nom": "Manolar",
+              "source": "Proche d'Aubéron, commanditaire de la mission licorne",
+              "type": "fee",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Veut récupérer la licorne avant que des humains ne comprennent ce qu'elle est. Sait seulement qu'elle a été perdue de vue dans Paris.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-manolar"
+            },
+            {
+              "id": "pa0-elfes-23",
+              "nom": "Guerriers elfes boostés à la pomme d'or",
+              "source": "Garde rapprochée de Victor",
+              "type": "fee",
+              "qty": 4,
+              "car": {
+                "fo": 8,
+                "ag": 12,
+                "pe": 12,
+                "vo": 8,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 16,
+              "prot": 6,
+              "pfFix": 8,
+              "pp": 40,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Épée longue magique mineure",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Arc long magique mineur (portée longue)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Détection des créatures invisibles",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 12
+                },
+                {
+                  "n": "Peur",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 9, Combat 7 (épées 9), Corps à corps 6, Défense 8, Discrétion 8, Séduction 8, Tir 7 (arcs 9)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Cotte de mailles elfique (6 points de protection). Guérison surnaturelle comme des anges ou démons incarnés (peuvent dépenser des PP pour refermer leurs blessures).\nLe livre ne donne volontairement pas leur nombre : 6 par défaut, à ajuster.\nMêmes valeurs que le « Guerrier elfe » du bestiaire de l'application, avec les caractéristiques du tableau (4 6 6 4 5 3).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-elfes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-avalon",
+          "nom": "Victor 3 – Avalon ? Il y a quelqu'un ?",
+          "lieu": "Portail (Brocéliande, Stonehenge ou station Alésia), puis Avalon",
+          "notes": "Hors champ : Victor et sa garde elfe passent de Faërie à Avalon et dévorent les dieux celtes, déjà affaiblis depuis l'attaque ratée contre Notre-Dame (Deus ex machina).\nMission : la Serpe d'Or (cercle de druides, chef Pierre Carré) ne parvient plus à parler à ses dieux et paie la DTC pour aller voir. Les druides ne viennent pas.\nSur place : marche ravagée, déserte, vidée d'énergie, à moitié partie dans le Rien. Rien à trouver.\nRetour : annoncer aux druides qu'Avalon n'existe plus. Ils sont incrédules puis rongés de culpabilité (ils s'étaient éloignés de leurs dieux) ; ils gardent leurs pouvoirs. Aucun indice ne permet aux PJ de soupçonner autre chose que le délitement naturel.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-carre-24",
+              "nom": "Pierre Carré",
+              "source": "Chef du cercle de druides de la Serpe d'Or",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Riche, peu courageux : paie la DTC pour aller voir pourquoi les dieux d'Avalon ne répondent plus. Le cercle compte surtout des fumeurs de gui et un ou deux vrais druides.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-carre"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-egypte",
+          "nom": "Victor 4 – Ce soir, on mange égyptien !",
+          "lieu": "Siège de la DTC",
+          "notes": "Hors champ : Victor passe par la Vallée des Rois pour atteindre Héliopolis, dévore les dieux présents et découvre un arbre à pommes d'or de deuxième génération : sa puissance explose et il devient accro. Il se tourne vers les mythes grec et nordique du jardin aux pommes d'or.\nIsis et Osiris, incarnés sur Terre pendant l'attaque, sont les seuls survivants. Ils refusent l'explication du délitement et finissent par se persuader que le coupable est Alain, leur vieil ennemi. Ils veulent d'abord une rencontre diplomatique, avec témoins.\nMission : Hercule est en route vers l'Olympe ; un sous-chef de la DTC charge les PJ d'organiser et d'animer une réunion avec Alain, et d'y convier Michel et Ange. Convaincre chacun de venir peut être plus ou moins difficile, au choix du MJ. La réunion elle-même a lieu dans la scène suivante.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-isis-25",
+              "nom": "Isis",
+              "source": "Déesse égyptienne incarnée, militante antimondialiste",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Avec Osiris, seule rescapée d'Héliopolis (ils étaient incarnés sur Terre lors de l'attaque). Convaincue qu'Alain est coupable, elle demande une réunion diplomatique à la DTC.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-isis"
+            },
+            {
+              "id": "pa0-osiris-26",
+              "nom": "Osiris",
+              "source": "Dieu égyptien incarné, militant antimondialiste",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Compagnon d'Isis ; même histoire, même rancune envers Alain.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-osiris"
+            },
+            {
+              "id": "pa0-alain-27",
+              "nom": "Alain",
+              "source": "Archange des Cultures",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ennemi de longue date des Égyptiens, soupçonné à tort par Isis et Osiris. Blessé d'être accusé, sincèrement attristé par la disparition d'Héliopolis.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-alain"
+            },
+            {
+              "id": "pa0-michel-28",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            },
+            {
+              "id": "pa0-ange-29",
+              "nom": "Ange",
+              "source": "Archange des Convertis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-ange"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-reunion",
+          "nom": "Final 1 – La réunion",
+          "lieu": "Siège de la DTC",
+          "notes": "Hors champ : Victor achève l'Olympe (Apollon, Héra…) et mange les pommes d'or. Hercule y arrive trop tard et rentre en catastrophe. Titania, ayant entendu parler de la réunion par un ange d'Ange, revient des États-Unis.\nLe jour de la réunion, trois révélations en cascade, à mettre en scène de façon théâtrale (Hercule qui fait irruption en pleine séance, par exemple ; les PJ peuvent se répartir les témoignages) :\n• Titania : Victor a dévoré Aubéron sous forme de dragon, il est surpuissant.\n• Hercule : l'Olympe est vide, son arbre aux pommes d'or dévasté.\n• La discussion montre qu'Alain n'y est pour rien ; échanges houleux, les PJ modèrent. Alain est triste et blessé.\nConclusions possibles : une attaque concertée vise les panthéons et leurs arbres à pommes d'or ; il ne reste qu'Asgard. Renforts possibles : les participants, et des PNJ croisés dans les scénarios (Athéna, Catherine, Lilith, Hadès…). France d'Argon reste introuvable. Michel peut se demander à voix haute où rebâtir un havre pour la troisième Force (rappel de Mythopolis).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-hercule-30",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            },
+            {
+              "id": "pa0-titania-31",
+              "nom": "Titania",
+              "source": "Reine de Faërie en exil",
+              "type": "fee",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Témoin de la dévoration d'Aubéron par Victor sous forme de dragon. Exilée aux États-Unis, elle revient en France le jour de la réunion pour témoigner.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-titania"
+            },
+            {
+              "id": "pa0-isis-32",
+              "nom": "Isis",
+              "source": "Déesse égyptienne incarnée, militante antimondialiste",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Avec Osiris, seule rescapée d'Héliopolis (ils étaient incarnés sur Terre lors de l'attaque). Convaincue qu'Alain est coupable, elle demande une réunion diplomatique à la DTC.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-isis"
+            },
+            {
+              "id": "pa0-osiris-33",
+              "nom": "Osiris",
+              "source": "Dieu égyptien incarné, militant antimondialiste",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Compagnon d'Isis ; même histoire, même rancune envers Alain.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-osiris"
+            },
+            {
+              "id": "pa0-alain-34",
+              "nom": "Alain",
+              "source": "Archange des Cultures",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ennemi de longue date des Égyptiens, soupçonné à tort par Isis et Osiris. Blessé d'être accusé, sincèrement attristé par la disparition d'Héliopolis.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-alain"
+            },
+            {
+              "id": "pa0-michel-35",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            },
+            {
+              "id": "pa0-ange-36",
+              "nom": "Ange",
+              "source": "Archange des Convertis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-ange"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa0-ch-asgard",
+              "q": "Les PJ volent-ils au secours d'Asgard ?",
+              "opts": [
+                {
+                  "t": "Oui, avec ou sans renforts",
+                  "suite": "Ils combattent les elfes à Asgard ; Victor, attaqué par les dieux, s'enfuit (peut-être gravement blessé) vers Mythopolis."
+                },
+                {
+                  "t": "Non (« Ah ben merde alors ! »)",
+                  "suite": "Victor pille les pommes d'Asgard sans être dérangé, puis file vers Mythopolis au mieux de sa puissance."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa0-sc-asgard",
+          "nom": "Final 2 – Asgard se défend",
+          "lieu": "Asgard, jardin d'Idunn",
+          "notes": "Victor trouve enfin Bifrost dans une aurore boréale. Asgard, plus stable et plus riche en énergie, résiste comme un beau diable. Victor ne vise que l'arbre à pommes d'or : il les mange, mange deux ou trois occupants, casse quelques trucs, puis cherche à repartir.\nSi les PJ sont là : ils affrontent d'abord les guerriers elfes ; Victor, aux prises avec les dieux, s'en sort vivant (éventuellement gravement blessé). Affaibli, il part vers Mythopolis : il sent les vraies pommes du jardin d'Eden (il gagne Voyage onirique).\nGestion : voir les conseils de la scène suivante (laisser les gros bras entamer Victor, PJ contre la piétaille).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa0-elfes-37",
+              "nom": "Guerriers elfes boostés à la pomme d'or",
+              "source": "Garde rapprochée de Victor",
+              "type": "fee",
+              "qty": 6,
+              "car": {
+                "fo": 8,
+                "ag": 12,
+                "pe": 12,
+                "vo": 8,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 16,
+              "prot": 6,
+              "pfFix": 8,
+              "pp": 40,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Épée longue magique mineure",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Arc long magique mineur (portée longue)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Détection des créatures invisibles",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 12
+                },
+                {
+                  "n": "Peur",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 9, Combat 7 (épées 9), Corps à corps 6, Défense 8, Discrétion 8, Séduction 8, Tir 7 (arcs 9)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Cotte de mailles elfique (6 points de protection). Guérison surnaturelle comme des anges ou démons incarnés (peuvent dépenser des PP pour refermer leurs blessures).\nLe livre ne donne volontairement pas leur nombre : 6 par défaut, à ajuster.\nMêmes valeurs que le « Guerrier elfe » du bestiaire de l'application, avec les caractéristiques du tableau (4 6 6 4 5 3).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-elfes"
+            },
+            {
+              "id": "pa0-victor-38",
+              "nom": "Victor",
+              "source": "Grand dragon rouge, dauphin de Faërie et futur archange du Feu",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 18,
+                "ag": 10,
+                "pe": 10,
+                "vo": 14,
+                "pr": 16,
+                "foi": 17
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 16,
+              "pp": 58,
+              "seuilsFix": [
+                13,
+                26,
+                39,
+                52
+              ],
+              "armes": [
+                {
+                  "n": "Dents de sabre",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": false
+                },
+                {
+                  "n": "Grandes cornes",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 13,
+                  "melee": false
+                },
+                {
+                  "n": "Queue barbelée",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 12,
+                  "melee": false
+                },
+                {
+                  "n": "Jet de flammes (très courte portée, zone, inévitable)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Apparence horrifique",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 12
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 16
+                },
+                {
+                  "n": "Membre exotique : dents de sabre",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : queue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Rêve",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Vol",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 8, Défense 8 ; tous les autres talents utiles à 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils d'Aubéron et de France d'Argon, éclos avec des siècles d'avance, élevé par Brand dans la haine de ses parents. Magnifique, imposant, regard terrible, cruauté palpable.\nForme humaine : pas d'Apparence horrifique, d'Armure corporelle, de Membres exotiques, de Sens surdéveloppés ni de Vol. La métamorphose en dragon coûte 10 PP et active ces pouvoirs pour une durée illimitée.\nGuérison surnaturelle (dépense de PP pour refermer ses blessures). Sous forme de dragon, il peut porter plusieurs attaques par seconde.\nLe livre insiste : trichez avec cette fiche (santé, attaques, défenses, immunités) pour que le combat final reste dramatique.\nArmure corporelle 8 non convertie en protection : à appliquer selon le pouvoir.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-victor"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa0-sc-bataille",
+          "nom": "Final 3 – Mythopolis : l'ultime bataille",
+          "lieu": "Mythopolis, jardin d'Eden",
+          "notes": "Les PJ y viennent par déduction (Victor veut les pommes, et le jardin d'Eden est à Mythopolis) ou sur un appel au secours de Seth ou de Jésus. Présents : PJ, dieux païens, anges, renforts éventuels, Seth, Naama, Jésus, Victor et ses elfes.\nConseils du livre :\n• Trichez : sur la santé de Victor, ses attaques, ses défenses, en ajoutant des immunités contre les combos trop efficaces, et dans les combats entre PNJ.\n• Ne jouez pas les combats des PNJ : laissez les « gros bras » entamer Victor pendant que les PJ affrontent les elfes (nombre libre). Toutes les 1d6 secondes, un dieu tombe (Isis, Heimdall, Titania, Njord, Osiris, Seth…).\n• Une fois la piétaille éliminée, les PJ affrontent Victor, qui n'attaque un PJ qu'une fois toutes les 1d6 secondes (plusieurs attaques par seconde possibles en dragon). C'est la fin : n'hésitez pas à tuer des PJ.\n• Un beau triple doit suffire à toucher et blesser Victor : il explose dans une gerbe de lumière, reprend forme humaine et s'enfuit. Toute idée cool (tour qui s'effondre, bombe…) doit marcher.\nÉchec : à Asgard, une bonne partie des dieux est dévorée ; sur Mythopolis, Victor mange les dernières vraies pommes et part défier George au Paradis (issue hors de portée des PJ, apprise par Michel) ou l'appelle en duel devant eux.\nDans tous les cas, Victor en ressort apaisé, libéré d'Haagenti ; il marche jusqu'à la Bourboule où Dieu fait de lui le nouvel archange du Feu.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa0-victor-39",
+              "nom": "Victor",
+              "source": "Grand dragon rouge, dauphin de Faërie et futur archange du Feu",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 18,
+                "ag": 10,
+                "pe": 10,
+                "vo": 14,
+                "pr": 16,
+                "foi": 17
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 16,
+              "pp": 58,
+              "seuilsFix": [
+                13,
+                26,
+                39,
+                52
+              ],
+              "armes": [
+                {
+                  "n": "Dents de sabre",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": false
+                },
+                {
+                  "n": "Grandes cornes",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 13,
+                  "melee": false
+                },
+                {
+                  "n": "Queue barbelée",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 12,
+                  "melee": false
+                },
+                {
+                  "n": "Jet de flammes (très courte portée, zone, inévitable)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Apparence horrifique",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 16
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 12
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 16
+                },
+                {
+                  "n": "Membre exotique : dents de sabre",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : queue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Rêve",
+                  "r": 6
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Vol",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 8, Défense 8 ; tous les autres talents utiles à 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils d'Aubéron et de France d'Argon, éclos avec des siècles d'avance, élevé par Brand dans la haine de ses parents. Magnifique, imposant, regard terrible, cruauté palpable.\nForme humaine : pas d'Apparence horrifique, d'Armure corporelle, de Membres exotiques, de Sens surdéveloppés ni de Vol. La métamorphose en dragon coûte 10 PP et active ces pouvoirs pour une durée illimitée.\nGuérison surnaturelle (dépense de PP pour refermer ses blessures). Sous forme de dragon, il peut porter plusieurs attaques par seconde.\nLe livre insiste : trichez avec cette fiche (santé, attaques, défenses, immunités) pour que le combat final reste dramatique.\nArmure corporelle 8 non convertie en protection : à appliquer selon le pouvoir.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-victor"
+            },
+            {
+              "id": "pa0-elfes-40",
+              "nom": "Guerriers elfes boostés à la pomme d'or",
+              "source": "Garde rapprochée de Victor",
+              "type": "fee",
+              "qty": 8,
+              "car": {
+                "fo": 8,
+                "ag": 12,
+                "pe": 12,
+                "vo": 8,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 16,
+              "prot": 6,
+              "pfFix": 8,
+              "pp": 40,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Épée longue magique mineure",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Arc long magique mineur (portée longue)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Détection des créatures invisibles",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 12
+                },
+                {
+                  "n": "Peur",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 9, Combat 7 (épées 9), Corps à corps 6, Défense 8, Discrétion 8, Séduction 8, Tir 7 (arcs 9)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Cotte de mailles elfique (6 points de protection). Guérison surnaturelle comme des anges ou démons incarnés (peuvent dépenser des PP pour refermer leurs blessures).\nLe livre ne donne volontairement pas leur nombre : 6 par défaut, à ajuster.\nMêmes valeurs que le « Guerrier elfe » du bestiaire de l'application, avec les caractéristiques du tableau (4 6 6 4 5 3).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-elfes"
+            },
+            {
+              "id": "pa0-seth-41",
+              "nom": "Seth",
+              "source": "Fils d'Adam et Ève, psionique, exilé sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 14,
+                "pr": 12,
+                "foi": 12
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 60,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 12
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 12
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 12
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 6, Défense 6, Discrétion 6, Discussion 8, Savoir occulte 6, Science 6, Séduction 7, Technique 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Après l'échec de son projet de pomme onirique (voir Habeas Corpus), exilé en spectre avec sa sœur ; tous deux ont fini par tomber sur Mythopolis. Vit presque nu dans le jardin d'Eden, main dans la main avec Naama. Trop faible pour retourner sur Terre, il veut renouer avec les conpsis.\nCaractéristiques lues sur le tableau du livre (3 3 4 7 6 6) ; Ch reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-seth"
+            },
+            {
+              "id": "pa0-naama-42",
+              "nom": "Naama",
+              "source": "Fille d'Adam et Ève, psionique, exilée sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 12,
+                "pe": 6,
+                "vo": 12,
+                "pr": 12,
+                "foi": 10
+              },
+              "def": 20,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 11,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Arts martiaux",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                },
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de force",
+                  "r": 12
+                },
+                {
+                  "n": "Arme exaltée",
+                  "r": 12
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 8
+                },
+                {
+                  "n": "Aura de courage",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 16
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 16
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 16
+                }
+              ],
+              "talents": "Combat 7 (épées 9), Corps à corps 6, Défense 10, Discrétion 7, Médecine 6, Savoir criminel 5, Savoir d'espion 8, Savoir militaire 5, Séduction 8, Torture 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sœur et compagne d'exil de Seth. Elle n'a pas d'épée sur Mythopolis. Si les PJ arrivent en agresseurs, le couple lance une ou deux attaques puis se fond dans la ville.\nCh reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-naama"
+            },
+            {
+              "id": "pa0-jesus-43",
+              "nom": "Jésus",
+              "source": "Archange des hommes, barman Chez Régis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 12,
+                "vo": 14,
+                "pr": 16,
+                "foi": 19
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 102,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Abondance",
+                  "r": 12
+                },
+                {
+                  "n": "Absorption du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 12
+                },
+                {
+                  "n": "Bénédiction : guérison de maladies",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Exorcisme",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 18
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 18
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 12
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 18
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (tout ce qu'on peut apprendre Chez Régis 9), Séduction 8, Survie 8 ; pouvoir Miracle 2 (propre à Jésus, absent des règles de l'application)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Barman Chez Régis, au courant de tous les ragots ; crétin ou génie, la question reste ouverte. S'intéresse à la survie des troisièmes forces et aide discrètement les PJ. Son arrière-salle donne sur Mythopolis.\nMiracle (spécial, 1 PP) : attire l'attention de Dieu ; transforme n'importe quel jet en 111 sur un test de pouvoir standard, ou exauce une prière précise (difficulté fixée par le MJ).\nPlus tous les pouvoirs gratuits des supérieurs (INS/MV, p. 96).\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-jesus"
+            },
+            {
+              "id": "pa0-hercule-44",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa0-ch-victor",
+              "q": "Issue de l'ultime bataille ?",
+              "opts": [
+                {
+                  "t": "Victor blessé, il s'enfuit sous forme humaine",
+                  "suite": "Victoire des PJ : Mythopolis est sauvée."
+                },
+                {
+                  "t": "Victor vainqueur",
+                  "suite": "Il dévore les dieux restants, mange les dernières vraies pommes et affronte George (match nul conseillé, ou mort de George)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa0-sc-bilan",
+          "nom": "Final 4 – Il pense s'épeler : le Sanctuaire",
+          "lieu": "Mythopolis",
+          "notes": "On panse ses plaies. Jésus soigne tout le monde à coups de Miracles et réunit les survivants autour d'une marmite de chocolat fondu. Un plan se dessine : Mythopolis devient le Sanctuaire des troisièmes forces.\n• Maison des dieux incarnés restants et de leurs héros ; centre des psis et des conpsis ; refuge des renégats des deux camps.\n• Michel, Ange et Alain détournent une partie de leurs flux de PP vers Mythopolis et cachent son existence aux extrémistes du Paradis (en échange d'un soutien au conseil).\n• Seth et Naama mettent la logistique des conpsis au service des héros (appuis politiques, salaires, équipement).\n• Jésus recrute les renégats qu'il connaît via Chez Régis ; Malachite, s'il est là, les mages urbains.\nRègles du Sanctuaire : les dieux et héros sans marche (tous sauf les vikings) reviennent sur Mythopolis après la mort de leur corps et y forment un avatar ; les psis affiliés (Malum, Syndicat) y vont après leur mort au lieu du Purgatoire, les plus méritants pouvant revenir en « héros psis » ; idem pour sorciers et mages urbains qui rejoignent le Sanctuaire ; les renégats y trouvent aussi une maison. La nature des personnages (Chance ou Foi, aura, seuils…) ne change pas.\nÉpilogue : Victor s'installe au Paradis comme agent personnel de Dieu (et collectionne les cactus nains). Mythopolis s'ouvre, d'autres passages que Chez Régis sont construits. La troisième Force est partiellement unie ; tout reste à inventer.\nSecret : Haagenti a gagné son pari contre Baal (plus de morts chez les païens que toutes les troupes de la Guerre). À révéler ou non.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa0-jesus-45",
+              "nom": "Jésus",
+              "source": "Archange des hommes, barman Chez Régis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 12,
+                "vo": 14,
+                "pr": 16,
+                "foi": 19
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 102,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Abondance",
+                  "r": 12
+                },
+                {
+                  "n": "Absorption du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 12
+                },
+                {
+                  "n": "Bénédiction : guérison de maladies",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Exorcisme",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 18
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 18
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 12
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 18
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (tout ce qu'on peut apprendre Chez Régis 9), Séduction 8, Survie 8 ; pouvoir Miracle 2 (propre à Jésus, absent des règles de l'application)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Barman Chez Régis, au courant de tous les ragots ; crétin ou génie, la question reste ouverte. S'intéresse à la survie des troisièmes forces et aide discrètement les PJ. Son arrière-salle donne sur Mythopolis.\nMiracle (spécial, 1 PP) : attire l'attention de Dieu ; transforme n'importe quel jet en 111 sur un test de pouvoir standard, ou exauce une prière précise (difficulté fixée par le MJ).\nPlus tous les pouvoirs gratuits des supérieurs (INS/MV, p. 96).\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-jesus"
+            },
+            {
+              "id": "pa0-seth-46",
+              "nom": "Seth",
+              "source": "Fils d'Adam et Ève, psionique, exilé sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 14,
+                "pr": 12,
+                "foi": 12
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 60,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 12
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 12
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 12
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 16
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 6, Défense 6, Discrétion 6, Discussion 8, Savoir occulte 6, Science 6, Séduction 7, Technique 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Après l'échec de son projet de pomme onirique (voir Habeas Corpus), exilé en spectre avec sa sœur ; tous deux ont fini par tomber sur Mythopolis. Vit presque nu dans le jardin d'Eden, main dans la main avec Naama. Trop faible pour retourner sur Terre, il veut renouer avec les conpsis.\nCaractéristiques lues sur le tableau du livre (3 3 4 7 6 6) ; Ch reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-seth"
+            },
+            {
+              "id": "pa0-naama-47",
+              "nom": "Naama",
+              "source": "Fille d'Adam et Ève, psionique, exilée sur Mythopolis",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 12,
+                "pe": 6,
+                "vo": 12,
+                "pr": 12,
+                "foi": 10
+              },
+              "def": 20,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 11,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Arts martiaux",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                },
+                {
+                  "n": "Trait d'énergie (portée courte, intangible)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de force",
+                  "r": 12
+                },
+                {
+                  "n": "Arme exaltée",
+                  "r": 12
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 8
+                },
+                {
+                  "n": "Aura de courage",
+                  "r": 12
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 16
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 12
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 16
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 12
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 16
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 16
+                }
+              ],
+              "talents": "Combat 7 (épées 9), Corps à corps 6, Défense 10, Discrétion 7, Médecine 6, Savoir criminel 5, Savoir d'espion 8, Savoir militaire 5, Séduction 8, Torture 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sœur et compagne d'exil de Seth. Elle n'a pas d'épée sur Mythopolis. Si les PJ arrivent en agresseurs, le couple lance une ou deux attaques puis se fond dans la ville.\nCh reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-naama"
+            },
+            {
+              "id": "pa0-michel-48",
+              "nom": "Michel",
+              "source": "Archange de la Guerre, ancien héros viking de Thor",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-michel"
+            },
+            {
+              "id": "pa0-ange-49",
+              "nom": "Ange",
+              "source": "Archange des Convertis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-ange"
+            },
+            {
+              "id": "pa0-alain-50",
+              "nom": "Alain",
+              "source": "Archange des Cultures",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ennemi de longue date des Égyptiens, soupçonné à tort par Isis et Osiris. Blessé d'être accusé, sincèrement attristé par la disparition d'Héliopolis.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-alain"
+            },
+            {
+              "id": "pa0-hercule-51",
+              "nom": "Hercule (Héraclès Merkios)",
+              "source": "Héros romain, patron de la DTC et de Travelling Goods",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43.",
+              "typeId": "type-pa0-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795340292599,
+      "updatedAt": 1795340292599
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa0-hercule",
+      "nom": "Hercule (Héraclès Merkios)",
+      "source": "Héros romain, patron de la DTC et de Travelling Goods",
+      "type": "paien",
+      "car": {
+        "fo": 14,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 10,
+        "foi": 12
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 55,
+      "seuilsFix": [
+        9,
+        19,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Massue magique ancienne",
+          "att": 20,
+          "prec": 0,
+          "puis": 16,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 14,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 10
+        },
+        {
+          "n": "Némésis",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 14
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Vol",
+          "r": 8
+        }
+      ],
+      "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir Voyage intermarches 6 (absent des règles de l'application : seul trajet maîtrisé, Olympe-Terre, distance 30)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Patron des PJ. Joue le rôle de fil rouge : il les reçoit, leur confie les missions, s'ennuie dans les rendez-vous d'affaires. Absent pendant la trame égyptienne (en route vers l'Olympe), il revient le jour de la grande réunion.\nFiche du chapitre quatre (p. 21). Massue : précision +4, puissance +9 dans le livre (66/RU+10/M+16).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-jesus",
+      "nom": "Jésus",
+      "source": "Archange des hommes, barman Chez Régis",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 12,
+        "vo": 14,
+        "pr": 16,
+        "foi": 19
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 102,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Abondance",
+          "r": 12
+        },
+        {
+          "n": "Absorption du mal",
+          "r": 12
+        },
+        {
+          "n": "Aura de pacification",
+          "r": 16
+        },
+        {
+          "n": "Bénédiction : guérison de folies",
+          "r": 12
+        },
+        {
+          "n": "Bénédiction : guérison de maladies",
+          "r": 12
+        },
+        {
+          "n": "Charme",
+          "r": 12
+        },
+        {
+          "n": "Exorcisme",
+          "r": 12
+        },
+        {
+          "n": "Illusions",
+          "r": 18
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Langage universel",
+          "r": 0
+        },
+        {
+          "n": "Lecture d'aura",
+          "r": 18
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 18
+        },
+        {
+          "n": "Lumière céleste",
+          "r": 12
+        },
+        {
+          "n": "Non-détection",
+          "r": 18
+        },
+        {
+          "n": "Polymorphie",
+          "r": 8
+        },
+        {
+          "n": "Télékinésie",
+          "r": 12
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Téléportation",
+          "r": 12
+        }
+      ],
+      "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (tout ce qu'on peut apprendre Chez Régis 9), Séduction 8, Survie 8 ; pouvoir Miracle 2 (propre à Jésus, absent des règles de l'application)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Barman Chez Régis, au courant de tous les ragots ; crétin ou génie, la question reste ouverte. S'intéresse à la survie des troisièmes forces et aide discrètement les PJ. Son arrière-salle donne sur Mythopolis.\nMiracle (spécial, 1 PP) : attire l'attention de Dieu ; transforme n'importe quel jet en 111 sur un test de pouvoir standard, ou exauce une prière précise (difficulté fixée par le MJ).\nPlus tous les pouvoirs gratuits des supérieurs (INS/MV, p. 96).\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-seth",
+      "nom": "Seth",
+      "source": "Fils d'Adam et Ève, psionique, exilé sur Mythopolis",
+      "type": "psi",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 8,
+        "vo": 14,
+        "pr": 12,
+        "foi": 12
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 60,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Trait d'énergie (portée courte, intangible)",
+          "att": 20,
+          "prec": 0,
+          "puis": 10,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de Volonté",
+          "r": 12
+        },
+        {
+          "n": "Boomerang",
+          "r": 12
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Déphasage",
+          "r": 12
+        },
+        {
+          "n": "Déplacement temporel",
+          "r": 16
+        },
+        {
+          "n": "Détection du danger",
+          "r": 12
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 12
+        },
+        {
+          "n": "Lecture d'aura",
+          "r": 12
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Télékinésie",
+          "r": 16
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Téléportation",
+          "r": 12
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 16
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 12
+        }
+      ],
+      "talents": "Corps à corps 6, Défense 6, Discrétion 6, Discussion 8, Savoir occulte 6, Science 6, Séduction 7, Technique 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Après l'échec de son projet de pomme onirique (voir Habeas Corpus), exilé en spectre avec sa sœur ; tous deux ont fini par tomber sur Mythopolis. Vit presque nu dans le jardin d'Eden, main dans la main avec Naama. Trop faible pour retourner sur Terre, il veut renouer avec les conpsis.\nCaractéristiques lues sur le tableau du livre (3 3 4 7 6 6) ; Ch reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-naama",
+      "nom": "Naama",
+      "source": "Fille d'Adam et Ève, psionique, exilée sur Mythopolis",
+      "type": "psi",
+      "car": {
+        "fo": 12,
+        "ag": 12,
+        "pe": 6,
+        "vo": 12,
+        "pr": 12,
+        "foi": 10
+      },
+      "def": 20,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 11,
+      "seuilsFix": [
+        8,
+        17,
+        25,
+        34
+      ],
+      "armes": [
+        {
+          "n": "Arts martiaux",
+          "att": 14,
+          "prec": 0,
+          "puis": 7,
+          "melee": false
+        },
+        {
+          "n": "Trait d'énergie (portée courte, intangible)",
+          "att": 16,
+          "prec": 0,
+          "puis": 8,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption de force",
+          "r": 12
+        },
+        {
+          "n": "Arme exaltée",
+          "r": 12
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 8
+        },
+        {
+          "n": "Aura de courage",
+          "r": 12
+        },
+        {
+          "n": "Cauchemar",
+          "r": 4
+        },
+        {
+          "n": "Champ de force",
+          "r": 16
+        },
+        {
+          "n": "Détection du danger",
+          "r": 12
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 16
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 12
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Télékinésie",
+          "r": 12
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Téléportation",
+          "r": 16
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 12
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 16
+        }
+      ],
+      "talents": "Combat 7 (épées 9), Corps à corps 6, Défense 10, Discrétion 7, Médecine 6, Savoir criminel 5, Savoir d'espion 8, Savoir militaire 5, Séduction 8, Torture 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sœur et compagne d'exil de Seth. Elle n'a pas d'épée sur Mythopolis. Si les PJ arrivent en agresseurs, le couple lance une ou deux attaques puis se fond dans la ville.\nCh reportée en Foi.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-elfes",
+      "nom": "Guerriers elfes boostés à la pomme d'or",
+      "source": "Garde rapprochée de Victor",
+      "type": "fee",
+      "car": {
+        "fo": 8,
+        "ag": 12,
+        "pe": 12,
+        "vo": 8,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 16,
+      "prot": 6,
+      "pfFix": 8,
+      "pp": 40,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Épée longue magique mineure",
+          "att": 20,
+          "prec": 0,
+          "puis": 8,
+          "melee": false
+        },
+        {
+          "n": "Arc long magique mineur (portée longue)",
+          "att": 16,
+          "prec": 0,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 12
+        },
+        {
+          "n": "Détection des créatures invisibles",
+          "r": 12
+        },
+        {
+          "n": "Illusions",
+          "r": 12
+        },
+        {
+          "n": "Peur",
+          "r": 12
+        }
+      ],
+      "talents": "Acrobatie 9, Combat 7 (épées 9), Corps à corps 6, Défense 8, Discrétion 8, Séduction 8, Tir 7 (arcs 9)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Cotte de mailles elfique (6 points de protection). Guérison surnaturelle comme des anges ou démons incarnés (peuvent dépenser des PP pour refermer leurs blessures).\nLe livre ne donne volontairement pas leur nombre : 6 par défaut, à ajuster.\nMêmes valeurs que le « Guerrier elfe » du bestiaire de l'application, avec les caractéristiques du tableau (4 6 6 4 5 3).\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-victor",
+      "nom": "Victor",
+      "source": "Grand dragon rouge, dauphin de Faërie et futur archange du Feu",
+      "type": "monstre",
+      "car": {
+        "fo": 18,
+        "ag": 10,
+        "pe": 10,
+        "vo": 14,
+        "pr": 16,
+        "foi": 17
+      },
+      "def": 16,
+      "prot": 0,
+      "pfFix": 16,
+      "pp": 58,
+      "seuilsFix": [
+        13,
+        26,
+        39,
+        52
+      ],
+      "armes": [
+        {
+          "n": "Dents de sabre",
+          "att": 18,
+          "prec": 0,
+          "puis": 11,
+          "melee": false
+        },
+        {
+          "n": "Grandes cornes",
+          "att": 16,
+          "prec": 0,
+          "puis": 13,
+          "melee": false
+        },
+        {
+          "n": "Queue barbelée",
+          "att": 18,
+          "prec": 0,
+          "puis": 12,
+          "melee": false
+        },
+        {
+          "n": "Jet de flammes (très courte portée, zone, inévitable)",
+          "att": 20,
+          "prec": 0,
+          "puis": 10,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Apparence horrifique",
+          "r": 12
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 16
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 12
+        },
+        {
+          "n": "Charme",
+          "r": 8
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 12
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 16
+        },
+        {
+          "n": "Membre exotique : dents de sabre",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : grandes cornes",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : queue barbelée",
+          "r": 0
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Rêve",
+          "r": 6
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Vol",
+          "r": 16
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 12
+        }
+      ],
+      "talents": "Corps à corps 8, Défense 8 ; tous les autres talents utiles à 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fils d'Aubéron et de France d'Argon, éclos avec des siècles d'avance, élevé par Brand dans la haine de ses parents. Magnifique, imposant, regard terrible, cruauté palpable.\nForme humaine : pas d'Apparence horrifique, d'Armure corporelle, de Membres exotiques, de Sens surdéveloppés ni de Vol. La métamorphose en dragon coûte 10 PP et active ces pouvoirs pour une durée illimitée.\nGuérison surnaturelle (dépense de PP pour refermer ses blessures). Sous forme de dragon, il peut porter plusieurs attaques par seconde.\nLe livre insiste : trichez avec cette fiche (santé, attaques, défenses, immunités) pour que le combat final reste dramatique.\nArmure corporelle 8 non convertie en protection : à appliquer selon le pouvoir.\nAttaques au format du livre (66/RU+X/M+Y) : puissance totale, Force déjà comprise.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-licorne",
+      "nom": "Licorne de Faërie",
+      "source": "Échappée dans le Bois de Boulogne",
+      "type": "monstre",
+      "car": {
+        "fo": 8,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Corne",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 6, Discrétion 4, Course 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pas de caractéristiques dans le livre : valeurs estimées (animal souple, puissant et rapide). Corne : attaque estimée au niveau 4, puissance de coup de poing + Force.\nElle se sert surtout de sa corne pour se défendre ; la capture doit être sportive mais rester discrète.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-michel",
+      "nom": "Michel",
+      "source": "Archange de la Guerre, ancien héros viking de Thor",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Converti en 910, toujours proche des vikings et des troisièmes forces. Parle par phrases courtes, comme à des soldats. Porte un projet de « nouveau Chaudron » (légion étrangère de héros païens au service du Paradis). Accompagné de Rollon, ancien viking et proche collaborateur.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-ange",
+      "nom": "Ange",
+      "source": "Archange des Convertis",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fillette de six ans au Paradis ; après sa première visite à la DTC, elle y apparaît en troublante jeune femme vêtue de noir (seul le regard ne change pas). Prudente sur le projet de Michel, elle sonde la moralité des PJ par des dilemmes.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-alain",
+      "nom": "Alain",
+      "source": "Archange des Cultures",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ennemi de longue date des Égyptiens, soupçonné à tort par Isis et Osiris. Blessé d'être accusé, sincèrement attristé par la disparition d'Héliopolis.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-isis",
+      "nom": "Isis",
+      "source": "Déesse égyptienne incarnée, militante antimondialiste",
+      "type": "paien",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Avec Osiris, seule rescapée d'Héliopolis (ils étaient incarnés sur Terre lors de l'attaque). Convaincue qu'Alain est coupable, elle demande une réunion diplomatique à la DTC.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-osiris",
+      "nom": "Osiris",
+      "source": "Dieu égyptien incarné, militant antimondialiste",
+      "type": "paien",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Compagnon d'Isis ; même histoire, même rancune envers Alain.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-titania",
+      "nom": "Titania",
+      "source": "Reine de Faërie en exil",
+      "type": "fee",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Témoin de la dévoration d'Aubéron par Victor sous forme de dragon. Exilée aux États-Unis, elle revient en France le jour de la réunion pour témoigner.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-cuisinier",
+      "nom": "« Le cuisinier » (Haagenti)",
+      "source": "Prince démon de la Gourmandise, incognito dans le camp de Victor",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gros bonhomme loufoque qui chante à tue-tête en préparant une cuisine remarquable. En réalité Haagenti : c'est lui qui a rendu Victor insatiable, pour gagner un pari contre Baal. Les PJ ne doivent pas l'apprendre pendant la campagne (révélation finale facultative).\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-manolar",
+      "nom": "Manolar",
+      "source": "Proche d'Aubéron, commanditaire de la mission licorne",
+      "type": "fee",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Veut récupérer la licorne avant que des humains ne comprennent ce qu'elle est. Sait seulement qu'elle a été perdue de vue dans Paris.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-romain",
+      "nom": "Romain Journapassufipourlabatir",
+      "source": "Mage urbain clochard",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Puissant mais complètement à l'ouest : vit des poubelles, délire sur la ville légendaire introuvable. Impossible d'en tirer une information claire.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-malachite",
+      "nom": "Malachite N'Prophidjamé",
+      "source": "Mage urbain",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Présentable, sensé, moins puissant que Romain. Connaît la légende de Mythopolis et cherche une copie des tablettes de Raämalû (piste qui mène à la DTC, voir Memento Flatula ; la copie est détruite à la fin de ce scénario). Plus tard, il mène les PJ à Chez Régis sans le comprendre.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    },
+    {
+      "id": "type-pa0-carre",
+      "nom": "Pierre Carré",
+      "source": "Chef du cercle de druides de la Serpe d'Or",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Riche, peu courageux : paie la DTC pour aller voir pourquoi les dieux d'Avalon ne répondent plus. Le cercle compte surtout des fumeurs de gui et un ou deux vrais druides.\nPas de caractéristiques dans le livre : fiche minimale, à compléter si un affrontement survient.\nSource : Les Petites Apocalypses, « Une apocalypse, ce n'est pas la fin du monde » (campagne), p. 24-43."
+    }
+  ],
+  "memoire": []
+}

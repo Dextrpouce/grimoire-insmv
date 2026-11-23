@@ -1,0 +1,1979 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-6-the-roof-is-on-fire",
+      "nom": "Fire and Ice (scénario 6) – The roof is on fire !",
+      "resume": "De bello civili (INS). Après un étrange rendez-vous manqué avec Gilbert chez Régis, les PJ sont envoyés par un prétendu agent d'Andromalius en Provence pour enquêter sur Julie Delahaye, démon de Crocell soupçonnée d'avoir tué quatre collègues, puis obtenir ses aveux filmés. En réalité, le contact et Julie servent Belial : les PJ fabriquent sans le savoir la preuve d'un complot de Crocell avec les anges fascistes de la Terre Creuse, prétexte à la guerre entre les deux princes.",
+      "notes": "Source : Fire and Ice, « The roof is on fire ! », p. 103-112. Scénario paranoïaque : personne n'est fiable.\nDéroulement : prologue (meurtres en Savoie) → Chez Régis (Gilbert absent, Frozen) → CdT puis fonderie (mission) → villa piégée en Provence → enquête sur Julie, FX, la Terre Creuse et Associates 88 → gagner la confiance de Julie (élimination de Prôkk) → soirée-massacre filmée → retour à Paris et désillusion.\n\nRécompenses : le livre n'en précise pas dans ces pages (les récompenses promises par le contact ne viennent jamais) ; voir le cadre de fin de partie sur la loyauté envers Belial ou Crocell.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch de Helmut reporté en Foi). Helmut, sorcier, est une fiche humaine (pas de type sorcier). Sieg et Heil : type renégat angélique. PNJ sans caractéristiques (contact, Frozen, démons de Belial, Gaspard, humains de la Terre Creuse, Gilbert, Aurélie, Monsieur Fabien) : fiches minimales à compléter.",
+      "scenes": [
+        {
+          "id": "fi6-sc-prologue",
+          "nom": "0. Prologue : la fin des vacances",
+          "lieu": "Station de ski en Savoie – une semaine plus tôt (texte d'ambiance)",
+          "notes": "À lire ou résumer : depuis des siècles, quatre démons de Crocell (Frimas, grade 3 et supérieur direct, Sérac, Kalt et Inlandsis) se retrouvent chaque hiver en Savoie. Cette année, Frimas amène une jeune fille rencontrée en mission dont il est amoureux. Inlandsis s'en méfie, la provoque : la fille la frappe avec une force surhumaine, carbonise les trois démons d'un geste, puis l'achève d'une balle en lui annonçant que « c'est la guerre ».\nC'est Julie Delahaye. Les PJ n'en savent rien ; le MJ s'en servira pour la mise en scène et la paranoïa.\n\nTon du scénario : les forces du Mal sont un nid de crabes ; ambiance oppressante, personne n'est digne de confiance.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi6-sc-regis",
+          "nom": "1. Mon ami Monsieur Fabien – Chez Régis",
+          "lieu": "Chez Régis, le bar de Jésus – le soir",
+          "notes": "Un soir, Gilbert, paniqué, appelle un PJ : rendez-vous dans une heure chez Régis pour parler de Monsieur Fabien, qu'il trouve « différent ». Il insiste mais refuse d'en dire plus au téléphone.\nRappel : Chez Régis est le bar tenu par Jésus, qui apparaît n'importe où quand on réclame une bière fraîche ; on ne peut pas s'y battre.\n\nAmbiance : une douzaine d'anges et de démons, concours de slam d'un démon de Morax désespéré par le manque de candidats (pousser les PJ sur scène). Gilbert ne vient pas et ne répond plus. Un grand blond ténébreux (un ange) déclame un texte mystique.\nFrozen, voisin de table, se fait chahuter par trois démons de Belial qui menacent Crocell et ses démons ; Jésus menace de les jeter dehors. Frozen vient boire avec les PJ, parle de Belial qui prépare une croisade contre le prince du froid, puis embraye lourdement sur l'affaire « Raymond gèle les camions », les humains à pouvoirs, les secrets de Crocell.\nVérité : Frozen est un infiltré de Belial, toute l'altercation est une mise en scène pour le rendre crédible. Le faire paraître louche. Il prétexte un rendez-vous urgent et s'éclipse. Atmosphère morbide.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi6-gilbert-1",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Paniqué, appelle les PJ pour parler de Monsieur Fabien (qu'il trouve « différent »), puis leur pose un lapin. Le lendemain : prétend une panne d'oreiller et une fausse alerte (il croyait que des anges voulaient éliminer Monsieur Fabien) et refuse d'en dire plus.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi6-gilbert"
+            },
+            {
+              "id": "fi6-frozen-2",
+              "nom": "« Frozen »",
+              "source": "Infiltré de Belial se prétendant démon de Crocell",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Maigrichon aux cheveux longs, tee-shirt Miko. Se fait chahuter par trois démons de Belial (mise en scène), puis vient boire avec les PJ et les sonde maladroitement sur l'affaire « Raymond gèle les camions », les humains à pouvoirs et les manigances de Crocell. Louche à souhait ; s'éclipse vite.\nPas de caractéristiques dans le livre.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-frozen"
+            },
+            {
+              "id": "fi6-voyous-belial-3",
+              "nom": "Démons de Belial (gros bras de chez Régis)",
+              "source": "Complices de Frozen",
+              "type": "demon",
+              "qty": 3,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trois types sortis d'un mauvais film de mafieux, menacent Frozen, Crocell et ses démons. Jésus les menace de les mettre dehors : pas de bagarre possible à Chez Régis (lieu « off limit »).\nPas de caractéristiques dans le livre : fiche minimale.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-voyous-belial"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-frozen",
+              "q": "Que lâchent les PJ à Frozen ?",
+              "opts": [
+                {
+                  "t": "Ils parlent de Raymond et des humains à pouvoirs",
+                  "suite": "Belial dispose de leurs confidences : l'existence des Flocons de sang lui est confirmée."
+                },
+                {
+                  "t": "Ils restent muets ou le démasquent",
+                  "suite": "Frozen file au plus vite ; les PJ ont un premier indice que quelqu'un s'intéresse à eux."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-cdt",
+          "nom": "2. Back to le CdT (air connu)",
+          "lieu": "Centre de Tri, puis fonderie de la banlieue nord – lendemain matin et midi",
+          "notes": "Au CdT (de leur propre chef ou convoqués par Aurélie à 10 h), Gilbert invoque une panne d'oreiller et affirme que c'était une fausse alerte : il croyait les anges décidés à éliminer Monsieur Fabien après l'affaire précédente. Son histoire ne tient pas debout et il refuse d'en parler. Aurélie interrompt : les PJ sont convoqués d'urgence par « les services d'Andromalius » à midi, dans une aciérie de la banlieue nord ; demander Raoul de la part de Dédé.\n\nFonderie dickensienne : Raoul, contremaître, les mène entre les bacs de métal en fusion à un local technique miteux. Une demi-heure d'attente, puis arrive le « contact » (complet noir, cravate rouge), qui fait flasher son aura, pose les questions et n'en accepte aucune.\nMission : enveloppe kraft avec la photo de Julie Delahaye, « capitaine du blizzard ». Elle est soupçonnée d'avoir tué son supérieur (Frimas, grade 3 de Crocell) et trois autres démons pendant leurs vacances, sans autre preuve que sa survie.\n• Phase 1 : enquêter discrètement sur ses activités et sa déviance éventuelle.\n• Phase 2 : gagner sa confiance en se faisant passer pour des alliés, lui faire avouer meurtres et projets subversifs, preuve matérielle (vidéo idéale).\n• Sécurité absolue : aucun contact avec leurs relations habituelles ni avec les forces du Mal locales.\n• Billets d'avion pour Avignon, numéro de téléphone (rapport quotidien à 19 h), adresse et clés d'une villa.\n\nVérité (« Où est l'arnaque ? ») : le contact sert Belial, et Julie aussi. Belial veut faire croire qu'elle a éliminé des démons intègres prêts à dénoncer Crocell et ses Flocons de sang, et qu'elle est l'exécutrice d'un Crocell allié à des anges de la Terre Creuse : prétexte à sa guerre contre son frère. Le rapport sur Raymond a fuité vers un démon de Belial. Belial sous-estime le réseau de Crocell. Les PJ sont observés en permanence.\nUn PJ de Crocell devrait sentir le piège : voir le cadre de fin de partie sur la loyauté (Belial ou Crocell).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi6-gilbert-4",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Paniqué, appelle les PJ pour parler de Monsieur Fabien (qu'il trouve « différent »), puis leur pose un lapin. Le lendemain : prétend une panne d'oreiller et une fausse alerte (il croyait que des anges voulaient éliminer Monsieur Fabien) et refuse d'en dire plus.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi6-gilbert"
+            },
+            {
+              "id": "fi6-aurelie-5",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Coupe court aux explications de Gilbert et transmet la convocation « des services d'Andromalius ». A été contactée chez elle par un démon se disant d'Andromalius (en réalité un ami du Daemonis Maleficum, serviteur de Belial ; elle le sait et se taira).\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi6-aurelie"
+            },
+            {
+              "id": "fi6-contact-6",
+              "nom": "Le « contact » (pète-sec de la fonderie)",
+              "source": "Démon de Belial se faisant passer pour un agent d'Andromalius",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaire en costume et chemise noirs, cravate rouge, petites lunettes cerclées de fer ; antipathique et spartiate. Joue au chat et à la souris, pose les questions, ne répond à rien. Rapport quotidien exigé à 19 h.\nMonte toute l'opération pour Belial : il veut des « aveux » filmés prouvant que Crocell complote. Fait surveiller les PJ, les tuyaute puis disparaît après la mission (jamais revu à la fonderie).\nPas de caractéristiques dans le livre : fiche minimale à compléter si les PJ le cherchent.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-contact"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-fabien",
+              "q": "Monsieur Fabien appelle : que font les PJ ?",
+              "opts": [
+                {
+                  "t": "Ils respectent la consigne et ne répondent pas",
+                  "suite": "Personne ne vérifie la mission ; le piège se referme normalement."
+                },
+                {
+                  "t": "Ils répondent malgré l'interdiction",
+                  "suite": "Si les PJ ont encore sa confiance, Monsieur Fabien enquête de son côté : il découvrira qu'aucune mission officielle n'existe. Désobéissance que le contact (qui les surveille) peut remarquer."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-villa",
+          "nom": "3. Stalag-en-Provence : la villa",
+          "lieu": "Ville provençale à municipalité d'extrême droite (près d'Avignon) – villa des forces du Mal",
+          "notes": "La ville : maire d'extrême droite réélu, programme municipal à l'avenant ; cité fondée par une légion romaine, théâtre antique avec statue d'Auguste, arc de triomphe, festival d'art théâtral déclinant depuis le virage à droite. Pas de troisième force à craindre ici.\n\nLa villa, à quelques kilomètres : piscine, alarme (code 666), tout le confort. Sur le miroir du salon, une enveloppe : clé et indications pour une porte dérobée sous l'escalier menant à un réduit derrière la glace sans tain (place pour caméra sur trépied et micro). Les PJ devraient se croire bien servis.\nPiège : toute la villa est truffée de caméras et micros intégrés dans la construction. Pour les détecter, il faut les chercher explicitement et réussir un test de Perception incroyable (une seule tentative par personnage).\nSur la table du salon : quelques milliers d'euros en petites coupures et un dossier sur Julie (adresse, travail à la mairie, affectation officielle d'agent de terrain sans équipe, adresse de son supérieur).\n\nMaison de Frimas (Jacob Stern dans le civil) : grande bâtisse impersonnelle mais de bon goût ; penser à couper l'alarme, sinon des vigiles nerveux de la gâchette débarquent. Aucun document de travail. Personne n'a remarqué sa disparition (Crocell est occupé à rattraper ses Flocons de sang).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-frimas",
+              "q": "Les PJ visitent la maison de Frimas : l'alarme ?",
+              "opts": [
+                {
+                  "t": "Ils la neutralisent",
+                  "suite": "Visite tranquille : rien d'exploitable, personne ne s'est inquiété de Frimas."
+                },
+                {
+                  "t": "Ils la déclenchent",
+                  "suite": "Une équipe de vigiles armés et nerveux arrive : fuite ou affrontement discret (fiches de vigiles à improviser)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-enquete",
+          "nom": "4. La jeune fille et l'Abwehr : enquête",
+          "lieu": "Mairie, presbytère de FX, siège d'A88 à Marseille, villa de « Marcel Dumont » – quelques jours",
+          "notes": "Julie : conseillère de l'adjoint à la culture, jugée efficace et charmante ; prépare un festival sur l'identité romaine et traditionnelle de la ville, placé sous le patronage du Vatican pour plaire à l'électorat catholique.\nElle fréquente le père François-Xavier de Mollebranche, curé intégriste de vieille noblesse : en réalité ange de Joseph lié à la Terre Creuse. Facile à renseigner (prosélyte, défenseur de « l'ordre moral et de la race blanche », finance associations et mairie). Très paranoïaque s'ils le filent.\n• Lundi soir : messe angélique chez lui pour un ange de Laurent, deux de Daniel, un de Walther (danger si les PJ se font repérer).\n• Mercredi soir : réunion locale de la Terre Creuse : Julie, Helmut (sorcier) et ses deux chiens renégats, deux employés de mairie, un commissaire, un cousin du maire.\nLes humains, interrogés, avouent vite : société secrète voulant unir l'extrême droite mondiale. FX garde dans un coffre rapports, comptes rendus (ratonnades, collecte de fonds, lobbying anti-mosquée) et factures d'Associates 88.\n\nAssociates 88 (A88) : officine de « conseil en sécurité » très à droite. Siège fictif dans un centre de domiciliation à Marseille ; un commercial mercenaire fait signer les contrats. Le PDG « Marcel Dumont » n'existe pas ; A88 paie le loyer d'un studio voisin de la villa des PJ. Un cambriolage révèle que A88 appartient à Hyperborea Financing (structure financière de la Terre Creuse) et les devis liés aux factures de FX (audit d'une pétrochimie du neveu d'un élu, audit de la ville payé par FX, diagnostics privés).\nC'est Julie qui gère A88 pour Belial ; on peut la voir y venir. Elle y a semé des pistes dans la corbeille de l'ordinateur : dossiers sur les quatre démons de Crocell tués, liste d'humains de la région dotés de pouvoirs de froid (dont Gaspard Tullier en ville), et un vieux mail où elle annonce vouloir éliminer les « nuisibles » fidèles à un combat stupide avant de lancer la grande offensive contre « B. ». (Belial a réellement fourni ces pouvoirs à ces humains, après une visite où Julie s'est présentée comme servante du prince du froid.)\nGaspard, menacé, se met à table et dénonce Julie.\n\nFin de phase : enquête trop facile ; le contact félicite les PJ, promet de grandes récompenses et ordonne la phase 2.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi6-julie-7",
+              "nom": "Julie Delahaye",
+              "source": "Démon de Belial, grade 2 (infiltrée chez Crocell)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 5, Séduction 5, Défense 3, James Bond girl 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, mince, très jolie ; cheveux châtains à la garçonne, yeux bleus virant au vert. Look de petite catholique sage, maquillage un peu trop appuyé. Officiellement « capitaine du blizzard », agent de terrain de Crocell sans équipe, conseillère de l'adjoint à la culture à la mairie.\nInfiltrée chez Crocell depuis cinq ans pour Belial ; très intelligente, manipulatrice et franchement psychopathe : elle a tué ses quatre camarades de vacances (Frimas, Sérac, Kalt, Inlandsis). Gère en sous-main la société Associates 88 pour Belial.\nAvertissement sans frais : tueuse psychopathe. Acculée, elle encaisse un ou deux coups puis se téléporte pour simuler sa mort.\nEstimations : le livre ne donne pas de talent de tir ; revolver (vu dans le prologue) à att 2 par défaut (son arme principale reste ses pouvoirs).\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-julie"
+            },
+            {
+              "id": "fi6-fx-8",
+              "nom": "Père François-Xavier de Mollebranche",
+              "source": "Ange de Joseph, grade 1 (Terre Creuse)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 7
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Torture",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4, Aisance sociale 3, Conspuer le complot judéo-bolchévico-maçonnique 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Curé quinquagénaire sec et austère, toujours en noir, issu d'une vieille lignée noble très influente dans la région. Intégriste assumé, finance l'extrême droite locale et la mairie. Membre de la Terre Creuse sans être officiellement renégat ; prêt à s'allier à des sorciers et à des renégats.\nTrès paranoïaque (difficile à filer), peu intelligent mais extrêmement opiniâtre : se bat jusqu'à la mort. Avertissement sans frais : paranoïaque.\nLundi soir : messe pour les anges de la région partageant ses idées (un Laurent, deux Daniel, un Walther). Mercredi soir : réunion locale de la Terre Creuse chez lui. Coffre-fort : rapports, comptes rendus d'actions, factures d'Associates 88.\nEstimations : arme non précisée, Combat 4 appliqué aux poings ; Défense non donnée : 2.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-fx"
+            },
+            {
+              "id": "fi6-helmut-9",
+              "nom": "Helmut",
+              "source": "Sorcier (Terre Creuse)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Langue (français), Discussion 3, Médecine 4, Dressage 4, Ésotérisme de pacotille 5\nSorcellerie : Haute sorcellerie 3, Pentacle pour ange 4, Pentacle pour démon 4, Invocation d'un ange 5, Invocation d'un démon 5, Demande à un ange 3, Demande à un démon 4, Contrôle d'un ange 3, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts annexes : Vrai nom, Protection.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gros bonhomme chauve, petites lunettes cerclées de fer, transpire beaucoup, accent bavarois pénible. Passions : chiens de combat, sorcellerie, avènement du IVe Reich.\nEn combat : lâche ses chiens (Sieg et Heil), tente un sort de protection puis fuit le plus loin possible.\nPas de type « sorcier » dans l'application : fiche humaine, sorcellerie dans les talents.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-helmut"
+            },
+            {
+              "id": "fi6-terre-creuse-10",
+              "nom": "Membres humains de la Terre Creuse",
+              "source": "Employés de mairie, commissaire, cousin du maire",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Deux employés administratifs de la mairie, un commissaire de police, un cousin du maire. Ignorent tout des anges et démons ; croient appartenir à une société secrète unifiant l'extrême droite mondiale. Parlent facilement sous la pression (ou les coups).\nPas de caractéristiques dans le livre : fiche humaine moyenne.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-terre-creuse"
+            },
+            {
+              "id": "fi6-gaspard-11",
+              "nom": "Gaspard Tullier",
+              "source": "Petit proxénète local (fausse piste)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Figure sur la liste « d'humains à pouvoirs de froid » laissée par Julie dans la corbeille de son ordinateur. Petit maquereau minable : menacé, il se met à table aussitôt et dénonce Julie.\nPas de caractéristiques dans le livre.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-gaspard"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-piste",
+              "q": "Quelle piste les PJ suivent-ils en priorité ?",
+              "opts": [
+                {
+                  "t": "Filer FX et ses réunions",
+                  "suite": "Découverte de la Terre Creuse ; risque de se faire repérer par FX (paranoïaque) ou les anges du lundi."
+                },
+                {
+                  "t": "Cambrioler Associates 88",
+                  "suite": "Lien avec Hyperborea Financing et les pistes « plantées » par Julie (liste des humains à pouvoirs de froid, mail sur « B. »)."
+                },
+                {
+                  "t": "Faire parler Gaspard Tullier ou un humain de la Terre Creuse",
+                  "suite": "Aveux rapides : Gaspard dénonce Julie ; les humains décrivent la société secrète et le coffre de FX."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-confiance",
+          "nom": "5. Frankreich über alles : gagner la confiance de Julie",
+          "lieu": "Ville et villa des PJ",
+          "notes": "Partie très ouverte : improviser selon les initiatives des joueurs. Julie se montre méfiante, puis teste les PJ en les faisant parler de Crocell, de Belial et des forces du Mal.\nQuand elle semble prête à céder, le contact « aide » : il tuyaute anonymement Prôkk, vrai démon d'Andromalius fraîchement incarné, censé n'être qu'un familier. Julie vient se réfugier chez les PJ, avoue avoir des choses graves à se reprocher qui menacent Crocell ; elle s'est laissée filer exprès. Prôkk déboule dans le salon en accusant tout le monde de trahison : les PJ doivent le faire disparaître pour gagner la confiance de Julie (il ne tient guère plus d'un tour).\n\nAveux de Julie (devant les caméras de la villa) : Crocell veut renverser Belial, a levé une armée mondiale d'humains à pouvoirs et attend son heure ; elle s'est alliée aux anges d'une organisation secrète fasciste interdite par le Bien, que Crocell noyaute pour asseoir sa suprématie en Enfer. Elle propose de leur présenter ses amis le soir même, vers 20 h.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi6-julie-12",
+              "nom": "Julie Delahaye",
+              "source": "Démon de Belial, grade 2 (infiltrée chez Crocell)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 5, Séduction 5, Défense 3, James Bond girl 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, mince, très jolie ; cheveux châtains à la garçonne, yeux bleus virant au vert. Look de petite catholique sage, maquillage un peu trop appuyé. Officiellement « capitaine du blizzard », agent de terrain de Crocell sans équipe, conseillère de l'adjoint à la culture à la mairie.\nInfiltrée chez Crocell depuis cinq ans pour Belial ; très intelligente, manipulatrice et franchement psychopathe : elle a tué ses quatre camarades de vacances (Frimas, Sérac, Kalt, Inlandsis). Gère en sous-main la société Associates 88 pour Belial.\nAvertissement sans frais : tueuse psychopathe. Acculée, elle encaisse un ou deux coups puis se téléporte pour simuler sa mort.\nEstimations : le livre ne donne pas de talent de tir ; revolver (vu dans le prologue) à att 2 par défaut (son arme principale reste ses pouvoirs).\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-julie"
+            },
+            {
+              "id": "fi6-prokk-13",
+              "nom": "Prôkk",
+              "source": "Démon d'Andromalius, grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 9,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Humanité",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 2
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 2
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                }
+              ],
+              "talents": "Culture générale 3 (droit 5), Discussion 5, Baratin 4, Voir le Bien partout 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Allure d'étudiant en droit modèle (veste de chasse brune, mocassins cirés, pantalon à pli), crâne rasé sous un chapeau pour cacher la repousse de ses cheveux bleu cobalt (avertissement sans frais). Fraîchement incarné, vrai serviteur d'Andromalius tuyauté anonymement par le faux contact.\nNe devrait pas tenir plus d'un tour face aux PJ. Défense non donnée : 2.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-prokk"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-prokk",
+              "q": "Que font les PJ de Prôkk ?",
+              "opts": [
+                {
+                  "t": "Ils l'éliminent",
+                  "suite": "Julie leur fait confiance et passe aux aveux ; un vrai serviteur d'Andromalius a disparu (conséquences possibles plus tard)."
+                },
+                {
+                  "t": "Ils l'épargnent ou le protègent",
+                  "suite": "Julie se méfie, la phase 2 se complique ; Prôkk peut témoigner plus tard auprès d'Andromalius."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-soiree",
+          "nom": "6. La soirée chez les PJ",
+          "lieu": "Villa des PJ – vers 20 h",
+          "notes": "Ordre du contact : faire parler les invités au maximum devant les caméras, puis éliminer tout le monde de façon à devoir utiliser leurs pouvoirs à l'image.\nInvités : FX, Helmut et ses deux chiens (Sieg hurle à la mort, Heil souille les tapis). FX se bat jusqu'à la mort ; Helmut lâche les chiens, lance un sort de protection et fuit.\nQuand le combat s'engage, Julie simule sa mort grâce à Téléportation et s'éclipse. Elle est très dangereuse : elle peut prendre trop de plaisir à tuer et aller confier à FX l'existence des PJ ; acculée, elle encaisse un ou deux coups puis se téléporte.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi6-julie-14",
+              "nom": "Julie Delahaye",
+              "source": "Démon de Belial, grade 2 (infiltrée chez Crocell)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 23,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 5, Séduction 5, Défense 3, James Bond girl 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, mince, très jolie ; cheveux châtains à la garçonne, yeux bleus virant au vert. Look de petite catholique sage, maquillage un peu trop appuyé. Officiellement « capitaine du blizzard », agent de terrain de Crocell sans équipe, conseillère de l'adjoint à la culture à la mairie.\nInfiltrée chez Crocell depuis cinq ans pour Belial ; très intelligente, manipulatrice et franchement psychopathe : elle a tué ses quatre camarades de vacances (Frimas, Sérac, Kalt, Inlandsis). Gère en sous-main la société Associates 88 pour Belial.\nAvertissement sans frais : tueuse psychopathe. Acculée, elle encaisse un ou deux coups puis se téléporte pour simuler sa mort.\nEstimations : le livre ne donne pas de talent de tir ; revolver (vu dans le prologue) à att 2 par défaut (son arme principale reste ses pouvoirs).\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-julie"
+            },
+            {
+              "id": "fi6-fx-15",
+              "nom": "Père François-Xavier de Mollebranche",
+              "source": "Ange de Joseph, grade 1 (Terre Creuse)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 7
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Torture",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4, Aisance sociale 3, Conspuer le complot judéo-bolchévico-maçonnique 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Curé quinquagénaire sec et austère, toujours en noir, issu d'une vieille lignée noble très influente dans la région. Intégriste assumé, finance l'extrême droite locale et la mairie. Membre de la Terre Creuse sans être officiellement renégat ; prêt à s'allier à des sorciers et à des renégats.\nTrès paranoïaque (difficile à filer), peu intelligent mais extrêmement opiniâtre : se bat jusqu'à la mort. Avertissement sans frais : paranoïaque.\nLundi soir : messe pour les anges de la région partageant ses idées (un Laurent, deux Daniel, un Walther). Mercredi soir : réunion locale de la Terre Creuse chez lui. Coffre-fort : rapports, comptes rendus d'actions, factures d'Associates 88.\nEstimations : arme non précisée, Combat 4 appliqué aux poings ; Défense non donnée : 2.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-fx"
+            },
+            {
+              "id": "fi6-helmut-16",
+              "nom": "Helmut",
+              "source": "Sorcier (Terre Creuse)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Langue (français), Discussion 3, Médecine 4, Dressage 4, Ésotérisme de pacotille 5\nSorcellerie : Haute sorcellerie 3, Pentacle pour ange 4, Pentacle pour démon 4, Invocation d'un ange 5, Invocation d'un démon 5, Demande à un ange 3, Demande à un démon 4, Contrôle d'un ange 3, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts annexes : Vrai nom, Protection.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gros bonhomme chauve, petites lunettes cerclées de fer, transpire beaucoup, accent bavarois pénible. Passions : chiens de combat, sorcellerie, avènement du IVe Reich.\nEn combat : lâche ses chiens (Sieg et Heil), tente un sort de protection puis fuit le plus loin possible.\nPas de type « sorcier » dans l'application : fiche humaine, sorcellerie dans les talents.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-helmut"
+            },
+            {
+              "id": "fi6-sieg-17",
+              "nom": "Sieg",
+              "source": "Clébard renégat de Daniel, grade 0",
+              "type": "renegat_a",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Morsure",
+                  "att": 12,
+                  "prec": -1,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Décharge électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 6, Athlétisme 5, Défense 5, Aboyer comme un cinglé 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Anges de Daniel passés à la Terre Creuse ; invoqués par Helmut pour échapper à la dissection de Joseph, ils n'ont pu s'incarner que dans ses deux rottweilers. Énormes molosses noirs aux mâchoires impressionnantes.\nAvertissement sans frais : yeux blancs. Hurle à la mort.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-sieg"
+            },
+            {
+              "id": "fi6-heil-18",
+              "nom": "Heil",
+              "source": "Clébard renégat de Daniel, grade 0",
+              "type": "renegat_a",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 9,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Morsure",
+                  "att": 12,
+                  "prec": -1,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Détection du danger",
+                  "r": 2
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'eau bénite",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 6, Athlétisme 5, Défense 5, Chier dans la maison 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Anges de Daniel passés à la Terre Creuse ; invoqués par Helmut pour échapper à la dissection de Joseph, ils n'ont pu s'incarner que dans ses deux rottweilers. Énormes molosses noirs aux mâchoires impressionnantes.\nAvertissement sans frais : colérique. Souille les tapis.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112.",
+              "typeId": "type-fi6-heil"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi6-ch-soiree",
+              "q": "Comment tourne la soirée ?",
+              "opts": [
+                {
+                  "t": "Les PJ exécutent les ordres et tuent les invités",
+                  "suite": "Vidéo complète : pouvoirs démoniaques, ange et renégats tués à l'écran. Julie « meurt » (téléportée)."
+                },
+                {
+                  "t": "Les PJ refusent ou flairent le piège",
+                  "suite": "Pas de vidéo exploitable ; le contact menace et Julie disparaît quand même. Monsieur Fabien peut devenir un allié."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi6-sc-epilogue",
+          "nom": "7. Épilogue : retour à Paris",
+          "lieu": "Aéroport d'Avignon, puis Paris",
+          "notes": "Les PJ déposent la vidéo dans une consigne de l'aéroport d'Avignon. Le contact les félicite au téléphone et promet des récompenses qui ne viendront jamais (mission non officielle).\nIntrouvable ensuite : jamais revenu à la fonderie, inconnu de tous. Monsieur Fabien, sollicité, vérifie : aucune mission d'Andromalius ne leur a été adressée. Aurélie ne dira rien (elle sait qu'il s'agit d'un serviteur de Belial, ami du Daemonis Maleficum).\nLes PJ doivent se sentir floués… à raison : ils viennent de fournir à Belial ses preuves contre Crocell. Voir le cadre de fin de partie sur la gestion des PJ fidèles à Belial ou à Crocell.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi6-fabien-19",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ignore tout de l'opération ; tente de joindre les PJ à plusieurs reprises. S'ils lui répondent (en désobéissant), il enquête de son côté — à condition qu'ils lui fassent encore confiance. Après coup, peut confirmer qu'aucune mission officielle d'Andromalius ne leur a été adressée.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi6-fabien"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795281257083,
+      "updatedAt": 1795281257083
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi6-julie",
+      "nom": "Julie Delahaye",
+      "source": "Démon de Belial, grade 2 (infiltrée chez Crocell)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 8,
+        "pr": 8,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 23,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Revolver petit calibre",
+          "att": 2,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Incendie",
+          "r": 6
+        },
+        {
+          "n": "Éclats de glace",
+          "r": 6
+        },
+        {
+          "n": "Invisibilité",
+          "r": 4
+        },
+        {
+          "n": "Non-détection",
+          "r": 4
+        },
+        {
+          "n": "Protection de l'âme",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 5, Séduction 5, Défense 3, James Bond girl 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande, mince, très jolie ; cheveux châtains à la garçonne, yeux bleus virant au vert. Look de petite catholique sage, maquillage un peu trop appuyé. Officiellement « capitaine du blizzard », agent de terrain de Crocell sans équipe, conseillère de l'adjoint à la culture à la mairie.\nInfiltrée chez Crocell depuis cinq ans pour Belial ; très intelligente, manipulatrice et franchement psychopathe : elle a tué ses quatre camarades de vacances (Frimas, Sérac, Kalt, Inlandsis). Gère en sous-main la société Associates 88 pour Belial.\nAvertissement sans frais : tueuse psychopathe. Acculée, elle encaisse un ou deux coups puis se téléporte pour simuler sa mort.\nEstimations : le livre ne donne pas de talent de tir ; revolver (vu dans le prologue) à att 2 par défaut (son arme principale reste ses pouvoirs).\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-prokk",
+      "nom": "Prôkk",
+      "source": "Démon d'Andromalius, grade 0",
+      "type": "demon",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 9,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Humanité",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 2
+        },
+        {
+          "n": "Télékinésie",
+          "r": 2
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        }
+      ],
+      "talents": "Culture générale 3 (droit 5), Discussion 5, Baratin 4, Voir le Bien partout 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Allure d'étudiant en droit modèle (veste de chasse brune, mocassins cirés, pantalon à pli), crâne rasé sous un chapeau pour cacher la repousse de ses cheveux bleu cobalt (avertissement sans frais). Fraîchement incarné, vrai serviteur d'Andromalius tuyauté anonymement par le faux contact.\nNe devrait pas tenir plus d'un tour face aux PJ. Défense non donnée : 2.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-fx",
+      "nom": "Père François-Xavier de Mollebranche",
+      "source": "Ange de Joseph, grade 1 (Terre Creuse)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 7
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Torture",
+          "r": 6
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 4, Aisance sociale 3, Conspuer le complot judéo-bolchévico-maçonnique 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Curé quinquagénaire sec et austère, toujours en noir, issu d'une vieille lignée noble très influente dans la région. Intégriste assumé, finance l'extrême droite locale et la mairie. Membre de la Terre Creuse sans être officiellement renégat ; prêt à s'allier à des sorciers et à des renégats.\nTrès paranoïaque (difficile à filer), peu intelligent mais extrêmement opiniâtre : se bat jusqu'à la mort. Avertissement sans frais : paranoïaque.\nLundi soir : messe pour les anges de la région partageant ses idées (un Laurent, deux Daniel, un Walther). Mercredi soir : réunion locale de la Terre Creuse chez lui. Coffre-fort : rapports, comptes rendus d'actions, factures d'Associates 88.\nEstimations : arme non précisée, Combat 4 appliqué aux poings ; Défense non donnée : 2.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-helmut",
+      "nom": "Helmut",
+      "source": "Sorcier (Terre Creuse)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Langue (français), Discussion 3, Médecine 4, Dressage 4, Ésotérisme de pacotille 5\nSorcellerie : Haute sorcellerie 3, Pentacle pour ange 4, Pentacle pour démon 4, Invocation d'un ange 5, Invocation d'un démon 5, Demande à un ange 3, Demande à un démon 4, Contrôle d'un ange 3, Contrôle d'un démon 4, Basse sorcellerie 3. Sorts annexes : Vrai nom, Protection.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gros bonhomme chauve, petites lunettes cerclées de fer, transpire beaucoup, accent bavarois pénible. Passions : chiens de combat, sorcellerie, avènement du IVe Reich.\nEn combat : lâche ses chiens (Sieg et Heil), tente un sort de protection puis fuit le plus loin possible.\nPas de type « sorcier » dans l'application : fiche humaine, sorcellerie dans les talents.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-sieg",
+      "nom": "Sieg",
+      "source": "Clébard renégat de Daniel, grade 0",
+      "type": "renegat_a",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 9,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Morsure",
+          "att": 12,
+          "prec": -1,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Décharge électrique",
+          "r": 2
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 6, Athlétisme 5, Défense 5, Aboyer comme un cinglé 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Anges de Daniel passés à la Terre Creuse ; invoqués par Helmut pour échapper à la dissection de Joseph, ils n'ont pu s'incarner que dans ses deux rottweilers. Énormes molosses noirs aux mâchoires impressionnantes.\nAvertissement sans frais : yeux blancs. Hurle à la mort.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-heil",
+      "nom": "Heil",
+      "source": "Clébard renégat de Daniel, grade 0",
+      "type": "renegat_a",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 9,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Morsure",
+          "att": 12,
+          "prec": -1,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Détection du danger",
+          "r": 2
+        },
+        {
+          "n": "Déphasage",
+          "r": 4
+        },
+        {
+          "n": "Jet d'eau bénite",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 6, Athlétisme 5, Défense 5, Chier dans la maison 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Anges de Daniel passés à la Terre Creuse ; invoqués par Helmut pour échapper à la dissection de Joseph, ils n'ont pu s'incarner que dans ses deux rottweilers. Énormes molosses noirs aux mâchoires impressionnantes.\nAvertissement sans frais : colérique. Souille les tapis.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-contact",
+      "nom": "Le « contact » (pète-sec de la fonderie)",
+      "source": "Démon de Belial se faisant passer pour un agent d'Andromalius",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentenaire en costume et chemise noirs, cravate rouge, petites lunettes cerclées de fer ; antipathique et spartiate. Joue au chat et à la souris, pose les questions, ne répond à rien. Rapport quotidien exigé à 19 h.\nMonte toute l'opération pour Belial : il veut des « aveux » filmés prouvant que Crocell complote. Fait surveiller les PJ, les tuyaute puis disparaît après la mission (jamais revu à la fonderie).\nPas de caractéristiques dans le livre : fiche minimale à compléter si les PJ le cherchent.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-frozen",
+      "nom": "« Frozen »",
+      "source": "Infiltré de Belial se prétendant démon de Crocell",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Maigrichon aux cheveux longs, tee-shirt Miko. Se fait chahuter par trois démons de Belial (mise en scène), puis vient boire avec les PJ et les sonde maladroitement sur l'affaire « Raymond gèle les camions », les humains à pouvoirs et les manigances de Crocell. Louche à souhait ; s'éclipse vite.\nPas de caractéristiques dans le livre.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-voyous-belial",
+      "nom": "Démons de Belial (gros bras de chez Régis)",
+      "source": "Complices de Frozen",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trois types sortis d'un mauvais film de mafieux, menacent Frozen, Crocell et ses démons. Jésus les menace de les mettre dehors : pas de bagarre possible à Chez Régis (lieu « off limit »).\nPas de caractéristiques dans le livre : fiche minimale.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-gaspard",
+      "nom": "Gaspard Tullier",
+      "source": "Petit proxénète local (fausse piste)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Figure sur la liste « d'humains à pouvoirs de froid » laissée par Julie dans la corbeille de son ordinateur. Petit maquereau minable : menacé, il se met à table aussitôt et dénonce Julie.\nPas de caractéristiques dans le livre.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-terre-creuse",
+      "nom": "Membres humains de la Terre Creuse",
+      "source": "Employés de mairie, commissaire, cousin du maire",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Deux employés administratifs de la mairie, un commissaire de police, un cousin du maire. Ignorent tout des anges et démons ; croient appartenir à une société secrète unifiant l'extrême droite mondiale. Parlent facilement sous la pression (ou les coups).\nPas de caractéristiques dans le livre : fiche humaine moyenne.\nSource : Fire and Ice, « The roof is on fire ! », p. 103-112."
+    },
+    {
+      "id": "type-fi6-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Paniqué, appelle les PJ pour parler de Monsieur Fabien (qu'il trouve « différent »), puis leur pose un lapin. Le lendemain : prétend une panne d'oreiller et une fausse alerte (il croyait que des anges voulaient éliminer Monsieur Fabien) et refuse d'en dire plus.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi6-aurelie",
+      "nom": "Aurélie",
+      "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 5
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Coupe court aux explications de Gilbert et transmet la convocation « des services d'Andromalius ». A été contactée chez elle par un démon se disant d'Andromalius (en réalité un ami du Daemonis Maleficum, serviteur de Belial ; elle le sait et se taira).\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi6-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ignore tout de l'opération ; tente de joindre les PJ à plusieurs reprises. S'ils lui répondent (en désobéissant), il enquête de son côté — à condition qu'ils lui fassent encore confiance. Après coup, peut confirmer qu'aucune mission officielle d'Andromalius ne leur a été adressée.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    }
+  ],
+  "memoire": []
+}

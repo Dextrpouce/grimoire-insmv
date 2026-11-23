@@ -1,0 +1,123 @@
+{
+  "invocation": {
+    "principe": "Pouvoir spirituel de tout ange ou démon (pas morts-vivants, familiers, serviteurs ni soldats de Dieu) : appel au secours direct à son supérieur, où qu'il soit ; énoncer son nom complet prend une seconde.",
+    "test": "Test de Foi (Chance interdite) contre une difficulté égale au facteur d'invocation du supérieur (ex. Alain : Légendaire), modifiée en colonnes par la table ci-dessous.",
+    "modificateurs": [
+      {"cond": "Demande futile", "mod": "-3 colonnes ou plus"},
+      {"cond": "Situation de vie ou de mort", "mod": "+1 colonne"},
+      {"cond": "Présence d'un supérieur du camp adverse", "mod": "+1 colonne"},
+      {"cond": "Présence d'un ennemi personnel du supérieur", "mod": "+2 colonnes ou plus selon l'animosité entre les deux supérieurs"},
+      {"cond": "Le supérieur est actuellement sur terre", "mod": "-1 colonne"},
+      {"cond": "Deuxième essai dans la même heure", "mod": "-4 colonnes"},
+      {"cond": "Dernière invocation réussie : moins d'un mois", "mod": "-4 colonnes"},
+      {"cond": "Dernière invocation réussie : entre un et six mois", "mod": "-2 colonnes"},
+      {"cond": "Dernière invocation réussie : entre sept et douze mois", "mod": "0"},
+      {"cond": "Dernière invocation réussie : plus d'un an", "mod": "+1 colonne"},
+      {"cond": "Personnage de grade 1", "mod": "+1 colonne"},
+      {"cond": "Personnage de grade 2", "mod": "+2 colonnes"},
+      {"cond": "Personnage de grade 3", "mod": "+3 colonnes"},
+      {"cond": "Total de PA inférieur à -10", "mod": "-8 colonnes"},
+      {"cond": "Total de PA entre -9 et 0", "mod": "-4 colonnes"},
+      {"cond": "Total de PA entre 1 et 10", "mod": "-2 colonnes"},
+      {"cond": "Total de PA entre 11 et 20", "mod": "0"},
+      {"cond": "Total de PA entre 21 et 30", "mod": "+1 colonne"},
+      {"cond": "Total de PA supérieur à 31", "mod": "+2 colonnes"}
+    ],
+    "resultats": [
+      {"mr": "échec", "effet": "Rien : le supérieur n'a pas entendu, refuse de donner suite ou est occupé ailleurs."},
+      {"mr": "0-3", "effet": "Aide ponctuelle : récupère 20 PP, ou 5 PF, ou guérit d'une blessure fatale/mort instantanée ; ou pouvoir temporaire niveau 6+, ou +6 rangs à un talent (au choix du MJ)."},
+      {"mr": "4-6", "effet": "Délégation : un grade 3 de l'entourage du supérieur arrive en renfort par téléportation 1d6 secondes après l'appel."},
+      {"mr": "7-9", "effet": "Intervention indirecte : le supérieur aide à distance avec ses pouvoirs de grade ; s'ils sont inopérants sur place, il délègue (comme Délégation)."},
+      {"mr": "10+", "effet": "Intervention directe : le supérieur vient en personne via un avatar, utilise surtout ses pouvoirs de grade, ne reste jamais longtemps sur terre."}
+    ],
+    "notes": "+2 à la MR si le supérieur est actuellement sur terre (en plus du -1 colonne de la table). Hors combat, l'invocation permet aussi de discuter avec son supérieur, mais la plupart jugent cela futile (exceptions : Didier et Baalberith). Le facteur d'invocation de chaque supérieur figure dans sa fiche (p. 96-119 imprimées)."
+  },
+  "communication": {
+    "principe": "Hors contacts de début et fin de mission, faire parvenir un message à un supérieur : test du facteur de communication du supérieur destinataire (traité comme une caractéristique), difficulté selon la méthode.",
+    "methodes": [
+      {"n": "Par le contact (administration)", "difficulte": "Difficile", "delai": "selon MR (table arrivee)", "risque": "interception d66 : allié du destinataire 14, ennemi du même camp 14, autre camp impossible"},
+      {"n": "Par invocation (réussir une invocation et remettre l'information à son supérieur)", "difficulte": "Facile ; automatique si le supérieur invoqué est le destinataire", "delai": "selon MR", "risque": "interception d66 : allié 15, ennemi du même camp 12 (aucune chance si le supérieur invoqué est lui-même ennemi ou allié du destinataire), autre camp impossible"},
+      {"n": "Par téléphone arabe (via un haut gradé connu incarné sur terre)", "difficulte": "Très difficile dans le même camp ; Incroyable d'un camp à l'autre (seul moyen de passer un message au camp adverse)", "delai": "selon MR", "risque": "interception d66 : allié 22, ennemi du même camp 21, autre camp 16"},
+      {"n": "Par Notre-Dame (service courrier, anges uniquement)", "difficulte": "Difficile, avec +2 colonnes", "delai": "selon MR", "risque": "interception d66 : allié 13, ennemi du même camp 13, autre camp 11 (seulement si message donné par téléphone ; aucune chance en s'y rendant directement)"}
+    ],
+    "exceptions_camp_adverse": [
+      {"cond": "Ange de Janus vers Valefor (ou l'inverse)", "difficulte": "Très difficile"},
+      {"cond": "Démon vers l'archange Ange", "difficulte": "Difficile"},
+      {"cond": "Ange de Mathias vers n'importe quel prince-démon", "difficulte": "Difficile"}
+    ],
+    "modificateurs": [
+      {"cond": "Information triviale", "mod": "-4 colonnes ou plus"},
+      {"cond": "Information capitale", "mod": "+2 colonnes ou plus"},
+      {"cond": "Information liée au domaine du supérieur", "mod": "+2 colonnes"},
+      {"cond": "Information liée au Grand Jeu", "mod": "+2 colonnes"},
+      {"cond": "Personnage de grade 1", "mod": "+1 colonne"},
+      {"cond": "Personnage de grade 2", "mod": "+2 colonnes"},
+      {"cond": "Personnage de grade 3", "mod": "+3 colonnes"},
+      {"cond": "Total de PA inférieur à -10", "mod": "-4 colonnes"},
+      {"cond": "Total de PA entre -9 et 0", "mod": "-2 colonnes"},
+      {"cond": "Total de PA entre 1 et 10", "mod": "-1 colonne"},
+      {"cond": "Total de PA entre 11 et 20", "mod": "0"},
+      {"cond": "Total de PA entre 21 et 30", "mod": "+2 colonnes"},
+      {"cond": "Total de PA supérieur à 31", "mod": "+4 colonnes"},
+      {"cond": "Supérieur du même camp bloquant le message", "mod": "malus en colonnes égal au facteur de communication du supérieur intervenant"},
+      {"cond": "Supérieur accélérant le message", "mod": "bonus en colonnes égal au facteur de communication du supérieur intervenant"}
+    ],
+    "arrivee": [
+      {"mr": "0-3", "delai": "1d6 mois"},
+      {"mr": "4-6", "delai": "1d6 semaines"},
+      {"mr": "7-9", "delai": "1d6 jours"},
+      {"mr": "10+", "delai": "1d6 heures"}
+    ],
+    "notes": "Échec : message perdu (peut ressurgir des années plus tard, au gré du MJ). Interférences : seul un supérieur du même camp peut bloquer ou accélérer (sauf Mathias, Janus et Valefor qui agissent aussi sur le camp adverse) ; il doit connaître le message ou bloquer tout un sujet. Interception : jets séparés du MJ, indépendants de la réussite ; chaque ligne applicable est testée (2 ou 3 jets) ; valeurs données comme seuil sur d66 ; supérieur intercepteur tiré au hasard, libre d'agir ou non."
+  },
+  "recompenses": {
+    "principe": "Après chaque mission (pas chaque scénario), la hiérarchie accorde ou retire des PA selon la réussite ; évaluation surtout via le débriefing, plus les sources propres de l'administration. Récompenses et punitions sont individuelles.",
+    "bareme": [
+      {"cond": "Mission réussie", "pa": "+1 à +3"},
+      {"cond": "Mission échouée", "pa": "-1 à -3"},
+      {"cond": "Orthodoxie vis-à-vis du supérieur (ses services administratifs)", "pa": "+2 à -2 (plus souvent en moins, plus souvent 1 que 2, très souvent 0)"},
+      {"cond": "Critères de promotion propres à chaque supérieur", "pa": "voir fiche du supérieur"}
+    ],
+    "notes": "Les joueurs n'apprennent que le degré de réussite (catastrophe, échec, passable, bien, très bien), jamais le gain exact ni leur total de PA ; le MJ tient une feuille de route.",
+    "demander": "Demande à l'administration, traitée en une semaine ; récompense tirée sur la table d66. Acceptée d'office si PA positifs (sauf veto du supérieur direct) ; sinon le MJ lance secrètement 1d6 : refusée si le résultat est inférieur au nombre de PA négatifs.",
+    "exiger": "Demande d'une récompense précise, traitée en une semaine, acceptée seulement si le total de PA dépasse le double du coût habituel (ex. +1 Force coûte 2 PA, il faut au moins 4 PA) ; pas de jet de dé.",
+    "table": [
+      {"d": "11-13", "effet": "Amélioration de pouvoir mental : +1 rang à un pouvoir mental possédé. Coût variable, généralement 3 PA."},
+      {"d": "14-16", "effet": "Amélioration de pouvoir physique : idem pour un pouvoir physique."},
+      {"d": "21-23", "effet": "Amélioration de pouvoir spirituel : idem pour un pouvoir spirituel."},
+      {"d": "24-26", "effet": "Caractéristique mentale : +1 rang en Volonté, Présence ou Foi (au choix du MJ). Coût 2 PA."},
+      {"d": "31-33", "effet": "Caractéristique physique : idem pour Force, Agilité ou Perception."},
+      {"d": "34-35", "effet": "Couverture ou ressource : nouvelle couverture, ressource ou autre avantage matériel."},
+      {"d": "36", "effet": "Objet magique : arme ou armure magique, talisman ou relique."},
+      {"d": "41-42", "effet": "Nouveau pouvoir mental au niveau 1, au choix du MJ. Coût variable, généralement 6 PA."},
+      {"d": "43-44", "effet": "Nouveau pouvoir physique : idem."},
+      {"d": "45-46", "effet": "Nouveau pouvoir spirituel : idem."},
+      {"d": "51-54", "effet": "Point de Pouvoir : +1 PP. Coût 1 PA."},
+      {"d": "55-56", "effet": "Servant : groupe d'humains, serviteur de Dieu, troupe de soldats de Dieu, familier ou troupe de morts-vivants."},
+      {"d": "61-65", "effet": "Talent : +1 rang dans un talent principal (et +1 dans un talent secondaire), au choix du MJ. Coût 1 PA."},
+      {"d": "66", "effet": "Grande générosité : le personnage choisit l'une des récompenses précédentes."}
+    ],
+    "table_note": "Relancer si le personnage a déjà le maximum de son grade dans le trait concerné."
+  },
+  "avertissements": {
+    "principe": "Dès que le total de PA atteint -5 ou moins, l'administration inflige un avertissement (limitation voyante et gênante, rarement handicapante), retiré dès que les PA remontent à 0 ou plus. Table « Les avertissements sans frais ».",
+    "table": [
+      {"d": "11-14", "effet": "Atavisme : trait physique typique du camp (ailes, auréole, cornes, queue...) ; ailes inutilisables pour voler mais dissimulables."},
+      {"d": "15-16", "effet": "Asexué : perd tout caractère sexuel, apparence androgyne ; d'autres traits peuvent aussi disparaître."},
+      {"d": "21-22", "effet": "Baragouinage : incapable d'aligner une phrase correcte, bégaie, peut passer pour simple d'esprit."},
+      {"d": "23-26", "effet": "Chromodermie : peau, yeux ou cheveux d'une couleur exotique impossible à masquer."},
+      {"d": "31-34", "effet": "Comportement inverse : tare typique du camp adverse (vulgarité, luxure pour un ange ; gentillesse, chasteté pour un démon)."},
+      {"d": "35-42", "effet": "Interdit : interdit strict ; s'il le brise, il perd aussitôt tous ses PP."},
+      {"d": "43-44", "effet": "Ostentation : doit crier à voix haute le nom de ses pouvoirs (ou des surnoms)."},
+      {"d": "45-52", "effet": "Peur irraisonnée : panique face à un élément du quotidien fixé ; refuse de s'en approcher, mal à l'aise s'il y est contraint."},
+      {"d": "53-56", "effet": "Restriction : mentalement limité à un choix unique dans un acte courant (nourriture, sommeil, véhicule, vêtements...)."},
+      {"d": "61-62", "effet": "Tic immonde : commet régulièrement un acte grossier, même en public."},
+      {"d": "63-66", "effet": "Travers : trait de caractère gênant (naïveté, loyauté excessive, mégalomanie, kleptomanie...)."}
+    ]
+  },
+  "blames": {
+    "principe": "Infligés directement par le supérieur (ou ses proches) à sa discrétion, pour grosse faute : échec complet d'une mission critique, règles négligées (discrétion), manque de respect ou mépris des préoccupations du supérieur. Propres à chaque supérieur (table d6 dans sa fiche), ils visent souvent à placer le personnage dans la situation des humains, à le priver d'un pouvoir dont il abuse ou à l'obliger à un devoir négligé. Généralement temporaires, retirés quand le personnage fait amende honorable auprès de son supérieur.",
+    "cumul": null
+  },
+  "pages": "Livret de règles, ch. 4 La hiérarchie : pages imprimées 91-96 (PDF 92-97). Invocation p. 91-92 (PDF 92-93), communication p. 92-93 (PDF 93-94), récompenses p. 93-95 (PDF 94-96), avertissements et blâmes p. 95-96 (PDF 96-97)."
+}

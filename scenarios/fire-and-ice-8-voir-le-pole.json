@@ -1,0 +1,3020 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-8-voir-le-pole",
+      "nom": "Fire and Ice (scénario 8) – Voir le Pôle et courir",
+      "resume": "De bello civili, scénario 4 de l'acte 2 (INS). Au début de la guerre ouverte entre Belial et Crocell, Monsieur Fabien envoie les PJ enquêter sur une prostituée tuée par un pouvoir de froid dans un hôtel d'Orly. La piste du géologue Bjorn Olsen, un Flocon de sang, les mène au Cap puis, en cargo, jusqu'à la base Dumont d'Urville en Terre Adélie, repaire de Crocell. Ange assassiné, ours familiers, caverne glacée, rencontre avec le prince du froid… puis un commando de Belial attaque, et les PJ doivent choisir leur camp. Scénario potentiellement très meurtrier.",
+      "notes": "Source : Fire and Ice, « Voir le Pôle et courir », p. 125-136 ; aide de jeu « Remedium amoris », p. 137-141.\nDéroulement : Orly (Frozen Margarita) → Le Cap → cargo L'Anjou → base Dumont d'Urville → mort de Mousseux, ours et tempête → caverne et sculptures → chalet de Crocell → assaut du commando de Belial.\nCrocell a choisi la base pour son isolement, le froid et le nœud de lignes telluriques du pôle magnétique, qui l'alimente sans passer par l'Enfer. Officiellement déclaré renégat, il garde tous ses pouvoirs (seul Satan pourrait le destituer).\n\nRécompenses :\n• Camp de Crocell : +1 PP, un niveau de pouvoir de grade de la sphère du Froid, numéro de portable de Crocell (+2 colonnes pour l'invoquer) s'il n'est pas officiellement renégat.\n• Pas d'autre récompense chiffrée ; Monsieur Fabien ne commente pas le choix de camp.\n\nAide de jeu « Remedium amoris » (PJ serviteurs de Belial ou de Crocell) — scénario 4 :\n• Serviteur de Belial : Belial ne devrait pas intervenir. Si son serviteur le prévient, il mène lui-même l'assaut, la base est rasée, Crocell fuit quoi qu'il arrive et le serviteur reçoit le grade 2. Au chalet, si les PJ sont trop agressifs, le serviteur de Belial est le premier haché menu. S'il se laisse convaincre par Crocell et le prévient de l'attaque, Crocell quitte la station avant l'assaut, Belial fait chou blanc et le serviteur doit trouver une excuse pour éviter blâme ou statut de renégat.\n• Serviteur de Crocell : si le prince a été déclaré renégat par sa faute, il lui passe un savon ; sinon, il est bien plus amical au chalet. S'il l'aide pendant l'assaut : grade 2. S'il se range du côté de Belial : un démon de Crocell vient le punir à la scie circulaire.\n• Faux démon du froid chez Belial : doit éviter que Crocell ne découvre son secret par Lire les pensées, sinon il est gelé à mort. S'il est démasqué par ses camarades qui le dénoncent à la commission, ceux-ci gagnent +1 PP de Crocell (non déclaré renégat) et Belial lui inflige un blâme.\n• Démon de Crocell blâmé : Belial efface discrètement le blâme. Mission confiée par Crocell : réussite éclatante = avertissement sans frais et annulation des récompenses de Crocell ; réussite mitigée = annulation des récompenses ; échec = annulation des blâmes de Crocell et +2 à +4 PA selon la qualité du foirage.\n• Crocell peut accorder à un humain un de ses pouvoirs de niveau 1 (« assistés »), avec PP = Volonté + nouvelle Foi (commençant à 1) ; le démon perd 1 PP récupéré en sept jours. Dix fois maximum ; si moins de la moitié pètent les plombs, +1 PP, si tous meurent ou deviennent fous, blâme.\n• Querelles entre PJ des deux camps : les laisser faire si cela sert le jeu, recadrer s'ils ne font que s'entre-tuer.\n• Feu de Prométhée (Froutch) et équipement de la Garde carmine (lance-flammes chromé précision −1, puissance +10 ; gabardine ignifugée protection 1, 3 contre le feu) : voir la fiche de Froutch.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reporté en Foi). Valeurs estimées signalées dans les notes des fiches (armes de la table, baleine, gilets pare-balles).",
+      "scenes": [
+        {
+          "id": "fi8-sc-margarita",
+          "nom": "1. Frozen Margarita",
+          "lieu": "Hôtel Ibis d'Orly, chambre 312 – au petit matin",
+          "notes": "Contexte : la guerre ouverte entre Belial et Crocell vient d'éclater ; Crocell s'est réfugié sur Terre. Monsieur Fabien tire les PJ du lit et les envoie au P.C. sécurité de l'hôtel, où Gilbert Blénot (démon de Malthus, pompier) les briefe.\nLe corps : grande blonde nue, déchiquetée, couverte d'entailles givrées, toute bleue — Gilbert soupçonne un pouvoir démoniaque. Corps déjà évacué en « crise cardiaque ».\nLa chambre : soirée très spéciale (alcool, préservatifs, joints, cocaïne, attirail SM). Rien d'autre que les affaires de la victime, sauf un slip kangourou bleu sous le lit. Sac à main : maquillage, portable, quelques centaines d'euros, papiers au nom de Marguerite Leblanc.\nPistes :\n• L'hôtel accueille une convention internationale de géologues (environ 150 participants). Direction peu coopérative sauf fausse autorité ; les femmes de ménage (sous-traitance Arcade) parlent plus facilement.\n• Chambre payée en liquide la veille par la victime ; le réceptionniste a deviné une prostituée et fermé les yeux.\n• Portable : dernier appel à Luigi, qui a rappelé une dizaine de fois. Une voix d'homme le fait exploser ; rencontré, il décrit le client (grand roux moustachu, yeux clairs, taches de rousseur).\n• À défaut, une femme de ménage a vu la victime monter avec le géologue.\nLe réceptionniste, contre un billet, donne le nom : Bjorn Olsen, parti à l'aube après avoir avancé son vol Air France pour Le Cap. Les PJ arrivent juste après le décollage.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi8-gilbert-1",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune type musclé, cheveux courts, peau mate, superbe uniforme de pompier. Ami de Monsieur Fabien.\nA découvert le corps chambre 312, l'a fait évacuer en « crise cardiaque » avec l'aide d'un démon de Bifrons à la morgue, et a tenu la police à l'écart. Briefe les PJ au P.C. sécurité de l'hôtel.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi8-gilbert"
+            },
+            {
+              "id": "fi8-luigi-2",
+              "nom": "Luigi",
+              "source": "Prostitué, ami de la victime",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune Italien séduisant, cheveux gominés, poils qui dépassent du col. Erre paniqué dans l'hôtel depuis l'aube ; Margot (Marguerite Leblanc) l'avait appelé la veille pour dire que tout allait bien.\nSi une voix d'homme répond au portable de la victime, il explose en menaces. Rencontré, il fanfaronne puis craque et décrit le client : grand, roux, moustachu, yeux clairs, taches de rousseur.\nFiche minimale : caractéristiques non fournies.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-luigi"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-fabien",
+              "q": "Les PJ tiennent-ils Monsieur Fabien au courant ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Deuxième voyageur mystérieux vers l'Afrique du Sud (cf. Isaac Iceberg, scénario 1) : il ordonne de prendre le prochain avion pour Le Cap et contacte les forces locales (Cliff)."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Les PJ doivent décider seuls de suivre Bjorn ; sans Fabien, pas de comité d'accueil ni d'armes au Cap (à l'appréciation du MJ)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi8-sc-cap",
+          "nom": "2. Fumer de la Boer",
+          "lieu": "Le Cap, Afrique du Sud – aéroport, puis hôtel sordide près du port",
+          "notes": "Une vingtaine d'heures de vol. Cliff (démon de Baalberith) attend les PJ avec un panneau, fournit armes et argent local (rands). Il a fait filer Bjorn jusqu'à son hôtel au lieu de l'intercepter.\nContexte : État fédéral, apartheid aboli au début des années 90, pays riche (or, diamants), Le Cap capitale législative, métropole portuaire cosmopolite.\nDepuis son arrivée, Bjorn a passé du temps avec une prostituée, puis est monté à bord d'un navire, L'Anjou, et s'est couché. Les matelots ou la capitainerie révèlent la destination : la base française Dumont d'Urville en Terre Adélie (matériel scientifique et vivres). Le cargo embarque aussi des touristes : trois jours sur la base puis visite guidée, environ 3 000 € par personne.\nMonsieur Fabien encourage les PJ à poursuivre jusqu'au pôle Sud, en redoublant de prudence.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi8-cliff-3",
+              "nom": "Cliff",
+              "source": "Démon de Baalberith, comité d'accueil au Cap",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand Noir très maigre, anglais à fort accent bantou. Attend les PJ à l'aéroport avec un panneau, fournit armes et liasses de rands. A fait filer Bjorn jusqu'à son hôtel près du port.\nFiche minimale : caractéristiques non fournies.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-cliff"
+            },
+            {
+              "id": "fi8-bjorn-4",
+              "nom": "Bjorn Olsen",
+              "source": "Géologue, Flocon de sang",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Science 2 (géologie 4), Discussion 3, Prendre des initiatives 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand rouquin moustachu d'origine danoise, la cinquantaine, yeux bleus, taches de rousseur. Aime les jolies femmes, la bonne chère et les drogues. A perdu les pédales lors d'un mauvais trip et tué Marguerite Leblanc avec son pouvoir à l'hôtel d'Orly ; depuis, angoissé à l'idée d'être retrouvé.\nFil conducteur du scénario : Orly → Le Cap → cargo L'Anjou → base Dumont d'Urville. Sur le bateau, joue les touristes et fait des exposés sur le socle antarctique.\nProfil des scientifiques Flocons de sang (p. 135). Attaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bjorn"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-bjorn",
+              "q": "Que font les PJ de Bjorn ?",
+              "opts": [
+                {
+                  "t": "Ils embarquent incognito sur L'Anjou",
+                  "suite": "Déroulement prévu : Bjorn les conduit sans le savoir jusqu'à Crocell."
+                },
+                {
+                  "t": "Ils l'interceptent au Cap",
+                  "suite": "Hors scénario : Bjorn est un simple Flocon de sang paniqué ; il peut avouer sa destination, mais la base sera peut-être prévenue. Au MJ d'adapter."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi8-sc-cargo",
+          "nom": "3. Cargo de nuit",
+          "lieu": "À bord du cargo L'Anjou – près d'une semaine, 8 500 km",
+          "notes": "Bjorn se tient tranquille ; avec des PJ jouant les touristes, il se présente comme géologue et fait des exposés sur le socle antarctique. Incidents au choix du MJ :\n• La tempête : test d'Agilité par tour pour quiconque est sur le pont (échec : 1d6, de 1 à 5 perte de 2 PF, sur 6 passé par-dessus bord). Trois réussites successives pour regagner sa cabine. Puis test de Force facile contre le mal de mer.\n• L'épidémie : un démon de Malthus a infecté un réservoir (dysenterie). Ceux qui ont mangé la soupe d'aileron de requin et n'ont pas d'immunité testent la Force très difficile : réussite = mal de ventre ; échec = −2 colonnes à toutes les actions pendant une semaine ; échec avec RU 6 = diarrhée hémorragique, −4 PF et −2 colonnes pendant dix jours.\n• Les dents de la mer : une baleine bleue déboussolée par Crocell tente de faire chavirer le cargo (voir sa fiche : chaque attaque réussie, test d'Agilité ou blessure 1d6+2 ; voie d'eau sur RU 6, naufrage à la cinquième).\nEn fin de traversée, la température tombe vers −10 °C le long de la côte ; au matin du septième jour, la Terre Adélie est en vue.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi8-bjorn-5",
+              "nom": "Bjorn Olsen",
+              "source": "Géologue, Flocon de sang",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Science 2 (géologie 4), Discussion 3, Prendre des initiatives 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand rouquin moustachu d'origine danoise, la cinquantaine, yeux bleus, taches de rousseur. Aime les jolies femmes, la bonne chère et les drogues. A perdu les pédales lors d'un mauvais trip et tué Marguerite Leblanc avec son pouvoir à l'hôtel d'Orly ; depuis, angoissé à l'idée d'être retrouvé.\nFil conducteur du scénario : Orly → Le Cap → cargo L'Anjou → base Dumont d'Urville. Sur le bateau, joue les touristes et fait des exposés sur le socle antarctique.\nProfil des scientifiques Flocons de sang (p. 135). Attaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bjorn"
+            },
+            {
+              "id": "fi8-baleine-6",
+              "nom": "Baleine bleue déboussolée",
+              "source": "Les dents de la mer (incident du cargo)",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 2,
+                "pe": 2,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 8,
+              "pfFix": 24,
+              "pp": 0,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Coup de boule contre la coque",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trente mètres, plus de 150 tonnes, rendue folle par le chaos magnético-magique autour de Crocell. Tente de faire chavirer le cargo ; seule issue : la tuer (meurt à 0 PF). Armure 8.\nSi son attaque réussit : chaque PJ teste l'Agilité, sinon blessure de gravité 1d6+2. Sur un RU de 6, voie d'eau à colmater (les matelots s'en chargent) ; au bout de cinq brèches, le navire coule.\nLe livre ne donne que PF 24, seuil de BL 8, armure 8 et Corps à corps 3 : caractéristiques et seuils BG/BF/MS estimés.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-baleine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-baleine",
+              "q": "La baleine attaque-t-elle le cargo ?",
+              "opts": [
+                {
+                  "t": "Oui, les PJ la tuent",
+                  "suite": "Le cargo arrive avec quelques brèches colmatées."
+                },
+                {
+                  "t": "Oui, cinq voies d'eau",
+                  "suite": "L'Anjou se disloque dans les eaux glacées : aux PJ de survivre et de rejoindre la côte."
+                },
+                {
+                  "t": "Non, autre incident ou traversée calme",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi8-sc-base",
+          "nom": "4. Pôle position",
+          "lieu": "Base Dumont d'Urville, Terre Adélie – trois jours",
+          "notes": "Antarctique en plein été austral : jour permanent, −10 °C (Crocell refroidit le climat), vents jusqu'à 100 km/h. La base domine un fjord face à l'iceberg de l'Astrolabe : 500 m sur 300, une route enneigée, une douzaine de hangars, baraques, antenne radio, groupe électrogène, manchots partout. Gérée par l'armée pour la recherche.\nSeuls humains « normaux » : le lieutenant Tricard et le sergent Dugland. Tous les soldats et scientifiques sont des Flocons de sang ; Iceberg, Vannier et Vanessa servent Crocell ; André Mousseux est un ange de Daniel mis au placard.\nDéroulement : chambres doubles spartiates ; chaque matin, visite en chenillette avec Dugland, après-midi libre. Ne pas déranger les scientifiques ; un entrepôt est interdit, gardé par trois soldats (relève toutes les quatre heures). Repas avec les scientifiques, dont le directeur se présente comme Isaac Iceberg (les PJ doivent tiquer).\nRien de suspect en apparence, mais Vannier repère vite les PJ et leur colle Kinderpinguy, le manchot-caméra. Vanessa séduit le PJ à la plus haute Présence ; toute question précise grille sa couverture. Toute enquête renforce la surveillance de Vannier.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi8-tricard-7",
+              "nom": "Lieutenant Tricard",
+              "source": "Chef de la base (humain normal)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 2 (armes d'épaule 3), Savoir militaire 2 (tactique 3), Croire qu'il dirige vraiment la base 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Taille moyenne, cheveux gris, air sévère, pète-sec. Persuadé de diriger la base sans rien comprendre à ce qui s'y passe ; méprise civils et touristes.\nDéfense non donnée : 2 (niveau 1). Arme : Carabine de la table (estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-tricard"
+            },
+            {
+              "id": "fi8-dugland-8",
+              "nom": "Sergent Dugland",
+              "source": "Bidasse touristique (humain normal)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 3
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 2 (armes d'épaule 3), Défense 2+, Guide touristique en milieu froid 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit gros à moitié chauve, grosses lunettes, français de caserne, zozote un peu. Adjoint de Tricard, responsable des civils : traîne les touristes chaque matin en chenillette pour leur montrer les merveilles de la Terre Adélie. Pénible.\nArme : fusil non précisé (Carabine de la table, estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-dugland"
+            },
+            {
+              "id": "fi8-iceberg-9",
+              "nom": "Isaac Iceberg",
+              "source": "Démon de Crocell, grade 2 (directeur scientifique)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 6,
+                "vo": 12,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 21,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                }
+              ],
+              "talents": "Médecine 7, Discussion 5, Défense 4+, Technique 2+ (électronique 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme quadragénaire au crâne rasé, air de bouddha. Responsable de l'équipe scientifique ; greffe des gadgets électroniques aux animaux (Kinderpinguy). Primesautier, bordélique, facétieux. Avertissement sans frais : gras.\nLes PJ ont déjà croisé son nom (scénario 1) : sa présentation doit les faire tiquer.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-iceberg"
+            },
+            {
+              "id": "fi8-vanessa-10",
+              "nom": "Vanessa",
+              "source": "Démon de Crocell, grade 3 (infirmière)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 27,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 6
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Protection de l'esprit",
+                  "r": 0
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 10
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                }
+              ],
+              "talents": "Discussion 6, Aisance sociale 5, Comédie 5, Discrétion 5, Défense 4, Avoir l'air idiote 6, Séduction 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande brune aux yeux bleus, pas froid aux yeux. Infirmière qui n'y connaît rien en médecine ; joue la gentille idiote en quête d'un protecteur. En réalité très intelligente, servante efficace de Crocell depuis longtemps. Avertissement sans frais : phobie des croix.\nSe jette sur le PJ à la plus haute Présence pour lui soutirer des confidences sur l'oreiller ; avoue trouver la station bizarre, mais toute question précise grille la couverture du PJ.\nAttaque à mains nues estimée (aucun talent de combat).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vanessa"
+            },
+            {
+              "id": "fi8-vannier-11",
+              "nom": "Bernard « Pic à glace » Vannier",
+              "source": "Démon de Crocell, grade 2 (sergent, sécurité)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Pic à glace maudit mineur (inadapté à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de précision à lunette et silencieux",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Défense 7, Tir 2+ (armes d'épaule 4+), Conduite 5, Art 2 (sculpture sur glace 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit trapu barbu, cheveux ras ; chasse le phoque et le manchot au pic à glace. Plus malin qu'il n'en a l'air, finit toujours par savoir ce qui se passe. Avertissement sans frais : besoin de violence.\nVrai maître de la base. Repère vite les PJ et lâche Kinderpinguy sur eux. Abat Mousseux au fusil depuis une planque, en tenue blanche cagoulée, puis fuit en chenillette.\nFusil : Fusil à lunette de la table (le livre parle de calibre .50).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vannier"
+            },
+            {
+              "id": "fi8-kinderpinguy-12",
+              "nom": "Kinderpinguy",
+              "source": "Manchot espion",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 2,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discrétion 3, Ramasser des cailloux 3, Manger du poisson 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manchot ridicule et mignon, caméra greffée sous le crâne et reliée au nerf optique : tout ce qu'il voit part au poste de sécurité (Vannier). Suit les PJ partout comme s'il les avait pris en affection.\nCh du livre reportée en Foi.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-kinderpinguy"
+            },
+            {
+              "id": "fi8-mousseux-13",
+              "nom": "André Mousseux",
+              "source": "Ange de Daniel, grade 1 (soldat de 2e classe)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 12,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Trait d'énergie",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 2
+                },
+                {
+                  "n": "Pétrification",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 4, Tir 3 (armes de poing 5), Défense 4+, Trier des cailloux 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand et gros costaud rougeaud, très lâche ; a foiré tant de missions qu'on l'a rangé ici (deuxième avertissement sans frais : lâche et asexué). Membre de la You-You Power Force, ostracisé par les autres soldats. Terrifié d'être entouré de démons, larges cernes.\nMéfiant, puis donne rendez-vous aux PJ entre les chenillettes : il ignore qui ils sont, mais les supplie de ne pas être du côté des autres. Abattu d'une balle de .50 par Vannier avant d'avoir pu en dire plus.\nArmes : pistolet (Revolver gros calibre de la table) et mains nues (estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-mousseux"
+            },
+            {
+              "id": "fi8-scientifiques-14",
+              "nom": "Scientifiques Flocons de sang",
+              "source": "Équipe d'Isaac Iceberg",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Science 2 (spécialisations diverses 4), Discussion 3, Prendre des initiatives 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Albert Eiseinsteinbergenovitch (climatologie, petit monsieur au jargon abscons, imbibé de vodka), Isaac Lethon (météorologie, grand maigre à queue de cheval, adore faire des exposés aux touristes), Marie Vury (biogéographie, quinquagénaire nymphomane qui jette son dévolu sur les PJ), Baké Diouf (océanographie, taciturne, accent du Nord). Bjorn Olsen complète l'équipe.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-scientifiques"
+            },
+            {
+              "id": "fi8-bjorn-15",
+              "nom": "Bjorn Olsen",
+              "source": "Géologue, Flocon de sang",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Science 2 (géologie 4), Discussion 3, Prendre des initiatives 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand rouquin moustachu d'origine danoise, la cinquantaine, yeux bleus, taches de rousseur. Aime les jolies femmes, la bonne chère et les drogues. A perdu les pédales lors d'un mauvais trip et tué Marguerite Leblanc avec son pouvoir à l'hôtel d'Orly ; depuis, angoissé à l'idée d'être retrouvé.\nFil conducteur du scénario : Orly → Le Cap → cargo L'Anjou → base Dumont d'Urville. Sur le bateau, joue les touristes et fait des exposés sur le socle antarctique.\nProfil des scientifiques Flocons de sang (p. 135). Attaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bjorn"
+            },
+            {
+              "id": "fi8-bidasses-16",
+              "nom": "Bidasses Flocons de sang",
+              "source": "Soldats de la base envoûtés par Crocell",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3, Défense 2, Savoir militaire 1+ (tactique 2+), Obéir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Raoul Petibonhomme, Michel Laverse, Bruno Duo, Éric Denerre, Alfred Dujnou, Marc Mourat, Philippe Lepont, Didier Artois, Adrien Lebuc, Pierre Raspail. Cheveux courts, rangers cirées, pas futés, subjugués par Crocell qui leur a donné plus de pouvoirs et de PP qu'aux Flocons de sang ordinaires. Loyaux, mais paniquent face à une force surnaturelle conséquente.\nTrois gardent en permanence l'entrepôt interdit (relève toutes les quatre heures) ; trois accompagnent Crocell dans le chalet. Valeurs du bestiaire (Bidasse envoûté, p. 135). Fusil d'assaut : Carabine de la table.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bidasses"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi8-sc-espion",
+          "nom": "5. L'espion qui venait du froid",
+          "lieu": "Entre les chenillettes, en marge de la base, puis la banquise",
+          "notes": "Questionné, Mousseux se méfie puis donne rendez-vous entre les chenillettes. Discours enfiévré : il ignore qui sont les PJ mais les supplie de ne pas être du côté des autres habitants. Au moment d'évoquer le Malin, il prend une balle de .50 en pleine tête et meurt sur le coup.\nLe tireur est Vannier, en blanc et cagoulé, à quelques dizaines de mètres avec son fusil à lunette ; il fuit aussitôt en chenillette. Poursuite (les chenillettes se conduisent toutes seules, trois places) pendant que le vent se lève ; laisser Vannier prendre de l'avance. Son véhicule abandonné au pied d'un promontoire, ses traces disparaissent derrière.\nEmbuscade : Groumf et Broumf, deux familiers ours blancs de quatre mètres, surgissent et se battent jusqu'à la mort dans un blizzard croissant.\nAprès le combat, violente tempête : tests de Perception très difficiles pour rentrer, MR cumulée de 15 à atteindre, une colonne de malus supplémentaire à chaque jet après le premier. À la station, tout le monde se calfeutre, communications coupées : la meilleure occasion de visiter l'entrepôt interdit.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi8-mousseux-17",
+              "nom": "André Mousseux",
+              "source": "Ange de Daniel, grade 1 (soldat de 2e classe)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 12,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Trait d'énergie",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 2
+                },
+                {
+                  "n": "Pétrification",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 4, Tir 3 (armes de poing 5), Défense 4+, Trier des cailloux 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand et gros costaud rougeaud, très lâche ; a foiré tant de missions qu'on l'a rangé ici (deuxième avertissement sans frais : lâche et asexué). Membre de la You-You Power Force, ostracisé par les autres soldats. Terrifié d'être entouré de démons, larges cernes.\nMéfiant, puis donne rendez-vous aux PJ entre les chenillettes : il ignore qui ils sont, mais les supplie de ne pas être du côté des autres. Abattu d'une balle de .50 par Vannier avant d'avoir pu en dire plus.\nArmes : pistolet (Revolver gros calibre de la table) et mains nues (estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-mousseux"
+            },
+            {
+              "id": "fi8-vannier-18",
+              "nom": "Bernard « Pic à glace » Vannier",
+              "source": "Démon de Crocell, grade 2 (sergent, sécurité)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Pic à glace maudit mineur (inadapté à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de précision à lunette et silencieux",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Défense 7, Tir 2+ (armes d'épaule 4+), Conduite 5, Art 2 (sculpture sur glace 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit trapu barbu, cheveux ras ; chasse le phoque et le manchot au pic à glace. Plus malin qu'il n'en a l'air, finit toujours par savoir ce qui se passe. Avertissement sans frais : besoin de violence.\nVrai maître de la base. Repère vite les PJ et lâche Kinderpinguy sur eux. Abat Mousseux au fusil depuis une planque, en tenue blanche cagoulée, puis fuit en chenillette.\nFusil : Fusil à lunette de la table (le livre parle de calibre .50).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vannier"
+            },
+            {
+              "id": "fi8-groumf-19",
+              "nom": "Groumf",
+              "source": "Ours polaire familier de Crocell",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 12,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 3, Athlétisme 3, Manger des manchots 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ours blanc de quatre mètres et quelques tonnes, n'a rien à faire dans cet hémisphère. Pas très malin. Valeurs du bestiaire (Ours polaire familier, p. 134).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-groumf"
+            },
+            {
+              "id": "fi8-broumf-20",
+              "nom": "Broumf",
+              "source": "Ours polaire familier de Crocell",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                13,
+                19,
+                26
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 9,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 4+, Défense 4, Athlétisme 4, Affûter ses griffes sur la banquise 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Plus intelligent que Groumf, mais tout pelé.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-broumf"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-mousseux",
+              "q": "Les PJ vont-ils au rendez-vous de Mousseux ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Mousseux est abattu sous leurs yeux ; poursuite de Vannier et embuscade des ours."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Mousseux est éliminé de toute façon ; le MJ peut lancer les ours sur les PJ lors d'une sortie en chenillette, puis la tempête."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi8-sc-etoile",
+          "nom": "6. Étoile des neiges",
+          "lieu": "Entrepôt interdit, puis caverne sous la station",
+          "notes": "Entrepôt vide, sauf une lourde trappe à carte magnétique : il faut un pouvoir ou voler des explosifs dans la base. Échelle, couloir en pente, ascenseur à un seul bouton : descente de plusieurs minutes jusqu'à plusieurs centaines de mètres. Antichambre (fauteuils, magazines, mini-bar de sodas), porte à deux battants.\nCaverne de plus d'un kilomètre de large et cent mètres de haut : neige, phoques et manchots autour d'un lac artificiel, pistes de ski, rampes de skate. Environ −50 °C : sans Immunité contre le froid ni combinaison, −2 colonnes à toutes les actions et −1 PF toutes les deux heures (règles du froid, INS/MV4 p. 33).\nAu centre, sur une colline, un chalet en bois entouré de dizaines de sculptures (animaux, humains, formes abstraites) qui semblent regarder les PJ. Certaines statues humaines sont des familiers : autant que de PJ. Assauts violents et soudains, puis calme pesant ; les sculptures se cachent entre deux attaques. Ambiance oppressante, mais les PJ doivent s'en sortir sans trop de casse.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi8-sculptures-21",
+              "nom": "Sculptures de glace",
+              "source": "Familiers lobotomisés de Crocell",
+              "type": "familier",
+              "qty": 4,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 2,
+                "vo": 2,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 0,
+              "seuilsFix": [
+                6,
+                13,
+                19,
+                26
+              ],
+              "armes": [
+                {
+                  "n": "Poings",
+                  "att": 12,
+                  "prec": 1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Pieds",
+                  "att": 12,
+                  "prec": 1,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 6, Défense 6, Discrétion 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Statues de taille humaine cachées parmi les sculptures monumentales autour du chalet. Stupides mais très rapides, frappent par surprise puis se fondent parmi les autres statues. Couche de glace permanente, sans coût en PP. Avertissement sans frais : texture de la peau.\nAutant de sculptures que de PJ (quantité à ajuster). Pas de PP indiqués.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-sculptures"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi8-sc-chalet",
+          "nom": "7. Le chalet de Crocell",
+          "lieu": "Chalet au cœur de la caverne",
+          "notes": "Attendent les PJ : Vanessa, Vannier, Iceberg et trois soldats armés de fusils d'assaut. Au fond, Crocell, adolescent nu aux cheveux bleutés, sirote un Cherry Coke et les invite à s'asseoir.\nS'ils l'attaquent : ne pas jouer le combat, ils meurent (campagne terminée). Crocell, de mauvaise humeur, lit leurs pensées et reconnaît ceux qui l'ont mis dans le pétrin. Il se calme, demande ce qu'ils font là et pour qui ils travaillent, puis annonce qu'il va réfléchir à leur sort. Vannier les enferme « à la cave » (pièce tempérée) ; fuir est quasi impossible à cause de la tempête.\nMoment fort : quelques dizaines de minutes plus tard, Crocell leur offre des sodas exotiques et explique ses motivations — rivalité avec Belial depuis leur arrivée en Enfer, la découverte (grâce à Malphas) que Belial infiltrait ses démons, la création paniquée des Flocons de sang, sa certitude que Belial a monté l'affaire de Provence pour justifier la guerre, l'état du conflit et sa conviction que cette guerre affaiblira tout le camp du Mal, et sa peur de perdre. Jouer un prince insolent, colérique, séduisant et triste.\nAu bord des larmes, il commence à avouer que tout est arrivé « à cause d'une fille »… quand Vannier jure dans son oreillette : la station est attaquée.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi8-crocell-22",
+              "nom": "Crocell",
+              "source": "Prince-démon du Froid (renégat de fait)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Adolescent aux cheveux bleutés, entièrement nu dans un vaste fauteuil, sirote un Cherry Coke. Insolent, colérique, séduisant, triste. Lit les pensées des PJ et reconnaît ceux qui l'ont mis dans la bouse (Provence).\nS'ils l'attaquent : ne pas jouer le combat, ils meurent et la campagne s'arrête (ou les pulvériser/paralyser).\nFiche minimale : un prince n'a pas de caractéristiques.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-crocell"
+            },
+            {
+              "id": "fi8-vanessa-23",
+              "nom": "Vanessa",
+              "source": "Démon de Crocell, grade 3 (infirmière)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 27,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 6
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Protection de l'esprit",
+                  "r": 0
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 10
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                }
+              ],
+              "talents": "Discussion 6, Aisance sociale 5, Comédie 5, Discrétion 5, Défense 4, Avoir l'air idiote 6, Séduction 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande brune aux yeux bleus, pas froid aux yeux. Infirmière qui n'y connaît rien en médecine ; joue la gentille idiote en quête d'un protecteur. En réalité très intelligente, servante efficace de Crocell depuis longtemps. Avertissement sans frais : phobie des croix.\nSe jette sur le PJ à la plus haute Présence pour lui soutirer des confidences sur l'oreiller ; avoue trouver la station bizarre, mais toute question précise grille la couverture du PJ.\nAttaque à mains nues estimée (aucun talent de combat).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vanessa"
+            },
+            {
+              "id": "fi8-vannier-24",
+              "nom": "Bernard « Pic à glace » Vannier",
+              "source": "Démon de Crocell, grade 2 (sergent, sécurité)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Pic à glace maudit mineur (inadapté à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de précision à lunette et silencieux",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Défense 7, Tir 2+ (armes d'épaule 4+), Conduite 5, Art 2 (sculpture sur glace 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit trapu barbu, cheveux ras ; chasse le phoque et le manchot au pic à glace. Plus malin qu'il n'en a l'air, finit toujours par savoir ce qui se passe. Avertissement sans frais : besoin de violence.\nVrai maître de la base. Repère vite les PJ et lâche Kinderpinguy sur eux. Abat Mousseux au fusil depuis une planque, en tenue blanche cagoulée, puis fuit en chenillette.\nFusil : Fusil à lunette de la table (le livre parle de calibre .50).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vannier"
+            },
+            {
+              "id": "fi8-iceberg-25",
+              "nom": "Isaac Iceberg",
+              "source": "Démon de Crocell, grade 2 (directeur scientifique)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 6,
+                "vo": 12,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 21,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                }
+              ],
+              "talents": "Médecine 7, Discussion 5, Défense 4+, Technique 2+ (électronique 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme quadragénaire au crâne rasé, air de bouddha. Responsable de l'équipe scientifique ; greffe des gadgets électroniques aux animaux (Kinderpinguy). Primesautier, bordélique, facétieux. Avertissement sans frais : gras.\nLes PJ ont déjà croisé son nom (scénario 1) : sa présentation doit les faire tiquer.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-iceberg"
+            },
+            {
+              "id": "fi8-bidasses-26",
+              "nom": "Bidasses Flocons de sang",
+              "source": "Soldats de la base envoûtés par Crocell",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3, Défense 2, Savoir militaire 1+ (tactique 2+), Obéir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Raoul Petibonhomme, Michel Laverse, Bruno Duo, Éric Denerre, Alfred Dujnou, Marc Mourat, Philippe Lepont, Didier Artois, Adrien Lebuc, Pierre Raspail. Cheveux courts, rangers cirées, pas futés, subjugués par Crocell qui leur a donné plus de pouvoirs et de PP qu'aux Flocons de sang ordinaires. Loyaux, mais paniquent face à une force surnaturelle conséquente.\nTrois gardent en permanence l'entrepôt interdit (relève toutes les quatre heures) ; trois accompagnent Crocell dans le chalet. Valeurs du bestiaire (Bidasse envoûté, p. 135). Fusil d'assaut : Carabine de la table.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bidasses"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-attaque",
+              "q": "Les PJ s'en prennent-ils à Crocell ?",
+              "opts": [
+                {
+                  "t": "Non, ils écoutent",
+                  "suite": "Crocell les interroge, les enferme, puis leur expose ses motivations ; l'attaque de Belial interrompt sa confession."
+                },
+                {
+                  "t": "Oui",
+                  "suite": "Ne pas jouer le combat : les PJ sont tués (ou pulvérisés/paralysés) et la campagne s'arrête."
+                },
+                {
+                  "t": "Ils tentent de fuir",
+                  "suite": "Fuite quasi impossible à cause de la tempête ; leur faire comprendre qu'il vaut mieux attendre."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi8-sc-assaut",
+          "nom": "8. James Bond font du ski",
+          "lieu": "Surface de la base Dumont d'Urville – orage de feu",
+          "notes": "Crocell remonte à la surface avec Vannier, Vanessa, les trois soldats et les PJ. Un hélicoptère noir arrose la base ; un commando de Belial (Froutch et la Division Napalm), venu détruire une base arrière du prince du froid sans savoir qu'il s'y trouve, élimine tout ce qui vit au lance-flammes. La tempête s'est calmée, place à un orage de feu.\nBataille rangée (règles de combat de masse de Fire and Ice si souhaité) : les forces sont équilibrées, le choix des PJ décide de l'issue.\nMonsieur Fabien écoute ensuite leur rapport sans commenter leur choix, et leur conseille de faire attention à eux : la guerre continue.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi8-froutch-27",
+              "nom": "Froutch",
+              "source": "Démon de Belial, grade 3 (Garde carmine)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 4,
+              "pfFix": 8,
+              "pp": 22,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes chromé (aire rayon court, inévitable)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 10,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de guerre 5+), Défense 5, Discrétion 5, Beugler des ordres 5. Feu de Prométhée 3 (nouveau pouvoir, p. 140 : spirituel, activé 1 PP ou constant 1 PP/10 s ; enflamme un objet jusqu'à la taille d'une chaise à 4 m ; en attaque, langue de feu bleutée précision +2, puissance niveau+3, portée très courte, touche même les immunisés au feu ; en constant, enflamme une arme de contact en métal : bonus de puissance égal au niveau)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, musclé, crâne rasé, bouc noir ; treillis blanc, écharpe rouge de la Garde carmine, gilet pare-balles, lance-flammes chromé. Mégalo, se croit le bras droit de Belial et compte récupérer son titre une fois Belial maître des Enfers. Avertissement sans frais : mégalomane.\nGilet pare-balles assimilé à une Veste de Kevlar (protection 4, estimation). Lance-flammes chromé : équipement de la Garde carmine (p. 140).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-froutch"
+            },
+            {
+              "id": "fi8-napalm-28",
+              "nom": "Division Napalm",
+              "source": "Démons de Belial, grade 1",
+              "type": "demon",
+              "qty": 12,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 7,
+              "prot": 4,
+              "pfFix": 7,
+              "pp": 11,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes dorsal",
+                  "att": 10,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Incendie",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de guerre 5), Défense 3+, Discrétion 3, Oui chef 4 (l'un d'eux a Pilotage à la place de Discrétion : le pilote de l'hélicoptère)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Une douzaine de types en treillis camouflage neige, casques et gilets pare-balles, lance-flammes dorsaux. Loyaux à leur chef, fanatisés pour la croisade de Belial contre son frère. Avertissement sans frais : un chacun, tous différents.\nGilet pare-balles assimilé à une Veste de Kevlar (protection 4, estimation). Lance-flammes de la table des règles.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-napalm"
+            },
+            {
+              "id": "fi8-crocell-29",
+              "nom": "Crocell",
+              "source": "Prince-démon du Froid (renégat de fait)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Adolescent aux cheveux bleutés, entièrement nu dans un vaste fauteuil, sirote un Cherry Coke. Insolent, colérique, séduisant, triste. Lit les pensées des PJ et reconnaît ceux qui l'ont mis dans la bouse (Provence).\nS'ils l'attaquent : ne pas jouer le combat, ils meurent et la campagne s'arrête (ou les pulvériser/paralyser).\nFiche minimale : un prince n'a pas de caractéristiques.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-crocell"
+            },
+            {
+              "id": "fi8-vannier-30",
+              "nom": "Bernard « Pic à glace » Vannier",
+              "source": "Démon de Crocell, grade 2 (sergent, sécurité)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Pic à glace maudit mineur (inadapté à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil de précision à lunette et silencieux",
+                  "att": 9,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Défense 7, Tir 2+ (armes d'épaule 4+), Conduite 5, Art 2 (sculpture sur glace 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit trapu barbu, cheveux ras ; chasse le phoque et le manchot au pic à glace. Plus malin qu'il n'en a l'air, finit toujours par savoir ce qui se passe. Avertissement sans frais : besoin de violence.\nVrai maître de la base. Repère vite les PJ et lâche Kinderpinguy sur eux. Abat Mousseux au fusil depuis une planque, en tenue blanche cagoulée, puis fuit en chenillette.\nFusil : Fusil à lunette de la table (le livre parle de calibre .50).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vannier"
+            },
+            {
+              "id": "fi8-vanessa-31",
+              "nom": "Vanessa",
+              "source": "Démon de Crocell, grade 3 (infirmière)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 27,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Froid polaire",
+                  "r": 6
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 6
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Protection de l'esprit",
+                  "r": 0
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 10
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                }
+              ],
+              "talents": "Discussion 6, Aisance sociale 5, Comédie 5, Discrétion 5, Défense 4, Avoir l'air idiote 6, Séduction 7+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande brune aux yeux bleus, pas froid aux yeux. Infirmière qui n'y connaît rien en médecine ; joue la gentille idiote en quête d'un protecteur. En réalité très intelligente, servante efficace de Crocell depuis longtemps. Avertissement sans frais : phobie des croix.\nSe jette sur le PJ à la plus haute Présence pour lui soutirer des confidences sur l'oreiller ; avoue trouver la station bizarre, mais toute question précise grille la couverture du PJ.\nAttaque à mains nues estimée (aucun talent de combat).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-vanessa"
+            },
+            {
+              "id": "fi8-iceberg-32",
+              "nom": "Isaac Iceberg",
+              "source": "Démon de Crocell, grade 2 (directeur scientifique)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 6,
+                "vo": 12,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 21,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Éclats de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Couche de glace",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 8
+                }
+              ],
+              "talents": "Médecine 7, Discussion 5, Défense 4+, Technique 2+ (électronique 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme quadragénaire au crâne rasé, air de bouddha. Responsable de l'équipe scientifique ; greffe des gadgets électroniques aux animaux (Kinderpinguy). Primesautier, bordélique, facétieux. Avertissement sans frais : gras.\nLes PJ ont déjà croisé son nom (scénario 1) : sa présentation doit les faire tiquer.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-iceberg"
+            },
+            {
+              "id": "fi8-bidasses-33",
+              "nom": "Bidasses Flocons de sang",
+              "source": "Soldats de la base envoûtés par Crocell",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3, Défense 2, Savoir militaire 1+ (tactique 2+), Obéir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Raoul Petibonhomme, Michel Laverse, Bruno Duo, Éric Denerre, Alfred Dujnou, Marc Mourat, Philippe Lepont, Didier Artois, Adrien Lebuc, Pierre Raspail. Cheveux courts, rangers cirées, pas futés, subjugués par Crocell qui leur a donné plus de pouvoirs et de PP qu'aux Flocons de sang ordinaires. Loyaux, mais paniquent face à une force surnaturelle conséquente.\nTrois gardent en permanence l'entrepôt interdit (relève toutes les quatre heures) ; trois accompagnent Crocell dans le chalet. Valeurs du bestiaire (Bidasse envoûté, p. 135). Fusil d'assaut : Carabine de la table.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136.",
+              "typeId": "type-fi8-bidasses"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi8-ch-camp",
+              "q": "Quel camp choisissent les PJ ?",
+              "opts": [
+                {
+                  "t": "Aucun",
+                  "suite": "Les deux camps s'entre-tuent ; Belial l'emporte de justesse, Crocell doit fuir avant d'être reconnu et qu'un démon n'invoque Belial."
+                },
+                {
+                  "t": "Les assaillants (Belial)",
+                  "suite": "Les serviteurs de Crocell sont décimés, il s'enfuit et garde rancune aux PJ, surtout après les avoir épargnés."
+                },
+                {
+                  "t": "Crocell",
+                  "suite": "Victoire rapide sur le commando. Crocell offre à chacun +1 PP, un niveau de pouvoir de grade de sa sphère (Froid) et son numéro de portable (+2 colonnes pour l'invoquer) s'il n'est pas officiellement renégat, puis se téléporte en lieu sûr."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795281332119,
+      "updatedAt": 1795281332119
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi8-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune type musclé, cheveux courts, peau mate, superbe uniforme de pompier. Ami de Monsieur Fabien.\nA découvert le corps chambre 312, l'a fait évacuer en « crise cardiaque » avec l'aide d'un démon de Bifrons à la morgue, et a tenu la police à l'écart. Briefe les PJ au P.C. sécurité de l'hôtel.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi8-luigi",
+      "nom": "Luigi",
+      "source": "Prostitué, ami de la victime",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune Italien séduisant, cheveux gominés, poils qui dépassent du col. Erre paniqué dans l'hôtel depuis l'aube ; Margot (Marguerite Leblanc) l'avait appelé la veille pour dire que tout allait bien.\nSi une voix d'homme répond au portable de la victime, il explose en menaces. Rencontré, il fanfaronne puis craque et décrit le client : grand, roux, moustachu, yeux clairs, taches de rousseur.\nFiche minimale : caractéristiques non fournies.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-cliff",
+      "nom": "Cliff",
+      "source": "Démon de Baalberith, comité d'accueil au Cap",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand Noir très maigre, anglais à fort accent bantou. Attend les PJ à l'aéroport avec un panneau, fournit armes et liasses de rands. A fait filer Bjorn jusqu'à son hôtel près du port.\nFiche minimale : caractéristiques non fournies.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-bjorn",
+      "nom": "Bjorn Olsen",
+      "source": "Géologue, Flocon de sang",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 6,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Éclats de glace",
+          "r": 2
+        }
+      ],
+      "talents": "Science 2 (géologie 4), Discussion 3, Prendre des initiatives 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand rouquin moustachu d'origine danoise, la cinquantaine, yeux bleus, taches de rousseur. Aime les jolies femmes, la bonne chère et les drogues. A perdu les pédales lors d'un mauvais trip et tué Marguerite Leblanc avec son pouvoir à l'hôtel d'Orly ; depuis, angoissé à l'idée d'être retrouvé.\nFil conducteur du scénario : Orly → Le Cap → cargo L'Anjou → base Dumont d'Urville. Sur le bateau, joue les touristes et fait des exposés sur le socle antarctique.\nProfil des scientifiques Flocons de sang (p. 135). Attaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-baleine",
+      "nom": "Baleine bleue déboussolée",
+      "source": "Les dents de la mer (incident du cargo)",
+      "type": "monstre",
+      "car": {
+        "fo": 12,
+        "ag": 2,
+        "pe": 2,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 8,
+      "pfFix": 24,
+      "pp": 0,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Coup de boule contre la coque",
+          "att": 6,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trente mètres, plus de 150 tonnes, rendue folle par le chaos magnético-magique autour de Crocell. Tente de faire chavirer le cargo ; seule issue : la tuer (meurt à 0 PF). Armure 8.\nSi son attaque réussit : chaque PJ teste l'Agilité, sinon blessure de gravité 1d6+2. Sur un RU de 6, voie d'eau à colmater (les matelots s'en chargent) ; au bout de cinq brèches, le navire coule.\nLe livre ne donne que PF 24, seuil de BL 8, armure 8 et Corps à corps 3 : caractéristiques et seuils BG/BF/MS estimés.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-tricard",
+      "nom": "Lieutenant Tricard",
+      "source": "Chef de la base (humain normal)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil",
+          "att": 6,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 2 (armes d'épaule 3), Savoir militaire 2 (tactique 3), Croire qu'il dirige vraiment la base 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Taille moyenne, cheveux gris, air sévère, pète-sec. Persuadé de diriger la base sans rien comprendre à ce qui s'y passe ; méprise civils et touristes.\nDéfense non donnée : 2 (niveau 1). Arme : Carabine de la table (estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-dugland",
+      "nom": "Sergent Dugland",
+      "source": "Bidasse touristique (humain normal)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 3
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil",
+          "att": 6,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 2 (armes d'épaule 3), Défense 2+, Guide touristique en milieu froid 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit gros à moitié chauve, grosses lunettes, français de caserne, zozote un peu. Adjoint de Tricard, responsable des civils : traîne les touristes chaque matin en chenillette pour leur montrer les merveilles de la Terre Adélie. Pénible.\nArme : fusil non précisé (Carabine de la table, estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-iceberg",
+      "nom": "Isaac Iceberg",
+      "source": "Démon de Crocell, grade 2 (directeur scientifique)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 6,
+        "vo": 12,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 21,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        },
+        {
+          "n": "Éclats de glace",
+          "r": 4
+        },
+        {
+          "n": "Couche de glace",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 8
+        }
+      ],
+      "talents": "Médecine 7, Discussion 5, Défense 4+, Technique 2+ (électronique 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Énorme quadragénaire au crâne rasé, air de bouddha. Responsable de l'équipe scientifique ; greffe des gadgets électroniques aux animaux (Kinderpinguy). Primesautier, bordélique, facétieux. Avertissement sans frais : gras.\nLes PJ ont déjà croisé son nom (scénario 1) : sa présentation doit les faire tiquer.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-vanessa",
+      "nom": "Vanessa",
+      "source": "Démon de Crocell, grade 3 (infirmière)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 6,
+        "foi": 10
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 27,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Froid polaire",
+          "r": 6
+        },
+        {
+          "n": "Couche de glace",
+          "r": 6
+        },
+        {
+          "n": "Invisibilité",
+          "r": 6
+        },
+        {
+          "n": "Non-détection",
+          "r": 6
+        },
+        {
+          "n": "Protection de l'esprit",
+          "r": 0
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 10
+        },
+        {
+          "n": "Charme",
+          "r": 6
+        }
+      ],
+      "talents": "Discussion 6, Aisance sociale 5, Comédie 5, Discrétion 5, Défense 4, Avoir l'air idiote 6, Séduction 7+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande brune aux yeux bleus, pas froid aux yeux. Infirmière qui n'y connaît rien en médecine ; joue la gentille idiote en quête d'un protecteur. En réalité très intelligente, servante efficace de Crocell depuis longtemps. Avertissement sans frais : phobie des croix.\nSe jette sur le PJ à la plus haute Présence pour lui soutirer des confidences sur l'oreiller ; avoue trouver la station bizarre, mais toute question précise grille la couverture du PJ.\nAttaque à mains nues estimée (aucun talent de combat).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-vannier",
+      "nom": "Bernard « Pic à glace » Vannier",
+      "source": "Démon de Crocell, grade 2 (sergent, sécurité)",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 4,
+        "vo": 6,
+        "pr": 2,
+        "foi": 8
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 19,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Pic à glace maudit mineur (inadapté à la parade)",
+          "att": 14,
+          "prec": 1,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Fusil de précision à lunette et silencieux",
+          "att": 9,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Froid polaire",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Couche de glace",
+          "r": 6
+        },
+        {
+          "n": "Éclats de glace",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        },
+        {
+          "n": "Non-détection",
+          "r": 4
+        },
+        {
+          "n": "Corps liquide",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 7, Défense 7, Tir 2+ (armes d'épaule 4+), Conduite 5, Art 2 (sculpture sur glace 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit trapu barbu, cheveux ras ; chasse le phoque et le manchot au pic à glace. Plus malin qu'il n'en a l'air, finit toujours par savoir ce qui se passe. Avertissement sans frais : besoin de violence.\nVrai maître de la base. Repère vite les PJ et lâche Kinderpinguy sur eux. Abat Mousseux au fusil depuis une planque, en tenue blanche cagoulée, puis fuit en chenillette.\nFusil : Fusil à lunette de la table (le livre parle de calibre .50).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-kinderpinguy",
+      "nom": "Kinderpinguy",
+      "source": "Manchot espion",
+      "type": "familier",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 2,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discrétion 3, Ramasser des cailloux 3, Manger du poisson 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Manchot ridicule et mignon, caméra greffée sous le crâne et reliée au nerf optique : tout ce qu'il voit part au poste de sécurité (Vannier). Suit les PJ partout comme s'il les avait pris en affection.\nCh du livre reportée en Foi.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-mousseux",
+      "nom": "André Mousseux",
+      "source": "Ange de Daniel, grade 1 (soldat de 2e classe)",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 12,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Pistolet",
+          "att": 10,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Corps à corps",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Trait d'énergie",
+          "r": 2
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 6
+        },
+        {
+          "n": "Déphasage",
+          "r": 2
+        },
+        {
+          "n": "Pétrification",
+          "r": 2
+        },
+        {
+          "n": "Détection du mal",
+          "r": 2
+        }
+      ],
+      "talents": "Combat 4, Tir 3 (armes de poing 5), Défense 4+, Trier des cailloux 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand et gros costaud rougeaud, très lâche ; a foiré tant de missions qu'on l'a rangé ici (deuxième avertissement sans frais : lâche et asexué). Membre de la You-You Power Force, ostracisé par les autres soldats. Terrifié d'être entouré de démons, larges cernes.\nMéfiant, puis donne rendez-vous aux PJ entre les chenillettes : il ignore qui ils sont, mais les supplie de ne pas être du côté des autres. Abattu d'une balle de .50 par Vannier avant d'avoir pu en dire plus.\nArmes : pistolet (Revolver gros calibre de la table) et mains nues (estimation).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-scientifiques",
+      "nom": "Scientifiques Flocons de sang",
+      "source": "Équipe d'Isaac Iceberg",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 6,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Éclats de glace",
+          "r": 2
+        }
+      ],
+      "talents": "Science 2 (spécialisations diverses 4), Discussion 3, Prendre des initiatives 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Albert Eiseinsteinbergenovitch (climatologie, petit monsieur au jargon abscons, imbibé de vodka), Isaac Lethon (météorologie, grand maigre à queue de cheval, adore faire des exposés aux touristes), Marie Vury (biogéographie, quinquagénaire nymphomane qui jette son dévolu sur les PJ), Baké Diouf (océanographie, taciturne, accent du Nord). Bjorn Olsen complète l'équipe.\nAttaque à mains nues estimée.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-bidasses",
+      "nom": "Bidasses Flocons de sang",
+      "source": "Soldats de la base envoûtés par Crocell",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 6,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil d'assaut",
+          "att": 6,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Éclats de glace",
+          "r": 2
+        }
+      ],
+      "talents": "Tir 3, Défense 2, Savoir militaire 1+ (tactique 2+), Obéir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Raoul Petibonhomme, Michel Laverse, Bruno Duo, Éric Denerre, Alfred Dujnou, Marc Mourat, Philippe Lepont, Didier Artois, Adrien Lebuc, Pierre Raspail. Cheveux courts, rangers cirées, pas futés, subjugués par Crocell qui leur a donné plus de pouvoirs et de PP qu'aux Flocons de sang ordinaires. Loyaux, mais paniquent face à une force surnaturelle conséquente.\nTrois gardent en permanence l'entrepôt interdit (relève toutes les quatre heures) ; trois accompagnent Crocell dans le chalet. Valeurs du bestiaire (Bidasse envoûté, p. 135). Fusil d'assaut : Carabine de la table.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-groumf",
+      "nom": "Groumf",
+      "source": "Ours polaire familier de Crocell",
+      "type": "familier",
+      "car": {
+        "fo": 12,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 12,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 10,
+          "prec": -2,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Éclats de glace",
+          "r": 4
+        },
+        {
+          "n": "Couche de glace",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 5, Défense 3, Athlétisme 3, Manger des manchots 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ours blanc de quatre mètres et quelques tonnes, n'a rien à faire dans cet hémisphère. Pas très malin. Valeurs du bestiaire (Ours polaire familier, p. 134).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-broumf",
+      "nom": "Broumf",
+      "source": "Ours polaire familier de Crocell",
+      "type": "familier",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 13,
+      "seuilsFix": [
+        6,
+        13,
+        19,
+        26
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 9,
+          "prec": -2,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Vitesse",
+          "r": 6
+        },
+        {
+          "n": "Éclats de glace",
+          "r": 4
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 4+, Défense 4, Athlétisme 4, Affûter ses griffes sur la banquise 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Plus intelligent que Groumf, mais tout pelé.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-sculptures",
+      "nom": "Sculptures de glace",
+      "source": "Familiers lobotomisés de Crocell",
+      "type": "familier",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 2,
+        "vo": 2,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 0,
+      "seuilsFix": [
+        6,
+        13,
+        19,
+        26
+      ],
+      "armes": [
+        {
+          "n": "Poings",
+          "att": 12,
+          "prec": 1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Pieds",
+          "att": 12,
+          "prec": 1,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Couche de glace",
+          "r": 6
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 6, Défense 6, Discrétion 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Statues de taille humaine cachées parmi les sculptures monumentales autour du chalet. Stupides mais très rapides, frappent par surprise puis se fondent parmi les autres statues. Couche de glace permanente, sans coût en PP. Avertissement sans frais : texture de la peau.\nAutant de sculptures que de PJ (quantité à ajuster). Pas de PP indiqués.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-crocell",
+      "nom": "Crocell",
+      "source": "Prince-démon du Froid (renégat de fait)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Adolescent aux cheveux bleutés, entièrement nu dans un vaste fauteuil, sirote un Cherry Coke. Insolent, colérique, séduisant, triste. Lit les pensées des PJ et reconnaît ceux qui l'ont mis dans la bouse (Provence).\nS'ils l'attaquent : ne pas jouer le combat, ils meurent et la campagne s'arrête (ou les pulvériser/paralyser).\nFiche minimale : un prince n'a pas de caractéristiques.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-froutch",
+      "nom": "Froutch",
+      "source": "Démon de Belial, grade 3 (Garde carmine)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 6,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 4,
+      "pfFix": 8,
+      "pp": 22,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Lance-flammes chromé (aire rayon court, inévitable)",
+          "att": 11,
+          "prec": -1,
+          "puis": 10,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Incendie",
+          "r": 6
+        },
+        {
+          "n": "Caméléon",
+          "r": 4
+        },
+        {
+          "n": "Non-détection",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2 (armes de guerre 5+), Défense 5, Discrétion 5, Beugler des ordres 5. Feu de Prométhée 3 (nouveau pouvoir, p. 140 : spirituel, activé 1 PP ou constant 1 PP/10 s ; enflamme un objet jusqu'à la taille d'une chaise à 4 m ; en attaque, langue de feu bleutée précision +2, puissance niveau+3, portée très courte, touche même les immunisés au feu ; en constant, enflamme une arme de contact en métal : bonus de puissance égal au niveau)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand, musclé, crâne rasé, bouc noir ; treillis blanc, écharpe rouge de la Garde carmine, gilet pare-balles, lance-flammes chromé. Mégalo, se croit le bras droit de Belial et compte récupérer son titre une fois Belial maître des Enfers. Avertissement sans frais : mégalomane.\nGilet pare-balles assimilé à une Veste de Kevlar (protection 4, estimation). Lance-flammes chromé : équipement de la Garde carmine (p. 140).\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    },
+    {
+      "id": "type-fi8-napalm",
+      "nom": "Division Napalm",
+      "source": "Démons de Belial, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 7,
+      "prot": 4,
+      "pfFix": 7,
+      "pp": 11,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Lance-flammes dorsal",
+          "att": 10,
+          "prec": -3,
+          "puis": 9,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Incendie",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Détection du bien",
+          "r": 2
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2 (armes de guerre 5), Défense 3+, Discrétion 3, Oui chef 4 (l'un d'eux a Pilotage à la place de Discrétion : le pilote de l'hélicoptère)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Une douzaine de types en treillis camouflage neige, casques et gilets pare-balles, lance-flammes dorsaux. Loyaux à leur chef, fanatisés pour la croisade de Belial contre son frère. Avertissement sans frais : un chacun, tous différents.\nGilet pare-balles assimilé à une Veste de Kevlar (protection 4, estimation). Lance-flammes de la table des règles.\nSource : Fire and Ice, « Voir le Pôle et courir », p. 125-136."
+    }
+  ],
+  "memoire": []
+}

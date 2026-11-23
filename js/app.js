@@ -1,7 +1,10 @@
 import * as R from './rules.js';
 import { store } from './store.js';
 import { table, errText } from './table.js';
-import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice } from './scenario.js';
+import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice, QUICK, quickNpc } from './scenario.js';
+import { QUICK_PP } from './data/pnjrapides.js';
+import { SCENARIOS_LIVRES } from './data/scenarios-livres.js';
+import { HIERARCHIE, SUP_HIER } from './data/hierarchie.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -361,6 +364,62 @@ function renderPouvoirs(c) {
 }
 
 // ================= Carnet =================
+// ---- Hiérarchie : invocation, blâmes, avertissements, récompenses (livret de règles, ch. 4) ----
+const d66 = () => (1 + Math.floor(Math.random() * 6)) * 10 + 1 + Math.floor(Math.random() * 6);
+// Ligne d'une table d66 dont la colonne d vaut « 11-14 » ou « 36 »
+const d66Row = (table, d) => table.find((r) => { const [a, b] = String(r.d).split('-').map(Number); return d >= a && d <= (b || a); });
+// Faces du d6 qui partagent le même blâme : [[1, 2, texte], [3, 4, texte]…]
+const blameGroups = (b) => b.reduce((g, t, i) => { const last = g[g.length - 1]; if (last && last[2] === t) last[1] = i + 1; else g.push([i + 1, i + 1, t]); return g; }, []);
+function hierBlock(c, sup) {
+  const h = SUP_HIER[sup.n]; const g = +c.grade || 0;
+  return `<div class="small" style="margin-top:8px">
+      ${h?.grades && g > 0 && h.grades[g - 1] ? `<b>Titre de grade ${g}</b> : ${esc(h.grades[g - 1])}<br>` : ''}
+      ${h?.inv ? `<b>Invocation</b> : ${esc(h.inv)}` : ''}${h?.com != null ? `${h?.inv ? ' · ' : ''}<b>Communication</b> : ${esc(String(h.com))}` : ''}${h?.inv || h?.com != null ? '<br>' : ''}
+      ${h?.intervention ? `<b>Quand on l'invoque</b> : ${esc(h.intervention)}<br>` : ''}
+      ${h?.blames ? `<b>Blâmes (d6)</b> : ${blameGroups(h.blames).map(([a, b, txt]) => `${a === b ? a : a + '-' + b}. ${esc(txt || '—')}`).join(' · ')}` : ''}
+    </div>
+    <div class="row" style="margin-top:8px">${h?.invKey ? `<button class="btn sm pri" data-act="hier-invoke">Invoquer ${esc(sup.n)}</button>` : ''}<button class="btn sm" data-act="hier-rules">Règles de la hiérarchie</button></div>`;
+}
+// Invocation du supérieur : test de Foi contre son facteur d'invocation, modifié par la table du livre
+function invokeDialog(c) {
+  const sup = R.supByName(c.superieur); const h = SUP_HIER[sup?.n]; if (!h?.invKey) return;
+  if (c.chance) return toast('L\'invocation se fait avec la Foi : impossible avec la Chance');
+  const av = (+c.pa.total || 0) - (+c.pa.spent || 0); const g = +c.grade || 0;
+  const paMod = av < -10 ? -8 : av <= 0 ? -4 : av <= 10 ? -2 : av <= 20 ? 0 : av <= 30 ? 1 : 2;
+  const SIT = [['futile', 'Demande futile', -3], ['vie', 'Situation de vie ou de mort', 1], ['adv', 'Supérieur du camp adverse présent', 1],
+    ['ennemi', 'Ennemi personnel du supérieur présent', 2], ['terre', 'Le supérieur est sur terre (et +2 à la MR)', -1], ['retry', 'Deuxième essai dans l\'heure', -4]];
+  const LAST = [['', 'Jamais / plus d\'un an', 1], ['1', 'Moins d\'un mois', -4], ['6', 'Entre un et six mois', -2], ['12', 'Entre sept et douze mois', 0]];
+  const diff = R.DIFFICULTES.find((d) => d.k === h.invKey);
+  dialog(`Invoquer ${sup.n}`, `<p class="small" style="margin-top:0">Test de <b>Foi</b> (${L(c.car.foi)}) contre la difficulté <b>${esc(h.inv)}</b> (${diff.n}).</p>
+    ${SIT.map(([k, n, m]) => `<label class="small" style="display:block"><input type="checkbox" data-inv="${k}" data-m="${m}"> ${esc(n)} (${sgn(m)})</label>`).join('')}
+    <div class="field" style="margin-top:8px"><label>Dernière invocation réussie</label><select id="inv-last">${LAST.map(([k, n, m]) => `<option value="${m}">${esc(n)} (${sgn(m)})</option>`).join('')}</select></div>
+    <p class="small muted">Automatique : grade ${g} (${sgn(g)}), PA disponibles ${av} (${sgn(paMod)}).</p>`,
+  `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="inv-go">Lancer le test</button>`);
+  dlg.querySelector('#inv-go').onclick = () => {
+    const boxes = [...dlg.querySelectorAll('[data-inv]:checked')];
+    const shift = boxes.reduce((a, b) => a + +b.dataset.m, 0) + +dlg.querySelector('#inv-last').value + g + paMod;
+    const terre = boxes.some((b) => b.dataset.inv === 'terre');
+    closeDlg();
+    openRoll({ label: `Invocation de ${sup.n}`, r: c.car.foi, char: c, after: (res) => {
+      const mr = res.mr + (terre ? 2 : 0);
+      const row = HIERARCHIE.invocation.resultats.find((x) => { const m = String(x.mr).match(/^(\d+)(?:-(\d+)|\+)?/); return m && mr >= +m[1] && (x.mr.endsWith('+') || mr <= +(m[2] || m[1])); });
+      return `${terre ? `MR ${mr} avec le bonus du supérieur sur terre. ` : ''}${esc(row?.effet || '')}${h.intervention ? `<br><i>${esc(h.intervention)}</i>` : ''}`;
+    } });
+    rollState.diff = h.invKey; rollState.shift = shift; showRoll();
+  };
+}
+function hierRulesDialog(c) {
+  const H = HIERARCHIE; const li = (rows, a, b) => `<ul class="small">${rows.map((r) => `<li><b>${esc(String(r[a]))}</b> : ${esc(String(r[b] ?? ''))}</li>`).join('')}</ul>`;
+  const com = H.communication;
+  dialog('Règles de la hiérarchie', `<div class="small">
+    <h3>Invocation</h3><p>${esc(H.invocation.principe)}</p><p>${esc(H.invocation.test)}</p>${li(H.invocation.modificateurs, 'cond', 'mod')}${li(H.invocation.resultats, 'mr', 'effet')}<p class="muted">${esc(H.invocation.notes || '')}</p>
+    <h3>Communication</h3><p>${esc(com.principe)}</p>${(com.methodes || []).map((m) => `<p><b>${esc(m.n)}</b> — ${esc(m.difficulte || '')}${m.risque ? ` · ${esc(m.risque)}` : ''}</p>`).join('')}
+    ${com.modificateurs ? li(com.modificateurs, 'cond', 'mod') : ''}${com.arrivee ? `<p><b>Délai d'arrivée</b> : ${esc(typeof com.arrivee === 'string' ? com.arrivee : (Array.isArray(com.arrivee) ? com.arrivee.map((a) => Object.values(a).join(' : ')).join(' ; ') : JSON.stringify(com.arrivee)))}</p>` : ''}
+    <h3>Récompenses</h3><p>${esc(H.recompenses.principe || '')}</p>${H.recompenses.bareme ? li(H.recompenses.bareme, 'cond', 'pa') : ''}<p><b>Demander</b> : ${esc(H.recompenses.demander || '')}</p><p><b>Exiger</b> : ${esc(H.recompenses.exiger || '')}</p>${li(H.recompenses.table, 'd', 'effet')}
+    <h3>Avertissements</h3><p>${esc(H.avertissements.principe)}</p>${li(H.avertissements.table, 'd', 'effet')}
+    <h3>Blâmes</h3><p>${esc(H.blames.principe)}</p>
+    <p class="muted">${esc(H.pages || '')}</p></div>`);
+}
 function renderCarnet(c) {
   const t = R.typeOf(c); const sup = R.supByName(c.superieur);
   const id = c.identite;
@@ -397,7 +456,7 @@ function renderCarnet(c) {
       ${sup.dom ? `<b>Domaines</b> : ${esc(sup.dom.replace(/\*/g, ' (grade 2+)'))}<br>` : ''}
       ${sup.pw ? `<b>Pouvoirs de base</b> : ${esc(sup.pw)}` : ''}
       ${sup.avantage ? `<br><b>Avantage</b> : ${esc(sup.avantage)}` : ''}
-    </div>` : ''}
+    </div>${t.sup ? hierBlock(c, sup) : ''}` : ''}
     ${t.sup ? `<p class="small muted">${esc(R.GRADES[c.grade || 0].txt)}</p>` : ''}
     ${t.note ? `<p class="small muted">${esc(t.note)}</p>` : ''}
   </section>
@@ -409,6 +468,7 @@ function renderCarnet(c) {
       const i = c.pa.log.length - 1 - j;
       return `<div class="trow small"><div class="tn">${esc(e.label)} <span class="muted">${new Date(e.t).toLocaleDateString('fr-FR')}</span></div><b>${e.gain ? '+' + e.gain : '–' + e.cost}</b>${i === c.pa.log.length - 1 ? `<button class="ibtn" style="width:30px;height:30px" data-act="pa-undo" title="Annuler">${icon('undo')}</button>` : ''}</div>`;
     }).join('')}` : ''}
+    ${t.sup ? `<div class="row" style="margin-top:8px"><button class="btn sm" data-act="hier-reward">Récompense de l'administration (d66)</button></div>` : ''}
     <p class="small muted" style="margin-bottom:0">L'administration ne communique jamais le total de PA : c'est le MJ qui les distribue. Passer en mode « PA » (bouton en haut) pour les dépenser.</p>
   </section>` : ''}
   ${renderTableCard(c)}
@@ -416,6 +476,8 @@ function renderCarnet(c) {
     <h2>Limitations</h2>
     ${c.limitations.map((l, i) => `<div class="trow"><div class="tn"><span class="badge ${l.k === 'Blâme' ? 'no' : ''}">${esc(l.k)}</span> ${esc(l.txt)}</div><button class="ibtn" style="width:30px;height:30px" data-act="lim-del" data-i="${i}">${icon('x')}</button></div>`).join('') || '<div class="empty">Aucune</div>'}
     <div class="row" style="margin-top:8px"><select class="inp" id="lim-k" style="max-width:150px"><option>Avertissement</option><option>Blâme</option><option>Mesure disciplinaire</option></select><input class="inp" id="lim-txt" style="flex:1;min-width:140px" placeholder="Description"><button class="btn" data-act="lim-add">Ajouter</button></div>
+    ${t.sup ? `<div class="row" style="margin-top:8px"><button class="btn sm" data-act="hier-avert">Tirer un avertissement (d66)</button>${sup && SUP_HIER[sup.n]?.blames ? `<button class="btn sm" data-act="hier-blame">Tirer un blâme de ${esc(sup.n)} (d6)</button>` : ''}</div>
+    <p class="small muted" style="margin-bottom:0">Avertissement dès que le total de PA tombe à –5 (retiré quand il remonte à 0) ; blâme infligé par le supérieur pour une grosse faute, jusqu'à ce que le personnage fasse amende honorable.</p>` : ''}
   </section>
   <section class="card">
     <h2>Possessions et notes</h2>
@@ -1310,7 +1372,7 @@ function renderScenList() {
     }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
-    <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-library">${icon('book')} Scénarios des livres (${SCENARIOS_LIVRES.length})</button><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
     <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
   </section>
   ${renderBestiaire()}`;
@@ -1320,7 +1382,7 @@ function renderBestiaire() {
   return `<section class="card">
     <h2>Bestiaire <span class="tag">types d'ennemis réutilisables</span></h2>
     ${types.map((t) => `<div class="trow click" data-act="sc-type-edit" data-key="${esc(t.id)}"><div class="tn"><b>${esc(t.nom)}</b>${t.source ? ` <small>· ${esc(t.source)}</small>` : ''}<br><small>${esc(npcSummary(t))}</small></div><div class="tl">›</div></div>`).join('') || '<div class="empty">Aucun type d\'ennemi pour l\'instant</div>'}
-    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-book">${icon('book')} Bestiaire des livres (${BOOK.length})</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
+    <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-type-new">${icon('plus')} Nouveau type</button><button class="btn sm" data-act="sc-type-book">${icon('book')} Bestiaire des livres (${BOOK.length})</button><button class="btn sm" data-act="sc-type-quick">PNJ rapide</button><button class="btn sm" data-act="sc-type-char">Depuis un personnage</button>
       <span class="spacer"></span><button class="btn sm" data-act="sc-type-import">Importer un bestiaire</button>${types.length ? '<button class="btn sm" data-act="sc-type-export">Exporter le bestiaire</button>' : ''}</div>
     <p class="small muted" style="margin-bottom:0">Prépare une fois un type d'ennemi (sbire de la Mafia, démon de Baal, soldat de Dieu…), puis ajoute-le à n'importe quelle scène en choisissant combien il en faut : bouton « Depuis le bestiaire » d'une scène, ou « Renfort » pendant un combat.</p>
   </section>`;
@@ -1331,6 +1393,38 @@ function typeItems(exclude = () => false) {
   const book = BOOK.filter((t) => !scen.getType(t.id) && !exclude(t)).map((t) => ({ t, book: true, label: t.nom, sub: `📖 ${t.book}${t.source ? ' · ' + t.source : ''} · ${npcSummary(t)}` }));
   return [...mine, ...book];
 }
+// Bibliothèque des scénarios des livres : classée par livre, chargée à la demande depuis scenarios/
+function libraryDialog(go) {
+  let q = '';
+  const draw = () => {
+    const list = SCENARIOS_LIVRES.filter((x) => !q || norm(`${x.nom} ${x.livre} ${x.camp} ${x.resume}`).includes(norm(q)));
+    const livres = [...new Set(list.map((x) => x.livre))];
+    dialog('Scénarios des livres', `<input class="inp" id="lib-q" placeholder="Rechercher (titre, livre, INS, MV…)" value="${esc(q)}" style="margin-bottom:8px">
+      <p class="small muted" style="margin-top:0">Scènes, PNJ chiffrés, choix possibles et récompenses, résumés pour le MJ. Les PNJ restent dans le scénario ; « Enregistrer dans le bestiaire » sur une fiche pour la réutiliser ailleurs.</p>
+      ${livres.map((l) => `<h3>${esc(l)}</h3>${list.filter((x) => x.livre === l).map((x) => {
+        const had = scen.all().some((s) => s.livre === x.file);
+        return `<button class="choice" data-lib="${esc(x.file)}"><span><b>${had ? '✓ ' : ''}${esc(x.nom.replace(/^[^–]*– /, ''))}</b><small>${esc([x.camp, `${x.scenes} scènes`, `${x.pnj} PNJ`, `${x.combats} combat(s)`, `${x.choix} choix`].filter(Boolean).join(' · '))}</small><small>${esc(x.resume.length > 220 ? x.resume.slice(0, 220) + '…' : x.resume)}</small></span></button>`;
+      }).join('')}`).join('') || '<div class="empty">Rien</div>'}`);
+    const inp = dlg.querySelector('#lib-q');
+    inp.oninput = () => { q = inp.value; const pos = inp.selectionStart; draw(); const n = dlg.querySelector('#lib-q'); n.focus(); n.setSelectionRange(pos, pos); };
+    dlg.onclick = async (e) => {
+      if (e.target.closest('[data-dact="close"]')) return closeDlg();
+      const b = e.target.closest('[data-lib]'); if (!b) return;
+      const x = SCENARIOS_LIVRES.find((y) => y.file === b.dataset.lib);
+      closeDlg();
+      const had = scen.all().find((s) => s.livre === x.file);
+      if (had && !(await confirmDlg('Déjà ajouté', `« ${esc(x.nom)} » est déjà dans tes scénarios. En ajouter une seconde copie ?`))) return go(had.id);
+      try {
+        const res = await fetch(`scenarios/${x.file}.json`);
+        if (!res.ok) throw new Error(`fichier introuvable (${res.status})`);
+        const r = scen.importScenarios(await res.text(), { types: false, livre: x.file });
+        toast(`${x.nom} ajouté${r.memo ? ` (${r.memo} fil(s) de campagne)` : ''}`);
+        go(r.ids[0]);
+      } catch (err) { toast(`Impossible de charger le scénario : ${err.message}${navigator.onLine ? '' : ' (hors connexion : ouvre-le une fois en ligne)'}`); }
+    };
+  };
+  draw();
+}
 // Choisit un fichier JSON et le passe à fn (qui renvoie le message de confirmation)
 function pickJSON(fn) {
   const inp = document.createElement('input'); inp.type = 'file'; inp.accept = '.json,application/json';
@@ -1338,6 +1432,21 @@ function pickJSON(fn) {
   inp.click();
 }
 // Demande un nombre d'exemplaires
+// PNJ rapide de l'écran du maître : camp, supérieur et total de PP → fiche calculée par les tables d'évolution
+function askQuickNpc() {
+  return new Promise((resolve) => {
+    const opts = (camp) => QUICK[camp].map((p) => `<option>${esc(p[0])}</option>`).join('');
+    dialog('PNJ rapide', `<p class="small muted" style="margin-top:0">Profils du livret de l'écran du maître : un ange ou un démon type par supérieur, de 10 PP (grade 0) à 40 PP (grade 3). Caractéristiques, talents regroupés et pouvoirs suivent les tables d'évolution.</p>
+      <div class="field"><label>Camp</label><select id="qk-camp"><option value="ange">Ange</option><option value="demon">Démon</option></select></div>
+      <div class="field"><label>Supérieur</label><select id="qk-sup">${opts('ange')}</select></div>
+      <div class="field"><label>Total de PP</label><select id="qk-pp">${QUICK_PP.map((p) => `<option value="${p}">${p} PP</option>`).join('')}</select></div>`,
+    `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="qk-ok">Créer</button>`);
+    const camp = dlg.querySelector('#qk-camp'); const sup = dlg.querySelector('#qk-sup');
+    camp.onchange = () => { sup.innerHTML = opts(camp.value); };
+    dlg.querySelector('#qk-ok').onclick = () => { const r = quickNpc(camp.value, sup.value, +dlg.querySelector('#qk-pp').value); closeDlg(); resolve(r); };
+    onRealClose(() => resolve(null));
+  });
+}
 async function askQty(nom, def = 1) {
   const v = await ask(nom, 'Combien ?', String(def));
   if (v === null) return 0;
@@ -1673,6 +1782,7 @@ async function scenAction(act, b) {
       if (!nom) return toast('Donne un titre au scénario');
       return go(scen.create(nom).id);
     }
+    case 'sc-library': return libraryDialog(go);
     case 'sc-import': return pickJSON((txt) => {
       const r = scen.importScenarios(txt);
       return `${r.scenarios} scénario(s) importé(s)${r.types ? `, ${r.types} type(s) d'ennemis ajouté(s) au bestiaire` : ''}${r.memo ? `, ${r.memo} choix des joueurs` : ''}`;
@@ -1723,6 +1833,10 @@ async function scenAction(act, b) {
         const had = scen.getType(it.t.id); const t = scen.adoptBook(it.t);
         ui.npcEdit = { type: t.id }; toast(had ? 'Déjà dans ton bestiaire' : `${t.nom} ajouté à ton bestiaire`); render(); window.scrollTo(0, 0);
       });
+    case 'sc-type-quick': {
+      const q = await askQuickNpc(); if (!q) return;
+      const t = scen.saveAsType(q); ui.npcEdit = { type: t.id }; toast(`${t.nom} ajouté à ton bestiaire`); render(); return window.scrollTo(0, 0);
+    }
     case 'sc-type-char': {
       const list = store.list();
       if (!list.length) return toast('Aucun personnage dans le Grimoire');
@@ -2026,6 +2140,21 @@ document.addEventListener('click', async (e) => {
       return commit();
     }
     case 'pa-undo': return undoPA();
+    case 'hier-invoke': return invokeDialog(c);
+    case 'hier-rules': return hierRulesDialog(c);
+    case 'hier-reward': {
+      const d = d66(); const row = d66Row(HIERARCHIE.recompenses.table, d);
+      return dialog(`Récompense : ${d}`, `<p>${esc(row?.effet || '—')}</p><p class="small muted">${esc(HIERARCHIE.recompenses.table_note || '')} C'est le MJ qui accorde la récompense et en fixe le coût en PA.</p>`);
+    }
+    case 'hier-avert': {
+      const d = d66(); const row = d66Row(HIERARCHIE.avertissements.table, d); if (!row) return;
+      c.limitations.push({ k: 'Avertissement', txt: `${row.effet} (d66 : ${d})` }); toast(`Avertissement (${d}) : ${row.effet.split(' :')[0]}`); return commit();
+    }
+    case 'hier-blame': {
+      const sup = R.supByName(c.superieur); const b = SUP_HIER[sup?.n]?.blames; if (!b) return;
+      const d = 1 + Math.floor(Math.random() * 6); const txt = b[d - 1] || 'blâme au choix du supérieur (case illisible dans le livre)';
+      c.limitations.push({ k: 'Blâme', txt: `${sup.n} (${d}) : ${txt}` }); toast(`Blâme de ${sup.n} (${d})`); return commit();
+    }
     case 'lim-add': { const txt = document.getElementById('lim-txt').value.trim(); if (!txt) return; c.limitations.push({ k: document.getElementById('lim-k').value, txt }); return commit(); }
     case 'lim-del': c.limitations.splice(i, 1); return commit();
     // ---- biblio ----

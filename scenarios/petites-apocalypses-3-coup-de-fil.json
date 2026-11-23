@@ -1,0 +1,3253 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa3-coup-de-fil",
+      "nom": "Petites Apocalypses – Un coup de fil à la patte",
+      "resume": "Scénario pour agents de la troisième Force employés par la DTC. Hercule a été enfermé dans un vieux téléphone portable par un sorcier, Louis-André d'Astelin, qui veut s'en servir pour humilier sa sœur Domitille, héroïne romaine. Seul indice : un SMS tronqué signé « Louis de quelque chose »… or la famille compte six Louis. Profitant du grand week-end de chasse de Pâques au manoir, les PJ s'infiltrent parmi une famille noble pleine de secrets, d'un ange, de deux démons et d'une héroïne païenne, trouvent le bon Louis et libèrent leur patron.",
+      "notes": "Source : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73 ; adaptations p. 115-116. Scénario ouvert d'enquête et de roleplay : noyer les joueurs sous les noms, rumeurs et secrets ; on peut aussi simplifier les PNJ si les histoires de famille ne plaisent pas à la table. Plusieurs dénouements possibles, aucun imposé.\n\nArbre généalogique :\n• Louis-Égispée (90 ans, démon de Ouikka gr. 2) ∞ Ester Berthel (morte à la naissance de Domitille).\n  – Louis-André (68, sorcier) ∞ Catherine von Irsch (65).\n     · Philippe-Louis (48, inventeur) ∞ Blondine Dangeville (36, biologiste) → Louis (9, démon de Shaytan gr. 1), Sybille (7), Angeline (6).\n     · Henry (47) ∞ Estelle Firambelle (40) → Bertille (20, en réalité fille de Marc-Jean), avec son petit ami Antoine de Saint-Louis (22).\n  – Marc-Jean (64, comédien, célibataire).\n  – Domitille (55, héroïne romaine) ∞ 1) Adrien Berthel, cousin, mort ; 2) Abélard de la Vibère (58).\n     · Charles-Louis de la Vibère-d'Astelin (26, avocat) ∞ Ludivine Lyons (24, ange de Jordi gr. 0) → Antonin (2 ans).\nLes six « Louis » : Louis-Égispée, Louis-André (le coupable, qui se fait appeler « Louis »), Philippe-Louis, Charles-Louis, le petit Louis, Antoine de Saint-Louis.\n\nSecrets et fausses pistes : mort mystérieuse d'Ester ; Bertille fille de Marc-Jean ; infidélités d'Estelle ; nature démoniaque du patriarche et du petit Louis (étrangers à l'affaire) ; Ludivine ange ; robot Nestor de Philippe-Louis ; démons et sorciers parmi les invités.\n\nNotes de campagne : l'avertissement de Domitille peut être placé avant le scénario ; après, elle peut revenir avec des visions de l'apocalypse à venir (Victor).\n\nRécompenses : le livre n'en donne pas ; à fixer par le MJ.\n\nAdaptations pour anges et démons (ch. 14, p. 115-116) : la famille compte déjà un ange et des démons, donc il faut éviter que des PJ angéliques ou démoniaques y trouvent un appui trop facile.\n• MV (anges) : remplacer Hercule par un ange que le sorcier a pu « capturer » ; Ludivine cesse d'être un ange (héroïne païenne ou, à la rigueur, ange renégat).\n• INS (démons) : remplacer Hercule par un démon que les PJ doivent récupérer ; transformer les démons de la famille, surtout Louis-Égispée, en autre chose (psi, héros païen, ange ou démon renégat).\n• Dans tous les cas, ajuster la puissance des adversaires à celle des PJ.\n\nFiches : Louis-Égispée, Domitille, Ludivine et Louis sont chiffrés dans le livre ; Hercule vient du chapitre 4 (p. 21). Attaques au format du livre « seuil/RU+X/M+Y » converties en att = 2X, puissance Y. Les autres membres de la famille, le robot Nestor et les domestiques n'ont pas de caractéristiques : fiches minimales estimées (signalées dans leurs notes).",
+      "scenes": [
+        {
+          "id": "pa3-sc-capture",
+          "nom": "1. Prologue : Hercule dans le portable",
+          "lieu": "Salle de bains d'Hercule, puis bureau secret de Louis-André au grenier du manoir d'Astelin",
+          "notes": "Scène pour le MJ (à raconter ou non aux joueurs).\nUn matin, en caleçon devant son miroir, Hercule sent des fourmillements l'envahir puis disparaît : il flotte dans un néant obscur, conscient mais sans corps ni voix.\nAu grenier, Louis-André a enfin réussi un sort sérieux du Codex Merlinus : une boule de brume bleue tourbillonnante de la taille d'une clémentine. Faute d'avoir lu le sort jusqu'au bout, il n'avait pas prévu de réceptacle et l'a fourrée dans le premier objet venu : un vieux portable kaki-doré à grosses touches qui traînait dans un tiroir. Fou rire nerveux, puis il descend se faire un thé.\nTémoins : Sybille et Angeline, entrées dans le bureau laissé ouvert, cachées derrière le paravent en bois. Elles n'ont rien dit à personne.\nPlus tard, Louis-André glisse la carte SIM de son portable actuel dans le vieux téléphone et s'appelle : Hercule répond. Louis-André se présente comme « Louis d'Astelin, ton nouveau maître » et délire sur sa sœur. Pendant ce temps Hercule navigue dans les menus et envoie au QG de la DTC un SMS tronqué (« SOS, dans un portable, Louis de quelque chose, Herc »). Louis-André s'en aperçoit trop tard, retire la SIM, enferme le vieux portable dans le long tiroir central du bureau (fermé à clef, clef dans le vase bleu ébréché posé à côté) et range son portable actuel et la carte dans un autre tiroir, séparés.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa3-louis-andre-1",
+              "nom": "Louis-André d'Astelin",
+              "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis-andre"
+            },
+            {
+              "id": "pa3-fillettes-2",
+              "nom": "Sybille et Angeline d'Astelin",
+              "source": "Filles de Philippe-Louis (7 et 6 ans) – témoins de la capture",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Inséparables brunettes à nattes, curieuses, bavardes et pouffeuses ; fans d'histoires de sorcellerie à la Harry Potter. Se méfient de leur frère Louis et du manoir, préfèrent l'atelier de leur père.\nCachées derrière le paravent du bureau de Louis-André, elles ont tout vu (Sybille a trouvé ça drôle, Angeline bizarre) et n'en ont parlé à personne. Elles peuvent parler à un PJ patient (interrogatoire possiblement exaspérant) ou rejouer la scène, en l'enjolivant, dans leurs jeux.\nEnfants : caractéristiques estimées, sans combat.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Enfants : caractéristiques estimées, sans combat.",
+              "typeId": "type-pa3-fillettes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa3-sc-domitille",
+          "nom": "2. Pendant ce temps, Domitille",
+          "lieu": "Manoir d'Astelin – pièce secrète de Domitille",
+          "notes": "Domitille et Abélard sont au domaine depuis deux semaines (trois semaines de famille chaque année). Louis-André, d'humeur étrangement aimable, lui sourit presque.\nUn matin, en lisant les entrailles d'un poulet frais, Domitille reçoit un augure net : Hercule est (ou sera) en danger, emprisonné quelque part ; elle capte les mots « SOS » et « emprisonné », rien de plus.\nAu choix du MJ : elle ne comprend pas et retentera avec un autre poulet, ou elle prévient la DTC (qui la prend à la rigolade ou dont le message se perd). De toute façon on ne peut rien empêcher. Option de campagne : placer cet avertissement avant la capture, et laisser la DTC s'agiter pour rien.\nNouvelles divinations au fil du scénario : arrivée des PJ, rire sardonique de son frère, un bureau inconnu, le téléphone, Hercule quelque part dans le manoir. Elle peut alors contacter les PJ, enquêter seule ou aller casser la figure à Louis-André.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa3-domitille-3",
+              "nom": "Domitille de la Vibère (née d'Astelin)",
+              "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Glaive romain",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domitille"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-avertissement",
+              "q": "Que fait Domitille de son augure ?",
+              "opts": [
+                {
+                  "t": "Elle prévient la DTC",
+                  "suite": "Avertissement pris à la légère ou perdu en route ; la DTC sait au moins qu'elle est concernée, ce qui facilite une rencontre rapide avec les PJ."
+                },
+                {
+                  "t": "Elle garde ça pour elle et réessaie",
+                  "suite": "Elle mène sa propre enquête et peut prendre les PJ pour des complices du ravisseur."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa3-sc-briefing",
+          "nom": "3. SOS à la DTC",
+          "lieu": "QG de la DTC",
+          "notes": "La DTC reçoit le SMS d'Hercule. Le numéro n'est pas récupérable (la transmission n'a rien eu de normal), mais l'émetteur se localise : en cherchant un « Louis de quelque chose » dans le coin, on tombe sur le manoir des d'Astelin.\nCe que savent les PJ : le lieu, la nature du problème (Hercule est dans un « portable » : téléphone ou ordinateur ?), et qu'il faut trouver un certain Louis. Hic : la famille compte six Louis (Louis-Égispée, Louis-André, Philippe-Louis, Charles-Louis, le petit Louis, et Antoine de Saint-Louis, le petit ami de Bertille).\nLa DTC peut apprendre l'existence du grand week-end de chasse de Pâques en enquêtant, ou un PJ peut déjà y être invité s'il fréquente la haute société.\nMoyens d'entrer : se faire engager par le traiteur Barbak et Truffon, remplacer (de force) un employé, se faire passer pour un invité (risqué), se faire inviter au dernier moment par relations… (le déguisement en sanglier est déconseillé). Chaque couverture donne accès à des informations différentes : encourager les approches variées.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-couverture",
+              "q": "Comment les PJ s'introduisent-ils au manoir ?",
+              "opts": [
+                {
+                  "t": "Engagés comme extras du traiteur",
+                  "suite": "Accès aux cuisines, aux ragots des domestiques et aux étages pendant le service ; peu de crédit auprès de la famille."
+                },
+                {
+                  "t": "À la place d'un domestique",
+                  "suite": "Accès libre au manoir mais il faut tenir le rôle face au majordome Armand."
+                },
+                {
+                  "t": "Comme invités (vrais ou faux)",
+                  "suite": "Accès aux conversations de la famille et des notables ; risque d'être démasqués, et les démons et sorciers invités les remarqueront."
+                },
+                {
+                  "t": "Infiltration discrète ou en force",
+                  "suite": "Rapide mais bruyant : la famille, les démons et l'ange risquent de s'en mêler."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa3-sc-manoir",
+          "nom": "4. Le manoir en effervescence",
+          "lieu": "Domaine des d'Astelin – samedi",
+          "notes": "Depuis trois jours on prépare le week-end de chasse : une centaine d'invités (affaires, politique, hauts fonctionnaires, gens de l'ombre, futurs associés), plus quelques démons invités par le patriarche et quelques sorciers conviés par Louis-André, avec épouses et enfants. Certains arrivent samedi après-midi et dorment sur place, la plupart dimanche matin.\nDouze domestiques (dont 3 jardiniers, 5 en cuisine, le majordome Armand) renforcés samedi par 10 serveurs du traiteur.\nLe domaine : le manoir (bureau de Louis-André sous les combles, fermé à clef ; pièce secrète de Domitille près de sa chambre), l'atelier de Philippe-Louis et la maison de sa famille dans deux annexes, piscine, tennis, écuries, forêt.\nPrésenter la famille (voir notes du scénario) en noyant les joueurs sous les noms à rallonge et les rumeurs. Louis-André passe ses journées dans ses livres sans trouver comment reparler à Hercule sans risque ; Hercule cherche en vain à se manifester.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa3-egispee-4",
+              "nom": "Louis-Égispée d'Astelin",
+              "source": "Démon de Ouikka, grade 2 – patriarche (90 ans)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 7,
+                "vo": 8,
+                "pr": 6,
+                "foi": 9
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 29,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier (2 PP pour le combat)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Trait d'énergie (intangible, 4 PP par tir)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de douleur",
+                  "r": 6
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 6
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 6
+                },
+                {
+                  "n": "Disparition",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 10
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 6
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 4+, Baratin 5, Corps à corps 4, Défense 6, Discrétion 3, Discussion 5, Enquête 3, Hobby : ignorer sa famille 5, Intimidation 5+, Médecine 2+, Métier : grand monde 4, Séduction 3, Tir 3 (Trait d'énergie 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieillard grand, maigre, costume noir sur mesure, regard glaçant, petit claquement de langue en pleine conversation. Galanterie de façade, mépris des femmes, goût de nuire pour le plaisir. Patron de l'entreprise familiale (ventilateurs, climatisations, chauffages), championne du licenciement. Tout le monde le vouvoie.\nVeuf d'Ester Berthel, morte en couches à la naissance de Domitille dans des circonstances jamais éclaircies (rumeurs, conflit sourd avec Domitille). N'apprécie que son arrière-petit-fils Louis, démon prometteur.\nIl n'est pour rien dans la capture d'Hercule : fausse piste idéale. Ludivine le soupçonne depuis longtemps. Quelques démons sont invités au week-end sur sa liste.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-egispee"
+            },
+            {
+              "id": "pa3-louis-andre-5",
+              "nom": "Louis-André d'Astelin",
+              "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis-andre"
+            },
+            {
+              "id": "pa3-catherine-6",
+              "nom": "Catherine d'Astelin (née von Irsch)",
+              "source": "Épouse de Louis-André (65 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bourgeoise riche et liftée, blonde de coiffeur, yeux verts, sourire figé en toutes circonstances. Mondanités, bienfaisance, médisances. Se plaint que son mari passe sa vie dans sa « cachette » du grenier : une piste involontaire. A été très surprise des assiduités de son mari la semaine où il a conçu son plan.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-catherine"
+            },
+            {
+              "id": "pa3-marc-jean-7",
+              "nom": "Marc-Jean d'Astelin",
+              "source": "Fils cadet du patriarche, comédien (64 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Seul d'Astelin jovial : rondouillard, beau sourire, charmant et spirituel, séducteur impénitent qui a toujours refusé de se marier. Comédien parisien sans grande gloire, méprisé pour cela par son père et son frère. Affectueux envers Domitille.\nPère naturel de Bertille (une seule fois avec Estelle, alors fiancée d'Henry) ; il en est convaincu, elle ne lui a jamais rien dit. Il est son parrain et veille sur elle. Ludivine le croit démon à tort.\nPas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Pas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée.",
+              "typeId": "type-pa3-marc-jean"
+            },
+            {
+              "id": "pa3-domitille-8",
+              "nom": "Domitille de la Vibère (née d'Astelin)",
+              "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Glaive romain",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domitille"
+            },
+            {
+              "id": "pa3-abelard-9",
+              "nom": "Abélard de la Vibère",
+              "source": "Époux de Domitille, professeur de lettres anciennes (58 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gringalet à lunettes, cheveux châtains frisés, honnête, distrait et rationnel au point de vouloir tout expliquer. N'a jamais soupçonné la nature de sa femme. Louis-André a déjà tenté un sort contre sa virilité.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-abelard"
+            },
+            {
+              "id": "pa3-charles-louis-10",
+              "nom": "Charles-Louis de la Vibère-d'Astelin",
+              "source": "Fils de Domitille, jeune avocat parisien (26 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Baraqué comme sa mère, brun, élégant, ambitieux et travailleur ; porte le double nom par calcul (« d'Astelin » ouvre des portes). Concilie confort bourgeois et nobles causes sous l'influence de Ludivine. Un des six « Louis ».\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-charles-louis"
+            },
+            {
+              "id": "pa3-ludivine-11",
+              "nom": "Ludivine de la Vibère-d'Astelin (née Lyons)",
+              "source": "Ange de Jordi, grade 0 – sage-femme (24 ans)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Masse d'arme",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Combat 3 (contondantes 5), Défense 5, Discussion 4, Enquête 4, Fouille 4, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, brune, air buté, nez en trompette. Incarnée juste avant de rencontrer Charles-Louis, qu'elle a rendu plus humaniste ; sage-femme dans un hôpital public parisien ; mère d'Antonin (2 ans).\nSurveille Louis-Égispée, Marc-Jean et le petit Louis qu'elle croit démons (elle se trompe pour Marc-Jean). Rêve d'un coup d'éclat : elle n'en a encore jamais fait. Peut savoir une partie de l'affaire grâce à ses pouvoirs et aider les PJ, mais ses soupçons iront d'abord vers le vieux.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-ludivine"
+            },
+            {
+              "id": "pa3-philippe-louis-12",
+              "nom": "Philippe-Louis d'Astelin",
+              "source": "Fils aîné de Louis-André, ingénieur et inventeur (48 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Technique 4, Informatique 3, Électronique/robotique 4 (talents estimés)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rêveur enthousiaste, cheveux frisés poivre et sel, yeux très pâles, sympathique. Ingénieur en automatismes, il bricole dans son atelier (une annexe du domaine) des machines farfelues, dont le robot Nestor. Ravi de se rendre utile, il peut prêter du matériel aux PJ. Ne parvient pas à communiquer avec son fils Louis.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-philippe-louis"
+            },
+            {
+              "id": "pa3-blondine-13",
+              "nom": "Blondine d'Astelin (née Dangeville)",
+              "source": "Épouse de Philippe-Louis, biologiste (36 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite, ronde, brune à mèches rouges, dynamique et franche. N'aime pas sa belle-famille ; vit dans une autre annexe du domaine. Se méfie de l'atelier depuis l'accident de Louis.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-blondine"
+            },
+            {
+              "id": "pa3-henry-14",
+              "nom": "Henry d'Astelin",
+              "source": "Fils cadet de Louis-André, cadre de l'entreprise familiale (47 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brave garçon effacé, sans menton, regard fuyant, mains moites, élocution confuse. Fait toujours ce qu'on attend de lui. Croit être le père de Bertille et ignore les infidélités de sa femme.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-henry"
+            },
+            {
+              "id": "pa3-estelle-15",
+              "nom": "Estelle d'Astelin (née Firambelle)",
+              "source": "Épouse d'Henry (40 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Très belle, grande, blond cendré, taches de rousseur ; collectionne les amants au vu de tous sauf de son mari. Bavarde incapable de se taire… sauf sur un secret : Bertille est la fille de Marc-Jean. Peut tout balancer en plein week-end. Le petit Louis la trouve divine.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-estelle"
+            },
+            {
+              "id": "pa3-louis-16",
+              "nom": "Louis d'Astelin",
+              "source": "Démon de Shaytan, grade 1 – enfant de 9 ans",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 16,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Grandes cornes (3 PP pour le combat)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 5, Baratin 3, Corps à corps 3, Défense 4, Discrétion 5, Discussion 4, Intrusion 3, Médecine 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de Philippe-Louis : électrocuté à 3 ans dans l'atelier de son père, mort, puis « réanimé » par un démon. Regard dur, intelligence d'adulte, ironique et cruel, cheveux frisés en bataille ; sait faire des yeux de biche irrésistibles pour manipuler les inconnus.\nFouine partout, a déjà entendu Domitille pratiquer la divination sans comprendre. Déteste Ludivine qui l'observe trop, admire son arrière-grand-père, trouve Estelle divine, et rêve de savoir ce qui se passe dans le bureau de Louis-André. Ses sœurs le craignent.\nS'il apprend l'affaire (jeux de ses sœurs, observation), il fouine et cherche à en tirer profit.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis"
+            },
+            {
+              "id": "pa3-fillettes-17",
+              "nom": "Sybille et Angeline d'Astelin",
+              "source": "Filles de Philippe-Louis (7 et 6 ans) – témoins de la capture",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Inséparables brunettes à nattes, curieuses, bavardes et pouffeuses ; fans d'histoires de sorcellerie à la Harry Potter. Se méfient de leur frère Louis et du manoir, préfèrent l'atelier de leur père.\nCachées derrière le paravent du bureau de Louis-André, elles ont tout vu (Sybille a trouvé ça drôle, Angeline bizarre) et n'en ont parlé à personne. Elles peuvent parler à un PJ patient (interrogatoire possiblement exaspérant) ou rejouer la scène, en l'enjolivant, dans leurs jeux.\nEnfants : caractéristiques estimées, sans combat.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Enfants : caractéristiques estimées, sans combat.",
+              "typeId": "type-pa3-fillettes"
+            },
+            {
+              "id": "pa3-bertille-18",
+              "nom": "Bertille d'Astelin",
+              "source": "Fille d'Estelle (et de Marc-Jean), étudiante en commerce (20 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Karaté (coup de pied)",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": -2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Défense 3, Athlétisme 3 (estimés : karaté)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Visage lourd, physique un peu mou comme Marc-Jean, énergique, colérique, blagueuse. Adore son parrain Marc-Jean et ignore qu'il est son père. Karatéka de niveau national.\nVient présenter son petit ami Antoine à la famille, par goût de la provocation.\nPas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Pas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté).",
+              "typeId": "type-pa3-bertille"
+            },
+            {
+              "id": "pa3-antoine-19",
+              "nom": "Antoine de Saint-Louis",
+              "source": "Petit ami de Bertille, musicien « rebelle » (22 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de famille noble jouant au trotskiste aux frais de ses parents ; groupe alternatif « les Potirons des Années antérieures ». Très brun, piercings au nez et à la langue (élocution confuse), pessimiste et ironique. Le sixième « Louis » de la liste. Peut remarquer à voix haute la ressemblance entre Bertille et Marc-Jean.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-antoine"
+            },
+            {
+              "id": "pa3-domestiques-20",
+              "nom": "Domestiques et extras du traiteur",
+              "source": "12 domestiques du manoir + 10 serveurs de Barbak et Truffon",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Parmi les habituels : 3 jardiniers, 5 employés de cuisine et le majordome Armand (rigide, silencieux, prévenant). Extras et domestiques nommés : Lucie (grand sourire à bagues), Hippolyte (taches de rousseur), Morane (bob au soleil), Stéphane (petit brun maladroit), Grégory (grand blond maladroit), Estelle (zozote), Antoine (rien de spécial), Stéphanie (pipelette bouclée), Dorie (mémoire d'éléphant).\nCouverture possible pour les PJ (embauche par le traiteur ou remplacement d'un employé).\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domestiques"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa3-sc-chasse",
+          "nom": "5. Le week-end de chasse : les pistes",
+          "lieu": "Domaine des d'Astelin – dimanche de Pâques",
+          "notes": "Chasse à courre de 8 h 30 à 13 h 30 (meute et chevaux du manoir et des invités, départs échelonnés), pendant que les dames « supervisent » le lunch. Ensuite immense lunch, jeux pour les enfants, cancans, tennis, bridge, piscine, et diplomatie de coulisses.\nCoups de pouce possibles :\n• Sybille et Angeline : muettes d'elles-mêmes, elles parlent à un PJ doué avec les enfants (entretien possiblement exaspérant), ou rejouent la scène dans leurs jeux de sorcières… ce qui intéresse aussi leur frère Louis.\n• Domitille : la DTC sait qui elle est, d'où une rencontre rapide ; mais elle peut prendre les PJ pour des complices s'ils restent ternes, notamment lors de son affrontement avec son frère. Le MJ peut cacher aux PJ qui est l'héroïne de la famille.\n• Louis-André : il pète les plombs, s'absente trop dans sa « cachette » (Catherine s'en plaint), lance des sous-entendus lourds à Domitille.\n• Le petit Louis : s'il a eu vent de l'affaire, il fouine et se fait remarquer.\n• Ludivine : ses pouvoirs peuvent l'avoir mise au courant ; elle aide les PJ qui viennent la voir, mais soupçonne d'abord Louis-Égispée.\n• Philippe-Louis : prête volontiers le matériel farfelu de son atelier, flatté qu'on s'intéresse à lui.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa3-fillettes-21",
+              "nom": "Sybille et Angeline d'Astelin",
+              "source": "Filles de Philippe-Louis (7 et 6 ans) – témoins de la capture",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Inséparables brunettes à nattes, curieuses, bavardes et pouffeuses ; fans d'histoires de sorcellerie à la Harry Potter. Se méfient de leur frère Louis et du manoir, préfèrent l'atelier de leur père.\nCachées derrière le paravent du bureau de Louis-André, elles ont tout vu (Sybille a trouvé ça drôle, Angeline bizarre) et n'en ont parlé à personne. Elles peuvent parler à un PJ patient (interrogatoire possiblement exaspérant) ou rejouer la scène, en l'enjolivant, dans leurs jeux.\nEnfants : caractéristiques estimées, sans combat.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Enfants : caractéristiques estimées, sans combat.",
+              "typeId": "type-pa3-fillettes"
+            },
+            {
+              "id": "pa3-domitille-22",
+              "nom": "Domitille de la Vibère (née d'Astelin)",
+              "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Glaive romain",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domitille"
+            },
+            {
+              "id": "pa3-louis-andre-23",
+              "nom": "Louis-André d'Astelin",
+              "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis-andre"
+            },
+            {
+              "id": "pa3-louis-24",
+              "nom": "Louis d'Astelin",
+              "source": "Démon de Shaytan, grade 1 – enfant de 9 ans",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 16,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Grandes cornes (3 PP pour le combat)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 5, Baratin 3, Corps à corps 3, Défense 4, Discrétion 5, Discussion 4, Intrusion 3, Médecine 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de Philippe-Louis : électrocuté à 3 ans dans l'atelier de son père, mort, puis « réanimé » par un démon. Regard dur, intelligence d'adulte, ironique et cruel, cheveux frisés en bataille ; sait faire des yeux de biche irrésistibles pour manipuler les inconnus.\nFouine partout, a déjà entendu Domitille pratiquer la divination sans comprendre. Déteste Ludivine qui l'observe trop, admire son arrière-grand-père, trouve Estelle divine, et rêve de savoir ce qui se passe dans le bureau de Louis-André. Ses sœurs le craignent.\nS'il apprend l'affaire (jeux de ses sœurs, observation), il fouine et cherche à en tirer profit.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis"
+            },
+            {
+              "id": "pa3-ludivine-25",
+              "nom": "Ludivine de la Vibère-d'Astelin (née Lyons)",
+              "source": "Ange de Jordi, grade 0 – sage-femme (24 ans)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Masse d'arme",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Combat 3 (contondantes 5), Défense 5, Discussion 4, Enquête 4, Fouille 4, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, brune, air buté, nez en trompette. Incarnée juste avant de rencontrer Charles-Louis, qu'elle a rendu plus humaniste ; sage-femme dans un hôpital public parisien ; mère d'Antonin (2 ans).\nSurveille Louis-Égispée, Marc-Jean et le petit Louis qu'elle croit démons (elle se trompe pour Marc-Jean). Rêve d'un coup d'éclat : elle n'en a encore jamais fait. Peut savoir une partie de l'affaire grâce à ses pouvoirs et aider les PJ, mais ses soupçons iront d'abord vers le vieux.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-ludivine"
+            },
+            {
+              "id": "pa3-philippe-louis-26",
+              "nom": "Philippe-Louis d'Astelin",
+              "source": "Fils aîné de Louis-André, ingénieur et inventeur (48 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Technique 4, Informatique 3, Électronique/robotique 4 (talents estimés)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rêveur enthousiaste, cheveux frisés poivre et sel, yeux très pâles, sympathique. Ingénieur en automatismes, il bricole dans son atelier (une annexe du domaine) des machines farfelues, dont le robot Nestor. Ravi de se rendre utile, il peut prêter du matériel aux PJ. Ne parvient pas à communiquer avec son fils Louis.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-philippe-louis"
+            },
+            {
+              "id": "pa3-catherine-27",
+              "nom": "Catherine d'Astelin (née von Irsch)",
+              "source": "Épouse de Louis-André (65 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bourgeoise riche et liftée, blonde de coiffeur, yeux verts, sourire figé en toutes circonstances. Mondanités, bienfaisance, médisances. Se plaint que son mari passe sa vie dans sa « cachette » du grenier : une piste involontaire. A été très surprise des assiduités de son mari la semaine où il a conçu son plan.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-catherine"
+            },
+            {
+              "id": "pa3-domestiques-28",
+              "nom": "Domestiques et extras du traiteur",
+              "source": "12 domestiques du manoir + 10 serveurs de Barbak et Truffon",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Parmi les habituels : 3 jardiniers, 5 employés de cuisine et le majordome Armand (rigide, silencieux, prévenant). Extras et domestiques nommés : Lucie (grand sourire à bagues), Hippolyte (taches de rousseur), Morane (bob au soleil), Stéphane (petit brun maladroit), Grégory (grand blond maladroit), Estelle (zozote), Antoine (rien de spécial), Stéphanie (pipelette bouclée), Dorie (mémoire d'éléphant).\nCouverture possible pour les PJ (embauche par le traiteur ou remplacement d'un employé).\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domestiques"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-piste",
+              "q": "Par quelle piste les PJ remontent-ils jusqu'au bureau du grenier ?",
+              "opts": [
+                {
+                  "t": "Les fillettes",
+                  "suite": "Description du rire du « grand-papa », de la boule bleue et du vieux téléphone ; Louis peut les avoir entendues."
+                },
+                {
+                  "t": "Domitille",
+                  "suite": "Alliée puissante, mais elle veut régler ses comptes elle-même avec son frère."
+                },
+                {
+                  "t": "Catherine ou le comportement de Louis-André",
+                  "suite": "La « cachette » du grenier désignée sans le vouloir."
+                },
+                {
+                  "t": "Ludivine",
+                  "suite": "Aide angélique… et soupçons orientés vers Louis-Égispée : risque de s'attaquer au mauvais Louis."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa3-sc-diversions",
+          "nom": "6. Diversions et fausses pistes",
+          "lieu": "Domaine des d'Astelin – tout le week-end",
+          "notes": "À utiliser pour embrouiller les PJ :\n• « Amour, gloire et beauté » : révéler que Bertille est la fille de Marc-Jean et non d'Henry (doutes de Bertille confiés à quelqu'un, crise de nerfs d'Estelle qui balance tout, remarque publique d'Antoine sur la ressemblance). Un esclandre à quatre (mère, deux pères, fille) dont les PJ ne saisissent pas la cause leur fera perdre du temps.\n• « Chapeau melon et bottes de cuir » : Philippe-Louis perd le contrôle de Nestor, son dernier robot ; les PJ l'aperçoivent ou s'y frottent. Mène à l'atelier, à un faux coupable, ou à du matériel utile.\n• « Buffy » : les PJ démasquent la nature démoniaque de Louis-Égispée ou du petit Louis, ou la nature angélique de Ludivine, et veulent en savoir plus : échanges physiques possibles. Rappel : ni le vieux démon ni l'enfant ne sont mêlés à la capture.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa3-nestor-29",
+              "nom": "Nestor",
+              "source": "Robot expérimental de Philippe-Louis",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 7,
+                "ag": 3,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 3,
+              "pfFix": 6,
+              "pp": 0,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Pince métallique",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -2,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Défense 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Censé avoir un semblant d'intelligence ; les essais sont peu concluants. Diversion « Chapeau melon et bottes de cuir » : il échappe au contrôle de son créateur pendant le week-end, et les PJ peuvent le voir ou se battre avec lui. Mène à l'atelier, à un faux coupable, ou à du matériel utile.\nAucune caractéristique dans le livre : fiche entièrement estimée (robot lourd et lent, protection 3).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-nestor"
+            },
+            {
+              "id": "pa3-egispee-30",
+              "nom": "Louis-Égispée d'Astelin",
+              "source": "Démon de Ouikka, grade 2 – patriarche (90 ans)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 7,
+                "vo": 8,
+                "pr": 6,
+                "foi": 9
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 29,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier (2 PP pour le combat)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Trait d'énergie (intangible, 4 PP par tir)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de douleur",
+                  "r": 6
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 6
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 6
+                },
+                {
+                  "n": "Disparition",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 10
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 6
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 4+, Baratin 5, Corps à corps 4, Défense 6, Discrétion 3, Discussion 5, Enquête 3, Hobby : ignorer sa famille 5, Intimidation 5+, Médecine 2+, Métier : grand monde 4, Séduction 3, Tir 3 (Trait d'énergie 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieillard grand, maigre, costume noir sur mesure, regard glaçant, petit claquement de langue en pleine conversation. Galanterie de façade, mépris des femmes, goût de nuire pour le plaisir. Patron de l'entreprise familiale (ventilateurs, climatisations, chauffages), championne du licenciement. Tout le monde le vouvoie.\nVeuf d'Ester Berthel, morte en couches à la naissance de Domitille dans des circonstances jamais éclaircies (rumeurs, conflit sourd avec Domitille). N'apprécie que son arrière-petit-fils Louis, démon prometteur.\nIl n'est pour rien dans la capture d'Hercule : fausse piste idéale. Ludivine le soupçonne depuis longtemps. Quelques démons sont invités au week-end sur sa liste.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-egispee"
+            },
+            {
+              "id": "pa3-louis-31",
+              "nom": "Louis d'Astelin",
+              "source": "Démon de Shaytan, grade 1 – enfant de 9 ans",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 16,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Grandes cornes (3 PP pour le combat)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 5, Baratin 3, Corps à corps 3, Défense 4, Discrétion 5, Discussion 4, Intrusion 3, Médecine 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de Philippe-Louis : électrocuté à 3 ans dans l'atelier de son père, mort, puis « réanimé » par un démon. Regard dur, intelligence d'adulte, ironique et cruel, cheveux frisés en bataille ; sait faire des yeux de biche irrésistibles pour manipuler les inconnus.\nFouine partout, a déjà entendu Domitille pratiquer la divination sans comprendre. Déteste Ludivine qui l'observe trop, admire son arrière-grand-père, trouve Estelle divine, et rêve de savoir ce qui se passe dans le bureau de Louis-André. Ses sœurs le craignent.\nS'il apprend l'affaire (jeux de ses sœurs, observation), il fouine et cherche à en tirer profit.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis"
+            },
+            {
+              "id": "pa3-ludivine-32",
+              "nom": "Ludivine de la Vibère-d'Astelin (née Lyons)",
+              "source": "Ange de Jordi, grade 0 – sage-femme (24 ans)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Masse d'arme",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Combat 3 (contondantes 5), Défense 5, Discussion 4, Enquête 4, Fouille 4, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, brune, air buté, nez en trompette. Incarnée juste avant de rencontrer Charles-Louis, qu'elle a rendu plus humaniste ; sage-femme dans un hôpital public parisien ; mère d'Antonin (2 ans).\nSurveille Louis-Égispée, Marc-Jean et le petit Louis qu'elle croit démons (elle se trompe pour Marc-Jean). Rêve d'un coup d'éclat : elle n'en a encore jamais fait. Peut savoir une partie de l'affaire grâce à ses pouvoirs et aider les PJ, mais ses soupçons iront d'abord vers le vieux.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-ludivine"
+            },
+            {
+              "id": "pa3-estelle-33",
+              "nom": "Estelle d'Astelin (née Firambelle)",
+              "source": "Épouse d'Henry (40 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Très belle, grande, blond cendré, taches de rousseur ; collectionne les amants au vu de tous sauf de son mari. Bavarde incapable de se taire… sauf sur un secret : Bertille est la fille de Marc-Jean. Peut tout balancer en plein week-end. Le petit Louis la trouve divine.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-estelle"
+            },
+            {
+              "id": "pa3-marc-jean-34",
+              "nom": "Marc-Jean d'Astelin",
+              "source": "Fils cadet du patriarche, comédien (64 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Seul d'Astelin jovial : rondouillard, beau sourire, charmant et spirituel, séducteur impénitent qui a toujours refusé de se marier. Comédien parisien sans grande gloire, méprisé pour cela par son père et son frère. Affectueux envers Domitille.\nPère naturel de Bertille (une seule fois avec Estelle, alors fiancée d'Henry) ; il en est convaincu, elle ne lui a jamais rien dit. Il est son parrain et veille sur elle. Ludivine le croit démon à tort.\nPas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Pas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée.",
+              "typeId": "type-pa3-marc-jean"
+            },
+            {
+              "id": "pa3-henry-35",
+              "nom": "Henry d'Astelin",
+              "source": "Fils cadet de Louis-André, cadre de l'entreprise familiale (47 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brave garçon effacé, sans menton, regard fuyant, mains moites, élocution confuse. Fait toujours ce qu'on attend de lui. Croit être le père de Bertille et ignore les infidélités de sa femme.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-henry"
+            },
+            {
+              "id": "pa3-bertille-36",
+              "nom": "Bertille d'Astelin",
+              "source": "Fille d'Estelle (et de Marc-Jean), étudiante en commerce (20 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Karaté (coup de pied)",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": -2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Défense 3, Athlétisme 3 (estimés : karaté)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Visage lourd, physique un peu mou comme Marc-Jean, énergique, colérique, blagueuse. Adore son parrain Marc-Jean et ignore qu'il est son père. Karatéka de niveau national.\nVient présenter son petit ami Antoine à la famille, par goût de la provocation.\nPas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "est": "Pas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté).",
+              "typeId": "type-pa3-bertille"
+            },
+            {
+              "id": "pa3-antoine-37",
+              "nom": "Antoine de Saint-Louis",
+              "source": "Petit ami de Bertille, musicien « rebelle » (22 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de famille noble jouant au trotskiste aux frais de ses parents ; groupe alternatif « les Potirons des Années antérieures ». Très brun, piercings au nez et à la langue (élocution confuse), pessimiste et ironique. Le sixième « Louis » de la liste. Peut remarquer à voix haute la ressemblance entre Bertille et Marc-Jean.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-antoine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-diversion",
+              "q": "Quelle diversion le MJ déclenche-t-il ?",
+              "opts": [
+                {
+                  "t": "Le secret de Bertille",
+                  "suite": "Scandale familial : tout le monde est sur les nerfs, et le patriarche méprise un peu plus Marc-Jean."
+                },
+                {
+                  "t": "Nestor en liberté",
+                  "suite": "Combat possible contre le robot ; Philippe-Louis devient un allié reconnaissant (ou un suspect)."
+                },
+                {
+                  "t": "Démons et ange démasqués",
+                  "suite": "Combat possible contre Louis-Égispée ou Louis ; les démons invités par le patriarche peuvent s'en mêler."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa3-sc-grenier",
+          "nom": "7. Le bureau du grenier",
+          "lieu": "Bureau secret de Louis-André, sous les combles",
+          "notes": "Pièce fermée à clef (seul Louis-André a la clef), remplie de grimoires et d'objets ésotériques, paravent en bois. Le vieux portable est dans le long tiroir central verrouillé, la clef dans le vase bleu ébréché à côté du téléphone fixe ; le portable actuel de Louis-André et sa carte SIM sont rangés séparément dans un autre tiroir.\nSi Louis-André est surpris, il tente de se défendre par la sorcellerie (il est nul en combat). Une bonne bagarre finale entre Domitille et son frère pimente la scène, et la présence des démons et de l'ange de la famille peut la rendre plus chaotique.\nPour libérer Hercule (au choix du MJ, d'autres solutions sont possibles) :\n• mettre une carte SIM dans le vieux portable permet au moins de lui parler ;\n• rapporter l'appareil à la DTC pour qu'un spécialiste brise le sort ou en lance un autre ;\n• tuer Louis-André annule le sort ;\n• détruire le portable libère Hercule ;\n• forcer ou persuader Louis-André de le libérer.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa3-louis-andre-38",
+              "nom": "Louis-André d'Astelin",
+              "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis-andre"
+            },
+            {
+              "id": "pa3-domitille-39",
+              "nom": "Domitille de la Vibère (née d'Astelin)",
+              "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Glaive romain",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domitille"
+            },
+            {
+              "id": "pa3-louis-40",
+              "nom": "Louis d'Astelin",
+              "source": "Démon de Shaytan, grade 1 – enfant de 9 ans",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 16,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Grandes cornes (3 PP pour le combat)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 5, Baratin 3, Corps à corps 3, Défense 4, Discrétion 5, Discussion 4, Intrusion 3, Médecine 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils de Philippe-Louis : électrocuté à 3 ans dans l'atelier de son père, mort, puis « réanimé » par un démon. Regard dur, intelligence d'adulte, ironique et cruel, cheveux frisés en bataille ; sait faire des yeux de biche irrésistibles pour manipuler les inconnus.\nFouine partout, a déjà entendu Domitille pratiquer la divination sans comprendre. Déteste Ludivine qui l'observe trop, admire son arrière-grand-père, trouve Estelle divine, et rêve de savoir ce qui se passe dans le bureau de Louis-André. Ses sœurs le craignent.\nS'il apprend l'affaire (jeux de ses sœurs, observation), il fouine et cherche à en tirer profit.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis"
+            },
+            {
+              "id": "pa3-ludivine-41",
+              "nom": "Ludivine de la Vibère-d'Astelin (née Lyons)",
+              "source": "Ange de Jordi, grade 0 – sage-femme (24 ans)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 12,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Masse d'arme",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Combat 3 (contondantes 5), Défense 5, Discussion 4, Enquête 4, Fouille 4, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, brune, air buté, nez en trompette. Incarnée juste avant de rencontrer Charles-Louis, qu'elle a rendu plus humaniste ; sage-femme dans un hôpital public parisien ; mère d'Antonin (2 ans).\nSurveille Louis-Égispée, Marc-Jean et le petit Louis qu'elle croit démons (elle se trompe pour Marc-Jean). Rêve d'un coup d'éclat : elle n'en a encore jamais fait. Peut savoir une partie de l'affaire grâce à ses pouvoirs et aider les PJ, mais ses soupçons iront d'abord vers le vieux.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-ludivine"
+            },
+            {
+              "id": "pa3-egispee-42",
+              "nom": "Louis-Égispée d'Astelin",
+              "source": "Démon de Ouikka, grade 2 – patriarche (90 ans)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 7,
+                "vo": 8,
+                "pr": 6,
+                "foi": 9
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 29,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier (2 PP pour le combat)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Trait d'énergie (intangible, 4 PP par tir)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de douleur",
+                  "r": 6
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 6
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 6
+                },
+                {
+                  "n": "Disparition",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 10
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 6
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 4+, Baratin 5, Corps à corps 4, Défense 6, Discrétion 3, Discussion 5, Enquête 3, Hobby : ignorer sa famille 5, Intimidation 5+, Médecine 2+, Métier : grand monde 4, Séduction 3, Tir 3 (Trait d'énergie 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieillard grand, maigre, costume noir sur mesure, regard glaçant, petit claquement de langue en pleine conversation. Galanterie de façade, mépris des femmes, goût de nuire pour le plaisir. Patron de l'entreprise familiale (ventilateurs, climatisations, chauffages), championne du licenciement. Tout le monde le vouvoie.\nVeuf d'Ester Berthel, morte en couches à la naissance de Domitille dans des circonstances jamais éclaircies (rumeurs, conflit sourd avec Domitille). N'apprécie que son arrière-petit-fils Louis, démon prometteur.\nIl n'est pour rien dans la capture d'Hercule : fausse piste idéale. Ludivine le soupçonne depuis longtemps. Quelques démons sont invités au week-end sur sa liste.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-egispee"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-liberation",
+              "q": "Comment Hercule est-il libéré ?",
+              "opts": [
+                {
+                  "t": "Louis-André est forcé ou convaincu",
+                  "suite": "Le sorcier survit, humilié ; Domitille et Hercule voudront sans doute lui régler son compte."
+                },
+                {
+                  "t": "Louis-André est tué",
+                  "suite": "Le sort se dissipe ; une mort dans la famille en plein week-end mondain, à couvrir."
+                },
+                {
+                  "t": "Le portable est détruit",
+                  "suite": "Hercule réapparaît aussitôt, en caleçon, au milieu du grenier."
+                },
+                {
+                  "t": "Le portable est rapporté à la DTC",
+                  "suite": "Libération plus lente mais sûre ; Louis-André reste libre et rancunier."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa3-sc-denouement",
+          "nom": "8. Le retour du boss",
+          "lieu": "Manoir d'Astelin ou DTC",
+          "notes": "La brume bleue se rassemble en boule, grossit dans un éclair et laisse place à Hercule en chair et en os : en caleçon à poireaux, pas rasé, sans petit déjeuner depuis des jours, humilié d'avoir été impuissant. Il veut d'abord coller son poing dans la figure du sorcier. Les PJ ont intérêt à faire profil bas, ni trop protecteurs ni goguenards, et à ne plus en parler avant longtemps.\nLa famille d'Astelin a peut-être perdu quelques membres ou invités en route : au MJ et aux joueurs de démêler les conséquences.\nSuite de campagne : Domitille peut devenir une PNJ récurrente, passant à la DTC ; comme d'autres devins païens, elle aura des visions de dieux morts et de marches en ruines (le délitement des marches, mais surtout Victor).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa3-hercule-43",
+              "nom": "Hercule",
+              "source": "Héros romain « de niveau pfff », patron de la DTC (prisonnier du téléphone)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne (précision +4, puissance +9)",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir propre Voyage intermarches 6 (spirituel, activé, 8 PP)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche du chapitre 4 (p. 21). Pendant le scénario il est enfermé dans le vieux portable, sans corps ni pouvoirs : il ne peut que parler si on met une carte SIM dans l'appareil.\nÀ sa libération : en caleçon à poireaux, pas rasé, affamé et furieux. Sa première envie est de cogner le sorcier ; mieux vaut que les PJ restent discrets et n'en reparlent pas.\nVoyage intermarches (pouvoir propre à Hercule) absent des règles de l'application : noté dans les talents. Massue au format du livre 66/RU+10/M+16.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-hercule"
+            },
+            {
+              "id": "pa3-domitille-44",
+              "nom": "Domitille de la Vibère (née d'Astelin)",
+              "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Glaive romain",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-domitille"
+            },
+            {
+              "id": "pa3-louis-andre-45",
+              "nom": "Louis-André d'Astelin",
+              "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+              "typeId": "type-pa3-louis-andre"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa3-ch-domitille-suite",
+              "q": "Comment finit la relation avec Domitille ?",
+              "opts": [
+                {
+                  "t": "Alliée reconnaissante",
+                  "suite": "Elle devient une PNJ récurrente de la DTC et apportera plus tard ses visions d'apocalypse."
+                },
+                {
+                  "t": "Brouillée avec les PJ",
+                  "suite": "Elle les a pris pour des complices ou leur reproche de lui avoir volé sa vengeance."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340244989,
+      "updatedAt": 1795340244989
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa3-egispee",
+      "nom": "Louis-Égispée d'Astelin",
+      "source": "Démon de Ouikka, grade 2 – patriarche (90 ans)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 7,
+        "vo": 8,
+        "pr": 6,
+        "foi": 9
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 29,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Ongles d'acier (2 PP pour le combat)",
+          "att": 10,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Trait d'énergie (intangible, 4 PP par tir)",
+          "att": 16,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption de douleur",
+          "r": 6
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 6
+        },
+        {
+          "n": "Augmentation de Force",
+          "r": 6
+        },
+        {
+          "n": "Disparition",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : ongles d'acier",
+          "r": 0
+        },
+        {
+          "n": "Peur",
+          "r": 10
+        },
+        {
+          "n": "Poison",
+          "r": 6
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 6
+        },
+        {
+          "n": "Voix impérieuse",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Aisance sociale 4+, Baratin 5, Corps à corps 4, Défense 6, Discrétion 3, Discussion 5, Enquête 3, Hobby : ignorer sa famille 5, Intimidation 5+, Médecine 2+, Métier : grand monde 4, Séduction 3, Tir 3 (Trait d'énergie 6)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieillard grand, maigre, costume noir sur mesure, regard glaçant, petit claquement de langue en pleine conversation. Galanterie de façade, mépris des femmes, goût de nuire pour le plaisir. Patron de l'entreprise familiale (ventilateurs, climatisations, chauffages), championne du licenciement. Tout le monde le vouvoie.\nVeuf d'Ester Berthel, morte en couches à la naissance de Domitille dans des circonstances jamais éclaircies (rumeurs, conflit sourd avec Domitille). N'apprécie que son arrière-petit-fils Louis, démon prometteur.\nIl n'est pour rien dans la capture d'Hercule : fausse piste idéale. Ludivine le soupçonne depuis longtemps. Quelques démons sont invités au week-end sur sa liste.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-domitille",
+      "nom": "Domitille de la Vibère (née d'Astelin)",
+      "source": "Héroïne païenne romaine – architecte à Lyon (55 ans)",
+      "type": "paien",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 4,
+        "vo": 8,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 20,
+      "seuilsFix": [
+        4,
+        9,
+        13,
+        18
+      ],
+      "armes": [
+        {
+          "n": "Glaive romain",
+          "att": 6,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 4
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 8
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 1+ (épées 3), Corps à corps 3, Défense 4, Discrétion 3, Discussion 4, Enquête 4, Fouille 3, Hobby : cuisine 3, Savoir occulte 3 (divination 7), Séduction 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Héroïne romaine depuis près de trente ans (a quitté son corps d'adolescente pour l'Olympe). Trapue, sportive, cheveux blonds longs, franche, susceptible, un peu brutale, très sûre d'elle ; pas l'élocution distinguée de la famille. Bonne cuisinière, excellente mémoire.\nDevin réputé à la romaine : entrailles de poulet, vol des oiseaux, et renards à la queue enflammée lâchés d'une colline. Petite pièce secrète à côté de sa chambre.\nConnaît Hercule, qu'elle a aidé financièrement à ses débuts (remboursée). Mariée à Abélard, qui ignore tout de sa nature. Haïe de Louis-André, ignorée par son père ; aimée du reste de la famille.\nPouvoir « Oracle » du livre = Détection du futur proche.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-ludivine",
+      "nom": "Ludivine de la Vibère-d'Astelin (née Lyons)",
+      "source": "Ange de Jordi, grade 0 – sage-femme (24 ans)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 8,
+        "vo": 6,
+        "pr": 6,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 12,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Masse d'arme",
+          "att": 8,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de pacification",
+          "r": 4
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Non-détection",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 4, Combat 3 (contondantes 5), Défense 5, Discussion 4, Enquête 4, Fouille 4, Séduction 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande, brune, air buté, nez en trompette. Incarnée juste avant de rencontrer Charles-Louis, qu'elle a rendu plus humaniste ; sage-femme dans un hôpital public parisien ; mère d'Antonin (2 ans).\nSurveille Louis-Égispée, Marc-Jean et le petit Louis qu'elle croit démons (elle se trompe pour Marc-Jean). Rêve d'un coup d'éclat : elle n'en a encore jamais fait. Peut savoir une partie de l'affaire grâce à ses pouvoirs et aider les PJ, mais ses soupçons iront d'abord vers le vieux.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-louis",
+      "nom": "Louis d'Astelin",
+      "source": "Démon de Shaytan, grade 1 – enfant de 9 ans",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 8,
+        "vo": 6,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 16,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Grandes cornes (3 PP pour le combat)",
+          "att": 6,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Cauchemar",
+          "r": 4
+        },
+        {
+          "n": "Forme de combat",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : grandes cornes",
+          "r": 0
+        },
+        {
+          "n": "Vitesse",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 5, Baratin 3, Corps à corps 3, Défense 4, Discrétion 5, Discussion 4, Intrusion 3, Médecine 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fils de Philippe-Louis : électrocuté à 3 ans dans l'atelier de son père, mort, puis « réanimé » par un démon. Regard dur, intelligence d'adulte, ironique et cruel, cheveux frisés en bataille ; sait faire des yeux de biche irrésistibles pour manipuler les inconnus.\nFouine partout, a déjà entendu Domitille pratiquer la divination sans comprendre. Déteste Ludivine qui l'observe trop, admire son arrière-grand-père, trouve Estelle divine, et rêve de savoir ce qui se passe dans le bureau de Louis-André. Ses sœurs le craignent.\nS'il apprend l'affaire (jeux de ses sœurs, observation), il fouine et cherche à en tirer profit.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-hercule",
+      "nom": "Hercule",
+      "source": "Héros romain « de niveau pfff », patron de la DTC (prisonnier du téléphone)",
+      "type": "paien",
+      "car": {
+        "fo": 14,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 10,
+        "foi": 12
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 55,
+      "seuilsFix": [
+        9,
+        19,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Massue magique ancienne (précision +4, puissance +9)",
+          "att": 20,
+          "prec": 0,
+          "puis": 16,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 14,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 10
+        },
+        {
+          "n": "Némésis",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 14
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Vol",
+          "r": 8
+        }
+      ],
+      "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5 ; pouvoir propre Voyage intermarches 6 (spirituel, activé, 8 PP)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche du chapitre 4 (p. 21). Pendant le scénario il est enfermé dans le vieux portable, sans corps ni pouvoirs : il ne peut que parler si on met une carte SIM dans l'appareil.\nÀ sa libération : en caleçon à poireaux, pas rasé, affamé et furieux. Sa première envie est de cogner le sorcier ; mieux vaut que les PJ restent discrets et n'en reparlent pas.\nVoyage intermarches (pouvoir propre à Hercule) absent des règles de l'application : noté dans les talents. Massue au format du livre 66/RU+10/M+16.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-louis-andre",
+      "nom": "Louis-André d'Astelin",
+      "source": "Sorcier, fils aîné du patriarche (68 ans) – le coupable",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Aisance sociale 2, Baratin 2, Défense 1, Discussion 3, Intimidation 2, Savoir occulte 3 ; Basse sorcellerie 3, Haute sorcellerie 3, Pentacle 2, Invocation 2, Demande 2, Lien 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sosie rabougri de son père : maigre (s'est affamé enfant pour lui ressembler), 1,60 m – ne jamais évoquer sa taille –, visage en lame de couteau, regard noir, bégaie quand il s'énerve. Héritier désigné de l'entreprise sans jamais y travailler.\nVers 10 ans, il a trouvé au grenier le Codex Merlinus et s'est fait un bureau-laboratoire fermé à clef sous les combles. Hait Domitille depuis toujours ; depuis qu'il l'a entendue prier les dieux romains il y a deux ans, il veut l'écraser en tenant Hercule à sa merci. Se fait appeler « Louis » tout court pour entretenir la confusion avec son père.\nIncapable de se battre : il se défend par la sorcellerie, mal à l'aise en sorts instantanés. Quelques sorciers sont invités au week-end sur sa liste.\nPas de caractéristiques dans le livre : profil de sorcier estimé d'après Igor et Jean-Louis (« Langues et sécateur »).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-catherine",
+      "nom": "Catherine d'Astelin (née von Irsch)",
+      "source": "Épouse de Louis-André (65 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Bourgeoise riche et liftée, blonde de coiffeur, yeux verts, sourire figé en toutes circonstances. Mondanités, bienfaisance, médisances. Se plaint que son mari passe sa vie dans sa « cachette » du grenier : une piste involontaire. A été très surprise des assiduités de son mari la semaine où il a conçu son plan.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-marc-jean",
+      "nom": "Marc-Jean d'Astelin",
+      "source": "Fils cadet du patriarche, comédien (64 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Seul d'Astelin jovial : rondouillard, beau sourire, charmant et spirituel, séducteur impénitent qui a toujours refusé de se marier. Comédien parisien sans grande gloire, méprisé pour cela par son père et son frère. Affectueux envers Domitille.\nPère naturel de Bertille (une seule fois avec Estelle, alors fiancée d'Henry) ; il en est convaincu, elle ne lui a jamais rien dit. Il est son parrain et veille sur elle. Ludivine le croit démon à tort.\nPas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+      "est": "Pas de caractéristiques dans le livre : humain moyen, Présence 3 (charme) estimée."
+    },
+    {
+      "id": "type-pa3-abelard",
+      "nom": "Abélard de la Vibère",
+      "source": "Époux de Domitille, professeur de lettres anciennes (58 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gringalet à lunettes, cheveux châtains frisés, honnête, distrait et rationnel au point de vouloir tout expliquer. N'a jamais soupçonné la nature de sa femme. Louis-André a déjà tenté un sort contre sa virilité.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-charles-louis",
+      "nom": "Charles-Louis de la Vibère-d'Astelin",
+      "source": "Fils de Domitille, jeune avocat parisien (26 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Baraqué comme sa mère, brun, élégant, ambitieux et travailleur ; porte le double nom par calcul (« d'Astelin » ouvre des portes). Concilie confort bourgeois et nobles causes sous l'influence de Ludivine. Un des six « Louis ».\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-philippe-louis",
+      "nom": "Philippe-Louis d'Astelin",
+      "source": "Fils aîné de Louis-André, ingénieur et inventeur (48 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Technique 4, Informatique 3, Électronique/robotique 4 (talents estimés)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rêveur enthousiaste, cheveux frisés poivre et sel, yeux très pâles, sympathique. Ingénieur en automatismes, il bricole dans son atelier (une annexe du domaine) des machines farfelues, dont le robot Nestor. Ravi de se rendre utile, il peut prêter du matériel aux PJ. Ne parvient pas à communiquer avec son fils Louis.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-blondine",
+      "nom": "Blondine d'Astelin (née Dangeville)",
+      "source": "Épouse de Philippe-Louis, biologiste (36 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite, ronde, brune à mèches rouges, dynamique et franche. N'aime pas sa belle-famille ; vit dans une autre annexe du domaine. Se méfie de l'atelier depuis l'accident de Louis.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-henry",
+      "nom": "Henry d'Astelin",
+      "source": "Fils cadet de Louis-André, cadre de l'entreprise familiale (47 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Brave garçon effacé, sans menton, regard fuyant, mains moites, élocution confuse. Fait toujours ce qu'on attend de lui. Croit être le père de Bertille et ignore les infidélités de sa femme.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-estelle",
+      "nom": "Estelle d'Astelin (née Firambelle)",
+      "source": "Épouse d'Henry (40 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Très belle, grande, blond cendré, taches de rousseur ; collectionne les amants au vu de tous sauf de son mari. Bavarde incapable de se taire… sauf sur un secret : Bertille est la fille de Marc-Jean. Peut tout balancer en plein week-end. Le petit Louis la trouve divine.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-bertille",
+      "nom": "Bertille d'Astelin",
+      "source": "Fille d'Estelle (et de Marc-Jean), étudiante en commerce (20 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Karaté (coup de pied)",
+          "att": 6,
+          "prec": -1,
+          "puis": -2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 3, Défense 3, Athlétisme 3 (estimés : karaté)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Visage lourd, physique un peu mou comme Marc-Jean, énergique, colérique, blagueuse. Adore son parrain Marc-Jean et ignore qu'il est son père. Karatéka de niveau national.\nVient présenter son petit ami Antoine à la famille, par goût de la provocation.\nPas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+      "est": "Pas de caractéristiques dans le livre : Agilité 3, Corps à corps et Défense 3 estimés (karaté)."
+    },
+    {
+      "id": "type-pa3-antoine",
+      "nom": "Antoine de Saint-Louis",
+      "source": "Petit ami de Bertille, musicien « rebelle » (22 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fils de famille noble jouant au trotskiste aux frais de ses parents ; groupe alternatif « les Potirons des Années antérieures ». Très brun, piercings au nez et à la langue (élocution confuse), pessimiste et ironique. Le sixième « Louis » de la liste. Peut remarquer à voix haute la ressemblance entre Bertille et Marc-Jean.\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-fillettes",
+      "nom": "Sybille et Angeline d'Astelin",
+      "source": "Filles de Philippe-Louis (7 et 6 ans) – témoins de la capture",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Inséparables brunettes à nattes, curieuses, bavardes et pouffeuses ; fans d'histoires de sorcellerie à la Harry Potter. Se méfient de leur frère Louis et du manoir, préfèrent l'atelier de leur père.\nCachées derrière le paravent du bureau de Louis-André, elles ont tout vu (Sybille a trouvé ça drôle, Angeline bizarre) et n'en ont parlé à personne. Elles peuvent parler à un PJ patient (interrogatoire possiblement exaspérant) ou rejouer la scène, en l'enjolivant, dans leurs jeux.\nEnfants : caractéristiques estimées, sans combat.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73.",
+      "est": "Enfants : caractéristiques estimées, sans combat."
+    },
+    {
+      "id": "type-pa3-nestor",
+      "nom": "Nestor",
+      "source": "Robot expérimental de Philippe-Louis",
+      "type": "monstre",
+      "car": {
+        "fo": 7,
+        "ag": 3,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 3,
+      "pfFix": 6,
+      "pp": 0,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Pince métallique",
+          "att": 4,
+          "prec": 0,
+          "puis": -2,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2, Défense 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Censé avoir un semblant d'intelligence ; les essais sont peu concluants. Diversion « Chapeau melon et bottes de cuir » : il échappe au contrôle de son créateur pendant le week-end, et les PJ peuvent le voir ou se battre avec lui. Mène à l'atelier, à un faux coupable, ou à du matériel utile.\nAucune caractéristique dans le livre : fiche entièrement estimée (robot lourd et lent, protection 3).\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    },
+    {
+      "id": "type-pa3-domestiques",
+      "nom": "Domestiques et extras du traiteur",
+      "source": "12 domestiques du manoir + 10 serveurs de Barbak et Truffon",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Parmi les habituels : 3 jardiniers, 5 employés de cuisine et le majordome Armand (rigide, silencieux, prévenant). Extras et domestiques nommés : Lucie (grand sourire à bagues), Hippolyte (taches de rousseur), Morane (bob au soleil), Stéphane (petit brun maladroit), Grégory (grand blond maladroit), Estelle (zozote), Antoine (rien de spécial), Stéphanie (pipelette bouclée), Dorie (mémoire d'éléphant).\nCouverture possible pour les PJ (embauche par le traiteur ou remplacement d'un employé).\nPas de caractéristiques dans le livre : humain moyen (tout à 2, PF et seuils calculés), valeurs estimées.\nSource : Les Petites Apocalypses, « Un coup de fil à la patte », p. 62-73."
+    }
+  ],
+  "memoire": []
+}

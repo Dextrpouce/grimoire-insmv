@@ -1,0 +1,3436 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "mv2-notre-peuple-vaincra",
+      "nom": "Livret MV – Notre peuple vaincra !",
+      "resume": "Scénario de Magna Veritas, enquête ouverte en pleine guerre de Tchétchénie. Sur ordre de Didier, les PJ partent par Tbilissi pour Groznyï avec 200 000 $ et un contact chrétien ou musulman à choisir, afin de rapporter des preuves que les Russes sont aidés par un prince-démon. Au fil des factions, quartiers chauds et hôpitaux, la piste du mafieux Sergeï Lewenski mène jusqu'à Moscou et à Nisroch, prince-démon qui joue les retraités humains.",
+      "notes": "Source : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91. Ton très satirique et politiquement incorrect, à doser selon la table.\n\nHistoire secrète (résumé) :\n• Nisroch, prince-démon le plus récemment promu, s'ennuie : il laisse les affaires à son bras droit Trads et part vivre en humain en Russie sous le nom de Nickolaï Strachnoff. Il bâtit un conglomérat militaro-médiatico-industriel, revient au trafic de drogue (surnom : « le cruel »), épouse en 1996 Loubiana, ex-mannequin biélorusse, et vit en famille à Moscou.\n• Les autres princes le croient perdu dans un « trip » ; personne ne s'en soucie.\n• Deuxième guerre de Tchétchénie : troupes d'élite russes, volontaires de la CEI sans foi ni loi ; les extrémistes musulmans affluent. Voyant les anges musulmans soutenir les Tchétchènes, Nisroch renforce son soutien aux Russes et ses trafics à Groznyï (armes, drogue, prostitution, jeux) via Sergeï Lewenski, qui lui a vendu son âme.\n• Les anges musulmans, acculés, demandent l'aide du Paradis. Le Conseil se déchire (pour : Didier, Yves, Jordi, Novalis, Mathias ou Emmanuel, Christophe, Jean-Luc, Janus, Blandine, Francis, Marc, Guy, Jean ; les autres contre). Yves ajourne en laissant chacun libre ; Didier envoie les PJ.\n\nDéroulement : briefing → Tbilissi (contact, matériel) → voyage → Groznyï, enquête ouverte dans 13 lieux (scènes 5 à 17, dans l'ordre que choisissent les PJ) → Moscou → scène finale.\nPreuves utiles : témoignage enregistré de Sergeï (ou Sergeï ramené en France), archives de Bokonov, photos de Tarkov, documents du coffre de Nisroch.\n\nCouvertures et sympathie des factions (1 tirent à vue · 2 antipathie farouche · 3 mépris neutre · 4 a priori positif · 5 sympathie)\nCodes : TR troupes russes · C collabos · B boivikis · M moudjahidin et wahhabites · MR mafia russe · MT mafia tchétchène · P population tchétchène. Deux valeurs : selon que les PJ se déclarent amis ou ennemis de la faction.\n• Médecins d'une ONG : TR 2, C 2, B 3, M 2, MR 3, MT 3, P 5. + accès facile à peu près partout ; − on leur demandera vraiment de soigner.\n• Journalistes occidentaux : TR 2, C 2, B 4, M 2, MR 1, MT 1, P 4. + quasi intouchables ; − risquent d'être pris à partie pour couvrir un événement.\n• Journalistes musulmans : TR 2, C 2, B 4, M 4, MR 1, MT 1, P 4. + quasi intouchables ; − idem.\n• Mercenaires : TR 1 ou 4, C 2 ou 4, B 1 ou 5, M 1, MR 3 ou 4, MT 2 ou 4, P 1. + droit de porter des armes, peuvent se vendre à une faction ; − loyauté douteuse, arrestation possible à tout moment.\n• « Hommes d'affaires » : TR 5, C 4, B 3, M 1, MR 1 ou 5, MT 1 ou 5, P 1. + l'argent ouvre toutes les portes ; − se faire braquer.\n• Organisation humanitaire occidentale : TR 2, C 3, B 4, M 3, MR 2, MT 2, P 5 ou 2. + quasi intouchables ; − mépris des populations proséparatistes.\n• Organisation humanitaire musulmane : TR 2, C 3, B 3, M 5, MR 1, MT 1, P 5 ou 2. + quasi intouchables ; − mépris des populations prorusses.\nExemple : les troupes russes accueillent bien (4) des mercenaires venus les aider contre les terroristes, mais tirent à vue (1) sur un mercenaire soupçonné de travailler pour les séparatistes.\n\nMarché noir caucasien (prix approximatif · délai d'obtention)\n• Arme de poing (Tokarev) : 500 $ · 1 jour\n• Fusil d'assaut (Kalachnikov) : 1 000 $ · 1d2 jours\n• Lance-roquettes (RPG 7) : 2 500 $ · 1d6 jours\n• Voiture normale (Lada) : 5 000 $ · 1 jour\n• 4×4 japonais : 7 500 $ · 1d3 jours\n• Faux papiers géorgiens, ingouches, daghestanais, arméniens ou tchétchènes : 5 000 $ · 1d3+1 jours\n• Faux papiers russes : 10 000 $ · 1d6 jours\n• Nourriture, matériel de camping, tente… : 1 000 $ · 1d3 jours\n• Téléphone satellitaire : 10 000 $ · 1d6 jours\n• Voyage en avion de tourisme : 2 000 $ · 1d3 jours\n• Voyage en 4×4 par l'Ingouchie : 1 000 $ · 1 jour\n• Voyage en 4×4 par le Daghestan : 2 000 $ · 1 jour\n• Prostituées : 50 $ · immédiat\n• Drogue : 100 $ · immédiat\n• Matériel médical : 1 000 $ · 1d3 jours\nLe séjour à Tbilissi dure de un à six jours selon le matériel demandé.\n\nÉvénements aléatoires en temps de guerre (2d6, « carte chance : vous n'avez pas de chance »)\n• 2 Bombardement raté : un obus ou une roquette tombe tout près ; au choix du MJ, blessure de niveau de dommage 1d6+3.\n• 3 Rafle prorusse : collabos ou mercenaires (parfois encadrés par le FSB) contrôlent les papiers, tuent ou arrêtent les suspects.\n• 4 Prêche enflammé d'un imam de rue contre les infidèles, les États-Unis et la Russie chrétienne : la foule cherche un autodafé si on le laisse parler.\n• 5 Convoi de la Croix-Rouge ou du Croissant-Rouge, escorté par des Russes, des collabos ou des boivikis.\n• 6 Croisade orthodoxe : menés par un pope, des russophones rançonnent les « hérétiques » de leur quartier.\n• 7 Combats de rue entre factions ennemies ; les balles perdues ne le sont pas pour tout le monde.\n• 8 Enterrement russe ou tchétchène : ambiance lourde, la moindre provocation met le feu aux poudres.\n• 9 Convoi ou poste d'une ONG humanitaire, menacé par une population à bout.\n• 10 Rafle séparatiste : boivikis et/ou moudjahidin bouclent le secteur et contrôlent les motivations de chacun ; exécutions sommaires.\n• 11 Les PJ tombent sur les restes d'une rafle de collabos ou d'un raid de moudjahidin : quelques survivantes pansent leurs blessures.\n• 12 Tireur embusqué, ou faction ennemie, qui attaque sans prévenir.\n\nRécompenses (scène finale) :\n• Nisroch laissé en paix sans preuve : défaite totale, −4 à −6 PA\n• Laissé en paix avec preuves : −1 à −3 PA ou +1 à +3 PA selon les preuves\n• Tué : +4 à +6 PA avec preuves, sinon +1 à +3 PA\n• Renvoyé en Enfer : +1 à +6 PA selon les preuves\n• Défaite des PJ : −1 à −6 PA\n\nNouveaux pouvoirs du scénario (déjà dans les règles de l'appli) : Barbarie (Majûj), Colère de Dieu (Khalid), Colère divine (Georges), Tolérance (Hassan).\nFiches : caractéristiques en niveaux du livre (Ch des humains reportée en Foi). PP des anges de Khalid et de Hassan et du démon de Majûj non donnés : estimés selon le grade. Armes non précisées des anges russes estimées d'après leurs talents. Nisroch n'a pas de caractéristiques.",
+      "scenes": [
+        {
+          "id": "mv2-sc-mission",
+          "nom": "1. Mission prioritaire",
+          "lieu": "Paris, puis hôtel Sheraton de Roissy-Charles-de-Gaulle – briefing à 6 h",
+          "notes": "Appel urgent du contact des PJ : briefing au Sheraton de Roissy au plus tard le lendemain 6 h, juste avant le vol pour Tbilissi. Mission d'une durée indéterminée, venue directement d'un archange (Didier, qui veut le moins de monde possible au courant).\nContexte (à garder pour le MJ) : les anges musulmans, débordés, ont demandé l'aide du Paradis ; le Conseil s'est déchiré et Yves a ajourné le débat en laissant entendre que chacun était libre d'agir. Didier s'engouffre dans la brèche : avec des preuves irréfutables, il espère convaincre le Conseil d'aider les musulmans et renouer avec cette branche perdue.\nBut : rapporter des preuves irréfutables que les Russes sont noyautés ou aidés par des princes-démons « normaux » (côté tchétchène, tout le monde sait que les intégristes sont infiltrés par les princes-démons musulmans). Le témoignage des PJ ne suffira pas. Le temps est compté.\nMatériel : environ 200 000 $ en liquide et des passeports suisses ; couverture libre, à trouver vite (le chargé de mission la transmet au contact sur place dès que les PJ sont dans l'avion).\nChoix imposé : un seul contact, chrétien ou musulman, pour raisons politiques. Le contact ne cache pas son aversion pour l'option musulmane mais n'insiste pas. Aucune des deux n'est meilleure ; des joueurs débrouillards peuvent changer de camp en cours de route, mais le scénario prendra des voies différentes.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-contact",
+              "q": "Quel contact les PJ choisissent-ils ?",
+              "opts": [
+                {
+                  "t": "« Fromage » : Sulejman Sarovic (musulman)",
+                  "suite": "Passage par l'Ingouchie, matériel illimité sans bakchich. Meilleur accueil chez les séparatistes, méfiance côté russe."
+                },
+                {
+                  "t": "« Dessert » : Andranik Gougassian (chrétien)",
+                  "suite": "Mini-jet de trafiquants ou route du Daghestan, bakchichs à prévoir. Meilleur accueil côté russe et orthodoxe, hostilité côté séparatiste."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-tbilissi",
+          "nom": "2. Tbilissi",
+          "lieu": "Tbilissi (Géorgie), hôtel Sheraton – 1 à 6 jours",
+          "notes": "Vol Air France sans histoire (sauf si le MJ veut glisser un démon de Ouikka à bord). Le contact attend à la descente d'avion et installe les PJ au Sheraton pour préparer la suite ; il peut leur faire découvrir la fête géorgienne.\nLe séjour dure de un à six jours selon le matériel commandé : voir la table du marché noir dans les notes du scénario.\nLe contact tolère les écarts de conduite (sexe, drogue…) sans rien dire, mais il traitera alors les PJ en clients et non en frères de combat.\nVoyage :\n• Andranik : mini-jet privé direct ou longue route par le Daghestan. Couverture en béton exigée face aux Russes, et pas d'armes, ou des bakchichs énormes : 1d6 × 100 $ par arme, jusqu'à 2d6 × 100 $ par RPG. Il veille au confort de ses clients.\n• Sulejman : uniquement par l'Ingouchie, sans bakchich (un don à la cause est bienvenu).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-sulejman-1",
+              "nom": "Sulejman Sarovic",
+              "source": "Contact musulman à Tbilissi",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 6,
+                "vo": 4,
+                "pr": 5,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 3,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Corps à corps 1+, Défense 2, Discussion 2, Enquête 1+, Fouille 1+, Médecine 2, Savoir criminel 2 (mafia tchétchène 3+), Savoir militaire 1 (résistants tchétchènes 2), Survie 1 (urbain 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tchétchène de 28 ans, réfugié en Géorgie. Haine viscérale et héréditaire des Russes ; pas le courage de prendre les armes, il aide la cause à sa façon. Contact obtenu par un imam londonien.\nPasse par l'Ingouchie, matériel en quantité illimitée, pas de bakchich (un don à la cause est apprécié). Accompagne à contrecœur les PJ dans le quartier russe.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-sulejman"
+            },
+            {
+              "id": "mv2-andranik-2",
+              "nom": "Andranik Gougassian",
+              "source": "Contact chrétien à Tbilissi",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 6,
+                "vo": 4,
+                "pr": 5,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 3,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Corps à corps 1+, Défense 2, Discussion 2, Enquête 1+, Fouille 1+, Médecine 2, Savoir criminel 2 (mafia russe 3+), Savoir militaire 1 (armée d'occupation 2), Survie 1 (urbain 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arménien de 42 ans, « homme d'affaires » caucasien qui trafique de tout. Catholique arménien non pratiquant et islamophobe acharné. Connaît la mafia russe et la fuit autant qu'il peut.\nVoit dans les PJ une mine d'or : le client est roi. Propose un mini-jet de trafiquants jusqu'à Groznyï ou la longue route par le Daghestan.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-andranik"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-voyage",
+              "q": "Comment les PJ rejoignent-ils Groznyï ?",
+              "opts": [
+                {
+                  "t": "Mini-jet de trafiquants",
+                  "suite": "Rapide ; contrôles russes à l'arrivée : la couverture doit tenir."
+                },
+                {
+                  "t": "4×4 par le Daghestan",
+                  "suite": "Long voyage, barrages russes et bakchichs."
+                },
+                {
+                  "t": "4×4 par l'Ingouchie",
+                  "suite": "Avec Sulejman : secteurs rebelles, risque de mauvaise rencontre avec les Russes."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-terminus",
+          "nom": "3. Groznyï, terminus",
+          "lieu": "Route du Caucase et entrée dans Groznyï",
+          "notes": "Voyage à détailler selon le goût du MJ : son issue dépend du matériel transporté, de la crédibilité de la couverture, de l'argent distribué et des erreurs commises. Sauf énorme bêtise, les PJ arrivent à Groznyï ; les imprudents paient (tout s'achète, y compris la tranquillité).\nPar la route : villages pillés et rasés, fosses communes, bandes de « mercenaires » dans le sillage des régiments, secteurs rebelles, carcasses de chars et d'hélicoptères ; paysage montagneux aride, froid sec, plus aucune infrastructure.\nLa ville : en ruines, quadrillée par militaires russes, mercenaires et milices collabos ; tireurs embusqués, embuscades de boivikis, mines, bombardements. Depuis le référendum truqué de 2002, le gouvernement prorusse sert de prétexte à éloigner les journalistes. Seuls refuges : villages isolés, bâtiments officiels et camps protégés par le FSB.\nBarrage possible : soldats russes ou volontaires de la CEI.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-soldats-russes-3",
+              "nom": "Soldats russes",
+              "source": "Soldats russes typiques (FSB, spetsnaz, division Dzerjinski)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-soldats-russes"
+            },
+            {
+              "id": "mv2-volontaires-4",
+              "nom": "Volontaires de la CEI",
+              "source": "Mercenaires typiques",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2+, Défense 2+, Discrétion 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Repris de justice, asociaux et psychopathes venus de toute la CEI. Payés au boiviki abattu : ils en voient partout et massacrent sans discernement. Détestés de tous.\nLance-roquettes au niveau du Tir automatique, comme les soldats russes du bestiaire.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-volontaires"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-arrivee",
+          "nom": "4. Quel beau temps pour la saison ! (enquête ouverte)",
+          "lieu": "Groznyï, hôtel Lénine (place Lénine, centre russe) – boue de printemps",
+          "notes": "Boue de printemps, froid, rues inondées et criblées d'obus. La ville est officiellement aux mains des Russes et du gouvernement prorusse ; la nuit, seuls les quartiers militaires et officiels sont à peu près sûrs, le jour des quartiers entiers sont tenus par les boivikis.\nSauf si les PJ rejoignent ouvertement la résistance, leur guide leur conseille l'hôtel Lénine, bâtisse stalinienne glaciale en plein centre russe (Sulejman y va à reculons).\nEnquête ouverte, sans chronologie : la guerre continue sans eux. Aucune piste au départ : il faut demander au guide et aux factions s'ils ont entendu parler d'événements bizarres, voire satanistes. Les PJ doivent sentir qu'ils ne pèsent rien dans ce chaos.\nOutils dans les notes du scénario : table des couvertures et sympathie des factions, table d'événements aléatoires (2d6) à tirer pendant les déplacements.\nChaque lieu suivant donne ses PNJ, ses liens (où les PNJ orientent les PJ après un bon roleplay) et ses preuves. Les preuves concernant des anges ne servent guère la mission ; la clé est la piste de Sergeï Lewenski, qui mène à Nisroch.\nForces en présence : environ 35 000 soldats russes (FSB, spetsnaz, division Dzerjinski) ; une cinquantaine de compagnies de volontaires ; collabos ; mafia russe (Nisroch, jamais sur place) ; boivikis du gouvernement libre de Maskhadov ; moudjahidin wahhabites ; mafia tchétchène ; population.\nSurnaturel : une vingtaine d'anges de Khalid officiers chez les boivikis et surtout les moudjahidin ; une douzaine d'anges de Hassan dans les deux gouvernements (artisans manipulés du référendum) ; trois démons de Ouikka chez des montagnards ; une trentaine de démons de Majûj et Dajjâl dans la population et la mafia tchétchène ; quelques anges de Laurent, de Michel et de vieux anges de Georges côté russe ; Nisroch, inconnu même des autres démons.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-kirov",
+          "nom": "5. Camp Kirov, QG des troupes russes",
+          "lieu": "Camp Kirov – QG russe pour toute la Tchétchénie",
+          "notes": "PNJ : capitaine Boris Ivanovitch Stransky (Zverboy), colonel Piotr Sergeïevitch Bokonov.\nLiens : gouvernement tchétchène, mafia russe, basilique Saint Georges, mercenaires du stade Dinamo, mosquée Al Cairo, forces tchétchènes loyalistes.\nPreuves : présence d'anges de Laurent et de Georges dans l'armée et chez les volontaires ; intime conviction de présence angélique chez les musulmans ; soupçons de présence démoniaque dans la mafia tchétchène.\n\nPlus grand centre militaire du pays, gros de la division Dzerjinski, prêt à mater une insurrection. Sécurité très stricte à l'entrée, mais une fois dedans le désordre permet de circuler avec un faciès slave ou occidental. Rencontrer des officiers supérieurs : payer gardes et sous-officiers ou trouver une bonne excuse.\nLes militaires veulent une meilleure presse et des succès militaires : leur proposer de l'aide ouvre des portes ; parler misère et criminalité vaut au mieux une oreille sourde, au pire une expulsion.\nOfficiers : entre eux, rares pots-de-vin, surtout des tarifs préférentiels. Soldats et sous-officiers : relation symbiotique avec la mafia russe (protection, clientèle) ; attaquer la mafia, c'est attaquer l'armée.\nIndice majeur : les archives de Bokonov (bureau et coffre-fort en ville) contiennent des photos des rituels et sacrifices de Sergeï.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-zverboy-5",
+              "nom": "Zverboy (capitaine Boris Ivanovitch Stransky)",
+              "source": "Ange de Laurent, grade 2 (camp Kirov)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 9,
+                "ag": 10,
+                "pe": 9,
+                "vo": 7,
+                "pr": 4,
+                "foi": 9
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 25,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Épée",
+                  "att": 13,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 15,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Aura de courage",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 8
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 5 (épées 6+), Corps à corps 2+, Défense 5, Discussion 2+, Enquête 3+, Fouille 4, Savoir militaire 2+ (armée russe 5), Tir 5 (armes automatiques 7+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Biélorusse, 33 ans, blond aux yeux verts. Rattaché à l'Église orthodoxe, fanatique qui vit la guerre comme une croisade : conversion forcée ou massacre. Rêve d'une équipe d'anges pour éliminer en douce les modérés du gouvernement prorusse et les gradés trop mous.\nMeilleur contact possible côté russe, à condition de partager son intégrisme : aucune faiblesse ni compassion tolérée. Proche de Blakanov, il peut y mener les PJ. Tait ses amis de Georges, sauf à des alliés aussi durs que lui ; affirme que la mafia tchétchène est aux mains des démons musulmans et couvrira toute action contre leur quartier. Pense que des anges musulmans encadrent boivikis et moudjahidin ; insisté, il suggère la prière du vendredi à la mosquée Al Watan.\nArmes non précisées : épée longue et fusil-mitrailleur estimés d'après ses talents.\nConnaît : Blakanov, Tuomas Holpainen, colonel Bokonov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-zverboy"
+            },
+            {
+              "id": "mv2-bokonov-6",
+              "nom": "Colonel Piotr Sergeïevitch Bokonov",
+              "source": "Officier russe, relations avec le gouvernement tchétchène",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 1+, Défense 2, Fouille 3, Intimidation 2+, Savoir militaire 2 (armée russe 4), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Russe de 47 ans, militaire arriviste et sans scrupules, nostalgique des gros budgets. Plus souvent au bureau qu'au front. Agnostique, il joue l'orthodoxe pratiquant auprès du pope Vlassov.\nChargé des relations avec le gouvernement tchétchène : il peut ouvrir ses portes aux PJ s'il y trouve un intérêt politique ou financier. Reçoit régulièrement une valise de Lewenski (sans jamais le rencontrer) et arrose l'imam d'Al Cairo.\nIndice clé : des archives (bureau et coffre-fort chez lui, en ville) sur tous les notables de Groznyï, dont des témoignages et photos des rituels satanistes de Sergeï (pentacles, sacrifices humains) et des exploits étranges de Mohamed Islam.\nConnaît : capitaine Stransky, Blakanov, Tuomas Holpainen, Lewenski, pope Vlassov, Mohammed Vasnadov, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-bokonov"
+            },
+            {
+              "id": "mv2-soldats-russes-7",
+              "nom": "Soldats russes",
+              "source": "Soldats russes typiques (FSB, spetsnaz, division Dzerjinski)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-soldats-russes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-karpinka",
+          "nom": "6. Caserne Karpinka, QG des forces tchétchènes",
+          "lieu": "Caserne Karpinka",
+          "notes": "PNJ : commandant Mourad Kardanov.\nLiens : forces russes régulières, gouvernement tchétchène, mosquée Al Cairo, mafia tchétchène, mafia russe, hôpital Khankala.\nPreuves : présence de satanisme au sein de la mafia russe.\n\nForces méprisées par la population, haïes des séparatistes, suspectes aux yeux des Russes ; bras armé du gouvernement officiel, elles gardent les bâtiments secondaires et maintiennent (mal) l'ordre. Corruption et désertions.\nKardanov se confie vite à des étrangers respectueux : la disparition du mafieux drogué qui parlait de prince-démon et de Grand Jeu, et les crucifixions macabres des hommes de Sergeï.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-kardanov-8",
+              "nom": "Commandant Mourad Kardanov",
+              "source": "Forces armées tchétchènes (caserne Karpinka)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 5,
+                "vo": 6,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2+, Combat 1 (couteaux 2), Corps à corps 2, Défense 2, Savoir militaire 1 (armée tchétchène 3+), Tir 1 (armes de poing 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tchétchène de 35 ans, patriote athée convaincu du rattachement à la CEI : traître pour tous, il a échappé à une dizaine d'attentats et perdu toute sa famille. Seul, d'autant plus fervent. Méprise wahhabites, boivikis et les deux mafias ; ses hommes harcèlent les quartiers chauds. Bon contact avec l'hôpital musulman, s'entend avec Bokonov (sans s'y fier).\nFait vite confiance aux étrangers respectueux. Indices : un mafieux russe drogué a parlé de prince-démon et de Grand Jeu en cellule, puis a disparu au matin ; ses hommes ont surpris ceux de Sergeï en pleine crucifixion « folklorique ».\nConnaît : Bokonov, Mohammed Vasnadov, Lewenski, pope Vlassov, Blakanov, Nouredine El Khâdi, Abubakar Alkhazurov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-kardanov"
+            },
+            {
+              "id": "mv2-collabos-9",
+              "nom": "Collabos tchétchènes",
+              "source": "Milices du gouvernement prorusse",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Combat 1 (couteaux 2), Corps à corps 2, Défense 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes de poing 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pauvres types venus chercher la sécurité et trois repas par jour : mauvais combattants, policiers médiocres, corrompus, prompts à déserter ou à changer de camp.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-collabos"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-dinamo",
+          "nom": "7. Stade Dinamo, camp des volontaires russes",
+          "lieu": "Stade Dinamo",
+          "notes": "PNJ : sergent Tuomas Holpainen (Nightwish), commandant Vladimir Ilitch Blakanov (Dubitchou), colonel Bokonov.\nLiens : mafia russe, forces russes régulières, hôpital Sakaline.\nPreuves : présence d'anges de Georges ; intime conviction de présence angélique chez les wahhabites et démoniaque dans la mafia tchétchène.\n\nCour des miracles paranoïaque : attentats et règlements de comptes quotidiens. Une cinquantaine de compagnies rivales (de cent à plusieurs centaines d'hommes), dont la moitié en opération à tout moment. Temps libre : trafics, rue Pabody, raids meurtriers chez les musulmans.\nOctobre Rouge (Tuomas) et Saint Georges (Blakanov) campent aux deux bouts du stade et se haïssent.\nEntrer chez Octobre Rouge : aucune sélection, mais bizutage en première ligne lors d'une descente chez les séparatistes, sous l'œil de vétérans (plus de 80 % de pertes). Devenus potes, les PJ finissent au bar Vedeno avec Tuomas, qui peut les présenter à Sergeï.\nBlakanov invite volontiers des PJ philosophes à ses soirées de thé avec Tarkov.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "mv2-nightwish-10",
+              "nom": "Nightwish (sergent Tuomas Holpainen)",
+              "source": "Ange de Georges, grade 2 (compagnie Octobre Rouge)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 11,
+                "pe": 6,
+                "vo": 7,
+                "pr": 4,
+                "foi": 7
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 28,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de combat",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 11
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 9
+                },
+                {
+                  "n": "Colère divine",
+                  "r": 4
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 10
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 8, Corps à corps 6, Défense 4+, Discussion 3+, Fouille 5, Médecine 4, Savoir militaire 5 (mercenaires 6), Survie 3 (urbain 6+), Tir 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Estonien de 27 ans, stalinien convaincu : tout plutôt que l'islam. Commande les deux cents hommes d'Octobre Rouge, compagnie fière, détestée et en guerre ouverte avec celle de Saint Georges. Envoie ses hommes même contre le gouvernement prorusse.\nRecrute n'importe qui : bizutage = participer en première ligne à une descente chez les séparatistes (plus de 80 % de morts). Très lié à la mafia russe ; Lewenski est son grand ami et il ignore totalement que son patron est un prince-démon (il en serait fou de rage). Peut décrire la mafia, servir d'intermédiaire avec Sergeï et emmène ses potes au bar Vedeno, rue Pabody. Met les rumeurs sur Sergeï sur le compte de sa « liturgie papiste ».\nArmes non précisées : couteau (Combat 8) et fusil-mitrailleur estimés.\nConnaît : Bokonov, capitaine Stransky, Lewenski, pope Vlassov, Blakanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-nightwish"
+            },
+            {
+              "id": "mv2-dubitchou-11",
+              "nom": "Dubitchou (commandant Vladimir Ilitch Blakanov)",
+              "source": "Ange de Georges, grade 3 (compagnie de Saint Georges)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 13,
+                "pe": 8,
+                "vo": 9,
+                "pr": 6,
+                "foi": 7
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 11,
+              "pp": 43,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Sabre",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 11,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 15
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 15
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 15
+                },
+                {
+                  "n": "Colère divine",
+                  "r": 7
+                },
+                {
+                  "n": "Conversion physique",
+                  "r": 12
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 14
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 15
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 9, Corps à corps 8, Défense 7+, Discussion 5+, Fouille 7, Médecine 6, Savoir criminel 2 (mafia russe 4), Savoir militaire 5 (mercenaires 6), Survie 5 (urbain 9), Tir 5+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ukrainien de 49 ans. Ange de Georges qui a refusé la retraite et le changement d'archange, protégé par l'Église orthodoxe : croisade panslave. Chef de la compagnie de Saint Georges, la plus grosse et la plus disciplinée du stade Dinamo. Cynique et cruel : tout est permis à ses hommes s'ils se battent bien.\nNe détaille pas ses liens avec la mafia mais peut faire guider les PJ rue Pabody. Méprise Tuomas, connaît Stransky, se doute d'anges chez les wahhabites et de démons dans la mafia tchétchène (« aux musulmans de faire leur ménage »). Dégoûté du sort fait à saint Georges par les catholiques : laisse les « papistes » se débrouiller. Ami de soirées de thé de Christian Tarkov ; peut y inviter des PJ subtils et philosophes.\nArmes non précisées : sabre (épée longue) et fusil-mitrailleur estimés.\nConnaît : capitaine Stransky, Christian Tarkov, colonel Bokonov, pope Vlassov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-dubitchou"
+            },
+            {
+              "id": "mv2-volontaires-12",
+              "nom": "Volontaires de la CEI",
+              "source": "Mercenaires typiques",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2+, Défense 2+, Discrétion 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Repris de justice, asociaux et psychopathes venus de toute la CEI. Payés au boiviki abattu : ils en voient partout et massacrent sans discernement. Détestés de tous.\nLance-roquettes au niveau du Tir automatique, comme les soldats russes du bestiaire.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-volontaires"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-octobre",
+              "q": "Les PJ s'engagent-ils dans la compagnie Octobre Rouge ?",
+              "opts": [
+                {
+                  "t": "Oui, ils passent le bizutage",
+                  "suite": "Descente meurtrière chez les séparatistes ; acceptés s'ils survivent et se montrent impitoyables. Tuomas les mène au Vedeno et à Sergeï."
+                },
+                {
+                  "t": "Non, ils restent observateurs",
+                  "suite": "Contacts plus froids ; il faudra une autre entrée vers la mafia russe."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-pabody",
+          "nom": "8. Rue Pabody, quartier chaud prorusse",
+          "lieu": "Rue Pabody et bar Vedeno",
+          "notes": "PNJ : Sergeï Vladimirovitch Lewenski.\nLiens : Nisroch, forces russes régulières, volontaires russes.\nPreuves : activités sataniques dans les mafias musulmane et russe.\n\nCentre du quartier chaud, violence contenue par les mafieux, soucieux de leurs affaires. Le Vedeno (bar, bordel, restaurant, fumerie d'opium) accueille mercenaires, touristes, Tchétchènes et quelques militaires ; Sergeï le tient d'une main de fer.\nSergeï est la pièce maîtresse : il peut mener les PJ à Nisroch et son témoignage, enregistré proprement ou porté en France par lui-même, réussit la mission. Toujours escorté d'une dizaine d'hommes, se déplace en blindé. Face au surnaturel il panique, peut se confesser à des anges et, s'il les sait anges, il voudra traquer Alkhazurov avec eux pour sauver son âme.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-sergei-13",
+              "nom": "Sergeï Vladimirovitch Lewenski",
+              "source": "Représentant de Nisroch, chef de la mafia russe locale",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3+, Combat 1 (couteaux 2+), Corps à corps 1+, Culture générale 1+ (religion catholique 3), Défense 2, Discrétion 1+, Discussion 3, Enquête 2+, Fouille 3, Savoir occulte 1+ (satanisme 2), Tir 1+ (armes de poing 2+), Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Polonais de 36 ans, enfant des rues de Gdansk. Tient le bar-bordel-fumerie Vedeno, une quarantaine d'établissements rue Pabody et une dizaine à Kalinine ; toutes les bandes russes lui reversent leur part. Guerre totale contre Alkhazurov, qu'il s'est juré de crucifier lui-même (il le sait démon).\nCatholique superstitieux, il a vendu son âme à Strachnoff et le regrette amèrement : prie seul, ivre, devant un reliquaire volé dans sa chambre au 2e étage du Vedeno. Toujours entouré d'une dizaine d'hommes armés, se déplace en blindé.\nPNJ indispensable : il connaît les secrets de l'organisation, peut mener les PJ à Nisroch (jusqu'à Moscou) et son témoignage enregistré, ou lui-même ramené en France, suffit à réussir la mission. Face au surnaturel, il panique et peut se confesser à des anges ; s'il les sait anges, il voudra chasser un démon avec eux pour racheter son âme.\nConnaît : colonel Bokonov, Tuomas Holpainen, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-sergei"
+            },
+            {
+              "id": "mv2-mafieux-russes-14",
+              "nom": "Mafieux russes",
+              "source": "Hommes de main de Lewenski",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2+, Combat 1 (couteaux 2+), Corps à corps 1+, Défense 1+, Discrétion 2, Enquête 1+, Fouille 3, Tir 1+ (armes de poing 2+), Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mélange de gangsters des goulags et d'anciens du KGB : ni honneur ni principes, violence et torture banales, n'hésitent pas à supprimer une famille entière.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-mafieux-russes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-sergei",
+              "q": "Que deviennent Sergeï et son témoignage ?",
+              "opts": [
+                {
+                  "t": "Témoignage enregistré",
+                  "suite": "Preuve solide pour la mission ; il peut encore les guider vers Nisroch."
+                },
+                {
+                  "t": "Sergeï ramené en France",
+                  "suite": "Mission réussie en soi ; Nisroch apprendra vite la défection."
+                },
+                {
+                  "t": "Il les accompagne à Moscou",
+                  "suite": "Approche de Nisroch facilitée ; il espère son salut."
+                },
+                {
+                  "t": "Il est tué ou s'enfuit",
+                  "suite": "Piste principale perdue : il faudra les archives de Bokonov ou de Tarkov."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-kalinine",
+          "nom": "9. Kalinine, quartier chaud des troupes russes",
+          "lieu": "Quartier Kalinine",
+          "notes": "PNJ : Sergeï Vladimirovitch Lewenski.\nLiens : voir rue Pabody.\nPreuves : voir rue Pabody.\n\nVersion luxe et très protégée de la rue Pabody : bordels, tripots, fumeries d'opium et crack houses chics, gardés à tour de rôle par les troupes russes. Las Vegas post-apocalyptique du tiers-monde. Sergeï y soigne ses relations avec officiers et soldats (une dizaine d'établissements à lui).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-sergei-15",
+              "nom": "Sergeï Vladimirovitch Lewenski",
+              "source": "Représentant de Nisroch, chef de la mafia russe locale",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3+, Combat 1 (couteaux 2+), Corps à corps 1+, Culture générale 1+ (religion catholique 3), Défense 2, Discrétion 1+, Discussion 3, Enquête 2+, Fouille 3, Savoir occulte 1+ (satanisme 2), Tir 1+ (armes de poing 2+), Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Polonais de 36 ans, enfant des rues de Gdansk. Tient le bar-bordel-fumerie Vedeno, une quarantaine d'établissements rue Pabody et une dizaine à Kalinine ; toutes les bandes russes lui reversent leur part. Guerre totale contre Alkhazurov, qu'il s'est juré de crucifier lui-même (il le sait démon).\nCatholique superstitieux, il a vendu son âme à Strachnoff et le regrette amèrement : prie seul, ivre, devant un reliquaire volé dans sa chambre au 2e étage du Vedeno. Toujours entouré d'une dizaine d'hommes armés, se déplace en blindé.\nPNJ indispensable : il connaît les secrets de l'organisation, peut mener les PJ à Nisroch (jusqu'à Moscou) et son témoignage enregistré, ou lui-même ramené en France, suffit à réussir la mission. Face au surnaturel, il panique et peut se confesser à des anges ; s'il les sait anges, il voudra chasser un démon avec eux pour racheter son âme.\nConnaît : colonel Bokonov, Tuomas Holpainen, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-sergei"
+            },
+            {
+              "id": "mv2-mafieux-russes-16",
+              "nom": "Mafieux russes",
+              "source": "Hommes de main de Lewenski",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2+, Combat 1 (couteaux 2+), Corps à corps 1+, Défense 1+, Discrétion 2, Enquête 1+, Fouille 3, Tir 1+ (armes de poing 2+), Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mélange de gangsters des goulags et d'anciens du KGB : ni honneur ni principes, violence et torture banales, n'hésitent pas à supprimer une famille entière.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-mafieux-russes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-basilique",
+          "nom": "10. Basilique Saint Georges",
+          "lieu": "Basilique Saint Georges",
+          "notes": "PNJ : pope Vlassov.\nLiens : forces russes régulières, volontaires russes.\nPreuves : rituels sataniques dans la mafia russe ; soupçons de démons dans la mafia tchétchène ; anges chez les wahhabites et dans les forces russes.\n\nLe vieux pope a tout vu et ne s'étonne plus de rien. Gardien d'une mine de confessions, il se ferme comme une huître devant des Occidentaux qui semblent connaître le Grand Jeu et refuse de pactiser avec les « papistes ». Seul un roleplay intense lui fait dire ce qu'il sait.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-vlassov-17",
+              "nom": "Pope Vlassov",
+              "source": "Basilique Saint Georges",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 3,
+                "pe": 4,
+                "vo": 7,
+                "pr": 6,
+                "foi": 7
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2+, Défense 2, Discussion 3+, Métier (pope) 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ukrainien de 55 ans, survivant de toutes les persécutions. Connaît le Grand Jeu, sait que Tuomas et Vladimir sont des anges (et Stransky, qu'il évite comme « papiste »), garde le secret par égard pour les anges orphelins de Georges.\nConfessions à foison : bizarreries de la bande à Sergeï (pour lui un intégriste papiste presque pire qu'un démon), comportements anormaux de Mohamed Islam et de son tulwar, sauvagerie de la mafia tchétchène (démons soupçonnés, sans preuve).\nTrès méfiant envers des Occidentaux qui semblent connaître le Grand Jeu : il se ferme. Seul un roleplay intense le fera aider des anges catholiques.\nConnaît : Blakanov, colonel Bokonov, Tuomas Holpainen.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-vlassov"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-alcairo",
+          "nom": "11. Mosquée Al Cairo, modérée et progouvernementale",
+          "lieu": "Mosquée Al Cairo et cafés voisins",
+          "notes": "PNJ : imam Mohammed Vasnadov.\nLiens : forces armées russes, mosquée Al Watan, gouvernement tchétchène, forces armées tchétchènes.\nPreuves : présence d'anges chez les wahhabites ; soupçons de démons musulmans chez les mafieux tchétchènes ; intime conviction de démons chrétiens chez les mafieux russes.\n\nQG des musulmans modérés, entre séparatistes et loyalistes : débats vifs, jamais de débordement grâce au respect qu'inspire l'imam. Sécurité faible. Meilleure porte d'entrée vers le monde tchétchène non gouvernemental et ses éléments durs. Les mafieux tchétchènes, cibles de ses prêches, préfèrent le laisser faire.\nVasnadov peut organiser un entretien avec à peu près n'importe qui, Mohamed Islam compris, s'il y voit un pas vers la paix.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-vasnadov-18",
+              "nom": "Imam Mohammed Vasnadov",
+              "source": "Mosquée Al Cairo (modérée, progouvernementale)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 3,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 5
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 1+, Défense 2+, Discussion 3, Métier (imam) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ossète de 47 ans, petit imam espiègle au charisme saisissant, respecté de tous ; aucune bombe n'a jamais touché sa mosquée. Partisan d'une paix négociée dans la CEI, déçu du référendum ; reste prudent dans ses prêches.\nSait que Mohamed Islam et ses hommes sont des soufis guerriers (pas des anges selon lui), soupçonne des démons chez les mafieux tchétchènes et voit en Sergeï un djinn malsain. Peut arranger un entretien avec presque n'importe qui, même Mohamed Islam, s'il pense servir la paix. Sans le savoir, il est en lien avec les anges de Hassan.\nConnaît : colonel Bokonov, Mourad Kardanov, Mohamed Islam, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-vasnadov"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-lenine",
+          "nom": "12. Rue Lénine, quartier chaud protchétchène",
+          "lieu": "Quartier de la rue Lénine",
+          "notes": "PNJ : Abubakar Alkhazurov (El Borak).\nLiens : forces armées tchétchènes, boivikis, quartier séparatiste.\nPreuves : existence de démons dans la mafia ; soupçons d'anges chez les wahhabites et de démons dans la mafia russe.\n\nEnfer sur terre : pire de la mafia tchétchène, survivants noyés dans le vice, ruffians de tout poil. Ville dans la ville, avec ses lois ; tout le monde est surarmé, les solitaires ne font pas long feu.\nAlkhazurov règne par la terreur et ses bavures nourrissent sa légende. Il s'allie volontiers à qui veut détruire ou capturer Sergeï. Tuer ce démon peut plaire à Sergeï (qui rêve de le crucifier) et compter dans le bilan face à Nisroch.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "mv2-el-borak-19",
+              "nom": "El Borak (Abubakar Alkhazurov, « le raboteur »)",
+              "source": "Démon de Majûj, grade 2, caïd de la mafia tchétchène",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 7,
+                "ag": 10,
+                "pe": 4,
+                "vo": 7,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Rabot électrique",
+                  "att": 16,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 5
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 6
+                },
+                {
+                  "n": "Barbarie",
+                  "r": 10
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 3
+                },
+                {
+                  "n": "Peur",
+                  "r": 5
+                }
+              ],
+              "talents": "Combat 6 (armes improvisées 8), Corps à corps 7, Défense 5+, Discussion 4+, Fouille 3, Médecine 3, Savoir criminel 5+, Tir 3 (armes de poing 4), Torture 8",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tchétchène de 25 ans. Tyran du quartier de la rue Lénine, dernier démon musulman survivant de Groznyï. Défigure au rabot électrique ceux qui enfreignent ses règles. Fou à la perversité sans bornes mais pas idiot : jamais deux nuits au même endroit, toujours au moins dix gardes du corps drogués.\nCroit Mohamed Islam ange de Khalid (sans preuve) ; sait Sergeï fou d'ésotérisme, a récupéré des restes de ses rituels mais n'y voit que du folklore. Prêt à s'allier avec quiconque veut détruire ou capturer Sergeï et le faire parler.\nPP non donnés : 20 estimés (démon de grade 2). Pistolet estimé d'après Tir (armes de poing 4).\nConnaît : Hajj Zoumana, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-el-borak"
+            },
+            {
+              "id": "mv2-mafieux-tchetchenes-20",
+              "nom": "Mafieux tchétchènes",
+              "source": "Gardes du corps et hommes de main d'Alkhazurov",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2, Combat 1 (couteaux 2+), Corps à corps 2, Défense 2, Discrétion 1+, Fouille 3, Tir 1 (armes automatiques 3), Torture 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Réputés les pires ordures de l'ex-URSS : la torture est leur mode de négociation et tout ce qui est plus petit qu'une Kalachnikov compte pour un canif. Les gardes d'Alkhazurov sont camés et tarés.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-mafieux-tchetchenes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-alkhazurov",
+              "q": "Quelle attitude face à Alkhazurov ?",
+              "opts": [
+                {
+                  "t": "Alliance contre Sergeï",
+                  "suite": "Il fournit hommes et informations ; les PJ risquent de perdre leur témoin principal."
+                },
+                {
+                  "t": "Ils l'éliminent",
+                  "suite": "Combat sanglant contre ses gardes ; Sergeï leur en sera reconnaissant."
+                },
+                {
+                  "t": "Ils l'évitent",
+                  "suite": "Pas de conflit immédiat ; il fait surveiller ces étrangers."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-alwatan",
+          "nom": "13. Mosquée Al Watan, mosquée wahhabite",
+          "lieu": "Mosquée Al Watan",
+          "notes": "PNJ : Mohamed Islam (Cat).\nLiens : boivikis et autres séparatistes, mosquée Al Cairo, hôpital musulman.\nPreuves : existence d'anges musulmans chez les wahhabites.\n\nForteresse de l'intégrisme financée par les associations caritatives saoudiennes ; populaire grâce à son aide matérielle et à ses prêches véhéments. Mohamed Islam, jugé extrémiste même par ses coreligionnaires, n'aidera pas l'enquête mais participera à toute action punitive contre une cible non wahhabite présentée comme démoniaque (Alkhazurov, Sergeï…). Peut tourner au combat si les PJ se montrent « impies ».",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-cat-21",
+              "nom": "Cat (Mohamed Islam)",
+              "source": "Ange de Khalid, grade 2 (mosquée Al Watan)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 8,
+                "pr": 5,
+                "foi": 13
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 20,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Tulwar magique",
+                  "att": 16,
+                  "prec": 2,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                },
+                {
+                  "n": "Colère de Dieu",
+                  "r": 6
+                },
+                {
+                  "n": "Conversion physique",
+                  "r": 2
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 3 (épées 8), Corps à corps 3, Défense 6, Discrétion 4, Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Daghestanais de 28 ans, 1,95 m. Chef incontesté de la mosquée wahhabite Al Watan, financée par les Saoudiens. Fanatique : tout non-wahhabite est une créature du Malin. Cloîtré dans sa mosquée, il n'en sort que pour des attaques discrètes contre les non-wahhabites ; tolère à peine les boivikis, hait la mafia tchétchène.\nVoit des démons partout : inutile pour l'enquête, mais partant pour toute expédition punitive contre une cible non wahhabite qu'on lui présente comme démoniaque.\nPP non donnés : 20 estimés (ange de grade 2). Fusil-mitrailleur estimé (Tir 3).\nConnaît : imam Vasnadov, Hajj Zoumana, Nouredine El Khâdi.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-cat"
+            },
+            {
+              "id": "mv2-moudjahidin-22",
+              "nom": "Moudjahidin",
+              "source": "Wahhabites typiques",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 7,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 3), Corps à corps 2, Défense 2+, Discrétion 3, Fouille 2, Survie 1+ (montagne 4+), Tir 1 (armes automatiques 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fanatiques venus du monde entier (Algérie, Bosnie, Afghanistan…) ou Tchétchènes endoctrinés, financés par les Saoudiens. Élite des troupes, méprisent tous ceux qui ne pensent pas comme eux ; relations tendues avec boivikis et population.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-moudjahidin"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-sakaline",
+          "nom": "14. Hôpital Sakaline, ONG occidentales",
+          "lieu": "Hôpital Sakaline",
+          "notes": "PNJ : docteur Christian Allanovitch Tarkov.\nLiens : gouvernement tchétchène, collabos, forces armées russes.\nPreuves : perversité d'Alkhazurov, rituels sataniques de Sergeï, fanatisme wahhabite de Mohamed Islam.\n\nHavre de paix financé par les ONG et l'Union européenne : tous les patients sont admis, aucune arme n'entre. Personnel international épuisé mais moral bon, résultats excellents ; seuls les wahhabites le dénoncent.\nTarkov partage volontiers sa collection de photos et de témoignages avec des libres penseurs qui garantissent son anonymat : une mine de preuves.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-tarkov-23",
+              "nom": "Docteur Christian Allanovitch Tarkov",
+              "source": "Directeur de l'hôpital Sakaline (ONG occidentales)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 7,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2, Défense 1+, Discussion 3+, Hobby (marxisme-léninisme) 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "31 ans. Marxiste-léniniste authentique et désabusé, persécuté par les Soviétiques. Son hôpital accueille tout le monde sans arme ; il a mis fin aux règlements de comptes en refusant les patients de la faction fautive. Seuls les wahhabites le vomissent encore.\nAdore débattre (soirées de thé avec Blakanov). Prêt à partager ses preuves avec qui garantit l'anonymat et fera avancer les choses, jamais avec des fanatiques religieux. Milliers de photos et témoignages : exploits surhumains de Mohamed Islam au tulwar, rituels de Sergeï, atrocités d'Alkhazurov.\nConnaît : Blakanov, Mourad Kardanov, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-tarkov"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-khankala",
+          "nom": "15. Hôpital Khankala, ONG musulmanes",
+          "lieu": "Hôpital Khankala",
+          "notes": "PNJ : Nouredine El Khâdi (Ahmed).\nLiens : forces tchétchènes, mosquée Al Cairo, boivikis, gouvernement tchétchène.\nPreuves : exactions sordides d'Alkhazurov ; présence d'anges au sein des gouvernements pro et antirusses.\n\nPendant musulman de Sakaline, financé par les wahhabites, des États et des ONG musulmanes : chaque donateur impose sa version de l'islam, l'hôpital est mal dirigé. N'admet que les musulmans approuvés par les milices wahhabites qui le « protègent ». Racket, corruption, trafics ; la mafia tchétchène y entre discrètement.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-ahmed-24",
+              "nom": "Ahmed (Nouredine El Khâdi)",
+              "source": "Ange de Hassan, grade 2 (hôpital Khankala)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 7,
+                "vo": 10,
+                "pr": 9,
+                "foi": 9
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 20,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 8
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 5
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 6
+                },
+                {
+                  "n": "Tolérance",
+                  "r": 7
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 5
+                }
+              ],
+              "talents": "Baratin 4, Culture générale 3 (islam 8), Défense 3+, Discussion 7, Médecine 4, Séduction 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Marocain de 48 ans, frêle. Dirige depuis trois ans l'hôpital musulman sous les ordres de Salaam, mais passe son temps en palabres avec factions et donateurs. Déteste les armes, garde du corps depuis une agression, noie son stress dans l'alcool (mains tremblantes, collyre, maquillage).\nSait que Hajj Zoumana, Sysoyev et Mohamed Islam sont des anges ; doute que les démons soient derrière les mafias (les humains suffisent bien). A recueilli beaucoup de témoignages mais n'a rien noté, de peur de relancer les hostilités. Cherche la paix, ne serait-ce qu'avec sa conscience.\nPP non donnés : 20 estimés (ange de grade 2).\nConnaît : Hajj Zoumana, Alexandre Sysoyev, Mourad Kardanov, imam Vasnadov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-ahmed"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-musorova",
+          "nom": "16. Musorova, quartier proséparatiste",
+          "lieu": "Quartier Musorova",
+          "notes": "PNJ : Hajj Zoumana (Sternberg).\nLiens : mosquée Al Watan, mosquée Al Cairo, hôpital musulman, gouvernement loyaliste.\nPreuves : existence des anges de Hassan ; soupçons de démons de Ouikka chez les boivikis des montagnes.\n\nQuasi-havre séparatiste où l'armée russe entre rarement ; les boivikis y viennent voir leur famille et se reposer. Représentation diplomatique officieuse de Maskhadov, tolérée par les anges de Hassan et le colonel Bokonov ; neutralité de façade qui n'empêche pas les trafics. Un Occidental ou un prorusse seul a peu de chances d'en ressortir vivant.\nSi les PJ veulent chasser les démons de Ouikka, ils quittent la ville et le scénario : au MJ d'improviser une intrigue dans les montagnes. Si Hajj Zoumana les soupçonne, il les dénonce comme espions aux boivikis.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-sternberg-25",
+              "nom": "Sternberg (Hajj Zoumana)",
+              "source": "Ange de Hassan, grade 1 (quartier Musorova)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 7,
+                "vo": 8,
+                "pr": 8,
+                "foi": 9
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 15,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 2
+                },
+                {
+                  "n": "Charme",
+                  "r": 2
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 2
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 2
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Tolérance",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 3, Culture générale 3 (islam 6), Défense 2+, Discussion 5, Médecine 3, Séduction 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Libanais de 47 ans, blond teint en brun. Sympathique et dévoué à la cause, mais partisan de la lutte armée contrairement à ses collègues : laisse volontairement filer des bavures pour peser sur les négociations. Dirige officieusement le quartier « diplomatique » séparatiste.\nPasse-temps : la chasse aux démons de Ouikka chez les boivikis, avec un épais dossier sur ceux déjà tombés (grâce à lui et à Mohamed Islam). Contact principal et secret des boivikis à Groznyï, il coordonne embuscades et attentats contre l'avis de Salaam, qu'il juge lâche.\nS'il soupçonne les PJ, il les fait passer pour des espions auprès des boivikis (embuscades, attentats). Refuse de parler avec des chrétiens, qu'il accuse d'avoir abandonné les musulmans au VIIIe siècle.\nPP non donnés : 15 estimés (ange de grade 1).\nConnaît : Mohamed Islam, Nouredine El Khâdi, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-sternberg"
+            },
+            {
+              "id": "mv2-boivikis-26",
+              "nom": "Boivikis",
+              "source": "Combattants tchétchènes typiques",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 6,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 7,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 3), Corps à corps 2, Défense 2+, Discrétion 2+, Savoir militaire 1 (armée russe 1+), Survie 1 (montagne 4+), Tir 1 (armes automatiques 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héritiers de siècles de résistance, maîtres de la guérilla de montagne, opiniâtres ; tiennent tête aux Russes jusqu'en ville. Musulmans peu pratiquants : la religion n'est pas leur moteur.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-boivikis"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-zoumana",
+              "q": "Hajj Zoumana soupçonne-t-il les PJ ?",
+              "opts": [
+                {
+                  "t": "Non",
+                  "suite": "Il les laisse circuler dans le quartier."
+                },
+                {
+                  "t": "Oui",
+                  "suite": "Il les fait passer pour des espions auprès des boivikis : embuscades et attentats très meurtriers."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "mv2-sc-staline",
+          "nom": "17. Palais Staline, siège du gouvernement tchétchène",
+          "lieu": "Palais Staline",
+          "notes": "PNJ : Alexandre Borisovitch Sysoyev (Salaam).\nLiens : forces russes, quartier séparatiste, mosquée El Cairo.\nPreuves : anges de Hassan et de Khalid chez les musulmans ; très forts soupçons de présence angélique chez les Russes et de démons dans leur mafia.\n\nBlockhaus de béton soviétique posé sur des dizaines de maisons dynamitées. Gardé par la division Dzerjinski, rempli de collabos, de mercenaires et de gardes du corps : contrôles très sévères, entrée quasi impossible sans autorisation. Siège du gouvernement fantoche et QG des anges musulmans.\nSalaam, à l'affût de tout envoyé occidental, peut offrir appui et moyens énormes à des PJ subtils.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-salaam-27",
+              "nom": "Salaam (Alexandre Borisovitch Sysoyev)",
+              "source": "Ange de Hassan, grade 3 (palais Staline)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 9,
+                "vo": 12,
+                "pr": 13,
+                "foi": 13
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 30,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 13
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Tolérance",
+                  "r": 13
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 13
+                }
+              ],
+              "talents": "Baratin 7, Culture générale 5 (islam 9), Défense 4+, Discussion 9, Médecine 4, Séduction 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tchétchène de 59 ans, diplomate né, au cœur du gouvernement prorusse ; dirige tous les anges musulmans de Tchétchénie depuis le palais Staline. Rêve de réconcilier chrétiens et musulmans et a envoyé l'émissaire au Paradis.\nIgnore la mission des PJ mais guette tout signe d'activité angélique : avec ceux qu'il soupçonne d'être des anges, il joue cartes sur table (sous-entendus lourds, propositions à peine voilées). Des PJ subtils peuvent obtenir de lui un appui et des moyens énormes. Il n'a aucune preuve sur les forces surnaturelles côté russe mais fera tout pour en trouver.\nPP non donnés : 30 estimés (ange de grade 3).\nConnaît : colonel Bokonov, Hajj Zoumana, Nouredine El Khâdi, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-salaam"
+            },
+            {
+              "id": "mv2-collabos-28",
+              "nom": "Collabos tchétchènes",
+              "source": "Milices du gouvernement prorusse",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Combat 1 (couteaux 2), Corps à corps 2, Défense 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes de poing 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pauvres types venus chercher la sécurité et trois repas par jour : mauvais combattants, policiers médiocres, corrompus, prompts à déserter ou à changer de camp.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-collabos"
+            },
+            {
+              "id": "mv2-soldats-russes-29",
+              "nom": "Soldats russes",
+              "source": "Soldats russes typiques (FSB, spetsnaz, division Dzerjinski)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-soldats-russes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-moscou",
+          "nom": "18. Moscou",
+          "lieu": "Moscou – grands restaurants, gratte-ciel stalinien de Strachnoff",
+          "notes": "Avec des preuves sur les agissements démoniaques et la piste de Nisroch (Strachnoff), les PJ partent pour Moscou ; voyage calme ou mouvementé selon le sadisme du MJ.\nStrachnoff fréquente la jet-set mafio-politico-industrielle et les grands restaurants, toujours flanqué de gardes du corps monstrueux. Il peut accorder une entrevue sur une excuse en béton ; l'aide de Lewenski est précieuse. Curieux, il ne soupçonne pas d'anges et se croit à l'abri de simples humains.\nLe MJ s'adapte aux idées des joueurs, sévère mais juste. Coffre-fort de son appartement : drogue, argent, dossiers mafieux et documents démoniaques de Trads (preuves décisives).\nTôt ou tard les PJ l'accusent d'être un démon : passer à la scène finale.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "mv2-nisroch-30",
+              "nom": "Nisroch (Nickolaï Strachnoff)",
+              "source": "Prince-démon « à la retraite », homme d'affaires moscovite",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aucune caractéristique dans le livre.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Prince-démon (le plus récemment promu) qui s'ennuyait : il vit en humain en Russie depuis des années, a laissé la gestion de son empire à son bras droit Trads et ne répond plus aux convocations du Conseil. Fortune bâtie sur les joyaux soviétiques rachetés à bas prix, conglomérat militaro-médiatico-industriel, retour au trafic de drogue ; surnommé « le cruel ». Marié depuis 1996 à Loubiana, ex-mannequin biélorusse (veuve grâce à ses sbires), trois enfants ; vit dans une des « sept sœurs » de Staline.\nPas discret : jet-set, grands restaurants, gardes du corps surarmés (anciens militaires). Peut accorder une entrevue sur une excuse en béton ; Lewenski facilite l'approche. Curieux, il ne soupçonne pas d'anges et peut commettre des imprudences.\nCoffre-fort de son appartement de 500 m² : drogue, argent, dossiers mafieux et documents démoniaques de Trads sur son empire du Mal.\nFiche sans valeurs : prince-démon, à improviser ; il ne doit pas mourir facilement.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-nisroch"
+            },
+            {
+              "id": "mv2-soldats-russes-31",
+              "nom": "Gardes du corps de Strachnoff",
+              "source": "Anciens militaires surarmés",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-soldats-russes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "mv2-sc-finale",
+          "nom": "19. C'est la scène finale !",
+          "lieu": "Moscou, face à Nisroch",
+          "notes": "Nisroch réagit d'abord en humain, au point d'en être presque schizophrène. Menacé ou témoin de pouvoirs angéliques, il redevient prince-démon : il se dit retraité, humble homme d'affaires marié et père de famille, qui ne fait pas plus de mal qu'un grand patron. Il veut la paix et offre les preuves qu'ils cherchent en échange de sa tranquillité. Peu d'anges acceptent, mais face à un prince-démon surarmé et bien gardé, on réfléchit : jouer la négociation surréaliste, façon film de parrain.\nIssues (voir choix) ; dans le background officiel, Nisroch reviendra sur le devant de la scène en ajoutant son empire terrestre à son empire démoniaque.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "mv2-nisroch-32",
+              "nom": "Nisroch (Nickolaï Strachnoff)",
+              "source": "Prince-démon « à la retraite », homme d'affaires moscovite",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aucune caractéristique dans le livre.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Prince-démon (le plus récemment promu) qui s'ennuyait : il vit en humain en Russie depuis des années, a laissé la gestion de son empire à son bras droit Trads et ne répond plus aux convocations du Conseil. Fortune bâtie sur les joyaux soviétiques rachetés à bas prix, conglomérat militaro-médiatico-industriel, retour au trafic de drogue ; surnommé « le cruel ». Marié depuis 1996 à Loubiana, ex-mannequin biélorusse (veuve grâce à ses sbires), trois enfants ; vit dans une des « sept sœurs » de Staline.\nPas discret : jet-set, grands restaurants, gardes du corps surarmés (anciens militaires). Peut accorder une entrevue sur une excuse en béton ; Lewenski facilite l'approche. Curieux, il ne soupçonne pas d'anges et peut commettre des imprudences.\nCoffre-fort de son appartement de 500 m² : drogue, argent, dossiers mafieux et documents démoniaques de Trads sur son empire du Mal.\nFiche sans valeurs : prince-démon, à improviser ; il ne doit pas mourir facilement.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-nisroch"
+            },
+            {
+              "id": "mv2-soldats-russes-33",
+              "nom": "Gardes du corps de Strachnoff",
+              "source": "Anciens militaires surarmés",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes antichar",
+                  "att": 6,
+                  "prec": -7,
+                  "puis": 13,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91.",
+              "typeId": "type-mv2-soldats-russes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "mv2-ch-issue",
+              "q": "Comment se termine la confrontation avec Nisroch ?",
+              "opts": [
+                {
+                  "t": "Laissé en paix, aucune preuve",
+                  "suite": "Défaite totale : −4 à −6 PA. Nisroch continue de faire le Mal à grande échelle."
+                },
+                {
+                  "t": "Laissé en paix, avec preuves",
+                  "suite": "Selon les preuves : défaite mineure (−1 à −3 PA) ou victoire mineure (+1 à +3 PA)."
+                },
+                {
+                  "t": "Tué",
+                  "suite": "Des années pour revenir, empires terrestre et démoniaque en déliquescence : victoire majeure (+4 à +6 PA) avec preuves, sinon victoire mineure (+1 à +3 PA)."
+                },
+                {
+                  "t": "Forcé de rentrer en Enfer",
+                  "suite": "Il revient furieux sur la scène du Mal et de la drogue : victoire mineure ou majeure (+1 à +6 PA) selon les preuves."
+                },
+                {
+                  "t": "Les PJ perdent le combat",
+                  "suite": "Pas de preuves, Nisroch furieux sort de sa réserve : défaite majeure (−1 à −6 PA)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340024163,
+      "updatedAt": 1795340024163
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-mv2-sulejman",
+      "nom": "Sulejman Sarovic",
+      "source": "Contact musulman à Tbilissi",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 6,
+        "vo": 4,
+        "pr": 5,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 3,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Corps à corps 1+, Défense 2, Discussion 2, Enquête 1+, Fouille 1+, Médecine 2, Savoir criminel 2 (mafia tchétchène 3+), Savoir militaire 1 (résistants tchétchènes 2), Survie 1 (urbain 2+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tchétchène de 28 ans, réfugié en Géorgie. Haine viscérale et héréditaire des Russes ; pas le courage de prendre les armes, il aide la cause à sa façon. Contact obtenu par un imam londonien.\nPasse par l'Ingouchie, matériel en quantité illimitée, pas de bakchich (un don à la cause est apprécié). Accompagne à contrecœur les PJ dans le quartier russe.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-andranik",
+      "nom": "Andranik Gougassian",
+      "source": "Contact chrétien à Tbilissi",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 6,
+        "vo": 4,
+        "pr": 5,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 3,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Corps à corps 1+, Défense 2, Discussion 2, Enquête 1+, Fouille 1+, Médecine 2, Savoir criminel 2 (mafia russe 3+), Savoir militaire 1 (armée d'occupation 2), Survie 1 (urbain 2+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Arménien de 42 ans, « homme d'affaires » caucasien qui trafique de tout. Catholique arménien non pratiquant et islamophobe acharné. Connaît la mafia russe et la fuit autant qu'il peut.\nVoit dans les PJ une mine d'or : le client est roi. Propose un mini-jet de trafiquants jusqu'à Groznyï ou la longue route par le Daghestan.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-zverboy",
+      "nom": "Zverboy (capitaine Boris Ivanovitch Stransky)",
+      "source": "Ange de Laurent, grade 2 (camp Kirov)",
+      "type": "ange",
+      "car": {
+        "fo": 9,
+        "ag": 10,
+        "pe": 9,
+        "vo": 7,
+        "pr": 4,
+        "foi": 9
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 25,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Épée",
+          "att": 13,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 15,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Aura de courage",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 8
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 6
+        },
+        {
+          "n": "Juste-lame",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 5 (épées 6+), Corps à corps 2+, Défense 5, Discussion 2+, Enquête 3+, Fouille 4, Savoir militaire 2+ (armée russe 5), Tir 5 (armes automatiques 7+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Biélorusse, 33 ans, blond aux yeux verts. Rattaché à l'Église orthodoxe, fanatique qui vit la guerre comme une croisade : conversion forcée ou massacre. Rêve d'une équipe d'anges pour éliminer en douce les modérés du gouvernement prorusse et les gradés trop mous.\nMeilleur contact possible côté russe, à condition de partager son intégrisme : aucune faiblesse ni compassion tolérée. Proche de Blakanov, il peut y mener les PJ. Tait ses amis de Georges, sauf à des alliés aussi durs que lui ; affirme que la mafia tchétchène est aux mains des démons musulmans et couvrira toute action contre leur quartier. Pense que des anges musulmans encadrent boivikis et moudjahidin ; insisté, il suggère la prière du vendredi à la mosquée Al Watan.\nArmes non précisées : épée longue et fusil-mitrailleur estimés d'après ses talents.\nConnaît : Blakanov, Tuomas Holpainen, colonel Bokonov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-bokonov",
+      "nom": "Colonel Piotr Sergeïevitch Bokonov",
+      "source": "Officier russe, relations avec le gouvernement tchétchène",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 5,
+        "vo": 5,
+        "pr": 5,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (couteaux 2), Corps à corps 1+, Défense 2, Fouille 3, Intimidation 2+, Savoir militaire 2 (armée russe 4), Tir 1 (armes automatiques 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Russe de 47 ans, militaire arriviste et sans scrupules, nostalgique des gros budgets. Plus souvent au bureau qu'au front. Agnostique, il joue l'orthodoxe pratiquant auprès du pope Vlassov.\nChargé des relations avec le gouvernement tchétchène : il peut ouvrir ses portes aux PJ s'il y trouve un intérêt politique ou financier. Reçoit régulièrement une valise de Lewenski (sans jamais le rencontrer) et arrose l'imam d'Al Cairo.\nIndice clé : des archives (bureau et coffre-fort chez lui, en ville) sur tous les notables de Groznyï, dont des témoignages et photos des rituels satanistes de Sergeï (pentacles, sacrifices humains) et des exploits étranges de Mohamed Islam.\nConnaît : capitaine Stransky, Blakanov, Tuomas Holpainen, Lewenski, pope Vlassov, Mohammed Vasnadov, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-soldats-russes",
+      "nom": "Soldats russes",
+      "source": "Soldats russes typiques (FSB, spetsnaz, division Dzerjinski)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Lance-roquettes antichar",
+          "att": 6,
+          "prec": -7,
+          "puis": 13,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (couteaux 2), Corps à corps 2, Fouille 3, Savoir militaire 1 (armée russe 2), Tir 1 (armes automatiques 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Troupes d'élite dures et impitoyables, nostalgiques de la grandeur passée. Méprisent les collabos, respectent les boivikis.\nValeurs reprises du bestiaire des livres (« Soldat professionnel »).\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-volontaires",
+      "nom": "Volontaires de la CEI",
+      "source": "Mercenaires typiques",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 5,
+        "vo": 4,
+        "pr": 3,
+        "foi": 4
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Lance-roquettes antichar",
+          "att": 6,
+          "prec": -7,
+          "puis": 13,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (couteaux 2), Corps à corps 2+, Défense 2+, Discrétion 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes automatiques 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Repris de justice, asociaux et psychopathes venus de toute la CEI. Payés au boiviki abattu : ils en voient partout et massacrent sans discernement. Détestés de tous.\nLance-roquettes au niveau du Tir automatique, comme les soldats russes du bestiaire.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-kardanov",
+      "nom": "Commandant Mourad Kardanov",
+      "source": "Forces armées tchétchènes (caserne Karpinka)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 5,
+        "vo": 6,
+        "pr": 4,
+        "foi": 3
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver petit calibre",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2+, Combat 1 (couteaux 2), Corps à corps 2, Défense 2, Savoir militaire 1 (armée tchétchène 3+), Tir 1 (armes de poing 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tchétchène de 35 ans, patriote athée convaincu du rattachement à la CEI : traître pour tous, il a échappé à une dizaine d'attentats et perdu toute sa famille. Seul, d'autant plus fervent. Méprise wahhabites, boivikis et les deux mafias ; ses hommes harcèlent les quartiers chauds. Bon contact avec l'hôpital musulman, s'entend avec Bokonov (sans s'y fier).\nFait vite confiance aux étrangers respectueux. Indices : un mafieux russe drogué a parlé de prince-démon et de Grand Jeu en cellule, puis a disparu au matin ; ses hommes ont surpris ceux de Sergeï en pleine crucifixion « folklorique ».\nConnaît : Bokonov, Mohammed Vasnadov, Lewenski, pope Vlassov, Blakanov, Nouredine El Khâdi, Abubakar Alkhazurov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-collabos",
+      "nom": "Collabos tchétchènes",
+      "source": "Milices du gouvernement prorusse",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver petit calibre",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 4,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Combat 1 (couteaux 2), Corps à corps 2, Défense 2, Savoir militaire 1 (armée russe 1+), Tir 1 (armes de poing 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pauvres types venus chercher la sécurité et trois repas par jour : mauvais combattants, policiers médiocres, corrompus, prompts à déserter ou à changer de camp.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-nightwish",
+      "nom": "Nightwish (sergent Tuomas Holpainen)",
+      "source": "Ange de Georges, grade 2 (compagnie Octobre Rouge)",
+      "type": "ange",
+      "car": {
+        "fo": 13,
+        "ag": 11,
+        "pe": 6,
+        "vo": 7,
+        "pr": 4,
+        "foi": 7
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 28,
+      "seuilsFix": [
+        9,
+        19,
+        28,
+        38
+      ],
+      "armes": [
+        {
+          "n": "Couteau de combat",
+          "att": 16,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 11
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Augmentation de Force",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 9
+        },
+        {
+          "n": "Colère divine",
+          "r": 4
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 10
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 8, Corps à corps 6, Défense 4+, Discussion 3+, Fouille 5, Médecine 4, Savoir militaire 5 (mercenaires 6), Survie 3 (urbain 6+), Tir 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Estonien de 27 ans, stalinien convaincu : tout plutôt que l'islam. Commande les deux cents hommes d'Octobre Rouge, compagnie fière, détestée et en guerre ouverte avec celle de Saint Georges. Envoie ses hommes même contre le gouvernement prorusse.\nRecrute n'importe qui : bizutage = participer en première ligne à une descente chez les séparatistes (plus de 80 % de morts). Très lié à la mafia russe ; Lewenski est son grand ami et il ignore totalement que son patron est un prince-démon (il en serait fou de rage). Peut décrire la mafia, servir d'intermédiaire avec Sergeï et emmène ses potes au bar Vedeno, rue Pabody. Met les rumeurs sur Sergeï sur le compte de sa « liturgie papiste ».\nArmes non précisées : couteau (Combat 8) et fusil-mitrailleur estimés.\nConnaît : Bokonov, capitaine Stransky, Lewenski, pope Vlassov, Blakanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-dubitchou",
+      "nom": "Dubitchou (commandant Vladimir Ilitch Blakanov)",
+      "source": "Ange de Georges, grade 3 (compagnie de Saint Georges)",
+      "type": "ange",
+      "car": {
+        "fo": 13,
+        "ag": 13,
+        "pe": 8,
+        "vo": 9,
+        "pr": 6,
+        "foi": 7
+      },
+      "def": 15,
+      "prot": 0,
+      "pfFix": 11,
+      "pp": 43,
+      "seuilsFix": [
+        9,
+        19,
+        28,
+        38
+      ],
+      "armes": [
+        {
+          "n": "Sabre",
+          "att": 18,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 11,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 15
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 15
+        },
+        {
+          "n": "Augmentation de Force",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 15
+        },
+        {
+          "n": "Colère divine",
+          "r": 7
+        },
+        {
+          "n": "Conversion physique",
+          "r": 12
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 14
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 15
+        },
+        {
+          "n": "Vitesse",
+          "r": 12
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 9, Corps à corps 8, Défense 7+, Discussion 5+, Fouille 7, Médecine 6, Savoir criminel 2 (mafia russe 4), Savoir militaire 5 (mercenaires 6), Survie 5 (urbain 9), Tir 5+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ukrainien de 49 ans. Ange de Georges qui a refusé la retraite et le changement d'archange, protégé par l'Église orthodoxe : croisade panslave. Chef de la compagnie de Saint Georges, la plus grosse et la plus disciplinée du stade Dinamo. Cynique et cruel : tout est permis à ses hommes s'ils se battent bien.\nNe détaille pas ses liens avec la mafia mais peut faire guider les PJ rue Pabody. Méprise Tuomas, connaît Stransky, se doute d'anges chez les wahhabites et de démons dans la mafia tchétchène (« aux musulmans de faire leur ménage »). Dégoûté du sort fait à saint Georges par les catholiques : laisse les « papistes » se débrouiller. Ami de soirées de thé de Christian Tarkov ; peut y inviter des PJ subtils et philosophes.\nArmes non précisées : sabre (épée longue) et fusil-mitrailleur estimés.\nConnaît : capitaine Stransky, Christian Tarkov, colonel Bokonov, pope Vlassov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-sergei",
+      "nom": "Sergeï Vladimirovitch Lewenski",
+      "source": "Représentant de Nisroch, chef de la mafia russe locale",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 5,
+        "vo": 5,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver gros calibre",
+          "att": 5,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 5,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3+, Combat 1 (couteaux 2+), Corps à corps 1+, Culture générale 1+ (religion catholique 3), Défense 2, Discrétion 1+, Discussion 3, Enquête 2+, Fouille 3, Savoir occulte 1+ (satanisme 2), Tir 1+ (armes de poing 2+), Torture 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Polonais de 36 ans, enfant des rues de Gdansk. Tient le bar-bordel-fumerie Vedeno, une quarantaine d'établissements rue Pabody et une dizaine à Kalinine ; toutes les bandes russes lui reversent leur part. Guerre totale contre Alkhazurov, qu'il s'est juré de crucifier lui-même (il le sait démon).\nCatholique superstitieux, il a vendu son âme à Strachnoff et le regrette amèrement : prie seul, ivre, devant un reliquaire volé dans sa chambre au 2e étage du Vedeno. Toujours entouré d'une dizaine d'hommes armés, se déplace en blindé.\nPNJ indispensable : il connaît les secrets de l'organisation, peut mener les PJ à Nisroch (jusqu'à Moscou) et son témoignage enregistré, ou lui-même ramené en France, suffit à réussir la mission. Face au surnaturel, il panique et peut se confesser à des anges ; s'il les sait anges, il voudra chasser un démon avec eux pour racheter son âme.\nConnaît : colonel Bokonov, Tuomas Holpainen, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-mafieux-russes",
+      "nom": "Mafieux russes",
+      "source": "Hommes de main de Lewenski",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 5,
+        "vo": 5,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 3,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver gros calibre",
+          "att": 5,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 5,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2+, Combat 1 (couteaux 2+), Corps à corps 1+, Défense 1+, Discrétion 2, Enquête 1+, Fouille 3, Tir 1+ (armes de poing 2+), Torture 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Mélange de gangsters des goulags et d'anciens du KGB : ni honneur ni principes, violence et torture banales, n'hésitent pas à supprimer une famille entière.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-nisroch",
+      "nom": "Nisroch (Nickolaï Strachnoff)",
+      "source": "Prince-démon « à la retraite », homme d'affaires moscovite",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Aucune caractéristique dans le livre.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Prince-démon (le plus récemment promu) qui s'ennuyait : il vit en humain en Russie depuis des années, a laissé la gestion de son empire à son bras droit Trads et ne répond plus aux convocations du Conseil. Fortune bâtie sur les joyaux soviétiques rachetés à bas prix, conglomérat militaro-médiatico-industriel, retour au trafic de drogue ; surnommé « le cruel ». Marié depuis 1996 à Loubiana, ex-mannequin biélorusse (veuve grâce à ses sbires), trois enfants ; vit dans une des « sept sœurs » de Staline.\nPas discret : jet-set, grands restaurants, gardes du corps surarmés (anciens militaires). Peut accorder une entrevue sur une excuse en béton ; Lewenski facilite l'approche. Curieux, il ne soupçonne pas d'anges et peut commettre des imprudences.\nCoffre-fort de son appartement de 500 m² : drogue, argent, dossiers mafieux et documents démoniaques de Trads sur son empire du Mal.\nFiche sans valeurs : prince-démon, à improviser ; il ne doit pas mourir facilement.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-vlassov",
+      "nom": "Pope Vlassov",
+      "source": "Basilique Saint Georges",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 3,
+        "pe": 4,
+        "vo": 7,
+        "pr": 6,
+        "foi": 7
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2+, Défense 2, Discussion 3+, Métier (pope) 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ukrainien de 55 ans, survivant de toutes les persécutions. Connaît le Grand Jeu, sait que Tuomas et Vladimir sont des anges (et Stransky, qu'il évite comme « papiste »), garde le secret par égard pour les anges orphelins de Georges.\nConfessions à foison : bizarreries de la bande à Sergeï (pour lui un intégriste papiste presque pire qu'un démon), comportements anormaux de Mohamed Islam et de son tulwar, sauvagerie de la mafia tchétchène (démons soupçonnés, sans preuve).\nTrès méfiant envers des Occidentaux qui semblent connaître le Grand Jeu : il se ferme. Seul un roleplay intense le fera aider des anges catholiques.\nConnaît : Blakanov, colonel Bokonov, Tuomas Holpainen.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-vasnadov",
+      "nom": "Imam Mohammed Vasnadov",
+      "source": "Mosquée Al Cairo (modérée, progouvernementale)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 3,
+        "pe": 4,
+        "vo": 6,
+        "pr": 5,
+        "foi": 5
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 1+, Défense 2+, Discussion 3, Métier (imam) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ossète de 47 ans, petit imam espiègle au charisme saisissant, respecté de tous ; aucune bombe n'a jamais touché sa mosquée. Partisan d'une paix négociée dans la CEI, déçu du référendum ; reste prudent dans ses prêches.\nSait que Mohamed Islam et ses hommes sont des soufis guerriers (pas des anges selon lui), soupçonne des démons chez les mafieux tchétchènes et voit en Sergeï un djinn malsain. Peut arranger un entretien avec presque n'importe qui, même Mohamed Islam, s'il pense servir la paix. Sans le savoir, il est en lien avec les anges de Hassan.\nConnaît : colonel Bokonov, Mourad Kardanov, Mohamed Islam, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-el-borak",
+      "nom": "El Borak (Abubakar Alkhazurov, « le raboteur »)",
+      "source": "Démon de Majûj, grade 2, caïd de la mafia tchétchène",
+      "type": "demon",
+      "car": {
+        "fo": 7,
+        "ag": 10,
+        "pe": 4,
+        "vo": 7,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 11,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 20,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Rabot électrique",
+          "att": 16,
+          "prec": -3,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Pistolet",
+          "att": 8,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 5
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 6
+        },
+        {
+          "n": "Barbarie",
+          "r": 10
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Détection du danger",
+          "r": 5
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 3
+        },
+        {
+          "n": "Peur",
+          "r": 5
+        }
+      ],
+      "talents": "Combat 6 (armes improvisées 8), Corps à corps 7, Défense 5+, Discussion 4+, Fouille 3, Médecine 3, Savoir criminel 5+, Tir 3 (armes de poing 4), Torture 8",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tchétchène de 25 ans. Tyran du quartier de la rue Lénine, dernier démon musulman survivant de Groznyï. Défigure au rabot électrique ceux qui enfreignent ses règles. Fou à la perversité sans bornes mais pas idiot : jamais deux nuits au même endroit, toujours au moins dix gardes du corps drogués.\nCroit Mohamed Islam ange de Khalid (sans preuve) ; sait Sergeï fou d'ésotérisme, a récupéré des restes de ses rituels mais n'y voit que du folklore. Prêt à s'allier avec quiconque veut détruire ou capturer Sergeï et le faire parler.\nPP non donnés : 20 estimés (démon de grade 2). Pistolet estimé d'après Tir (armes de poing 4).\nConnaît : Hajj Zoumana, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-mafieux-tchetchenes",
+      "nom": "Mafieux tchétchènes",
+      "source": "Gardes du corps et hommes de main d'Alkhazurov",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 5,
+        "vo": 5,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 5,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2, Combat 1 (couteaux 2+), Corps à corps 2, Défense 2, Discrétion 1+, Fouille 3, Tir 1 (armes automatiques 3), Torture 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Réputés les pires ordures de l'ex-URSS : la torture est leur mode de négociation et tout ce qui est plus petit qu'une Kalachnikov compte pour un canif. Les gardes d'Alkhazurov sont camés et tarés.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-cat",
+      "nom": "Cat (Mohamed Islam)",
+      "source": "Ange de Khalid, grade 2 (mosquée Al Watan)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 8,
+        "pr": 5,
+        "foi": 13
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 20,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Tulwar magique",
+          "att": 16,
+          "prec": 2,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Champ de force",
+          "r": 4
+        },
+        {
+          "n": "Colère de Dieu",
+          "r": 6
+        },
+        {
+          "n": "Conversion physique",
+          "r": 2
+        },
+        {
+          "n": "Détection des ennemis",
+          "r": 6
+        },
+        {
+          "n": "Détection du mal",
+          "r": 8
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 3 (épées 8), Corps à corps 3, Défense 6, Discrétion 4, Tir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Daghestanais de 28 ans, 1,95 m. Chef incontesté de la mosquée wahhabite Al Watan, financée par les Saoudiens. Fanatique : tout non-wahhabite est une créature du Malin. Cloîtré dans sa mosquée, il n'en sort que pour des attaques discrètes contre les non-wahhabites ; tolère à peine les boivikis, hait la mafia tchétchène.\nVoit des démons partout : inutile pour l'enquête, mais partant pour toute expédition punitive contre une cible non wahhabite qu'on lui présente comme démoniaque.\nPP non donnés : 20 estimés (ange de grade 2). Fusil-mitrailleur estimé (Tir 3).\nConnaît : imam Vasnadov, Hajj Zoumana, Nouredine El Khâdi.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-moudjahidin",
+      "nom": "Moudjahidin",
+      "source": "Wahhabites typiques",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 6,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Lance-roquettes antichar",
+          "att": 7,
+          "prec": -7,
+          "puis": 13,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (couteaux 3), Corps à corps 2, Défense 2+, Discrétion 3, Fouille 2, Survie 1+ (montagne 4+), Tir 1 (armes automatiques 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fanatiques venus du monde entier (Algérie, Bosnie, Afghanistan…) ou Tchétchènes endoctrinés, financés par les Saoudiens. Élite des troupes, méprisent tous ceux qui ne pensent pas comme eux ; relations tendues avec boivikis et population.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-boivikis",
+      "nom": "Boivikis",
+      "source": "Combattants tchétchènes typiques",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 6,
+        "vo": 5,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau",
+          "att": 6,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Lance-roquettes antichar",
+          "att": 7,
+          "prec": -7,
+          "puis": 13,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 1 (couteaux 3), Corps à corps 2, Défense 2+, Discrétion 2+, Savoir militaire 1 (armée russe 1+), Survie 1 (montagne 4+), Tir 1 (armes automatiques 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Héritiers de siècles de résistance, maîtres de la guérilla de montagne, opiniâtres ; tiennent tête aux Russes jusqu'en ville. Musulmans peu pratiquants : la religion n'est pas leur moteur.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-ahmed",
+      "nom": "Ahmed (Nouredine El Khâdi)",
+      "source": "Ange de Hassan, grade 2 (hôpital Khankala)",
+      "type": "ange",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 7,
+        "vo": 10,
+        "pr": 9,
+        "foi": 9
+      },
+      "def": 7,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 20,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Détection du mal",
+          "r": 8
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 5
+        },
+        {
+          "n": "Télépathie",
+          "r": 6
+        },
+        {
+          "n": "Tolérance",
+          "r": 7
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 5
+        }
+      ],
+      "talents": "Baratin 4, Culture générale 3 (islam 8), Défense 3+, Discussion 7, Médecine 4, Séduction 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Marocain de 48 ans, frêle. Dirige depuis trois ans l'hôpital musulman sous les ordres de Salaam, mais passe son temps en palabres avec factions et donateurs. Déteste les armes, garde du corps depuis une agression, noie son stress dans l'alcool (mains tremblantes, collyre, maquillage).\nSait que Hajj Zoumana, Sysoyev et Mohamed Islam sont des anges ; doute que les démons soient derrière les mafias (les humains suffisent bien). A recueilli beaucoup de témoignages mais n'a rien noté, de peur de relancer les hostilités. Cherche la paix, ne serait-ce qu'avec sa conscience.\nPP non donnés : 20 estimés (ange de grade 2).\nConnaît : Hajj Zoumana, Alexandre Sysoyev, Mourad Kardanov, imam Vasnadov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-sternberg",
+      "nom": "Sternberg (Hajj Zoumana)",
+      "source": "Ange de Hassan, grade 1 (quartier Musorova)",
+      "type": "ange",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 7,
+        "vo": 8,
+        "pr": 8,
+        "foi": 9
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 15,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 2
+        },
+        {
+          "n": "Charme",
+          "r": 2
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 2
+        },
+        {
+          "n": "Sommeil",
+          "r": 2
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Tolérance",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 3, Culture générale 3 (islam 6), Défense 2+, Discussion 5, Médecine 3, Séduction 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Libanais de 47 ans, blond teint en brun. Sympathique et dévoué à la cause, mais partisan de la lutte armée contrairement à ses collègues : laisse volontairement filer des bavures pour peser sur les négociations. Dirige officieusement le quartier « diplomatique » séparatiste.\nPasse-temps : la chasse aux démons de Ouikka chez les boivikis, avec un épais dossier sur ceux déjà tombés (grâce à lui et à Mohamed Islam). Contact principal et secret des boivikis à Groznyï, il coordonne embuscades et attentats contre l'avis de Salaam, qu'il juge lâche.\nS'il soupçonne les PJ, il les fait passer pour des espions auprès des boivikis (embuscades, attentats). Refuse de parler avec des chrétiens, qu'il accuse d'avoir abandonné les musulmans au VIIIe siècle.\nPP non donnés : 15 estimés (ange de grade 1).\nConnaît : Mohamed Islam, Nouredine El Khâdi, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-salaam",
+      "nom": "Salaam (Alexandre Borisovitch Sysoyev)",
+      "source": "Ange de Hassan, grade 3 (palais Staline)",
+      "type": "ange",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 9,
+        "vo": 12,
+        "pr": 13,
+        "foi": 13
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 30,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Déphasage",
+          "r": 6
+        },
+        {
+          "n": "Détection du mal",
+          "r": 12
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 13
+        },
+        {
+          "n": "Psychométrie",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 6
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Tolérance",
+          "r": 13
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 13
+        }
+      ],
+      "talents": "Baratin 7, Culture générale 5 (islam 9), Défense 4+, Discussion 9, Médecine 4, Séduction 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tchétchène de 59 ans, diplomate né, au cœur du gouvernement prorusse ; dirige tous les anges musulmans de Tchétchénie depuis le palais Staline. Rêve de réconcilier chrétiens et musulmans et a envoyé l'émissaire au Paradis.\nIgnore la mission des PJ mais guette tout signe d'activité angélique : avec ceux qu'il soupçonne d'être des anges, il joue cartes sur table (sous-entendus lourds, propositions à peine voilées). Des PJ subtils peuvent obtenir de lui un appui et des moyens énormes. Il n'a aucune preuve sur les forces surnaturelles côté russe mais fera tout pour en trouver.\nPP non donnés : 30 estimés (ange de grade 3).\nConnaît : colonel Bokonov, Hajj Zoumana, Nouredine El Khâdi, Mourad Kardanov.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    },
+    {
+      "id": "type-mv2-tarkov",
+      "nom": "Docteur Christian Allanovitch Tarkov",
+      "source": "Directeur de l'hôpital Sakaline (ONG occidentales)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 7,
+        "pr": 3,
+        "foi": 4
+      },
+      "def": 3,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2, Défense 1+, Discussion 3+, Hobby (marxisme-léninisme) 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "31 ans. Marxiste-léniniste authentique et désabusé, persécuté par les Soviétiques. Son hôpital accueille tout le monde sans arme ; il a mis fin aux règlements de comptes en refusant les patients de la faction fautive. Seuls les wahhabites le vomissent encore.\nAdore débattre (soirées de thé avec Blakanov). Prêt à partager ses preuves avec qui garantit l'anonymat et fera avancer les choses, jamais avec des fanatiques religieux. Milliers de photos et témoignages : exploits surhumains de Mohamed Islam au tulwar, rituels de Sergeï, atrocités d'Alkhazurov.\nConnaît : Blakanov, Mourad Kardanov, Alexandre Sysoyev.\nSource : Livre de base INS/MV4, livret Magna Veritas, « Notre peuple vaincra ! », p. 68-91."
+    }
+  ],
+  "memoire": []
+}

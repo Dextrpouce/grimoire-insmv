@@ -1,0 +1,2444 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa5-mouches",
+      "nom": "Petites Apocalypses – On n'encule pas les mouches avec du vinaigre",
+      "resume": "Scénario d'enquête et de poursuite pour agents de la troisième Force employés par la DTC d'Hercule. Une jeune femme noyée près de Saint-Malo revient à la vie, habitée par un fragment abîmé d'Aphrodite : amnésique, irrésistible et écervelée, elle se fait appeler Lilith. Hadès, incarné en manager, fait d'elle l'idole d'une secte vénusienne pour voler l'énergie onirique des adeptes. Hercule envoie les PJ enquêter ; Athéna enlève Lilith sous leur nez, la police les accuse, les démons d'Hadès les traquent, Catherine (Déméter) veut sa revanche, et tout le monde se retrouve aux Hots d'or pour une bagarre générale.",
+      "notes": "Source : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.\nTon : comédie paillarde et décalée ; le texte assume que les PJ lancent parfois les dés pour rien (la course-poursuite, la recherche de Lilith). Scénario d'ambiance qui peut s'étaler sur plusieurs séances.\n\nHistoire secrète (résumé, à connaître : voir aussi p. 20 et suivantes sur Hercule et la guerre civile de l'Olympe) :\n• Aphrodite, mariée à Héphaïstos, le trompait avec Arès. Humiliée par le piège du filet invisible, elle a envoûté Héphaïstos pour qu'il viole une déesse, ce qui l'a fait chasser de l'Olympe (il vit toujours sur Terre).\n• Plus tard, elle a envoûté Zeus pour qu'il viole Déméter (d'où la naissance d'Hercule), espérant une révolte qui mettrait Arès sur le trône. Déméter s'est confiée à Athéna, qui a tué son père ; mais c'est le camp d'Athéna qui a gagné la guerre civile (Apollon sur le trône), et Aphrodite et Arès ont été bannis dans le vide intermarches.\n• Bien plus tard, Athéna a découvert la manipulation et l'a dite à Déméter, devenue Catherine (ex-archange des femmes, aussi appelée Ève). Elles ont gardé le secret.\n• Personne ne sait au juste ce qui cloche dans la réincarnation d'Aphrodite : le livre laisse la question ouverte.\n\nQui cherche Lilith et pourquoi :\n• Hercule et les PJ : comprendre, protéger la troisième Force du tapage.\n• Hadès (démon de Morax de grade 0, ex-dieu) : l'argent et l'énergie onirique de la secte, puis le trône d'Apollon.\n• Athéna puis Catherine : leur vieux contentieux avec Aphrodite.\n• Anges (qui pensent à la troisième Force ou à Scox) et démons (qui flairent Aphrodite) : surveillance discrète.\n• La police et la commissaire Délaivre.\n\nNotes de campagne :\n• Avant : les PJ peuvent croiser Athéna à la DTC comme simple visiteuse et connaître l'histoire d'Hercule (par lui ou par Domitille). On peut distiller les nouvelles de Lilith sur plusieurs scénarios.\n• Après : si Hercule comprend que Catherine est sa mère, il la cherchera sans succès et s'énervera auprès d'Athéna. Il instruira Lilith sur la discrétion et l'introduira dans la troisième Force : elle fréquentera le Labyrinthe et la DTC en draguant ouvertement les PJ.\n• L'intermède d'ouverture (Ange interroge les archanges sur l'amour, puis Jésus Chez Régis) est une vignette de la campagne, sans lien direct avec l'intrigue.\n\nAdaptations pour anges et démons (p. 116) :\n• MV : les anges qui surveillent Lilith restent en coulisses, sauf ceux de Catherine. Pour une équipe d'anges, l'impliquer dès le « miracle » de Saint-Malo (ils n'y croiront guère, les médecins ayant une explication rationnelle), puis quand la secte et le show-biz rendent l'affaire voyante : ils soupçonnent la troisième Force ou les démons de Scox. Garder l'équipe d'Hercule en PNJ maladroits et peu discrets qui peuvent leur fournir des indices ; les anges prennent la place des PJ dès la visite à la secte. Ils peuvent rencontrer Catherine ou ses anges et en apprendre plus sur le fond mythologique.\n• INS : même principe. Les démons s'intéressent à Lilith par curiosité, pour l'exploiter au profit du Mal, ou pour comprendre le jeu très personnel d'Hadès. La DTC reste en PNJ. Les révélations d'Athéna (ou de Catherine pour les anges) viennent d'Hadès : Lilith envolée, il change de stratégie, prétend avoir agi pour son patron et s'associe aux PJ, mais il ignore une partie de l'histoire (approche plus « baston » que rôle).\n• Dans tous les cas, ajuster la puissance des adversaires à celle des PJ.\n\nRécompenses : aucune en PA indiquée par le livre.\nFiches : les quatre dieux ont des caractéristiques (p. 95) ; démons d'Hadès, anges de Catherine et policiers sont estimés (voir leurs notes). Attaques du livre au format « seuil/RU+X/M+Y ».",
+      "scenes": [
+        {
+          "id": "pa5-sc-mission",
+          "nom": "1. La mission d'Hercule",
+          "lieu": "Bureaux de la DTC, Paris",
+          "notes": "Quelques mois après les faits de Saint-Malo. Les remous causés par Lilith (égérie de Saint-Tropez, secte, carrière de chanteuse) sentent la troisième Force à plein nez. Hercule a fait le lien avec les articles sur la « miraculée » : il charge les PJ de retrouver cette Lilith et de comprendre ce qui se passe.\nAide de jeu : trois coupures de presse à résumer aux joueurs.\n• Ouest-France, 14 mai : une jeune femme nue retrouvée morte sur la plage de Saint-Malo par un couple de joggeurs reprend connaissance à l'hôpital ; une infirmière parle de miracle.\n• Le Pays malouin, 16 mai : vigiles devant sa chambre, appel à témoins ; la miraculée est amnésique.\n• Ouest-France, 21 mai : elle a disparu de l'hôpital malgré la surveillance ; la police exclut l'enlèvement.\nLes PJ connaissent l'adresse de la secte de Lilith (Paris, près de Saint-Lazare). Deux pistes : Saint-Malo (scène 2) ou la secte (scène 3).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-hercule-1",
+              "nom": "Hercule",
+              "source": "Héros païen, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Commanditaire. Intrigué par cette affaire visiblement liée à Vénus et à son panthéon, il a rapproché les articles de presse de l'apparition de Lilith dans le show-biz. Il ignore que Catherine est Déméter (il croit sa mère morte) et qu'Aphrodite a envoûté Zeus. Connaît l'adresse d'Athéna et l'identifie d'après une description.\nFiche complète : Les Petites Apocalypses, p. 21 (non reprise ici).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa5-sc-saint-malo",
+          "nom": "2. Un p'tit week-end à Saint-Malo (optionnel)",
+          "lieu": "Saint-Malo, puis Melun",
+          "notes": "Piste facultative sur le passé de Lilith.\n• Le joggeur, Louise l'infirmière et la presse locale confirment : noyade, avec une grosse blessure à la tête (coup porté avec un objet contondant), corps froid et sans pouls, puis retour à la vie dans l'ambulance. Les médecins parlent de métabolisme ralenti par l'eau froide ; fracture du crâne guérie à une vitesse anormale.\n• Au port de plaisance : les bateaux sortis la veille de la mort mènent (si le MJ le veut) à Bruno Tartin, à Melun. Il ment.\n• La commissaire Délaivre, si les PJ sont diplomates : la victime s'appelle Vanessa Lapierre (identifiée par son ancien patron d'un Shopi parisien) ; parents frustes qui l'avaient mise à la porte et s'en moquent. Elle trouve toute l'affaire louche.\nTous les témoins sont formels : la noyée et la chanteuse sont la même personne.\nCe qui s'est passé : Vanessa, 20 ans, venait de perdre travail, copain et logement ; elle a suivi Tartin sur son bateau, l'a repoussé, il l'a assommée et elle s'est noyée. Une âme errante, un fragment abîmé d'Aphrodite, a pris possession du corps. Réveillée amnésique, elle s'est évadée avec l'aide de Louise et s'est rebaptisée Lilith.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-delaivre-2",
+              "nom": "Commissaire Justine Délaivre",
+              "source": "Police de Saint-Malo",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "45 ans, taille moyenne, un peu ronde, très jolies jambes, châtain ; brusque, sûre d'elle, déteste perdre son temps (« bon allez, on active les neurones ! »). Chargée de l'affaire de la noyée, elle a un sentiment d'inachevé : elle a identifié Vanessa grâce à son ancien patron (un Shopi parisien) et retrouvé ses parents, rustres et indifférents. Elle veut venir à Paris même sans enquête officielle. Son attitude dépend de l'impression que lui ont faite les PJ.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-delaivre"
+            },
+            {
+              "id": "pa5-louise-3",
+              "nom": "Louise Delafosse",
+              "source": "Infirmière à l'hôpital de Saint-Malo",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Crie au miracle dans la presse. Gentille et dévote : Lilith l'a attendrie pour s'évader (vêtements, 80 €, café drogué pour le vigile). Peut raconter la convalescence et la guérison anormalement rapide.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-louise"
+            },
+            {
+              "id": "pa5-tartin-4",
+              "nom": "Bruno Tartin",
+              "source": "Promoteur immobilier de Melun, meurtrier de Vanessa",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La petite quarantaine, grand et baraqué, blond aux yeux bleu froid, élégant, plein d'humour : un joli-cœur qui cache un fou furieux. Vanessa s'étant refusée à lui sur son bateau, il l'a assommée d'un coup de pichet et elle est tombée à l'eau ; il a écourté son séjour et regagné Melun. Retrouvé par les PJ, il ment (accident, ou « jamais vu cette fille »).\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-tartin"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa5-ch-tartin",
+              "q": "Les PJ remontent-ils jusqu'à Bruno Tartin ?",
+              "opts": [
+                {
+                  "t": "Oui, et ils le livrent à la police",
+                  "suite": "Délaivre leur en sera reconnaissante : alliée possible quand la police les traquera."
+                },
+                {
+                  "t": "Oui, mais ils le laissent",
+                  "suite": "Aucune suite prévue par le livre ; au MJ de voir."
+                },
+                {
+                  "t": "Non",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa5-sc-secte",
+          "nom": "3. Bienvenue à Nœudnœud-land !",
+          "lieu": "Siège de la secte, immeuble désaffecté près de Saint-Lazare, Paris",
+          "notes": "Approche au choix : discrétion, infiltration comme futurs adeptes ou méthode bourrine. Si les PJ cherchent plutôt Lilith à l'extérieur (plateau télé, radio, studio), faites-la-leur rater systématiquement et ramenez-les ici.\n• Ambiance : salles de détente, de méditation et de joints, d'autres franchement orgiaques façon romaine ; beaucoup de monde, tous consentants et béats. Posters et statues de Vénus, poèmes et professions de foi peints au-dessus des portes. Décor cheap malgré l'argent brassé. Le mot « amour » partout.\n• Fonctionnement : on paie cher pour entrer, on travaille « pour la communauté », on paie encore, on vénère un être suprême incarné par Lilith, et en sortir est très difficile. Ça ressemble à un culte de Vénus, sans que ce soit dit.\n• Hadès (maître Salmingo) ne reçoit que les candidats à l'adhésion : méfiant puis mielleux, il jauge leur sincérité et surtout leur portefeuille.\n• Lilith se lasse déjà de la secte ; seule sa carrière de chanteuse l'intéresse, et elle se croit dépendante de son manager.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-hades-5",
+              "nom": "Hadès (Eddy Salmingo)",
+              "source": "Ex-dieu païen, démon de Morax de grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 50,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Épée magique majeure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Illusions",
+                  "r": 8
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 8
+                },
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2 (peinture 4), Baratin 6, Combat 4 (épées 6), Défense 6, Discrétion 4, Discussion 5, Intimidation 6, Métier : agent artistique 3, Prestidigitation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit gratte-papier en Enfer qui rêve de détrôner Apollon. Incarné dans un cadavre frais au look tropézien : la cinquantaine (en paraît dix de plus), trop bronzé, cheveux noirs gominés, tenue à la Dick Rivers, profil d'aigle ; parle en détachant chaque mot. Désagréable et méfiant, puis soudain mielleux ; prêche l'amour mais ne pense qu'à l'argent.\nManager de Lilith et gourou de la secte : il veut l'argent des adeptes et surtout leur énergie onirique. Prévenu par Antoine, héros païen romain qui lui est fidèle.\nÉpée : précision +4, puissance +6 (66/RU+8/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-hades"
+            },
+            {
+              "id": "pa5-adeptes-6",
+              "nom": "Adeptes de la secte",
+              "source": "Paumés béats, babas cool et amateurs de galipettes",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tous consentants et enthousiastes, ils paient très cher au regard de leurs moyens et répètent « amour » à tout bout de champ. Quelques membres dévoués aident Hadès à rechercher Lilith.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-adeptes"
+            },
+            {
+              "id": "pa5-lilith-7",
+              "nom": "Lilith (Vanessa Lapierre)",
+              "source": "Réincarnation imparfaite d'Aphrodite (?), déesse païenne (?)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 10,
+                "pe": 9,
+                "vo": 12,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 48,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption d'énergie sexuelle",
+                  "r": 8
+                },
+                {
+                  "n": "Bénédiction : beauté",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Malédiction : stérilité",
+                  "r": 8
+                },
+                {
+                  "n": "Phéromones",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 6, Aisance sociale 8, Baratin 7, Contorsionnisme 5, Corps à corps 4, Défense 5, Kama sutra 8, Séduction 7, Torture 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans le corps de Vanessa, 20 ans, noyée près de Saint-Malo : mince, blond foncé, yeux gris, peau très claire et taches de rousseur. Amnésique, superficielle, versatile, pas très futée mais très débrouillarde ; ne veut que s'amuser, briller et être célèbre. Déteste les enfants.\nSon aura érotique (Phéromones) déchaîne la libido de son entourage ; c'est pour cela qu'elle devient l'égérie des nuits tropéziennes, puis l'idole de la secte d'Hadès, chanteuse, et enfin star du porno.\nPhéromones : physique, constant (1 PP par minute), aire d'effet de rayon court ; test de pouvoir à l'activation, chaque personne dans la zone résiste par un test de Volonté (Volonté supra-normale et Protection de l'esprit inopérants ; anges et démons incarnés à +4 colonnes). Transmet une émotion forte (chez elle, surtout l'excitation) ; jamais de contrôle du comportement.\nCoup de poing au niveau de Corps à corps : estimation (pas d'attaque donnée).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-lilith"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa5-sc-enlevement",
+          "nom": "4. Athéna enlève Lilith",
+          "lieu": "Secte, puis rues de Paris",
+          "notes": "Athéna, qui soupçonne Lilith d'être Aphrodite, est venue l'interroger ; le babillage décousu de Lilith la lasse et elle décide de l'emmener pour discuter au calme. Les PJ (ou Hadès) peuvent interrompre la conversation.\nQuand les PJ arrivent jusqu'à Lilith : son bureau porte des traces de lutte, des adeptes ont entendu des appels au secours, la fenêtre est ouverte. En bas, Athéna pousse Lilith dans une Twingo rose et démarre en trombe.\nCourse-poursuite possible, mais Athéna a de l'avance et doit gagner. Si les PJ l'ont vue, ils la reconnaissent s'ils l'ont déjà croisée à la DTC ; sinon leur description suffit à Hercule pour l'identifier.\nEn coulisses (« papotages de filles ») : dans une chambre d'hôtel, après une ou deux gifles, Athéna interroge Lilith pendant des heures. Elle conclut que Lilith n'a aucun souvenir, qu'elle n'est pas vraiment Aphrodite et ne peut être tenue responsable. Elle la relâche en lui conseillant de fuir la secte et Eddy. Lilith, qui l'admire déjà, s'en va vers de nouvelles aventures.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-athena-8",
+              "nom": "Athéna",
+              "source": "Ex-déesse païenne, prof de maths",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 10,
+                "vo": 12,
+                "pr": 10,
+                "foi": 14
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 65,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Lance magique ancienne",
+                  "att": 22,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 20
+                },
+                {
+                  "n": "Frappe ultime",
+                  "r": 20
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 12
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 20
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 8
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 8
+                },
+                {
+                  "n": "Transfert de blessures",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Baratin 3, Combat 6 (lances 9), Culture générale 3 (Histoire 6), Défense 8, Discussion 7, Enquête 7, Fouille 7, Métier : prof de math 4, Sixième sens 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentaine passée, 1,70 m, brune aux cheveux ondulés, regard franc ; fixe ses interlocuteurs en silence au milieu d'une conversation. Conduit très bien (Twingo rose). Petit appartement impeccable : salle de gym, bureau plein de livres de maths, salle de bains façon thermes romains. Hercule connaît son adresse.\nA tué Zeus après le viol de Déméter ; a appris bien plus tard qu'Aphrodite l'avait envoûté. Juste et franche : refuse de mentir, n'aime pas commettre deux fois la même erreur de jugement.\nLance : précision +5, puissance +7 (66/RU+11/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-athena"
+            },
+            {
+              "id": "pa5-lilith-9",
+              "nom": "Lilith (Vanessa Lapierre)",
+              "source": "Réincarnation imparfaite d'Aphrodite (?), déesse païenne (?)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 10,
+                "pe": 9,
+                "vo": 12,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 48,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption d'énergie sexuelle",
+                  "r": 8
+                },
+                {
+                  "n": "Bénédiction : beauté",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Malédiction : stérilité",
+                  "r": 8
+                },
+                {
+                  "n": "Phéromones",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 6, Aisance sociale 8, Baratin 7, Contorsionnisme 5, Corps à corps 4, Défense 5, Kama sutra 8, Séduction 7, Torture 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans le corps de Vanessa, 20 ans, noyée près de Saint-Malo : mince, blond foncé, yeux gris, peau très claire et taches de rousseur. Amnésique, superficielle, versatile, pas très futée mais très débrouillarde ; ne veut que s'amuser, briller et être célèbre. Déteste les enfants.\nSon aura érotique (Phéromones) déchaîne la libido de son entourage ; c'est pour cela qu'elle devient l'égérie des nuits tropéziennes, puis l'idole de la secte d'Hadès, chanteuse, et enfin star du porno.\nPhéromones : physique, constant (1 PP par minute), aire d'effet de rayon court ; test de pouvoir à l'activation, chaque personne dans la zone résiste par un test de Volonté (Volonté supra-normale et Protection de l'esprit inopérants ; anges et démons incarnés à +4 colonnes). Transmet une émotion forte (chez elle, surtout l'excitation) ; jamais de contrôle du comportement.\nCoup de poing au niveau de Corps à corps : estimation (pas d'attaque donnée).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-lilith"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa5-sc-branle-bas",
+          "nom": "5. Branle-bas de combat à Nœudnœud-land",
+          "lieu": "Secte",
+          "notes": "Panique générale : Lilith aurait été enlevée, assassinée, ou rappelée au Panthéon selon les adeptes. Hadès n'a pas vu Athéna : il accuse les PJ (rencontrés, aperçus ou signalés par leur guide).\n• Il lance des adeptes dévoués sur leurs traces et dénonce les PJ à la police.\n• Si elle l'apprend, la commissaire Délaivre finit par rappliquer ; son attitude dépend de ce qui s'est passé à Saint-Malo.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-hades-10",
+              "nom": "Hadès (Eddy Salmingo)",
+              "source": "Ex-dieu païen, démon de Morax de grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 50,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Épée magique majeure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Illusions",
+                  "r": 8
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 8
+                },
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2 (peinture 4), Baratin 6, Combat 4 (épées 6), Défense 6, Discrétion 4, Discussion 5, Intimidation 6, Métier : agent artistique 3, Prestidigitation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit gratte-papier en Enfer qui rêve de détrôner Apollon. Incarné dans un cadavre frais au look tropézien : la cinquantaine (en paraît dix de plus), trop bronzé, cheveux noirs gominés, tenue à la Dick Rivers, profil d'aigle ; parle en détachant chaque mot. Désagréable et méfiant, puis soudain mielleux ; prêche l'amour mais ne pense qu'à l'argent.\nManager de Lilith et gourou de la secte : il veut l'argent des adeptes et surtout leur énergie onirique. Prévenu par Antoine, héros païen romain qui lui est fidèle.\nÉpée : précision +4, puissance +6 (66/RU+8/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-hades"
+            },
+            {
+              "id": "pa5-adeptes-11",
+              "nom": "Adeptes de la secte",
+              "source": "Paumés béats, babas cool et amateurs de galipettes",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tous consentants et enthousiastes, ils paient très cher au regard de leurs moyens et répètent « amour » à tout bout de champ. Quelques membres dévoués aident Hadès à rechercher Lilith.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-adeptes"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa5-sc-traque",
+          "nom": "6. Youhou, Athéna ! Un peu d'action",
+          "lieu": "Appartement d'Athéna, Paris et ses rues",
+          "notes": "Laissez les PJ avoir quelques idées avant de leur tomber dessus.\n• Chez Athéna (Hercule a l'adresse) : personne. Appartement propret, salle de gym, livres de maths, tiramisu au frigo, salle de bains en mosaïque. Contacts, Chez Régis et le Labyrinthe ne donnent rien.\n• Les démons d'Hadès filent les PJ et tentent de les coincer pour leur arracher où est Lilith. Les PJ peuvent les repérer, les semer, les battre ou les faire parler (employeur : Hadès ; la police vous cherche).\n• La police : le journal télévisé parle d'eux, des passants les reconnaissent et téléphonent. Faire monter la pression : arrestation et garde à vue possibles. Pour s'en sortir : se faire libérer, s'évader, ou intervention d'Hercule, d'Hadès (qui veut les interroger lui-même), de Délaivre ou d'Athéna (qui témoigne que Lilith est partie d'elle-même).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa5-demons-hades-12",
+              "nom": "Démons engagés par Hadès",
+              "source": "Démons de grade 1 (gros bras)",
+              "type": "demon",
+              "qty": 4,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Katana",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Poignard",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 8
+                },
+                {
+                  "n": "Art de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre ne donne ni leur nombre ni leurs caractéristiques. Valeurs reprises du « Démon de grade 1 (combattant) » du bestiaire (Memento Flatula, p. 52) : estimation, à adapter à la puissance des PJ.\nIls filent discrètement les PJ, puis tentent de les coincer pour savoir où est Lilith. Peuvent être repérés, semés ou interrogés (ils avouent travailler pour Hadès et savent que la police recherche les PJ).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-demons-hades"
+            },
+            {
+              "id": "pa5-policiers-13",
+              "nom": "Policiers",
+              "source": "Agents lancés sur les traces des PJ",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Conduite 2, Corps à corps 2, Défense 2, Enquête 2, Fouille 2, Tir 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune fiche dans le livre : policiers ordinaires, valeurs estimées. Persuadés que les PJ ont enlevé Lilith (dénonciation d'Hadès ou simple déduction).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-policiers"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa5-ch-police",
+              "q": "Les PJ tombent-ils entre les mains de la police ?",
+              "opts": [
+                {
+                  "t": "Non, ils lui échappent",
+                  "suite": "Ils restent recherchés tant que personne n'a prouvé que Lilith est libre."
+                },
+                {
+                  "t": "Garde à vue, ils s'en sortent seuls",
+                  "suite": "Libérés ou évadés ; une évasion aggrave leur cas."
+                },
+                {
+                  "t": "Garde à vue, quelqu'un intervient",
+                  "suite": "Hercule, Hadès (qui les interroge à son tour), Délaivre ou Athéna : le sauveteur attend quelque chose en retour."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "pa5-ch-demons",
+              "q": "Que font les PJ des démons d'Hadès ?",
+              "opts": [
+                {
+                  "t": "Ils les battent ou les font parler",
+                  "suite": "Ils savent qu'Hadès les fait chercher et que la police est à leurs trousses."
+                },
+                {
+                  "t": "Ils les sèment",
+                  "suite": "Les démons réapparaîtront aux Hots d'or."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa5-sc-catherine",
+          "nom": "7. Catherine a les nerfs",
+          "lieu": "Là où sont les PJ (ou au commissariat)",
+          "notes": "Athéna avoue tout à Catherine : elle a interrogé Lilith seule malgré sa promesse, et l'a relâchée. Catherine, furieuse contre Aphrodite, se lance à son tour à la recherche de Lilith pour lui flanquer une raclée. Athéna, inquiète pour une Lilith sans défense, ne veut ni s'interposer ni impliquer Hercule (trop concerné) : elle contacte directement les PJ, en les aidant au besoin à sortir de prison.\nElle peut tout leur raconter, y compris qu'Aphrodite a envoûté Zeus pour qu'il viole Déméter (voir notes du scénario), et leur laisser la responsabilité d'en parler ou non à Hercule. Au MJ de décider si elle révèle que Catherine est Déméter, la mère d'Hercule, ou si elle évoque seulement un vieux contentieux : les PJ peuvent aussi recouper les indices eux-mêmes.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-athena-14",
+              "nom": "Athéna",
+              "source": "Ex-déesse païenne, prof de maths",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 10,
+                "vo": 12,
+                "pr": 10,
+                "foi": 14
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 65,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Lance magique ancienne",
+                  "att": 22,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 20
+                },
+                {
+                  "n": "Frappe ultime",
+                  "r": 20
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 12
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 20
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 8
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 8
+                },
+                {
+                  "n": "Transfert de blessures",
+                  "r": 12
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Baratin 3, Combat 6 (lances 9), Culture générale 3 (Histoire 6), Défense 8, Discussion 7, Enquête 7, Fouille 7, Métier : prof de math 4, Sixième sens 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentaine passée, 1,70 m, brune aux cheveux ondulés, regard franc ; fixe ses interlocuteurs en silence au milieu d'une conversation. Conduit très bien (Twingo rose). Petit appartement impeccable : salle de gym, bureau plein de livres de maths, salle de bains façon thermes romains. Hercule connaît son adresse.\nA tué Zeus après le viol de Déméter ; a appris bien plus tard qu'Aphrodite l'avait envoûté. Juste et franche : refuse de mentir, n'aime pas commettre deux fois la même erreur de jugement.\nLance : précision +5, puissance +7 (66/RU+11/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-athena"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa5-ch-verite",
+              "q": "Qu'apprennent les PJ d'Athéna ?",
+              "opts": [
+                {
+                  "t": "Toute l'histoire, y compris que Catherine est Déméter",
+                  "suite": "Ils détiennent le secret des origines d'Hercule."
+                },
+                {
+                  "t": "L'envoûtement de Zeus, mais pas l'identité de Catherine",
+                  "suite": "À eux de recouper les indices."
+                },
+                {
+                  "t": "Seulement qu'il faut protéger Lilith de Catherine",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa5-sc-cavale",
+          "nom": "8. Lilith la bienheureuse, avec le monde entier aux fesses",
+          "lieu": "Monaco, la France, les tournages",
+          "notes": "Tout le monde cherche Lilith : Catherine et ses anges pour se défouler, les PJ pour la protéger (et se disculper), Hadès et ses démons pour relancer la secte, la police parce qu'elle la croit enlevée. Elle ne se cache pas, mais change sans cesse de projet et de lieu.\n• Monaco : elle allume la principauté, mais on veut la faire poser avec des enfants, qu'elle déteste ; elle repart.\n• Presse people et contacts du show-biz signalent son passage, toujours trop tard.\n• Elle se lance dans le porno, où elle excelle ; tournages rapides et discrets : les PJ arrivent toujours après. Ils peuvent croiser Catherine.\nPeut s'étaler sur plusieurs scénarios : les PJ partent sur d'autres missions en suivant les nouvelles de Lilith ; Hercule veut toujours la voir et lui faire comprendre que tant de bruit nuit à la troisième Force.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-catherine-15",
+              "nom": "Catherine (Déméter, Ève)",
+              "source": "Ex-déesse païenne, ex-archange des femmes",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 12,
+                "vo": 18,
+                "pr": 14,
+                "foi": 14
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 15,
+              "pp": 102,
+              "seuilsFix": [
+                10,
+                20,
+                30,
+                40
+              ],
+              "armes": [
+                {
+                  "n": "Arc béni suprême (portée moyenne)",
+                  "att": 24,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arts martiaux",
+                  "r": 16
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : fertilité",
+                  "r": 25
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 16
+                },
+                {
+                  "n": "Charme",
+                  "r": 16
+                },
+                {
+                  "n": "Conscience",
+                  "r": 27
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 10
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 25
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 26
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 16
+                },
+                {
+                  "n": "Peur",
+                  "r": 16
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 10
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 20
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 20
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 20
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 25
+                }
+              ],
+              "talents": "Baratin 8, Corps à corps 8, Défense 9, Discrétion 6, Discussion 12, Enquête 7, Médecine 10, Séduction 8, Tir 5 (arcs 10), Pouvoirs propres : Miracle 2, Voyage inter-marches 8",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La petite quarantaine, brune, peau mate ; énergique, nerveuse, une violence contenue dans le regard : elle peut exploser à tout moment. Mère d'Hercule (qui la croit morte et ignore qui elle est). Victime du viol de Zeus, provoqué par Aphrodite : elle veut corriger Lilith, Aphrodite ou pas. Accompagnée d'anges.\nElle possède aussi tous les pouvoirs gratuits des supérieurs (livre de base, p. 96). Miracle et Voyage inter-marches ne sont pas dans la liste des pouvoirs de l'appli : notés dans les talents.\nConscience : spirituel, activé (5 PP), attaque spirituelle résistée par Chance/Foi, portée de combat. Libère la cible de tout contrôle mental ou spirituel (annule Charme, Domination…) et de ses illusions ou complexes.\nArc : précision +4, puissance +10 (66/RU+12/M+10). Coup de poing au niveau de Corps à corps : estimation.\nType « ange » choisi pour le camp au combat (elle mène des anges) ; seuils et PF du livre.\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-catherine"
+            },
+            {
+              "id": "pa5-anges-catherine-16",
+              "nom": "Anges de Catherine",
+              "source": "Anges qui accompagnent Catherine",
+              "type": "ange",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 12,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Défense 3, Discrétion 3, Enquête 3, Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune fiche dans le livre : ange de grade 1 générique, valeurs estimées. Ils cherchent Lilith avec Catherine et sont présents aux Hots d'or.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-anges-catherine"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa5-sc-hots-dor",
+          "nom": "9. La cérémonie des Hots d'or",
+          "lieu": "Cérémonie des Hots d'or",
+          "notes": "Lilith est nommée et vient en star, très entourée. Un PJ en entend parler, ou Hercule le leur signale.\nSont présents : les PJ, Hadès et ses démons, Catherine et ses anges, la commissaire Délaivre et quelques policiers. Agir pendant la cérémonie est difficile ; juste après, c'est plus simple. Chacun a repéré les autres : si un groupe bouge, les autres lui tombent dessus. Bagarre générale prévue. Si elle en a le temps, Lilith reçoit le trophée de la révélation de l'année.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa5-lilith-17",
+              "nom": "Lilith (Vanessa Lapierre)",
+              "source": "Réincarnation imparfaite d'Aphrodite (?), déesse païenne (?)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 10,
+                "pe": 9,
+                "vo": 12,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 48,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption d'énergie sexuelle",
+                  "r": 8
+                },
+                {
+                  "n": "Bénédiction : beauté",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Malédiction : stérilité",
+                  "r": 8
+                },
+                {
+                  "n": "Phéromones",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 6, Aisance sociale 8, Baratin 7, Contorsionnisme 5, Corps à corps 4, Défense 5, Kama sutra 8, Séduction 7, Torture 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans le corps de Vanessa, 20 ans, noyée près de Saint-Malo : mince, blond foncé, yeux gris, peau très claire et taches de rousseur. Amnésique, superficielle, versatile, pas très futée mais très débrouillarde ; ne veut que s'amuser, briller et être célèbre. Déteste les enfants.\nSon aura érotique (Phéromones) déchaîne la libido de son entourage ; c'est pour cela qu'elle devient l'égérie des nuits tropéziennes, puis l'idole de la secte d'Hadès, chanteuse, et enfin star du porno.\nPhéromones : physique, constant (1 PP par minute), aire d'effet de rayon court ; test de pouvoir à l'activation, chaque personne dans la zone résiste par un test de Volonté (Volonté supra-normale et Protection de l'esprit inopérants ; anges et démons incarnés à +4 colonnes). Transmet une émotion forte (chez elle, surtout l'excitation) ; jamais de contrôle du comportement.\nCoup de poing au niveau de Corps à corps : estimation (pas d'attaque donnée).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-lilith"
+            },
+            {
+              "id": "pa5-hades-18",
+              "nom": "Hadès (Eddy Salmingo)",
+              "source": "Ex-dieu païen, démon de Morax de grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 50,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Épée magique majeure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Cauchemar",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Illusions",
+                  "r": 8
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 8
+                },
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 8
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2 (peinture 4), Baratin 6, Combat 4 (épées 6), Défense 6, Discrétion 4, Discussion 5, Intimidation 6, Métier : agent artistique 3, Prestidigitation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit gratte-papier en Enfer qui rêve de détrôner Apollon. Incarné dans un cadavre frais au look tropézien : la cinquantaine (en paraît dix de plus), trop bronzé, cheveux noirs gominés, tenue à la Dick Rivers, profil d'aigle ; parle en détachant chaque mot. Désagréable et méfiant, puis soudain mielleux ; prêche l'amour mais ne pense qu'à l'argent.\nManager de Lilith et gourou de la secte : il veut l'argent des adeptes et surtout leur énergie onirique. Prévenu par Antoine, héros païen romain qui lui est fidèle.\nÉpée : précision +4, puissance +6 (66/RU+8/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-hades"
+            },
+            {
+              "id": "pa5-demons-hades-19",
+              "nom": "Démons engagés par Hadès",
+              "source": "Démons de grade 1 (gros bras)",
+              "type": "demon",
+              "qty": 4,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Katana",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Poignard",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 8
+                },
+                {
+                  "n": "Art de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre ne donne ni leur nombre ni leurs caractéristiques. Valeurs reprises du « Démon de grade 1 (combattant) » du bestiaire (Memento Flatula, p. 52) : estimation, à adapter à la puissance des PJ.\nIls filent discrètement les PJ, puis tentent de les coincer pour savoir où est Lilith. Peuvent être repérés, semés ou interrogés (ils avouent travailler pour Hadès et savent que la police recherche les PJ).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-demons-hades"
+            },
+            {
+              "id": "pa5-catherine-20",
+              "nom": "Catherine (Déméter, Ève)",
+              "source": "Ex-déesse païenne, ex-archange des femmes",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 12,
+                "vo": 18,
+                "pr": 14,
+                "foi": 14
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 15,
+              "pp": 102,
+              "seuilsFix": [
+                10,
+                20,
+                30,
+                40
+              ],
+              "armes": [
+                {
+                  "n": "Arc béni suprême (portée moyenne)",
+                  "att": 24,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arts martiaux",
+                  "r": 16
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction : fertilité",
+                  "r": 25
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 16
+                },
+                {
+                  "n": "Charme",
+                  "r": 16
+                },
+                {
+                  "n": "Conscience",
+                  "r": 27
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 10
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 25
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 26
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 16
+                },
+                {
+                  "n": "Peur",
+                  "r": 16
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 10
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 20
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 20
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 20
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 25
+                }
+              ],
+              "talents": "Baratin 8, Corps à corps 8, Défense 9, Discrétion 6, Discussion 12, Enquête 7, Médecine 10, Séduction 8, Tir 5 (arcs 10), Pouvoirs propres : Miracle 2, Voyage inter-marches 8",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La petite quarantaine, brune, peau mate ; énergique, nerveuse, une violence contenue dans le regard : elle peut exploser à tout moment. Mère d'Hercule (qui la croit morte et ignore qui elle est). Victime du viol de Zeus, provoqué par Aphrodite : elle veut corriger Lilith, Aphrodite ou pas. Accompagnée d'anges.\nElle possède aussi tous les pouvoirs gratuits des supérieurs (livre de base, p. 96). Miracle et Voyage inter-marches ne sont pas dans la liste des pouvoirs de l'appli : notés dans les talents.\nConscience : spirituel, activé (5 PP), attaque spirituelle résistée par Chance/Foi, portée de combat. Libère la cible de tout contrôle mental ou spirituel (annule Charme, Domination…) et de ses illusions ou complexes.\nArc : précision +4, puissance +10 (66/RU+12/M+10). Coup de poing au niveau de Corps à corps : estimation.\nType « ange » choisi pour le camp au combat (elle mène des anges) ; seuils et PF du livre.\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-catherine"
+            },
+            {
+              "id": "pa5-anges-catherine-21",
+              "nom": "Anges de Catherine",
+              "source": "Anges qui accompagnent Catherine",
+              "type": "ange",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 12,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Défense 3, Discrétion 3, Enquête 3, Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune fiche dans le livre : ange de grade 1 générique, valeurs estimées. Ils cherchent Lilith avec Catherine et sont présents aux Hots d'or.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-anges-catherine"
+            },
+            {
+              "id": "pa5-delaivre-22",
+              "nom": "Commissaire Justine Délaivre",
+              "source": "Police de Saint-Malo",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "45 ans, taille moyenne, un peu ronde, très jolies jambes, châtain ; brusque, sûre d'elle, déteste perdre son temps (« bon allez, on active les neurones ! »). Chargée de l'affaire de la noyée, elle a un sentiment d'inachevé : elle a identifié Vanessa grâce à son ancien patron (un Shopi parisien) et retrouvé ses parents, rustres et indifférents. Elle veut venir à Paris même sans enquête officielle. Son attitude dépend de l'impression que lui ont faite les PJ.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-delaivre"
+            },
+            {
+              "id": "pa5-policiers-23",
+              "nom": "Policiers",
+              "source": "Agents lancés sur les traces des PJ",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Conduite 2, Corps à corps 2, Défense 2, Enquête 2, Fouille 2, Tir 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune fiche dans le livre : policiers ordinaires, valeurs estimées. Persuadés que les PJ ont enlevé Lilith (dénonciation d'Hadès ou simple déduction).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-policiers"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa5-ch-lilith",
+              "q": "Qui s'empare de Lilith ?",
+              "opts": [
+                {
+                  "t": "Les PJ",
+                  "suite": "Ils la ramènent à Hercule (scène 10)."
+                },
+                {
+                  "t": "Personne : elle file dans la confusion",
+                  "suite": "Elle continue de papillonner, aussi insouciante qu'avant."
+                },
+                {
+                  "t": "Catherine",
+                  "suite": "Elle se défoule sur elle avant de comprendre qu'elle n'est pas l'Aphrodite d'autrefois ; Hercule charge les PJ de la tirer de là."
+                },
+                {
+                  "t": "Hadès",
+                  "suite": "Il veut relancer la secte et viser le trône d'Apollon ; Hercule charge les PJ de la récupérer."
+                },
+                {
+                  "t": "La police",
+                  "suite": "Elle veut seulement s'assurer que Lilith va bien."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa5-sc-fin",
+          "nom": "10. Fin de l'histoire",
+          "lieu": "DTC",
+          "notes": "• Si les PJ ramènent Lilith : Hercule l'interroge, arrive aux mêmes conclusions qu'Athéna et la relâche avec une couverture qui la satisfait tout en protégeant la troisième Force. Il tente même de lui expliquer qu'elle en fait partie (bon courage).\n• Hadès s'obstine un temps, puis se lasse (le culte a pris un coup) et repart peut-être d'où il vient, vexé. S'il persiste, Hercule cherchera à le neutraliser.\n• Catherine garde sa rancune ; le métier de Lilith l'exaspère d'autant plus.\n• Lilith a pu retenir des bribes (Catherine l'a connue jadis, elle lui a fait du tort) : Hercule assemble le puzzle et interroge les PJ sur le reste. À eux de décider ce qu'ils lui révèlent.\nRécompenses : aucune en PA indiquée par le livre (à fixer par le MJ).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa5-hercule-24",
+              "nom": "Hercule",
+              "source": "Héros païen, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Commanditaire. Intrigué par cette affaire visiblement liée à Vénus et à son panthéon, il a rapproché les articles de presse de l'apparition de Lilith dans le show-biz. Il ignore que Catherine est Déméter (il croit sa mère morte) et qu'Aphrodite a envoûté Zeus. Connaît l'adresse d'Athéna et l'identifie d'après une description.\nFiche complète : Les Petites Apocalypses, p. 21 (non reprise ici).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-hercule"
+            },
+            {
+              "id": "pa5-lilith-25",
+              "nom": "Lilith (Vanessa Lapierre)",
+              "source": "Réincarnation imparfaite d'Aphrodite (?), déesse païenne (?)",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 5,
+                "ag": 10,
+                "pe": 9,
+                "vo": 12,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 48,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption d'énergie sexuelle",
+                  "r": 8
+                },
+                {
+                  "n": "Bénédiction : beauté",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Malédiction : stérilité",
+                  "r": 8
+                },
+                {
+                  "n": "Phéromones",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Acrobatie 6, Aisance sociale 8, Baratin 7, Contorsionnisme 5, Corps à corps 4, Défense 5, Kama sutra 8, Séduction 7, Torture 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans le corps de Vanessa, 20 ans, noyée près de Saint-Malo : mince, blond foncé, yeux gris, peau très claire et taches de rousseur. Amnésique, superficielle, versatile, pas très futée mais très débrouillarde ; ne veut que s'amuser, briller et être célèbre. Déteste les enfants.\nSon aura érotique (Phéromones) déchaîne la libido de son entourage ; c'est pour cela qu'elle devient l'égérie des nuits tropéziennes, puis l'idole de la secte d'Hadès, chanteuse, et enfin star du porno.\nPhéromones : physique, constant (1 PP par minute), aire d'effet de rayon court ; test de pouvoir à l'activation, chaque personne dans la zone résiste par un test de Volonté (Volonté supra-normale et Protection de l'esprit inopérants ; anges et démons incarnés à +4 colonnes). Transmet une émotion forte (chez elle, surtout l'excitation) ; jamais de contrôle du comportement.\nCoup de poing au niveau de Corps à corps : estimation (pas d'attaque donnée).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95.",
+              "typeId": "type-pa5-lilith"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa5-ch-hercule",
+              "q": "Que révèlent les PJ à Hercule ?",
+              "opts": [
+                {
+                  "t": "Tout : Catherine est sa mère et Zeus était envoûté",
+                  "suite": "Hercule cherchera Catherine (aussi introuvable qu'Ève) et harcèlera Athéna ; il pourra peut-être arrêter sa psychanalyse."
+                },
+                {
+                  "t": "L'envoûtement de Zeus seulement",
+                  "suite": "Un poids en moins pour Hercule, sans savoir que sa mère est vivante."
+                },
+                {
+                  "t": "Rien",
+                  "suite": "Secret gardé ; Hercule peut tout de même deviner par recoupement."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340380440,
+      "updatedAt": 1795340380440
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa5-lilith",
+      "nom": "Lilith (Vanessa Lapierre)",
+      "source": "Réincarnation imparfaite d'Aphrodite (?), déesse païenne (?)",
+      "type": "paien",
+      "car": {
+        "fo": 5,
+        "ag": 10,
+        "pe": 9,
+        "vo": 12,
+        "pr": 15,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 48,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption d'énergie sexuelle",
+          "r": 8
+        },
+        {
+          "n": "Bénédiction : beauté",
+          "r": 8
+        },
+        {
+          "n": "Charme",
+          "r": 8
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 8
+        },
+        {
+          "n": "Malédiction : stérilité",
+          "r": 8
+        },
+        {
+          "n": "Phéromones",
+          "r": 8
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 12
+        }
+      ],
+      "talents": "Acrobatie 6, Aisance sociale 8, Baratin 7, Contorsionnisme 5, Corps à corps 4, Défense 5, Kama sutra 8, Séduction 7, Torture 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dans le corps de Vanessa, 20 ans, noyée près de Saint-Malo : mince, blond foncé, yeux gris, peau très claire et taches de rousseur. Amnésique, superficielle, versatile, pas très futée mais très débrouillarde ; ne veut que s'amuser, briller et être célèbre. Déteste les enfants.\nSon aura érotique (Phéromones) déchaîne la libido de son entourage ; c'est pour cela qu'elle devient l'égérie des nuits tropéziennes, puis l'idole de la secte d'Hadès, chanteuse, et enfin star du porno.\nPhéromones : physique, constant (1 PP par minute), aire d'effet de rayon court ; test de pouvoir à l'activation, chaque personne dans la zone résiste par un test de Volonté (Volonté supra-normale et Protection de l'esprit inopérants ; anges et démons incarnés à +4 colonnes). Transmet une émotion forte (chez elle, surtout l'excitation) ; jamais de contrôle du comportement.\nCoup de poing au niveau de Corps à corps : estimation (pas d'attaque donnée).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-athena",
+      "nom": "Athéna",
+      "source": "Ex-déesse païenne, prof de maths",
+      "type": "paien",
+      "car": {
+        "fo": 8,
+        "ag": 10,
+        "pe": 10,
+        "vo": 12,
+        "pr": 10,
+        "foi": 14
+      },
+      "def": 16,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 65,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Lance magique ancienne",
+          "att": 22,
+          "prec": 0,
+          "puis": 11,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 20
+        },
+        {
+          "n": "Frappe ultime",
+          "r": 20
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 12
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 20
+        },
+        {
+          "n": "Télékinésie",
+          "r": 8
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Téléportation",
+          "r": 8
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 8
+        },
+        {
+          "n": "Transfert de blessures",
+          "r": 12
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 12
+        }
+      ],
+      "talents": "Baratin 3, Combat 6 (lances 9), Culture générale 3 (Histoire 6), Défense 8, Discussion 7, Enquête 7, Fouille 7, Métier : prof de math 4, Sixième sens 7",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentaine passée, 1,70 m, brune aux cheveux ondulés, regard franc ; fixe ses interlocuteurs en silence au milieu d'une conversation. Conduit très bien (Twingo rose). Petit appartement impeccable : salle de gym, bureau plein de livres de maths, salle de bains façon thermes romains. Hercule connaît son adresse.\nA tué Zeus après le viol de Déméter ; a appris bien plus tard qu'Aphrodite l'avait envoûté. Juste et franche : refuse de mentir, n'aime pas commettre deux fois la même erreur de jugement.\nLance : précision +5, puissance +7 (66/RU+11/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-hades",
+      "nom": "Hadès (Eddy Salmingo)",
+      "source": "Ex-dieu païen, démon de Morax de grade 0",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 10,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 50,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Épée magique majeure",
+          "att": 16,
+          "prec": 0,
+          "puis": 11,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Cauchemar",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Illusions",
+          "r": 8
+        },
+        {
+          "n": "Invisibilité",
+          "r": 8
+        },
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Protection de l'âme",
+          "r": 0
+        },
+        {
+          "n": "Télékinésie",
+          "r": 8
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Téléportation",
+          "r": 8
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 8
+        }
+      ],
+      "talents": "Art 2 (peinture 4), Baratin 6, Combat 4 (épées 6), Défense 6, Discrétion 4, Discussion 5, Intimidation 6, Métier : agent artistique 3, Prestidigitation 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit gratte-papier en Enfer qui rêve de détrôner Apollon. Incarné dans un cadavre frais au look tropézien : la cinquantaine (en paraît dix de plus), trop bronzé, cheveux noirs gominés, tenue à la Dick Rivers, profil d'aigle ; parle en détachant chaque mot. Désagréable et méfiant, puis soudain mielleux ; prêche l'amour mais ne pense qu'à l'argent.\nManager de Lilith et gourou de la secte : il veut l'argent des adeptes et surtout leur énergie onirique. Prévenu par Antoine, héros païen romain qui lui est fidèle.\nÉpée : précision +4, puissance +6 (66/RU+8/M+11).\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-catherine",
+      "nom": "Catherine (Déméter, Ève)",
+      "source": "Ex-déesse païenne, ex-archange des femmes",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 12,
+        "vo": 18,
+        "pr": 14,
+        "foi": 14
+      },
+      "def": 18,
+      "prot": 0,
+      "pfFix": 15,
+      "pp": 102,
+      "seuilsFix": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "armes": [
+        {
+          "n": "Arc béni suprême (portée moyenne)",
+          "att": 24,
+          "prec": 0,
+          "puis": 10,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 16,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arts martiaux",
+          "r": 16
+        },
+        {
+          "n": "Aura de pacification",
+          "r": 16
+        },
+        {
+          "n": "Bénédiction : fertilité",
+          "r": 25
+        },
+        {
+          "n": "Champ de force",
+          "r": 16
+        },
+        {
+          "n": "Charme",
+          "r": 16
+        },
+        {
+          "n": "Conscience",
+          "r": 27
+        },
+        {
+          "n": "Détection du danger",
+          "r": 10
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 25
+        },
+        {
+          "n": "Non-détection",
+          "r": 26
+        },
+        {
+          "n": "Paralysie",
+          "r": 16
+        },
+        {
+          "n": "Peur",
+          "r": 16
+        },
+        {
+          "n": "Polymorphie",
+          "r": 10
+        },
+        {
+          "n": "Télékinésie",
+          "r": 20
+        },
+        {
+          "n": "Télépathie",
+          "r": 20
+        },
+        {
+          "n": "Téléportation",
+          "r": 20
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 25
+        }
+      ],
+      "talents": "Baratin 8, Corps à corps 8, Défense 9, Discrétion 6, Discussion 12, Enquête 7, Médecine 10, Séduction 8, Tir 5 (arcs 10), Pouvoirs propres : Miracle 2, Voyage inter-marches 8",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La petite quarantaine, brune, peau mate ; énergique, nerveuse, une violence contenue dans le regard : elle peut exploser à tout moment. Mère d'Hercule (qui la croit morte et ignore qui elle est). Victime du viol de Zeus, provoqué par Aphrodite : elle veut corriger Lilith, Aphrodite ou pas. Accompagnée d'anges.\nElle possède aussi tous les pouvoirs gratuits des supérieurs (livre de base, p. 96). Miracle et Voyage inter-marches ne sont pas dans la liste des pouvoirs de l'appli : notés dans les talents.\nConscience : spirituel, activé (5 PP), attaque spirituelle résistée par Chance/Foi, portée de combat. Libère la cible de tout contrôle mental ou spirituel (annule Charme, Domination…) et de ses illusions ou complexes.\nArc : précision +4, puissance +10 (66/RU+12/M+10). Coup de poing au niveau de Corps à corps : estimation.\nType « ange » choisi pour le camp au combat (elle mène des anges) ; seuils et PF du livre.\nCaractéristiques vérifiées sur la page rendue (p. 95).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-demons-hades",
+      "nom": "Démons engagés par Hadès",
+      "source": "Démons de grade 1 (gros bras)",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Katana",
+          "att": 10,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "Poignard",
+          "att": 10,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 8
+        },
+        {
+          "n": "Art de combat",
+          "r": 8
+        },
+        {
+          "n": "Caméléon",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 3 (arme de prédilection 5+), Défense 6+, Discrétion 4, Médecine 2, Tir 3 (arme de prédilection 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le livre ne donne ni leur nombre ni leurs caractéristiques. Valeurs reprises du « Démon de grade 1 (combattant) » du bestiaire (Memento Flatula, p. 52) : estimation, à adapter à la puissance des PJ.\nIls filent discrètement les PJ, puis tentent de les coincer pour savoir où est Lilith. Peuvent être repérés, semés ou interrogés (ils avouent travailler pour Hadès et savent que la police recherche les PJ).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-anges-catherine",
+      "nom": "Anges de Catherine",
+      "source": "Anges qui accompagnent Catherine",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 12,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Pistolet",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 3, Défense 3, Discrétion 3, Enquête 3, Tir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Aucune fiche dans le livre : ange de grade 1 générique, valeurs estimées. Ils cherchent Lilith avec Catherine et sont présents aux Hots d'or.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-policiers",
+      "nom": "Policiers",
+      "source": "Agents lancés sur les traces des PJ",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Pistolet de service",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Conduite 2, Corps à corps 2, Défense 2, Enquête 2, Fouille 2, Tir 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Aucune fiche dans le livre : policiers ordinaires, valeurs estimées. Persuadés que les PJ ont enlevé Lilith (dénonciation d'Hadès ou simple déduction).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-delaivre",
+      "nom": "Commissaire Justine Délaivre",
+      "source": "Police de Saint-Malo",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "45 ans, taille moyenne, un peu ronde, très jolies jambes, châtain ; brusque, sûre d'elle, déteste perdre son temps (« bon allez, on active les neurones ! »). Chargée de l'affaire de la noyée, elle a un sentiment d'inachevé : elle a identifié Vanessa grâce à son ancien patron (un Shopi parisien) et retrouvé ses parents, rustres et indifférents. Elle veut venir à Paris même sans enquête officielle. Son attitude dépend de l'impression que lui ont faite les PJ.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-louise",
+      "nom": "Louise Delafosse",
+      "source": "Infirmière à l'hôpital de Saint-Malo",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Crie au miracle dans la presse. Gentille et dévote : Lilith l'a attendrie pour s'évader (vêtements, 80 €, café drogué pour le vigile). Peut raconter la convalescence et la guérison anormalement rapide.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-tartin",
+      "nom": "Bruno Tartin",
+      "source": "Promoteur immobilier de Melun, meurtrier de Vanessa",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La petite quarantaine, grand et baraqué, blond aux yeux bleu froid, élégant, plein d'humour : un joli-cœur qui cache un fou furieux. Vanessa s'étant refusée à lui sur son bateau, il l'a assommée d'un coup de pichet et elle est tombée à l'eau ; il a écourté son séjour et regagné Melun. Retrouvé par les PJ, il ment (accident, ou « jamais vu cette fille »).\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-hercule",
+      "nom": "Hercule",
+      "source": "Héros païen, patron de la DTC",
+      "type": "paien",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Commanditaire. Intrigué par cette affaire visiblement liée à Vénus et à son panthéon, il a rapproché les articles de presse de l'apparition de Lilith dans le show-biz. Il ignore que Catherine est Déméter (il croit sa mère morte) et qu'Aphrodite a envoûté Zeus. Connaît l'adresse d'Athéna et l'identifie d'après une description.\nFiche complète : Les Petites Apocalypses, p. 21 (non reprise ici).\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-antoine",
+      "nom": "Antoine",
+      "source": "Héros païen romain fidèle à Hadès",
+      "type": "paien",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fêtard de Saint-Tropez qui a soupçonné de la troisième Force chez Lilith et a prévenu Hadès. Peut servir de piste ou d'homme de main.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    },
+    {
+      "id": "type-pa5-adeptes",
+      "nom": "Adeptes de la secte",
+      "source": "Paumés béats, babas cool et amateurs de galipettes",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tous consentants et enthousiastes, ils paient très cher au regard de leurs moyens et répètent « amour » à tout bout de champ. Quelques membres dévoués aident Hadès à rechercher Lilith.\nPas de caractéristiques dans le livre.\nSource : Les Petites Apocalypses, chap. 10 « On n'encule pas les mouches avec du vinaigre », p. 84-95."
+    }
+  ],
+  "memoire": []
+}

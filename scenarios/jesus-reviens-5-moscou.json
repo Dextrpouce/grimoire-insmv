@@ -1,0 +1,2171 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "jr5-moscou",
+      "nom": "Jésus Reviens ! – 5. Moscou",
+      "resume": "Campagne « Jésus Reviens ! » (MV, anges de grade 1 à 2 envoyés par Ange et Alain, avec Yves, prévenus par Michel, via leur chargée de mission Régine, pour enquêter sur l'opération JR), épisode moscovite. Strachnov, ange de Georges qui dirige en sous-main l'Ordre de Saint-Georges en Russie, s'est rallié à l'opération JR par Francesco et Semper Fidelis : avec le PCR de Vladimir Termienko, il veut faire réveiller la momie de Lénine par un sorcier (Iossef, fourni par Katioucha, démon de Hornet) le jour de la fête nationale, lancer une insurrection communiste, puis faire proclamer par Lénine le retour de l'orthodoxie et du tsar. Les PJ doivent empêcher le réveil ou décapiter le mouvement, tout en rassemblant des preuves contre Georges (index G), l'un des trois archanges visés avec Laurent et Dominique.",
+      "notes": "Source : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89 ; TRIC p. 9-10 ; Index d'Accusation p. 12.\n\nCommanditaires des PJ : Ange et Alain (avec Yves), prévenus par Michel ; les PJ ne connaissent que Régine. Georges n'est pas un commanditaire : c'est l'un des archanges visés (index G), et Strachnov est son ange.\n\nContexte (résumé) :\n• Strachnov (Miroslav Makarovski) est un des anges de Georges restés sur Terre quand Georges a cédé ses troupes à Laurent, mais toujours fidèles à leur archange ; il préside dans l'ombre l'Ordre de Saint-Georges (ordre militaire et nobiliaire officiel depuis la chute de l'URSS) et dirige Nouvelle Russie, groupuscule nationaliste-orthodoxe dont le bras armé est Mémoire (skins encadrés par Dimitri Polzoski et des soldats de Dieu).\n• Il a rencontré Semper Fidelis et Francesco, qui l'ont mis dans le secret de l'opération JR. Il propose à Termienko (PCR) de ressusciter Lénine pour prendre le pouvoir, en taisant que Lénine rendra ensuite le pouvoir au tsar et à l'Église. Francesco, sur conseil d'Emmanuel, lui présente Pallard, qui trouve Katioucha.\n• Pallard est soupçonné de trahison par l'Enfer (dénoncé par Medes, bras droit de Mathias) : Katioucha prévient Hornet, nouveau prince-démon des morts, qui ne dit rien à personne. Iossef, le sorcier choisi, est tenu par Edom (démon de Mathias). Medes sait donc qu'il se passe quelque chose et peut aiguiller les PJ.\n• Pas de chronologie : un seul événement, le réveil de Lénine (seuil 45 de la TRIC). S'il a lieu, la Russie plonge pour longtemps dans le chaos.\n\nFaçons de gagner : neutraliser Strachnov avant le jour J (coordinateur indispensable) ; neutraliser Iossef ; transmettre au gouvernement russe (via Edom) la liste des complices ou des preuves convaincantes assez tôt ; après le réveil, abattre Iossef ou Strachnov et neutraliser Lénine au Kremlin.\n\nModificateurs de la TRIC (Moscou) :\n• Insurrection sur la Place Rouge et réveil de Lénine : +10\n• L'insurrection n'a pas lieu et Lénine repose en paix : −2\n• Lénine donne le pouvoir à l'Église orthodoxe russe : +10\n• L'Église orthodoxe russe donne le pouvoir à Strachnov et le couronne tsar : +10\n• Par semaine de guerre civile en Russie : +1\n• Par semaine où Strachnov est tsar : +3\n• L'Ordre de Saint-Georges est neutralisé : −5\n• Les démocrates récupèrent le pouvoir : −10\n• Les communistes récupèrent le pouvoir : −10\n• Par semaine où les communistes ont le pouvoir : +2\nLiés à Moscou ailleurs : réunion Strachnov-Francesco-Immaculus réussie (Paris) +2. Seuil 45 : réveil de Lénine (+10), puis pouvoir à l'Église (+10) et Strachnov tsar (+10). Seuil 65 : la Russie tsariste décide de raser la Tchétchénie.\n\nPreuves de l'Index d'Accusation (Moscou) :\n• Dossiers de l'appartement de Nouvelle Russie : 2G+1L\n• Témoignage de Dimitri Polzoski : 0 à 2G\n• Preuves que les skins de Mémoire sont allés chez Dixie Securities : 1L\n• Témoignage des soldats de Dieu de Mémoire : 1L (sauf si Dimitri a parlé)\n• Témoignage de Iossef : 0 à 3G\n• Témoignages des Komsomols : 0 à 1G\n• Dossiers du Palais du Peuple : 1 à 4G\n• Témoignage de membres communistes du complot : 0 à 1G\n• Témoignage de Katioucha : 0 à 5G\n• Témoignage de Strachnov : 2 à 5G\nLié : témoignage de Pallard sur Katioucha (Paris) 1 à 2D.\nLes fourchettes dépendent de la qualité de la preuve (le MJ juge). Seules les preuves transmises à Régine entrent dans l'IA officiel ; les méchants réagissent à l'IA.\n\nRécompenses : PA selon l'IA (règle de la campagne), pas de barème propre au chapitre.\nFiches : caractéristiques du livre (niveaux convertis), armes du livre (Kalachnikov −2/+5, pistolet russe −3/+4, sabre cosaque 0/+2, batte −1/+2) ; valeurs estimées signalées dans les notes des fiches. Les cinquante anges de l'Ordre et Medes n'ont pas de fiche.",
+      "scenes": [
+        {
+          "id": "jr5-sc-arrivee",
+          "nom": "1. En chantant : arriver à Moscou",
+          "lieu": "Moscou – avant ou après le jour J",
+          "notes": "Pas de chronologie : un seul vrai événement, le réveil de Lénine le jour de la fête nationale (seuil 45 de la TRIC). Tout dépend du moment où les PJ arrivent.\n• Avant : ils ont appris ailleurs (surtout en Floride, ou à Paris par Pallard) qu'il se trame quelque chose ; ils arrivent avec des adresses liées au complot (Nouvelle Russie, Mémoire, Iossef, Milady…).\n• Après : Lénine réveillé, guerre civile, blocus ; quasi impossible d'entrer dans le pays. À éviter : donner des indices plus tôt pour qu'ils arrivent à temps, ou les laisser forcer le blocus.\nRattrapage : Medes (démon de Mathias, bras droit qui a dénoncé Pallard à l'Enfer) sait par Iossef que quelque chose se prépare. S'il apprécie les PJ, il leur souffle l'affaire en donnant-donnant : il ne veut pas envoyer ses propres démons (trop visible pour les Emmanuel), les PJ deviennent ses envoyés officieux. Il leur donne Edom comme contact.\nAmbiance : ville immense, plate et aérée, avenues démesurées, métro-palais, poids de l'Histoire partout, gens fermés dans la rue.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-timing",
+              "q": "Quand les PJ arrivent-ils à Moscou ?",
+              "opts": [
+                {
+                  "t": "Avant le jour J",
+                  "suite": "Enquête libre dans les lieux du scénario ; but : neutraliser Strachnov ou Iossef, ou faire tomber la liste des complices aux mains du gouvernement."
+                },
+                {
+                  "t": "Après le réveil de Lénine",
+                  "suite": "Blocus et chaos : passer directement à la scène 10 (La maladie d'amour) pour limiter les dégâts."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-nouvelle-russie",
+          "nom": "2. Le siège de Nouvelle Russie",
+          "lieu": "Appartement de huit pièces, grande banlieue de Moscou",
+          "notes": "QG secret du groupuscule de Strachnov : porte blindée, deux ou trois gros bras de Mémoire en permanence, une vingtaine de militants qui se relaient (téléphone, affiches, vodka, samovar). Aucun visiteur toléré. Miroslav y vit quand il ne roule pas dans sa Mercedes aux vitres teintées ; il n'y reçoit aucun complice important.\nDans le foutoir (antiquités tsaristes et soviétiques, armes, argent) : deux ordinateurs à clavier cyrillique, avec les coordonnées de pontes du PCR, de l'armée et du KGB, et de tous les complices du putsch avec leur rôle. Pas une preuve juridique, mais le FSB (ou le FBI) s'en contentera.\n• Remise au gouvernement russe assez tôt : arrestations ou surveillance suffisantes pour empêcher le putsch. Très grande victoire. Edom peut faire suivre la liste aux bonnes personnes très vite.\n• Strachnov s'il est là : une trentaine de soldats de Dieu de Mémoire surarmés autour de lui. Il fuit par le trou aménagé dans le plafond de son bureau (appartement désert au-dessus, loué par Nova Russkia) et fait sauter les ordinateurs à la grenade, quitte à sacrifier ses hommes.\n• Strachnov arrêté avant le jour J : pas de putsch (il est le coordinateur indispensable).\nIA : dossiers de l'appartement 2G+1L ; témoignage de Strachnov 2 à 5G.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-strachnov-1",
+              "nom": "Strachnov (Miroslav Makarovski)",
+              "source": "Ange de Georges, grade 3 (en disponibilité)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 12,
+                "pe": 8,
+                "vo": 14,
+                "pr": 12,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 49,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre court de cosaque béni et ancien",
+                  "att": 18,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Colère divine",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Lueur insoutenable",
+                  "r": 8
+                },
+                {
+                  "n": "Némésis",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 6
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 8
+                }
+              ],
+              "talents": "Corps à corps 6, Combat 3 (épées 9), Défense 7, Discrétion 4, Discussion 5, Enquête 4, Fouille 4, Tir 2 (armes d'épaule 4), Aisance sociale 5, Athlétisme 7, Culture générale 2+ (vie des Cosaques et histoire de la Russie de l'an 800 à nos jours 6), Haine des communistes 4, Savoir occulte 3 (Ordre de Saint-Georges 8), Savoir occulte 2 (opération JR 4), Savoir occulte 2 (Église orthodoxe russe 5), Anglais, Géorgien, Art 2 (chants grégoriens 5), Savoir militaire 2 (commandement de compagnie mécanisée et de Cosaques 5), Équitation 4, Survie 3 (toundra 6)",
+              "esquive": true,
+              "volonte": false,
+              "notes": "48 ans, 1,92 m, blond aux yeux gris. Sur Terre depuis plus de quinze siècles, un des plus fidèles de Georges. Officiellement sans archange, il est secrétaire du chapitre moscovite de l'Ordre de Saint-Georges (en réalité son plus haut gradé) et chef du groupuscule Nouvelle Russie.\nRusé, calme, réfléchi malgré son fanatisme ; rêve d'une théocratie avec un tsar autocrate, chef de l'Église orthodoxe, et de Moscou « troisième Rome ». Hait les communistes mais s'allie à eux par pragmatisme.\nCoordinateur indispensable : s'il est neutralisé avant le jour J, le putsch n'a pas lieu. Toujours entouré d'une trentaine de soldats de Dieu de Mémoire ; fuit un combat perdu (trou dans le plafond de son bureau) en détruisant les ordinateurs à la grenade.\nTémoignage : 2 à 5G à l'Index d'Accusation.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-strachnov"
+            },
+            {
+              "id": "jr5-sdd-memoire-2",
+              "nom": "Soldats de Dieu de Mémoire",
+              "source": "Soldats de Dieu de Strachnov déguisés en skins",
+              "type": "soldat",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 7,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 2, Défense 2+, Discrétion 2, Fouille 3, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR et Grand Jeu en Russie 1), Passer pour un skin de Mémoire 2+, Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fondus dans le groupe Mémoire, ils se connaissent entre eux ; les skins humains ne savent pas qui est soldat de Dieu. Chassent les Caucasiens dans les rues. Une vingtaine, parmi les plus tarés, gardent des preuves de leur séjour au camp d'Okefenokee (Géorgie, USA) : passés par groupes de cinq via Miami il y a moins d'un an, pour trois mois d'entraînement commando (Stonewall Jackson, et « Môssieur » Medlocke, c'est-à-dire Semper Fidelis).\nTémoignage : 1L (sauf si Dimitri a parlé) ; preuves du séjour chez Dixie Securities : 1L.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-sdd-memoire"
+            },
+            {
+              "id": "jr5-frappes-3",
+              "nom": "Petites frappes de Mémoire",
+              "source": "Skins humains du groupuscule",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Défense 2, Discrétion 2, Fouille 2, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2), Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Paumés qui ont trouvé en Dimitri un père et des boucs émissaires. Une centaine en tout, répartis en groupes, au parc Gorky.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-frappes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-liste",
+              "q": "Que font les PJ des ordinateurs de Nouvelle Russie ?",
+              "opts": [
+                {
+                  "t": "Liste remise au gouvernement (via Edom) avant le jour J",
+                  "suite": "Le putsch échoue : « L'insurrection n'a pas lieu et Lénine repose en paix » (TRIC −2). Copie gardée : dossiers 2G+1L."
+                },
+                {
+                  "t": "Gardée pour le procès seulement",
+                  "suite": "Dossiers 2G+1L à l'IA, mais le putsch reste possible."
+                },
+                {
+                  "t": "Strachnov a eu le temps de tout faire sauter",
+                  "suite": "Plus de liste ; il faut passer par Dimitri, Termienko ou le Palais du Peuple."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr5-ch-strachnov",
+              "q": "Strachnov est-il neutralisé avant le jour J ?",
+              "opts": [
+                {
+                  "t": "Oui (capturé ou tué)",
+                  "suite": "Pas de putsch. Capturé, il peut témoigner : 2 à 5G."
+                },
+                {
+                  "t": "Il s'enfuit",
+                  "suite": "Il redouble de prudence ; le jour J est maintenu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-gorky",
+          "nom": "3. Le parc Gorky",
+          "lieu": "Parc paysager du centre de Moscou, buvette abandonnée",
+          "notes": "Repaire de Mémoire : une centaine de skins en plusieurs groupes, qui squattent pelouses et buvettes l'été, tunnels piétons l'hiver ; adresse officielle : une buvette abandonnée où brûle un feu, ambiance post-apocalyptique. Bière, chasse au touriste ; la milice ferme les yeux contre des pots-de-vin.\nLes soldats de Dieu de Strachnov s'y fondent (même tenue, même attitude) ; Dimitri traite tout le monde pareil, ce qui soude le groupe. Il y est souvent, sauf quand il accompagne Strachnov.\n• Dimitri : connaît le complot dans les grandes lignes, Iossef et ses coordonnées, le rituel prévu à la fête nationale ; il parle s'il est interrogé un peu rudement (et veut se soulager). Méfiance : sa liste de suspects est trop large, la transmettre telle quelle fait arrêter des innocents.\n• Une vingtaine des plus tarés gardent des preuves de leur séjour aux USA (via Miami, par groupes de cinq) ; un peu bousculés, ils avouent le stage commando au camp d'Okefenokee avec Stonewall Jackson et Medlocke (Semper Fidelis).\nIA : témoignage de Dimitri 0 à 2G ; preuves du séjour chez Dixie Securities 1L ; témoignage des soldats de Dieu de Mémoire 1L (sauf si Dimitri a parlé).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-dimitri-4",
+              "nom": "Dimitri Polzoski",
+              "source": "Soldat de Dieu de Strachnov, chef de Mémoire",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Sabre cosaque",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 3
+                }
+              ],
+              "talents": "Savoir occulte 1 (Ordre de Saint-Georges et opération JR 2+), Corps à corps 2, Défense 3+, Combat 1 (épées 3+), Tir 1+ (armes d'épaule 3+), Culture générale 1 (Église orthodoxe russe 2+), Ukrainien, Hobby (pogrom) 2, Athlétisme 2+, Savoir militaire 1 (tactique moderne russe 2), Intimidation 2+",
+              "esquive": false,
+              "volonte": true,
+              "notes": "48 ans, 1,76 m, blond aux yeux bleus. Honnête et droit, il obéit mais sait que son supérieur fait le mal (il s'en est confessé à son pope, qui lui a dit d'obéir). Se défoule en cognant. Connaît le complot dans ses grandes lignes, les noms et coordonnées de Iossef, a croisé beaucoup de dignitaires complices (mais sa liste de suspects est trop longue : la transmettre telle quelle fait arrêter des innocents). Sait que Lénine se réveillera par un rituel satanique le jour de la fête nationale, ce qui le dégoûte.\nInterrogé, il crache tout et se sent mieux après : témoignage 0 à 2G. Jour J : avec l'élite de ses hommes près du Goum, sur la Place Rouge.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-dimitri"
+            },
+            {
+              "id": "jr5-sdd-memoire-5",
+              "nom": "Soldats de Dieu de Mémoire",
+              "source": "Soldats de Dieu de Strachnov déguisés en skins",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 7,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 2, Défense 2+, Discrétion 2, Fouille 3, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR et Grand Jeu en Russie 1), Passer pour un skin de Mémoire 2+, Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fondus dans le groupe Mémoire, ils se connaissent entre eux ; les skins humains ne savent pas qui est soldat de Dieu. Chassent les Caucasiens dans les rues. Une vingtaine, parmi les plus tarés, gardent des preuves de leur séjour au camp d'Okefenokee (Géorgie, USA) : passés par groupes de cinq via Miami il y a moins d'un an, pour trois mois d'entraînement commando (Stonewall Jackson, et « Môssieur » Medlocke, c'est-à-dire Semper Fidelis).\nTémoignage : 1L (sauf si Dimitri a parlé) ; preuves du séjour chez Dixie Securities : 1L.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-sdd-memoire"
+            },
+            {
+              "id": "jr5-frappes-6",
+              "nom": "Petites frappes de Mémoire",
+              "source": "Skins humains du groupuscule",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Défense 2, Discrétion 2, Fouille 2, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2), Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Paumés qui ont trouvé en Dimitri un père et des boucs émissaires. Une centaine en tout, répartis en groupes, au parc Gorky.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-frappes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-dimitri",
+              "q": "Dimitri parle-t-il ?",
+              "opts": [
+                {
+                  "t": "Oui, il crache tout",
+                  "suite": "Témoignage 0 à 2G ; mène à Iossef et au Goum le jour J. Le témoignage de ses soldats ne compte plus."
+                },
+                {
+                  "t": "Non, ou il est tué",
+                  "suite": "Témoignage des soldats de Dieu de Mémoire (1L) et preuves Dixie (1L) restent possibles."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-loubianka",
+          "nom": "4. La Loubianka",
+          "lieu": "Siège du FSB (ex-KGB), près de la Place Rouge",
+          "notes": "Bâtiment pharaonique où rouille la statue de Dzerjinski. Edom y occupe un poste obscur aux douanes, couverture d'agent du contre-espionnage.\nContact donné par Medes. Avec des preuves ou des soupçons sérieux sur le putsch, il fait le sceptique (« sans doute bidon ») tout en tirant les vers du nez des PJ, puis porte tout à ses chefs et en récolte les lauriers. Il niera les avoir vus et ne leur reconnaîtra rien.\nMême roulés, les PJ empêchent le coup d'État s'ils l'ont prévenu tôt et de façon convaincante.\nEdom tient Iossef par le chantage (exercice illégal de la médecine) mais garde cet atout pour lui.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr5-edom-7",
+              "nom": "Edom (Vassiliev Dormoski)",
+              "source": "Démon de Mathias, grade 2, agent du FSB",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 8,
+                "vo": 10,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 27,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet russe (pénétration importante, portée moyenne)",
+                  "att": 4,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Apparence démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 6
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Aisance sociale 8, Baratin 6, Discussion 7, Défense 3, Culture générale 2 (vie dans la Russie post-soviétique et doctrine du PCR 5), Savoir d'espion 2 (contre-espionnage à la KGB 4), Savoir occulte 2+ (le Grand Jeu en Russie et affaire Mathias 5), Discrétion 5, Enquête 6, Fouille 5, Intrusion 4, Tir 1 (armes de poing 2), Anglais, Français, Espagnol, Ukrainien, Géorgien, Biélorusse, Métier (agent du FSB) 4",
+              "esquive": false,
+              "volonte": true,
+              "notes": "39 ans, 1,72 m, blond aux yeux noirs. Contact que Medes donne aux PJ en Russie. Poste obscur aux douanes de la Loubianka, en réalité agent du contre-espionnage, bien introduit au gouvernement et dans la sécurité.\nAgent quadruple sans loyauté (infiltré chez les rebelles d'Emmanuel tout en servant Mathias, etc.), ne cherche qu'à s'en sortir. Fait chanter Iossef (exercice illégal de la médecine) sans encore s'en servir ; Iossef ne sait pas qu'il est un démon.\nFace aux PJ : sceptique de façade, très intéressé en fait ; il récupère tout, le rapporte à ses chefs et niera les avoir vus. Prévenu tôt et de façon convaincante, il fait échouer le coup d'État.\nLe livre l'appelle « ange de Mathias » ; ses pouvoirs (Apparence démoniaque) en font un démon.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-edom"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-edom",
+              "q": "Les PJ préviennent-ils Edom à temps, avec des éléments convaincants ?",
+              "opts": [
+                {
+                  "t": "Oui, tôt et preuves à l'appui",
+                  "suite": "Le FSB démantèle le complot : pas d'insurrection (TRIC −2). Edom s'en attribue tout le mérite."
+                },
+                {
+                  "t": "Trop tard ou trop vague",
+                  "suite": "Edom empoche les infos sans agir ; le jour J a lieu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-iossef",
+          "nom": "5. L'épicerie de Iossef",
+          "lieu": "Petite épicerie de la Prospiekt Mira (perspective de la Paix)",
+          "notes": "Iossef vend nourriture et bricoles et joue le marabout pour les vieilles du quartier, en forçant son accent géorgien. Il sait seulement qu'il doit, le jour de la fête nationale, se présenter endimanché avec tout son matériel et sa carte de membre d'honneur du PCR aux gardes de la Place Rouge pour entrer dans le mausolée. Il se doute d'une abomination, mais sait que s'il se défile, les gros bras du PCR le rattraperont.\nUne voiture de milice stationne devant l'échoppe et le suit le soir : quatre miliciens du service d'ordre du PCR (élite des Komsomols, mission venant directement de Termienko) veillent sur lui et sur sa tranquillité. Si les PJ sont peu discrets : combat rapide et sanglant, les miliciens se font tuer pour lui. Interrogés, ils ne savent presque rien.\n• Neutraliser ou enlever Iossef : plus de réveil de Lénine.\nIA : témoignage de Iossef 0 à 3G ; témoignages des Komsomols 0 à 1G.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-iossef-8",
+              "nom": "Iossef Djoukov",
+              "source": "Sorcier géorgien, épicier et rebouteux",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 6,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 7
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir occulte 1 (sorcellerie 3), Discrétion 2, Métier (épicier) 3, Métier (rebouteux charlatan) 3+, Défense 2, Faire pitié 3+, Culture générale 1 (vie dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR 1), Baratin 3, Médecine 1+, Technique 0+ (herboristerie 1+), Séduction 2+, Aisance sociale 2+, Hobby (Spartak de Moscou) 1+, Basse sorcellerie 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, 1,72 m, blond aux yeux bleus. « Docteur Iossef », Raspoutine de quartier qui vend de la poudre de perlimpinpin aux vieilles du coin. Admirateur de Hornet (sans avoir compris qu'il est devenu prince-démon), recruté par Katioucha.\nSait seulement qu'il doit se présenter le jour de la fête nationale, en costume et avec tout son matériel, aux gardes de la Place Rouge avec une carte de membre d'honneur du PCR, pour entrer dans le mausolée. Se doute d'une abomination, n'ose pas refuser. Fuit dès que ça tourne mal. Témoignage 0 à 3G.\nPouvoirs de sorcier (absents des règles de l'appli) : Contrôle des morts-vivants, Créer des morts-vivants. C'est lui qui réveille et contrôle Lénine : l'abattre décapite le mouvement.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-iossef"
+            },
+            {
+              "id": "jr5-komsomols-9",
+              "nom": "Miliciens des Komsomols et gardes du PCR",
+              "source": "Service d'ordre du parti",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Culture générale 1 (doctrine du PCUS 2), Survie 1 (Russie post-soviétique 2+), Savoir militaire 1 (tactique 2), Athlétisme 2, Hobby (collection des insignes soviétiques) 1+, Tir 2+, Corps à corps 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Nostalgiques ignares et dévoués : savent que quelque chose se prépare, pas quoi. Quatre d'entre eux, l'élite des Jeunesses communistes, protègent Iossef sur ordre de Termienko et mourront pour cette mission. Le service d'ordre du Palais du Peuple (anciens du KGB, souvent encore au FSB) est plus professionnel : même profil, à durcir au besoin.\nDéfense non donnée : 2 (niveau 1). Témoignage : 0 à 1G.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-komsomols"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-iossef",
+              "q": "Que devient Iossef ?",
+              "opts": [
+                {
+                  "t": "Neutralisé ou enlevé avant le jour J",
+                  "suite": "Pas de réveil : « L'insurrection n'a pas lieu et Lénine repose en paix » (TRIC −2). Témoignage 0 à 3G s'il est vivant."
+                },
+                {
+                  "t": "Laissé en place",
+                  "suite": "Le jour J, il entre au mausolée avec des membres du FSB et réveille Lénine."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-cathedrale",
+          "nom": "6. La cathédrale Saint-Pierre-et-Saint-Paul",
+          "lieu": "Cathédrale orthodoxe en béton, à deux pas de la Place Rouge et du Kremlin",
+          "notes": "Rebâtie sur l'emplacement de l'originale dynamitée par Staline, c'est le vrai QG des anges de l'Ordre de Saint-Georges. La cinquantaine d'anges prévus pour le putsch logent dans le quartier et font les derniers préparatifs, noyés parmi les nobliaux convoqués à une « réunion exceptionnelle » de l'Ordre (l'Ordre de Saint-Georges ou la Mémoire de la Russie) : une sorte de Klonklave à la russe, qui place la haute noblesse près du Kremlin pour acclamer le passage du pouvoir au tsar.\nLe clergé a flairé quelque chose, mais Strachnov a étouffé l'affaire : le Paradis n'est pas au courant. Va-et-vient suspect d'hommes et de femmes derrière l'iconostase (interdit aux visiteurs), comme à Notre-Dame.\nLes anges de l'Ordre sont très fermés, surtout envers des catholiques occidentaux ; en en faisant boire un ou deux, on apprend que l'opération a lieu le jour de la fête nationale et doit rendre sa puissance à l'Ordre, à Georges et à la Russie.\nUn assaut serait suicidaire (cinquante anges, sans fiche dans le livre).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr5-sc-palais",
+          "nom": "7. Le Palais du Peuple",
+          "lieu": "Bâtiment stalinien, état-major du putsch côté PCR",
+          "notes": "Le PCR fournit 95 % des hommes et de la logistique : prise de commissariats, casernes, radios et bâtiments officiels dans plus de cent villes, plus une « opération marketing » : le réveil de Lénine. Trois étages bourdonnent ; le service d'ordre (anciens du KGB, souvent encore au FSB) contrôle sévèrement les conjurés. Les membres de l'Ordre et du PCR placés dans l'armée, le gouvernement et le FSB étouffent les signaux d'alerte.\nLe bâtiment est ouvert au public, mais les étages du complot sont gardés : il faut des cartes du parti, qu'on peut subtiliser à des membres préalablement suivis. Une fois dedans, avec un air grave et un peu de russe, on entend beaucoup (langue de bois pleine de sous-entendus). Bureaux ouverts et dossiers mal rangés, surtout la nuit et pendant les réunions de cellules : en voler ou les photographier au numérique.\nVladimir Termienko y passe ses journées, épuisé mais avenant avec les étrangers cultivés et les journalistes ; secoué, il avoue tout.\nIA : dossiers du Palais du Peuple 1 à 4G ; témoignage de membres communistes du complot 0 à 1G.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr5-termienko-10",
+              "nom": "Vladimir Termienko",
+              "source": "Secrétaire du PCR (Parti communiste russe), humain",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 5,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet russe (pénétration importante, portée moyenne)",
+                  "att": 4,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Baratin 2, Culture générale 2 (marxisme-léninisme 3), Séduction 2, Aisance sociale 2, Hobby (jeu vidéo) 2, Savoir occulte 1 (histoire secrète du stalinisme 2), Savoir d'espion 1 (espionnage style guerre froide 2), Métier (cadre du PCUS) 3+, Tir 1 (armes de poing 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, 1,72 m, blond roux aux yeux verts. Apparatchik de père en fils, étoile montante du PCR, moderne, cultivé, anglophone, communiste sincère qui veut un PCR réformé. Voit le réveil de Lénine comme un grand coup médiatique « à l'hollywoodienne » sans savoir comment Strachnov compte s'y prendre.\nAffable avec les étrangers cultivés et les journalistes ; laisse filtrer des allusions aux mafieux et nouveaux Russes « qui vont payer ». Secoué fort, il avoue tout : grande partie du volet militaire, politique et médiatique, beaucoup de noms (témoignage de membre communiste du complot : 0 à 1G).\nDéfense non donnée : 2 (niveau 1).\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-termienko"
+            },
+            {
+              "id": "jr5-komsomols-11",
+              "nom": "Miliciens des Komsomols et gardes du PCR",
+              "source": "Service d'ordre du parti",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Culture générale 1 (doctrine du PCUS 2), Survie 1 (Russie post-soviétique 2+), Savoir militaire 1 (tactique 2), Athlétisme 2, Hobby (collection des insignes soviétiques) 1+, Tir 2+, Corps à corps 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Nostalgiques ignares et dévoués : savent que quelque chose se prépare, pas quoi. Quatre d'entre eux, l'élite des Jeunesses communistes, protègent Iossef sur ordre de Termienko et mourront pour cette mission. Le service d'ordre du Palais du Peuple (anciens du KGB, souvent encore au FSB) est plus professionnel : même profil, à durcir au besoin.\nDéfense non donnée : 2 (niveau 1). Témoignage : 0 à 1G.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-komsomols"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-palais",
+              "q": "Les PJ obtiennent-ils les dossiers du Palais du Peuple ?",
+              "opts": [
+                {
+                  "t": "Oui (vol ou photos)",
+                  "suite": "Dossiers 1 à 4G selon la qualité ; de quoi alerter le gouvernement via Edom."
+                },
+                {
+                  "t": "Ils sont repérés",
+                  "suite": "Le service d'ordre du PCR intervient ; le complot se méfie."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-milady",
+          "nom": "8. Le Milady",
+          "lieu": "Bar à putes, boîte de nuit et restaurant au rez-de-chaussée et au sous-sol d'un HLM géant",
+          "notes": "Repaire de Katioucha, qui en est gérant et barman : blanchiment, traite, trafic de cadavres. Entrée invisible de l'extérieur, réservée aux habitués. 500 m² sur trois niveaux (deux ouverts au public) : alcôves, bars, pistes, backrooms, salles de snuff-movies, temples satanistes, réserve à zombies ; plus on descend, plus c'est malsain. Le pseudo-restaurant est un haut lieu des négociations mafieuses ; la milice ne descend jamais.\nSécurité discrète : clients tous armés avec leurs gardes du corps (équilibre de la terreur). Plusieurs tueurs de la mafia et une trentaine de putes zombies (organes vendus) gardent la boîte ; Katioucha en envoie une ou plusieurs régler les problèmes. Soirées nécro avec ses amis sorciers.\nKatioucha connaît Pallard et Iossef, ignore l'opération JR mais trouve louche cette histoire de momie ; ses rapports s'arrêtent à Hornet. Menacé physiquement, il lâche tout plutôt que mourir.\nIA : témoignage de Katioucha 0 à 5G.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-katioucha-12",
+              "nom": "Katioucha (Igor Borisovitch Klinogof)",
+              "source": "Démon de Hornet, grade 1, patron du Milady",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 7,
+                "pe": 8,
+                "vo": 10,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 14,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Dard (membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 2
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                }
+              ],
+              "talents": "Aisance sociale 4, Baratin 4, Combat 4, Culture générale 1 (vie en Russie post-soviétique 3), Savoir criminel 1 (mafia russe et traite des blanches 2+), Défense 3+, Discussion 3, Discrétion 2, Savoir occulte 1 (le Grand Jeu en Russie et les sorciers russes 2), Enquête 2, Fouille 2+, Séduction 2, Kama sutra 3+, Hobby (partouze nécrophile) 2, Faire semblant de boire 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "51 ans, 1,82 m, blond aux yeux verts. Démon fonctionnaire : fait le mal consciencieusement aux heures de bureau, veut qu'on lui fiche la paix. Gère le Milady (blanchiment, traite, trafic de cadavres) et recense les sorciers de Moscou pour son nouveau prince-démon.\nContacté par Pallard, il a prévenu Hornet (qui n'en a parlé à personne, pas même à Andromalius) et a envoyé un pion jetable, Iossef. Ignore tout de l'opération JR. Prend les PJ pour des collègues blasés et joue au mafieux qu'on interroge ; menacé physiquement, il préfère tout lâcher que mourir : témoignage 0 à 5G.\nArme : dard (Membre exotique) sans valeurs dans le livre, précision 0 / puissance +2 estimées.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-katioucha"
+            },
+            {
+              "id": "jr5-mafiosi-13",
+              "nom": "Mafiosi russes",
+              "source": "Tueurs et gardes du corps de la mafia",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 3,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Pistolet russe (pénétration importante, portée moyenne)",
+                  "att": 4,
+                  "prec": -3,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir criminel 1 (trafic en tout genre 2), Corps à corps 2, Tir 1 (armes d'épaule 2), Fouille 2+, Culture générale 1+ (milieux mafieux en Russie 2+), Torture 2, Trinquer 2, Tir 1+ (armes de poing 2), Défense 2, Intimidation 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Brutes sans foi ni loi, surarmées, qui répondent à une insulte par une rafale. Gardent le Milady et accompagnent chaque groupe de clients.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-mafiosi"
+            },
+            {
+              "id": "jr5-putes-14",
+              "nom": "Putes zombies",
+              "source": "Mortes-vivantes du Milady",
+              "type": "mortvivant",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Langue barbelée (membre exotique)",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 3+, Kama sutra 2, Séduction 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Restes de filles enlevées dans tout l'ex-empire soviétique, mortes sous les sévices. Une trentaine gardent le Milady ; Katioucha les envoie « calmer » les importuns.\nLe livre dit qu'elles servent Pallard : sans doute une coquille pour Katioucha.\nDéfense non donnée : 2 (niveau 1). Langue barbelée sans valeurs : précision 0 / puissance +1 estimées. « Immunité contre les maladies » du livre rattachée au pouvoir des règles.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-putes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-katioucha",
+              "q": "Comment se passe la rencontre avec Katioucha ?",
+              "opts": [
+                {
+                  "t": "Les PJ jouent les collègues ou le menacent",
+                  "suite": "Il parle (0 à 5G) : Pallard, Iossef, la momie ; il reste un ennemi rancunier."
+                },
+                {
+                  "t": "Massacre au Milady",
+                  "suite": "Mafiosi et putes zombies en masse ; Katioucha, s'il survit, prévient Hornet."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-jour-j",
+          "nom": "9. Le jour J : la fête « spontanée »",
+          "lieu": "Place Rouge et mausolée de Lénine – jour de la fête nationale",
+          "notes": "Si les PJ n'ont rien empêché (seuil 45 de la TRIC) :\n• Iossef et des agents du FSB chargés de la sécurité entrent dans le mausolée et réveillent la momie. Lénine, contrôlé par Iossef, monte au-dessus du mausolée, sourit à la foule et annonce au porte-voix son retour. Dimitri et l'élite de Mémoire sont près du Goum.\n• Chaos : le PCR s'empare d'une bonne partie des points stratégiques (médias, casernes, aéroports, frontières, bases de missiles, ports). Incrédulité jusqu'à ce que Lénine montre ses cicatrices aux journalistes ; la foule le porte au Kremlin, où il fait un discours trop nationaliste au goût des communistes.\n• Le soir, le Soviet suprême se réunit au Palais du Peuple ; Lénine, Iossef, Strachnov et l'aristocratie de l'Ordre tiennent le Kremlin, gardé par les anges, soldats de Dieu et militants de Nouvelle Russie. La délégation du PCR repart en comprenant que Lénine est la marionnette de l'Ordre.\n• Les jours suivants : environ 75 % des objectifs atteints, mais le gouvernement tient la capitale grâce aux divisions d'élite ; combats entre rebelles et loyalistes.\n• Au bout de trois semaines, Lénine déclare avoir vu la Lumière et donne le pouvoir à l'Église orthodoxe, puis se suicide. La foule réclame le tsar ; le patriarche couronne Strachnov. La plupart des communistes basculent chez les loyalistes : guerre civile de quelques mois, victoire de la mafia et des loyalistes, Strachnov et l'aristocratie presque tous tués.\nTRIC : réveil +10 ; pouvoir à l'Église +10 ; Strachnov tsar +10 ; puis +1 par semaine de guerre civile et +3 par semaine de règne de Strachnov.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-dimitri-15",
+              "nom": "Dimitri Polzoski",
+              "source": "Soldat de Dieu de Strachnov, chef de Mémoire",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Sabre cosaque",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 3
+                }
+              ],
+              "talents": "Savoir occulte 1 (Ordre de Saint-Georges et opération JR 2+), Corps à corps 2, Défense 3+, Combat 1 (épées 3+), Tir 1+ (armes d'épaule 3+), Culture générale 1 (Église orthodoxe russe 2+), Ukrainien, Hobby (pogrom) 2, Athlétisme 2+, Savoir militaire 1 (tactique moderne russe 2), Intimidation 2+",
+              "esquive": false,
+              "volonte": true,
+              "notes": "48 ans, 1,76 m, blond aux yeux bleus. Honnête et droit, il obéit mais sait que son supérieur fait le mal (il s'en est confessé à son pope, qui lui a dit d'obéir). Se défoule en cognant. Connaît le complot dans ses grandes lignes, les noms et coordonnées de Iossef, a croisé beaucoup de dignitaires complices (mais sa liste de suspects est trop longue : la transmettre telle quelle fait arrêter des innocents). Sait que Lénine se réveillera par un rituel satanique le jour de la fête nationale, ce qui le dégoûte.\nInterrogé, il crache tout et se sent mieux après : témoignage 0 à 2G. Jour J : avec l'élite de ses hommes près du Goum, sur la Place Rouge.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-dimitri"
+            },
+            {
+              "id": "jr5-sdd-memoire-16",
+              "nom": "Soldats de Dieu de Mémoire",
+              "source": "Soldats de Dieu de Strachnov déguisés en skins",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 7,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 2, Défense 2+, Discrétion 2, Fouille 3, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR et Grand Jeu en Russie 1), Passer pour un skin de Mémoire 2+, Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fondus dans le groupe Mémoire, ils se connaissent entre eux ; les skins humains ne savent pas qui est soldat de Dieu. Chassent les Caucasiens dans les rues. Une vingtaine, parmi les plus tarés, gardent des preuves de leur séjour au camp d'Okefenokee (Géorgie, USA) : passés par groupes de cinq via Miami il y a moins d'un an, pour trois mois d'entraînement commando (Stonewall Jackson, et « Môssieur » Medlocke, c'est-à-dire Semper Fidelis).\nTémoignage : 1L (sauf si Dimitri a parlé) ; preuves du séjour chez Dixie Securities : 1L.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-sdd-memoire"
+            },
+            {
+              "id": "jr5-frappes-17",
+              "nom": "Petites frappes de Mémoire",
+              "source": "Skins humains du groupuscule",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Défense 2, Discrétion 2, Fouille 2, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2), Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Paumés qui ont trouvé en Dimitri un père et des boucs émissaires. Une centaine en tout, répartis en groupes, au parc Gorky.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-frappes"
+            },
+            {
+              "id": "jr5-iossef-18",
+              "nom": "Iossef Djoukov",
+              "source": "Sorcier géorgien, épicier et rebouteux",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 6,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 7
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir occulte 1 (sorcellerie 3), Discrétion 2, Métier (épicier) 3, Métier (rebouteux charlatan) 3+, Défense 2, Faire pitié 3+, Culture générale 1 (vie dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR 1), Baratin 3, Médecine 1+, Technique 0+ (herboristerie 1+), Séduction 2+, Aisance sociale 2+, Hobby (Spartak de Moscou) 1+, Basse sorcellerie 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, 1,72 m, blond aux yeux bleus. « Docteur Iossef », Raspoutine de quartier qui vend de la poudre de perlimpinpin aux vieilles du coin. Admirateur de Hornet (sans avoir compris qu'il est devenu prince-démon), recruté par Katioucha.\nSait seulement qu'il doit se présenter le jour de la fête nationale, en costume et avec tout son matériel, aux gardes de la Place Rouge avec une carte de membre d'honneur du PCR, pour entrer dans le mausolée. Se doute d'une abomination, n'ose pas refuser. Fuit dès que ça tourne mal. Témoignage 0 à 3G.\nPouvoirs de sorcier (absents des règles de l'appli) : Contrôle des morts-vivants, Créer des morts-vivants. C'est lui qui réveille et contrôle Lénine : l'abattre décapite le mouvement.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-iossef"
+            },
+            {
+              "id": "jr5-lenine-19",
+              "nom": "Lénine (la momie)",
+              "source": "Cadavre réanimé, marionnette de Iossef et Strachnov",
+              "type": "mortvivant",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune caractéristique dans le livre : fiche minimale, valeurs estimées. Contrôlé par Iossef, il « vit » dans son bureau historique du Kremlin. Détruire la momie ou son contrôleur met fin à la mascarade.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-lenine"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr5-sc-kremlin",
+          "nom": "10. La maladie d'amour : décapiter le mouvement",
+          "lieu": "Kremlin, bureau historique de Lénine – après le réveil",
+          "notes": "Si l'insurrection a commencé, on peut encore limiter les dégâts en frappant à la tête : abattre Iossef ou Strachnov, et mettre Lénine hors d'état de nuire. Les deux sont toujours au Kremlin : l'un contrôle Lénine, l'autre négocie avec les staliniens, le gouvernement légitime, l'aristocratie et l'Ordre. Ils craignent les représailles et un assaut des commandos loyalistes du FSB.\n• La ruse s'impose : se faire passer pour des membres de l'opération JR (Strachnov est loin de tous les connaître), puis passer à l'action.\n• Kremlin survolté, gardes et militants partout, ambiance de révolution d'Octobre. Plans du Kremlin trouvables sur Internet et dans les livres d'histoire.\n• Lénine « vit » dans son bureau historique ; Iossef est toujours près de lui, avec une dizaine de soldats de Dieu de Mémoire déguisés en gardes du Kremlin. Strachnov va et vient mais ne quitte pas le bâtiment.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr5-strachnov-20",
+              "nom": "Strachnov (Miroslav Makarovski)",
+              "source": "Ange de Georges, grade 3 (en disponibilité)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 12,
+                "pe": 8,
+                "vo": 14,
+                "pr": 12,
+                "foi": 14
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 49,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre court de cosaque béni et ancien",
+                  "att": 18,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Colère divine",
+                  "r": 12
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Lueur insoutenable",
+                  "r": 8
+                },
+                {
+                  "n": "Némésis",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 6
+                },
+                {
+                  "n": "Voix impérieuse",
+                  "r": 8
+                }
+              ],
+              "talents": "Corps à corps 6, Combat 3 (épées 9), Défense 7, Discrétion 4, Discussion 5, Enquête 4, Fouille 4, Tir 2 (armes d'épaule 4), Aisance sociale 5, Athlétisme 7, Culture générale 2+ (vie des Cosaques et histoire de la Russie de l'an 800 à nos jours 6), Haine des communistes 4, Savoir occulte 3 (Ordre de Saint-Georges 8), Savoir occulte 2 (opération JR 4), Savoir occulte 2 (Église orthodoxe russe 5), Anglais, Géorgien, Art 2 (chants grégoriens 5), Savoir militaire 2 (commandement de compagnie mécanisée et de Cosaques 5), Équitation 4, Survie 3 (toundra 6)",
+              "esquive": true,
+              "volonte": false,
+              "notes": "48 ans, 1,92 m, blond aux yeux gris. Sur Terre depuis plus de quinze siècles, un des plus fidèles de Georges. Officiellement sans archange, il est secrétaire du chapitre moscovite de l'Ordre de Saint-Georges (en réalité son plus haut gradé) et chef du groupuscule Nouvelle Russie.\nRusé, calme, réfléchi malgré son fanatisme ; rêve d'une théocratie avec un tsar autocrate, chef de l'Église orthodoxe, et de Moscou « troisième Rome ». Hait les communistes mais s'allie à eux par pragmatisme.\nCoordinateur indispensable : s'il est neutralisé avant le jour J, le putsch n'a pas lieu. Toujours entouré d'une trentaine de soldats de Dieu de Mémoire ; fuit un combat perdu (trou dans le plafond de son bureau) en détruisant les ordinateurs à la grenade.\nTémoignage : 2 à 5G à l'Index d'Accusation.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-strachnov"
+            },
+            {
+              "id": "jr5-iossef-21",
+              "nom": "Iossef Djoukov",
+              "source": "Sorcier géorgien, épicier et rebouteux",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 6,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 7
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir occulte 1 (sorcellerie 3), Discrétion 2, Métier (épicier) 3, Métier (rebouteux charlatan) 3+, Défense 2, Faire pitié 3+, Culture générale 1 (vie dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR 1), Baratin 3, Médecine 1+, Technique 0+ (herboristerie 1+), Séduction 2+, Aisance sociale 2+, Hobby (Spartak de Moscou) 1+, Basse sorcellerie 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "52 ans, 1,72 m, blond aux yeux bleus. « Docteur Iossef », Raspoutine de quartier qui vend de la poudre de perlimpinpin aux vieilles du coin. Admirateur de Hornet (sans avoir compris qu'il est devenu prince-démon), recruté par Katioucha.\nSait seulement qu'il doit se présenter le jour de la fête nationale, en costume et avec tout son matériel, aux gardes de la Place Rouge avec une carte de membre d'honneur du PCR, pour entrer dans le mausolée. Se doute d'une abomination, n'ose pas refuser. Fuit dès que ça tourne mal. Témoignage 0 à 3G.\nPouvoirs de sorcier (absents des règles de l'appli) : Contrôle des morts-vivants, Créer des morts-vivants. C'est lui qui réveille et contrôle Lénine : l'abattre décapite le mouvement.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-iossef"
+            },
+            {
+              "id": "jr5-lenine-22",
+              "nom": "Lénine (la momie)",
+              "source": "Cadavre réanimé, marionnette de Iossef et Strachnov",
+              "type": "mortvivant",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Aucune caractéristique dans le livre : fiche minimale, valeurs estimées. Contrôlé par Iossef, il « vit » dans son bureau historique du Kremlin. Détruire la momie ou son contrôleur met fin à la mascarade.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-lenine"
+            },
+            {
+              "id": "jr5-sdd-memoire-23",
+              "nom": "Soldats de Dieu de Mémoire (en gardes du Kremlin)",
+              "source": "Soldats de Dieu de Strachnov déguisés en skins",
+              "type": "soldat",
+              "qty": 10,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Batte de base-ball (non létale)",
+                  "att": 7,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 2, Défense 2+, Discrétion 2, Fouille 3, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR et Grand Jeu en Russie 1), Passer pour un skin de Mémoire 2+, Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fondus dans le groupe Mémoire, ils se connaissent entre eux ; les skins humains ne savent pas qui est soldat de Dieu. Chassent les Caucasiens dans les rues. Une vingtaine, parmi les plus tarés, gardent des preuves de leur séjour au camp d'Okefenokee (Géorgie, USA) : passés par groupes de cinq via Miami il y a moins d'un an, pour trois mois d'entraînement commando (Stonewall Jackson, et « Môssieur » Medlocke, c'est-à-dire Semper Fidelis).\nTémoignage : 1L (sauf si Dimitri a parlé) ; preuves du séjour chez Dixie Securities : 1L.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89.",
+              "typeId": "type-jr5-sdd-memoire"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-decapiter",
+              "q": "Le mouvement est-il décapité ?",
+              "opts": [
+                {
+                  "t": "Strachnov et/ou Iossef abattus, Lénine neutralisé",
+                  "suite": "L'Ordre de Saint-Georges s'effondre (TRIC −5) ; selon la suite, démocrates (−10) ou communistes (−10, puis +2 par semaine) reprennent le pouvoir."
+                },
+                {
+                  "t": "Échec",
+                  "suite": "Le scénario du jour J se déroule jusqu'au couronnement du tsar."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr5-sc-bilan",
+          "nom": "11. Bilan : TRIC et Index d'Accusation",
+          "lieu": "Après Moscou",
+          "notes": "Faire le compte avec les listes des notes du scénario (modificateurs de TRIC et preuves de l'IA).\nRappel : seules les preuves effectivement transmises à Régine comptent dans l'IA officiel ; les PJ peuvent en garder pour le procès final. Les PA dépendent de l'IA (pas de barème propre au chapitre).\nFils à suivre : Katioucha et Hornet (Tokyo : témoignage d'un ange envoyé par Katioucha) ; Okefenokee et Dixie Securities (Jacksonville) ; Pallard et Medes (Paris).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr5-ch-issue",
+              "q": "Issue à Moscou ?",
+              "opts": [
+                {
+                  "t": "Putsch empêché avant le jour J",
+                  "suite": "TRIC −2 ; si l'Ordre de Saint-Georges est démantelé, −5 de plus."
+                },
+                {
+                  "t": "Lénine réveillé puis mouvement décapité",
+                  "suite": "TRIC +10, puis −5 (Ordre neutralisé) et −10 au retour des démocrates ou des communistes."
+                },
+                {
+                  "t": "Rien n'a été empêché",
+                  "suite": "TRIC +10 +10 +10, puis +1 par semaine de guerre civile et +3 par semaine de tsar Strachnov."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795376450131,
+      "updatedAt": 1795376450131
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-jr5-strachnov",
+      "nom": "Strachnov (Miroslav Makarovski)",
+      "source": "Ange de Georges, grade 3 (en disponibilité)",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 12,
+        "pe": 8,
+        "vo": 14,
+        "pr": 12,
+        "foi": 14
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 49,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Sabre court de cosaque béni et ancien",
+          "att": 18,
+          "prec": 6,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+          "att": 8,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Colère divine",
+          "r": 12
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 8
+        },
+        {
+          "n": "Lueur insoutenable",
+          "r": 8
+        },
+        {
+          "n": "Némésis",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 6
+        },
+        {
+          "n": "Voix impérieuse",
+          "r": 8
+        }
+      ],
+      "talents": "Corps à corps 6, Combat 3 (épées 9), Défense 7, Discrétion 4, Discussion 5, Enquête 4, Fouille 4, Tir 2 (armes d'épaule 4), Aisance sociale 5, Athlétisme 7, Culture générale 2+ (vie des Cosaques et histoire de la Russie de l'an 800 à nos jours 6), Haine des communistes 4, Savoir occulte 3 (Ordre de Saint-Georges 8), Savoir occulte 2 (opération JR 4), Savoir occulte 2 (Église orthodoxe russe 5), Anglais, Géorgien, Art 2 (chants grégoriens 5), Savoir militaire 2 (commandement de compagnie mécanisée et de Cosaques 5), Équitation 4, Survie 3 (toundra 6)",
+      "esquive": true,
+      "volonte": false,
+      "notes": "48 ans, 1,92 m, blond aux yeux gris. Sur Terre depuis plus de quinze siècles, un des plus fidèles de Georges. Officiellement sans archange, il est secrétaire du chapitre moscovite de l'Ordre de Saint-Georges (en réalité son plus haut gradé) et chef du groupuscule Nouvelle Russie.\nRusé, calme, réfléchi malgré son fanatisme ; rêve d'une théocratie avec un tsar autocrate, chef de l'Église orthodoxe, et de Moscou « troisième Rome ». Hait les communistes mais s'allie à eux par pragmatisme.\nCoordinateur indispensable : s'il est neutralisé avant le jour J, le putsch n'a pas lieu. Toujours entouré d'une trentaine de soldats de Dieu de Mémoire ; fuit un combat perdu (trou dans le plafond de son bureau) en détruisant les ordinateurs à la grenade.\nTémoignage : 2 à 5G à l'Index d'Accusation.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-termienko",
+      "nom": "Vladimir Termienko",
+      "source": "Secrétaire du PCR (Parti communiste russe), humain",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 5,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Pistolet russe (pénétration importante, portée moyenne)",
+          "att": 4,
+          "prec": -3,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Baratin 2, Culture générale 2 (marxisme-léninisme 3), Séduction 2, Aisance sociale 2, Hobby (jeu vidéo) 2, Savoir occulte 1 (histoire secrète du stalinisme 2), Savoir d'espion 1 (espionnage style guerre froide 2), Métier (cadre du PCUS) 3+, Tir 1 (armes de poing 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "48 ans, 1,72 m, blond roux aux yeux verts. Apparatchik de père en fils, étoile montante du PCR, moderne, cultivé, anglophone, communiste sincère qui veut un PCR réformé. Voit le réveil de Lénine comme un grand coup médiatique « à l'hollywoodienne » sans savoir comment Strachnov compte s'y prendre.\nAffable avec les étrangers cultivés et les journalistes ; laisse filtrer des allusions aux mafieux et nouveaux Russes « qui vont payer ». Secoué fort, il avoue tout : grande partie du volet militaire, politique et médiatique, beaucoup de noms (témoignage de membre communiste du complot : 0 à 1G).\nDéfense non donnée : 2 (niveau 1).\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-dimitri",
+      "nom": "Dimitri Polzoski",
+      "source": "Soldat de Dieu de Strachnov, chef de Mémoire",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 7,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 6,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Sabre cosaque",
+          "att": 7,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 3
+        }
+      ],
+      "talents": "Savoir occulte 1 (Ordre de Saint-Georges et opération JR 2+), Corps à corps 2, Défense 3+, Combat 1 (épées 3+), Tir 1+ (armes d'épaule 3+), Culture générale 1 (Église orthodoxe russe 2+), Ukrainien, Hobby (pogrom) 2, Athlétisme 2+, Savoir militaire 1 (tactique moderne russe 2), Intimidation 2+",
+      "esquive": false,
+      "volonte": true,
+      "notes": "48 ans, 1,76 m, blond aux yeux bleus. Honnête et droit, il obéit mais sait que son supérieur fait le mal (il s'en est confessé à son pope, qui lui a dit d'obéir). Se défoule en cognant. Connaît le complot dans ses grandes lignes, les noms et coordonnées de Iossef, a croisé beaucoup de dignitaires complices (mais sa liste de suspects est trop longue : la transmettre telle quelle fait arrêter des innocents). Sait que Lénine se réveillera par un rituel satanique le jour de la fête nationale, ce qui le dégoûte.\nInterrogé, il crache tout et se sent mieux après : témoignage 0 à 2G. Jour J : avec l'élite de ses hommes près du Goum, sur la Place Rouge.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-edom",
+      "nom": "Edom (Vassiliev Dormoski)",
+      "source": "Démon de Mathias, grade 2, agent du FSB",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 10,
+        "pe": 8,
+        "vo": 10,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 27,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Pistolet russe (pénétration importante, portée moyenne)",
+          "att": 4,
+          "prec": -3,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Apparence démoniaque",
+          "r": 4
+        },
+        {
+          "n": "Polymorphie",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 6
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Aisance sociale 8, Baratin 6, Discussion 7, Défense 3, Culture générale 2 (vie dans la Russie post-soviétique et doctrine du PCR 5), Savoir d'espion 2 (contre-espionnage à la KGB 4), Savoir occulte 2+ (le Grand Jeu en Russie et affaire Mathias 5), Discrétion 5, Enquête 6, Fouille 5, Intrusion 4, Tir 1 (armes de poing 2), Anglais, Français, Espagnol, Ukrainien, Géorgien, Biélorusse, Métier (agent du FSB) 4",
+      "esquive": false,
+      "volonte": true,
+      "notes": "39 ans, 1,72 m, blond aux yeux noirs. Contact que Medes donne aux PJ en Russie. Poste obscur aux douanes de la Loubianka, en réalité agent du contre-espionnage, bien introduit au gouvernement et dans la sécurité.\nAgent quadruple sans loyauté (infiltré chez les rebelles d'Emmanuel tout en servant Mathias, etc.), ne cherche qu'à s'en sortir. Fait chanter Iossef (exercice illégal de la médecine) sans encore s'en servir ; Iossef ne sait pas qu'il est un démon.\nFace aux PJ : sceptique de façade, très intéressé en fait ; il récupère tout, le rapporte à ses chefs et niera les avoir vus. Prévenu tôt et de façon convaincante, il fait échouer le coup d'État.\nLe livre l'appelle « ange de Mathias » ; ses pouvoirs (Apparence démoniaque) en font un démon.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-katioucha",
+      "nom": "Katioucha (Igor Borisovitch Klinogof)",
+      "source": "Démon de Hornet, grade 1, patron du Milady",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 7,
+        "pe": 8,
+        "vo": 10,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 7,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 14,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Dard (membre exotique)",
+          "att": 8,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Augmentation de Force",
+          "r": 2
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        }
+      ],
+      "talents": "Aisance sociale 4, Baratin 4, Combat 4, Culture générale 1 (vie en Russie post-soviétique 3), Savoir criminel 1 (mafia russe et traite des blanches 2+), Défense 3+, Discussion 3, Discrétion 2, Savoir occulte 1 (le Grand Jeu en Russie et les sorciers russes 2), Enquête 2, Fouille 2+, Séduction 2, Kama sutra 3+, Hobby (partouze nécrophile) 2, Faire semblant de boire 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "51 ans, 1,82 m, blond aux yeux verts. Démon fonctionnaire : fait le mal consciencieusement aux heures de bureau, veut qu'on lui fiche la paix. Gère le Milady (blanchiment, traite, trafic de cadavres) et recense les sorciers de Moscou pour son nouveau prince-démon.\nContacté par Pallard, il a prévenu Hornet (qui n'en a parlé à personne, pas même à Andromalius) et a envoyé un pion jetable, Iossef. Ignore tout de l'opération JR. Prend les PJ pour des collègues blasés et joue au mafieux qu'on interroge ; menacé physiquement, il préfère tout lâcher que mourir : témoignage 0 à 5G.\nArme : dard (Membre exotique) sans valeurs dans le livre, précision 0 / puissance +2 estimées.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-iossef",
+      "nom": "Iossef Djoukov",
+      "source": "Sorcier géorgien, épicier et rebouteux",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 6,
+        "pe": 6,
+        "vo": 7,
+        "pr": 7,
+        "foi": 7
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Savoir occulte 1 (sorcellerie 3), Discrétion 2, Métier (épicier) 3, Métier (rebouteux charlatan) 3+, Défense 2, Faire pitié 3+, Culture générale 1 (vie dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR 1), Baratin 3, Médecine 1+, Technique 0+ (herboristerie 1+), Séduction 2+, Aisance sociale 2+, Hobby (Spartak de Moscou) 1+, Basse sorcellerie 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "52 ans, 1,72 m, blond aux yeux bleus. « Docteur Iossef », Raspoutine de quartier qui vend de la poudre de perlimpinpin aux vieilles du coin. Admirateur de Hornet (sans avoir compris qu'il est devenu prince-démon), recruté par Katioucha.\nSait seulement qu'il doit se présenter le jour de la fête nationale, en costume et avec tout son matériel, aux gardes de la Place Rouge avec une carte de membre d'honneur du PCR, pour entrer dans le mausolée. Se doute d'une abomination, n'ose pas refuser. Fuit dès que ça tourne mal. Témoignage 0 à 3G.\nPouvoirs de sorcier (absents des règles de l'appli) : Contrôle des morts-vivants, Créer des morts-vivants. C'est lui qui réveille et contrôle Lénine : l'abattre décapite le mouvement.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-lenine",
+      "nom": "Lénine (la momie)",
+      "source": "Cadavre réanimé, marionnette de Iossef et Strachnov",
+      "type": "mortvivant",
+      "car": {
+        "fo": 4,
+        "ag": 2,
+        "pe": 4,
+        "vo": 2,
+        "pr": 6,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Aucune caractéristique dans le livre : fiche minimale, valeurs estimées. Contrôlé par Iossef, il « vit » dans son bureau historique du Kremlin. Détruire la momie ou son contrôleur met fin à la mascarade.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-mafiosi",
+      "nom": "Mafiosi russes",
+      "source": "Tueurs et gardes du corps de la mafia",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 3,
+        "pr": 4,
+        "foi": 3
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+          "att": 4,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Pistolet russe (pénétration importante, portée moyenne)",
+          "att": 4,
+          "prec": -3,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Savoir criminel 1 (trafic en tout genre 2), Corps à corps 2, Tir 1 (armes d'épaule 2), Fouille 2+, Culture générale 1+ (milieux mafieux en Russie 2+), Torture 2, Trinquer 2, Tir 1+ (armes de poing 2), Défense 2, Intimidation 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Brutes sans foi ni loi, surarmées, qui répondent à une insulte par une rafale. Gardent le Milady et accompagnent chaque groupe de clients.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-putes",
+      "nom": "Putes zombies",
+      "source": "Mortes-vivantes du Milady",
+      "type": "mortvivant",
+      "car": {
+        "fo": 6,
+        "ag": 2,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Langue barbelée (membre exotique)",
+          "att": 7,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 3+, Kama sutra 2, Séduction 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Restes de filles enlevées dans tout l'ex-empire soviétique, mortes sous les sévices. Une trentaine gardent le Milady ; Katioucha les envoie « calmer » les importuns.\nLe livre dit qu'elles servent Pallard : sans doute une coquille pour Katioucha.\nDéfense non donnée : 2 (niveau 1). Langue barbelée sans valeurs : précision 0 / puissance +1 estimées. « Immunité contre les maladies » du livre rattachée au pouvoir des règles.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-sdd-memoire",
+      "nom": "Soldats de Dieu de Mémoire",
+      "source": "Soldats de Dieu de Strachnov déguisés en skins",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 4,
+        "vo": 3,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 4,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Batte de base-ball (non létale)",
+          "att": 7,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de Force",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 2, Défense 2+, Discrétion 2, Fouille 3, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2+), Savoir occulte 0+ (opération JR et Grand Jeu en Russie 1), Passer pour un skin de Mémoire 2+, Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fondus dans le groupe Mémoire, ils se connaissent entre eux ; les skins humains ne savent pas qui est soldat de Dieu. Chassent les Caucasiens dans les rues. Une vingtaine, parmi les plus tarés, gardent des preuves de leur séjour au camp d'Okefenokee (Géorgie, USA) : passés par groupes de cinq via Miami il y a moins d'un an, pour trois mois d'entraînement commando (Stonewall Jackson, et « Môssieur » Medlocke, c'est-à-dire Semper Fidelis).\nTémoignage : 1L (sauf si Dimitri a parlé) ; preuves du séjour chez Dixie Securities : 1L.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-frappes",
+      "nom": "Petites frappes de Mémoire",
+      "source": "Skins humains du groupuscule",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Batte de base-ball (non létale)",
+          "att": 4,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2, Défense 2, Discrétion 2, Fouille 2, Athlétisme 2, Culture générale 1 (vie de loser dans la Russie post-soviétique 2), Chants nazis 2, Savoir criminel 1 (petite frappe 2), Combat 1 (contondantes 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Paumés qui ont trouvé en Dimitri un père et des boucs émissaires. Une centaine en tout, répartis en groupes, au parc Gorky.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    },
+    {
+      "id": "type-jr5-komsomols",
+      "nom": "Miliciens des Komsomols et gardes du PCR",
+      "source": "Service d'ordre du parti",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 6,
+        "vo": 3,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Kalachnikov (attaque multiple, pénétration importante, portée longue)",
+          "att": 5,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Culture générale 1 (doctrine du PCUS 2), Survie 1 (Russie post-soviétique 2+), Savoir militaire 1 (tactique 2), Athlétisme 2, Hobby (collection des insignes soviétiques) 1+, Tir 2+, Corps à corps 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Nostalgiques ignares et dévoués : savent que quelque chose se prépare, pas quoi. Quatre d'entre eux, l'élite des Jeunesses communistes, protègent Iossef sur ordre de Termienko et mourront pour cette mission. Le service d'ordre du Palais du Peuple (anciens du KGB, souvent encore au FSB) est plus professionnel : même profil, à durcir au besoin.\nDéfense non donnée : 2 (niveau 1). Témoignage : 0 à 1G.\nSource : Jésus Reviens !, chap. 6 « Lénine, relève-toi, ils sont devenus fous », p. 78-89."
+    }
+  ],
+  "memoire": []
+}

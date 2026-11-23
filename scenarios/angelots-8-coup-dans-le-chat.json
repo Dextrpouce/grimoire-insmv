@@ -1,0 +1,2160 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "ag8-coup-dans-le-chat",
+      "nom": "Angelots en gelée – Un coup dans le chat… c'est l'amour en chapeau",
+      "resume": "Scénario de Magna Veritas à Paris, réservé aux tables adultes et averties. Les anges des PJ héritent d'une enquête de routine sur le « suicide » d'Armand Fournier, bras droit du secrétaire général de la Conférence des évêques de France. En réalité, Fournier a été tué par accident lors d'une soirée sordide organisée par un réseau de prostitution dont les filles sont des mortes-vivantes, tenu par Gildas Brunet, ex-trader devenu proxénète, et Trixi, démon d'Hornet. Quatre prélats présents ont maquillé la mort avec l'aval du secrétaire général. Enquête libre (cellule, logs informatiques, corps, bandes vidéo, interrogatoires gradués) puis choix entre vérité et arrangements, avant de remonter éventuellement jusqu'au réseau pour le démanteler.",
+      "notes": "Source : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128. Ton parodique, très cru et anticlérical dans le livre : la conversion résume sobrement les scènes sexuelles et violentes. À réserver à des joueurs avertis ; prévoir des limites claires avec la table.\n\nContexte : Gildas Brunet, trader licencié et ruiné, se fait briser les jambes par deux souteneurs roumains ; dans son délire, il tente une invocation à laquelle Hornet répond en envoyant Trixi. Plan d'Hornet : acheter à bas prix des jeunes femmes d'Europe de l'Est sans attaches, les tuer et les relever en zombies, les faire travailler via le site sexybitches.vu, puis fournir des escouades de morts-vivants aux démons. Le père Défois découvre le site, y entraîne des collègues (10 % de la CEF). Lors d'une soirée à Pantin, Nico Montane tue Fournier ; Défois, Larvols, Wasselynck et Papin ramènent le corps et, avec Lalanne, maquillent un suicide.\n\nChronologie : il y a 17 mois, Gildas licencié ; 14 mois, sa compagne le quitte ; 7 mois, jambes brisées par Nicolas et Tonino Balardio ; 5 mois et demi, « invocation » de Trixi ; 5 mois, premières filles zombifiées ; 4 mois et demi, ouverture du site ; 3 mois, première visite de Défois ; 2 mois, les Balardio dévorés par des zombies ; il y a deux jours, mort de Fournier ; hier, « découverte » du corps ; ce matin, Arad ouvre l'enquête. Détail heure par heure : scène 5.\n\nIl n'y a pas de chronologie imposée pour l'enquête : tout dépend des PJ. Les scènes 2 à 7 peuvent se jouer dans n'importe quel ordre ; la grille des six approches d'interrogatoire et la réaction de chaque témoin figurent dans les scènes 6 et 7.\n\nRécompenses : pas de barème chiffré. Arad accorde ou non des PA selon le caractère officiel de la mission et la cohérence du rapport ; les prélats peuvent offrir PA, appuis et argent en échange d'arrangements ; démanteler le réseau sans enquête officielle ne rapporte rien auprès d'Arad.\n\nFiches : seuls Papin, Trixi, les hommes de main et les zombies ont des talents de combat ; armes choisies dans la table des règles (signalé dans les fiches). Ch des humains reportée en Foi. Défense non donnée : niveau 1. Blanloeil et Biguet n'ont pas de caractéristiques (fiches minimales estimées). Le lexique du milieu (p. 115) n'est pas repris.",
+      "scenes": [
+        {
+          "id": "ag8-sc-briefing",
+          "nom": "1. Sale affaire, patron",
+          "lieu": "Notre-Dame – bureau du chargé de mission des PJ",
+          "notes": "Le chargé de mission, blasé, confie aux PJ (en intermission) un dossier de routine : il attend un « non-résultat » sous quelques jours et les prie de ménager les susceptibilités de la Conférence des évêques de France (CEF).\nLe dossier : le formulaire de mort violente d'Armand Fournier (35 ans, bras droit du secrétaire général), retrouvé avec un tournevis dans la tête dans sa cellule de fonction ; l'ordre de mission ; le formulaire 0412078 rempli par Arad, ange bureaucrate de Novalis. Seul nom donné : le découvreur officiel, Mgr Stanislas Lalanne, secrétaire général de la CEF.\nRappel pour le MJ : la CEF (7 rue Saint-Vincent, derrière le Sacré-Cœur) est la vraie tête humaine de l'Église en France, divisée en trois secrétariats rivaux (pastoral : Hayet ; apostolat des laïcs : Larvols ; administratif et financier : Lebel), arbitrés par Lalanne. Environ 120 personnes y vivent et travaillent.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-arad-1",
+              "nom": "Arad",
+              "source": "Ange de Novalis, grade 1 – bureaucrate à Notre-Dame, chargé du dossier",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 6,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pollen",
+                  "r": 2
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (bureaucratie) 3, Discussion 5, Science (botanique) 4, Informatique 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans d'apparence, chauve. Bureaucrate heureux, fanatique du « zéro papier » (pour sauver les arbres). Il a ouvert l'enquête obligatoire et juge seul la réussite de la mission : il veut un dossier cohérent, mené selon les règles. Il avale n'importe quelle conclusion crédible (suicide, faux coupable…) mais lance une enquête interne s'il repère des incohérences ou des mensonges (jusqu'à l'arrivée d'anges de Dominique). Déteste qu'on gaspille l'argent du Paradis.\nAllié administratif des PJ, pas un adversaire.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-arad"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag8-sc-cellule",
+          "nom": "2. La cellule de Fournier",
+          "lieu": "Siège de la CEF, Montmartre – studio sous les toits",
+          "notes": "Studio confortable, intact depuis la découverte ; le corps est à la morgue des pompes funèbres. Les PJ ont accès à tout : Lalanne joue la transparence pour qu'ils repartent vite. Des milliers de dossiers : autant de fausses pistes.\nIndices :\n- Le PC portable : Fournier surfait beaucoup, mais un logiciel efface toute trace. Informatique moyen pour s'en rendre compte ; difficile pour penser au pare-feu du fournisseur d'accès de la CEF, KTOSI.\n- Le tournevis, bien en évidence : seulement les empreintes de Fournier, mais mal placées (Savoir d'espion, Enquête ou Perception très difficile, puis Perception).\n- Médecine : trop peu de sang pour une arme blanche ; très difficile : le sang sur la tige a été badigeonné, déjà sec ; très difficile : l'heure du décès ne colle pas avec la « visite » de Papin et Wasselynck.\nAucune trace des perversions de Fournier dans le studio : il était paranoïaque.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag8-sc-ktosi",
+          "nom": "3. KTOSI, les logs et la boîte aux lettres",
+          "lieu": "KTOSI, petite SSII de la CEF – puis les locaux techniques de la CEF",
+          "notes": "KTOSI : douze employés catholiques fiers de servir le clergé ; le PDG Luc Favier de Coulomb ne donne rien sans la justice ou l'accord de Lalanne. On peut l'impressionner en se faisant passer pour des envoyés du Vatican (ou d'encore plus haut). Sinon, piratage sur place, dans les locaux de la CEF (Informatique très difficile).\nLes logs (trois mois, quelques heures d'étude) : 80 % des PC de la CEF visitent des sites pornographiques, 20 % des sites extrêmes, et 10 % ont une adresse webmail sur sexybitches.vu, dont tous les comploteurs sauf Lalanne. Les noms se déduisent avec l'annuaire. Mots de passe chiffrés : Informatique et une dizaine d'heures par boîte. Personne à la CEF ne reconnaît ces logs comme preuve, sauf Hayet ; mais ils donnent prise sur 10 % du personnel.\nLa boîte de Fournier : pseudos Judas (Défois), Rambo (Papin), Roberto Malone (Wasselynck), Satan M'habite (Fournier), Gros Dégueulasse (Larvols) ; huit autres membres de la CEF au choix du MJ. Les plus vieilles boîtes ont quatre mois (celle de Larvols d'abord). Le webmaster « Satan » envoie la liste de diffusion ; Science (psychologie) : deux auteurs différents, l'un froid et professionnel (90 % des messages, Trixi), l'autre impulsif et paranoïaque (Gildas).\nDeux messages clés de J-3 : l'invitation de « Satan » à une soirée réservée aux initiés avec sept « sujets » sacrifiés, et le transfert de Judas aux quatre autres. Fournier s'inscrivait à une de ces soirées la veille de sa mort.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-logs",
+              "q": "Les PJ obtiennent-ils les logs ?",
+              "opts": [
+                {
+                  "t": "Oui, par KTOSI ou par piratage",
+                  "suite": "Ils identifient les clients du site à la CEF et ont barre sur eux ; avec Hayet, ces preuves pèsent."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Ils doivent s'appuyer sur les témoignages, le corps et les bandes vidéo."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-corps",
+          "nom": "4. Le corps et les pompes funèbres",
+          "lieu": "Pompes funèbres Saint-Jean (morgue) – CHU de la Pitié-Salpêtrière",
+          "notes": "Le corps : coup de tournevis sous l'oreille droite, de bas en haut, jusqu'au cerveau (possible seul, mais jamais vu) ; le tournevis responsable n'a pas la même taille que celui retrouvé ; des morsures profondes (féminines, Médecine) sur les cuisses ; l'analyse toxicologique révèle une MST et la séropositivité.\nEric Blanloeil, directeur des pompes funèbres, a tout remarqué mais s'en tient à un suicide maquillé par charité, refuse toute autre idée et cherche à faire enterrer le corps au plus vite.\nLe docteur Biguet a signé le certificat sans se déplacer, pour rendre service à Blanloeil : négligence, rien de plus.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-blanloeil-2",
+              "nom": "Eric Blanloeil",
+              "source": "Directeur des Pompes funèbres Saint-Jean",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La soixantaine, l'air douloureusement compatissant. Pas « aware ». Admirateur de Lalanne. A vu tout de suite que le tournevis était trop petit et qu'il n'y avait pas assez de sang, et en a conclu à un vrai suicide maquillé pour épargner la CEF. Refuse d'admettre la moindre irrégularité (y compris le certificat signé sans examen) et pousse à un enterrement rapide.\nPas de caractéristiques dans le livre : fiche d'humain moyen (niveau 2 partout), estimée.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-blanloeil"
+            },
+            {
+              "id": "ag8-biguet-3",
+              "nom": "Docteur Gilles Biguet",
+              "source": "Gynécologue à la Pitié-Salpêtrière, notable catholique intégriste",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A signé le certificat de décès sans voir le corps, à la demande de son ami Blanloeil. Répond aux envoyés de l'Église avec un jargon pompeux, mais n'a rien à cacher d'autre que sa négligence.\nPas de caractéristiques dans le livre : fiche d'humain moyen (niveau 2 partout), estimée.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-biguet"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-enterrement",
+              "q": "Les PJ arrivent-ils avant l'enterrement ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Ils peuvent faire examiner le corps (Médecine) et relever toutes les incohérences."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Le corps est enterré : il faut une exhumation, ou se contenter des autres indices."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-bandes",
+          "nom": "5. Bandes vidéo et emplois du temps",
+          "lieu": "Siège de la CEF – poste des gardiens de nuit, cellules",
+          "notes": "Caméras à toutes les issues. Christophe Lemaire, gardien de nuit, dit naïvement avoir remis les bandes à Wasselynck. Wasselynck prétend les avoir prises à cause du suicide (découvert pourtant bien plus tard) ; confronté, il invoque la Providence, accepte de les rendre puis « découvre » qu'on les lui a volées. Elles sont dans son bréviaire creusé : on y voit Papin entrer en portant Fournier, puis les trois autres se faufiler ensemble.\nEmplois du temps : en interrogeant les pensionnaires, on établit que Wasselynck, Papin, Larvols et Défois sont rentrés vers 6 h le matin du « suicide » ; les voisins levés pour matines les ont entendus.\nChronologie réelle (pour le MJ) : J-3 17 h, Défois confirme sa venue et celle de quatre collègues ; J-3 23 h, départ en civil dans une camionnette du Secours catholique, conduite par Papin, vers une ancienne usine électrique de Pantin (une dizaine de clients, dont Montane, plus Trixi et Gildas) ; J-2 2 h, Montane tue Fournier d'un coup de tournevis, Trixi renvoie les prêtres avec le corps et rançonne Montane ; 5 h 30, Papin remonte le corps (aidé par Lemaire) ; 6 h, Wasselynck prend les bandes ; 9 h, Larvols prévient Lalanne, qui propose le faux suicide ; 11 h, réunion chez Lalanne ; 12 h, Papin et Wasselynck mettent en scène le suicide ; 15 h, Isabelle Lemaire découvre le corps ; 17 h, les pompes funèbres l'emportent ; J-1 15 h, Défois fait envoyer la demande d'enquête à Arad.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-christophe-4",
+              "nom": "Christophe Lemaire",
+              "source": "Gardien de nuit de la CEF",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Gardiennage 1, Balayage 1, Cantique 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "59 ans. Orphelin élevé par la CEF, comme sa sœur Isabelle ; innocent, naïf, incapable de voir le mal. A aidé Papin à porter Fournier jusqu'à son lit sans rien comprendre, et a remis les bandes vidéo à Wasselynck. Coupable idéal que les PJ pourraient être tentés d'accuser.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-christophe"
+            },
+            {
+              "id": "ag8-wasselynck-5",
+              "nom": "Père René Wasselynck",
+              "source": "Serviteur de Dieu de Joseph – secrétaire délégué à la doctrine de la foi (inquisiteur de la CEF)",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 2,
+                "vo": 5,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 3,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Détection du mensonge",
+                  "r": 2
+                }
+              ],
+              "talents": "Culture générale 2 (histoire 4), Baratin 1, Discussion 3, Intimidation 4, Savoir occulte 2 (hiérarchie angélique 4), Latin 4, Torture 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "77 ans, ancien aumônier de la Marine. Sadique, royaliste, homosexuel refoulé. A suivi Défois pour le prendre la main dans le sac, puis est devenu lui-même accro aux soirées, en simple spectateur. Pseudo : « Roberto Malone ».\nA récupéré les bandes vidéo chez le gardien de nuit (J-2 à 6 h) : elles sont cachées dans son bréviaire creusé. A aidé Papin à monter le faux suicide.\nCe qu'il peut offrir : l'appui de Joseph (qui ne veut surtout pas de scandale), recommandations (des PA), soldats de Dieu, argent, facilités judiciaires au Paradis. Arrêter Wasselynck, c'est se mettre Joseph à dos.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-wasselynck"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag8-sc-temoins-chefs",
+          "nom": "6. Témoignages : les dirigeants de la CEF",
+          "lieu": "Siège de la CEF – bureaux des secrétariats",
+          "notes": "Grille d'interrogatoire (du plus doux au plus dur) :\n1. Décontractée : simple formalité, aucune suspicion affichée.\n2. Officielle un peu dure : les PJ jouent les flics, personne n'est tout à fait innocent.\n3. Accusation voilée avec proposition de discussion : les PJ laissent entendre qu'ils savent et proposent un arrangement.\n4. Accusation claire avec ouverture : attaque frontale, preuves sur la table, mais une porte de sortie (dénoncer les autres).\n5. Accusation ferme sans preuve : l'interrogatoire dérape sur une accusation non étayée.\n6. Accusation ferme avec preuves : procès anticipé, preuves (réelles ou supposées) présentées.\nCes réactions sont des repères : adaptez-les aux pouvoirs, aux jets et au jeu des joueurs, et récompensez les pièges subtils.\n\nLalanne (complice du maquillage) :\n1. Hypocrite, faussement coopératif, imbu de son rang.\n2. Faussement choqué : on ne traite pas ainsi un homme de son rang.\n3. Très réceptif ; n'avoue au pire que des négligences « par bonté d'âme », prêt à tous les compromis pour rester hors de cause.\n4. Calme, déçu ; menaces floues mais répétées sur les conséquences pour leur carrière ; leur demande où est leur intérêt.\n5. Sourit, leur répète qu'ils se mettent dans une situation très pénible, sans préciser.\n6. Propose un arrangement à l'amiable sans rien reconnaître ; négocie leur silence contre des PA ou des services.\n\nHayet (innocent, ambitieux) :\n1. Les prend de haut et met en doute leur professionnalisme.\n2. Approuve et leur conseille d'être fermes avec tout le monde.\n3. Rit ; menace de représailles. Négocie seulement si on lui fait comprendre que la conduite de Wasselynck, son subordonné, va rejaillir sur lui.\n4. Accusé, il brandit l'Inquisition ; sinon il met ses moyens au service des PJ et accable Lalanne, sauf si celui-ci démissionne en sa faveur.\n5. Seuls les aveux comptent pour lui : il offre ses moyens « d'interrogatoire ». Accusé, il fait venir des anges de Dominique enquêter sur les PJ pour outrage.\n6. Ravi, il sonne l'hallali : allié de poids, mais il rend toute négociation avec les accusés difficile.\n\nLarvols (complice, amant de Fournier) :\n1. Affable, choqué, pleure et prie pour Fournier.\n2. Se plie avec servilité à toutes les humiliations.\n3. Cherche ce que savent les PJ ; laisse entendre qu'un tel scandale ne doit pas sortir ; lâche des bribes sur le meurtre selon ce qu'ils savent déjà.\n4. Pareil.\n5. Pareil, en plus paniqué : prêt à plaider coupable pour obtenir l'indulgence et faire tomber les autres.\n6. Très tendu : dit tout contre l'immunité et lâche des informations importantes pour appâter.\n\nLebel (innocent) :\n1. Professionnel et respectueux envers des immortels.\n2. Courbe l'échine, mais les PJ baissent dans son estime.\n3. Fait semblant de ne pas comprendre les avances.\n4. Très tendu ; prouve son ignorance, prêt à tout pour être blanchi, jusqu'à s'accuser au début.\n5. Panique et perd pied : prêt à n'importe quel témoignage pour éviter la damnation.\n6. Impossible : il est innocent.\n\nCe que chacun peut offrir : voir les fiches. Lalanne n'a pas de garde du corps en dehors de Papin.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-lalanne-6",
+              "nom": "Père Stanislas Lalanne",
+              "source": "Serviteur de Dieu de Didier – secrétaire général de la Conférence des évêques de France",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 7,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 2, Discussion 3, Aisance sociale 3, Culture générale 2 (politique de la CEF 4), Savoir occulte 1 (hiérarchie angélique 3), Latin 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "71 ans, petit, chauve, lunettes. Jésuite, l'homme le plus puissant de l'Église de France. Joue au vieux sage modeste ; en réalité froid, calculateur, n'a que des intérêts. Répond par des questions.\nA organisé le maquillage du meurtre en suicide (réunion de J-2 à 11 h) et compte bien en tirer parti. Nie jusqu'au bout avoir été au courant. Peut devenir le meilleur allié des PJ s'ils le convainquent qu'ils vont dans son sens.\nCe qu'il peut offrir : soutien de la CEF, facilités avec Notre-Dame, argent, serviteurs de Dieu, recommandations (des PA). Didier le lâche s'il apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-lalanne"
+            },
+            {
+              "id": "ag8-hayet-7",
+              "nom": "Père Bernard Hayet",
+              "source": "Serviteur de Dieu de Dominique – secrétaire pour les questions pastorales",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 7
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Détection du mal",
+                  "r": 3
+                }
+              ],
+              "talents": "Baratin 1, Discussion 2, Enquête 3, Fouille 2, Aisance sociale 2, Intimidation 4, Savoir occulte 1 (hiérarchie angélique 2), Culture générale 2 (politique de la CEF 2), Latin 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "68 ans, cheveux blancs. Narcissique, théocrate d'extrême droite, coups de gueule légendaires. Bloqué dans sa carrière, il rêve de prendre la place de Lalanne et voit dans l'affaire un scandale à exploiter. Innocent : il ignore tout des soirées, que Wasselynck (son subordonné, inquisiteur de la CEF) lui cache.\nSeul membre de la CEF à reconnaître la valeur des logs informatiques. Allié de poids si les PJ ont des preuves.\nCe qu'il peut offrir : l'appui de Dominique (prêt à tout pour que son poulain dirige la CEF), facilités judiciaires au Paradis, soldats de Dieu, recommandations (des PA).\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-hayet"
+            },
+            {
+              "id": "ag8-larvols-8",
+              "nom": "Père Jean-Paul Larvols",
+              "source": "Serviteur de Dieu d'Ange – secrétaire pour l'apostolat des laïcs",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 4,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Assaut spirituel",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 4, Discussion 2, Aisance sociale 2, Intimidation 6, Savoir occulte 2 (hiérarchie angélique 3), Culture générale 2 (politique de la CEF 3), Latin 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "77 ans, petit, chauve, lunettes. « Honnête ordure » : manipulateur, lâche, opportuniste, il tient son monde par le chantage. Était l'amant de Fournier. Complice : présent à la soirée, c'est lui qui a mis Lalanne dans la confidence. Pseudo sur le site : « Gros Dégueulasse » (sa boîte est la plus ancienne de la CEF).\nCe qu'il peut offrir : soutien de son secrétariat, argent, serviteurs de Dieu. Ange le lâche si elle apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-larvols"
+            },
+            {
+              "id": "ag8-lebel-9",
+              "nom": "Olivier Lebel",
+              "source": "Serviteur de Dieu au service de Marc – secrétaire pour les questions administratives, juridiques et financières",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 5,
+                "pr": 6,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 3,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Présence",
+                  "r": 2
+                }
+              ],
+              "talents": "Culture générale 2 (économie 4), Informatique 2, Latin 1, Discussion 4, Connaissance occulte 0 (hiérarchie angélique 1)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "49 ans. Laïc, calme, consciencieux, neutre dans les luttes de pouvoir ; tient les cordons de la bourse. Totalement innocent, mais sait que l'innocence ne suffit pas toujours à l'Église : il peut paniquer plus qu'un coupable.\nCe qu'il peut offrir pour avoir la paix : argent, biens, appartements, voitures.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-lebel"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag8-sc-temoins-complices",
+          "nom": "7. Témoignages : les complices et le personnel",
+          "lieu": "Siège de la CEF – cellules, secrétariats, loge",
+          "notes": "Même grille d'approches (1 décontractée → 6 accusation avec preuves).\n\nDéfois (complice, rongé par la culpabilité) :\n1. Très disponible, veut que la vérité éclate.\n2. Se soumet, prêche que tout le monde est coupable.\n3. Grandes phrases sur la justice, refuse de transiger.\n4. Refuse tout arrangement ; ne parle que s'il est sûr que tous les coupables tomberont avec lui.\n5. Soulagé : il déballe tout.\n6. Avoue tout et exige que tous tombent, sans arrangement.\n\nWasselynck (complice, inquisiteur) :\n1. Cassant, met en doute la compétence des PJ : l'affaire est close.\n2. Contre-attaque, se porte garant de la CEF, colère bien feinte.\n3. Paranoïaque : ne lâche rien avant de savoir ce qu'ils savent, évoque des « hérétiques » à la CEF.\n4. Dévoile certaines cartes (les bandes) ; offre un ou deux coupables, Papin d'abord, contre son immunité, voire un piège ; nie toute culpabilité ou se dit infiltré.\n5. Joue le collègue enquêteur infiltré sur des hérétiques, en accord avec Lalanne ; ordonne aux PJ de ne pas gâcher son enquête.\n6. Colère noire, reprend l'histoire de l'infiltré, prévient que l'affaire les dépasse, propose un témoignage arrangé de Lalanne. N'avoue jamais.\n\nPapin (complice, garde du corps) :\n1. Formalité ; discute entre collègues, surtout avec les PJ combattants.\n2. Répond en soldat (« Colonel ! »), ment mal.\n3. Ne comprend pas les allusions.\n4. Laisse entendre que le repos du guerrier est permis et que ce n'est pas lui qui a versé le premier sang.\n5. Se raidit, reconnaît les faits si tous plongent avec lui ; demande à voir ses complices, qu'il nomme.\n6. Baisse la tête, se met aux arrêts, attend l'Inquisition et prie.\n\nChristophe Lemaire (innocent) :\n1. Très respectueux, raconte tout ce qu'il a vu sans malice.\n2. Panique, bégaie, se contredit.\n3. Trop naïf pour comprendre que l'Église pourrait être en faute.\n4. Finit par se croire lui-même coupable et avoue tout ce qu'on lui reproche.\n5. Transe mystique : se flagelle, prie à grands cris, propos incohérents.\n6. Pareil.\n\nIsabelle Lemaire (innocente) :\n1. Très coopérative, mais ne sait presque rien.\n2. Sanglote.\n3. Ne comprend pas qu'on négocie la vérité ; de plus en plus choquée.\n4. Craque, pleure, prie.\n5. Hurle, doit être internée (retraite spirituelle dans un couvent des Vosges).\n6. Impossible : elle est innocente.\n\nPatricia Besset-Vazin (innocente) :\n1. Joue la secrétaire importante.\n2. Courbe l'échine en se plaignant du manque de respect.\n3. Outrée, nie tout ; si on lui fait entrevoir qu'elle sera épargnée, elle détaille l'emploi du temps de Défois et ses visites de sites, puis règle tous ses comptes.\n4. Charge son patron et ses compagnons de sortie ; d'après les rumeurs, plus de la moitié de la CEF serait coupable.\n5. Prostrée, répète qu'elle est innocente ; ne sait pas mentir : l'emploi du temps de Défois et son insistance pour la demande d'enquête.\n6. Impossible : elle est innocente.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-defois-10",
+              "nom": "Père Gérard Défois",
+              "source": "Serviteur de Dieu de Guy – conseiller pour Caritas (Secours catholique)",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 2,
+                "pe": 4,
+                "vo": 3,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 2,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Bénédiction : guérison de maladies",
+                  "r": 4
+                }
+              ],
+              "talents": "Aisance sociale 1, Culture générale 2, Médecine 2, Savoir occulte 1 (hiérarchie angélique 2), Cinéma érotique européen 4, Latin 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "48 ans, chauve, corpulent. Croyant sincère rongé par une addiction sexuelle de plus en plus extrême ; premier client du site à la CEF, il y a entraîné ses collègues. Ignore la vraie nature des filles (ses notions de médecine le font douter). Pseudo : « Judas ».\nHanté par la culpabilité, il a fait envoyer le dossier à Notre-Dame et espère au fond être démasqué et puni : c'est le maillon qui craque le plus vite.\nN'a rien à offrir.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-defois"
+            },
+            {
+              "id": "ag8-wasselynck-11",
+              "nom": "Père René Wasselynck",
+              "source": "Serviteur de Dieu de Joseph – secrétaire délégué à la doctrine de la foi (inquisiteur de la CEF)",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 2,
+                "vo": 5,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 3,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Détection du mensonge",
+                  "r": 2
+                }
+              ],
+              "talents": "Culture générale 2 (histoire 4), Baratin 1, Discussion 3, Intimidation 4, Savoir occulte 2 (hiérarchie angélique 4), Latin 4, Torture 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "77 ans, ancien aumônier de la Marine. Sadique, royaliste, homosexuel refoulé. A suivi Défois pour le prendre la main dans le sac, puis est devenu lui-même accro aux soirées, en simple spectateur. Pseudo : « Roberto Malone ».\nA récupéré les bandes vidéo chez le gardien de nuit (J-2 à 6 h) : elles sont cachées dans son bréviaire creusé. A aidé Papin à monter le faux suicide.\nCe qu'il peut offrir : l'appui de Joseph (qui ne veut surtout pas de scandale), recommandations (des PA), soldats de Dieu, argent, facilités judiciaires au Paradis. Arrêter Wasselynck, c'est se mettre Joseph à dos.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-wasselynck"
+            },
+            {
+              "id": "ag8-papin-12",
+              "nom": "Jean-Louis Papin",
+              "source": "Soldat de Dieu de Laurent – garde du corps du secrétaire général",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 2,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Couteau Rambo",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 2 (couteau Rambo 4), Défense 2, Fouille 3, Athlétisme 2, Intimidation 2, Savoir militaire (protection rapprochée 2), Acrobatie 1, Films de Stallone 2, Bodybuilding 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "27 ans, grand et costaud. Gros bras simple et timide, qui ne parle qu'en répliques de Stallone. Pseudo : « Rambo ». A conduit la camionnette du Secours catholique jusqu'à Pantin, a ramené le corps dans la cellule (aidé sans le savoir par Christophe Lemaire), puis a mis en scène le suicide avec un tournevis trop petit.\nBien interrogé, il lâche facilement toute l'affaire. Bouc émissaire idéal ; Laurent envoie un ange l'arrêter ou le tuer s'il apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nCoup de poing estimé au niveau de Combat (2).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-papin"
+            },
+            {
+              "id": "ag8-christophe-13",
+              "nom": "Christophe Lemaire",
+              "source": "Gardien de nuit de la CEF",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Gardiennage 1, Balayage 1, Cantique 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "59 ans. Orphelin élevé par la CEF, comme sa sœur Isabelle ; innocent, naïf, incapable de voir le mal. A aidé Papin à porter Fournier jusqu'à son lit sans rien comprendre, et a remis les bandes vidéo à Wasselynck. Coupable idéal que les PJ pourraient être tentés d'accuser.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-christophe"
+            },
+            {
+              "id": "ag8-isabelle-14",
+              "nom": "Isabelle Lemaire",
+              "source": "Assistante du père Lalanne",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 2,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 2,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Métier (secrétariat) 2, Tricot 2, Bonnes actions 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "63 ans. Sœur de Christophe, aussi innocente que lui. Envoyée par Lalanne chercher Fournier (J-2 à 15 h), elle a découvert le corps ; Lalanne lui a interdit d'appeler les secours. Encore sous le choc.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-isabelle"
+            },
+            {
+              "id": "ag8-besset-15",
+              "nom": "Patricia Besset-Vazin",
+              "source": "Secrétaire personnelle du père Défois",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 3,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Culture générale 1, Savoir occulte 0+ (hiérarchie angélique 1), Métier (secrétariat) 1, Latin 1, Intimidation 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "47 ans, bourgeoise versaillaise mariée, sept enfants, aigrie et mesquine ; barrage redoutable devant la porte de Défois. A signé la demande d'enquête envoyée à Notre-Dame. Sait que son patron a un emploi du temps bizarre et fréquente des sites pornographiques, et a entendu des rumeurs sur les sorties nocturnes de la moitié de la CEF.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-besset"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag8-sc-arad",
+          "nom": "8. Arrangements et rapport à Arad",
+          "lieu": "Notre-Dame – bureau d'Arad",
+          "notes": "Le vrai but n'est pas de trouver les coupables, mais de faire découvrir le trafic et de placer les PJ dans un jeu de pouvoirs : les prélats ont des archanges derrière eux et proposent des arrangements (voir les fiches). Les anges veulent des PA et de l'avancement, pas forcément la justice.\nChoix cornélien : faire éclater la vérité et se mettre à dos la CEF et des archanges (Joseph surtout, si Wasselynck tombe), ou accepter des PA pour accuser un innocent (Lemaire), ne frapper qu'une partie des coupables (Papin) ou conclure au suicide.\nArad juge seul le résultat : il veut un dossier cohérent mené selon les règles. Suicide, faux coupable tremblant ou vérité, tout lui va si le rapport tient. S'il repère incohérences, approximations ou mensonges, il ouvre une enquête interne, qui peut s'éteindre vite ou amener des anges de Dominique à la recherche de ripoux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-arad-16",
+              "nom": "Arad",
+              "source": "Ange de Novalis, grade 1 – bureaucrate à Notre-Dame, chargé du dossier",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 6,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pollen",
+                  "r": 2
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (bureaucratie) 3, Discussion 5, Science (botanique) 4, Informatique 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans d'apparence, chauve. Bureaucrate heureux, fanatique du « zéro papier » (pour sauver les arbres). Il a ouvert l'enquête obligatoire et juge seul la réussite de la mission : il veut un dossier cohérent, mené selon les règles. Il avale n'importe quelle conclusion crédible (suicide, faux coupable…) mais lance une enquête interne s'il repère des incohérences ou des mensonges (jusqu'à l'arrivée d'anges de Dominique). Déteste qu'on gaspille l'argent du Paradis.\nAllié administratif des PJ, pas un adversaire.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-arad"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-conclusion",
+              "q": "Que concluent les PJ dans leur rapport ?",
+              "opts": [
+                {
+                  "t": "La vérité",
+                  "suite": "Scandale : la CEF et certains archanges (Joseph si Wasselynck tombe, Didier lâche Lalanne, Ange lâche Larvols, Laurent fait arrêter ou tuer Papin) leur en veulent ; Hayet et Dominique deviennent des alliés."
+                },
+                {
+                  "t": "Un arrangement",
+                  "suite": "Les prélats tiennent parole : PA, appuis, argent ; Arad est satisfait si le dossier est cohérent."
+                },
+                {
+                  "t": "Un innocent accusé ou le suicide",
+                  "suite": "Arad classe l'affaire si rien ne cloche ; sinon, enquête interne contre les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-site",
+          "nom": "9. La suite : sexybitches.vu",
+          "lieu": "Internet – société SB Inc (boîte postale au Vanuatu)",
+          "notes": "Quelle que soit la conclusion, les PJ devraient apprendre l'existence des soirées et vouloir enquêter. Officiellement, il faut demander à Arad d'ouvrir une enquête : une dizaine de formulaires électroniques et autant de fois les mêmes questions ; il refuse de payer les « frais ».\nLe site est hébergé au Vanuatu, sans aucune obligation de renseignement ; les prestations extrêmes ne sont visibles que des « membres ». Pour le devenir, il faut le parrainage d'un membre : faire pression sur Montane ou un comploteur. Le parrain introduit, « Satan » envoie un mail (pseudo, mot de passe) qui ouvre la messagerie des membres et l'annonce des soirées.\nLes comploteurs (sauf Papin) ont entendu Montane crier le nom de sa société pendant la soirée : ils le donnent contre une remise de peine.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-parrain",
+              "q": "Qui parraine les PJ ?",
+              "opts": [
+                {
+                  "t": "Montane",
+                  "suite": "Il les inscrit et leur donne le lieu et l'heure de la prochaine soirée."
+                },
+                {
+                  "t": "Un comploteur de la CEF",
+                  "suite": "Inscription possible, mais le comploteur peut prévenir « Satan » s'il se sent trahi."
+                },
+                {
+                  "t": "Personne",
+                  "suite": "Il faut passer par le milieu ou les hommes de main pour remonter le réseau."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-montane",
+          "nom": "10. Montane Electronic",
+          "lieu": "Pavillon près des Buttes-Chaumont (19e)",
+          "notes": "Rendez-vous facile, à condition de forcer le barrage de la secrétaire. Montane, que Trixi fait chanter, craque vite face à des PJ un peu virils et pas tout à fait légaux : il propose 100 000 € pour qu'ils éliminent Trixi, en se justifiant par le sort des filles. Il n'ira jamais à la police. Il parraine volontiers les PJ (pseudo « Don Juan ») et donne le lieu et l'heure de la prochaine soirée.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-montane-17",
+              "nom": "Nico Montane",
+              "source": "PDG véreux de Montane Electronic, client du réseau",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 3,
+                "vo": 3,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Science 1 (électronique 2), Discussion 2, Gestion 2, Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "58 ans, émigré roumain enrichi, méprisant et sadique, l'un des pires clients du site (pseudo « Don Juan »). C'est lui qui a tué Fournier, par accident, pendant la soirée de Pantin ; Trixi lui a extorqué une grosse somme pour étouffer l'affaire et le fait chanter depuis.\nSociété enregistrée dans le 19e, pavillon près des Buttes-Chaumont (bureaux au rez-de-chaussée et au 1er, logement au 2e). Facile à rencontrer si l'on passe sa secrétaire. Craque vite : propose 100 000 € aux PJ pour éliminer Trixi, peut les parrainer sur le site et leur donner le lieu et l'heure de la prochaine soirée. Ne sait presque rien de Trixi et de « Satan », sauf qu'ils ont peu de gardes et que les employés roumains ont peur de Trixi.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-montane"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-contrat",
+              "q": "Les PJ acceptent-ils l'argent de Montane ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Ils deviennent les tueurs à gages d'un meurtrier ; à Arad et à leur conscience d'en juger."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Ils obtiennent tout de même le parrainage et la date de la soirée ; Montane reste à leur merci."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-milieu",
+          "nom": "11. Le milieu, les hommes de main et les hangars",
+          "lieu": "Boulevards des Maréchaux, baraques de chantier, pavillons de banlieue",
+          "notes": "Le milieu : par des contacts dans la police ou la justice, on apprend qu'une organisation menée par un certain « Satan », fou en fauteuil roulant, a pris le contrôle de la prostitution à Paris en quelques mois ; les bandes rivales ont été anéanties ou ralliées, avec des rumeurs de cannibalisme.\nLes services : exploitation de filles vivantes sur les Maréchaux, gardées par de nombreux employés ; séances livrées à domicile ou à l'hôtel avec une fille zombie (qui sait se défendre) ; et les soirées réservées aux membres.\nLes hommes de main sont le maillon faible : ils connaissent une ou deux planques, ont vu « Satan » et Trixi. Les caporaux ont le numéro de messagerie de Trixi : un faux appel peut l'attirer dans une planque et lui tendre une embuscade.\nLes hangars : plusieurs pavillons de banlieue où les zombies sont stockées sous la garde de deux ou trois employés. Trixi y passe souvent, notamment pour remettre des escouades de morts-vivants à des démons récompensés par l'Enfer.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag8-maquereaux-18",
+              "nom": "Maquereaux et hommes de main",
+              "source": "Employés de Trixi et Brunet",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Intimidation 3, Tir 2 (armes de poing 3), Défense 1, Séduction 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petits criminels ralliés au réseau. Ne savent pas grand-chose : ont vu « Satan » et Trixi, connaissent une ou deux planques. Une dizaine de « caporaux » ont le numéro de Trixi. Peu habitués au combat : faciles à surprendre, mais tirent dans le tas à la moindre alerte.\nArme de poing non précisée : revolver petit calibre choisi. Coup de poing au niveau 1 (pas de Corps à corps).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-maquereaux"
+            },
+            {
+              "id": "ag8-zombies-19",
+              "nom": "Prostituées zombies",
+              "source": "Mortes-vivantes de Trixi",
+              "type": "mortvivant",
+              "qty": 6,
+              "car": {
+                "fo": 9,
+                "ag": 2,
+                "pe": 2,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 2,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Douleur",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 4, Kama-sutra 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes femmes achetées en Europe de l'Est, tuées et relevées par Trixi. Parfaitement dociles, capables de se défendre seules, elles obéissent à Trixi jusqu'au massacre.\nDéfense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-zombies"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-piege",
+              "q": "Les PJ tendent-ils un piège à Trixi par sa messagerie ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Trixi vient régler le « problème » dans une planque : embuscade possible, mais il fuit s'il sent des anges."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Il reste la soirée à thème pour atteindre Trixi et Gildas."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-soiree",
+          "nom": "12. C'est lundi, c'est ravioli !",
+          "lieu": "Lieu de la prochaine soirée : maison en ruine, lotissement inachevé ou usine désaffectée",
+          "notes": "Une ou deux soirées par mois, toutes d'une violence extrême, certaines avec mise à mort. Trixi choisit les lieux et y place deux ou trois employés une semaine avant. Le soir venu, une trentaine d'employés armés patrouillent discrètement autour : pas des soldats, faciles à surprendre et à neutraliser un par un, mais ils tirent dans le tas à la moindre alerte.\nDéroulement (à résumer sobrement) : Gildas accueille les invités depuis son fauteuil, Trixi tient le rôle de majordome ; dix à trente clients, voyeurs ou participants ; des mises en scène à thème orchestrées par Gildas, au terme desquelles une fille est souvent tuée (pour devenir zombie) ou une zombie « décommissionnée ». Entrée : 1 000 € pour un voyeur, 10 000 € pour un participant.\nLes PJ peuvent venir en invités (parrainage) ou en commando.\nEn cas d'incident, Trixi fait évacuer les clients et lance les zombies (qui feignent de fuir en appelant à l'aide) sur les intrus, qu'il prend pour la police ou des rivaux. Au moindre signe d'anges, il s'enfuit en ordonnant aux zombies de tuer tout le monde, Gildas et les employés compris, puis fait le tour de ses hangars pour mettre son cheptel à l'abri : c'est la fin de sexybitches.vu.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag8-trixi-20",
+              "nom": "Trixi (Franck Fauvin)",
+              "source": "Démon d'Hornet, grade 1 – le vrai patron du réseau",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 12,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Résurrection macabre",
+                  "r": 8
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 4, Défense 4, Métier (gestion) 3, Discussion 3, Intimidation 5, Tir 2 (armes de poing 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "47 ans d'apparence, costume trois pièces, lunettes. Démon consciencieux, plein d'humour, qui fait le Mal par métier plus que par goût ; il se lasse de diriger cette « usine à zombies » et demande en vain à Hornet d'être remplacé. Le plan d'Hornet : acheter des filles à l'Est, les tuer, les relever en zombies, les faire travailler, puis fournir des escouades de morts-vivants aux démons méritants.\nRédige 90 % des messages de « Satan ». Repère lui-même les lieux des soirées. Joignable seulement par une messagerie qu'il relève toutes les six heures (les caporaux ont le numéro) : piège possible.\nEn cas de problème, fait évacuer les clients et lance les zombies sur les agresseurs ; s'il sent des anges, il fuit en ordonnant le massacre puis fait le tour de ses hangars pour mettre ses zombies à l'abri.\nArme de poing non précisée : revolver gros calibre choisi pour Tir (armes de poing 4).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-trixi"
+            },
+            {
+              "id": "ag8-gildas-21",
+              "nom": "Gildas Brunet (« Satan »)",
+              "source": "Faux sorcier en formation, ex-trader, gérant de sexybitches.vu",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 2,
+                "vo": 6,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 2, Séances SM extrêmes 4+, Métier (finance) 2, Torture 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "33 ans, petit et gras, habillé cher. Ex-trader licencié pour fraude, ruiné, jambes brisées par deux souteneurs roumains (dévorés depuis par ses zombies). Son invocation ratée a attiré Trixi. Se fait appeler « Satan » sur le site (l'auteur instable de 10 % des messages), reçoit ses invités depuis son fauteuil roulant et met en scène les soirées. Fou, mégalomane, persuadé d'être le chef alors que Trixi contrôle tout.\nAu moindre signe d'anges, Trixi ordonne aux zombies de tuer tout le monde, Gildas en premier.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-gildas"
+            },
+            {
+              "id": "ag8-maquereaux-22",
+              "nom": "Maquereaux et hommes de main",
+              "source": "Employés de Trixi et Brunet",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Intimidation 3, Tir 2 (armes de poing 3), Défense 1, Séduction 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petits criminels ralliés au réseau. Ne savent pas grand-chose : ont vu « Satan » et Trixi, connaissent une ou deux planques. Une dizaine de « caporaux » ont le numéro de Trixi. Peu habitués au combat : faciles à surprendre, mais tirent dans le tas à la moindre alerte.\nArme de poing non précisée : revolver petit calibre choisi. Coup de poing au niveau 1 (pas de Corps à corps).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-maquereaux"
+            },
+            {
+              "id": "ag8-zombies-23",
+              "nom": "Prostituées zombies",
+              "source": "Mortes-vivantes de Trixi",
+              "type": "mortvivant",
+              "qty": 7,
+              "car": {
+                "fo": 9,
+                "ag": 2,
+                "pe": 2,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 2,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Douleur",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 4, Kama-sutra 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes femmes achetées en Europe de l'Est, tuées et relevées par Trixi. Parfaitement dociles, capables de se défendre seules, elles obéissent à Trixi jusqu'au massacre.\nDéfense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-zombies"
+            },
+            {
+              "id": "ag8-montane-24",
+              "nom": "Nico Montane",
+              "source": "PDG véreux de Montane Electronic, client du réseau",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 3,
+                "vo": 3,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Science 1 (électronique 2), Discussion 2, Gestion 2, Torture 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "58 ans, émigré roumain enrichi, méprisant et sadique, l'un des pires clients du site (pseudo « Don Juan »). C'est lui qui a tué Fournier, par accident, pendant la soirée de Pantin ; Trixi lui a extorqué une grosse somme pour étouffer l'affaire et le fait chanter depuis.\nSociété enregistrée dans le 19e, pavillon près des Buttes-Chaumont (bureaux au rez-de-chaussée et au 1er, logement au 2e). Facile à rencontrer si l'on passe sa secrétaire. Craque vite : propose 100 000 € aux PJ pour éliminer Trixi, peut les parrainer sur le site et leur donner le lieu et l'heure de la prochaine soirée. Ne sait presque rien de Trixi et de « Satan », sauf qu'ils ont peu de gardes et que les employés roumains ont peur de Trixi.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-montane"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag8-ch-trixi",
+              "q": "Trixi parvient-il à fuir ?",
+              "opts": [
+                {
+                  "t": "Non",
+                  "suite": "Le réseau est démantelé à la source ; les hangars restent à nettoyer."
+                },
+                {
+                  "t": "Oui",
+                  "suite": "Il met ses zombies à l'abri et reste une menace (PNJ récurrent possible) ; le site ferme."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag8-sc-epilogue",
+          "nom": "13. Épilogue",
+          "lieu": "Notre-Dame – bureau d'Arad",
+          "notes": "Les PA dépendent du caractère officiel ou non de la mission, et Arad est intraitable : même si les PJ ont démantelé tout un réseau de morts-vivants, il estime qu'ils n'avaient pas à prendre cette initiative sans enquête officielle. Les arrangements passés avec les prélats (PA, appuis, argent) et les rancunes des archanges s'appliquent selon les choix faits en scène 8.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag8-arad-25",
+              "nom": "Arad",
+              "source": "Ange de Novalis, grade 1 – bureaucrate à Notre-Dame, chargé du dossier",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 8,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 6,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pollen",
+                  "r": 2
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (bureaucratie) 3, Discussion 5, Science (botanique) 4, Informatique 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans d'apparence, chauve. Bureaucrate heureux, fanatique du « zéro papier » (pour sauver les arbres). Il a ouvert l'enquête obligatoire et juge seul la réussite de la mission : il veut un dossier cohérent, mené selon les règles. Il avale n'importe quelle conclusion crédible (suicide, faux coupable…) mais lance une enquête interne s'il repère des incohérences ou des mensonges (jusqu'à l'arrivée d'anges de Dominique). Déteste qu'on gaspille l'argent du Paradis.\nAllié administratif des PJ, pas un adversaire.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128.",
+              "typeId": "type-ag8-arad"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795358376739,
+      "updatedAt": 1795358376739
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-ag8-lalanne",
+      "nom": "Père Stanislas Lalanne",
+      "source": "Serviteur de Dieu de Didier – secrétaire général de la Conférence des évêques de France",
+      "type": "serviteur",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 7,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de pacification",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 2, Discussion 3, Aisance sociale 3, Culture générale 2 (politique de la CEF 4), Savoir occulte 1 (hiérarchie angélique 3), Latin 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "71 ans, petit, chauve, lunettes. Jésuite, l'homme le plus puissant de l'Église de France. Joue au vieux sage modeste ; en réalité froid, calculateur, n'a que des intérêts. Répond par des questions.\nA organisé le maquillage du meurtre en suicide (réunion de J-2 à 11 h) et compte bien en tirer parti. Nie jusqu'au bout avoir été au courant. Peut devenir le meilleur allié des PJ s'ils le convainquent qu'ils vont dans son sens.\nCe qu'il peut offrir : soutien de la CEF, facilités avec Notre-Dame, argent, serviteurs de Dieu, recommandations (des PA). Didier le lâche s'il apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-hayet",
+      "nom": "Père Bernard Hayet",
+      "source": "Serviteur de Dieu de Dominique – secrétaire pour les questions pastorales",
+      "type": "serviteur",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 4,
+        "vo": 6,
+        "pr": 4,
+        "foi": 7
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 6,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Détection du mal",
+          "r": 3
+        }
+      ],
+      "talents": "Baratin 1, Discussion 2, Enquête 3, Fouille 2, Aisance sociale 2, Intimidation 4, Savoir occulte 1 (hiérarchie angélique 2), Culture générale 2 (politique de la CEF 2), Latin 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "68 ans, cheveux blancs. Narcissique, théocrate d'extrême droite, coups de gueule légendaires. Bloqué dans sa carrière, il rêve de prendre la place de Lalanne et voit dans l'affaire un scandale à exploiter. Innocent : il ignore tout des soirées, que Wasselynck (son subordonné, inquisiteur de la CEF) lui cache.\nSeul membre de la CEF à reconnaître la valeur des logs informatiques. Allié de poids si les PJ ont des preuves.\nCe qu'il peut offrir : l'appui de Dominique (prêt à tout pour que son poulain dirige la CEF), facilités judiciaires au Paradis, soldats de Dieu, recommandations (des PA).\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-larvols",
+      "nom": "Père Jean-Paul Larvols",
+      "source": "Serviteur de Dieu d'Ange – secrétaire pour l'apostolat des laïcs",
+      "type": "serviteur",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 6,
+        "vo": 7,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 4,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Assaut spirituel",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 4, Discussion 2, Aisance sociale 2, Intimidation 6, Savoir occulte 2 (hiérarchie angélique 3), Culture générale 2 (politique de la CEF 3), Latin 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "77 ans, petit, chauve, lunettes. « Honnête ordure » : manipulateur, lâche, opportuniste, il tient son monde par le chantage. Était l'amant de Fournier. Complice : présent à la soirée, c'est lui qui a mis Lalanne dans la confidence. Pseudo sur le site : « Gros Dégueulasse » (sa boîte est la plus ancienne de la CEF).\nCe qu'il peut offrir : soutien de son secrétariat, argent, serviteurs de Dieu. Ange le lâche si elle apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-lebel",
+      "nom": "Olivier Lebel",
+      "source": "Serviteur de Dieu au service de Marc – secrétaire pour les questions administratives, juridiques et financières",
+      "type": "serviteur",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 5,
+        "pr": 6,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 3,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de Présence",
+          "r": 2
+        }
+      ],
+      "talents": "Culture générale 2 (économie 4), Informatique 2, Latin 1, Discussion 4, Connaissance occulte 0 (hiérarchie angélique 1)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "49 ans. Laïc, calme, consciencieux, neutre dans les luttes de pouvoir ; tient les cordons de la bourse. Totalement innocent, mais sait que l'innocence ne suffit pas toujours à l'Église : il peut paniquer plus qu'un coupable.\nCe qu'il peut offrir pour avoir la paix : argent, biens, appartements, voitures.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-defois",
+      "nom": "Père Gérard Défois",
+      "source": "Serviteur de Dieu de Guy – conseiller pour Caritas (Secours catholique)",
+      "type": "serviteur",
+      "car": {
+        "fo": 4,
+        "ag": 2,
+        "pe": 4,
+        "vo": 3,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 2,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Bénédiction : guérison de maladies",
+          "r": 4
+        }
+      ],
+      "talents": "Aisance sociale 1, Culture générale 2, Médecine 2, Savoir occulte 1 (hiérarchie angélique 2), Cinéma érotique européen 4, Latin 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "48 ans, chauve, corpulent. Croyant sincère rongé par une addiction sexuelle de plus en plus extrême ; premier client du site à la CEF, il y a entraîné ses collègues. Ignore la vraie nature des filles (ses notions de médecine le font douter). Pseudo : « Judas ».\nHanté par la culpabilité, il a fait envoyer le dossier à Notre-Dame et espère au fond être démasqué et puni : c'est le maillon qui craque le plus vite.\nN'a rien à offrir.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-wasselynck",
+      "nom": "Père René Wasselynck",
+      "source": "Serviteur de Dieu de Joseph – secrétaire délégué à la doctrine de la foi (inquisiteur de la CEF)",
+      "type": "serviteur",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 2,
+        "vo": 5,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 3,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Détection du mensonge",
+          "r": 2
+        }
+      ],
+      "talents": "Culture générale 2 (histoire 4), Baratin 1, Discussion 3, Intimidation 4, Savoir occulte 2 (hiérarchie angélique 4), Latin 4, Torture 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "77 ans, ancien aumônier de la Marine. Sadique, royaliste, homosexuel refoulé. A suivi Défois pour le prendre la main dans le sac, puis est devenu lui-même accro aux soirées, en simple spectateur. Pseudo : « Roberto Malone ».\nA récupéré les bandes vidéo chez le gardien de nuit (J-2 à 6 h) : elles sont cachées dans son bréviaire creusé. A aidé Papin à monter le faux suicide.\nCe qu'il peut offrir : l'appui de Joseph (qui ne veut surtout pas de scandale), recommandations (des PA), soldats de Dieu, argent, facilités judiciaires au Paradis. Arrêter Wasselynck, c'est se mettre Joseph à dos.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-papin",
+      "nom": "Jean-Louis Papin",
+      "source": "Soldat de Dieu de Laurent – garde du corps du secrétaire général",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 2,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Couteau Rambo",
+          "att": 8,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 2 (couteau Rambo 4), Défense 2, Fouille 3, Athlétisme 2, Intimidation 2, Savoir militaire (protection rapprochée 2), Acrobatie 1, Films de Stallone 2, Bodybuilding 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "27 ans, grand et costaud. Gros bras simple et timide, qui ne parle qu'en répliques de Stallone. Pseudo : « Rambo ». A conduit la camionnette du Secours catholique jusqu'à Pantin, a ramené le corps dans la cellule (aidé sans le savoir par Christophe Lemaire), puis a mis en scène le suicide avec un tournevis trop petit.\nBien interrogé, il lâche facilement toute l'affaire. Bouc émissaire idéal ; Laurent envoie un ange l'arrêter ou le tuer s'il apprend son rôle.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nCoup de poing estimé au niveau de Combat (2).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-christophe",
+      "nom": "Christophe Lemaire",
+      "source": "Gardien de nuit de la CEF",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 3,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Gardiennage 1, Balayage 1, Cantique 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "59 ans. Orphelin élevé par la CEF, comme sa sœur Isabelle ; innocent, naïf, incapable de voir le mal. A aidé Papin à porter Fournier jusqu'à son lit sans rien comprendre, et a remis les bandes vidéo à Wasselynck. Coupable idéal que les PJ pourraient être tentés d'accuser.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-isabelle",
+      "nom": "Isabelle Lemaire",
+      "source": "Assistante du père Lalanne",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 2,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 2,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (secrétariat) 2, Tricot 2, Bonnes actions 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "63 ans. Sœur de Christophe, aussi innocente que lui. Envoyée par Lalanne chercher Fournier (J-2 à 15 h), elle a découvert le corps ; Lalanne lui a interdit d'appeler les secours. Encore sous le choc.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-besset",
+      "nom": "Patricia Besset-Vazin",
+      "source": "Secrétaire personnelle du père Défois",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 3,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Culture générale 1, Savoir occulte 0+ (hiérarchie angélique 1), Métier (secrétariat) 1, Latin 1, Intimidation 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "47 ans, bourgeoise versaillaise mariée, sept enfants, aigrie et mesquine ; barrage redoutable devant la porte de Défois. A signé la demande d'enquête envoyée à Notre-Dame. Sait que son patron a un emploi du temps bizarre et fréquente des sites pornographiques, et a entendu des rumeurs sur les sorties nocturnes de la moitié de la CEF.\nRéactions aux six approches d'interrogatoire : voir les notes de la scène des témoignages.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-blanloeil",
+      "nom": "Eric Blanloeil",
+      "source": "Directeur des Pompes funèbres Saint-Jean",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La soixantaine, l'air douloureusement compatissant. Pas « aware ». Admirateur de Lalanne. A vu tout de suite que le tournevis était trop petit et qu'il n'y avait pas assez de sang, et en a conclu à un vrai suicide maquillé pour épargner la CEF. Refuse d'admettre la moindre irrégularité (y compris le certificat signé sans examen) et pousse à un enterrement rapide.\nPas de caractéristiques dans le livre : fiche d'humain moyen (niveau 2 partout), estimée.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-biguet",
+      "nom": "Docteur Gilles Biguet",
+      "source": "Gynécologue à la Pitié-Salpêtrière, notable catholique intégriste",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A signé le certificat de décès sans voir le corps, à la demande de son ami Blanloeil. Répond aux envoyés de l'Église avec un jargon pompeux, mais n'a rien à cacher d'autre que sa négligence.\nPas de caractéristiques dans le livre : fiche d'humain moyen (niveau 2 partout), estimée.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-montane",
+      "nom": "Nico Montane",
+      "source": "PDG véreux de Montane Electronic, client du réseau",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 3,
+        "vo": 3,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Science 1 (électronique 2), Discussion 2, Gestion 2, Torture 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "58 ans, émigré roumain enrichi, méprisant et sadique, l'un des pires clients du site (pseudo « Don Juan »). C'est lui qui a tué Fournier, par accident, pendant la soirée de Pantin ; Trixi lui a extorqué une grosse somme pour étouffer l'affaire et le fait chanter depuis.\nSociété enregistrée dans le 19e, pavillon près des Buttes-Chaumont (bureaux au rez-de-chaussée et au 1er, logement au 2e). Facile à rencontrer si l'on passe sa secrétaire. Craque vite : propose 100 000 € aux PJ pour éliminer Trixi, peut les parrainer sur le site et leur donner le lieu et l'heure de la prochaine soirée. Ne sait presque rien de Trixi et de « Satan », sauf qu'ils ont peu de gardes et que les employés roumains ont peur de Trixi.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-arad",
+      "nom": "Arad",
+      "source": "Ange de Novalis, grade 1 – bureaucrate à Notre-Dame, chargé du dossier",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 8,
+        "vo": 6,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 6,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Pollen",
+          "r": 2
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Caméléon",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (bureaucratie) 3, Discussion 5, Science (botanique) 4, Informatique 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "38 ans d'apparence, chauve. Bureaucrate heureux, fanatique du « zéro papier » (pour sauver les arbres). Il a ouvert l'enquête obligatoire et juge seul la réussite de la mission : il veut un dossier cohérent, mené selon les règles. Il avale n'importe quelle conclusion crédible (suicide, faux coupable…) mais lance une enquête interne s'il repère des incohérences ou des mensonges (jusqu'à l'arrivée d'anges de Dominique). Déteste qu'on gaspille l'argent du Paradis.\nAllié administratif des PJ, pas un adversaire.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-gildas",
+      "nom": "Gildas Brunet (« Satan »)",
+      "source": "Faux sorcier en formation, ex-trader, gérant de sexybitches.vu",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 2,
+        "vo": 6,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 2, Séances SM extrêmes 4+, Métier (finance) 2, Torture 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "33 ans, petit et gras, habillé cher. Ex-trader licencié pour fraude, ruiné, jambes brisées par deux souteneurs roumains (dévorés depuis par ses zombies). Son invocation ratée a attiré Trixi. Se fait appeler « Satan » sur le site (l'auteur instable de 10 % des messages), reçoit ses invités depuis son fauteuil roulant et met en scène les soirées. Fou, mégalomane, persuadé d'être le chef alors que Trixi contrôle tout.\nAu moindre signe d'anges, Trixi ordonne aux zombies de tuer tout le monde, Gildas en premier.\nAucun talent de combat : coup de poing estimé au niveau 1. Défense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-trixi",
+      "nom": "Trixi (Franck Fauvin)",
+      "source": "Démon d'Hornet, grade 1 – le vrai patron du réseau",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 8,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 12,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        },
+        {
+          "n": "Pistolet",
+          "att": 8,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Résurrection macabre",
+          "r": 8
+        },
+        {
+          "n": "Nécrose",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 4, Défense 4, Métier (gestion) 3, Discussion 3, Intimidation 5, Tir 2 (armes de poing 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "47 ans d'apparence, costume trois pièces, lunettes. Démon consciencieux, plein d'humour, qui fait le Mal par métier plus que par goût ; il se lasse de diriger cette « usine à zombies » et demande en vain à Hornet d'être remplacé. Le plan d'Hornet : acheter des filles à l'Est, les tuer, les relever en zombies, les faire travailler, puis fournir des escouades de morts-vivants aux démons méritants.\nRédige 90 % des messages de « Satan ». Repère lui-même les lieux des soirées. Joignable seulement par une messagerie qu'il relève toutes les six heures (les caporaux ont le numéro) : piège possible.\nEn cas de problème, fait évacuer les clients et lance les zombies sur les agresseurs ; s'il sent des anges, il fuit en ordonnant le massacre puis fait le tour de ses hangars pour mettre ses zombies à l'abri.\nArme de poing non précisée : revolver gros calibre choisi pour Tir (armes de poing 4).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-maquereaux",
+      "nom": "Maquereaux et hommes de main",
+      "source": "Employés de Trixi et Brunet",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Pistolet",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Intimidation 3, Tir 2 (armes de poing 3), Défense 1, Séduction 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petits criminels ralliés au réseau. Ne savent pas grand-chose : ont vu « Satan » et Trixi, connaissent une ou deux planques. Une dizaine de « caporaux » ont le numéro de Trixi. Peu habitués au combat : faciles à surprendre, mais tirent dans le tas à la moindre alerte.\nArme de poing non précisée : revolver petit calibre choisi. Coup de poing au niveau 1 (pas de Corps à corps).\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    },
+    {
+      "id": "type-ag8-zombies",
+      "nom": "Prostituées zombies",
+      "source": "Mortes-vivantes de Trixi",
+      "type": "mortvivant",
+      "car": {
+        "fo": 9,
+        "ag": 2,
+        "pe": 2,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 2,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Douleur",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 4, Kama-sutra 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeunes femmes achetées en Europe de l'Est, tuées et relevées par Trixi. Parfaitement dociles, capables de se défendre seules, elles obéissent à Trixi jusqu'au massacre.\nDéfense non donnée : niveau 1.\nSource : Angelots en gelée, « Un coup dans le chat, un coup dans le pot, c'est l'amour en chapeau ! », p. 110-128."
+    }
+  ],
+  "memoire": []
+}

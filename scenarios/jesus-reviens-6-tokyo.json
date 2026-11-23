@@ -1,0 +1,2244 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "jr6-tokyo",
+      "nom": "Jésus Reviens ! – 6. Tokyo",
+      "resume": "Campagne « Jésus Reviens ! », épisode de Tokyo (« Twenty-two Tunes from Tokyo »), pour anges de grade 1 ou 2 envoyés par Régine pour le compte d'Ange et d'Alain. Monty, démon de Kobal infiltré chez des soldats de Dieu japonais américanophiles qu'il fait passer pour un ange, parodie l'opération JR : avec 25 soldats de Dieu et une centaine de yakuzas, il prend en otage le Disneyland de Tokyo et proclame la République américanophile du Soleil Levant. Les PJ peuvent le coiffer au poteau au Garage, s'infiltrer dans le parc assiégé, démonter la supercherie devant les médias et surtout capturer les anges que Semper Fidelis, Francesco et Strachnov envoient régler l'affaire dans le sang. Ton parodique, épisode récréatif.",
+      "notes": "Source : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99. Liste des modificateurs et des preuves : chapitre un, p. 9-12 (la p. 13 manque au scan ; la liste de Tokyo semble complète en p. 12).\nCommanditaires : Ange et Alain (avec Yves, prévenus par Michel), via leur chargée de mission Régine. Georges est l'un des trois archanges visés par l'IA (index G), comme Laurent (L) et Dominique (D).\nDéclenchement : la prise d'otages a lieu quand la TRIC atteint 50 (« Monty prend en otage Disneyland Tokyo et proclame une république américanophile, +10 ; Semper Fidelis et Francesco envoient des anges régler ça dans le sang, +5 »). Les PJ peuvent arriver avant via les pistes de Moscou (Katioucha) et d'Okefenokee.\nDéroulement : situation → descente au Garage (facultative, avant le jour J) → jour J et J+1 → infiltration du parc → chez Son Excellence → tribunal, massacre et anges de JR (J+2) → dénouement.\n\nModificateurs de la TRIC (Tokyo) :\n• Début de la prise d'otages : +10\n• Par jour de prise d'otages : +2\n• Prise d'otages résolue dans le sang par les anges de Semper Fidelis : +5\n• Par tranche de 10 morts : +1\n• Les PJ démontrent aux médias que c'est une supercherie : −5\n(Le seuil 50 de la TRIC déclenche l'épisode ; le livre ajoute que chaque heure qui passe fait monter la tension.)\n\nPreuves de l'Index d'Accusation obtenables (Tokyo) :\n• Témoignages de soldats de Dieu sur leur séjour chez Dixie Securities : 0 à 1L\n• Témoignage de Rob Parker : 0 à 1L (non cumulable avec la preuve précédente)\n• Témoignage de Monty sur l'opération JR : 0 à 2L\n• Témoignage de l'ange envoyé par Semper Fidelis (Shim) : 0 à 2L\n• Témoignage de l'ange envoyé par Francesco (Mohab) : 0 à 2D\n• Témoignage d'un des anges envoyés par « Katioucha » : 0 à 2G (en tout)\n• Preuves des motifs de la venue des anges de Semper Fidelis : 1L\n• Preuves des motifs de la venue des anges de Francesco : 1D\n• Preuves des motifs de la venue des anges de « Katioucha » : 1G\n• Témoignages des yakuzas : 0\nAdaptation : la liste du livre attribue des anges à Katioucha (démon de Moscou), alors que le chapitre les fait envoyer par Strachnov, ange de Georges (index G) : il s'agit du groupe de Zenoch (Zenoch, avec Pahoran et Tarshish qui l'ont suivi).\n\nPistes vers la suite : Monty connaît l'adresse de Katioucha ; Zenoch connaît les coordonnées de Strachnov et de Nouvelle Russie (Moscou) ; Shim et Mohab celles de Francesco (Madrid).\nRécompenses : le livre ne donne pas de PA propres à l'épisode ; elles découlent de l'IA (voir le cadre de la campagne et l'épilogue).\n\nFiches : caractéristiques du livre en niveaux INS/MV (Ch des humains en Foi). Armes avec la précision et la puissance du livre. Valeurs estimées : défense des soldats de Dieu, otages et journalistes (non donnée : niveau 1) ; attaque de Zenoch (pas de Combat sur sa fiche : niveau 3) ; MS de Rob Parker (12 dans le livre, 16 retenu). Pouvoirs renommés : « Gag stupide » → Gag absurde, « Juste lame » → Juste-lame, « Malédiction (folie) » → Malédiction : folie. Les otages, policiers et journalistes ne sont pas des alliés des PJ mais des tiers.",
+      "scenes": [
+        {
+          "id": "jr6-sc-situation",
+          "nom": "1. Mickey Mouse über alles : la situation",
+          "lieu": "Tokyo – avant le déclenchement (seuil 50 de la TRIC)",
+          "notes": "À lire par le MJ. Le Japon est un trou perdu du Grand Jeu : chrétiens rares, shintoïstes et bouddhistes étrangers au conflit, et une secte psionique très puissante (la Soka Gakai) qui tient l'archipel à l'écart des anges et des démons. Les quelques anges en poste sont des placardisés.\nMonty, démon de Kobal en exil, s'est infiltré dans un petit groupe de soldats de Dieu américanophiles qui se réunit le week-end au « Garage », un vieil entrepôt de la lointaine banlieue de Tokyo. Une vingtaine d'entre eux revient d'un stage de trois semaines au camp d'Okefenokee (Semper Fidelis), sans lien direct avec JR, mais avec des bribes de conversation sur le « retour des valeurs de l'Occident chrétien ». Pour deux canettes de bière, Monty apprend tout ce qu'ils savent, recoupe avec son ami Katioucha à Moscou, et comprend que les anges trichent avec le Grand Jeu.\nSa réponse : une parodie de JR, l'opération « Mickey Mouse über alles ». Prendre le Disneyland de Tokyo et y proclamer la République américanophile du Soleil Levant, premier pas vers un Japon devenu 52e État américain. Il ne sait pas ce que veulent les anges : il s'amuse, et veut faire rire Kobal.\nLes soldats de Dieu croient à une mission officielle : Monty leur a dit qu'elle faisait partie d'une campagne plus vaste baptisée « JR » (en hommage au héros de Dallas).\n\nArriver avant le jour J : des indices mènent ici depuis Moscou (correspondance de Katioucha avec Monty) et depuis le marais d'Okefenokee (liste des stagiaires japonais). Il suffit de retrouver les coordonnées du groupe, voire de le faire convoquer par la hiérarchie des soldats de Dieu. Attention : une convocation bidon met Monty en alerte et il disparaît ; une descente éclair au Garage permet en revanche une belle prise (scène 2).\nDéclenchement : l'opération part quand la TRIC atteint 50 (voir les notes du scénario). Le MJ peut l'annoncer par quelques indices.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr6-monty-1",
+              "nom": "Monty (Mark Taylor)",
+              "source": "Démon de Kobal, grade 2 (faux ange de Walther, « néo-Washington »)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 5,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de cuisine électrique maudit majeur",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Esprit chaotique",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 2
+                },
+                {
+                  "n": "Malédiction : folie",
+                  "r": 2
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (cuisinier) 2+, Discours stupides 2, Imiter Chaplin dans « Le Dictateur » 3, Défense 4, Corps à corps 3, Combat 3 (armes improvisées 5), Baratin 4, Aisance sociale 3, Séduction 3, Hobby (inventer des recettes immondes) 4, Japonais, Savoir occulte 1 (opération JR et Grand Jeu au Japon 2+), Culture générale 1+ (culture américaine du XXe siècle, vie quotidienne au Japon 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans, brun aux yeux verts. Exilé au Japon depuis une dizaine d'années par Kobal après une mission ratée qui a coûté la vie à tous ses collègues… mais a fait beaucoup rire son prince. Cuisinier dans un restaurant anglais, il glisse des bas morceaux immondes dans les plats des clients shintoïstes pour « pourrir leur karma ».\nInfiltré depuis environ deux ans chez les soldats de Dieu du Garage, où il se fait passer pour un ange de Walther rescapé d'une mission tragique : il n'est pas officiellement membre du groupe mais en est le chef de fait. Peu de contacts avec l'Enfer (il est plus ou moins puni), mais correspondance régulière avec Katioucha (Moscou), dont il connaît l'adresse.\nL'opération « Mickey Mouse über alles » est entièrement de son fait : il la monte pour le plaisir et pour faire assez rire Kobal afin de ne pas être blâmé comme la dernière fois. Aucun démon ne sera inquiété par l'Enfer pour cette affaire.\nCe qu'il sait de JR : peu de chose (ce que Katioucha et les soldats de Dieu lui ont raconté, brodé à sa façon). Interrogé « virilement », il répond par des calembours et des affabulations ; avec du temps et de la patience, on peut lui arracher le nom de son chargé de mission et d'un ou deux collègues (le MJ improvise alors une chasse aux démons au Japon).\nGag stupide 4 dans le livre : rendu par Gag absurde. Crocs : pouvoir Membre exotique : crocs.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-monty"
+            },
+            {
+              "id": "jr6-rob-2",
+              "nom": "Rob Parker",
+              "source": "Soldat de Dieu, chef officiel du groupe du Garage",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 5,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de commando",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "CAR15",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (couteaux 3), Tir 1+ (armes d'épaule 3+), Défense 2, Savoir militaire 1+ (tactique commando 3+), Survie 1, Hobby (sculpture sur bois au couteau) 2, Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Culture générale 1+ (American Way of Life 2+), Infiltration 3+, Savoir d'espion 1 (infiltration 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "37 ans, châtain aux yeux marron. Soldat de Dieu californien, caricature du vétéran américain : pour lui le Vietnam et le 11 septembre sont les seuls événements marquants du demi-siècle, et seul l'American Way of Life est valable. Sa bêtise lui a valu d'être placardisé au Japon ; Monty l'a convaincu sans peine que l'opération de Disneyland est la riposte au 11 septembre. Bras droit fidèle de Monty, il ne mesure pas le ridicule de la situation.\nIl laisse Monty diriger tant qu'un semblant de discipline est respecté.\nCAR15 : attaque multiple, pénétration importante, portée moyenne.\nSeuils : le livre indique MS 12 (coquille probable) ; 16 retenu, selon la progression BL 4 / BG 8 / BF 12.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-rob"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-approche",
+              "q": "Comment les PJ remontent-ils jusqu'au groupe du Garage ?",
+              "opts": [
+                {
+                  "t": "Descente éclair au Garage",
+                  "suite": "Scène 2 : chance de capturer Monty et Rob Parker avant le jour J ; la prise d'otages n'a pas lieu."
+                },
+                {
+                  "t": "Convocation par la hiérarchie",
+                  "suite": "Si elle sonne faux, Monty flaire le piège et file : il lance son opération plus tôt ou disparaît dans la nature."
+                },
+                {
+                  "t": "Trop tard : l'opération est lancée",
+                  "suite": "Scène 3 : jour J, TRIC +10, puis +2 par jour de prise d'otages."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-garage",
+          "nom": "2. Descente au Garage",
+          "lieu": "Entrepôt de la grande banlieue de Tokyo, rebaptisé « le Garage » – un week-end avant le jour J",
+          "notes": "Le groupe s'y retrouve tous les week-ends : entraînement et endoctrinement, films américains, bières, vague rêve américain et, de temps en temps, un peu d'arts martiaux. Rob Parker en est le chef officiel ; Monty, présenté comme un ange de Walther rescapé d'une mission où tous ses collègues sont morts, en est le meneur réel. Il a refusé de suivre les autres au stage américain, de peur de son caractère officiel.\nLes soldats de Dieu sont convaincus de servir le Paradis : ils ne s'en prendront pas à des anges qui s'annoncent comme tels. Bien joué (preuve que Monty n'est pas un ange, démonstration de son aura…), ils peuvent se retourner contre lui.\nMonty, s'il est pris, tente de fuir (Caméléon, Aura de confusion) ou de semer la zizanie. Interrogé, voir sa fiche : peu d'informations, beaucoup de calembours.\nCe qu'on peut trouver : préparatifs de l'opération (plans du parc, contacts avec la mafia, explosifs), témoignages des soldats sur leur séjour chez Dixie Securities (0 à 1L), témoignage de Rob Parker (0 à 1L, non cumulable avec le précédent).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr6-monty-3",
+              "nom": "Monty (Mark Taylor)",
+              "source": "Démon de Kobal, grade 2 (faux ange de Walther, « néo-Washington »)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 5,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de cuisine électrique maudit majeur",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Esprit chaotique",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 2
+                },
+                {
+                  "n": "Malédiction : folie",
+                  "r": 2
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (cuisinier) 2+, Discours stupides 2, Imiter Chaplin dans « Le Dictateur » 3, Défense 4, Corps à corps 3, Combat 3 (armes improvisées 5), Baratin 4, Aisance sociale 3, Séduction 3, Hobby (inventer des recettes immondes) 4, Japonais, Savoir occulte 1 (opération JR et Grand Jeu au Japon 2+), Culture générale 1+ (culture américaine du XXe siècle, vie quotidienne au Japon 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans, brun aux yeux verts. Exilé au Japon depuis une dizaine d'années par Kobal après une mission ratée qui a coûté la vie à tous ses collègues… mais a fait beaucoup rire son prince. Cuisinier dans un restaurant anglais, il glisse des bas morceaux immondes dans les plats des clients shintoïstes pour « pourrir leur karma ».\nInfiltré depuis environ deux ans chez les soldats de Dieu du Garage, où il se fait passer pour un ange de Walther rescapé d'une mission tragique : il n'est pas officiellement membre du groupe mais en est le chef de fait. Peu de contacts avec l'Enfer (il est plus ou moins puni), mais correspondance régulière avec Katioucha (Moscou), dont il connaît l'adresse.\nL'opération « Mickey Mouse über alles » est entièrement de son fait : il la monte pour le plaisir et pour faire assez rire Kobal afin de ne pas être blâmé comme la dernière fois. Aucun démon ne sera inquiété par l'Enfer pour cette affaire.\nCe qu'il sait de JR : peu de chose (ce que Katioucha et les soldats de Dieu lui ont raconté, brodé à sa façon). Interrogé « virilement », il répond par des calembours et des affabulations ; avec du temps et de la patience, on peut lui arracher le nom de son chargé de mission et d'un ou deux collègues (le MJ improvise alors une chasse aux démons au Japon).\nGag stupide 4 dans le livre : rendu par Gag absurde. Crocs : pouvoir Membre exotique : crocs.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-monty"
+            },
+            {
+              "id": "jr6-rob-4",
+              "nom": "Rob Parker",
+              "source": "Soldat de Dieu, chef officiel du groupe du Garage",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 5,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de commando",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "CAR15",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (couteaux 3), Tir 1+ (armes d'épaule 3+), Défense 2, Savoir militaire 1+ (tactique commando 3+), Survie 1, Hobby (sculpture sur bois au couteau) 2, Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Culture générale 1+ (American Way of Life 2+), Infiltration 3+, Savoir d'espion 1 (infiltration 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "37 ans, châtain aux yeux marron. Soldat de Dieu californien, caricature du vétéran américain : pour lui le Vietnam et le 11 septembre sont les seuls événements marquants du demi-siècle, et seul l'American Way of Life est valable. Sa bêtise lui a valu d'être placardisé au Japon ; Monty l'a convaincu sans peine que l'opération de Disneyland est la riposte au 11 septembre. Bras droit fidèle de Monty, il ne mesure pas le ridicule de la situation.\nIl laisse Monty diriger tant qu'un semblant de discipline est respecté.\nCAR15 : attaque multiple, pénétration importante, portée moyenne.\nSeuils : le livre indique MS 12 (coquille probable) ; 16 retenu, selon la progression BL 4 / BG 8 / BF 12.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-rob"
+            },
+            {
+              "id": "jr6-soldats-5",
+              "nom": "Soldats de Dieu du Garage",
+              "source": "Groupe américanophile de Tokyo (25 hommes)",
+              "type": "soldat",
+              "qty": 8,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "CAR15 silencieux",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil de sniper",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Mitrailleuse",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 9,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 1+ (armes d'épaule 3+), Discrétion 3, Savoir militaire 1 (commando 3), Intrusion 3, Fouille 2, Acrobatie 2+, Athlétisme 2+, Japonais, Culture générale 1 (American Way of Life 2+), Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Survie 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Pour Mickey, banzaï ! » Surtout des Occidentaux émigrés, mal intégrés, et quelques catholiques japonais descendants des survivants des persécutions du XVIIe siècle. Prépositionnés pour épauler l'armée américaine en cas de besoin, ils n'ont jamais eu de mission et s'ennuient ferme : le week-end, ils regardent des films américains au Garage en buvant de la bière. Une vingtaine d'entre eux a fait un stage de trois semaines au camp des marais d'Okefenokee (Semper Fidelis). L'opération Mickey est leur première vraie mission : ils veulent montrer ce qu'ils valent.\nUne arme parmi les trois (une seule par soldat). Défense non donnée : niveau 1 (2).\nQuantité de la scène à ajuster (25 au total).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-soldats"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-garage",
+              "q": "Issue de la descente ?",
+              "opts": [
+                {
+                  "t": "Monty capturé avant le jour J",
+                  "suite": "L'opération Mickey n'a pas lieu : pas de TRIC à Tokyo. Témoignage de Monty sur JR possible (0 à 2L)."
+                },
+                {
+                  "t": "Monty s'échappe",
+                  "suite": "Il lance l'opération plus tôt avec ce qui lui reste (scène 3) ou disparaît : le MJ décide."
+                },
+                {
+                  "t": "Les soldats se retournent contre Monty",
+                  "suite": "Témoignages des soldats (0 à 1L) et de Rob Parker obtenus facilement."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-jourj",
+          "nom": "3. Jour J : la République américanophile du Soleil Levant",
+          "lieu": "Disneyland Tokyo – du jour J au lendemain soir",
+          "notes": "Chronologie si les PJ n'interviennent pas :\n• Jour J, au petit matin : les 25 soldats de Dieu et une centaine de yakuzas prennent le contrôle du parc. Des centaines d'otages, surtout des employés, sont menacés et entourés d'explosifs aux points stratégiques. Jusqu'à 13 h, les visiteurs entrent normalement et sont discrètement faits prisonniers par des yakuzas déguisés en employés et en personnages Disney. Puis Monty, néo-Washington autoproclamé, convoque la presse.\n• 18 h : installé dans le château de Cendrillon, rebaptisé palais de la Liberté, il explique que le Japon doit payer sa dette à la démocratie américaine et rejoindre le camp du capitalisme ; il attend les envoyés du gouvernement pour négocier sa reddition. Il demande aux Japonais de porter des oreilles de Mickey en signe de soutien, et appelle les soldats américains de l'archipel à le rejoindre. Visite de la « république » devant les caméras, otages assis sur des caisses d'explosifs.\n• 22 h : des policiers trop zélés tentent d'entrer en force pendant la visite de presse ; ils sont hachés par les tirs croisés du bateau Mark Twain et du ballon publicitaire plein de tireurs d'élite. Monty les fait raccompagner aux portes, en direct.\n• Vers 23 h : furieux contre les télés, Monty décrète que seule Disney Channel est objective et en fait la chaîne officielle de la république.\n• L'ambassadeur américain condamne l'acte sur CNN Asia ; Monty répond par une diatribe sur la décadence de l'Amérique.\n• Minuit : les forces de l'ordre encerclent le parc sans riposter aux tirs.\n• J+1, 2 h : premiers négociateurs, reçus au restaurant du Buffalo Bill Wild West Show pour un grand show de propagande en direct (applaudissements forcés des otages). Ils attendent la fin de la retransmission, à 8 h, pour négocier.\n• 17 h : négociations rompues par épuisement ; seul accord, l'échange des enfants et des malades contre des médicaments.\n• 20 h : conférence de presse où Monty insulte l'Empereur : plus aucune négociation possible, communications du parc coupées, les forces de l'ordre préparent l'assaut (blindés, mitrailleuses lourdes). Yakuzas et soldats de Dieu s'inquiètent ; Monty ne réagit pas.\n• Pendant ce temps, Semper Fidelis, Francesco et Strachnov, écœurés par cette « république » de clowns, envoient chacun un ou deux anges présents au Japon (scène 6).\n• 22 h : les derniers employés réfugiés dans les Pirates des Caraïbes sont arrêtés par les yakuzas.\n\nTon : parodique, mais la prise d'otages fait de vraies victimes. Chaque heure compte pour la TRIC.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr6-monty-6",
+              "nom": "Monty (Mark Taylor)",
+              "source": "Démon de Kobal, grade 2 (faux ange de Walther, « néo-Washington »)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 5,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de cuisine électrique maudit majeur",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Esprit chaotique",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 2
+                },
+                {
+                  "n": "Malédiction : folie",
+                  "r": 2
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (cuisinier) 2+, Discours stupides 2, Imiter Chaplin dans « Le Dictateur » 3, Défense 4, Corps à corps 3, Combat 3 (armes improvisées 5), Baratin 4, Aisance sociale 3, Séduction 3, Hobby (inventer des recettes immondes) 4, Japonais, Savoir occulte 1 (opération JR et Grand Jeu au Japon 2+), Culture générale 1+ (culture américaine du XXe siècle, vie quotidienne au Japon 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans, brun aux yeux verts. Exilé au Japon depuis une dizaine d'années par Kobal après une mission ratée qui a coûté la vie à tous ses collègues… mais a fait beaucoup rire son prince. Cuisinier dans un restaurant anglais, il glisse des bas morceaux immondes dans les plats des clients shintoïstes pour « pourrir leur karma ».\nInfiltré depuis environ deux ans chez les soldats de Dieu du Garage, où il se fait passer pour un ange de Walther rescapé d'une mission tragique : il n'est pas officiellement membre du groupe mais en est le chef de fait. Peu de contacts avec l'Enfer (il est plus ou moins puni), mais correspondance régulière avec Katioucha (Moscou), dont il connaît l'adresse.\nL'opération « Mickey Mouse über alles » est entièrement de son fait : il la monte pour le plaisir et pour faire assez rire Kobal afin de ne pas être blâmé comme la dernière fois. Aucun démon ne sera inquiété par l'Enfer pour cette affaire.\nCe qu'il sait de JR : peu de chose (ce que Katioucha et les soldats de Dieu lui ont raconté, brodé à sa façon). Interrogé « virilement », il répond par des calembours et des affabulations ; avec du temps et de la patience, on peut lui arracher le nom de son chargé de mission et d'un ou deux collègues (le MJ improvise alors une chasse aux démons au Japon).\nGag stupide 4 dans le livre : rendu par Gag absurde. Crocs : pouvoir Membre exotique : crocs.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-monty"
+            },
+            {
+              "id": "jr6-rob-7",
+              "nom": "Rob Parker",
+              "source": "Soldat de Dieu, chef officiel du groupe du Garage",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 5,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de commando",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "CAR15",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (couteaux 3), Tir 1+ (armes d'épaule 3+), Défense 2, Savoir militaire 1+ (tactique commando 3+), Survie 1, Hobby (sculpture sur bois au couteau) 2, Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Culture générale 1+ (American Way of Life 2+), Infiltration 3+, Savoir d'espion 1 (infiltration 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "37 ans, châtain aux yeux marron. Soldat de Dieu californien, caricature du vétéran américain : pour lui le Vietnam et le 11 septembre sont les seuls événements marquants du demi-siècle, et seul l'American Way of Life est valable. Sa bêtise lui a valu d'être placardisé au Japon ; Monty l'a convaincu sans peine que l'opération de Disneyland est la riposte au 11 septembre. Bras droit fidèle de Monty, il ne mesure pas le ridicule de la situation.\nIl laisse Monty diriger tant qu'un semblant de discipline est respecté.\nCAR15 : attaque multiple, pénétration importante, portée moyenne.\nSeuils : le livre indique MS 12 (coquille probable) ; 16 retenu, selon la progression BL 4 / BG 8 / BF 12.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-rob"
+            },
+            {
+              "id": "jr6-journalistes-8",
+              "nom": "Journalistes",
+              "source": "Presse nationale et internationale",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 3,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Métier (journaliste) 2, Remuer la merde 2, Poser des questions indécentes 2, Être les larbins du pouvoir 2+, Anglais, N'avoir aucun respect pour les victimes 2+, Enquête 2, Fouille 3, Intrusion 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Charognards en quête de scoop, prêts à filmer le désespoir des otages comme le grotesque des défilés « républicains ». Chassés par Monty (seule Disney Channel est autorisée), ils cherchent à s'infiltrer illégalement dans le parc : couverture possible pour les PJ, et indispensables pour démontrer la supercherie aux médias. Défense non donnée : niveau 1 (2).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-journalistes"
+            },
+            {
+              "id": "jr6-policiers-9",
+              "nom": "Policiers japonais",
+              "source": "Unités antiterroristes",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 5,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Tonfa (non létal)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Métier (policier) 2, Enquête 2, Fouille 2, Intrusion 2, Corps à corps 3, Défense 2, Tir 1 (armes de poing 2+), Culture générale 1 (culture japonaise 2), Athlétisme 2, Respect envers l'empereur 2, Intimidation 2, Anglais",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rompus aux arts martiaux et à la lutte antiterroriste, sans états d'âme envers des preneurs d'otages, surtout depuis que ceux-ci ont insulté l'Empereur. Tonfa : attaque au Corps à corps. Contacts possibles pour les PJ qui veulent entrer dans le parc avec les forces de l'ordre.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-policiers"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-medias",
+              "q": "Les PJ utilisent-ils les journalistes pour démonter la supercherie ?",
+              "opts": [
+                {
+                  "t": "Oui, preuves à l'appui",
+                  "suite": "TRIC −5 si la démonstration est convaincante (voir scène 7)."
+                },
+                {
+                  "t": "Non",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-parc",
+          "nom": "4. Le parc assiégé : les lieux",
+          "lieu": "Disneyland Tokyo, au bord de la mer – pendant la prise d'otages",
+          "notes": "Accès : le parc, entouré d'autres parcs (dont Disney SeaWorld), est coupé du monde. Les ponts routiers et ferroviaires, seuls accès, sont minés et surveillés. Un ballon Mickey géant plein d'otages patrouille au-dessus, avec soldats et yakuzas équipés de jumelles, micros, brouilleurs et fusils à lunette.\nEntrer : seule une approche discrète et subtile a une chance ; un assaut frontal est doublement risqué (parc fortifié, forces de l'ordre tout autour). Profiter de la diversion causée par les anges de JR, ou de contacts dans les forces de l'ordre, ou se glisser parmi les journalistes.\n\nLieux :\n• Arbre des Robinsons suisses : une trentaine d'otages attachés au pied, trois soldats de Dieu et une dizaine de yakuzas retranchés dans la cabane avec des mitrailleuses ; abords minés (des corps déchiquetés le prouvent). C'est là que frapperont les anges de JR.\n• Pirates des Caraïbes : train sur rails dans une caverne de pantins animés. Le dédale des tunnels techniques abrite des dizaines d'employés cachés après avoir coupé le courant ; les yakuzas mettent des heures à « nettoyer » ce foyer de résistance. Quelques employés connaissent les coulisses et ont accès aux caméras, à l'informatique et aux téléphones de service : ils peuvent repérer les PJ sur les écrans et les aider, si ceux-ci pensent à décrocher les téléphones qui sonnent.\n• Splash Mountain : montagne de grands huit aquatiques, attraction arrêtée, bateaux en barricades ; des dizaines d'otages creusent des tranchées puis sont attachés autour des bunkers. Le « Stalingrad » de la république, où doit mourir son élite.\n• Château de Cendrillon : palais de la république, drapeau Mickey au sommet, accès très contrôlés. Monty y joue au dictateur de république bananière (discours au balcon, ministres, réunions, réception des « émissaires étrangers », le tout en direct sur Disney Channel). Une poignée d'otages jugés fiables sert de fonctionnaires et de population.\n• Manège de Cendrillon : des dizaines d'enfants attachés sans leurs parents sur un manège qui tourne sans fin. Quelques yakuzas sadiques les gardent et s'y livrent à des exactions, loin des caméras et des soldats.\n• Maison hantée : manoir néo-gothique, labyrinthe encore plus compliqué que les Pirates ; des employés s'y cachent aussi.\n• Space Mountain : grands huit sous une pyramide futuriste ; trains pleins d'otages (surtout les parents des enfants du manège) qui tournent dans le noir. Une vingtaine de yakuzas les gardent mollement.\n• Maison de Mickey : résidence présidentielle gardée par l'élite des soldats de Dieu, où Monty reçoit la presse (scène 5).\n• Mark Twain Riverboat : bateau à aubes transformé en canonnière, il patrouille lentement sur le lac et les canaux en tirant sur tout ce qui bouge ; pont rempli d'otages, mitrailleuses, blindage de sacs de sable et de plaques d'acier.\n• Main Street : théâtre des défilés « spontanés » : otages encadrés, quelques collaborateurs, employés habitués à obéir déguisés en clowns ; parade mêlant carnaval métallique néo-nazi, défilé de l'Armée rouge et attraction Disney, retransmise sur Internet via Disney Channel.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr6-yakuzas-10",
+              "nom": "Yakuzas",
+              "source": "Hommes de main de la mafia japonaise (une centaine, payés par Monty)",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Sabre court japonais",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir criminel 1 (yakuzas 2+), Tir 1 (armes de poing 2), Corps à corps 3, Défense 3, Baratin 2, Hobby (comparer leurs tatouages) 2, Intimidation 2+, Anglais, Culture générale 1 (traditions et code d'honneur des yakuzas, vie quotidienne au Japon 2+), Combat 1 (épées 2+), Mah-jong 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Connards d'Américains ! » Racaille des bas-fonds qui singe les samouraïs : tatouages, code d'honneur de façade, petites frappes sans scrupules. Ils fuiront dès qu'ils sentiront l'affaire perdue, c'est-à-dire assez vite. Monty est leur seul contact ; ils n'aiment guère les soldats de Dieu, qui le leur rendent bien : les PJ peuvent exploiter cette rivalité.\nPistolet : pénétration importante, portée moyenne. Témoignages sans valeur pour l'IA (0).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-yakuzas"
+            },
+            {
+              "id": "jr6-soldats-11",
+              "nom": "Soldats de Dieu du Garage",
+              "source": "Groupe américanophile de Tokyo (25 hommes)",
+              "type": "soldat",
+              "qty": 3,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "CAR15 silencieux",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil de sniper",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Mitrailleuse",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 9,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 1+ (armes d'épaule 3+), Discrétion 3, Savoir militaire 1 (commando 3), Intrusion 3, Fouille 2, Acrobatie 2+, Athlétisme 2+, Japonais, Culture générale 1 (American Way of Life 2+), Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Survie 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Pour Mickey, banzaï ! » Surtout des Occidentaux émigrés, mal intégrés, et quelques catholiques japonais descendants des survivants des persécutions du XVIIe siècle. Prépositionnés pour épauler l'armée américaine en cas de besoin, ils n'ont jamais eu de mission et s'ennuient ferme : le week-end, ils regardent des films américains au Garage en buvant de la bière. Une vingtaine d'entre eux a fait un stage de trois semaines au camp des marais d'Okefenokee (Semper Fidelis). L'opération Mickey est leur première vraie mission : ils veulent montrer ce qu'ils valent.\nUne arme parmi les trois (une seule par soldat). Défense non donnée : niveau 1 (2).\nQuantité de la scène à ajuster (25 au total).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-soldats"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-entree",
+              "q": "Comment les PJ entrent-ils dans le parc ?",
+              "opts": [
+                {
+                  "t": "Discrètement, par leurs propres moyens",
+                  "suite": "Éviter assiégeants et assiégés ; les employés cachés des Pirates ou de la Maison hantée peuvent les guider."
+                },
+                {
+                  "t": "Parmi les journalistes ou comme émissaires",
+                  "suite": "Accès direct à Monty (scène 5), mais sous l'œil des caméras."
+                },
+                {
+                  "t": "Avec les forces de l'ordre",
+                  "suite": "Contacts japonais nécessaires ; ils entrent avec les commandos après le massacre (scène 6)."
+                },
+                {
+                  "t": "En profitant de l'attaque des anges",
+                  "suite": "Diversion à l'arbre des Robinsons ; risque de se retrouver entre trois feux."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-mickey",
+          "nom": "5. Chez Son Excellence",
+          "lieu": "Maison de Mickey (résidence présidentielle) et château de Cendrillon",
+          "notes": "Monty y mène sa vie « sociale » et y reçoit une partie des journalistes. Des PJ qui se font passer pour des émissaires ou se mêlent aux journalistes ont de bonnes chances de dîner ou de déjeuner avec Son Excellence le président de la république.\nGarde : une vingtaine de yakuzas et une demi-douzaine de soldats de Dieu quand Monty est là ; sinon une dizaine de fonctionnaires (otages) et cinq yakuzas. Rob Parker ne le quitte pas.\nMonty adore la parlote : discours absurdes, imitation de Chaplin dans « Le Dictateur », menus immondes. Il ne sait presque rien de JR mais peut lâcher, par vantardise, qu'il est en contact avec un « ami de Moscou » (Katioucha).\nDémasquer Monty devant les soldats de Dieu (preuve qu'il est un démon) peut retourner le groupe contre lui et les yakuzas, qui n'attendent qu'un prétexte pour filer.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr6-monty-12",
+              "nom": "Monty (Mark Taylor)",
+              "source": "Démon de Kobal, grade 2 (faux ange de Walther, « néo-Washington »)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 5,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 24,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de cuisine électrique maudit majeur",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Gag absurde",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Aura de confusion",
+                  "r": 6
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 6
+                },
+                {
+                  "n": "Esprit chaotique",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 2
+                },
+                {
+                  "n": "Malédiction : folie",
+                  "r": 2
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (cuisinier) 2+, Discours stupides 2, Imiter Chaplin dans « Le Dictateur » 3, Défense 4, Corps à corps 3, Combat 3 (armes improvisées 5), Baratin 4, Aisance sociale 3, Séduction 3, Hobby (inventer des recettes immondes) 4, Japonais, Savoir occulte 1 (opération JR et Grand Jeu au Japon 2+), Culture générale 1+ (culture américaine du XXe siècle, vie quotidienne au Japon 2+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "38 ans, brun aux yeux verts. Exilé au Japon depuis une dizaine d'années par Kobal après une mission ratée qui a coûté la vie à tous ses collègues… mais a fait beaucoup rire son prince. Cuisinier dans un restaurant anglais, il glisse des bas morceaux immondes dans les plats des clients shintoïstes pour « pourrir leur karma ».\nInfiltré depuis environ deux ans chez les soldats de Dieu du Garage, où il se fait passer pour un ange de Walther rescapé d'une mission tragique : il n'est pas officiellement membre du groupe mais en est le chef de fait. Peu de contacts avec l'Enfer (il est plus ou moins puni), mais correspondance régulière avec Katioucha (Moscou), dont il connaît l'adresse.\nL'opération « Mickey Mouse über alles » est entièrement de son fait : il la monte pour le plaisir et pour faire assez rire Kobal afin de ne pas être blâmé comme la dernière fois. Aucun démon ne sera inquiété par l'Enfer pour cette affaire.\nCe qu'il sait de JR : peu de chose (ce que Katioucha et les soldats de Dieu lui ont raconté, brodé à sa façon). Interrogé « virilement », il répond par des calembours et des affabulations ; avec du temps et de la patience, on peut lui arracher le nom de son chargé de mission et d'un ou deux collègues (le MJ improvise alors une chasse aux démons au Japon).\nGag stupide 4 dans le livre : rendu par Gag absurde. Crocs : pouvoir Membre exotique : crocs.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-monty"
+            },
+            {
+              "id": "jr6-rob-13",
+              "nom": "Rob Parker",
+              "source": "Soldat de Dieu, chef officiel du groupe du Garage",
+              "type": "soldat",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 6,
+                "vo": 3,
+                "pr": 5,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Couteau de commando",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "CAR15",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 1+ (couteaux 3), Tir 1+ (armes d'épaule 3+), Défense 2, Savoir militaire 1+ (tactique commando 3+), Survie 1, Hobby (sculpture sur bois au couteau) 2, Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Culture générale 1+ (American Way of Life 2+), Infiltration 3+, Savoir d'espion 1 (infiltration 3+)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "37 ans, châtain aux yeux marron. Soldat de Dieu californien, caricature du vétéran américain : pour lui le Vietnam et le 11 septembre sont les seuls événements marquants du demi-siècle, et seul l'American Way of Life est valable. Sa bêtise lui a valu d'être placardisé au Japon ; Monty l'a convaincu sans peine que l'opération de Disneyland est la riposte au 11 septembre. Bras droit fidèle de Monty, il ne mesure pas le ridicule de la situation.\nIl laisse Monty diriger tant qu'un semblant de discipline est respecté.\nCAR15 : attaque multiple, pénétration importante, portée moyenne.\nSeuils : le livre indique MS 12 (coquille probable) ; 16 retenu, selon la progression BL 4 / BG 8 / BF 12.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-rob"
+            },
+            {
+              "id": "jr6-soldats-14",
+              "nom": "Soldats de Dieu du Garage",
+              "source": "Groupe américanophile de Tokyo (25 hommes)",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "CAR15 silencieux",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil de sniper",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Mitrailleuse",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 9,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 1+ (armes d'épaule 3+), Discrétion 3, Savoir militaire 1 (commando 3), Intrusion 3, Fouille 2, Acrobatie 2+, Athlétisme 2+, Japonais, Culture générale 1 (American Way of Life 2+), Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Survie 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Pour Mickey, banzaï ! » Surtout des Occidentaux émigrés, mal intégrés, et quelques catholiques japonais descendants des survivants des persécutions du XVIIe siècle. Prépositionnés pour épauler l'armée américaine en cas de besoin, ils n'ont jamais eu de mission et s'ennuient ferme : le week-end, ils regardent des films américains au Garage en buvant de la bière. Une vingtaine d'entre eux a fait un stage de trois semaines au camp des marais d'Okefenokee (Semper Fidelis). L'opération Mickey est leur première vraie mission : ils veulent montrer ce qu'ils valent.\nUne arme parmi les trois (une seule par soldat). Défense non donnée : niveau 1 (2).\nQuantité de la scène à ajuster (25 au total).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-soldats"
+            },
+            {
+              "id": "jr6-yakuzas-15",
+              "nom": "Yakuzas",
+              "source": "Hommes de main de la mafia japonaise (une centaine, payés par Monty)",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Sabre court japonais",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir criminel 1 (yakuzas 2+), Tir 1 (armes de poing 2), Corps à corps 3, Défense 3, Baratin 2, Hobby (comparer leurs tatouages) 2, Intimidation 2+, Anglais, Culture générale 1 (traditions et code d'honneur des yakuzas, vie quotidienne au Japon 2+), Combat 1 (épées 2+), Mah-jong 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Connards d'Américains ! » Racaille des bas-fonds qui singe les samouraïs : tatouages, code d'honneur de façade, petites frappes sans scrupules. Ils fuiront dès qu'ils sentiront l'affaire perdue, c'est-à-dire assez vite. Monty est leur seul contact ; ils n'aiment guère les soldats de Dieu, qui le leur rendent bien : les PJ peuvent exploiter cette rivalité.\nPistolet : pénétration importante, portée moyenne. Témoignages sans valeur pour l'IA (0).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-yakuzas"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-masque",
+              "q": "Les PJ démasquent-ils Monty devant ses troupes ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Les soldats de Dieu se retournent contre lui, les yakuzas fuient : la république s'effondre. Témoignages des soldats et de Rob Parker (0 à 1L)."
+                },
+                {
+                  "t": "Non",
+                  "suite": "La république continue jusqu'au tribunal (scène 6)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-massacre",
+          "nom": "6. Le tribunal, Space Mountain et l'arrivée des anges",
+          "lieu": "Disney Store de Main Street, Space Mountain, arbre des Robinsons – J+2",
+          "notes": "Si personne n'a arrêté Monty :\n• 10 h : il ouvre un tribunal au Disney Store de Main Street (accusés, juges, avocats, public, policiers, tous costumés en personnages Disney), retransmis par Disney Channel puis piraté sur Internet ; le gouvernement ne parvient pas à localiser la liaison.\n• Après huit heures de parodie de justice, les 18 accusés sont reconnus coupables de trahison et d'« esprit anti-Bambi » et condamnés à mort par Space Mountain. Monty fait déplacer les otages de l'attraction pour les remplacer par les condamnés.\n• Profitant de la confusion, une partie des otages de Space Mountain se rebelle, s'empare d'armes et se retranche ; soldats de Dieu et une vingtaine de yakuzas donnent l'assaut : carnage télévisé et diffusé sur Internet. Monty est emmené par ses gardes sous un tas de corps.\n• Les anges de JR profitent de la fusillade pour pénétrer dans le parc et libérer les otages, en commençant par l'arbre des Robinsons.\n• 4 h : le calme revient à Space Mountain ; les otages survivants sont pendus devant l'attraction, en direct sur Disney Channel et les télés internes : malaise général.\n• Pendant ce temps, les anges libèrent discrètement les otages des Robinsons mais se font repérer par le ballon Mickey en essayant de les faire sortir. Le parc devient un champ de bataille confus.\n• Devant le massacre, les autorités se décident à agir : les commandos entrent dans le parc et ajoutent à la confusion.\n\nLes anges de JR : Zenoch (Georges, contacté par Strachnov) mène le groupe ; Shim (Laurent, envoyé par Semper Fidelis), Mohab (Dominique, envoyé par Francesco), Pahoran et Tarshish (Michel, venus pour Zenoch). Ils veulent régler le problème dans le sang et sans témoins. Ce ne sont pas des alliés des PJ : des anges qui enquêtent sur JR sont pour eux des gêneurs, voire des traîtres. Capturés et interrogés, ils rapportent gros à l'IA (voir les notes du scénario) ; Mohab tente de fuir et de faire taire ses complices.\nLes commandos tirent sur tout ce qui ressemble à un preneur d'otages… ou à un intrus.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr6-zenoch-16",
+              "nom": "Zenoch (Wilhelm Schwarz)",
+              "source": "Ange de Georges, grade 1 (contacté par Strachnov)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 8,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Réplique d'épée allemande à deux mains, démontable",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                },
+                {
+                  "n": "Arme exaltée",
+                  "r": 4
+                },
+                {
+                  "n": "Rebond",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Hobby (foot) 4, Culture générale 0+ (championnats d'Europe et d'Allemagne de foot 3), Baratin 2, Défense 3, Métier (conseiller culturel) 1, Savoir d'espion 3, Savoir occulte 1 (Grand Jeu au Japon 3), Discrétion 3, Aisance sociale 3, Japonais, Anglais, Chants nazis 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "35 ans, brun aux yeux marron. Chef autoproclamé des anges intégristes du Japon : une brute qui ne croit qu'à la force et a toujours le dernier mot. Officiellement conseiller culturel de l'ambassade d'Allemagne à Tokyo, il est au placard depuis des décennies et change d'identité tous les vingt ans.\nContacté en urgence par Strachnov pour régler le problème Mickey, ravi de participer à JR dont il a entendu parler sans en connaître les détails. Il connaît les coordonnées de Strachnov et de Nouvelle Russie (piste vers Moscou).\nTémoignage : c'est « l'ange envoyé par Katioucha » des listes de l'IA (0 à 2G pour l'ensemble des anges de ce groupe).\nCombat non donné par la fiche : attaque estimée au niveau 3 (Arme exaltée).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-zenoch"
+            },
+            {
+              "id": "jr6-shim-17",
+              "nom": "Shim (Charles-Hubert de Carbon-Tantrel)",
+              "source": "Ange de Laurent, grade 1 (envoyé par Semper Fidelis)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 12,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Rapière bénie mineure",
+                  "att": 9,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 2
+                }
+              ],
+              "talents": "Culture générale 1 (histoire de France 3), Hobby (généalogie) 3, Parler avec un accent vieille France méprisant 2, Anglais, Japonais, Défense 3, Combat 2 (épées 4+), Métier (cadre commercial) 1+, Savoir occulte 1 (Grand Jeu au Japon 2), Aisance sociale 3, Discussion 3, Hobby (bonnes manières) 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "22 ans, 165 cm, albinos. Nobliau fin de race perdu dans ses rêves de grandeur passée, raciste mais incarné dans un descendant de békés réunionnais au huitième noir, ce qui le fait vomir. Le peuple, pour lui, est un troupeau qu'une élite doit diriger malgré lui. Emploi fictif d'expatrié chez un grand groupe de cosmétiques, qui lui laisse le temps d'étudier les Japonais, seuls non-Blancs qu'il juge dignes d'intérêt.\nChargé par Semper Fidelis, qu'il connaît et admire, de régler le problème Mickey : une injure à JR. Il est angoissé à l'idée d'agir, mais pour le bien de la race blanche et chrétienne. Il connaît les coordonnées de Francesco à Madrid.\nTémoignage : « ange envoyé par Semper Fidelis » (0 à 2L).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-shim"
+            },
+            {
+              "id": "jr6-mohab-18",
+              "nom": "Mohab (Kojiro Minofuke)",
+              "source": "Ange de Dominique, grade 1 (envoyé par Francesco)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 7,
+                "vo": 10,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Katana béni mineur",
+                  "att": 4,
+                  "prec": 3,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jugement",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "Métier (responsable administratif) 2, Savoir occulte 1 (Grand Jeu et opération JR 3), Culture générale 1 (culture japonaise 2), Combat 1 (épées 2), Défense 2, Corps à corps 2, Baratin 3, Discussion 4, Aisance sociale 3, Anglais, Intimidation 3, Tir 1 (armes de poing 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "22 ans, brun aux yeux marron. Responsable administratif angélique pour tout le Japon, investi d'une mission divine… dans un pays où anges et démons n'ont presque rien à faire. Calme et raisonné, intégriste modéré : l'élément modérateur du groupe improvisé, impassible, aussi peu expressif qu'un héros de Kitano. Francesco l'a chargé du problème Mickey sans se faire prendre.\nEn cas de combat, il fuit plutôt que d'être capturé et n'hésite pas à tenter de tuer ses complices pour les empêcher de parler. Il connaît les coordonnées de Francesco à Madrid et en sait plus que les autres sur JR (Savoir occulte 3).\nTémoignage : « ange envoyé par Francesco » (0 à 2D). Revolver : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-mohab"
+            },
+            {
+              "id": "jr6-pahoran-19",
+              "nom": "Pahoran (Madouff Rhanaivoharivony)",
+              "source": "Ange de Michel, grade 1 (venu par amitié pour Zenoch)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 11,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Fusil à éléphant béni mineur",
+                  "att": 12,
+                  "prec": 2,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Machette",
+                  "att": 9,
+                  "prec": 1,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Sens surdéveloppés",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 2 (épées 4+), Français, Anglais, Tir 2 (armes d'épaule 6), Défense 3, Discrétion 4, Acrobatie 3, Athlétisme 4, Culture générale 2 (culture du Japon et de Madagascar 4), Savoir occulte 1 (Grand Jeu 2), Japonais",
+              "esquive": false,
+              "volonte": false,
+              "notes": "34 ans, 165 cm, Africain. Intégriste raciste coincé dans un corps noir (son hôte, chrétien pratiquant, se croyait bien intégré) : il le vit très mal, ce qui a encore aggravé son racisme. Il expie ce « péché » en tuant des non-Blancs, de préférence des non-Noirs. Son dossier de mutation est bloqué depuis 116 ans au Paradis ; membre permanent de la cellule du Japon, il apprécie le calme du pays même si ses collègues le regardent de travers.\nVenu par amitié pour Zenoch, incognito : il n'a pas prévenu Michel. N'a pas d'information propre sur JR.\nFusil à éléphant : pénétration importante, portée longue.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-pahoran"
+            },
+            {
+              "id": "jr6-tarshish-20",
+              "nom": "Tarshish (Miroslav Marakic)",
+              "source": "Ange de Michel, grade 1 (fidèle de Zenoch)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 7,
+                "pe": 9,
+                "vo": 4,
+                "pr": 3,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Kalachnikov bénie mineure",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau commando",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 4, Combat 2 (couteaux 5), Défense 4, Tir 2 (armes d'épaule 5), Savoir militaire 2 (tactique 4), Anglais, Japonais, Hobby (collection d'oreilles) 3+, Hobby (désacraliser les lieux de culte non catholiques) 5, Métier (mercenaire) 4, Athlétisme 3, Acrobatie 2, Torture 3, Culture générale 1+ (vie quotidienne en ex-Yougoslavie 3), Savoir occulte 1 (la Terre Creuse 3), Intimidation 4, Conduite 3, Survie 1 (montagne 3), Discrétion 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "42 ans, brun aux yeux marron. Ancien mercenaire en Yougoslavie, chaudement récompensé pour ses talents de « nettoyeur » (surnommé Monsieur Propre) : pour lui l'ennemi est le musulman, l'orthodoxe et tout ce qui n'est ni blanc ni catholique. Nommé à Tokyo par piston pour se rapprocher de Zenoch, qu'il admire sans limite ; brutal, borné, bourreau inhumain qui se complaît dans la souffrance d'autrui. Officiellement en mission auprès de la légation du Vatican, il passe son temps libre dans les académies d'arts martiaux.\nSavoir occulte (la Terre Creuse) 3 : peut-être une piste vers la purge de Daniel (à l'appréciation du MJ, aucune valeur d'IA dans le livre).\nArmure corporelle (argent) 1 dans le livre. Kalachnikov : attaque multiple, pénétration importante, portée longue. Un talent sordide de la fiche n'est pas repris.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-tarshish"
+            },
+            {
+              "id": "jr6-soldats-21",
+              "nom": "Soldats de Dieu du Garage",
+              "source": "Groupe américanophile de Tokyo (25 hommes)",
+              "type": "soldat",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "CAR15 silencieux",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil de sniper",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Mitrailleuse",
+                  "att": 7,
+                  "prec": -2,
+                  "puis": 9,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 1+ (armes d'épaule 3+), Discrétion 3, Savoir militaire 1 (commando 3), Intrusion 3, Fouille 2, Acrobatie 2+, Athlétisme 2+, Japonais, Culture générale 1 (American Way of Life 2+), Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Survie 1",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Pour Mickey, banzaï ! » Surtout des Occidentaux émigrés, mal intégrés, et quelques catholiques japonais descendants des survivants des persécutions du XVIIe siècle. Prépositionnés pour épauler l'armée américaine en cas de besoin, ils n'ont jamais eu de mission et s'ennuient ferme : le week-end, ils regardent des films américains au Garage en buvant de la bière. Une vingtaine d'entre eux a fait un stage de trois semaines au camp des marais d'Okefenokee (Semper Fidelis). L'opération Mickey est leur première vraie mission : ils veulent montrer ce qu'ils valent.\nUne arme parmi les trois (une seule par soldat). Défense non donnée : niveau 1 (2).\nQuantité de la scène à ajuster (25 au total).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-soldats"
+            },
+            {
+              "id": "jr6-yakuzas-22",
+              "nom": "Yakuzas",
+              "source": "Hommes de main de la mafia japonaise (une centaine, payés par Monty)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 5,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Sabre court japonais",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir criminel 1 (yakuzas 2+), Tir 1 (armes de poing 2), Corps à corps 3, Défense 3, Baratin 2, Hobby (comparer leurs tatouages) 2, Intimidation 2+, Anglais, Culture générale 1 (traditions et code d'honneur des yakuzas, vie quotidienne au Japon 2+), Combat 1 (épées 2+), Mah-jong 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "« Connards d'Américains ! » Racaille des bas-fonds qui singe les samouraïs : tatouages, code d'honneur de façade, petites frappes sans scrupules. Ils fuiront dès qu'ils sentiront l'affaire perdue, c'est-à-dire assez vite. Monty est leur seul contact ; ils n'aiment guère les soldats de Dieu, qui le leur rendent bien : les PJ peuvent exploiter cette rivalité.\nPistolet : pénétration importante, portée moyenne. Témoignages sans valeur pour l'IA (0).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-yakuzas"
+            },
+            {
+              "id": "jr6-commandos-23",
+              "nom": "Commandos japonais",
+              "source": "Forces spéciales de l'État",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 6,
+                "vo": 5,
+                "pr": 5,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 1 (armes d'épaule 3), Défense 2, Corps à corps 2, Discrétion 3, Savoir militaire 1 (commando 3), Intimidation 2, Anglais, Athlétisme 2, Acrobatie 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Machines à tuer bien dressées : ils font ce qu'on leur dit de faire. Ils entrent dans le parc quand les autorités se décident à agir (après le massacre de Space Mountain) et tirent sur tout ce qui ressemble à un preneur d'otages… ou à un intrus. Fusil-mitrailleur : attaque multiple, pénétration importante, portée longue.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99.",
+              "typeId": "type-jr6-commandos"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-anges",
+              "q": "Que deviennent les anges de JR ?",
+              "opts": [
+                {
+                  "t": "Capturés et interrogés par les PJ",
+                  "suite": "Témoignages : Semper Fidelis 0 à 2L (Shim), Francesco 0 à 2D (Mohab), groupe de Strachnov 0 à 2G en tout (Zenoch et les siens). Pistes vers Madrid et Moscou."
+                },
+                {
+                  "t": "Ils règlent l'affaire dans le sang",
+                  "suite": "TRIC +5, puis +1 par tranche de 10 morts."
+                },
+                {
+                  "t": "Ils repartent sans être identifiés",
+                  "suite": "Rien pour l'IA ; ils savent peut-être qu'une équipe d'anges fouine."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr6-ch-preuves-anges",
+              "q": "Les PJ trouvent-ils des preuves des motifs de la venue des anges ?",
+              "opts": [
+                {
+                  "t": "Pour l'ange de Semper Fidelis",
+                  "suite": "+1L à l'IA."
+                },
+                {
+                  "t": "Pour l'ange de Francesco",
+                  "suite": "+1D à l'IA."
+                },
+                {
+                  "t": "Pour les anges de Strachnov",
+                  "suite": "+1G à l'IA (« Katioucha » dans la liste du livre)."
+                },
+                {
+                  "t": "Aucune",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr6-sc-fin",
+          "nom": "7. Wipeout : dénouement et bilan",
+          "lieu": "Disneyland Tokyo, puis le reste du monde",
+          "notes": "Que les PJ agissent ou non, la république ne tient pas plus de quelques dizaines d'heures : elle est trop ridicule et trop grave. Mais chaque heure fait monter la TRIC et risque de déclencher d'autres événements : les PJ ont intérêt à s'en mêler au plus tôt.\nDeux options : laisser faire, ou intervenir. Intervenir est plus délicat mais plus malin : cela limite la tension mondiale et permet de récupérer des informations (interrogatoire des anges de JR).\n\nFin de Monty si personne ne l'arrête : devant les caméras, du haut de son château, il joue Salvador Allende, explique que son peuple l'a trahi et préfère s'abrutir de hamburgers, puis simule un suicide d'une balle dans la tête (ça fait très mal mais ne le tue pas). Une fois les caméras parties, il se relève, s'habille en Donald et disparaît dans la nuit pour toujours.\n\nBilan (voir les notes du scénario) : modificateurs de la TRIC et preuves de l'Index d'Accusation obtenues dans l'épisode. L'épisode se veut une récréation au milieu de la campagne : bruit, fureur et absurdité, un peu comme un après-midi au parc Disney.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr6-ch-issue",
+              "q": "Comment se termine la prise d'otages ?",
+              "opts": [
+                {
+                  "t": "Désamorcée par les PJ, sans massacre",
+                  "suite": "Pas de bonus de bain de sang ; la prise d'otages a duré le moins possible (+2 TRIC par jour écoulé)."
+                },
+                {
+                  "t": "Dans le sang, par les anges de JR",
+                  "suite": "TRIC +5, et +1 par tranche de 10 morts."
+                },
+                {
+                  "t": "Assaut des forces de l'ordre",
+                  "suite": "Morts à compter (+1 TRIC par tranche de 10 si les anges de JR y ont pris part)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr6-ch-supercherie",
+              "q": "Les PJ démontrent-ils aux médias que c'est une supercherie ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "TRIC −5."
+                },
+                {
+                  "t": "Non",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr6-ch-monty",
+              "q": "Sort de Monty ?",
+              "opts": [
+                {
+                  "t": "Capturé",
+                  "suite": "Témoignage sur JR (0 à 2L) ; il connaît l'adresse de Katioucha (piste vers Moscou)."
+                },
+                {
+                  "t": "Enfui, déguisé en Donald",
+                  "suite": "Il disparaît pour de bon ; Kobal a bien ri."
+                },
+                {
+                  "t": "Renvoyé en Enfer",
+                  "suite": "Aucune enquête infernale : l'Enfer s'en lave les mains."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795376724092,
+      "updatedAt": 1795376724092
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-jr6-monty",
+      "nom": "Monty (Mark Taylor)",
+      "source": "Démon de Kobal, grade 2 (faux ange de Walther, « néo-Washington »)",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 5,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 24,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Couteau de cuisine électrique maudit majeur",
+          "att": 10,
+          "prec": 2,
+          "puis": 5,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Gag absurde",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Aura de confusion",
+          "r": 6
+        },
+        {
+          "n": "Caméléon",
+          "r": 6
+        },
+        {
+          "n": "Esprit chaotique",
+          "r": 4
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 2
+        },
+        {
+          "n": "Malédiction : folie",
+          "r": 2
+        },
+        {
+          "n": "Rebond",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (cuisinier) 2+, Discours stupides 2, Imiter Chaplin dans « Le Dictateur » 3, Défense 4, Corps à corps 3, Combat 3 (armes improvisées 5), Baratin 4, Aisance sociale 3, Séduction 3, Hobby (inventer des recettes immondes) 4, Japonais, Savoir occulte 1 (opération JR et Grand Jeu au Japon 2+), Culture générale 1+ (culture américaine du XXe siècle, vie quotidienne au Japon 2+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "38 ans, brun aux yeux verts. Exilé au Japon depuis une dizaine d'années par Kobal après une mission ratée qui a coûté la vie à tous ses collègues… mais a fait beaucoup rire son prince. Cuisinier dans un restaurant anglais, il glisse des bas morceaux immondes dans les plats des clients shintoïstes pour « pourrir leur karma ».\nInfiltré depuis environ deux ans chez les soldats de Dieu du Garage, où il se fait passer pour un ange de Walther rescapé d'une mission tragique : il n'est pas officiellement membre du groupe mais en est le chef de fait. Peu de contacts avec l'Enfer (il est plus ou moins puni), mais correspondance régulière avec Katioucha (Moscou), dont il connaît l'adresse.\nL'opération « Mickey Mouse über alles » est entièrement de son fait : il la monte pour le plaisir et pour faire assez rire Kobal afin de ne pas être blâmé comme la dernière fois. Aucun démon ne sera inquiété par l'Enfer pour cette affaire.\nCe qu'il sait de JR : peu de chose (ce que Katioucha et les soldats de Dieu lui ont raconté, brodé à sa façon). Interrogé « virilement », il répond par des calembours et des affabulations ; avec du temps et de la patience, on peut lui arracher le nom de son chargé de mission et d'un ou deux collègues (le MJ improvise alors une chasse aux démons au Japon).\nGag stupide 4 dans le livre : rendu par Gag absurde. Crocs : pouvoir Membre exotique : crocs.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-rob",
+      "nom": "Rob Parker",
+      "source": "Soldat de Dieu, chef officiel du groupe du Garage",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 6,
+        "vo": 3,
+        "pr": 5,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 4,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Couteau de commando",
+          "att": 6,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "CAR15",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 1+ (couteaux 3), Tir 1+ (armes d'épaule 3+), Défense 2, Savoir militaire 1+ (tactique commando 3+), Survie 1, Hobby (sculpture sur bois au couteau) 2, Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Culture générale 1+ (American Way of Life 2+), Infiltration 3+, Savoir d'espion 1 (infiltration 3+)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "37 ans, châtain aux yeux marron. Soldat de Dieu californien, caricature du vétéran américain : pour lui le Vietnam et le 11 septembre sont les seuls événements marquants du demi-siècle, et seul l'American Way of Life est valable. Sa bêtise lui a valu d'être placardisé au Japon ; Monty l'a convaincu sans peine que l'opération de Disneyland est la riposte au 11 septembre. Bras droit fidèle de Monty, il ne mesure pas le ridicule de la situation.\nIl laisse Monty diriger tant qu'un semblant de discipline est respecté.\nCAR15 : attaque multiple, pénétration importante, portée moyenne.\nSeuils : le livre indique MS 12 (coquille probable) ; 16 retenu, selon la progression BL 4 / BG 8 / BF 12.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-soldats",
+      "nom": "Soldats de Dieu du Garage",
+      "source": "Groupe américanophile de Tokyo (25 hommes)",
+      "type": "soldat",
+      "car": {
+        "fo": 5,
+        "ag": 6,
+        "pe": 7,
+        "vo": 4,
+        "pr": 3,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 5,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "CAR15 silencieux",
+          "att": 7,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Fusil de sniper",
+          "att": 7,
+          "prec": 0,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Mitrailleuse",
+          "att": 7,
+          "prec": -2,
+          "puis": 9,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Caméléon",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 1+ (armes d'épaule 3+), Discrétion 3, Savoir militaire 1 (commando 3), Intrusion 3, Fouille 2, Acrobatie 2+, Athlétisme 2+, Japonais, Culture générale 1 (American Way of Life 2+), Savoir occulte 0+ (Grand Jeu au Japon et opération JR 1), Survie 1",
+      "esquive": false,
+      "volonte": false,
+      "notes": "« Pour Mickey, banzaï ! » Surtout des Occidentaux émigrés, mal intégrés, et quelques catholiques japonais descendants des survivants des persécutions du XVIIe siècle. Prépositionnés pour épauler l'armée américaine en cas de besoin, ils n'ont jamais eu de mission et s'ennuient ferme : le week-end, ils regardent des films américains au Garage en buvant de la bière. Une vingtaine d'entre eux a fait un stage de trois semaines au camp des marais d'Okefenokee (Semper Fidelis). L'opération Mickey est leur première vraie mission : ils veulent montrer ce qu'ils valent.\nUne arme parmi les trois (une seule par soldat). Défense non donnée : niveau 1 (2).\nQuantité de la scène à ajuster (25 au total).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-yakuzas",
+      "nom": "Yakuzas",
+      "source": "Hommes de main de la mafia japonaise (une centaine, payés par Monty)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 5,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Pistolet",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Sabre court japonais",
+          "att": 5,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Savoir criminel 1 (yakuzas 2+), Tir 1 (armes de poing 2), Corps à corps 3, Défense 3, Baratin 2, Hobby (comparer leurs tatouages) 2, Intimidation 2+, Anglais, Culture générale 1 (traditions et code d'honneur des yakuzas, vie quotidienne au Japon 2+), Combat 1 (épées 2+), Mah-jong 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "« Connards d'Américains ! » Racaille des bas-fonds qui singe les samouraïs : tatouages, code d'honneur de façade, petites frappes sans scrupules. Ils fuiront dès qu'ils sentiront l'affaire perdue, c'est-à-dire assez vite. Monty est leur seul contact ; ils n'aiment guère les soldats de Dieu, qui le leur rendent bien : les PJ peuvent exploiter cette rivalité.\nPistolet : pénétration importante, portée moyenne. Témoignages sans valeur pour l'IA (0).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-otages",
+      "nom": "Otages",
+      "source": "Employés de Disneyland et visiteurs",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 4,
+        "vo": 3,
+        "pr": 4,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (employé de parc d'attractions) 2, Se déguiser en personnage Disney une demi-journée par mois 2, Rester discipliné 2, Faire pitié 2, Se faire exploiter par le capitalisme américain 3, Culture générale 1 (culture japonaise et culture Disney 2+), Anglais",
+      "esquive": false,
+      "volonte": false,
+      "notes": "« Haï, sama ! » Employés exploités et touristes venus se détendre, embringués dans une prise d'otages à grande échelle. La plupart fuiront dès qu'ils le pourront ; d'autres collaboreront avec leurs bourreaux dans l'espoir de s'en sortir.\nDéfense non donnée : niveau 1 (2).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-policiers",
+      "nom": "Policiers japonais",
+      "source": "Unités antiterroristes",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 5,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Tonfa (non létal)",
+          "att": 6,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Pistolet",
+          "att": 5,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (policier) 2, Enquête 2, Fouille 2, Intrusion 2, Corps à corps 3, Défense 2, Tir 1 (armes de poing 2+), Culture générale 1 (culture japonaise 2), Athlétisme 2, Respect envers l'empereur 2, Intimidation 2, Anglais",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rompus aux arts martiaux et à la lutte antiterroriste, sans états d'âme envers des preneurs d'otages, surtout depuis que ceux-ci ont insulté l'Empereur. Tonfa : attaque au Corps à corps. Contacts possibles pour les PJ qui veulent entrer dans le parc avec les forces de l'ordre.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-journalistes",
+      "nom": "Journalistes",
+      "source": "Presse nationale et internationale",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 3,
+        "pr": 3,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (journaliste) 2, Remuer la merde 2, Poser des questions indécentes 2, Être les larbins du pouvoir 2+, Anglais, N'avoir aucun respect pour les victimes 2+, Enquête 2, Fouille 3, Intrusion 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Charognards en quête de scoop, prêts à filmer le désespoir des otages comme le grotesque des défilés « républicains ». Chassés par Monty (seule Disney Channel est autorisée), ils cherchent à s'infiltrer illégalement dans le parc : couverture possible pour les PJ, et indispensables pour démontrer la supercherie aux médias. Défense non donnée : niveau 1 (2).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-commandos",
+      "nom": "Commandos japonais",
+      "source": "Forces spéciales de l'État",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 6,
+        "vo": 5,
+        "pr": 5,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 1 (armes d'épaule 3), Défense 2, Corps à corps 2, Discrétion 3, Savoir militaire 1 (commando 3), Intimidation 2, Anglais, Athlétisme 2, Acrobatie 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Machines à tuer bien dressées : ils font ce qu'on leur dit de faire. Ils entrent dans le parc quand les autorités se décident à agir (après le massacre de Space Mountain) et tirent sur tout ce qui ressemble à un preneur d'otages… ou à un intrus. Fusil-mitrailleur : attaque multiple, pénétration importante, portée longue.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-zenoch",
+      "nom": "Zenoch (Wilhelm Schwarz)",
+      "source": "Ange de Georges, grade 1 (contacté par Strachnov)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 8,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 8,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Réplique d'épée allemande à deux mains, démontable",
+          "att": 6,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 4
+        },
+        {
+          "n": "Arme exaltée",
+          "r": 4
+        },
+        {
+          "n": "Rebond",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 4
+        }
+      ],
+      "talents": "Hobby (foot) 4, Culture générale 0+ (championnats d'Europe et d'Allemagne de foot 3), Baratin 2, Défense 3, Métier (conseiller culturel) 1, Savoir d'espion 3, Savoir occulte 1 (Grand Jeu au Japon 3), Discrétion 3, Aisance sociale 3, Japonais, Anglais, Chants nazis 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "35 ans, brun aux yeux marron. Chef autoproclamé des anges intégristes du Japon : une brute qui ne croit qu'à la force et a toujours le dernier mot. Officiellement conseiller culturel de l'ambassade d'Allemagne à Tokyo, il est au placard depuis des décennies et change d'identité tous les vingt ans.\nContacté en urgence par Strachnov pour régler le problème Mickey, ravi de participer à JR dont il a entendu parler sans en connaître les détails. Il connaît les coordonnées de Strachnov et de Nouvelle Russie (piste vers Moscou).\nTémoignage : c'est « l'ange envoyé par Katioucha » des listes de l'IA (0 à 2G pour l'ensemble des anges de ce groupe).\nCombat non donné par la fiche : attaque estimée au niveau 3 (Arme exaltée).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-shim",
+      "nom": "Shim (Charles-Hubert de Carbon-Tantrel)",
+      "source": "Ange de Laurent, grade 1 (envoyé par Semper Fidelis)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 4,
+        "vo": 3,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 12,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Rapière bénie mineure",
+          "att": 9,
+          "prec": 3,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 4
+        },
+        {
+          "n": "Boomerang",
+          "r": 2
+        },
+        {
+          "n": "Paralysie",
+          "r": 2
+        }
+      ],
+      "talents": "Culture générale 1 (histoire de France 3), Hobby (généalogie) 3, Parler avec un accent vieille France méprisant 2, Anglais, Japonais, Défense 3, Combat 2 (épées 4+), Métier (cadre commercial) 1+, Savoir occulte 1 (Grand Jeu au Japon 2), Aisance sociale 3, Discussion 3, Hobby (bonnes manières) 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "22 ans, 165 cm, albinos. Nobliau fin de race perdu dans ses rêves de grandeur passée, raciste mais incarné dans un descendant de békés réunionnais au huitième noir, ce qui le fait vomir. Le peuple, pour lui, est un troupeau qu'une élite doit diriger malgré lui. Emploi fictif d'expatrié chez un grand groupe de cosmétiques, qui lui laisse le temps d'étudier les Japonais, seuls non-Blancs qu'il juge dignes d'intérêt.\nChargé par Semper Fidelis, qu'il connaît et admire, de régler le problème Mickey : une injure à JR. Il est angoissé à l'idée d'agir, mais pour le bien de la race blanche et chrétienne. Il connaît les coordonnées de Francesco à Madrid.\nTémoignage : « ange envoyé par Semper Fidelis » (0 à 2L).\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-pahoran",
+      "nom": "Pahoran (Madouff Rhanaivoharivony)",
+      "source": "Ange de Michel, grade 1 (venu par amitié pour Zenoch)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 11,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Fusil à éléphant béni mineur",
+          "att": 12,
+          "prec": 2,
+          "puis": 8,
+          "melee": false
+        },
+        {
+          "n": "Machette",
+          "att": 9,
+          "prec": 1,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Caméléon",
+          "r": 4
+        },
+        {
+          "n": "Sens surdéveloppés",
+          "r": 0
+        },
+        {
+          "n": "Non-détection",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 2 (épées 4+), Français, Anglais, Tir 2 (armes d'épaule 6), Défense 3, Discrétion 4, Acrobatie 3, Athlétisme 4, Culture générale 2 (culture du Japon et de Madagascar 4), Savoir occulte 1 (Grand Jeu 2), Japonais",
+      "esquive": false,
+      "volonte": false,
+      "notes": "34 ans, 165 cm, Africain. Intégriste raciste coincé dans un corps noir (son hôte, chrétien pratiquant, se croyait bien intégré) : il le vit très mal, ce qui a encore aggravé son racisme. Il expie ce « péché » en tuant des non-Blancs, de préférence des non-Noirs. Son dossier de mutation est bloqué depuis 116 ans au Paradis ; membre permanent de la cellule du Japon, il apprécie le calme du pays même si ses collègues le regardent de travers.\nVenu par amitié pour Zenoch, incognito : il n'a pas prévenu Michel. N'a pas d'information propre sur JR.\nFusil à éléphant : pénétration importante, portée longue.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-mohab",
+      "nom": "Mohab (Kojiro Minofuke)",
+      "source": "Ange de Dominique, grade 1 (envoyé par Francesco)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 7,
+        "vo": 10,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 10,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Katana béni mineur",
+          "att": 4,
+          "prec": 3,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Revolver",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jugement",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 2
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        }
+      ],
+      "talents": "Métier (responsable administratif) 2, Savoir occulte 1 (Grand Jeu et opération JR 3), Culture générale 1 (culture japonaise 2), Combat 1 (épées 2), Défense 2, Corps à corps 2, Baratin 3, Discussion 4, Aisance sociale 3, Anglais, Intimidation 3, Tir 1 (armes de poing 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "22 ans, brun aux yeux marron. Responsable administratif angélique pour tout le Japon, investi d'une mission divine… dans un pays où anges et démons n'ont presque rien à faire. Calme et raisonné, intégriste modéré : l'élément modérateur du groupe improvisé, impassible, aussi peu expressif qu'un héros de Kitano. Francesco l'a chargé du problème Mickey sans se faire prendre.\nEn cas de combat, il fuit plutôt que d'être capturé et n'hésite pas à tenter de tuer ses complices pour les empêcher de parler. Il connaît les coordonnées de Francesco à Madrid et en sait plus que les autres sur JR (Savoir occulte 3).\nTémoignage : « ange envoyé par Francesco » (0 à 2D). Revolver : pénétration importante, portée moyenne.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    },
+    {
+      "id": "type-jr6-tarshish",
+      "nom": "Tarshish (Miroslav Marakic)",
+      "source": "Ange de Michel, grade 1 (fidèle de Zenoch)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 7,
+        "pe": 9,
+        "vo": 4,
+        "pr": 3,
+        "foi": 8
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 8,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Kalachnikov bénie mineure",
+          "att": 10,
+          "prec": 0,
+          "puis": 7,
+          "melee": false
+        },
+        {
+          "n": "Couteau commando",
+          "att": 10,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 4, Combat 2 (couteaux 5), Défense 4, Tir 2 (armes d'épaule 5), Savoir militaire 2 (tactique 4), Anglais, Japonais, Hobby (collection d'oreilles) 3+, Hobby (désacraliser les lieux de culte non catholiques) 5, Métier (mercenaire) 4, Athlétisme 3, Acrobatie 2, Torture 3, Culture générale 1+ (vie quotidienne en ex-Yougoslavie 3), Savoir occulte 1 (la Terre Creuse 3), Intimidation 4, Conduite 3, Survie 1 (montagne 3), Discrétion 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "42 ans, brun aux yeux marron. Ancien mercenaire en Yougoslavie, chaudement récompensé pour ses talents de « nettoyeur » (surnommé Monsieur Propre) : pour lui l'ennemi est le musulman, l'orthodoxe et tout ce qui n'est ni blanc ni catholique. Nommé à Tokyo par piston pour se rapprocher de Zenoch, qu'il admire sans limite ; brutal, borné, bourreau inhumain qui se complaît dans la souffrance d'autrui. Officiellement en mission auprès de la légation du Vatican, il passe son temps libre dans les académies d'arts martiaux.\nSavoir occulte (la Terre Creuse) 3 : peut-être une piste vers la purge de Daniel (à l'appréciation du MJ, aucune valeur d'IA dans le livre).\nArmure corporelle (argent) 1 dans le livre. Kalachnikov : attaque multiple, pénétration importante, portée longue. Un talent sordide de la fiche n'est pas repris.\nSource : Jésus Reviens !, chapitre sept « Twenty-two Tunes from Tokyo », p. 90-99."
+    }
+  ],
+  "memoire": []
+}

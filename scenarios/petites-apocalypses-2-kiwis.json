@@ -1,0 +1,1541 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa2-kiwis",
+      "nom": "Petites Apocalypses – Les kiwis se cachent pour mûrir",
+      "resume": "Scénario d'enquête pour la troisième Force (agents de la DTC d'Hercule). Lors d'une fête au Labyrinthe, boîte de nuit réservée aux surnaturels, le patron Val Modeno — le Minotaure — est retrouvé mort dans son bureau fermé de l'intérieur. Le meurtrier est l'un des PJ (« Bill »), qui voulait libérer un ami victime du chantage de Val ; son joueur l'ignore, car le MJ a joué la scène dans la version mensongère du personnage. Huis clos à indices et fausses pistes jusqu'à la terrible révélation.",
+      "notes": "Source : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61. Peut aussi se placer n'importe où dans la campagne « Une apocalypse, ce n'est pas la fin du monde » : le Labyrinthe peut servir de lieu de rencontre dès le début, et c'est l'occasion de présenter Jésus et Chez Régis.\n\nPrincipe : deux chronologies. La vraie (Bill tue Val à 0 h 22 puis simule l'enfoncement de la porte) et la fausse, que le MJ joue comme si c'était le récit de Bill. Le MJ ment pour Bill en choisissant ce qu'il sait ; des contradictions l'enfoncent. Variantes moins manipulatrices : joueur dans la confidence, ou Bill programmé par un PNJ (scène 0).\n\nChronologie vraie : 22 h 30 arrivée · 23 h 10 aparté avec Val (refus) · 0 h 17 Bill quitte la piste · 0 h 19 croise Jessica · 0 h 20 entre · 0 h 22 tue Val · 0 h 25 sabote la gâche · 0 h 26 donne l'alerte · 0 h 27 « défonce » la porte devant témoin.\n\nRécompenses : le livre ne donne pas de barème de PA.\n\nAdaptations anges et démons (ch. 14, p. 115) : adaptation facile, il y a de tout au Labyrinthe ; l'équipe de Bill est impliquée quel que soit son camp.\n• MV : enquêter va de soi pour des anges ; sinon un ange en chef présent leur confie officiellement l'affaire, car des rumeurs accusent tour à tour chaque camp et la situation risque de dégénérer. Uniquement avec des anges « cools » : un serviteur de Dominique ou de Laurent n'a rien à faire au Labyrinthe (sinon, garder la structure et changer tout le décor).\n• INS : Val avait beaucoup d'amis démons dans ses trafics, qui veulent le venger ou savoir qui l'a tué ; mission officielle d'un démon en chef présent, ou occasion de mouiller la troisième Force ou des anges.\n\nFiches : Val Modeno et Pierre Osman chiffrés dans le scénario ; Hercule (p. 21) et Jésus (p. 30) repris du livre ; les autres PNJ n'ont pas de stats (fiches minimales). Vigiles estimés.",
+      "scenes": [
+        {
+          "id": "pa2-sc-horschamp",
+          "nom": "0. Hors-champ : le contentieux",
+          "lieu": "Avant la partie (MJ seul)",
+          "notes": "Choisir le PJ meurtrier, appelé ici « Bill » : capable de tuer le Minotaure d'un coup et assez loyal ou impulsif pour le vouloir.\nCe que le personnage sait (le joueur, a priori, non) :\n• Bill et Gérard Mermieux, humain ordinaire, se sont sauvé la vie il y a longtemps ; perdus de vue depuis.\n• Gérard s'est fait piéger par Loretta (polymorphe au service de Val) dans une boîte ordinaire : photos avec une « mineure », rançon.\n• Premier rendez-vous de Bill au bureau du Minotaure, « au sujet de Gérard » : Val le méprise, l'humilie ou le menace, et s'inquiète qu'un agent d'Hercule s'en mêle.\n• Bill décide de le tuer (il finira sur l'Olympe et se réincarnera, et personne ne le regrettera). Second rendez-vous, sous prétexte de négocier : il repère la clé sur la porte, la serrure et les armes au mur. Les deux appels sont passés depuis le bureau de Gérard.\n• La fête de la DTC au Labyrinthe est l'occasion : Val ne peut pas lui refuser l'entrée.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-gerard-1",
+              "nom": "Gérard « Gégé » Mermieux",
+              "source": "Humain, vieil ami de Bill, victime du chantage",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chef d'entreprise (l'entreprise est au nom de sa femme), marié, trois enfants. Piégé dans une boîte « normale » du Minotaure par Loretta, prostituée polymorphe qui a pris l'apparence d'une mineure pendant l'acte ; photos et demande de rançon. A appelé Bill à l'aide.\nAlibi : au restaurant avec des collègues puis jusqu'au matin avec son associé Andrew Ling (qui confirme : soirée inhabituellement longue, Gérard intarissable).\nSon nom figure une fois dans l'agenda de Val (c'est Bill qui est venu « au sujet de Gérard ») : il se trouble, prétend être allé négocier. Facile à confondre : il n'a jamais vu le bureau ni Val.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-gerard"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa2-ch-mode",
+              "q": "Comment jouer la culpabilité de Bill ?",
+              "opts": [
+                {
+                  "t": "Le joueur ignore tout (version du livre)",
+                  "suite": "Le MJ joue la version mensongère et ment pour Bill ; tout le sel est que le joueur le découvre lui-même."
+                },
+                {
+                  "t": "Le joueur est mis dans la confidence",
+                  "suite": "Il joue l'innocent en connaissance de cause ; plus sûr, moins drôle."
+                },
+                {
+                  "t": "Bill manipulé par un PNJ",
+                  "suite": "Un psi victime du chantage (ou un ennemi de Val) le programme : « blancs », souvenirs partiels ; on peut ensuite lui expliquer qu'il ne se souvient de rien."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa2-sc-arrivee",
+          "nom": "1. La fête au Labyrinthe (22 h 30)",
+          "lieu": "Le Labyrinthe, club privé, Paris 1er",
+          "notes": "Façade décrépite au fond d'une cour, porte à lucarne grillagée, écriteau « club privé ». Dedans : quatre étages de salons, cabinets privés et pistes de danse, jeux clandestins au sous-sol, style industriel sobre, escaliers et mezzanines partout, portes gardées. Plus on s'enfonce, plus il faut être bien vu de Val.\nEntrée réservée aux surnaturels (anges et démons renégats ou cools, héros païens, psis, quelques sorciers choisis), repérés par le videur à double vue. Peu d'anges de Dominique. On y danse, on y négocie, on y joue, on y achète drogue et compagnie.\nCaméras et micros partout (sauf dans le bureau de Val), surtout dans les salons : matière à chantage.\nHercule est de la fête. Faire croiser aux PJ des personnalités : héros grecs, Pierre Osman, anges, démons, psis. Jésus peut les aborder (rencontre facultative).\n23 h 10 : Bill croise le Minotaure, aparté visible de loin. Version jouée : ils parlent foot, Val repart vexé. En vrai : dernier refus de lâcher Gérard.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-minotaure-2",
+              "nom": "Val Modeno, le Minotaure",
+              "source": "Incube à cornes classé monstre, patron du Labyrinthe (victime)",
+              "type": "monstre",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 5,
+                "vo": 6,
+                "pr": 7,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 15,
+              "seuilsFix": [
+                6,
+                13,
+                19,
+                26
+              ],
+              "armes": [
+                {
+                  "n": "Grandes cornes",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Boomerang",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Aisance sociale 4, Athlétisme 5, Baratin 3, Corps à corps 5, Défense 5, Métier : tenancier de boîte 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils d'un démon de Caym (Strikti, qui aimait prendre forme de taureau) et d'une servante crétoise ; se croit petit-fils de Poséidon. Tué par Thésée, son âme a rejoint l'Olympe et il s'est réincarné plusieurs fois. Aujourd'hui dans le corps de Valentin Fistelin (incarné depuis 38 ans), rebaptisé Val Modeno : jet-setteur, propriétaire de plusieurs boîtes, trafiquant (drogue, jeu, prostitution) et maître chanteur. Méprise les toxicomanes. Pas d'ordinateur.\nIl est mort au début du scénario : la fiche sert aux flash-backs ou si le MJ veut jouer la scène vraie.\nCaractéristiques vérifiées sur la page du livre.\nGrandes cornes : arme réglée par le pouvoir Membre exotique.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-minotaure"
+            },
+            {
+              "id": "pa2-hercule-3",
+              "nom": "Hercule",
+              "source": "Héraclès, héros païen, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre, absent des règles de l'appli)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Invité à la fête, ami (récent) du Minotaure : il avait pris ses distances il y a une vingtaine d'années quand Val avait laissé entendre qu'il savait des choses sur ses affaires, puis l'a laissé revenir. Prend l'enquête à cœur et y embarque les PJ. Peut s'étonner que des salons où il a tenu des réunions secrètes soient truffés de caméras.\nFiche du ch. 4 (p. 21). Massue : livre « 66/RU+10/M+16 » (précision +4, puissance +9 dans la table).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-hercule"
+            },
+            {
+              "id": "pa2-jesus-4",
+              "nom": "Jésus",
+              "source": "Archange des hommes, tenancier de Chez Régis (facultatif)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 12,
+                "vo": 14,
+                "pr": 16,
+                "foi": 19
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 102,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Abondance",
+                  "r": 12
+                },
+                {
+                  "n": "Absorption du mal",
+                  "r": 12
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 16
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 12
+                },
+                {
+                  "n": "Charme",
+                  "r": 12
+                },
+                {
+                  "n": "Exorcisme",
+                  "r": 12
+                },
+                {
+                  "n": "Illusions",
+                  "r": 18
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 18
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 18
+                },
+                {
+                  "n": "Lumière céleste",
+                  "r": 12
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 18
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 12
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (Chez Régis 9), Séduction 8, Survie 8, Miracle 2 (pouvoir propre, 1 PP, absent des règles de l'appli)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "À glisser si les PJ ne le connaissent pas encore (interlude « Jésus Chez Régis ») : il les aborde avant la découverte du corps, les trouve cools (sauf agressivité) et les invite dans son bar. Ne résout pas l'enquête à leur place.\nBénédiction : « guérison de folies » 6 et « guérison de maladies » 6 dans le livre. Plus tous les pouvoirs gratuits des supérieurs.\nFiche du ch. 5 (p. 30). Caractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-jesus"
+            },
+            {
+              "id": "pa2-osman-5",
+              "nom": "Pierre Osman",
+              "source": "Psionique kinic, autre victime du chantage",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 4,
+                "vo": 6,
+                "pr": 9,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 17,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 3,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 4
+                },
+                {
+                  "n": "Agitation moléculaire",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 2+, Corps à corps 1+, Défense 2, Discussion 4, Séduction 3+, Pouvoirs cinétiques 3, Pouvoirs psychiques 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Présent au Labyrinthe ce soir-là. Mobile solide (photos compromettantes dans la boîte du bureau), mais alibi en béton : au moment du crime il était avec une des filles polymorphes, et la scène a été filmée (il y a pris goût et ça l'excite d'être filmé).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-osman"
+            },
+            {
+              "id": "pa2-grecs-6",
+              "nom": "Héros païens grecs",
+              "source": "Estée Lelieur, Andy Solloy, Stéphane Libourne, Alexis Dauriac",
+              "type": "paien",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grandes gueules du panthéon grec ; Dauriac voue un culte à Minos. Savaient depuis longtemps que Val est le Minotaure. Se dégonflent dès qu'on leur annonce le meurtre et se défendent désespérément. Fausse piste.\nPas de stats dans le livre : fiche minimale (valeurs par défaut).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-grecs"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa2-sc-fausse",
+          "nom": "2. La version de Bill (23 h 10 – 0 h 26)",
+          "lieu": "Pistes de danse puis couloir du bureau",
+          "notes": "Jouer la chronologie mensongère sans prévenir. Toutes les scènes clés se passent quand Bill est seul.\n• 23 h 10 – 0 h 16 : occuper les autres PJ (danse, drague, rencontres) pour détourner l'attention de Bill.\n• 0 h 06 (Bill impérativement seul) : un serveur — grand, maigre, brun, l'air bête, élocution difficile — dit à Bill que le Minotaure veut le voir seul dans son bureau. Ce serveur n'existe pas. Si le joueur veut emmener quelqu'un, tout faire pour l'en dissuader ; en dernier recours, les autres PJ deviennent complices.\n• 0 h 17 : Bill quitte la salle. 0 h 19 : dans le couloir, il croise Jessica qui sort du bureau ; elle est pressée et ne le suit pas.\n• Les six minutes de 0 h 20 à 0 h 25 disparaissent du récit (indice).\n• 0 h 26 : porte fermée à clé, râles à l'intérieur.\n\nVersion vraie (MJ) : Bill met des gants, entre sans frapper, prend une épée au mur et transperce Val d'un coup ; en s'écartant du corps il se cogne l'épaule gauche. Au ciseau à bois, il fait sauter la gâche du chambranle, tourne la clé de l'intérieur, ressort et referme : la porte ne tient plus que par le pêne de la poignée. Il enlève ses gants. Aucun bruit dans le bureau.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-jessica-7",
+              "nom": "Jessica",
+              "source": "Prostituée polymorphe du Labyrinthe, témoin",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 0
+                }
+              ],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jolie, très bien roulée, camée notoire ; sort du bureau de Val (elle venait chercher ses consignes) quand Bill arrive, vers 0 h 19-0 h 20. Pressée, elle n'accompagnera pas Bill.\nAu choix du MJ : les PJ la retrouvent d'après la description de Bill, elle disparaît grâce à sa polymorphie, ou elle vient témoigner d'elle-même.\nElle ment pour ne pas être le suspect idéal (cache être entrée dans le bureau) et est trop défoncée pour comprendre que Bill est le coupable. Mais elle dit avoir croisé Bill vers minuit vingt : contradiction avec le récit de Bill.\nPas de stats dans le livre : fiche minimale, polymorphie ajoutée d'après le texte.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-jessica"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa2-sc-porte",
+          "nom": "3. La porte close (0 h 26 – 0 h 27)",
+          "lieu": "Couloir coudé devant le bureau de Val",
+          "notes": "Il faut un témoin qui voie la porte « céder ». Selon la réaction du joueur de Bill :\n• Il appelle à l'aide puis défonce lui-même : tout se passe comme prévu.\n• Il force sans appeler : la porte résiste jusqu'à l'arrivée d'un employé attiré par le bruit, puis cède.\n• Il appelle sans forcer : les râles deviennent pressants ; s'il refuse d'enfoncer, un vigile le fait (il trouvera plus tard que la porte a peu résisté).\nLe corps est découvert : l'enquête commence. Hercule prend les choses en main et y lance les PJ ; il faut ménager les personnalités présentes.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-vigiles-8",
+              "nom": "Vigiles du Labyrinthe",
+              "source": "Personnel de sécurité",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                },
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Combat 2, Défense 2, Intimidation 2, Vigilance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gardent la plupart des portes ; leur cagibi est près du bureau de Val (les caméras visibles y renvoient). Le videur de l'entrée a un don de double vue qui repère les surnaturels.\nL'un d'eux peut défoncer la porte à la place de Bill et s'étonner ensuite qu'elle ait si peu résisté.\nPas de stats dans le livre : valeurs estimées (humains costauds).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-vigiles"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa2-ch-defonce",
+              "q": "Qui défonce la porte ?",
+              "opts": [
+                {
+                  "t": "Bill, devant témoin",
+                  "suite": "Version officielle ; plus tard, le témoin peut se rappeler qu'il a frappé de l'épaule droite alors qu'il se plaint de la gauche."
+                },
+                {
+                  "t": "Un vigile",
+                  "suite": "Le vigile pourra s'étonner du peu de résistance de la porte."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa2-sc-bureau",
+          "nom": "4. Le bureau du Minotaure",
+          "lieu": "Bureau de Val (baroque : art primitif, maîtres anciens, vase Ming, armure)",
+          "notes": "Indices à trouver en cherchant :\n• L'arme : épée pointue (belle reproduction) en plein cœur, mort quasi immédiate, peu de sang, aucune autre blessure. Lourde, coup franc : un assassin costaud. Pas d'empreintes (gants). Un emplacement vide dans la panoplie du mur.\n• La porte : de bonne qualité, débris partout, toujours verrouillée avec la clé dedans. Seul détail : le morceau de gâche cassé au ciseau n'est pas avec les autres débris (parlant seulement pour des PJ très soupçonneux).\n• Les écrans (trois, console de caméras et micros) : peu de caméras sur les pistes et les entrées, beaucoup dans les salons. Hercule y reconnaît des pièces où il a tenu des réunions secrètes. Les caméras visibles renvoient au cagibi des vigiles ; celles des pistes enregistrent en boucle.\n• Téléphone : longue liste d'appels inexploitable au début (on y retrouvera les victimes du chantage, dont Gérard) ; pas Bill, qui appelait du bureau de Gérard. Répondeur vide.\n• Double fond d'un tiroir : boîte avec quatre enveloppes de photos et négatifs (nom, date, somme) : Gérard Mermieux, Luc Dubois, Alina Skox, Pierre Osman. Val rendait tout une fois payé.\n• Agenda illisible (écriture de taureau) : Mermieux (une fois, en fait Bill), Dubois, Osman ; pas Skox ; le nom de Bill y est (second rendez-vous) mais quasi introuvable sauf à le chercher précisément.\n• Meuble-trieur : factures, et le dossier « correspondance 5 » plein de lettres de menaces reçues et envoyées (fausses pistes à volonté).\nPas d'ordinateur.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa2-sc-temoins",
+          "nom": "5. Témoins et suspects du Labyrinthe",
+          "lieu": "Le Labyrinthe, après le meurtre",
+          "notes": "• Le serveur : introuvable, inconnu du personnel, absent des vidéos (enregistrement en boucle). Il devient suspect : a-t-on voulu piéger Bill ? Bill peut jouer la victime d'une machination.\n• Jessica : voir sa fiche ; elle situe sa rencontre avec Bill vers 0 h 20.\n• Clients et personnel : Val était détesté autant qu'indispensable. Les quatre héros grecs (dont Dauriac, adorateur de Minos) savaient qui il était et paniquent.\n• Pierre Osman : mobile, mais alibi filmé.\n• Beaucoup d'autres surnaturels présents : fausses pistes à l'infini.\nUne approche brutale est possible : les vigiles s'interposent si les PJ malmènent clients ou personnel.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa2-jessica-9",
+              "nom": "Jessica",
+              "source": "Prostituée polymorphe du Labyrinthe, témoin",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 0
+                }
+              ],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jolie, très bien roulée, camée notoire ; sort du bureau de Val (elle venait chercher ses consignes) quand Bill arrive, vers 0 h 19-0 h 20. Pressée, elle n'accompagnera pas Bill.\nAu choix du MJ : les PJ la retrouvent d'après la description de Bill, elle disparaît grâce à sa polymorphie, ou elle vient témoigner d'elle-même.\nElle ment pour ne pas être le suspect idéal (cache être entrée dans le bureau) et est trop défoncée pour comprendre que Bill est le coupable. Mais elle dit avoir croisé Bill vers minuit vingt : contradiction avec le récit de Bill.\nPas de stats dans le livre : fiche minimale, polymorphie ajoutée d'après le texte.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-jessica"
+            },
+            {
+              "id": "pa2-osman-10",
+              "nom": "Pierre Osman",
+              "source": "Psionique kinic, autre victime du chantage",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 4,
+                "vo": 6,
+                "pr": 9,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 17,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 3,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 4
+                },
+                {
+                  "n": "Agitation moléculaire",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 2+, Corps à corps 1+, Défense 2, Discussion 4, Séduction 3+, Pouvoirs cinétiques 3, Pouvoirs psychiques 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Présent au Labyrinthe ce soir-là. Mobile solide (photos compromettantes dans la boîte du bureau), mais alibi en béton : au moment du crime il était avec une des filles polymorphes, et la scène a été filmée (il y a pris goût et ça l'excite d'être filmé).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-osman"
+            },
+            {
+              "id": "pa2-grecs-11",
+              "nom": "Héros païens grecs",
+              "source": "Estée Lelieur, Andy Solloy, Stéphane Libourne, Alexis Dauriac",
+              "type": "paien",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grandes gueules du panthéon grec ; Dauriac voue un culte à Minos. Savaient depuis longtemps que Val est le Minotaure. Se dégonflent dès qu'on leur annonce le meurtre et se défendent désespérément. Fausse piste.\nPas de stats dans le livre : fiche minimale (valeurs par défaut).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-grecs"
+            },
+            {
+              "id": "pa2-vigiles-12",
+              "nom": "Vigiles du Labyrinthe",
+              "source": "Personnel de sécurité",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                },
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 3, Combat 2, Défense 2, Intimidation 2, Vigilance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gardent la plupart des portes ; leur cagibi est près du bureau de Val (les caméras visibles y renvoient). Le videur de l'entrée a un don de double vue qui repère les surnaturels.\nL'un d'eux peut défoncer la porte à la place de Bill et s'étonner ensuite qu'elle ait si peu résisté.\nPas de stats dans le livre : valeurs estimées (humains costauds).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-vigiles"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa2-ch-jessica",
+              "q": "Que fait Jessica après le meurtre ?",
+              "opts": [
+                {
+                  "t": "Les PJ la retrouvent",
+                  "suite": "D'après la description de Bill ; elle ment mais donne l'heure de minuit vingt."
+                },
+                {
+                  "t": "Elle se cache",
+                  "suite": "Elle change d'apparence par polymorphie ; témoin introuvable."
+                },
+                {
+                  "t": "Elle vient témoigner",
+                  "suite": "Elle se présente d'elle-même, avec la même version."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa2-sc-suspects",
+          "nom": "6. Les victimes du chantage",
+          "lieu": "Paris (domiciles, bureaux)",
+          "notes": "• Alina Skox : se moque du chantage ; fausse piste.\n• Luc Dubois : allait payer ; ennuyé par la mort de Val ; sincère.\n• Gérard Mermieux : réaction variable à l'annonce (content, surpris avec un regard vers Bill, ou impassible) ; s'empresse de donner son alibi (Andrew Ling). Interrogé sur l'agenda, il s'embrouille. Le MJ peut le rendre très louche pour resserrer l'enquête. Il ne connaît ni le bureau ni le visage de Val.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-gerard-13",
+              "nom": "Gérard « Gégé » Mermieux",
+              "source": "Humain, vieil ami de Bill, victime du chantage",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chef d'entreprise (l'entreprise est au nom de sa femme), marié, trois enfants. Piégé dans une boîte « normale » du Minotaure par Loretta, prostituée polymorphe qui a pris l'apparence d'une mineure pendant l'acte ; photos et demande de rançon. A appelé Bill à l'aide.\nAlibi : au restaurant avec des collègues puis jusqu'au matin avec son associé Andrew Ling (qui confirme : soirée inhabituellement longue, Gérard intarissable).\nSon nom figure une fois dans l'agenda de Val (c'est Bill qui est venu « au sujet de Gérard ») : il se trouble, prétend être allé négocier. Facile à confondre : il n'a jamais vu le bureau ni Val.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-gerard"
+            },
+            {
+              "id": "pa2-dubois-14",
+              "nom": "Luc Dubois",
+              "source": "Humain, professeur de droit, victime du chantage",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La quarantaine, vie paisible en apparence. Avait choisi de payer et avait presque réuni la somme (remise prévue sous une semaine ou dix jours) : la mort de Val l'ennuie (comment récupérer les photos ?). Sincère, ne cache rien. Nom dans l'agenda.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-dubois"
+            },
+            {
+              "id": "pa2-skox-15",
+              "nom": "Alina Skox",
+              "source": "Humaine, riche commerçante, victime du chantage",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Parfumeries et bijouteries à Paris, 55-60 ans peroxydés, bourgeoise clinquante. Se moque complètement que ses photos (avec plusieurs jeunes hommes) circulent : ça flatte son ego et fera de la publicité. Fausse piste sans mobile. Absente de l'agenda.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-skox"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa2-sc-bill",
+          "nom": "7. Ce qui cloche avec Bill",
+          "lieu": "Partout",
+          "notes": "Leviers pour guider des PJ perdus :\n• Chronologie : Jessica dit avoir croisé Bill à l'heure où Bill dit parler au serveur.\n• Gants et ciseau à bois sur Bill : une maladresse et ils tombent.\n• Épaule gauche blessée (Bill s'en est plaint), mais le témoin l'a vu frapper la porte de l'épaule droite (souvenir tardif ou reconstitution). Ne pas sortir cet indice trop tôt.\n• Gégé : Bill le connaît, Gégé est louche…\nLe MJ fournit les réponses de Bill et peut se contredire exprès : « connais pas » → « une vieille connaissance perdue de vue » → « je l'ai revu la semaine dernière, mais ça ne prouve rien ».",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa2-sc-fin",
+          "nom": "8. Dénouement",
+          "lieu": "Au choix",
+          "notes": "Les PJ (et le MJ, si Hercule est mis au courant) décident du sort du coupable. Les révélations sur le chantage enfoncent Val et offrent des circonstances atténuantes à Bill ; l'équipe devrait se serrer les coudes. Au pire, le joueur crée un nouveau personnage.\nSuites de campagne : le Labyrinthe ferme un temps puis est repris par Rébecca Lange, ange de Marc renégate et associée de Val (sans le chantage, surtout s'il a été ébruité). L'âme du Minotaure arrive sur l'Olympe juste à temps pour être dévorée par Victor.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa2-hercule-16",
+              "nom": "Hercule",
+              "source": "Héraclès, héros païen, patron de la DTC",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 10,
+                "foi": 12
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 12,
+              "pp": 55,
+              "seuilsFix": [
+                9,
+                19,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Massue magique ancienne",
+                  "att": 20,
+                  "prec": 0,
+                  "puis": 16,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de courage",
+                  "r": 10
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 10
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 10
+                },
+                {
+                  "n": "Némésis",
+                  "r": 10
+                },
+                {
+                  "n": "Régénération",
+                  "r": 10
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 14
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Vol",
+                  "r": 8
+                }
+              ],
+              "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre, absent des règles de l'appli)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Invité à la fête, ami (récent) du Minotaure : il avait pris ses distances il y a une vingtaine d'années quand Val avait laissé entendre qu'il savait des choses sur ses affaires, puis l'a laissé revenir. Prend l'enquête à cœur et y embarque les PJ. Peut s'étonner que des salons où il a tenu des réunions secrètes soient truffés de caméras.\nFiche du ch. 4 (p. 21). Massue : livre « 66/RU+10/M+16 » (précision +4, puissance +9 dans la table).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61.",
+              "typeId": "type-pa2-hercule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa2-ch-verdict",
+              "q": "Que font les PJ du coupable ?",
+              "opts": [
+                {
+                  "t": "Ils couvrent Bill",
+                  "suite": "L'affaire reste non élucidée (ou mise sur le dos d'une fausse piste) ; secret partagé dans l'équipe."
+                },
+                {
+                  "t": "Ils mettent Hercule dans la confidence",
+                  "suite": "Hercule tranche ; il n'aimait guère Val, et le chantage pèse lourd."
+                },
+                {
+                  "t": "Ils livrent Bill",
+                  "suite": "Ambiance garantie ; le joueur peut devoir créer un nouveau personnage."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795340294523,
+      "updatedAt": 1795340294523
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa2-minotaure",
+      "nom": "Val Modeno, le Minotaure",
+      "source": "Incube à cornes classé monstre, patron du Labyrinthe (victime)",
+      "type": "monstre",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 5,
+        "vo": 6,
+        "pr": 7,
+        "foi": 8
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 15,
+      "seuilsFix": [
+        6,
+        13,
+        19,
+        26
+      ],
+      "armes": [
+        {
+          "n": "Grandes cornes",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Boomerang",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : grandes cornes",
+          "r": 0
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Aisance sociale 4, Athlétisme 5, Baratin 3, Corps à corps 5, Défense 5, Métier : tenancier de boîte 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fils d'un démon de Caym (Strikti, qui aimait prendre forme de taureau) et d'une servante crétoise ; se croit petit-fils de Poséidon. Tué par Thésée, son âme a rejoint l'Olympe et il s'est réincarné plusieurs fois. Aujourd'hui dans le corps de Valentin Fistelin (incarné depuis 38 ans), rebaptisé Val Modeno : jet-setteur, propriétaire de plusieurs boîtes, trafiquant (drogue, jeu, prostitution) et maître chanteur. Méprise les toxicomanes. Pas d'ordinateur.\nIl est mort au début du scénario : la fiche sert aux flash-backs ou si le MJ veut jouer la scène vraie.\nCaractéristiques vérifiées sur la page du livre.\nGrandes cornes : arme réglée par le pouvoir Membre exotique.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-osman",
+      "nom": "Pierre Osman",
+      "source": "Psionique kinic, autre victime du chantage",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 4,
+        "vo": 6,
+        "pr": 9,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 17,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 3,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Adhérence",
+          "r": 4
+        },
+        {
+          "n": "Agitation moléculaire",
+          "r": 6
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 8
+        }
+      ],
+      "talents": "Baratin 2+, Corps à corps 1+, Défense 2, Discussion 4, Séduction 3+, Pouvoirs cinétiques 3, Pouvoirs psychiques 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Présent au Labyrinthe ce soir-là. Mobile solide (photos compromettantes dans la boîte du bureau), mais alibi en béton : au moment du crime il était avec une des filles polymorphes, et la scène a été filmée (il y a pris goût et ça l'excite d'être filmé).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-hercule",
+      "nom": "Hercule",
+      "source": "Héraclès, héros païen, patron de la DTC",
+      "type": "paien",
+      "car": {
+        "fo": 14,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 10,
+        "foi": 12
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 55,
+      "seuilsFix": [
+        9,
+        19,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Massue magique ancienne",
+          "att": 20,
+          "prec": 0,
+          "puis": 16,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 14,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de courage",
+          "r": 10
+        },
+        {
+          "n": "Champ de force",
+          "r": 10
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre blindé",
+          "r": 10
+        },
+        {
+          "n": "Némésis",
+          "r": 10
+        },
+        {
+          "n": "Régénération",
+          "r": 10
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 14
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Vol",
+          "r": 8
+        }
+      ],
+      "talents": "Art 2+ (danser le sirtaki 5), Athlétisme 9, Combat 6 (armes contondantes 8), Corps à corps 7, Défense 7, Discrétion 4, Discussion 6, Informatique 4, Métier : businessman 6, Savoir occulte 3 (marches intermédiaires 7), Technique 5, Voyage intermarches 6 (pouvoir propre, absent des règles de l'appli)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Invité à la fête, ami (récent) du Minotaure : il avait pris ses distances il y a une vingtaine d'années quand Val avait laissé entendre qu'il savait des choses sur ses affaires, puis l'a laissé revenir. Prend l'enquête à cœur et y embarque les PJ. Peut s'étonner que des salons où il a tenu des réunions secrètes soient truffés de caméras.\nFiche du ch. 4 (p. 21). Massue : livre « 66/RU+10/M+16 » (précision +4, puissance +9 dans la table).\nCaractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-jesus",
+      "nom": "Jésus",
+      "source": "Archange des hommes, tenancier de Chez Régis (facultatif)",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 12,
+        "vo": 14,
+        "pr": 16,
+        "foi": 19
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 12,
+      "pp": 102,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Abondance",
+          "r": 12
+        },
+        {
+          "n": "Absorption du mal",
+          "r": 12
+        },
+        {
+          "n": "Aura de pacification",
+          "r": 16
+        },
+        {
+          "n": "Bénédiction",
+          "r": 12
+        },
+        {
+          "n": "Charme",
+          "r": 12
+        },
+        {
+          "n": "Exorcisme",
+          "r": 12
+        },
+        {
+          "n": "Illusions",
+          "r": 18
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Langage universel",
+          "r": 0
+        },
+        {
+          "n": "Lecture d'aura",
+          "r": 18
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 18
+        },
+        {
+          "n": "Lumière céleste",
+          "r": 12
+        },
+        {
+          "n": "Non-détection",
+          "r": 18
+        },
+        {
+          "n": "Polymorphie",
+          "r": 8
+        },
+        {
+          "n": "Télékinésie",
+          "r": 12
+        },
+        {
+          "n": "Télépathie",
+          "r": 12
+        },
+        {
+          "n": "Téléportation",
+          "r": 12
+        }
+      ],
+      "talents": "Aisance sociale 6, Art 4 (menuiserie 6), Baratin 11, Corps à corps 6, Défense 6, Discussion 9, Kama sutra 5, Métier : barman 5, Savoir occulte 6 (Chez Régis 9), Séduction 8, Survie 8, Miracle 2 (pouvoir propre, 1 PP, absent des règles de l'appli)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "À glisser si les PJ ne le connaissent pas encore (interlude « Jésus Chez Régis ») : il les aborde avant la découverte du corps, les trouve cools (sauf agressivité) et les invite dans son bar. Ne résout pas l'enquête à leur place.\nBénédiction : « guérison de folies » 6 et « guérison de maladies » 6 dans le livre. Plus tous les pouvoirs gratuits des supérieurs.\nFiche du ch. 5 (p. 30). Caractéristiques vérifiées sur la page du livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-jessica",
+      "nom": "Jessica",
+      "source": "Prostituée polymorphe du Labyrinthe, témoin",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Polymorphie",
+          "r": 0
+        }
+      ],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jolie, très bien roulée, camée notoire ; sort du bureau de Val (elle venait chercher ses consignes) quand Bill arrive, vers 0 h 19-0 h 20. Pressée, elle n'accompagnera pas Bill.\nAu choix du MJ : les PJ la retrouvent d'après la description de Bill, elle disparaît grâce à sa polymorphie, ou elle vient témoigner d'elle-même.\nElle ment pour ne pas être le suspect idéal (cache être entrée dans le bureau) et est trop défoncée pour comprendre que Bill est le coupable. Mais elle dit avoir croisé Bill vers minuit vingt : contradiction avec le récit de Bill.\nPas de stats dans le livre : fiche minimale, polymorphie ajoutée d'après le texte.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-gerard",
+      "nom": "Gérard « Gégé » Mermieux",
+      "source": "Humain, vieil ami de Bill, victime du chantage",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Chef d'entreprise (l'entreprise est au nom de sa femme), marié, trois enfants. Piégé dans une boîte « normale » du Minotaure par Loretta, prostituée polymorphe qui a pris l'apparence d'une mineure pendant l'acte ; photos et demande de rançon. A appelé Bill à l'aide.\nAlibi : au restaurant avec des collègues puis jusqu'au matin avec son associé Andrew Ling (qui confirme : soirée inhabituellement longue, Gérard intarissable).\nSon nom figure une fois dans l'agenda de Val (c'est Bill qui est venu « au sujet de Gérard ») : il se trouble, prétend être allé négocier. Facile à confondre : il n'a jamais vu le bureau ni Val.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-dubois",
+      "nom": "Luc Dubois",
+      "source": "Humain, professeur de droit, victime du chantage",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La quarantaine, vie paisible en apparence. Avait choisi de payer et avait presque réuni la somme (remise prévue sous une semaine ou dix jours) : la mort de Val l'ennuie (comment récupérer les photos ?). Sincère, ne cache rien. Nom dans l'agenda.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-skox",
+      "nom": "Alina Skox",
+      "source": "Humaine, riche commerçante, victime du chantage",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Parfumeries et bijouteries à Paris, 55-60 ans peroxydés, bourgeoise clinquante. Se moque complètement que ses photos (avec plusieurs jeunes hommes) circulent : ça flatte son ego et fera de la publicité. Fausse piste sans mobile. Absente de l'agenda.\nPas de stats dans le livre.\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-grecs",
+      "nom": "Héros païens grecs",
+      "source": "Estée Lelieur, Andy Solloy, Stéphane Libourne, Alexis Dauriac",
+      "type": "paien",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grandes gueules du panthéon grec ; Dauriac voue un culte à Minos. Savaient depuis longtemps que Val est le Minotaure. Se dégonflent dès qu'on leur annonce le meurtre et se défendent désespérément. Fausse piste.\nPas de stats dans le livre : fiche minimale (valeurs par défaut).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    },
+    {
+      "id": "type-pa2-vigiles",
+      "nom": "Vigiles du Labyrinthe",
+      "source": "Personnel de sécurité",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        },
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 3, Combat 2, Défense 2, Intimidation 2, Vigilance 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gardent la plupart des portes ; leur cagibi est près du bureau de Val (les caméras visibles y renvoient). Le videur de l'entrée a un don de double vue qui repère les surnaturels.\nL'un d'eux peut défoncer la porte à la place de Bill et s'étonner ensuite qu'elle ait si peu résisté.\nPas de stats dans le livre : valeurs estimées (humains costauds).\nSource : Les Petites Apocalypses, « Les kiwis se cachent pour mûrir », p. 52-61."
+    }
+  ],
+  "memoire": []
+}

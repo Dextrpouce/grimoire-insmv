@@ -1,0 +1,2483 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-15-oeuvre-d-art",
+      "nom": "Fire and Ice (scénario 15) – De l'œuvre d'art à l'époque de sa reproductibilité technique",
+      "resume": "Dies Irae, pénultième scénario de la campagne (INS). Beleth veut retrouver Satan, terré à Paris. Guidés par la Ville vivante (rats, pigeons, un caricaturiste qui peint la vérité), les démons du Centre de Tri découvrent la rue Lucifer, une ruelle née de l'inconscient d'un Satan dépressif, et y restent prisonniers. Chaque nuit, le Santa Claws Circus, dont les employés sont des caricatures des princes-démons, se termine par un vote sur l'exécution du pantin de Satan, puis par un massacre. Pour sortir de la boucle, les PJ doivent soulager la misère des habitants et remettre en place les fils de l'intrigue (Belial, Crocell, la grossesse d'Andrealphus, Baal), jusqu'à la « démission » de Satan et l'appel au secours d'Andrealphus.",
+      "notes": "Source : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123. Aide de jeu associée : « Fluctuat Nec Mergitur », p. 98-109. Chronologie : Tempus Fugit, p. 154.\nTon : très noir et grotesque (violences sur enfants, sévices, cannibalisme involontaire). Prévenir la table et doser selon les joueurs.\nDéroulement : prologue au Centre de Tri et Chez Régis → la Ville guide les PJ (rats, pigeons, place du Tertre, caricaturiste) → l'impasse et trois passages → la rue Lucifer → premier spectacle et massacre → boucle : sept problèmes du quartier → coulisses : remettre l'intrigue en place → grand final, hôtel et message de « S. ».\nRécompenses : le livre n'en donne pas pour ce scénario.\n\nChronologie (Tempus Fugit) – immédiatement après « Interzone » :\n• J−1 mois : Samaël se planque dans un hôtel miteux entre Montmartre et Château Rouge.\n• J1-3 : les démons cherchent la rue Lucifer ; Paris les guide jusqu'à la place du Tertre, portrait, plan, impasse, rue Lucifer.\n• Durée indéterminée : séjour dans la retraite terrestre de Satan, cirque circulaire et nuit sans fin ; ils résolvent les problèmes des habitants, votent le pardon et bouchent les trous de la mise en scène ; mort symbolique du Patron et meurtre d'Andrealphus par Baal.\n• J2-4 : retour dans la réalité, message de Satan, appel d'Andrealphus.\nSuite (Les cahiers du labyrinthe) : Damien remplace Samaël à la tête des Enfers ; Beleth cache « la meuf de la MRC » dans le Lupanar au lieu de la faire disparaître ; Hornet a volé la puissance de Bifrons après la mort d'Andrealphus.\n\nFluctuat Nec Mergitur (résumé utile au scénario) :\n• Paris vivante : les rêves des habitants depuis des siècles ont rendu la Ville consciente dans la MRC ; la présence de Satan l'a éveillée davantage. Elle perçoit tout ce qui se passe dans ses rues, son métro et ses égouts ; quelques humains (et même des anges et démons) se sont liés à elle. Pour l'instant, elle veut seulement se débarrasser de Satan.\n• Mystères de Paris (accroches) : égouts réinvestis par les anges depuis l'affaire de la Terre Creuse, sauf le U-Boat Crew de Vephar (anaconda géant Marguerite) ; métro : rame fantôme d'Octave Pinchu (démon de Kobal, Gag absurde), rats mangeurs d'hommes (Force 2, Agilité 4, Corps à corps 3+, Défense 4, puissance +0), le « Roumain » de la ligne 7 qui aspire l'énergie des dormeurs (Volonté 3, Absorption de force 2+) ; catacombes (skins de Daniel, Terre Creuse, punks, sociétés secrètes) et RIP, anges de Laurent, Walther ou Joseph qui chassent les intrus des cimetières et gênent les Errants de Kronos au Père-Lachaise ; Petite Ceinture et son vieillard aveugle prophète (« La Stella Inquisitorus n'aura pas lieu… ») ; la petite fille au chat en peluche perché sur un réverbère (Coup de bol pour 24 h si on l'aide, morsure de crocs sinon).\n• Mages urbains (PNJ seulement) : humains normaux (Volonté jusqu'à 4+) dotés d'une Foi (max 6) qui mesure leur accord avec la Ville et limite leurs pouvoirs. Niveaux à obtenir dans l'ordre, obligations cumulatives : 1 étudier la Ville 3 h par semaine ; 2 sacrifier un nuisible (rat, pigeon, chien, policier) à l'aube dans un lieu public chaque mois ; 3 méditer une heure dans un haut lieu, chaque mois à un endroit différent (parle alors aux rats et aux pigeons) ; 4 interrompre la circulation au moins dix minutes chaque mois sans magie ; 5 tout abandonner pour vivre de la Ville (observation et sacrifices plus fréquents) ; 6 modifier durablement le visage de la Ville ; 7 mythique.\n  Un pouvoir par point de Volonté, de type spirituel et activé ; (Foi + Volonté) utilisations par jour ; bonus de concentration avec un focus : 1 tour +1 colonne, 1 minute +2, 1 heure +3, 1 jour +4, 1 semaine +5.\n  Pouvoirs (absents des règles de l'application) : niv. 1 Aujourd'hui c'est gratuit (transports gratuits une journée), Caramba encore raté (−3 colonnes aux attaques contre le mage pendant Foi minutes), Connaissance de la rue (deviner ce qui se passe dans la Ville ou un groupe, pas un individu ; ex. « quelque chose de bizarre rue Lucifer »), Je suis un lampadaire (se fondre dans le mobilier urbain immobile), Paris sous les bombes (message caché lisible par les seuls destinataires choisis, une semaine), Pour la musique (20 × Foi € de manche en une heure) ; niv. 2 Anonyme (disparaître dans la foule, Non-détection 2 pendant Foi minutes), Attention à la marche (attaque par l'environnement, test de Foi, puissance +1), Sur ses gardes (sent les sentiments et les attaques imminentes, Foi heures), Je l'ai trouvé par terre (objet de moins de 100 € en 10 − Foi minutes, ou localiser un objet possédé), Saloperie de bestiole (posséder un animal touché) ; niv. 3 C'est chez moi (territoire de 200 m² maximum, test de Foi, une semaine, cumulable jusqu'à +3 colonnes ; détecte le surnaturel, Anonyme/Sur ses gardes/Caramba permanents, un pouvoir gratuit par jour), Déjà arrivé (trajet rapide et sans danger), Où ça ? (invisible Foi minutes), T'es pas au courant ? (rumeur crue de tous pendant Foi mois) ; niv. 4 L'autre droite (forcer quelqu'un à se rendre dans un lieu public), L'effet villageoise (posséder un SDF ou un fou Foi heures, test résisté de Volonté), Paria (une semaine de mise au ban sociale) ; niv. 5 Attention au camion (version +3 d'Attention à la marche, Foi tours), Les rebuts se rebiffent (contrôler Foi SDF ou fous pendant Foi heures) ; niv. 6 White riot (déclencher une émeute une demi-heure plus tard).\n\nFiches : les employés du cirque ont les caractéristiques des vrais princes (non chiffrées) ; seules la nuée de chauves-souris et l'attaque du clown jongleur sont chiffrées dans le livre. Monsieur Fabien et Gilbert : fiches du Centre de Tri (Fire and Ice, p. 24-26). Clochards : valeurs estimées.",
+      "scenes": [
+        {
+          "id": "fi15-sc-prologue",
+          "nom": "1. Prologue : Paris sera toujours Paris",
+          "lieu": "Centre de Tri ravagé et Chez Régis, Paris – jour 1",
+          "notes": "Enchaîne directement sur « Interzone » : retour des Marches, et Beleth (qui a révélé être Monsieur Fabien) veut mettre la main sur Satan, qu'on sait à Paris.\nLe Centre de Tri ressemble à une fourmilière éventrée, murs criblés de traces de combat. Fabien/Beleth et Gilbert tentent vaguement de regrouper les démons parisiens, épaulés par une dizaine de serviteurs de Baal : personne n'a de temps pour les PJ.\nPistes mortes : la rue Lucifer, évoquée dans les scénarios précédents, ne figure sur aucun plan ; cadastre et bibliothèques (même en supposant qu'elle ait existé jadis) ne donnent rien.\nChez Régis : personne ne sait où est Satan, mais beaucoup sont persuadés qu'il est à Paris (les PJ aussi en ont l'impression, sans preuve). Un ange d'Yves leur explique sa théorie de la Ville vivante qui communique par ses clochards, graffitis et cabines téléphoniques. Juste, mais inutile pour l'instant.\nContexte MJ : les rêves des hommes, nourris depuis des siècles, ont rendu Paris consciente dans la MRC ; la présence de Satan lui donne une migraine carabinée et elle a compris que les démons pourraient l'en débarrasser (voir « Fluctuat Nec Mergitur » dans les notes du scénario).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-fabien-1",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans ce scénario : Beleth a révélé sa vraie identité dans « Interzone » et occupe toujours le corps de Fabien. Avec Gilbert et une dizaine de serviteurs de Baal, il tente de regrouper les démons parisiens dans un Centre de Tri ravagé ; il voudrait mettre la main sur Satan, mais n'a pas une minute à consacrer aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi15-fabien"
+            },
+            {
+              "id": "fi15-gilbert-2",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dans ce scénario : seconde Beleth/Fabien pour réorganiser les démons parisiens au milieu des ruines du Centre ; aucune aide concrète pour retrouver la rue Lucifer.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi15-gilbert"
+            },
+            {
+              "id": "fi15-ange-yves-3",
+              "nom": "L'ange d'Yves de Chez Régis",
+              "source": "Ange d'Yves, habitué de Chez Régis",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Si les PJ interrogent les habitués sur la rue Lucifer, il leur apprend qu'ils ne sont pas les seuls à avoir vécu ce genre de phénomène. Sa théorie : Paris est vivante, à demi consciente, et parle à travers ses éléments typiques (clochards, graffitis, cabines téléphoniques…). Il a raison, mais cela n'aide pas encore les PJ.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-ange-yves"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi15-sc-montmartre",
+          "nom": "2. Suivis par la Ville",
+          "lieu": "Rues de Paris, puis place du Tertre (Montmartre) – jours 1 à 3",
+          "notes": "Quand les joueurs tournent en rond, Paris prend contact. D'abord l'impression d'être suivis, surtout la nuit ; Détection des ennemis et pouvoirs semblables ne donnent rien ; un mouvement furtif à la limite du champ de vision. Finalement : une dizaine de rats, qui fuient dans les murs et les égouts (les capturer ou les tuer ne sert à rien).\nPuis les pigeons : une douzaine d'éclopés qui fientent sur les PJ, puis s'envolent vers le centre. Suivre un vol d'oiseau à pied est difficile (compliquer la poursuite) ; ils mènent place du Tertre, parmi les touristes et les portraitistes, et redeviennent des pigeons ordinaires.\nSur la place : le prêcheur au col Mao, inutile à interroger ; si on le brutalise, une dizaine de clochards s'interposent devant les touristes ébahis.\nLaisser errer les PJ, puis attirer leur attention sur le caricaturiste que personne ne regarde : ses fusains dérangeants montrent la vraie nature des modèles (le policier du carrefour en ange de Laurent, ailes et épée). Se faire tirer le portrait : les PJ en démons, et un plan en filigrane pour qui a une Perception surnaturelle (supérieure à 3+).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-harangueur-4",
+              "nom": "Le prêcheur de la place du Tertre",
+              "source": "Humain, illuminé à col Mao",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Pouvoirs de mage urbain possibles (adaptation, voir notes) : Les rebuts se rebiffent, Connaissance de la rue",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quinquagénaire barbu en costume à col Mao vert d'eau poussiéreux, juché sur un cageot : il mélange chansons sur Paris et prophéties sur le Diable venu sur Terre. Réponses incompréhensibles et cryptiques.\nSi les PJ emploient la manière forte, une dizaine de clochards au regard vide s'interposent sous les yeux des touristes.\nAdaptation : le livre ne le dit pas, mais il peut servir de porte-voix de la Ville ou de mage urbain (voir « Fluctuat Nec Mergitur » dans les notes du scénario) ; pouvoirs absents des règles, laissés dans les talents.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-harangueur"
+            },
+            {
+              "id": "fi15-clochards-5",
+              "nom": "Clochards au regard vide",
+              "source": "SDF parisiens manipulés par la Ville",
+              "type": "humain",
+              "qty": 10,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Survie (rue) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "S'interposent en silence si l'on brutalise le prêcheur ; ils ne cherchent pas à tuer, seulement à protéger.\nCaractéristiques non fournies par le livre : valeurs estimées d'humains ordinaires affaiblis.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-clochards"
+            },
+            {
+              "id": "fi15-caricaturiste-6",
+              "nom": "Le caricaturiste nordique",
+              "source": "Jeune peintre de la place du Tertre",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Dessin (fusain) 2 : maladroit, mais montre la vraie nature des modèles",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune homme d'une maigreur maladive, regard inexpressif, peau marbrée de plaques rouges ; aucun touriste ne s'arrête devant lui. Ses fusains malhabiles mettent mal à l'aise : il dessine ce qu'il « ressent ». Le policier du carrefour apparaît sur sa toile avec des ailes et une épée (c'est bien un ange de Laurent).\nParle un français laborieux avec un fort accent nordique, ne sait pas pourquoi ses dessins sont si « réalistes ».\nPortrait des PJ en quelques minutes : ils y sont représentés en démons ; un PJ de Perception surnaturelle (supérieure à 3+) remarque que les traits gras dessinent un plan en filigrane (vers l'impasse).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-caricaturiste"
+            },
+            {
+              "id": "fi15-flic-ange-7",
+              "nom": "Le policier du carrefour",
+              "source": "Ange de Laurent en faction",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "En faction au carrefour de la place du Tertre ; modèle du caricaturiste. Un moyen de détection quelconque confirme que c'est un ange au service de Laurent. Rien ne l'oblige à intervenir : à éviter plutôt qu'à affronter.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-flic-ange"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi15-sc-impasse",
+          "nom": "3. L'impasse et les trois passages",
+          "lieu": "Impasse entre Montmartre et Château Rouge",
+          "notes": "Le plan mène à une impasse sale : murs noircis, affiches électorales en lambeaux, tags rouges. Sous les affiches : un vers des centuries de Nostradamus, des passages de l'Apocalypse, des signatures… et une flèche rouge « rue Lucifer » vers le mur du fond.\nSatan a verrouillé sa retraite, mais Paris a ménagé trois points faibles :\n• Les égouts : avec l'aide des zombies amis ou une carte, on retrouve la ruelle fermée par une grille rouillée (matériel ou Force 4+). Derrière, un puits vertigineux et une échelle branlante ; une vingtaine de chauves-souris attaquent pendant la montée (voir leur fiche : 1 PF, malus de trois colonnes sur l'échelle, morsure à effet de Douleur 1, test d'Agilité pour ne pas tomber). En haut, une plaque d'égout s'ouvre sur la rue Lucifer.\n• La boucherie Durand : petit entrepôt à porte de fer cadenassée, odeur d'abattoir, pas d'électricité. À la lumière : carrelage taché de sang, carcasses humaines aux crochets dont les yeux suivent les PJ, bruits étouffés, cafards, retour du courant qui fait bouger les crochets sur leurs rails… Ambiance, aucun danger réel. Une porte mène dans la rue Lucifer, à côté de la boutique.\n• Le toit : échelle au début de l'impasse, cabanon à porte vitrée, escalier sans palier d'une centaine de marches. Une cavalcade enfle au-dessus ; qu'ils attendent ou fuient, l'escalier s'effondre : 2d6 PF moins la MR d'un test d'Agilité très difficile ; ils atterrissent dans un hall d'immeuble donnant sur la rue.\nLe chemin inverse est ensuite impossible (puits sans issue, abattoir à une seule porte, aucune trace d'effondrement). Dehors, nuit sans étoiles, lune basse et rousse ; pas de réseau, ni invocation de supérieur, ni Chez Régis, ni armes magiques ; plus de récupération de PP. Ils sont coincés.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi15-chauves-souris-8",
+              "nom": "Nuée de chauves-souris du puits",
+              "source": "Bestioles du puits sous la rue Lucifer",
+              "type": "monstre",
+              "qty": 20,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 6,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 1,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Morsure (effet de Douleur 1)",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2+, Vol",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Une bonne vingtaine, 1 PF chacune. Se battre accroché à l'échelle impose trois colonnes de malus aux actions offensives des PJ.\nMorsure (Corps à corps 2+, dommages +0) : mêmes effets que le pouvoir Douleur niveau 1 ; test d'Agilité (avec les quatre colonnes de malus de la douleur) pour ne pas lâcher l'échelle et entraîner les autres dans sa chute.\nCaractéristiques autres que l'attaque et les PF non fournies : valeurs estimées. Défense non donnée : 2.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-chauves-souris"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi15-ch-passage",
+              "q": "Par où les PJ entrent-ils dans la rue Lucifer ?",
+              "opts": [
+                {
+                  "t": "Par les égouts",
+                  "suite": "Grille à forcer (Force 4+ ou matériel), puis combat contre la nuée de chauves-souris sur l'échelle. Arrivée par une plaque d'égout."
+                },
+                {
+                  "t": "Par la boucherie Durand",
+                  "suite": "Pur moment d'angoisse dans l'abattoir, sans danger ; arrivée à côté de la boutique des Durand."
+                },
+                {
+                  "t": "Par le toit",
+                  "suite": "Effondrement de l'escalier : 2d6 PF moins la MR d'Agilité (très difficile) ; arrivée dans un hall d'immeuble."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi15-sc-rue",
+          "nom": "4. Magique et… hermétique : la rue Lucifer",
+          "lieu": "Rue Lucifer (fantasme de Satan) – 20 h 30, sans fin",
+          "notes": "Les montres marquent 20 h 30. Ruelle tortueuse et pavée, neige épaisse sur les trottoirs mais air printanier, réverbères, odeur de lilas : un Montmartre d'Amélie Poulain filmé à travers un filtre rouge. Une mélancolie palpable (tristesse et colère). D'un côté des murs gigantesques qui se perdent dans les nuages ; s'envoler fait tourner en rond dans les nuages jusqu'à l'épuisement. En bas, la Place, ceinte de briques rouges, où se dresse un petit chapiteau rouge entouré de roulottes.\nBoutiques : boucherie Durand, boulangerie Au bon pain (Pariet), épicerie Félix Potin (Hadot et Djamel), église (curé ange de Guy), bar Chez Régis (Régis et Marion), imprimerie Lebowski (Éric Robert), galerie d'art Fire & Ice, hôtel particulier des Monsac.\nLa galerie Fire & Ice, minuscule et sanglante, éclairée d'un néon : trois expositions, « body part » (cadavres à tous les stades de décomposition), « slow down » (voitures accidentées maculées) et « Jacques Henry » (écrans où passent les scènes de la campagne vécues, ratées ou possibles par les PJ).\nTous les habitants sont des simulacres imaginés par Satan ; chacun cache une misère. Ils se rendent tous au cirque le soir (affiches annonçant le Santa Claws Circus à minuit). Les PJ peuvent visiter le cirque avant le spectacle : voir la scène 7 pour ce qu'ils y trouvent.\nLes fiches des habitants détaillent les sept problèmes à résoudre plus tard (scène 6).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-durand-9",
+              "nom": "Monsieur et Madame Durand",
+              "source": "Bouchers de la rue Lucifer",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Couple lyonnais sans enfant d'une cinquantaine d'années. Elle, ronde et rose, tablier immaculé, regard absent, tient la caisse ; elle se méfie, car elle a compris un soir que la viande n'était pas normale et se tait depuis que les affaires prospèrent. Lui, corpulent, chauve, moustache poivre et sel, index droit arraché par la machine, tablier taché de sang : il débite de la chair humaine sans s'en rendre compte (il croit tailler du bœuf). Ferment à 21 h 30 et vont au cirque.\nL'abattoir de la boucherie est un des trois passages vers la rue.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-durand"
+            },
+            {
+              "id": "fi15-pariet-10",
+              "nom": "Famille Pariet (boulangerie Au bon pain)",
+              "source": "Boulangers de la rue Lucifer",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Couple de sexagénaires, fils aîné de 27 ans chocolatier, et deux vendeuses : Rosine (quarantaine fatiguée, sympathique) et Yu (vingt ans, jolie, très incompétente).\nProblème : le cadet, 15 ans, environ 150 kg, boulimique, terrorise la maison : privé de viennoiseries, il pique des crises de larmes qui ameutent la rue ; la mère le surprotège et accuse le père, qui cuit sans arrêt pour le nourrir et noie sa peine dans la Suze. Le soir, le frère aîné pousse son fauteuil roulant jusqu'au cirque.\nSolution (une des deux plus difficiles) : le retirer à sa famille pour le confier à un médecin… ou le tuer.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-pariet"
+            },
+            {
+              "id": "fi15-hadot-11",
+              "nom": "Monsieur Hadot et Djamel",
+              "source": "Épicier (vieux Félix Potin) et son commis",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Hadot : sexagénaire en blouse grise et casquette à carreaux, mâche un vieux chewing-gum, se croit drôle et accable ses clients de conseils sarcastiques. Ancien d'Algérie.\nDjamel : 19 ans, petit, malingre, énorme touffe frisée, d'une maladresse chronique. Son patron l'humilie en public, et chaque soir après la fermeture (22 h 30) le maltraite (brûlures de cigarette, coups de ceinture) ; tout le quartier le sait et se tait. Djamel va ensuite au cirque.\nProblème à résoudre : faire cesser les sévices.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-hadot"
+            },
+            {
+              "id": "fi15-cure-12",
+              "nom": "Le curé de la rue Lucifer",
+              "source": "Ange de Guy, prêtre de l'église désaffectée",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "L'église pseudo-gothique aux vitraux condamnés n'a plus aucun pouvoir. Le prêtre est un des rares à avoir conscience de revivre la même nuit. Trop fier pour l'admettre et trop lâche pour enquêter, il s'est réfugié au presbytère après avoir vu les statues des saints danser de façon obscène.\nInterrogé, il se dit ange et prétend maîtriser la situation ; poussé un peu, il s'effondre en larmes. Il entend chaque soir la petite Claudine en confession, mais n'ose pas s'en prendre à son père, le notable le plus respecté du quartier.\nProblème à résoudre : lui rendre le courage d'agir (en mettant fin aux crimes de M. de Monsac, il règle deux problèmes d'un coup).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-cure"
+            },
+            {
+              "id": "fi15-regis-13",
+              "nom": "Régis et Marion (bar Chez Régis)",
+              "source": "Patron breton du bar et sa fille",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Régis, Breton en perfecto et banane, fan de Johnny ; bar décoré aux couleurs de la Bretagne. Habitués imbibés devant le même match de foot chaque soir, encore moins conscients que les autres que quelque chose cloche.\nMarion, 17 ans, idolâtre Lorie et en fredonne les chansons ; boulimique, elle se fait vomir après chaque repas et se mutile quand elle a « trop » mangé (son péché mignon : l'éclair au café de la boulangerie), musique à fond pour que son père ne l'entende pas.\nProblème (un des deux plus difficiles) : lui rendre confiance en elle, par exemple en se faisant passer pour un producteur qui veut lui faire enregistrer un disque.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-regis"
+            },
+            {
+              "id": "fi15-eric-robert-14",
+              "nom": "Éric Robert",
+              "source": "Veilleur de nuit de l'imprimerie Lebowski",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit homme sec d'environ 35 ans, coupe militaire, treillis noir et coupe-vent « Sécurité Associates 88 », Maglite et matraque. Dort tout le temps.\nPendant son sommeil, les jumeaux Crocus amènent le petit Martinez à l'imprimerie, l'attachent aux machines et le mutilent ; ensuite les machines s'animent et dévorent le corps pendant que les gamins filent au cirque.\nLe vrai problème n'est pas le lynchage mais l'inaction du vigile : si les PJ se contentent d'arrêter les gamins, les machines se vengent en dévorant le veilleur. Il faut qu'il intervienne lui-même.\nMatraque : arme citée par le livre, valeurs de la matraque des règles.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-eric-robert"
+            },
+            {
+              "id": "fi15-monsac-15",
+              "nom": "Famille de Monsac",
+              "source": "Notables de la rue (hôtel particulier XVIIe)",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Monsieur, dernier rejeton d'une noblesse désargentée enrichi dans l'immobilier, généreux, collectionneur de voitures de sport ; Madame, présidente de l'association de quartier, fait et défait les réputations. Cinq enfants polis : Agnan (12 ans), Hugues (11), Venceslas (10), Marc-François (9) et Claudine (8).\nSecret : le père abuse de Claudine chaque soir pendant que Madame dort sous somnifère et que la bonne emmène les garçons au cirque ; il la conduit ensuite se confesser à l'église, puis ils vont au spectacle.\nProblème à résoudre : Claudine (le curé peut y mettre fin, voir sa fiche).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-monsac"
+            },
+            {
+              "id": "fi15-crocus-16",
+              "nom": "Famille Crocus (Jean-Marie et Bruno)",
+              "source": "Jeunes retraités de la fonction publique et leurs jumeaux de 15 ans",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Parents cinquantenaires, militants d'une France « pure » ; leurs jumeaux Jean-Marie et Bruno sont de petits nazillons en herbe. Ce sont eux qui torturent le petit Martinez à l'imprimerie Lebowski avant d'aller voir les magiciens et les clowns.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-crocus"
+            },
+            {
+              "id": "fi15-martinez-17",
+              "nom": "Famille Martinez",
+              "source": "Concierges du plus grand immeuble de la rue",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sympathiques et ouverts ; Miguel, 13 ans, joue à la « racaille » (mauvais rap, joggings sales) ; une grande fille étudie les fossiles dans le Sud. C'est le petit Martinez que les jumeaux Crocus lynchent à l'imprimerie.\nÉpilogue : le réceptionniste de l'hôtel miteux ressemble trait pour trait à M. Martinez.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-martinez"
+            },
+            {
+              "id": "fi15-clocharde-18",
+              "nom": "La jeune clocharde",
+              "source": "Vagabonde sans nom de la rue Lucifer (« la meuf de la MRC »)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Peau très mate, longs cheveux noirs, lourde parka rouge et short bleu ; erre dans les rues sans même connaître son prénom.\nAvant le spectacle, Belial (le cracheur de feu) la rencontre, l'invite au cirque et en tombe amoureux ; pendant le numéro, elle discute passionnément avec Crocell, sous l'œil amusé de Malphas ; Crocell l'enlace, elle le repousse et s'enfuit en pleurs. Andrealphus la recueille alors dans sa roulotte pour un café.\nUne fois informé de la « trahison » de son frère, Belial l'enlève devant Andrealphus et l'attache dans sa roulotte.\nSuite (Les cahiers du labyrinthe) : Beleth est chargé de la faire disparaître mais la cache dans le Lupanar de la MRC.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-clocharde"
+            },
+            {
+              "id": "fi15-autres-habitants-19",
+              "nom": "Autres habitants de la rue",
+              "source": "Mamedi, Declancy, Menon et Grossman, Osberg, Dulong…",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mère seule Mamedi et ses deux petits métis Samuel (2 ans) et Isaac (1 an), qui attendent le père en prison pour trafic de shit ; Robert Declancy, lecteur chez un grand éditeur, qui corrige la nuit sur la place le manuscrit d'un auteur de romans zoophiles (clin d'œil à Hakim Izmet) ; Joséphine Menon (peintre dépressive) et Luc Grossman (employé chez Quick) ; Georges-Louis Osberg, Espagnol solitaire biographe d'un auteur fantastique ; Sylvie Dulong, 23 ans, blonde ardéchoise, thèse sur les monstres de la littérature.\nLe MJ est libre d'en inventer d'autres en s'inspirant de scénarios précédents ou de personnes réelles : tous ne sont que des fantasmes de Satan.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-autres-habitants"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi15-sc-cirque",
+          "nom": "5. Viens voir les magiciens : le Santa Claws Circus",
+          "lieu": "Chapiteau rouge sur la Place – minuit",
+          "notes": "Chapiteau d'une centaine de places, gradins vermoulus, éclairage halogène. Entre deux roulottes : un dormeur poussiéreux et un vieux diseur de bonne aventure gratuit. Entrée à 30 € (20 € enfant) ou paiement en nature chez le caissier souriant ; placeur aigri à chapeau melon ; balayeur couturé ; chef de la sécurité en noir ; toile peinte façon Bosch par un petit peintre à une oreille.\nOuverture : Monsieur Loyal sous la poursuite, DJ à piercings, trône où siège le pantin de Satan, astiqué par un maigrichon à lunettes.\nLes numéros (résumés) : le fou à la camisole qui se libère en se disloquant ; Baal lançant des couteaux sur Andrealphus ; Belial cracheur de feu qui fait fondre des statues de glace ; Crocell figé dans sa baignoire ; le dompteur sadique et ses bêtes faméliques ; Elvis (Bifrons) et ses tours de force ; l'homme aux trous et à la pluie de cendres, qui fait trembler le sol (test d'Agilité avec deux colonnes de malus pour ne pas perdre 1 PF ; gradins effondrés, morts parmi les enfants, blessés emportés à l'infirmerie) ; les clowns (savant fou, deux farceurs cruels, jongleur barbu qui jette ses cocktails Joliot-Curie sur la foule et sur un PJ : Tir 3+, puissance +2, attaque multiple) ; le devin Malphas qui étale en public les secrets du quartier ; l'hypnotiseur vampirique et son freak ; le prestidigitateur et sa vierge de fer ; l'homme-poisson qui noie deux enfants. Le public applaudit tout.\nBeleth, assis à côté des PJ, leur glisse son conseil (fouiller chez les forains, aider les habitants à contre-emploi, prendre des notes) avant de partir dans son anecdote laponne.\nFinal : le trône au centre, roue de loterie, tirage du numéro 66 : un petit garçon blond nommé Gabriel. On lui apporte une longue épée. Vote à main levée : qui est pour le pardon (= l'exécution) ? La première fois, l'écrasante majorité vote contre : les employés jaillissent des coulisses et massacrent le public, ruelle à feu et à sang, PJ compris. Inévitable : les employés ont la puissance des vrais princes.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi15-loyal-20",
+              "nom": "Monsieur Loyal",
+              "source": "Présentateur du cirque (Nybbas, d'après l'ordre d'apparition)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pantalon crème, mocassins à glands, costume élégant, visage poupin à la Jean-Pierre Foucault ; harangue le public par-dessus la musique, commente les numéros et organise le vote final.\nIdentité de prince déduite de la liste du livre (par ordre d'apparition), non explicite.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-loyal"
+            },
+            {
+              "id": "fi15-ouikka-21",
+              "nom": "Le clown jongleur barbu (Ouikka)",
+              "source": "Ouikka",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Cocktail Joliot-Curie (attaque multiple, lancé)",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Clown à passe-montagne d'où dépasse une grande barbe noire : jongle avec les « cocktails Joliot-Curie » (Molotov sans mèche) du savant fou en chantonnant à la gloire de Ben Laden, puis les jette sur la foule, et un sur les PJ (Tir 3+, puissance +2, attaque multiple).\nSeule l'attaque du cocktail est chiffrée par le livre ; le reste de la fiche est par défaut : ne pas chercher à le vaincre (prince).\nConspire avec Bifrons.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-ouikka"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi15-ch-vote1",
+              "q": "Premier vote (inévitable) : que deviennent les PJ ?",
+              "opts": [
+                {
+                  "t": "Ils subissent le massacre",
+                  "suite": "Tous meurent : le noir, puis retour au début de la rue Lucifer à 20 h 30 (scène 6)."
+                },
+                {
+                  "t": "Ils tentent de s'enfuir ou de résister",
+                  "suite": "Peine perdue face aux princes : même issue, la boucle recommence."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi15-sc-boucle",
+          "nom": "6. La méthode du docteur Chestel : la boucle",
+          "lieu": "Rue Lucifer – nuits successives",
+          "notes": "Après le noir, les PJ se réveillent au début de la rue, à 20 h 30. Désormais, quiconque meurt ressuscite ainsi une fois tous les autres tués. Impossible de sortir : il faut montrer au Diable la solution de ses problèmes en étudiant la logique de son fantasme.\nPremière condition : que le public vote enfin le pardon. Pour cela, rendre un peu de joie au quartier en résolvant ses sept problèmes (laisser les joueurs inventer leurs moyens) :\n1. Les Durand et leur viande humaine ;\n2. Le gamin boulimique de la boulangerie (le plus dur : le confier à un médecin loin de sa famille, ou le tuer) ;\n3. Marion, la fille du bar (le plus dur : lui redonner confiance, par exemple un faux producteur) ;\n4. Le petit Martinez lynché à l'imprimerie : c'est le veilleur Éric Robert qui doit intervenir, sinon les machines le dévorent ;\n5. Claudine de Monsac ;\n6. Djamel, le commis de l'épicerie ;\n7. Le curé, ange de Guy, à qui il faut rendre courage (en s'attaquant à M. de Monsac, il règle aussi le cas de Claudine).\nUn problème résolu ne revient plus les nuits suivantes ; l'ambiance s'allège et le public devient moins passif et fasciné. Une fois les sept résolus, le public vote le pardon.\nMais cela ne suffit pas : Gabriel décapite le pantin, Andrealphus s'effondre en hurlant, Elvis éclate de rire, Belial et Crocell se battent, le chapiteau s'embrase, le ciel flambe, les murs se rapprochent, les étoiles tombent et une comète pulvérise la Place : les PJ meurent encore. Il faut aussi remettre l'intrigue en place (scène 7).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-pariet-22",
+              "nom": "Famille Pariet (boulangerie Au bon pain)",
+              "source": "Boulangers de la rue Lucifer",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Couple de sexagénaires, fils aîné de 27 ans chocolatier, et deux vendeuses : Rosine (quarantaine fatiguée, sympathique) et Yu (vingt ans, jolie, très incompétente).\nProblème : le cadet, 15 ans, environ 150 kg, boulimique, terrorise la maison : privé de viennoiseries, il pique des crises de larmes qui ameutent la rue ; la mère le surprotège et accuse le père, qui cuit sans arrêt pour le nourrir et noie sa peine dans la Suze. Le soir, le frère aîné pousse son fauteuil roulant jusqu'au cirque.\nSolution (une des deux plus difficiles) : le retirer à sa famille pour le confier à un médecin… ou le tuer.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-pariet"
+            },
+            {
+              "id": "fi15-regis-23",
+              "nom": "Régis et Marion (bar Chez Régis)",
+              "source": "Patron breton du bar et sa fille",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Régis, Breton en perfecto et banane, fan de Johnny ; bar décoré aux couleurs de la Bretagne. Habitués imbibés devant le même match de foot chaque soir, encore moins conscients que les autres que quelque chose cloche.\nMarion, 17 ans, idolâtre Lorie et en fredonne les chansons ; boulimique, elle se fait vomir après chaque repas et se mutile quand elle a « trop » mangé (son péché mignon : l'éclair au café de la boulangerie), musique à fond pour que son père ne l'entende pas.\nProblème (un des deux plus difficiles) : lui rendre confiance en elle, par exemple en se faisant passer pour un producteur qui veut lui faire enregistrer un disque.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-regis"
+            },
+            {
+              "id": "fi15-eric-robert-24",
+              "nom": "Éric Robert",
+              "source": "Veilleur de nuit de l'imprimerie Lebowski",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit homme sec d'environ 35 ans, coupe militaire, treillis noir et coupe-vent « Sécurité Associates 88 », Maglite et matraque. Dort tout le temps.\nPendant son sommeil, les jumeaux Crocus amènent le petit Martinez à l'imprimerie, l'attachent aux machines et le mutilent ; ensuite les machines s'animent et dévorent le corps pendant que les gamins filent au cirque.\nLe vrai problème n'est pas le lynchage mais l'inaction du vigile : si les PJ se contentent d'arrêter les gamins, les machines se vengent en dévorant le veilleur. Il faut qu'il intervienne lui-même.\nMatraque : arme citée par le livre, valeurs de la matraque des règles.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-eric-robert"
+            },
+            {
+              "id": "fi15-crocus-25",
+              "nom": "Famille Crocus (Jean-Marie et Bruno)",
+              "source": "Jeunes retraités de la fonction publique et leurs jumeaux de 15 ans",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Parents cinquantenaires, militants d'une France « pure » ; leurs jumeaux Jean-Marie et Bruno sont de petits nazillons en herbe. Ce sont eux qui torturent le petit Martinez à l'imprimerie Lebowski avant d'aller voir les magiciens et les clowns.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-crocus"
+            },
+            {
+              "id": "fi15-cure-26",
+              "nom": "Le curé de la rue Lucifer",
+              "source": "Ange de Guy, prêtre de l'église désaffectée",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "L'église pseudo-gothique aux vitraux condamnés n'a plus aucun pouvoir. Le prêtre est un des rares à avoir conscience de revivre la même nuit. Trop fier pour l'admettre et trop lâche pour enquêter, il s'est réfugié au presbytère après avoir vu les statues des saints danser de façon obscène.\nInterrogé, il se dit ange et prétend maîtriser la situation ; poussé un peu, il s'effondre en larmes. Il entend chaque soir la petite Claudine en confession, mais n'ose pas s'en prendre à son père, le notable le plus respecté du quartier.\nProblème à résoudre : lui rendre le courage d'agir (en mettant fin aux crimes de M. de Monsac, il règle deux problèmes d'un coup).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-cure"
+            },
+            {
+              "id": "fi15-monsac-27",
+              "nom": "Famille de Monsac",
+              "source": "Notables de la rue (hôtel particulier XVIIe)",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Monsieur, dernier rejeton d'une noblesse désargentée enrichi dans l'immobilier, généreux, collectionneur de voitures de sport ; Madame, présidente de l'association de quartier, fait et défait les réputations. Cinq enfants polis : Agnan (12 ans), Hugues (11), Venceslas (10), Marc-François (9) et Claudine (8).\nSecret : le père abuse de Claudine chaque soir pendant que Madame dort sous somnifère et que la bonne emmène les garçons au cirque ; il la conduit ensuite se confesser à l'église, puis ils vont au spectacle.\nProblème à résoudre : Claudine (le curé peut y mettre fin, voir sa fiche).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-monsac"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi15-ch-probleme-boulangerie",
+              "q": "Comment les PJ règlent-ils le cas du gamin boulimique ?",
+              "opts": [
+                {
+                  "t": "Ils le confient à un médecin, loin de sa famille",
+                  "suite": "Problème résolu ; la boulangerie retrouve la paix."
+                },
+                {
+                  "t": "Ils le tuent",
+                  "suite": "Ça marche aussi, même si ce n'est pas joli."
+                },
+                {
+                  "t": "Ils tentent autre chose",
+                  "suite": "À l'appréciation du MJ ; sans solution radicale, le problème revient chaque nuit."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi15-ch-probleme-imprimerie",
+              "q": "Que font les PJ à l'imprimerie Lebowski ?",
+              "opts": [
+                {
+                  "t": "Ils poussent le veilleur à intervenir",
+                  "suite": "Problème résolu."
+                },
+                {
+                  "t": "Ils arrêtent eux-mêmes les jumeaux Crocus",
+                  "suite": "Les machines se vengent en dévorant Éric Robert : problème non résolu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi15-sc-coulisses",
+          "nom": "7. RSVP : les coulisses du cirque",
+          "lieu": "Roulottes et infirmerie du Santa Claws Circus – avant minuit",
+          "notes": "Chaque employé est la caricature d'un prince-démon (voir leurs fiches et la liste d'ordre d'apparition) ; les joueurs gagneront à s'intéresser à ceux qui ont joué un rôle dans la campagne.\nCe qui se passe hors piste :\n• Beleth erre en fumant la pipe ; ne sait rien de plus, sert à remettre les joueurs sur la voie et à raconter l'anecdote de Monsieur Fabien.\n• Bifrons, après un appel (« Oui, Maître »), réunit Malthus, Crocell, Vephar, Shaytan, Samigina, Uphir et Ouikka pour prendre le cirque ; seul, il redevient vide.\n• Belial rencontre la jeune clocharde et l'invite ; pendant le spectacle, elle parle avec Crocell qui l'enlace, la repousse et s'enfuit en pleurs, sous l'œil de Malphas. Andrealphus la recueille.\n• Andrealphus et Baal partagent une roulotte ; Malthus lui apprend à l'infirmerie qu'elle est enceinte d'un autre ; elle n'ose rien dire à Baal.\nPour sortir, boucher les trous de l'intrigue : Belial doit savoir que Crocell drague « sa meuf » et Baal doit apprendre la grossesse d'Andrealphus. Moyens : pousser Malphas à suivre sa nature (tout révéler à Belial), et récupérer le test de grossesse à l'infirmerie pour Baal. Annoncer soi-même les nouvelles sans preuve échoue : les employés méprisent les gens du quartier et ne croient pas un « étranger ».\nConséquences : Belial enlève la clocharde devant Andrealphus et l'enferme dans sa roulotte ; Baal casse tout chez lui puis assure son numéro normalement.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-pantin-44",
+              "nom": "Le pantin au bonnet de père Noël (Satan)",
+              "source": "Satan lui-même, « maître » du cirque",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pantin de bois pourri de la taille d'un enfant de dix ans, rictus haineux, cornes rouges sous un bonnet de père Noël sale, sur un trône de velours fané. Le rue Lucifer est la manifestation de son inconscient : Samaël, déprimé de s'être découvert simple pion du plan divin, s'est terré depuis un mois dans un hôtel miteux entre Montmartre et Château Rouge.\nÀ la fin du spectacle, le public vote : grâce (= exécution) ou non. S'il est décapité, Satan « démissionne ».\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-pantin"
+            },
+            {
+              "id": "fi15-beleth-cirque-28",
+              "nom": "L'homme à la pipe (Beleth)",
+              "source": "Beleth, employé du cirque sans tâche précise",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le spectateur assis à côté des PJ, qu'ils n'avaient pas remarqué, qui bourre sa pipe pendant le dernier numéro. Il leur conseille de fouiner du côté des forains, qu'il y a une logique derrière tout ça, de prendre des notes et d'aider les gens du quartier à contre-emploi pour changer le résultat du vote, puis attaque une anecdote laponne des années 70.\nLes nuits suivantes, il erre entre les roulottes en fumant ; il ne sait rien de plus, mais sert de joker au MJ pour remettre les joueurs sur la piste. Ravi de leur raconter encore l'anecdote de Monsieur Fabien.\nAllié : ne pas l'inclure dans un combat.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-beleth-cirque"
+            },
+            {
+              "id": "fi15-bifrons-29",
+              "nom": "Elvis (Bifrons)",
+              "source": "Bifrons, hercule du cirque",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Elvis de la fin, gras et suant dans son costume blanc à brillants : tours de force (parpaings, chaînes, haltères, table entre les dents) en chantant les standards du King, puis s'effondre épuisé en coulisses. Aide aussi l'infirmier à évacuer les blessés.\nEn coulisses : vocalises dans sa roulotte, puis un appel téléphonique le rend fixe et raide (« Oui, Maître ») ; il réunit Malthus, Crocell, Vephar, Shaytan, Samigina, Uphir et Ouikka pour comploter : prendre le cirque et se voir sur le trône. Quand il est seul, toute intelligence quitte son visage.\nÀ l'exécution, il éclate d'un rire dément et jette son déguisement (indice : Hornet manipule Bifrons, cf. la fin de la campagne).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-bifrons"
+            },
+            {
+              "id": "fi15-belial-30",
+              "nom": "Le cracheur de feu (Belial)",
+              "source": "Belial",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Torse nu bronzé et musclé, pantalon de cuir, bottes, borsalino noir ; crache des flammes qui sculptent formes et visages, puis fait fondre en ricanant des statues de glace à l'effigie de son frère. Heurte l'épaule de Crocell en sortant de piste.\nAvant le spectacle, rencontre la jeune clocharde et en tombe amoureux. S'il apprend (de la bouche de Malphas) que Crocell « drague sa meuf », il l'enlève devant Andrealphus et l'enferme dans sa roulotte ; à l'exécution, il se jette sur Crocell.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-belial"
+            },
+            {
+              "id": "fi15-crocell-31",
+              "nom": "L'homme à la baignoire gelée (Crocell)",
+              "source": "Crocell",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vingtaine, cheveux blond presque blanc, simple maillot de bain bleu ; ressemble aux statues de glace. Se moque du numéro précédent, se fige dans un bloc de glace dans sa baignoire, puis tire de ses mains de petites sculptures de glace ; reste dans un coin de la piste jusqu'à ce que la glace fonde.\nDispute la jeune clocharde à Belial (ils se toisent en silence quand ils se croisent).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-crocell"
+            },
+            {
+              "id": "fi15-andrealphus-32",
+              "nom": "L'assistante du lanceur de couteaux (Andrealphus)",
+              "source": "Andrealphus",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, longs cheveux noirs, peau très blanche, body de dentelle rouge et noire ; attachée tête en bas sur la roue, entaillée à chaque lancer, elle semble y prendre plaisir.\nVit dans la même roulotte que Baal (armes, bodys). Indice à remarquer : elle n'a pas l'air enceinte. En début de soirée, Malthus lui apprend à l'infirmerie qu'elle est enceinte, et elle sait que l'enfant n'est pas de son « mari » ; elle renonce à l'annoncer à Baal, trop mal luné. Recueille la clocharde en pleurs.\nÀ l'exécution, elle s'écroule en hurlant, les mains sur le ventre ; si l'intrigue est remise en place, Baal la tue d'un coup d'épée dans le ventre. Sa voix appelle ensuite les PJ à l'aide (« Montgrumeau »).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-andrealphus"
+            },
+            {
+              "id": "fi15-baal-33",
+              "nom": "Le lanceur de couteaux (Baal)",
+              "source": "Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, massif, visage inexpressif, smoking à queue-de-pie et cravate Mickey. Numéro de lancer de couteaux sur Andrealphus (de dos au miroir, yeux bandés, deux à la fois), puis lèche ses plaies en retirant les lames.\nS'il apprend (preuve à l'appui : le test de grossesse de l'infirmerie) qu'Andrealphus est enceinte, il rentre et casse tout dans sa roulotte, assure son numéro, puis, au final, ramasse l'épée et l'éventre malgré ses supplications.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-baal"
+            },
+            {
+              "id": "fi15-malphas-34",
+              "nom": "Le devin bon père de famille (Malphas)",
+              "source": "Malphas",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quadragénaire en costume trois pièces, début de calvitie, léger embonpoint, sourire de père de famille provincial. Numéro de divination qui vire à l'étalage public des secrets sordides du quartier (Claudine, Djamel…) sous les rires du public.\nObserve, amusé, la scène entre Crocell et la clocharde : le pousser à suivre sa nature en révélant tout à Belial suffit à lancer la machine.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-malphas"
+            },
+            {
+              "id": "fi15-malthus-35",
+              "nom": "L'infirmier en blouse blanche (Malthus)",
+              "source": "Malthus",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Évacue les blessés sur une civière avec Elvis ; ceux-ci testent des traitements très expérimentaux à l'infirmerie. Apprend à Andrealphus sa grossesse en début de soirée : le test de grossesse est à l'infirmerie (preuve à aller chercher pour Baal).\nConspire avec Bifrons.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-malthus"
+            },
+            {
+              "id": "fi15-baalberith-36",
+              "nom": "L'ouvreur aigri (Baalberith)",
+              "source": "Baalberith, placeur à chapeau melon",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit bonhomme aux cheveux rares, grosses lunettes, chapeau melon, qui guide les spectateurs en marmonnant qu'il était là le premier. À l'exécution, il fait un croche-pied au chef de la sécurité puis lui jette un dinosaure en peluche (allusion à « C'est mon ami et bien plus encore »).\nIdentité déduite de l'ordre d'apparition et du final.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-baalberith"
+            },
+            {
+              "id": "fi15-andromalius-37",
+              "nom": "Le chef de la sécurité (Andromalius)",
+              "source": "Andromalius",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, mince, crâne rasé, costume noir, oreillette, lunettes noires, badge de responsable de la sécurité ; surveille l'entrée et le spectacle. À l'exécution, se précipite pour séparer Belial et Crocell mais s'étale, victime du croche-pied de Baalberith.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-andromalius"
+            },
+            {
+              "id": "fi15-employes-38",
+              "nom": "Autres employés du cirque",
+              "source": "Les autres princes-démons caricaturés",
+              "type": "demon",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ordre d'apparition donné par le livre : Nog, Kronos, Mammon, Baalberith, Uphir, Andromalius, Morax, Nybbas, Furfur, Scox, Abalam, Andrealphus, Baal, Belial, Crocell, Caym, Bifrons, Gaziel, Vapula, Haagenti, Kobal, Ouikka, Malphas, Samigina, Shaytan, Valefor, Vephar, Beleth et Asmodée.\nRôles explicites : Uphir (balayeur au pic à glace et aux détergents), Vephar (homme-poisson de l'aquarium), Samigina et Shaytan (hypnotiseur vampirique à l'accent roumain et son « freak » couturé de plaies).\nRôles déduits (à confirmer par le MJ) : Nog (dormeur couvert de poussière) et Kronos (vieux diseur de bonne aventure à Swatch jaune : « vous allez avoir une vie intéressante »), Mammon (caissier qui accepte les paiements en nature), Morax (peintre façon Bosch à l'oreille unique), Furfur (DJ à piercings), Scox (maigrichon à tête de psychanalyste qui astique le trône et apporte l'épée), Abalam (fou à la camisole), Caym (dompteur sadique), Gaziel (homme aux bottes d'égoutier et à la pluie de cendres), Vapula (savant fou clown blanc), Haagenti et Kobal (les deux clowns farceurs), Valefor (prestidigitateur au smoking bicolore et à la vierge de fer), Asmodée (homme à la roue de loterie).\nLe jeune garçon tiré au sort (place 66) s'appelle Gabriel.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-employes"
+            },
+            {
+              "id": "fi15-clocharde-39",
+              "nom": "La jeune clocharde",
+              "source": "Vagabonde sans nom de la rue Lucifer (« la meuf de la MRC »)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Peau très mate, longs cheveux noirs, lourde parka rouge et short bleu ; erre dans les rues sans même connaître son prénom.\nAvant le spectacle, Belial (le cracheur de feu) la rencontre, l'invite au cirque et en tombe amoureux ; pendant le numéro, elle discute passionnément avec Crocell, sous l'œil amusé de Malphas ; Crocell l'enlace, elle le repousse et s'enfuit en pleurs. Andrealphus la recueille alors dans sa roulotte pour un café.\nUne fois informé de la « trahison » de son frère, Belial l'enlève devant Andrealphus et l'attache dans sa roulotte.\nSuite (Les cahiers du labyrinthe) : Beleth est chargé de la faire disparaître mais la cache dans le Lupanar de la MRC.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-clocharde"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi15-ch-intrigue",
+              "q": "Comment les PJ remettent-ils l'intrigue en place ?",
+              "opts": [
+                {
+                  "t": "Ils poussent Malphas à parler à Belial et rapportent le test de grossesse à Baal",
+                  "suite": "Ça marche : grand final complet (scène 8)."
+                },
+                {
+                  "t": "Ils annoncent eux-mêmes les nouvelles, sans preuve",
+                  "suite": "Les employés ne les croient pas : nouveau massacre, la boucle recommence."
+                },
+                {
+                  "t": "Ils ne règlent qu'une des deux intrigues",
+                  "suite": "Final incomplet : cataclysme, mort des PJ, retour à 20 h 30."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi15-sc-final",
+          "nom": "8. Le grand final et le réveil",
+          "lieu": "Chapiteau, puis l'impasse et l'hôtel miteux – jours 2 à 4",
+          "notes": "Une fois les sept problèmes résolus et l'intrigue remise en place : même rituel, Gabriel décapite le pantin d'un coup d'épée enflammée. Andrealphus s'écroule en se tenant le ventre, Bifrons rit et jette son costume, Belial se jette sur Crocell, Andromalius s'étale (croche-pied et dinosaure en peluche de Baalberith). Le chapiteau s'embrase, le ciel flambe, les murs se resserrent, une comète frappe la Place… et Baal ramasse l'épée et éventre Andrealphus qui le supplie. Le noir.\nRéveil dans l'impasse du prologue : des tags rouges et bleus remercient les PJ. Le mur du fond est devenu la façade d'un hôtel miteux ; le réceptionniste ressemble à M. Martinez (personnel et clients ressemblent aux habitants). Le client de la chambre 666 vient de partir : grand, blond, casquette House of Pain. Chambre poussiéreuse et vide ; sur une chaise, une boule à neige figurant la ruelle et la Place, posée sur un mot élégant signé « S. » : merci, il a démissionné, inutile de le chercher sous peine de mort.\nAlors, la voix d'Andrealphus résonne dans leur tête et appelle à l'aide, coupée net ; l'image d'une petite ville se superpose, panneau « Montgrumeau ». À suivre : « Le jour où nous sommes allés voir la fin du monde ».\nClé (Lux Aeterna / Tempus Fugit) : ils ont assisté à la mort symbolique du Patron et au meurtre d'Andrealphus par Baal.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi15-andrealphus-40",
+              "nom": "L'assistante du lanceur de couteaux (Andrealphus)",
+              "source": "Andrealphus",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande, longs cheveux noirs, peau très blanche, body de dentelle rouge et noire ; attachée tête en bas sur la roue, entaillée à chaque lancer, elle semble y prendre plaisir.\nVit dans la même roulotte que Baal (armes, bodys). Indice à remarquer : elle n'a pas l'air enceinte. En début de soirée, Malthus lui apprend à l'infirmerie qu'elle est enceinte, et elle sait que l'enfant n'est pas de son « mari » ; elle renonce à l'annoncer à Baal, trop mal luné. Recueille la clocharde en pleurs.\nÀ l'exécution, elle s'écroule en hurlant, les mains sur le ventre ; si l'intrigue est remise en place, Baal la tue d'un coup d'épée dans le ventre. Sa voix appelle ensuite les PJ à l'aide (« Montgrumeau »).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-andrealphus"
+            },
+            {
+              "id": "fi15-baal-41",
+              "nom": "Le lanceur de couteaux (Baal)",
+              "source": "Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, massif, visage inexpressif, smoking à queue-de-pie et cravate Mickey. Numéro de lancer de couteaux sur Andrealphus (de dos au miroir, yeux bandés, deux à la fois), puis lèche ses plaies en retirant les lames.\nS'il apprend (preuve à l'appui : le test de grossesse de l'infirmerie) qu'Andrealphus est enceinte, il rentre et casse tout dans sa roulotte, assure son numéro, puis, au final, ramasse l'épée et l'éventre malgré ses supplications.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-baal"
+            },
+            {
+              "id": "fi15-bifrons-42",
+              "nom": "Elvis (Bifrons)",
+              "source": "Bifrons, hercule du cirque",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Elvis de la fin, gras et suant dans son costume blanc à brillants : tours de force (parpaings, chaînes, haltères, table entre les dents) en chantant les standards du King, puis s'effondre épuisé en coulisses. Aide aussi l'infirmier à évacuer les blessés.\nEn coulisses : vocalises dans sa roulotte, puis un appel téléphonique le rend fixe et raide (« Oui, Maître ») ; il réunit Malthus, Crocell, Vephar, Shaytan, Samigina, Uphir et Ouikka pour comploter : prendre le cirque et se voir sur le trône. Quand il est seul, toute intelligence quitte son visage.\nÀ l'exécution, il éclate d'un rire dément et jette son déguisement (indice : Hornet manipule Bifrons, cf. la fin de la campagne).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-bifrons"
+            },
+            {
+              "id": "fi15-martinez-43",
+              "nom": "Famille Martinez",
+              "source": "Concierges du plus grand immeuble de la rue",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sympathiques et ouverts ; Miguel, 13 ans, joue à la « racaille » (mauvais rap, joggings sales) ; une grande fille étudie les fossiles dans le Sud. C'est le petit Martinez que les jumeaux Crocus lynchent à l'imprimerie.\nÉpilogue : le réceptionniste de l'hôtel miteux ressemble trait pour trait à M. Martinez.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123.",
+              "typeId": "type-fi15-martinez"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi15-ch-suite",
+              "q": "Que font les PJ du message de Satan ?",
+              "opts": [
+                {
+                  "t": "Ils cherchent à le retrouver",
+                  "suite": "Il a promis de les tuer : aucune piste, et la voix d'Andrealphus les appelle déjà vers Montgrumeau."
+                },
+                {
+                  "t": "Ils répondent à l'appel d'Andrealphus",
+                  "suite": "Enchaîner sur le scénario final dans le Massif central."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795375964757,
+      "updatedAt": 1795375964757
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi15-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dans ce scénario : Beleth a révélé sa vraie identité dans « Interzone » et occupe toujours le corps de Fabien. Avec Gilbert et une dizaine de serviteurs de Baal, il tente de regrouper les démons parisiens dans un Centre de Tri ravagé ; il voudrait mettre la main sur Satan, mais n'a pas une minute à consacrer aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi15-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dans ce scénario : seconde Beleth/Fabien pour réorganiser les démons parisiens au milieu des ruines du Centre ; aucune aide concrète pour retrouver la rue Lucifer.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi15-ange-yves",
+      "nom": "L'ange d'Yves de Chez Régis",
+      "source": "Ange d'Yves, habitué de Chez Régis",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Si les PJ interrogent les habitués sur la rue Lucifer, il leur apprend qu'ils ne sont pas les seuls à avoir vécu ce genre de phénomène. Sa théorie : Paris est vivante, à demi consciente, et parle à travers ses éléments typiques (clochards, graffitis, cabines téléphoniques…). Il a raison, mais cela n'aide pas encore les PJ.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-harangueur",
+      "nom": "Le prêcheur de la place du Tertre",
+      "source": "Humain, illuminé à col Mao",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Pouvoirs de mage urbain possibles (adaptation, voir notes) : Les rebuts se rebiffent, Connaissance de la rue",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quinquagénaire barbu en costume à col Mao vert d'eau poussiéreux, juché sur un cageot : il mélange chansons sur Paris et prophéties sur le Diable venu sur Terre. Réponses incompréhensibles et cryptiques.\nSi les PJ emploient la manière forte, une dizaine de clochards au regard vide s'interposent sous les yeux des touristes.\nAdaptation : le livre ne le dit pas, mais il peut servir de porte-voix de la Ville ou de mage urbain (voir « Fluctuat Nec Mergitur » dans les notes du scénario) ; pouvoirs absents des règles, laissés dans les talents.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-clochards",
+      "nom": "Clochards au regard vide",
+      "source": "SDF parisiens manipulés par la Ville",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2, Survie (rue) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "S'interposent en silence si l'on brutalise le prêcheur ; ils ne cherchent pas à tuer, seulement à protéger.\nCaractéristiques non fournies par le livre : valeurs estimées d'humains ordinaires affaiblis.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-caricaturiste",
+      "nom": "Le caricaturiste nordique",
+      "source": "Jeune peintre de la place du Tertre",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Dessin (fusain) 2 : maladroit, mais montre la vraie nature des modèles",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune homme d'une maigreur maladive, regard inexpressif, peau marbrée de plaques rouges ; aucun touriste ne s'arrête devant lui. Ses fusains malhabiles mettent mal à l'aise : il dessine ce qu'il « ressent ». Le policier du carrefour apparaît sur sa toile avec des ailes et une épée (c'est bien un ange de Laurent).\nParle un français laborieux avec un fort accent nordique, ne sait pas pourquoi ses dessins sont si « réalistes ».\nPortrait des PJ en quelques minutes : ils y sont représentés en démons ; un PJ de Perception surnaturelle (supérieure à 3+) remarque que les traits gras dessinent un plan en filigrane (vers l'impasse).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-flic-ange",
+      "nom": "Le policier du carrefour",
+      "source": "Ange de Laurent en faction",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "En faction au carrefour de la place du Tertre ; modèle du caricaturiste. Un moyen de détection quelconque confirme que c'est un ange au service de Laurent. Rien ne l'oblige à intervenir : à éviter plutôt qu'à affronter.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-chauves-souris",
+      "nom": "Nuée de chauves-souris du puits",
+      "source": "Bestioles du puits sous la rue Lucifer",
+      "type": "monstre",
+      "car": {
+        "fo": 2,
+        "ag": 6,
+        "pe": 6,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 1,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Morsure (effet de Douleur 1)",
+          "att": 5,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2+, Vol",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Une bonne vingtaine, 1 PF chacune. Se battre accroché à l'échelle impose trois colonnes de malus aux actions offensives des PJ.\nMorsure (Corps à corps 2+, dommages +0) : mêmes effets que le pouvoir Douleur niveau 1 ; test d'Agilité (avec les quatre colonnes de malus de la douleur) pour ne pas lâcher l'échelle et entraîner les autres dans sa chute.\nCaractéristiques autres que l'attaque et les PF non fournies : valeurs estimées. Défense non donnée : 2.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-durand",
+      "nom": "Monsieur et Madame Durand",
+      "source": "Bouchers de la rue Lucifer",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Couple lyonnais sans enfant d'une cinquantaine d'années. Elle, ronde et rose, tablier immaculé, regard absent, tient la caisse ; elle se méfie, car elle a compris un soir que la viande n'était pas normale et se tait depuis que les affaires prospèrent. Lui, corpulent, chauve, moustache poivre et sel, index droit arraché par la machine, tablier taché de sang : il débite de la chair humaine sans s'en rendre compte (il croit tailler du bœuf). Ferment à 21 h 30 et vont au cirque.\nL'abattoir de la boucherie est un des trois passages vers la rue.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-pariet",
+      "nom": "Famille Pariet (boulangerie Au bon pain)",
+      "source": "Boulangers de la rue Lucifer",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Couple de sexagénaires, fils aîné de 27 ans chocolatier, et deux vendeuses : Rosine (quarantaine fatiguée, sympathique) et Yu (vingt ans, jolie, très incompétente).\nProblème : le cadet, 15 ans, environ 150 kg, boulimique, terrorise la maison : privé de viennoiseries, il pique des crises de larmes qui ameutent la rue ; la mère le surprotège et accuse le père, qui cuit sans arrêt pour le nourrir et noie sa peine dans la Suze. Le soir, le frère aîné pousse son fauteuil roulant jusqu'au cirque.\nSolution (une des deux plus difficiles) : le retirer à sa famille pour le confier à un médecin… ou le tuer.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-hadot",
+      "nom": "Monsieur Hadot et Djamel",
+      "source": "Épicier (vieux Félix Potin) et son commis",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Hadot : sexagénaire en blouse grise et casquette à carreaux, mâche un vieux chewing-gum, se croit drôle et accable ses clients de conseils sarcastiques. Ancien d'Algérie.\nDjamel : 19 ans, petit, malingre, énorme touffe frisée, d'une maladresse chronique. Son patron l'humilie en public, et chaque soir après la fermeture (22 h 30) le maltraite (brûlures de cigarette, coups de ceinture) ; tout le quartier le sait et se tait. Djamel va ensuite au cirque.\nProblème à résoudre : faire cesser les sévices.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-cure",
+      "nom": "Le curé de la rue Lucifer",
+      "source": "Ange de Guy, prêtre de l'église désaffectée",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "L'église pseudo-gothique aux vitraux condamnés n'a plus aucun pouvoir. Le prêtre est un des rares à avoir conscience de revivre la même nuit. Trop fier pour l'admettre et trop lâche pour enquêter, il s'est réfugié au presbytère après avoir vu les statues des saints danser de façon obscène.\nInterrogé, il se dit ange et prétend maîtriser la situation ; poussé un peu, il s'effondre en larmes. Il entend chaque soir la petite Claudine en confession, mais n'ose pas s'en prendre à son père, le notable le plus respecté du quartier.\nProblème à résoudre : lui rendre le courage d'agir (en mettant fin aux crimes de M. de Monsac, il règle deux problèmes d'un coup).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-regis",
+      "nom": "Régis et Marion (bar Chez Régis)",
+      "source": "Patron breton du bar et sa fille",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Régis, Breton en perfecto et banane, fan de Johnny ; bar décoré aux couleurs de la Bretagne. Habitués imbibés devant le même match de foot chaque soir, encore moins conscients que les autres que quelque chose cloche.\nMarion, 17 ans, idolâtre Lorie et en fredonne les chansons ; boulimique, elle se fait vomir après chaque repas et se mutile quand elle a « trop » mangé (son péché mignon : l'éclair au café de la boulangerie), musique à fond pour que son père ne l'entende pas.\nProblème (un des deux plus difficiles) : lui rendre confiance en elle, par exemple en se faisant passer pour un producteur qui veut lui faire enregistrer un disque.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-eric-robert",
+      "nom": "Éric Robert",
+      "source": "Veilleur de nuit de l'imprimerie Lebowski",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Matraque (non-létale)",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit homme sec d'environ 35 ans, coupe militaire, treillis noir et coupe-vent « Sécurité Associates 88 », Maglite et matraque. Dort tout le temps.\nPendant son sommeil, les jumeaux Crocus amènent le petit Martinez à l'imprimerie, l'attachent aux machines et le mutilent ; ensuite les machines s'animent et dévorent le corps pendant que les gamins filent au cirque.\nLe vrai problème n'est pas le lynchage mais l'inaction du vigile : si les PJ se contentent d'arrêter les gamins, les machines se vengent en dévorant le veilleur. Il faut qu'il intervienne lui-même.\nMatraque : arme citée par le livre, valeurs de la matraque des règles.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-monsac",
+      "nom": "Famille de Monsac",
+      "source": "Notables de la rue (hôtel particulier XVIIe)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Monsieur, dernier rejeton d'une noblesse désargentée enrichi dans l'immobilier, généreux, collectionneur de voitures de sport ; Madame, présidente de l'association de quartier, fait et défait les réputations. Cinq enfants polis : Agnan (12 ans), Hugues (11), Venceslas (10), Marc-François (9) et Claudine (8).\nSecret : le père abuse de Claudine chaque soir pendant que Madame dort sous somnifère et que la bonne emmène les garçons au cirque ; il la conduit ensuite se confesser à l'église, puis ils vont au spectacle.\nProblème à résoudre : Claudine (le curé peut y mettre fin, voir sa fiche).\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-crocus",
+      "nom": "Famille Crocus (Jean-Marie et Bruno)",
+      "source": "Jeunes retraités de la fonction publique et leurs jumeaux de 15 ans",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Parents cinquantenaires, militants d'une France « pure » ; leurs jumeaux Jean-Marie et Bruno sont de petits nazillons en herbe. Ce sont eux qui torturent le petit Martinez à l'imprimerie Lebowski avant d'aller voir les magiciens et les clowns.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-martinez",
+      "nom": "Famille Martinez",
+      "source": "Concierges du plus grand immeuble de la rue",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sympathiques et ouverts ; Miguel, 13 ans, joue à la « racaille » (mauvais rap, joggings sales) ; une grande fille étudie les fossiles dans le Sud. C'est le petit Martinez que les jumeaux Crocus lynchent à l'imprimerie.\nÉpilogue : le réceptionniste de l'hôtel miteux ressemble trait pour trait à M. Martinez.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-clocharde",
+      "nom": "La jeune clocharde",
+      "source": "Vagabonde sans nom de la rue Lucifer (« la meuf de la MRC »)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Peau très mate, longs cheveux noirs, lourde parka rouge et short bleu ; erre dans les rues sans même connaître son prénom.\nAvant le spectacle, Belial (le cracheur de feu) la rencontre, l'invite au cirque et en tombe amoureux ; pendant le numéro, elle discute passionnément avec Crocell, sous l'œil amusé de Malphas ; Crocell l'enlace, elle le repousse et s'enfuit en pleurs. Andrealphus la recueille alors dans sa roulotte pour un café.\nUne fois informé de la « trahison » de son frère, Belial l'enlève devant Andrealphus et l'attache dans sa roulotte.\nSuite (Les cahiers du labyrinthe) : Beleth est chargé de la faire disparaître mais la cache dans le Lupanar de la MRC.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-autres-habitants",
+      "nom": "Autres habitants de la rue",
+      "source": "Mamedi, Declancy, Menon et Grossman, Osberg, Dulong…",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Mère seule Mamedi et ses deux petits métis Samuel (2 ans) et Isaac (1 an), qui attendent le père en prison pour trafic de shit ; Robert Declancy, lecteur chez un grand éditeur, qui corrige la nuit sur la place le manuscrit d'un auteur de romans zoophiles (clin d'œil à Hakim Izmet) ; Joséphine Menon (peintre dépressive) et Luc Grossman (employé chez Quick) ; Georges-Louis Osberg, Espagnol solitaire biographe d'un auteur fantastique ; Sylvie Dulong, 23 ans, blonde ardéchoise, thèse sur les monstres de la littérature.\nLe MJ est libre d'en inventer d'autres en s'inspirant de scénarios précédents ou de personnes réelles : tous ne sont que des fantasmes de Satan.\nSimulacre : un des humains imaginés par Satan pour peupler son délire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-pantin",
+      "nom": "Le pantin au bonnet de père Noël (Satan)",
+      "source": "Satan lui-même, « maître » du cirque",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pantin de bois pourri de la taille d'un enfant de dix ans, rictus haineux, cornes rouges sous un bonnet de père Noël sale, sur un trône de velours fané. Le rue Lucifer est la manifestation de son inconscient : Samaël, déprimé de s'être découvert simple pion du plan divin, s'est terré depuis un mois dans un hôtel miteux entre Montmartre et Château Rouge.\nÀ la fin du spectacle, le public vote : grâce (= exécution) ou non. S'il est décapité, Satan « démissionne ».\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-loyal",
+      "nom": "Monsieur Loyal",
+      "source": "Présentateur du cirque (Nybbas, d'après l'ordre d'apparition)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pantalon crème, mocassins à glands, costume élégant, visage poupin à la Jean-Pierre Foucault ; harangue le public par-dessus la musique, commente les numéros et organise le vote final.\nIdentité de prince déduite de la liste du livre (par ordre d'apparition), non explicite.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-beleth-cirque",
+      "nom": "L'homme à la pipe (Beleth)",
+      "source": "Beleth, employé du cirque sans tâche précise",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le spectateur assis à côté des PJ, qu'ils n'avaient pas remarqué, qui bourre sa pipe pendant le dernier numéro. Il leur conseille de fouiner du côté des forains, qu'il y a une logique derrière tout ça, de prendre des notes et d'aider les gens du quartier à contre-emploi pour changer le résultat du vote, puis attaque une anecdote laponne des années 70.\nLes nuits suivantes, il erre entre les roulottes en fumant ; il ne sait rien de plus, mais sert de joker au MJ pour remettre les joueurs sur la piste. Ravi de leur raconter encore l'anecdote de Monsieur Fabien.\nAllié : ne pas l'inclure dans un combat.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-bifrons",
+      "nom": "Elvis (Bifrons)",
+      "source": "Bifrons, hercule du cirque",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Elvis de la fin, gras et suant dans son costume blanc à brillants : tours de force (parpaings, chaînes, haltères, table entre les dents) en chantant les standards du King, puis s'effondre épuisé en coulisses. Aide aussi l'infirmier à évacuer les blessés.\nEn coulisses : vocalises dans sa roulotte, puis un appel téléphonique le rend fixe et raide (« Oui, Maître ») ; il réunit Malthus, Crocell, Vephar, Shaytan, Samigina, Uphir et Ouikka pour comploter : prendre le cirque et se voir sur le trône. Quand il est seul, toute intelligence quitte son visage.\nÀ l'exécution, il éclate d'un rire dément et jette son déguisement (indice : Hornet manipule Bifrons, cf. la fin de la campagne).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-belial",
+      "nom": "Le cracheur de feu (Belial)",
+      "source": "Belial",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Torse nu bronzé et musclé, pantalon de cuir, bottes, borsalino noir ; crache des flammes qui sculptent formes et visages, puis fait fondre en ricanant des statues de glace à l'effigie de son frère. Heurte l'épaule de Crocell en sortant de piste.\nAvant le spectacle, rencontre la jeune clocharde et en tombe amoureux. S'il apprend (de la bouche de Malphas) que Crocell « drague sa meuf », il l'enlève devant Andrealphus et l'enferme dans sa roulotte ; à l'exécution, il se jette sur Crocell.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-crocell",
+      "nom": "L'homme à la baignoire gelée (Crocell)",
+      "source": "Crocell",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vingtaine, cheveux blond presque blanc, simple maillot de bain bleu ; ressemble aux statues de glace. Se moque du numéro précédent, se fige dans un bloc de glace dans sa baignoire, puis tire de ses mains de petites sculptures de glace ; reste dans un coin de la piste jusqu'à ce que la glace fonde.\nDispute la jeune clocharde à Belial (ils se toisent en silence quand ils se croisent).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-andrealphus",
+      "nom": "L'assistante du lanceur de couteaux (Andrealphus)",
+      "source": "Andrealphus",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande, longs cheveux noirs, peau très blanche, body de dentelle rouge et noire ; attachée tête en bas sur la roue, entaillée à chaque lancer, elle semble y prendre plaisir.\nVit dans la même roulotte que Baal (armes, bodys). Indice à remarquer : elle n'a pas l'air enceinte. En début de soirée, Malthus lui apprend à l'infirmerie qu'elle est enceinte, et elle sait que l'enfant n'est pas de son « mari » ; elle renonce à l'annoncer à Baal, trop mal luné. Recueille la clocharde en pleurs.\nÀ l'exécution, elle s'écroule en hurlant, les mains sur le ventre ; si l'intrigue est remise en place, Baal la tue d'un coup d'épée dans le ventre. Sa voix appelle ensuite les PJ à l'aide (« Montgrumeau »).\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-baal",
+      "nom": "Le lanceur de couteaux (Baal)",
+      "source": "Baal",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand, massif, visage inexpressif, smoking à queue-de-pie et cravate Mickey. Numéro de lancer de couteaux sur Andrealphus (de dos au miroir, yeux bandés, deux à la fois), puis lèche ses plaies en retirant les lames.\nS'il apprend (preuve à l'appui : le test de grossesse de l'infirmerie) qu'Andrealphus est enceinte, il rentre et casse tout dans sa roulotte, assure son numéro, puis, au final, ramasse l'épée et l'éventre malgré ses supplications.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-malphas",
+      "nom": "Le devin bon père de famille (Malphas)",
+      "source": "Malphas",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quadragénaire en costume trois pièces, début de calvitie, léger embonpoint, sourire de père de famille provincial. Numéro de divination qui vire à l'étalage public des secrets sordides du quartier (Claudine, Djamel…) sous les rires du public.\nObserve, amusé, la scène entre Crocell et la clocharde : le pousser à suivre sa nature en révélant tout à Belial suffit à lancer la machine.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-malthus",
+      "nom": "L'infirmier en blouse blanche (Malthus)",
+      "source": "Malthus",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Évacue les blessés sur une civière avec Elvis ; ceux-ci testent des traitements très expérimentaux à l'infirmerie. Apprend à Andrealphus sa grossesse en début de soirée : le test de grossesse est à l'infirmerie (preuve à aller chercher pour Baal).\nConspire avec Bifrons.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-ouikka",
+      "nom": "Le clown jongleur barbu (Ouikka)",
+      "source": "Ouikka",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Cocktail Joliot-Curie (attaque multiple, lancé)",
+          "att": 7,
+          "prec": 0,
+          "puis": 2,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Clown à passe-montagne d'où dépasse une grande barbe noire : jongle avec les « cocktails Joliot-Curie » (Molotov sans mèche) du savant fou en chantonnant à la gloire de Ben Laden, puis les jette sur la foule, et un sur les PJ (Tir 3+, puissance +2, attaque multiple).\nSeule l'attaque du cocktail est chiffrée par le livre ; le reste de la fiche est par défaut : ne pas chercher à le vaincre (prince).\nConspire avec Bifrons.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-baalberith",
+      "nom": "L'ouvreur aigri (Baalberith)",
+      "source": "Baalberith, placeur à chapeau melon",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit bonhomme aux cheveux rares, grosses lunettes, chapeau melon, qui guide les spectateurs en marmonnant qu'il était là le premier. À l'exécution, il fait un croche-pied au chef de la sécurité puis lui jette un dinosaure en peluche (allusion à « C'est mon ami et bien plus encore »).\nIdentité déduite de l'ordre d'apparition et du final.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-andromalius",
+      "nom": "Le chef de la sécurité (Andromalius)",
+      "source": "Andromalius",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand, mince, crâne rasé, costume noir, oreillette, lunettes noires, badge de responsable de la sécurité ; surveille l'entrée et le spectacle. À l'exécution, se précipite pour séparer Belial et Crocell mais s'étale, victime du croche-pied de Baalberith.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    },
+    {
+      "id": "type-fi15-employes",
+      "nom": "Autres employés du cirque",
+      "source": "Les autres princes-démons caricaturés",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ordre d'apparition donné par le livre : Nog, Kronos, Mammon, Baalberith, Uphir, Andromalius, Morax, Nybbas, Furfur, Scox, Abalam, Andrealphus, Baal, Belial, Crocell, Caym, Bifrons, Gaziel, Vapula, Haagenti, Kobal, Ouikka, Malphas, Samigina, Shaytan, Valefor, Vephar, Beleth et Asmodée.\nRôles explicites : Uphir (balayeur au pic à glace et aux détergents), Vephar (homme-poisson de l'aquarium), Samigina et Shaytan (hypnotiseur vampirique à l'accent roumain et son « freak » couturé de plaies).\nRôles déduits (à confirmer par le MJ) : Nog (dormeur couvert de poussière) et Kronos (vieux diseur de bonne aventure à Swatch jaune : « vous allez avoir une vie intéressante »), Mammon (caissier qui accepte les paiements en nature), Morax (peintre façon Bosch à l'oreille unique), Furfur (DJ à piercings), Scox (maigrichon à tête de psychanalyste qui astique le trône et apporte l'épée), Abalam (fou à la camisole), Caym (dompteur sadique), Gaziel (homme aux bottes d'égoutier et à la pluie de cendres), Vapula (savant fou clown blanc), Haagenti et Kobal (les deux clowns farceurs), Valefor (prestidigitateur au smoking bicolore et à la vierge de fer), Asmodée (homme à la roue de loterie).\nLe jeune garçon tiré au sort (place 66) s'appelle Gabriel.\nCaricature d'un prince-démon : mêmes caractéristiques et pouvoirs que le prince réel (non chiffrés dans le livre), aucune chance pour les PJ en combat.\nFiche minimale.\nSource : Fire and Ice 2, « De l'œuvre d'art à l'époque de sa reproductibilité technique », p. 110-123."
+    }
+  ],
+  "memoire": []
+}

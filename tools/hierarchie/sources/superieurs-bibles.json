@@ -1,0 +1,219 @@
+{
+  "Catherine": {
+    "rec": "Doublée dans une maternité",
+    "promo": "+1 PA par 20 femmes libérées ou enfants mis au monde",
+    "pw": "Conscience",
+    "grades": ["Serviteur du blé en herbe", "Ami des sages-femmes", "Maître du renouvellement"],
+    "invocation": "Très difficile (elle est sur terre)",
+    "communication": 1,
+    "intervention": "N'aime pas être invoquée sans urgence extrême ; en combat, cherche à sauver son serviteur plutôt qu'à gagner.",
+    "blames": [
+      "1 : chaînes : un maillon s'ajoute chaque jour à un fer à la cheville ; libérer un opprimé en retire un.",
+      "2 : chaînes : un maillon s'ajoute chaque jour à un fer à la cheville ; libérer un opprimé en retire un.",
+      "3 : grossesse : ventre de femme enceinte de huit mois, permanent jusqu'à la fin du blâme (anges mâles compris).",
+      "4 : grossesse : ventre de femme enceinte de huit mois, permanent jusqu'à la fin du blâme (anges mâles compris).",
+      "5 : accoucheur : plus de récupération normale des PP ; regagne 3d6 PP en assistant à un accouchement.",
+      "6 : accoucheur : plus de récupération normale des PP ; regagne 3d6 PP en assistant à un accouchement."
+    ],
+    "nomLivre": "Catherine, archange des femmes",
+    "page": "74 (Bible Anges)"
+  },
+  "Georges": {
+    "rec": "Doublée en montant la garde",
+    "promo": "+1 PA par ennemi de Dieu abattu",
+    "pw": "Colère divine",
+    "grades": ["Serviteur des exterminateurs intégristes", "Ami des purificateurs célestes", "Maître des tueurs consacrés"],
+    "invocation": "Très difficile",
+    "communication": 2,
+    "intervention": "Arrive ravi de se battre enfin, une hache dans une main et une épée dans l'autre.",
+    "blames": [
+      "1 : pourfendeur d'impie (comme pour Dominique).",
+      "2 : pourfendeur d'impie (comme pour Dominique).",
+      "3 : gardien impassible : perd 2d6 PP chaque fois qu'il parle à quelqu'un.",
+      "4 : gardien impassible : perd 2d6 PP chaque fois qu'il parle à quelqu'un.",
+      "5 : besoin de sang : une arme dégainée ne peut être rengainée avant d'avoir fait couler le sang.",
+      "6 : besoin de sang : une arme dégainée ne peut être rengainée avant d'avoir fait couler le sang."
+    ],
+    "page": "74-75 (Bible Anges)"
+  },
+  "Jésus": {
+    "rec": null,
+    "promo": null,
+    "pw": "Miracle (pouvoir très spécifique, propre à Jésus)",
+    "grades": null,
+    "invocation": null,
+    "communication": null,
+    "intervention": null,
+    "blames": null,
+    "nomLivre": "Jésus, archange des hommes (absent de js/data/superieurs.js)",
+    "page": "75 (Bible Anges)"
+  },
+  "Victor": {
+    "rec": "Doublée à proximité d'un feu à l'air libre",
+    "promo": "+1 PA par dix athées amenés à la religion chrétienne, juive ou musulmane",
+    "pw": "Salamandre, Embrasement",
+    "grades": ["Serviteur des étincelles divines", "Ami du feu sacré", "Maître de la lumière"],
+    "invocation": "Incroyable",
+    "communication": 3,
+    "intervention": "Cache sa vraie nature à ses serviteurs : jamais de métamorphose en dragon, il crache le feu ou attaque à l'épée.",
+    "blames": [
+      "1 : ardeur : pupilles en flammes qui grandissent avec l'excitation ou la passion.",
+      "2 : ardeur : pupilles en flammes qui grandissent avec l'excitation ou la passion.",
+      "3 : ferveur : ne récupère ses PP qu'en priant dans une église ou agenouillé devant une bible ou un crucifix.",
+      "4 : ferveur : ne récupère ses PP qu'en priant dans une église ou agenouillé devant une bible ou un crucifix.",
+      "5 : rédemption : plus aucun PA gagné, et perte d'1 PA par jour sans athée converti la veille.",
+      "6 : rédemption : plus aucun PA gagné, et perte d'1 PA par jour sans athée converti la veille."
+    ],
+    "page": "75-76 (Bible Anges)"
+  },
+  "Eli": {
+    "rec": "Doublée dans un milieu naturel non altéré par l'homme",
+    "promo": "+1 PA par site naturel sauvé des mains de l'homme",
+    "pw": "Communication divine",
+    "grades": ["Serviteur des animaux", "Ami des plantes", "Maître des minéraux"],
+    "invocation": "Légendaire",
+    "communication": 1,
+    "intervention": "Piètre combattant ; si l'enjeu le justifie, crée des animaux pour aider ses serviteurs.",
+    "blames": [
+      "1 : bouseux (comme pour Jordi).",
+      "2 : bouseux (comme pour Jordi).",
+      "3 : Midas vert : tout ce qu'il touche revient à l'état naturel (métal en minerai, synthétique en pétrole…).",
+      "4 : Midas vert : tout ce qu'il touche revient à l'état naturel (métal en minerai, synthétique en pétrole…).",
+      "5 : exo-invisibilité : ne perçoit presque plus les humains (cf. blâme mondain de Janus).",
+      "6 : exo-invisibilité : ne perçoit presque plus les humains (cf. blâme mondain de Janus)."
+    ],
+    "page": "76 (Bible Anges)"
+  },
+  "Hassan": {
+    "rec": "Doublée en présence d'œuvres d'art de grande valeur, ou dans un centre d'érudition ou de paix",
+    "promo": "+1 PA par vingt infidèles convertis à l'Islam ; +1 PA par chef-d'œuvre, étude philosophique ou traité ésotérique inspiré par l'ange",
+    "pw": "Tolérance",
+    "grades": ["Serviteur de la tolérance", "Ami de l'alliance", "Maître du lien éternel"],
+    "invocation": "Difficile",
+    "communication": 2,
+    "intervention": "En plein combat, tente d'y mettre fin ou de faire fuir ses serviteurs plutôt que d'affronter les démons.",
+    "blames": [
+      "1 : pacifisme (comme pour Francis).",
+      "2 : pacifisme (comme pour Francis).",
+      "3 : colombes : environ une fois par heure, une colombe sort de sa poche et lui roucoule à l'oreille.",
+      "4 : colombes : environ une fois par heure, une colombe sort de sa poche et lui roucoule à l'oreille.",
+      "5 : entraide : tout ce qu'il entreprend seul échoue ; il lui faut l'aide d'au moins une autre personne.",
+      "6 : entraide : tout ce qu'il entreprend seul échoue ; il lui faut l'aide d'au moins une autre personne."
+    ],
+    "page": "76-77 (Bible Anges)"
+  },
+  "Khalid": {
+    "rec": "Doublée dans une mosquée",
+    "promo": "+1 PA par vingt infidèles tués dans un combat juste ; +1 PA par démon tué en combat singulier",
+    "pw": "Colère de Dieu",
+    "grades": ["Serviteur des gardiens de la foi", "Ami des musulmans", "Maître de la colère divine"],
+    "invocation": "Incroyable",
+    "communication": 2,
+    "intervention": "Adore combattre les démons et se jette vite au milieu d'eux.",
+    "blames": [
+      "1 : pourfendeur d'impies (comme pour Dominique).",
+      "2 : pourfendeur d'impies (comme pour Dominique).",
+      "3 : gardien : ne récupère plus ses PP que dans une mosquée.",
+      "4 : gardien : ne récupère plus ses PP que dans une mosquée.",
+      "5 : tout est bon dans le Coran : avant toute décision, consulte son Coran de poche 1d6 minutes (6 : d66, 66 : d666…).",
+      "6 : tout est bon dans le Coran : avant toute décision, consulte son Coran de poche 1d6 minutes (6 : d66, 66 : d666…)."
+    ],
+    "nomLivre": "Khalid, archange (musulman) de la foi",
+    "page": "77 (Bible Anges)"
+  },
+  "Hornet": {
+    "rec": "Doublée dans un cimetière ou une morgue",
+    "promo": "+1 PA par dix humains tués et transformés en morts-vivants",
+    "pw": "Résurrection macabre",
+    "grades": ["Chevalier du cimetière", "Capitaine des légions infernales", "Baron du royaume des morts"],
+    "invocation": "Incroyable",
+    "communication": 3,
+    "intervention": "Évite de combattre lui-même et envoie morts-vivants et familiers ; poussé à bout, il se déchaîne.",
+    "blames": [
+      "1 : état cadavérique (comme pour feu Bifrons).",
+      "2 : état cadavérique (comme pour feu Bifrons).",
+      "3 : serviteur de la Rose Noire : sur un 222, invoqué par un nécromancien, il disparaît 1d66 minutes.",
+      "4 : serviteur de la Rose Noire : sur un 222, invoqué par un nécromancien, il disparaît 1d66 minutes.",
+      "5 : syndicalisme morbide (comme pour feu Bifrons).",
+      "6 : syndicalisme morbide (comme pour feu Bifrons)."
+    ],
+    "nomLivre": "« Bifrons » (Hornet), prince-démon des morts",
+    "page": "76 (Bible Démons)"
+  },
+  "Marie-Jolie": {
+    "rec": "Doublée si au moins trois personnes regardent le démon avec des intentions charnelles",
+    "promo": "+1 PA par dix humains dont la vie est brisée à cause du sexe (dépression, divorce, prison…)",
+    "pw": "Fantasme, Orgasme mortel",
+    "grades": ["Chevalier de la faciale", "Capitaine des meutes sodomites", "Baron des explosions séminales"],
+    "invocation": "Incroyable",
+    "communication": 2,
+    "intervention": "N'aime pas être invoquée sans raison ; en combat, manie sa hache avec zèle.",
+    "blames": [
+      "1 : romantisme : chaque matin, tombe amoureux de la première personne inconnue charnellement, jusqu'à conclure.",
+      "2 : romantisme : chaque matin, tombe amoureux de la première personne inconnue charnellement, jusqu'à conclure.",
+      "3 : besoin de viol : pulsion quotidienne ; test de Volonté Difficile (-1 colonne par jour de privation) pour se retenir.",
+      "4 : besoin de viol : pulsion quotidienne ; test de Volonté Difficile (-1 colonne par jour de privation) pour se retenir.",
+      "5 : impuissance (comme pour feu Andrealphus).",
+      "6 : impuissance (comme pour feu Andrealphus)."
+    ],
+    "nomLivre": "Marie-Jolie, prince-démon du sexe",
+    "page": "76-77 (Bible Démons)"
+  },
+  "Zanag": {
+    "rec": "Doublée tant que le personnage est infiltré dans un groupe d'anges",
+    "promo": "+1 PA par mission angélique qui capote grâce au personnage ; +1 PA par ange de Mathias sous couverture dénoncé à Andromalius",
+    "pw": "Apparence angélique",
+    "grades": ["Chevalier des vérités éludées", "Capitaine des coups de pute dans le dos", "Baron du retournement de veste taille XXL"],
+    "invocation": "Incroyable",
+    "communication": 3,
+    "intervention": "Accepte volontiers d'être invoqué pour discuter ; en combat, prend l'apparence la plus innocente puis use de pouvoirs mentaux ou tire à bout portant.",
+    "blames": [
+      "1 : magnétisme : ne récupère ses PP qu'en présence d'au moins un ange.",
+      "2 : magnétisme : ne récupère ses PP qu'en présence d'au moins un ange.",
+      "3 : girouette : chaque matin 1d6 ; 1 = habitudes d'ange, 2-5 = démon normal, 6 = démon intégriste.",
+      "4 : girouette : chaque matin 1d6 ; 1 = habitudes d'ange, 2-5 = démon normal, 6 = démon intégriste.",
+      "5 : menteur invétéré (comme pour Abalam).",
+      "6 : menteur invétéré (comme pour Abalam)."
+    ],
+    "nomLivre": "Zanag, prince-démon de l'hypocrisie",
+    "page": "77 (Bible Démons)"
+  },
+  "Daiàl": {
+    "rec": "Doublée en présence de personnes qui se disputent",
+    "promo": "+1 PA par dix vrais croyants détournés de l'Islam",
+    "pw": "Révolte",
+    "grades": ["Chevalier des mauvais sentiments", "Capitaine de l'anarchie", "Baron de la révolte"],
+    "invocation": "Incroyable",
+    "communication": 1,
+    "intervention": "Sème d'abord le trouble dans les rangs ennemis, puis seulement prend part au combat.",
+    "blames": [
+      "1 : minoritaire : perd 2d6 PP quand il prend part à une action décidée collectivement par un groupe.",
+      "2 : minoritaire : perd 2d6 PP quand il prend part à une action décidée collectivement par un groupe.",
+      "3 : (nom illisible) : ne peut plus s'exprimer qu'en chuchotant (attribution 3-4 probable, ligne à moitié masquée).",
+      "4 : (nom illisible) : ne peut plus s'exprimer qu'en chuchotant (attribution 3-4 probable, ligne à moitié masquée).",
+      "5 : illisible (texte masqué par un défaut d'impression).",
+      "6 : illisible (texte masqué par un défaut d'impression)."
+    ],
+    "nomLivre": "Dajjâl, prince-démon (musulman) de la contestation ; domaine : Rébellion",
+    "page": "77-78 (Bible Démons)"
+  },
+  "Majùj": {
+    "rec": "Doublée dans un lieu de perdition (bar, bordel, boutique de JdR, etc.)",
+    "promo": "+1 PA par dix islamistes intégristes tués",
+    "pw": "Barbarie",
+    "grades": ["Chevalier de la vulgarité", "Capitaine des pulsions inavouables", null],
+    "invocation": "Difficile",
+    "communication": 2,
+    "intervention": "À l'aise en duel ; n'aime pas être invoqué face à des adversaires supérieurs en nombre.",
+    "blames": [
+      "1 : (nom illisible) : parle un langage mêlant vulgarité, argot et images ; Baratin et Discussion divisés par deux.",
+      "2 : (nom illisible) : parle un langage mêlant vulgarité, argot et images ; Baratin et Discussion divisés par deux.",
+      "3 : happy slapping : ne récupère ses PP qu'en se filmant à gifler un inconnu, 1 PP par rieur devant la vidéo.",
+      "4 : happy slapping : ne récupère ses PP qu'en se filmant à gifler un inconnu, 1 PP par rieur devant la vidéo.",
+      "5 : cravate : ses vêtements se changent toujours en costume-cravate de marque de luxe.",
+      "6 : cravate : ses vêtements se changent toujours en costume-cravate de marque de luxe."
+    ],
+    "nomLivre": "Majûj, prince-démon (musulman) de la bestialité",
+    "page": "78 (Bible Démons)"
+  }
+}

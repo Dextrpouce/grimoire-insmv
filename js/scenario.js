@@ -2,6 +2,7 @@
 // Tout est gardé sur l'appareil du MJ (export/import en fichier JSON).
 import * as R from './rules.js';
 import { BESTIAIRE } from './data/bestiaire.js';
+import { QUICK_ANGES, QUICK_DEMONS, QUICK_SERVITEURS, QUICK_PP, T_GRADE, T_CAR, T_TAL, T_POW, ECRAN } from './data/pnjrapides.js';
 
 const KEY = 'insmv.scenarios';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
@@ -86,7 +87,51 @@ function fromBook(b) {
     notes: [b.notes, b.car ? '' : 'Caractéristiques non données par le livre : estimées (Force d\'après les seuils, Volonté d\'après les PF).', `Source : ${b.ref}.`].filter(Boolean).join('\n'),
   });
 }
-export const BOOK = BESTIAIRE.map(fromBook);
+export const BOOK = [...BESTIAIRE, ...QUICK_SERVITEURS].map(fromBook);
+
+// ---- PNJ rapides de l'écran du maître : un profil par supérieur, de 10 à 40 PP ----
+export const QUICK = { ange: QUICK_ANGES, demon: QUICK_DEMONS };
+const WEAPON_TOKEN = /^(.*?)\s*\[([+-]?\d+)\/([+-]?\d+)\/(cac|tir)\]$/;
+export function quickNpc(camp, sup, pp) {
+  const p = QUICK[camp].find((x) => x[0] === sup); if (!p) return null;
+  const [, carS, [A, D, Ph, Me, So], extra, init, steps] = p;
+  const i = Math.max(0, QUICK_PP.indexOf(+pp));
+  const tal = (b) => T_TAL[Math.min(7, Math.max(1, b))][i];
+  const v = carS.split(/\s+/).map((x) => R.parseLvl(T_CAR[x]?.[i] ?? x));
+  const car = { fo: v[0], ag: v[1], pe: v[2], vo: v[3], pr: v[4], foi: Math.max(v[5], T_GRADE[i][1] * 2) };
+  const att = R.parseLvl(tal(A));
+  const armes = [{ n: 'Arme de prédilection', att, prec: 0, puis: 0, melee: true }];
+  const pouvoirs = []; const notes = [];
+  const add = (list, col) => splitTop(list).forEach((x) => {
+    if (x.startsWith('!')) return notes.push(x.slice(1));
+    const w = x.match(WEAPON_TOKEN);
+    if (w) {
+      const nom = w[1].replace(/^Membre exotique : /, '');
+      const arm = { n: nom.charAt(0).toUpperCase() + nom.slice(1), att, prec: +w[2], puis: +w[3], melee: w[4] === 'cac' };
+      // une arme bénie ou maudite plus puissante remplace la précédente de la même famille
+      const fam = (s) => s.replace(/ (mineure?|majeure?|ancienne?)$/, '');
+      const j = armes.findIndex((a) => fam(a.n) === fam(arm.n));
+      if (j >= 0) armes[j] = arm; else armes.push(arm);
+      if (!w[1].startsWith('Membre exotique')) return;
+      x = w[1];
+    }
+    const m = x.match(/^(.*?)\s+(\d)$/);
+    // niveau 2 initial → colonne 0, niveau 1 initial → colonne 1, gagné à 15/20/25/30 PP → colonnes 2 à 5 ; pouvoir sans niveau : 0
+    const r = m ? T_POW[i][col ?? (m[2] === '2' ? 0 : 1)] : 0;
+    pouvoirs.push({ n: m ? m[1] : x, r: r * 2 });
+  });
+  add(init);
+  steps.forEach((s, k) => { if (+pp >= 15 + 5 * k) add(s, 2 + k); });
+  const extraT = splitTop(extra).map((x) => { const m = x.match(/^(.*?)\s+(\d)$/); return m ? `${m[1]} ${tal(+m[2])}` : x; });
+  const label = camp === 'ange' ? 'Ange' : 'Démon';
+  return newNpc({
+    nom: `${label} de ${sup} (${pp} PP)`, source: `${label} de ${sup}, grade ${T_GRADE[i][0]}`, type: camp, car,
+    def: R.parseLvl(tal(D)), pp: +pp, armes, pouvoirs,
+    talents: [`Attaque ${tal(A)}, Défense ${tal(D)}, Physique ${tal(Ph)}, Mental ${tal(Me)}, Social ${tal(So)}`, ...extraT].join(', '),
+    notes: [...notes, 'PNJ rapide : talents regroupés (Attaque = arme de prédilection, précision et puissance à régler ; Physique, Mental, Social = tous les talents de ce groupe).',
+      `Source : ${ECRAN}, p. ${camp === 'ange' ? '10-11' : '12-14'} (tables d'évolution p. 10).`].join('\n'),
+  });
+}
 
 export const gravite =(dmg, st) => (dmg >= st.ms ? 'MS' : dmg >= st.bf ? 'BF' : dmg >= st.bg ? 'BG' : dmg >= st.bl ? 'BL' : null);
 
@@ -173,19 +218,24 @@ export const scen = {
   // Ajoute les types d'ennemis absents ; retourne le nombre ajouté
   _addTypes(list) { let n = 0; for (const t of list || []) if (t?.id && Array.isArray(t.armes) && !data.types[t.id]) { data.types[t.id] = t; n++; } return n; },
   // Fichier de scénario : les scénarios, plus les types du bestiaire qu'ils utilisent
-  importScenarios(json) {
+  // opts.types === false : les types d'ennemis restent dans le scénario (bibliothèque des livres) ; opts.livre : fichier d'origine
+  importScenarios(json, opts = {}) {
     const x = JSON.parse(json);
     const list = x.format === 'insmv-scenario' && Array.isArray(x.scenarios) ? x.scenarios.filter((s) => s && Array.isArray(s.scenes)) : [];
     if (!list.length) throw new Error(x.format === 'insmv-bestiaire' ? 'c\'est un bestiaire : importe-le depuis la carte Bestiaire' : 'ce n\'est pas un scénario du Grimoire');
     const ids = {}; // ancien id → nouvel id (si le scénario existe déjà ici)
-    for (const s of list) { const old = s.id; s.id = data.list[s.id] ? uid() : s.id || uid(); ids[old] = s.id; s.updatedAt = Date.now(); data.list[s.id] = s; }
-    const types = this._addTypes(x.bestiaire);
+    for (const s of list) {
+      const old = s.id; s.id = data.list[s.id] ? uid() : s.id || uid(); ids[old] = s.id; s.updatedAt = Date.now();
+      if (opts.livre) s.livre = opts.livre;
+      data.list[s.id] = s;
+    }
+    const types = opts.types === false ? 0 : this._addTypes(x.bestiaire);
     let memo = 0;
     for (const e of Array.isArray(x.memoire) ? x.memoire : []) {
       if (!e?.id || data.journal.some((y) => y.id === e.id)) continue;
       data.journal.push(newEntry({ ...e, scen: ids[e.scen] ?? e.scen, rappel: ids[e.rappel] ?? e.rappel, pjs: Array.isArray(e.pjs) ? e.pjs : [] })); memo++;
     }
-    persist(); return { scenarios: list.length, types, memo };
+    persist(); return { scenarios: list.length, types, memo, ids: list.map((s) => s.id) };
   },
   // Fichier de bestiaire (ou bestiaire joint à un scénario exporté) : seulement les types d'ennemis
   importTypes(json) {

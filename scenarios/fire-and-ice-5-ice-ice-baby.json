@@ -1,0 +1,1578 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-5-ice-ice-baby",
+      "nom": "Fire and Ice (scénario 5) – Ice, ice baby",
+      "resume": "De bello civili, scénario 1 (INS). Les démons du Centre de Tri enquêtent sur le braquage d'un fourgon blindé dont les portes ont été gelées : l'auteur, Raymond Bougoin, est un Flocon de sang en fuite, humain doté par un démon de Crocell. Après une enquête à la banque et une bagarre contre une équipe d'anges, les PJ doivent se faire incarcérer à Fleury-Mérogis pour faire parler Ray, apprendre le nom de son maître (Isaac Iceberg) et l'éliminer. Première découverte des Flocons de sang et de la guerre Belial–Crocell.",
+      "notes": "Source : Fire and Ice, « Ice, ice baby », p. 90-102. Scénario « à l'ancienne », ambiance INS classique : enquête, puis séjour en prison où l'atmosphère compte plus que l'intrigue. Adversaires surtout humains ; beaucoup d'improvisation à prévoir.\nDéroulement : briefing (coupure de presse) → police / banque → nom du braqueur → arrestation de Ray et combat contre l'autre équipe → garde à vue → Fleury-Mérogis (tables d'événements, chronologie J à J+6) → faire parler Ray, l'éliminer → appartement vide d'Iceberg.\n\nRécompense : 4 PA donnés par Monsieur Fabien à la fin (conseil : oublier l'affaire).\n\nIntroduction de l'acte « De bello civili » (livre p. 85-89), ce que le MJ doit savoir :\n• L'acte met en scène l'éclatement d'une guerre ouverte entre Belial (prince du Feu) et Crocell (prince du Froid). En temps de guerre, discrétion et interdiction des combats entre princes ne tiennent plus ; les PJ vont y être mêlés malgré eux.\n• Origine : deux anges frères, amis querelleurs, qui suivent Samaël sur Terre. Belial tombe amoureux d'une humaine, la confie à Crocell, qui s'éprend d'elle à son tour ; elle repousse Belial et reste l'amie de Crocell. Belial frappe son frère : la haine est née.\n• Après la Chute, Beleth efface leurs souvenirs (seuls Satan et ses lieutenants gardent les leurs ; les démons les retrouvent au grade 3). Belial garde une haine instinctive de Crocell, qui conserve un esprit railleur et un fond d'idéalisme (le Mal comme liberté contre la crainte de Dieu).\n• Belial fait carrière sous Baal, est placardisé, atteint le grade 3 « au lance-flammes », retrouve la mémoire et devient obsédé par la perte de son frère. En 1666, après l'incendie de Londres, il est nommé prince du Feu. Crocell, sous Bifrons, retrouve ses souvenirs au grade 3, puis devient prince du Froid deux siècles plus tard par provocation. Belial rêve désormais de prendre la place de Satan.\n• La Terre Creuse : organisation secrète raciste née après la guerre de Sécession (le KKK en est un avatar), infiltrée par anges et démons. Belial s'en sert pour semer le chaos, désormais pour faire remonter de fausses infos et envoyer des anges peu subtils au casse-pipe ; affaiblie depuis la croisade de Daniel (1997).\n• La Garde carmine : élite de Belial, démons de grade 3 qui traquent ses renégats ; lance-flammes chromé, van blindé « Prométhée chauffage » par groupe de cinq, écharpe rouge ignifugée, pouvoir Feu de Prométhée (brûle même les immunisés au feu). Sert aussi de service de renseignement.\n• Malphas a falsifié des dossiers pour que des démons de Belial infiltrent les rangs de Crocell, puis a prévenu Crocell pour attiser la guerre.\n• Les Flocons de sang : en réponse, Crocell dote des humains de pouvoirs pour grossir ses troupes ; nombreuses pertes à l'entraînement, environ trois mille humains aujourd'hui. Entorse grave au Grand Jeu, que Belial ne respecte pas davantage. Satan est en vacances : terrain libre pour la guerre.\n• Objectif de ce scénario : faire découvrir aux PJ les Flocons de sang en douceur, via un braqueur supposé démon indiscret.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV. Prisonniers, gardiens et employés n'ont pas de stats dans le livre (fiches génériques estimées). Armes des anges et de Raymond partiellement estimées (voir notes des fiches).",
+      "scenes": [
+        {
+          "id": "fi5-sc-briefing",
+          "nom": "1. Briefing : le braquage du fourgon",
+          "lieu": "Centre de Tri, Paris – bureau de Monsieur Fabien",
+          "notes": "Monsieur Fabien tend aux PJ une coupure de France Soir (l'article en ouverture du scénario, livre p. 90, est fait pour être photocopié et remis aux joueurs).\nLes faits : un fourgon de transport de fonds a été attaqué sur la N1 près de Sarcelles par un braqueur seul. Pneus arrière et portes arrière gelés puis éclatés (la police parle d'azote), un convoyeur tué, l'autre commotionné, environ 800 000 € emportés.\nMonsieur Fabien flaire le soufre : renégat ou démon indiscret, une violation du principe de discrétion. La hiérarchie a répondu d'envoyer son équipe.\n\nPistes possibles : les lieux (N1, Sarcelles : nettoyés, plus aucun indice matériel), la police, la banque d'où partait le fourgon.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi5-fabien-1",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Contact et commanditaire des PJ. Envoie l'équipe sur l'affaire, les rappelle quand Ray est arrêté, choisit leur juge d'instruction et leur avocat, leur rend visite au parloir (avec Gilbert et Aurélie) et donne l'ordre final d'éliminer Raymond.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi5-fabien"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi5-sc-police",
+          "nom": "2. That's da sound of da police",
+          "lieu": "Commissariat de Sarcelles",
+          "notes": "Pas question de faire un casse au commissariat (monde fou, police noyautée par le Bien). Le plus simple : se faire passer pour journalistes, la police locale ne vérifie guère les cartes de presse. Le dossier a été transféré au GIR parisien, ce qui ulcère les flics locaux, ravis de s'en plaindre à la presse.\nL'inspecteur Replet a été dessaisi avant d'aller loin. Ce qu'il sait :\n• les deux pneus arrière ont gelé et éclaté, puis un second refroidissement a ouvert le fourgon ;\n• le convoyeur tué a tiré le premier (une demi-douzaine de balles dans les platanes) ; le braqueur a répondu par trois tirs de fusil à pompe gros calibre, tous au but ;\n• à son avis, quelqu'un de la banque a renseigné le braqueur sur l'itinéraire.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi5-replet-2",
+              "nom": "Inspecteur Replet",
+              "source": "Police locale de Sarcelles",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand costaud d'une quarantaine d'années, nuque longue, barbe de trois jours, mâche des pastilles à la nicotine et fume quand même. Voix grave, toux, bourru mais amical. Flic communiste, peu malin, un peu raciste, furieux qu'on ait refilé l'affaire au GIR parisien.\nInfos : les pneus arrière ont gelé et éclaté, un second refroidissement a ouvert les portes ; le convoyeur a tiré une demi-douzaine de balles dans les platanes ; le braqueur a riposté de trois tirs de fusil à pompe gros calibre. Il pense que quelqu'un de la banque a donné l'itinéraire.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-replet"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi5-sc-banque",
+          "nom": "3. Banque – route",
+          "lieu": "Agence bancaire (bâtiment de briques rouges)",
+          "notes": "Les 800 000 € étaient le dépôt liquide d'un élu local (caisse noire) : la banque est réticente, ambiance tendue, tout le monde soupçonne tout le monde. Employés déjà interrogés par la police, consigne de ne pas parler aux journalistes. Chacun peut parler si l'on appuie sur le bon bouton :\n• Antoine Escaut, directeur : craque face à un faux enquêteur de Bercy (dépôt couvert par la maison mère et un député) ; sans incidence sur l'enquête.\n• Julie Teiller, sa secrétaire : amoureuse de lui, l'aidera s'il est en danger ; ne sait rien.\n• Mathieu Averse, chargé de clientèle : jeune loup dragueur, n'a peur de rien, ne sait rien ; prétend à tort que le patron couche avec sa secrétaire.\n• Ludivine Cippe, sa secrétaire : bavarde sous Prozac ; livre facilement les ragots (argent sale, Gérard « communiste », Samantha et Innocent ensemble, Michel tape dans la caisse).\n• David Szymkoviak, second chargé de clientèle : proche de la retraite, sympa et blasé, s'interroge sur ce transfert dont il n'a pas entendu parler.\n• Laure Deblas, sa secrétaire : froide, ne sait rien et ne dirait rien.\n• Gérard Lepuis, conseiller client : LE COUPABLE. Ancien camarade maoïste de « Ray », il lui a donné l'itinéraire. Menace physique ou forte pression : il livre Raymond Bougoin et sa planque dans le 12e.\n• Michel Douze, conseiller client : petit, désagréable, détourne l'argent des petits vieux ; ne sait rien mais parle sous la menace.\n• Gilles Fucus, conseiller client : commercial onctueux et antigauchiste, soupçonne Gérard ; parle si on le flatte ou qu'on peste contre l'« État-providence ».\n• Mireille Guisarme, secrétaire : enceinte jusqu'aux yeux, ne sait rien, s'en fiche.\n• Samantha Cissoko, stagiaire compta : en couple avec Innocent ; pas au courant.\n• Innocent Coulibali, vigile : dur à faire parler ; a vu Gérard, flippé, avec un inconnu (Ray) dans un café la veille du braquage.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi5-escaut-3",
+              "nom": "Antoine Escaut",
+              "source": "Directeur de la banque",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Soixantaine élégante, grisonnant, méprisant. Terrifié par une poursuite pour recel d'abus de biens sociaux : les 800 000 € étaient le dépôt en liquide d'un élu local (caisse noire de parti). Muet devant des journalistes, il déballe tout face à un faux enquêteur du pôle financier de Bercy (dépôt couvert par la maison mère, à la demande d'un député). Sans incidence sur l'enquête, mais source de « contacts » politiques.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-escaut"
+            },
+            {
+              "id": "fi5-ludivine-4",
+              "nom": "Ludivine Cippe",
+              "source": "Secrétaire, bavarde de la banque",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pas très jolie, mal dans sa peau, gentille, sous Prozac, à l'écoute de tous les ragots. Facile à faire parler : la banque magouille avec de l'argent sale, Gérard est « communiste », Samantha et Innocent couchent ensemble, Michel tape dans la caisse.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-ludivine"
+            },
+            {
+              "id": "fi5-gerard-5",
+              "nom": "Gérard Lepuis",
+              "source": "Conseiller client de la banque, complice",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Cinquantenaire séduisant, grosse moustache grise. Ancien de Mai 68 avec Ray (groupuscule maoïste), rangé, vote Verts, écœuré par les magouilles de son patron : il a donné l'itinéraire du fourgon. Rongé de culpabilité depuis la mort du convoyeur (insomnies, café, clopes).\nToute menace physique ou pression psychologique un peu poussée le fait craquer : il livre Raymond et l'adresse de sa planque (Paris 12e).\nSuite : il meurt dans un « accident de la circulation » avant la fin du scénario.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-gerard"
+            },
+            {
+              "id": "fi5-innocent-6",
+              "nom": "Innocent Coulibali",
+              "source": "Vigile de la banque",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Géant au crâne rasé, air peu sympathique, mi-vigile mi-caillera (deale du shit). En couple avec Samantha Cissoko, la stagiaire. Difficile à faire parler, mais il a vu Gérard discuter, visiblement flippé, avec un inconnu (Raymond) dans un café la veille du braquage.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster. Matraque estimée.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-innocent"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi5-ch-gerard",
+              "q": "Comment les PJ obtiennent-ils le nom du braqueur ?",
+              "opts": [
+                {
+                  "t": "Gérard craque sous la pression",
+                  "suite": "Il livre Raymond Bougoin et l'adresse de sa planque (12e). Interlude dirigiste."
+                },
+                {
+                  "t": "Par les ragots (Ludivine, Innocent, Fucus)",
+                  "suite": "Ils remontent jusqu'à Gérard ; il faut encore le faire parler."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi5-sc-interlude",
+          "nom": "4. Interlude dirigiste : l'autre équipe",
+          "lieu": "Sortie de la banque, puis terrain vague autour du Centre de Tri",
+          "notes": "Dès que les PJ connaissent la complicité de Gérard et le nom du braqueur, Monsieur Fabien appelle, mécontent : les flics ont arrêté Ray à un barrage filtrant, il est en détention préventive. Retour immédiat au Centre de Tri.\nMais en sortant (de la banque ou de chez un employé), les PJ sont repérés par « l'autre équipe » de la You-You Power Force (Alain, Pascal, Didier), qui enquête aussi ; une Détection du mal les a démasqués. Les anges les filent pour les coincer dans un coin tranquille, les interroger et les éliminer. Arrivés devant le terrain vague du Centre de Tri, ils croient tenir la planque du braqueur : baston !\nLes PJ doivent rester discrets pour ne pas alerter les postiers humains de La Poste. Idéalement, un postier humain assiste au combat et se met à agir bizarrement jusqu'à ce que Monsieur Fabien lui lave le cerveau.\nTactique des anges : Alain fonce au contact (interdit d'arme à distance), Pascal encaisse pour les autres (mais pourrait lâcher Didier), Didier se méfie de tous et joue perso.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi5-alain-7",
+              "nom": "Alain",
+              "source": "Ange de Daniel, grade 1",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 14,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Piolet maudit mineur (inadapté à la parade)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pétrification",
+                  "r": 2
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 5, Défense 5, Athlétisme 5. Avantage matériel : skinheads. Avertissement sans frais : interdiction d'utiliser une arme à distance.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nGrand, maigre, la quarantaine, air sympa mais vrai bourrin qui adore chasser le démon. Jean trop court, Doc Martens cirées à lacets blancs, pull col en V, chemise à carreaux, veste en jean.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-alain"
+            },
+            {
+              "id": "fi5-pascal-8",
+              "nom": "Pascal",
+              "source": "Ange de Jean-Luc, grade 1",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Fusil à pompe",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Sacrifice ultime",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2+ (armes d'épaule 4), Défense 4, Langue : créole. Avertissement sans frais : kleptomane.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nQuarantenaire antillais souriant, grisonnant, début d'embonpoint, gabardine beige et pantalon de velours marron : un air de prof d'histoire-géo. Encaisse les coups pour les autres et supporte de moins en moins Didier : il pourrait le laisser prendre les coups seul.\nArme d'épaule non précisée : fusil à pompe estimé.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-pascal"
+            },
+            {
+              "id": "fi5-didier-9",
+              "nom": "Didier",
+              "source": "Ange de Walther, grade 1",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Revolver",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Exorcisme",
+                  "r": 2
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                },
+                {
+                  "n": "Charme",
+                  "r": 2
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de poing 4), Défense 4, Discrétion 3, Culture générale 2 (théologie 4). Avertissement sans frais : paranoïaque.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nQuarantaine, cheveux gras, ventre rond, lueur inquiétante dans le regard ; tout de blanc vêtu (pantalon repassé, chemise amidonnée, veste de cuir blanc). Complètement jeté, ne fait confiance à personne : piètre esprit d'équipe.\nArme de poing non précisée : revolver petit calibre estimé.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-didier"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi5-ch-anges",
+              "q": "Issue de l'affrontement avec l'autre équipe ?",
+              "opts": [
+                {
+                  "t": "Anges éliminés discrètement",
+                  "suite": "Monsieur Fabien reçoit les PJ et leur expose le plan prison."
+                },
+                {
+                  "t": "Un postier humain a tout vu",
+                  "suite": "Il agit bizarrement jusqu'à ce que Monsieur Fabien lui lave le cerveau."
+                },
+                {
+                  "t": "Des anges en fuite",
+                  "suite": "La You-You sait désormais que le Centre de Tri abrite des démons : menace à reprendre plus tard."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi5-sc-gav",
+          "nom": "5. Ça me GAV : se faire arrêter",
+          "lieu": "Commissariat (garde à vue), puis cabinet du juge d'instruction",
+          "notes": "Raymond est à Fleury-Mérogis. En France, journalistes et policiers ne visitent pas les détenus (sauf député) : la seule solution est de se faire arrêter pour un délit assez grave pour finir quelques jours en préventive (outrage à agent, par exemple). Monsieur Fabien laisse les PJ choisir, du moment que la peine encourue ne les immobilise pas trop longtemps.\nGarde à vue : cellule de trois mètres carrés, clim à fond, banc étroit, sandwich et pomme matin et soir. Traitement selon la gravité du délit (menottes, toilettes rationnées, « t'as pas de feu ? »). Deux jours plus tard, juge d'instruction et avocat choisis par Monsieur Fabien ; l'avocat refuse la comparution immédiate, d'où la préventive. Transfert le lendemain à Fleury-Mérogis.\nPJ féminins : les prisons ne sont pas mixtes ; les faire embaucher aux services sociaux ou à l'infirmerie de la prison via Monsieur Fabien (accès discret aux dossiers, mais leur mettre des bâtons dans les roues).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi5-sc-prison",
+          "nom": "6. Surveiller et punir : la vie à Fleury-Mérogis",
+          "lieu": "Maison d'arrêt de Fleury-Mérogis",
+          "notes": "Arrivée : effets confisqués, cellules d'attente, greffe (empreintes, photos, numéro d'écrou), fouille (parfois intégrale), douche, cellule de 14 m² partagée à deux, trois ou quatre. Visite d'un adjoint du directeur, du médecin, du service socio-éducatif (Monsieur Fabien se fait passer pour la famille et envoie argent et vêtements).\nRègles : « trousse entrant » ; cantine hors de prix (télé, radio, Canal+, clopes) ; pas d'alcool ; courrier et presse censurés ; tapage = faute du deuxième degré (30 jours de mitard). Javel tous les quinze jours, trois douches par semaine (trop chaudes ou trop froides). Lever 7 h, repas 12 h et 18 h, au moins une heure de promenade (terrain de sport ; fouilles au hasard avant et après ; seuls cigarettes et briquets autorisés). C'est à la promenade que tout se joue et qu'on peut retrouver Raymond.\nLa nuit, seuls les gradés ont les clés (à deux minimum) ; œilleton, rondes à horaires variables, lumière allumée de l'extérieur. Cellules fouillées en l'absence des détenus.\nVisites : trois par semaine (Gilbert, Aurélie, Monsieur Fabien), mais il faut trois jours pour obtenir le permis. Palpation avant, fouille intégrale après.\nMitard : 3 m × 3 m, mobilier scellé, lumière contrôlée de l'extérieur. Jouer des matons sadiques : les PJ ne peuvent se rebeller sans griller leur couverture.\nPère Jambart (aumônier, ange de Guy) : s'il démasque les PJ, il observe puis alerte sa hiérarchie, qui remplace un gardien par un ange de Dominique chargé de les massacrer discrètement.\n\nTables d'événements aléatoires (1d66) :\nNuit (toutes les trois heures de jeu) : 11-36 rien · 41-46 fouille surprise des cellules · 51-56 un détenu en manque hurle, tabassé par les matons au bout d'1d6 minutes · 61-65 un détenu agresse son codétenu au rasoir (1d6 : sur 1, c'est dans la cellule d'un PJ) · 66 un détenu se pend, les matons n'interviennent pas (nouveau d66 : sous 56, il se rate).\nJournée (toutes les heures de jeu) : 11-21 rien · 22-26 fouille complète du bloc · 31-36 on propose du shit à un PJ · 41-46 deux détenus s'insultent jusqu'à l'arrivée des matons · 51-56 un maton tabasse un détenu un peu rebelle · 61-65 deux détenus tentent d'en violer un troisième dans sa cellule · 66 bagarre générale au déjeuner.\nPromenade (toutes les dix minutes de jeu) : 11-21 rien · 22-26 on propose du shit à un PJ · 31-36 bagarre, matons au bout d'1d6 tours · 41-46 un détenu tabassé par quatre autres, matons au bout d'1d6 tours · 51-56 un détenu provoque un PJ pour le tester · 61 refus de rentrer, matons qui matraquent deux ou trois détenus · 62 rixe entre bandes au couteau, un mort, tirs en l'air · 63 crise de manque, matons indifférents sauf danger de mort · 64 un maton poignardé, gardiens encore plus durs · 65 un détenu tente de planter un PJ · 66 émeute : si les PJ s'en mêlent, les détenus prennent l'entrée de la cour et des otages (répression CRS/GIGN, matons rancuniers).\n\nChronologie (à chaque jour suffit sa peine) :\n• Jour J (arrivée) : Gilles propose de la drogue à un PJ ; s'il achète, fouille de sa cellule et mitard.\n• J+1 : Raymond harcelé par un détenu qui l'accuse de lui avoir volé sa drogue.\n• J+2 : Joseph force Éric à une fellation ; Éric le mutile d'un coup de dents.\n• J+3 : Ulysse annonce que l'ange Gabriel lui a dit qu'il allait se suicider.\n• J+4 : Moussa envoie deux sbires faire la peau à Steve.\n• J+5 : Saïd révèle à un PJ que Gilles veut le tuer (en fait Gilles veut le balancer : il l'a vu acheter du shit à César).\n• J+6 : on retrouve gelé le cadavre du type qui prenait la tête à Ray.\nAu-delà d'une semaine, improviser.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi5-gardiens-10",
+              "nom": "Gardiens de Fleury-Mérogis",
+              "source": "Matons (Mercier, Doleau, Diori, Mendez, Galand, Muraille…)",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre précise qu'ils savent se servir de leurs matraques, sans caractéristiques : fiche générique estimée.\n• Christophe Mercier : 35 ans, recalé de la police, discipline de fer.\n• Marc Doleau : jeune, ambitieux, lâche, planqué à la bibliothèque.\n• Patrick Diori : vingt ans de maison, blasé ; couvre le trafic de Moussa.\n• Rudy Mendez : un an de poste, idéaliste brisé, sous antidépresseurs.\n• Stéphane Galand (chef) : grand et massif, sévère quand il y est forcé, laisse les détenus s'étriper.\n• Sébastien Muraille (chef) : maton sadique, mate les parloirs, détesté de tous.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-gardiens"
+            },
+            {
+              "id": "fi5-detenus-11",
+              "nom": "Détenus de Fleury-Mérogis",
+              "source": "Codétenus et caïds de la promenade",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Couteau artisanal",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pas de caractéristiques dans le livre ; la plupart savent se battre et n'hésitent pas à sortir une lame : fiche générique estimée.\n• Moussa Abedi (19 ans) : caïd psychopathe, deale du shit avec la complicité d'un maton, en guerre avec Steve.\n• Ulysse Mavreodis (50 ans) : double meurtrier, vieux tranquille, se croit en contact avec l'ange Gabriel.\n• Dominique « Doumé » Mariani : mafieux corse, distille de la gnôle avec l'alcool de l'atelier.\n• César Mamedi (21 ans) : petit dealer pour Moussa, veut sa conditionnelle.\n• Michel Noumier (60 ans) : escroc à la Sécu, ami d'Ulysse.\n• Joseph Nachelski (29 ans) : proxénète meurtrier, prostitue d'autres détenus.\n• Bernard Nobert (45 ans) : tueur d'enfants séduisant et manipulateur.\n• Cyril Kerguelec : lycéen arrêté à une manif anti-FN, perdu.\n• Saïd Boulila (18 ans) : voleur de voitures, petit politicien.\n• Désiré Mbaa (18 ans) : sans-papiers, double peine.\n• Jean-René Pichard : prévenu sous antidépresseurs (« ils disent que j'ai tué mon beau-frère »).\n• Steve Bouabé : colosse à la dentition pourrie, se prend pour un caïd, a planté Moussa.\n• Brahim Radad (25 ans) : toxicomane malade du sida, isolé, suicidaire.\n• Éric Postier : chauffard alcoolique, souffre-douleur qui commence à péter les plombs.\n• Gilles Martin : violeur débonnaire, balance pour les matons ; beaucoup veulent sa peau.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-detenus"
+            },
+            {
+              "id": "fi5-jambart-12",
+              "nom": "Père Jambart",
+              "source": "Aumônier de Fleury-Mérogis, ange de Guy, grade 2",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 19,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Guérison",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 2
+                }
+              ],
+              "talents": "Discussion 6, Droit pénal 3, Dire la messe à des fidèles menottés 5, Œcuménisme 5. Avertissement sans frais : abstinence.",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit trentenaire à calvitie précoce et lunettes en demi-lune, très gentil, humaniste (veut organiser un culte pour les détenus musulmans), mal vu des gardiens ; peu compréhensif sur la sexualité des détenus.\nS'il comprend que les PJ sont des démons, il les observe un temps puis prévient sa hiérarchie : un ange de Dominique remplace alors un gardien et tente de les massacrer discrètement.\nDéfense non donnée : 2.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-jambart"
+            },
+            {
+              "id": "fi5-raymond-13",
+              "nom": "Raymond Bougoin (« Ray »)",
+              "source": "Flocon de sang, braqueur renégat",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Fusil à pompe (balles de gros calibre)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Lame artisanale (verre et scotch)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 2+, Intrusion 2+, Discrétion 2+, Défense 2, Jouer du couteau 2, Gouaille 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand échalas maigre, tignasse blonde, lunettes rondes à verres épais, look blouson noir des années 60 (jean, chemise, perfecto).\nBraqueur depuis les années 60, maoïste sur les bords, nombreux séjours en prison. Surpris en 1998 en train de cambrioler le coffre d'Isaac Iceberg (démon de Crocell, grade 2), qui en a fait un Flocon de sang. S'est enfui au bout de quatre ans et a braqué le fourgon (pneus et portes gelés par Éclats de glace, convoyeur abattu au fusil à pompe) pour financer sa fuite au Brésil.\nEn préventive à Fleury-Mérogis : un dur, jamais balancé personne, prêt à supporter la torture. Il faut des moyens de pression créatifs pour le faire parler.\nArmes : le livre ne donne que « Tir 2+ » et « Jouer du couteau 2 » ; fusil à pompe (utilisé pendant le braquage, pas en prison) et lame artisanale (assimilée à un cran d'arrêt) estimés.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-raymond"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi5-sc-raymond",
+          "nom": "7. Beau comme une prison qui brûle : faire parler Ray",
+          "lieu": "Promenade et cellules de Fleury-Mérogis",
+          "notes": "Trouver Raymond n'est pas très difficile ; les autres détenus aident, mais jamais gratuitement (toujours un service en échange).\nLe faire parler est autre chose : il n'a jamais balancé personne, la prison ne lui fait pas peur, et il s'y croit à l'abri des Flocons de sang. Il faut des moyens de pression créatifs (pouvoirs, torture extrême, plan à la Mission impossible).\nS'il parle : toute l'histoire, et le nom de celui qui lui a donné son pouvoir, Isaac Iceberg, démon de Crocell vivant à Paris.\nMonsieur Fabien, mis au courant, ordonne d'éliminer Raymond au plus vite et le plus discrètement possible. Le lendemain, le juge abandonne les charges contre les PJ (« un rêve cette nuit »), qui sont libérés.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi5-raymond-14",
+              "nom": "Raymond Bougoin (« Ray »)",
+              "source": "Flocon de sang, braqueur renégat",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Fusil à pompe (balles de gros calibre)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Lame artisanale (verre et scotch)",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Éclats de glace",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 2+, Intrusion 2+, Discrétion 2+, Défense 2, Jouer du couteau 2, Gouaille 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand échalas maigre, tignasse blonde, lunettes rondes à verres épais, look blouson noir des années 60 (jean, chemise, perfecto).\nBraqueur depuis les années 60, maoïste sur les bords, nombreux séjours en prison. Surpris en 1998 en train de cambrioler le coffre d'Isaac Iceberg (démon de Crocell, grade 2), qui en a fait un Flocon de sang. S'est enfui au bout de quatre ans et a braqué le fourgon (pneus et portes gelés par Éclats de glace, convoyeur abattu au fusil à pompe) pour financer sa fuite au Brésil.\nEn préventive à Fleury-Mérogis : un dur, jamais balancé personne, prêt à supporter la torture. Il faut des moyens de pression créatifs pour le faire parler.\nArmes : le livre ne donne que « Tir 2+ » et « Jouer du couteau 2 » ; fusil à pompe (utilisé pendant le braquage, pas en prison) et lame artisanale (assimilée à un cran d'arrêt) estimés.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-raymond"
+            },
+            {
+              "id": "fi5-gardiens-15",
+              "nom": "Gardiens de Fleury-Mérogis",
+              "source": "Matons (Mercier, Doleau, Diori, Mendez, Galand, Muraille…)",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre précise qu'ils savent se servir de leurs matraques, sans caractéristiques : fiche générique estimée.\n• Christophe Mercier : 35 ans, recalé de la police, discipline de fer.\n• Marc Doleau : jeune, ambitieux, lâche, planqué à la bibliothèque.\n• Patrick Diori : vingt ans de maison, blasé ; couvre le trafic de Moussa.\n• Rudy Mendez : un an de poste, idéaliste brisé, sous antidépresseurs.\n• Stéphane Galand (chef) : grand et massif, sévère quand il y est forcé, laisse les détenus s'étriper.\n• Sébastien Muraille (chef) : maton sadique, mate les parloirs, détesté de tous.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-gardiens"
+            },
+            {
+              "id": "fi5-detenus-16",
+              "nom": "Détenus de Fleury-Mérogis",
+              "source": "Codétenus et caïds de la promenade",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Couteau artisanal",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pas de caractéristiques dans le livre ; la plupart savent se battre et n'hésitent pas à sortir une lame : fiche générique estimée.\n• Moussa Abedi (19 ans) : caïd psychopathe, deale du shit avec la complicité d'un maton, en guerre avec Steve.\n• Ulysse Mavreodis (50 ans) : double meurtrier, vieux tranquille, se croit en contact avec l'ange Gabriel.\n• Dominique « Doumé » Mariani : mafieux corse, distille de la gnôle avec l'alcool de l'atelier.\n• César Mamedi (21 ans) : petit dealer pour Moussa, veut sa conditionnelle.\n• Michel Noumier (60 ans) : escroc à la Sécu, ami d'Ulysse.\n• Joseph Nachelski (29 ans) : proxénète meurtrier, prostitue d'autres détenus.\n• Bernard Nobert (45 ans) : tueur d'enfants séduisant et manipulateur.\n• Cyril Kerguelec : lycéen arrêté à une manif anti-FN, perdu.\n• Saïd Boulila (18 ans) : voleur de voitures, petit politicien.\n• Désiré Mbaa (18 ans) : sans-papiers, double peine.\n• Jean-René Pichard : prévenu sous antidépresseurs (« ils disent que j'ai tué mon beau-frère »).\n• Steve Bouabé : colosse à la dentition pourrie, se prend pour un caïd, a planté Moussa.\n• Brahim Radad (25 ans) : toxicomane malade du sida, isolé, suicidaire.\n• Éric Postier : chauffard alcoolique, souffre-douleur qui commence à péter les plombs.\n• Gilles Martin : violeur débonnaire, balance pour les matons ; beaucoup veulent sa peau.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-detenus"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi5-ch-ray",
+              "q": "Raymond parle-t-il ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Il donne le nom d'Isaac Iceberg (Crocell). Monsieur Fabien ordonne son élimination discrète."
+                },
+                {
+                  "t": "Non, il tient bon",
+                  "suite": "Les PJ doivent improviser ; sans le nom d'Iceberg, la piste se tarit (le MJ peut faire fuiter l'info autrement)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "fi5-ch-elim",
+              "q": "Comment Raymond est-il éliminé ?",
+              "opts": [
+                {
+                  "t": "Discrètement (accident, suicide maquillé)",
+                  "suite": "Monsieur Fabien est satisfait."
+                },
+                {
+                  "t": "Bruyamment (émeute, meurtre voyant)",
+                  "suite": "Risque de griller la couverture, de prolonger le séjour ou d'attirer le père Jambart et un ange de Dominique."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi5-sc-epilogue",
+          "nom": "8. Épilogue : l'appartement d'Isaac Iceberg",
+          "lieu": "Appartement d'Isaac Iceberg, Paris",
+          "notes": "Iceberg a fui dès l'arrestation de Ray : appartement vide. Courrier en souffrance depuis le jour de l'arrestation, penderies vides, ni valise ni brosse à dents, dernier numéro composé : Air France. En creusant : il a embarqué pour Le Cap (Afrique du Sud) le lendemain de l'interpellation.\nLa planque de Ray (12e) a brûlé dans un incendie mystérieux quelques jours plus tôt. Gérard Lepuis est mort dans un accident de la circulation.\nMonsieur Fabien félicite les PJ, leur donne 4 PA et leur conseille amicalement d'oublier toute cette affaire.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi5-isaac-17",
+              "nom": "Isaac Iceberg",
+              "source": "Démon de Crocell, grade 2 (absent)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Celui qui a donné son pouvoir à Raymond et l'a enrôlé dans les Flocons de sang. Vit à Paris, mais a fui pour Le Cap (Afrique du Sud) le lendemain de l'arrestation de Ray : appartement vide (penderies vidées, dernier appel à Air France). La planque de Ray (12e) a brûlé dans un incendie mystérieux quelques jours plus tôt.\nN'apparaît pas dans ce scénario ; pas de caractéristiques.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102.",
+              "typeId": "type-fi5-isaac"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795281270691,
+      "updatedAt": 1795281270691
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi5-raymond",
+      "nom": "Raymond Bougoin (« Ray »)",
+      "source": "Flocon de sang, braqueur renégat",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 5,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Fusil à pompe (balles de gros calibre)",
+          "att": 5,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Lame artisanale (verre et scotch)",
+          "att": 4,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Éclats de glace",
+          "r": 2
+        }
+      ],
+      "talents": "Tir 2+, Intrusion 2+, Discrétion 2+, Défense 2, Jouer du couteau 2, Gouaille 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand échalas maigre, tignasse blonde, lunettes rondes à verres épais, look blouson noir des années 60 (jean, chemise, perfecto).\nBraqueur depuis les années 60, maoïste sur les bords, nombreux séjours en prison. Surpris en 1998 en train de cambrioler le coffre d'Isaac Iceberg (démon de Crocell, grade 2), qui en a fait un Flocon de sang. S'est enfui au bout de quatre ans et a braqué le fourgon (pneus et portes gelés par Éclats de glace, convoyeur abattu au fusil à pompe) pour financer sa fuite au Brésil.\nEn préventive à Fleury-Mérogis : un dur, jamais balancé personne, prêt à supporter la torture. Il faut des moyens de pression créatifs pour le faire parler.\nArmes : le livre ne donne que « Tir 2+ » et « Jouer du couteau 2 » ; fusil à pompe (utilisé pendant le braquage, pas en prison) et lame artisanale (assimilée à un cran d'arrêt) estimés.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-alain",
+      "nom": "Alain",
+      "source": "Ange de Daniel, grade 1",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 8,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 14,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Piolet maudit mineur (inadapté à la parade)",
+          "att": 10,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Pétrification",
+          "r": 2
+        },
+        {
+          "n": "Peur",
+          "r": 2
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Déphasage",
+          "r": 2
+        }
+      ],
+      "talents": "Combat 5, Défense 5, Athlétisme 5. Avantage matériel : skinheads. Avertissement sans frais : interdiction d'utiliser une arme à distance.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nGrand, maigre, la quarantaine, air sympa mais vrai bourrin qui adore chasser le démon. Jean trop court, Doc Martens cirées à lacets blancs, pull col en V, chemise à carreaux, veste en jean.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-pascal",
+      "nom": "Pascal",
+      "source": "Ange de Jean-Luc, grade 1",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Fusil à pompe",
+          "att": 8,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Sacrifice ultime",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Déplacement temporel",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2+ (armes d'épaule 4), Défense 4, Langue : créole. Avertissement sans frais : kleptomane.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nQuarantenaire antillais souriant, grisonnant, début d'embonpoint, gabardine beige et pantalon de velours marron : un air de prof d'histoire-géo. Encaisse les coups pour les autres et supporte de moins en moins Didier : il pourrait le laisser prendre les coups seul.\nArme d'épaule non précisée : fusil à pompe estimé.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-didier",
+      "nom": "Didier",
+      "source": "Ange de Walther, grade 1",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 8,
+        "vo": 10,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 13,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Revolver",
+          "att": 8,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Exorcisme",
+          "r": 2
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        },
+        {
+          "n": "Charme",
+          "r": 2
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 2
+        },
+        {
+          "n": "Détection du mal",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2 (armes de poing 4), Défense 4, Discrétion 3, Culture générale 2 (théologie 4). Avertissement sans frais : paranoïaque.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Membres de « l'autre équipe » envoyée par la You-You Power Force (caractéristiques en fin de scénario).\nQuarantaine, cheveux gras, ventre rond, lueur inquiétante dans le regard ; tout de blanc vêtu (pantalon repassé, chemise amidonnée, veste de cuir blanc). Complètement jeté, ne fait confiance à personne : piètre esprit d'équipe.\nArme de poing non précisée : revolver petit calibre estimé.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-jambart",
+      "nom": "Père Jambart",
+      "source": "Aumônier de Fleury-Mérogis, ange de Guy, grade 2",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 19,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [],
+      "pouvoirs": [
+        {
+          "n": "Guérison",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 8
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Bénédiction : guérison de folies",
+          "r": 2
+        }
+      ],
+      "talents": "Discussion 6, Droit pénal 3, Dire la messe à des fidèles menottés 5, Œcuménisme 5. Avertissement sans frais : abstinence.",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit trentenaire à calvitie précoce et lunettes en demi-lune, très gentil, humaniste (veut organiser un culte pour les détenus musulmans), mal vu des gardiens ; peu compréhensif sur la sexualité des détenus.\nS'il comprend que les PJ sont des démons, il les observe un temps puis prévient sa hiérarchie : un ange de Dominique remplace alors un gardien et tente de les massacrer discrètement.\nDéfense non donnée : 2.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-gardiens",
+      "nom": "Gardiens de Fleury-Mérogis",
+      "source": "Matons (Mercier, Doleau, Diori, Mendez, Galand, Muraille…)",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le livre précise qu'ils savent se servir de leurs matraques, sans caractéristiques : fiche générique estimée.\n• Christophe Mercier : 35 ans, recalé de la police, discipline de fer.\n• Marc Doleau : jeune, ambitieux, lâche, planqué à la bibliothèque.\n• Patrick Diori : vingt ans de maison, blasé ; couvre le trafic de Moussa.\n• Rudy Mendez : un an de poste, idéaliste brisé, sous antidépresseurs.\n• Stéphane Galand (chef) : grand et massif, sévère quand il y est forcé, laisse les détenus s'étriper.\n• Sébastien Muraille (chef) : maton sadique, mate les parloirs, détesté de tous.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-detenus",
+      "nom": "Détenus de Fleury-Mérogis",
+      "source": "Codétenus et caïds de la promenade",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Couteau artisanal",
+          "att": 4,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pas de caractéristiques dans le livre ; la plupart savent se battre et n'hésitent pas à sortir une lame : fiche générique estimée.\n• Moussa Abedi (19 ans) : caïd psychopathe, deale du shit avec la complicité d'un maton, en guerre avec Steve.\n• Ulysse Mavreodis (50 ans) : double meurtrier, vieux tranquille, se croit en contact avec l'ange Gabriel.\n• Dominique « Doumé » Mariani : mafieux corse, distille de la gnôle avec l'alcool de l'atelier.\n• César Mamedi (21 ans) : petit dealer pour Moussa, veut sa conditionnelle.\n• Michel Noumier (60 ans) : escroc à la Sécu, ami d'Ulysse.\n• Joseph Nachelski (29 ans) : proxénète meurtrier, prostitue d'autres détenus.\n• Bernard Nobert (45 ans) : tueur d'enfants séduisant et manipulateur.\n• Cyril Kerguelec : lycéen arrêté à une manif anti-FN, perdu.\n• Saïd Boulila (18 ans) : voleur de voitures, petit politicien.\n• Désiré Mbaa (18 ans) : sans-papiers, double peine.\n• Jean-René Pichard : prévenu sous antidépresseurs (« ils disent que j'ai tué mon beau-frère »).\n• Steve Bouabé : colosse à la dentition pourrie, se prend pour un caïd, a planté Moussa.\n• Brahim Radad (25 ans) : toxicomane malade du sida, isolé, suicidaire.\n• Éric Postier : chauffard alcoolique, souffre-douleur qui commence à péter les plombs.\n• Gilles Martin : violeur débonnaire, balance pour les matons ; beaucoup veulent sa peau.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-replet",
+      "nom": "Inspecteur Replet",
+      "source": "Police locale de Sarcelles",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand costaud d'une quarantaine d'années, nuque longue, barbe de trois jours, mâche des pastilles à la nicotine et fume quand même. Voix grave, toux, bourru mais amical. Flic communiste, peu malin, un peu raciste, furieux qu'on ait refilé l'affaire au GIR parisien.\nInfos : les pneus arrière ont gelé et éclaté, un second refroidissement a ouvert les portes ; le convoyeur a tiré une demi-douzaine de balles dans les platanes ; le braqueur a riposté de trois tirs de fusil à pompe gros calibre. Il pense que quelqu'un de la banque a donné l'itinéraire.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-gerard",
+      "nom": "Gérard Lepuis",
+      "source": "Conseiller client de la banque, complice",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Cinquantenaire séduisant, grosse moustache grise. Ancien de Mai 68 avec Ray (groupuscule maoïste), rangé, vote Verts, écœuré par les magouilles de son patron : il a donné l'itinéraire du fourgon. Rongé de culpabilité depuis la mort du convoyeur (insomnies, café, clopes).\nToute menace physique ou pression psychologique un peu poussée le fait craquer : il livre Raymond et l'adresse de sa planque (Paris 12e).\nSuite : il meurt dans un « accident de la circulation » avant la fin du scénario.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-escaut",
+      "nom": "Antoine Escaut",
+      "source": "Directeur de la banque",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Soixantaine élégante, grisonnant, méprisant. Terrifié par une poursuite pour recel d'abus de biens sociaux : les 800 000 € étaient le dépôt en liquide d'un élu local (caisse noire de parti). Muet devant des journalistes, il déballe tout face à un faux enquêteur du pôle financier de Bercy (dépôt couvert par la maison mère, à la demande d'un député). Sans incidence sur l'enquête, mais source de « contacts » politiques.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-ludivine",
+      "nom": "Ludivine Cippe",
+      "source": "Secrétaire, bavarde de la banque",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pas très jolie, mal dans sa peau, gentille, sous Prozac, à l'écoute de tous les ragots. Facile à faire parler : la banque magouille avec de l'argent sale, Gérard est « communiste », Samantha et Innocent couchent ensemble, Michel tape dans la caisse.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-innocent",
+      "nom": "Innocent Coulibali",
+      "source": "Vigile de la banque",
+      "type": "humain",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Géant au crâne rasé, air peu sympathique, mi-vigile mi-caillera (deale du shit). En couple avec Samantha Cissoko, la stagiaire. Difficile à faire parler, mais il a vu Gérard discuter, visiblement flippé, avec un inconnu (Raymond) dans un café la veille du braquage.\nLe livre ne donne volontairement pas de caractéristiques (simple humain) : fiche minimale générique (niveau 2 partout), à ajuster. Matraque estimée.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    },
+    {
+      "id": "type-fi5-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Contact et commanditaire des PJ. Envoie l'équipe sur l'affaire, les rappelle quand Ray est arrêté, choisit leur juge d'instruction et leur avocat, leur rend visite au parloir (avec Gilbert et Aurélie) et donne l'ordre final d'éliminer Raymond.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi5-isaac",
+      "nom": "Isaac Iceberg",
+      "source": "Démon de Crocell, grade 2 (absent)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Celui qui a donné son pouvoir à Raymond et l'a enrôlé dans les Flocons de sang. Vit à Paris, mais a fui pour Le Cap (Afrique du Sud) le lendemain de l'arrestation de Ray : appartement vide (penderies vidées, dernier appel à Air France). La planque de Ray (12e) a brûlé dans un incendie mystérieux quelques jours plus tôt.\nN'apparaît pas dans ce scénario ; pas de caractéristiques.\nSource : Fire and Ice, « Ice, ice baby », p. 90-102."
+    }
+  ],
+  "memoire": []
+}

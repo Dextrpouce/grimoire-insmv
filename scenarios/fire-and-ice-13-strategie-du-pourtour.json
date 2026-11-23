@@ -1,0 +1,2637 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-13-strategie-du-pourtour",
+      "nom": "Fire and Ice (scénario 13) – La stratégie du pourtour",
+      "resume": "Dies Irae, scénario 13 (INS), premier de l'acte, suite de « Run like Hell ». La mort mystérieuse de Nathalie Hémon, Miss Bretagne, à Douarnenez, envoie les PJ en Bretagne sur une supposée piste d'Andrealphus. Ils enquêtent, fabriquent un coupable pour la police, démasquent le vrai tueur (le pharmacien André Carrefour), croisent Monsieur Drummond de la Garde carmine, puis remontent jusqu'à la villa où Belial retient la nouvelle hôte de la meuf et un sorcier pisteur, en plein assaut de la Tierce irlandaise d'Yves. Ils y apprennent pourquoi tout le monde court après la meuf : Belial veut l'invoquer et elle prophétise la fin du monde.",
+      "notes": "Source : Fire and Ice 2, « La stratégie du pourtour », p. 71-82. Aide de jeu « Tempus Fugit », p. 153-154.\nScénario d'enquête avec beaucoup de fausses pistes et d'intrigues secondaires : il demande aux joueurs réflexion et évaluation des forces en présence ; joué en bourrins, ils se feront écraser.\nDéroulement : briefing au CdT → Douarnenez (hôtel place de l'Enfer) → enquête (Plomarc'h, police, parents, Marion) → fabrication d'un coupable → Drummond et Ascoët → André Carrefour → piste de la villa (optionnelle) → assaut de la villa → interrogatoire d'Henry → retour à Paris.\n\nRécompense : le livre n'indique pas de PA pour ce scénario.\n\nLes forces en présence :\n• Les PJ, pour Fabien/Baalberith : retrouver Andrealphus, discrètement, et étouffer l'affaire.\n• La Garde carmine de Belial (Drummond, Virginia, Arnold, Willy, Madame Garret), cinq démons de grade 3, plus le sorcier Henry Leones : effacer les traces des invocations ratées de la meuf et exploiter sa prophétie (Belial veut connaître la date de son accession au trône).\n• La Tierce européenne d'Yves (Saint Patrick, Stout, Pure Malt), trois anges de grade 3 : chercher la meuf. Elle aide discrètement les PJ (tags verts) puis élimine la Garde.\n• André Carrefour, tueur en série possédé : le hasard qui a tué Nathalie avant terme.\n• Aurélie (si elle vit) renseigne le Daemonis Malificum et Belial.\n\nChronologie (Tempus Fugit ; une dizaine de jours après le scénario précédent) : jeudi, disparition de Nathalie Hémon ; vendredi, corps retrouvé par un touriste écossais ; samedi, article d'Ouest-France, briefing au CdT et départ pour Douarnenez ; dimanche, enquête et fabrication d'un coupable idéal ; lundi, entrevues avec Drummond et l'inspecteur Ascoët, identification et élimination d'André Carrefour ; mardi, villa de la Garde carmine, baston contre les Belial, interrogatoire d'Henry Leones, train de retour pour Paris. Suite : « Interzone » (attaque du CdT par la Garde carmine dès l'arrivée à Paris, révélation de Fabien, voyage au Purgatoire pour consulter le dossier de Nathalie Hémon et entendre sa prophétie).\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reporté en Foi). Le pouvoir Feu de Prométhée (Garde carmine), absent des règles de l'application, est indiqué dans les talents. Les armes non précisées sont estimées et signalées dans chaque fiche. Monsieur Fabien : fiche commune de la campagne (« Le Centre de Tri »).",
+      "scenes": [
+        {
+          "id": "fi13-sc-briefing",
+          "nom": "1. Jogging like Hell : le briefing",
+          "lieu": "Centre de Tri, Paris – samedi, petit matin gris",
+          "notes": "Environ dix jours après « Run like Hell ». Monsieur Fabien convoque les PJ et leur montre un article d'Ouest-France : Nathalie Hémon, Miss Bretagne en route pour Miss France, disparue jeudi, retrouvée morte vendredi à l'aube par un touriste dans le ravin du sentier des Plomarc'h, à Douarnenez. Ni violence ni effraction ; l'inspecteur Ascoët attend l'autopsie ; on l'aurait vue parler à un inconnu la veille de sa mort. Le journal évoque aussi la montée de la violence en Bretagne (cache d'armes du FLB).\nPour Fabien, c'est encore un coup d'Andrealphus : billets de TGV pour Quimper dans la matinée et chambres d'hôtel déjà réservés. Mission : retrouver enfin le prince du sexe, mais discrètement (la guerre civile met les démons en position délicate face aux anges, qui ne doivent pas se lancer eux aussi sur la piste), et camoufler l'étrangeté de l'affaire en livrant à la police un coupable local. Conseils de prudence, rapport téléphonique régulier.\n\nVérité (pour le MJ) : Andrealphus n'y est pour rien. Belial essaie depuis le début de la campagne d'invoquer son ex, la meuf (humaine morte qui oscille entre Paradis, MRC et Terre, déjà croisée en rêve dans « La Bibliothèque du Marchand de Sable »). Elle s'incarne malgré elle dans des corps d'accueil qui finissent par une combustion spontanée. Elle possédait Nathalie, mais le hasard s'en est mêlé : André Carrefour, tueur en série local, a empoisonné la jeune femme avant terme. La meuf a trouvé un nouvel hôte, Jocelyne Rochot. Yves a envoyé sa Tierce irlandaise (trois anges) chercher la meuf ; Belial a envoyé cinq membres de la Garde carmine et un sorcier pisteur pour effacer les traces et exploiter ses dons de prophétie (il veut savoir quand il accédera au trône).\nAurélie (si elle vit encore) renseigne le Daemonis Malificum et s'est rangée du côté de Belial : le prince du feu connaît la mission des PJ (sinon, Baalberith l'a apprise par le micro qu'elle avait posé dans le bureau de Fabien).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-fabien-1",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Briefing du samedi matin : persuadé qu'Andrealphus est derrière la mort de la reine de beauté, il a déjà réservé TGV pour Quimper et hôtel. Mission : mettre la main sur le prince du sexe, discrètement, et camoufler l'étrangeté de l'affaire en orientant police et anges vers un coupable local. Demande un rapport téléphonique régulier.\nSurpris par le dessin des pendentifs « B » et « C » ; conseille d'éliminer le pharmacien ; laisse carte blanche pour Henry mais exige un retour rapide (la « fin du monde » l'inquiète).\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "noSource": true,
+              "typeId": "type-fi13-fabien"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi13-sc-douarnenez",
+          "nom": "2. Aux sombres héros de l'amer : arrivée à Douarnenez",
+          "lieu": "Quimper puis Douarnenez – hôtel de la place de l'Enfer, samedi",
+          "notes": "De Quimper, voiture de location ou car jusqu'à Douarnenez (« Douar an Enez », la terre de l'île : Douarnenez, Ploaré, Tréboul, Pouldavid). Ville de pêche sur le déclin, plages (le Ris, Pors Cad, plage des Dames…), sentiers des Roches Blanches et des Plomarc'h, port du Rosmeur, port de plaisance de Tréboul, port-musée du Port-Rhu. Légendes locales sans incidence sur l'intrigue : Tristan et Iseult (l'île Tristan), la cité d'Ys et Dahut (une touche ajoutée par un ange de Didier).\nL'hôtel est, ironiquement, place de l'Enfer : chambres confortables à la déco orange et marron des années Pompidou. Anne Edec et son fils Erwan accueillent les PJ (kouign-amann, Lancelot). Anne connaissait Nathalie et donne l'adresse des parents si on le lui demande gentiment.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-anne-edec-2",
+              "nom": "Anne Edec",
+              "source": "Humaine, logeuse de l'hôtel de la place de l'Enfer",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieille fille charmante qui tient l'hôtel avec son fils Erwan (quadragénaire maigrichon, grosses lunettes, pulls jacquard trop grands, un peu simplet). Accueille les PJ avec du kouign-amann et un « Lancelot » (bière blonde, cidre brut et chouchen à parts égales).\nConnaissait un peu Nathalie : donne l'adresse des parents si on le lui demande gentiment. Interrogée sur les préparations à base de champignons, elle cite le pharmacien André Carrefour, qui lui a vendu des remèdes « ancestraux ».\nAnnonce la visite de Drummond au bar de l'hôtel.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-anne-edec"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi13-sc-enquete",
+          "nom": "3. Et la lauréate est… : l'enquête",
+          "lieu": "Douarnenez – sentier des Plomarc'h, commissariat, maison des Hémon – dimanche",
+          "notes": "Pistes : la victime, ses parents, la police, le lieu du crime.\n• Les Plomarc'h : sentier qui monte au-dessus de la baie depuis le port de pêche, vestiges gallo-romains, aires de jeu. Un pilier de comptoir à qui l'on paie à boire indique l'endroit ; la police a déjà tout nettoyé, aucun indice. Balade agréable.\n• La police : l'inspecteur Ascoët envoie promener les curieux sans une très bonne excuse. Il n'en sait guère plus que le journal : touriste relâché, autopsie sans trace de traumatisme, suspects habituels inconsistants (Rachid, les rôlistes, Henri Petitbois). Pouvoirs ou violence contre un policier : mauvais pour la discrétion.\n• Les parents : Guy (extrême droite catho) et Marie (éplorée). La chambre de Nathalie, sans caractère, contient l'indice clé : un dessin au fusain d'une jeune femme noire se baignant, vue de dos, observée par deux hommes portant des pendentifs « B » et « C ». Nathalie dessinait les visions de la meuf pendant la possession. Prévenu, Fabien est aussi surpris que les PJ : continuer l'enquête, prudemment, et trouver vite un coupable.\n• Marion Leguennec, la meilleure amie : sérieuse et gentille Nathalie ; mise en confiance, elle parle des rôlistes (son cousin Bernard et ses amis) et des mœurs d'Henri Petitbois.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-ascoet-3",
+              "nom": "Inspecteur Gwénaël Ascoët",
+              "source": "Humain, police judiciaire, chargé de l'enquête",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Près de deux mètres, gueule de bagnard de film avec Lino Ventura ; laconique, déteste journalistes et curieux. Sans très bonne excuse, il éconduit les PJ ; pouvoirs ou violence sur un policier se paieront en discrétion.\nCe qu'il sait : le touriste (écossais) qui a trouvé le corps a été relâché ; autopsie sans trace de violence ; suspects habituels sans consistance (Rachid, les rôlistes, Henri Petitbois).\nLundi, après la visite de Drummond, il débarque à l'hôtel : nouvelle victime, Émeline Duchez. Questions sur la nuit des PJ, contrôle des papiers, fouille des chambres (« et cette épée longue sous le lit ? »), questions sur la botanique et les champignons. Si on le fait parler, il lâche que la police scientifique a trouvé des traces d'un poison artisanal aux champignons locaux dans le sang de Nathalie (information non publiée).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-ascoet"
+            },
+            {
+              "id": "fi13-guy-hemon-4",
+              "nom": "Guy et Marie Hémon",
+              "source": "Humains, parents de Nathalie",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Guy : professeur d'histoire-géo, militant d'un parti d'extrême droite dissident tendance catho intégriste, fier d'avoir une Miss Bretagne « de souche ». Ravi de parler à des journalistes ou à de « bons Français ». Marie : effacée, éplorée, réfugiée dans le ménage et le point de croix.\nRien d'utile dans leurs propos, mais ils montrent la chambre de Nathalie : pièce impersonnelle ; sur le bureau, des dessins au fusain dont un fleuve où se baigne une jeune femme noire vue de dos, observée par deux hommes portant des pendentifs « B » et « C » (Belial et Crocell : visions de la meuf pendant la possession).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-guy-hemon"
+            },
+            {
+              "id": "fi13-marion-5",
+              "nom": "Marion Leguennec",
+              "source": "Humaine, meilleure amie de Nathalie",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite brune boulotte, effondrée, facile à faire parler. Décrit Nathalie comme sérieuse et serviable (défilés mineurs, BTS Action commerciale). Mise en confiance, elle parle de son cousin Bernard et de ses amis rôlistes, et des mœurs d'Henri Petitbois, à qui Nathalie a dû céder pour ses ambitions de miss (confidence faite sous le sceau du secret).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-marion"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi13-sc-dirty-work",
+          "nom": "4. Dirty work : fabriquer un coupable",
+          "lieu": "Douarnenez – plage du Ris, comité Miss France, cave de Tristan – dimanche",
+          "notes": "Les PJ doivent faire porter le chapeau à un innocent. Laisser les joueurs inventer et improviser, sans leur rendre la tâche trop facile, et leur montrer le côté sale de leur travail : la population est remontée, une manifestation de vindicte populaire ou une tentative de lynchage est possible si le pigeon est mal vu.\nLes trois suspects déjà dans le collimateur de la police :\n• Rachid, sans-papiers kurde caché sur la plage du Ris : vu parlant avec Nathalie, introuvable depuis le meurtre ; il suffit de glisser sur lui des affaires de la victime et de le livrer (la police sera brutale).\n• Henri Petitbois : les cassettes de ses ébats avec Nathalie, si la police les trouve, en font un suspect parfait.\n• Les rôlistes : jeux macabres, chasses à l'ange en forêt, profanations, avances repoussées par Nathalie (dont le cousin Bernard).\nSi les joueurs choisissent d'autres victimes, improviser.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-rachid-6",
+              "nom": "Rachid",
+              "source": "Humain, jeune Kurde de Turquie sans papiers",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Coupable idéal n° 1. Réfugié parti de Sangatte après deux échecs pour passer en Angleterre, il espère embarquer clandestinement depuis Douarnenez. Dort sur la plage, mendie, a parlé plusieurs fois avec Nathalie devant témoins près de l'hôtel. Le soir du meurtre, il a tenté de monter sur un cargo et s'est fait tabasser par l'équipage ; depuis, il se cache sur la plage du Ris.\nFacile à accuser : cacher sur lui des affaires de Nathalie et le livrer à la police.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-rachid"
+            },
+            {
+              "id": "fi13-petitbois-7",
+              "nom": "Henri Petitbois",
+              "source": "Humain, responsable du comité Miss France local",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Coupable idéal n° 2. Cinquantenaire mielleux qui abuse de sa position auprès des candidates ; Nathalie y est passée. Enregistre ses ébats sur un petit magnétophone posé sur la table de nuit et garde les cassettes : si la police les trouve, il sera fortement soupçonné d'avoir voulu faire taire la belle. On murmure qu'il était secrètement amoureux d'elle.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-petitbois"
+            },
+            {
+              "id": "fi13-rolistes-8",
+              "nom": "Les rôlistes (Bernard, Grégoire, Ludovic, Tristan)",
+              "source": "Humains, bande de joueurs de jeux de rôle",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Coupables idéaux n° 3. Bernard Mazéas (23 ans, maigrichon acnéique, cousin germain de Nathalie), Grégoire Nepont (19 ans, grand et gros, fan d'informatique), Ludovic Garnier (25 ans, hardos, pentacle au cou), Tristan Stivell (20 ans, meneur de jeu « charismatique », baggies et néométal).\nIls jouent à un In Nomine Satanis maison (personnages grade 3 à 70 PP…), font des chasses à l'ange dans les bois, des profanations de tombes et de l'épée en mousse chez Ludovic. Tous ont tenté leur chance avec Nathalie (parties dans la cave de Tristan), sans succès.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-rolistes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi13-ch-coupable",
+              "q": "À qui les PJ font-ils porter le chapeau ?",
+              "opts": [
+                {
+                  "t": "Rachid",
+                  "suite": "Affaires de Nathalie cachées sur lui, livré à la police : arrestation musclée, l'affaire se tasse côté presse ; risque de lynchage si la rumeur court avant."
+                },
+                {
+                  "t": "Henri Petitbois",
+                  "suite": "Les cassettes trouvées chez lui en font le suspect idéal (avoir voulu faire taire la belle) ; scandale local."
+                },
+                {
+                  "t": "Les rôlistes",
+                  "suite": "Jeux de rôle « sataniques », chasses à l'ange et profanations : la population s'enflamme, débordements possibles."
+                },
+                {
+                  "t": "Un autre bouc émissaire",
+                  "suite": "Improviser selon le plan des joueurs."
+                },
+                {
+                  "t": "Personne pour l'instant",
+                  "suite": "La police et la presse continuent de fouiner ; le meurtre d'Émeline Duchez (lundi) relance l'affaire."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi13-sc-drummond",
+          "nom": "5. Personne au monde ne marche du même pas : Monsieur Drummond",
+          "lieu": "Hôtel de la place de l'Enfer – bar, lundi",
+          "notes": "En rentrant à l'hôtel, la logeuse annonce un visiteur au bar : un homme âgé, élégant, écharpe rouge carmin, Monsieur Drummond, qui les invite au thé et ne cache ni sa nature ni son appartenance à l'élite du prince du feu. Belial sait (par Aurélie) que les PJ sont là et veut s'assurer de leur collaboration ; Drummond les croit encore sur la fausse piste d'Andrealphus et les traite en alliés manipulables (plus froidement s'ils ont été reconnus dans les rixes précédentes).\nConversation feutrée et hypocrite : chacun essaie de tromper l'autre et de jauger ce qu'il sait. Drummond oriente les PJ vers une fausse piste : Andrealphus aurait fait des recherches à la bibliothèque sur la cité d'Ys et loué un bateau la veille. Des PJ habiles peuvent apprendre qu'il est de la Garde carmine avec une équipe complète, qu'il sait la reine de beauté possédée par la meuf, qu'il reste sur place, et qu'il connaît leur mission. S'ils sont lents, c'est lui qui découvre qu'ils savent pour la meuf, et il se ferme. Il part au bout de quelques minutes en conseillant à demi-mot de ne pas se mêler de ses affaires ; un van noir de location aux vitres teintées passe le prendre.\nAussitôt après, l'inspecteur Ascoët entre, énervé : une nouvelle victime, Émeline Duchez. Questions sur la nuit des PJ, papiers d'identité, fouille des chambres, questions sur la botanique et les champignons. Si on le fait parler : traces d'un poison artisanal aux champignons locaux dans le sang de Nathalie (non publié). Bizarre pour une possédée, mais c'est la piste à suivre.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-drummond-9",
+              "nom": "Monsieur Drummond",
+              "source": "Démon de Belial, grade 3 – chef de l'équipe de la Garde carmine",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 30,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Club de golf maudit mineur",
+                  "att": 6,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Incendie",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 3, Défense 3, Baratin 5, Conduite 3, Droit des affaires 4 ; avertissement sans frais : dandy. Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Homme mince d'une soixantaine d'années, dégarni, tiré à quatre épingles, écharpe rouge carmin. Poli, réservé, violent à froid : chef sévère et juste, dévoué à Belial.\nLundi, il attend les PJ au bar de l'hôtel, ne cache ni sa nature ni son appartenance aux forces d'élite du prince du feu et les invite au thé. Belial, renseigné par Aurélie (ou par le micro qu'elle a posé dans le bureau de Fabien), le croit face à des alliés manipulables lancés sur Andrealphus ; plus froid si les PJ ont été reconnus lors des rixes précédentes.\nObjectif : les envoyer sur une fausse piste (Andrealphus aurait fait des recherches à la bibliothèque sur la cité d'Ys et loué un bateau la veille). Selon l'habileté des PJ, il peut lâcher qu'il est de la Garde carmine, avec une équipe complète, qu'il sait la reine de beauté possédée par la meuf, qu'il reste sur place et qu'il connaît leur mission. S'ils sont lents, c'est lui qui apprend qu'ils savent pour la meuf. Repart en van noir aux vitres teintées en leur conseillant de ne pas se mêler de ses affaires.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-drummond"
+            },
+            {
+              "id": "fi13-ascoet-10",
+              "nom": "Inspecteur Gwénaël Ascoët",
+              "source": "Humain, police judiciaire, chargé de l'enquête",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Près de deux mètres, gueule de bagnard de film avec Lino Ventura ; laconique, déteste journalistes et curieux. Sans très bonne excuse, il éconduit les PJ ; pouvoirs ou violence sur un policier se paieront en discrétion.\nCe qu'il sait : le touriste (écossais) qui a trouvé le corps a été relâché ; autopsie sans trace de violence ; suspects habituels sans consistance (Rachid, les rôlistes, Henri Petitbois).\nLundi, après la visite de Drummond, il débarque à l'hôtel : nouvelle victime, Émeline Duchez. Questions sur la nuit des PJ, contrôle des papiers, fouille des chambres (« et cette épée longue sous le lit ? »), questions sur la botanique et les champignons. Si on le fait parler, il lâche que la police scientifique a trouvé des traces d'un poison artisanal aux champignons locaux dans le sang de Nathalie (information non publiée).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-ascoet"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi13-ch-the",
+              "q": "Comment tourne la conversation avec Drummond ?",
+              "opts": [
+                {
+                  "t": "Les PJ le percent à jour",
+                  "suite": "Ils apprennent qu'il est de la Garde carmine avec une équipe complète, qu'il sait pour la meuf, qu'il reste sur place et connaît leur mission ; ils gardent l'avantage."
+                },
+                {
+                  "t": "Match nul",
+                  "suite": "Chacun garde ses cartes ; les PJ repartent avec la fausse piste de la bibliothèque et du bateau (cité d'Ys)."
+                },
+                {
+                  "t": "Drummond prend l'avantage",
+                  "suite": "Il comprend qu'ils savent pour la meuf et se ferme comme une huître : la Garde carmine sera sur ses gardes à la villa."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi13-sc-carrefour",
+          "nom": "6. Dementia profondis : André Carrefour",
+          "lieu": "Douarnenez – pharmacie et appartement d'André Carrefour, lundi",
+          "notes": "Le coupable est facile à trouver, c'est un notable : la logeuse (question sur les préparations aux champignons) ou la tournée des médecins, étudiants en chimie et pharmacies mènent au pharmacien André Carrefour, auteur des deux meurtres.\n• De jour, à la pharmacie bondée : sourire et mensonges par omission (connaît bien les champignons, ne connaissait pas Nathalie, jamais de décoction mortelle). Détection du mensonge : efficace s'il franchit ses défenses mentales (difficile). La manière forte est impossible sans briser la discrétion.\n• Effraction de l'appartement au-dessus : alarme dans la boutique, André arrive quelques minutes plus tard. Le soir, il erre en « repérage » jusqu'à minuit environ : champ libre.\n• L'appartement : loft blanc d'un ordre maniaque (bibelots espacés de 6,66 cm). Double fond du minibar : champignons vénéneux. Derrière une tenture, écrits avec son sang : colonnes de mensurations numérotées, noms de tous les princes-démons et d'une centaine de démons, et sous le numéro et les mesures de Nathalie : « Trône » et « Fin du monde » (ses derniers mots).\nIl n'y a rien à tirer d'André, mécanique meurtrière qui ignore pourquoi il a écrit ces noms (il les entend en dormant) et ne sait rien d'Andrealphus ni de la meuf. Fabien conseille de se débarrasser de l'empoisonneur. Au combat, il Charme le démon le plus bourrin pour qu'il attaque ses camarades et grille ses PP, mais ne tient pas face au nombre. Son corps ne disparaît pas : il faut s'en débarrasser (le livre laisse le mystère ouvert).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi13-andre-11",
+              "nom": "André Carrefour",
+              "source": "Tueur en série possédé, pharmacien à Douarnenez",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 26,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Camisole",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 3, Défense 3, Pharmacologie 4, Vélo 3, Faire des cocktails 3 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quinquagénaire, cheveu rare, moustache, sourire de pub pour dentifrice. Ancien pharmacien parisien coureur de jupons, mort d'une crise cardiaque en plein ébat puis « miraculeusement » ranimé ; installé à Douarnenez depuis un an. Obsédé par les femmes, créatures maléfiques, et par les chiffres de leurs corps.\nLe vrai meurtrier de Nathalie (sa 4e victime ; les trois autres pourrissent dans les bois) et d'Émeline Duchez : il les invite pour un « dernier verre » chez lui, les empoisonne à l'amanite phalloïde, relève leurs mensurations puis jette le corps dans un fourré.\nDans la journée, à la pharmacie toujours pleine : souriant, ment par omission (Détection du mensonge efficace s'il passe ses défenses mentales). Effraction de l'appartement : alarme, il arrive quelques minutes plus tard. Le soir, il traîne en « repérage » jusque vers minuit.\nAppartement : loft blanc, d'un ordre maniaque ; champignons dans le double fond du minibar ; derrière une tenture, des colonnes de mensurations écrites avec son propre sang, les noms de tous les princes-démons et d'une centaine de démons, et sous le numéro de Nathalie « Trône » et « Fin du monde » (les derniers mots de la mourante).\nMécanique sans conscience, il entend ces noms en dormant et ne sait rien d'Andrealphus ni de la meuf. Attaqué : Charme sur le démon le plus bourrin pour le retourner contre ses camarades, puis il grille tous ses PP. Pouvoirs démoniaques, mais ni aura, ni réaction à Détection du mal, ni langage démoniaque ; son corps ne disparaît pas à sa mort (il faut s'en débarrasser).\nPas d'arme : Corps à corps 3 à mains nues.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-andre"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi13-ch-andre",
+              "q": "Que deviennent André Carrefour et son corps ?",
+              "opts": [
+                {
+                  "t": "Éliminé, corps escamoté",
+                  "suite": "Le tueur disparaît sans bruit ; les meurtres cessent et la piste du coupable fabriqué tient."
+                },
+                {
+                  "t": "Éliminé, corps laissé ou mal caché",
+                  "suite": "Un notable mort de façon suspecte : Ascoët et la presse s'agitent, la discrétion en prend un coup."
+                },
+                {
+                  "t": "Livré à la police",
+                  "suite": "Preuves de l'appartement (champignons, inscriptions) : affaire close côté humains, mais les noms des princes-démons sur le mur posent question."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi13-sc-sorcier",
+          "nom": "7. C'est pas sorcier : la piste de la villa",
+          "lieu": "Quimper (Vroom Locations), agences immobilières, abords de la villa – lundi soir / mardi",
+          "notes": "Partie optionnelle : les PJ peuvent déjà avoir compris que le meurtre est une fausse piste. Sinon, la Tierce irlandaise leur donne un coup de pouce en taguant à la bombe verte le nom du démon de Belial sur les murs de leurs chambres.\nDrummond a lui-même loué le van à Quimper sous un faux nom avec faux papiers, mais un employé de Vroom Locations se souvient de lui (« accompagné par Arnold et Willy ») et donne le nom de la location : Georges Michel. Chou blanc dans les hôtels ; les agences immobilières révèlent une petite villa louée sous la même identité à quelques kilomètres de Douarnenez.\nSur place : Drummond et son équipe y sont en permanence et y interrogent, sans grand résultat, la poissonnière. Cinq démons de Belial à écharpe rouge : une attaque frontale est une très mauvaise idée, le faire bien comprendre aux joueurs.\nLa Tierce (Saint Patrick, Stout, Pure Malt) rôde dans les environs en 4L verte : tiers parti, elle cherche la meuf pour Yves.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-saint-patrick-12",
+              "nom": "Saint Patrick",
+              "source": "Ange d'Yves, grade 3 – chef de la Tierce européenne",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 7,
+              "pfFix": 9,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Philosophie",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 2
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 2
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 4
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 2
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 6+, Corps à corps 6, Défense 6, Culture irlandaise 6, Gaélique 6, Savoir militaire 4 (tactique 7), Tenir l'alcool 5 ; Bénédiction « guérison de folies » ; avantages : Section d'enquête de serviteurs de Dieu (IRA – n'intervient pas ici), Contact avec un politicien (Sinn Féin) ; gilet pare-balles béni (protection 7)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ange quadragénaire de Belfast, froid, renfermé, solitaire et têtu ; près de deux mètres, épaules larges, bras comme des troncs, roux, taches de rousseur et collier de barbe. Évangélisateur de l'Irlande, chargé par Yves de veiller sur l'Angleterre, il préfère défendre la culture irlandaise.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nPas d'arme indiquée : attaque à mains nues (Corps à corps 6, Arts martiaux).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-saint-patrick"
+            },
+            {
+              "id": "fi13-stout-13",
+              "nom": "Stout",
+              "source": "Ange d'Yves, grade 3 – Tierce européenne",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 10,
+                "pr": 10,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 35,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Revolver gros calibre (arme estimée)",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Philosophie",
+                  "r": 8
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 2
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 2
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 4
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 8
+                },
+                {
+                  "n": "Détection des créatures invisibles",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 5
+                }
+              ],
+              "talents": "Combat 6+, Tir 3 (armes de poing 5), Corps à corps 5, Discrétion 5, Défense 6, Culture irlandaise 5+, Gaélique 5, Tenir l'alcool 4 ; Bénédiction « fertilité » ; avantage : Lieu de réunion (château)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vingtaine apparente, blond, yeux verts, menton puissant, nez cassé avec élégance, plus d'1,90 m : plaît beaucoup aux femmes. Habitant de Derry, gardien des lutins et du gaélique depuis le Ve siècle ; le plus discret et subtil du trio.\nPendant l'assaut de la villa : Invisibilité, Déphasage dans la cave, puis Téléportation dehors avec Jocelyne qu'il range dans la 4L avant de se jeter dans la mêlée.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nArme non précisée : revolver gros calibre estimé (Tir, armes de poing 5).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-stout"
+            },
+            {
+              "id": "fi13-pure-malt-14",
+              "nom": "Pure Malt",
+              "source": "Ange d'Yves, grade 3 – Tierce européenne",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 35,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Philosophie",
+                  "r": 8
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 2
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 6
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 6
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 6, Corps à corps 6, Défense 6, Culture irlandaise 5+, Gaélique 5+, Baratin 7, Danses folkloriques irlandaises 5, Tenir l'alcool 7+ ; avertissement sans frais : gras",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentaine apparente, caricature d'Irlandais : gros ventre, oreilles décollées, nez rougi par la Guinness, cheveux roux frisés. Habitant de Cork, en poste depuis le Ve siècle ; jovial, blagueur, toujours prêt à payer sa tournée… et à la fois très malin et très bourrin.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nPas d'arme indiquée : attaque à mains nues (Corps à corps 6, Arts martiaux, Membre blindé).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-pure-malt"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi13-sc-villa",
+          "nom": "8. La villa de la Garde carmine",
+          "lieu": "Villa louée près de Douarnenez – deux étages et une cave, mardi",
+          "notes": "Infiltration : un démon patrouille en permanence dans le jardin, aucune alarme. La cave abrite les prisonniers, Jocelyne Rochot et Henry Leones, le sorcier pisteur. Dès que les PJ y entrent, Henry les repère et leur parle par télépathie : il indique sa pièce et promet de tout dire s'ils le sauvent. Porte épaisse, serrure facile à crocheter.\nDès que les PJ entrent dans sa pièce, la Tierce attaque : énorme explosion à l'étage et chaos total. Madame Garret et Willy descendent à la cave exfiltrer les prisonniers et tombent sur les PJ ; les autres démons de Belial affrontent Saint Patrick et Pure Malt ; Stout entre dans la cave (Invisibilité, Déphasage), se téléporte dehors avec Jocelyne, la range dans la 4L et se jette dans la mêlée.\nIdéalement, les PJ sont au milieu du carnage quand Jocelyne sort de la voiture en psalmodiant quelque chose d'incompréhensible, puis s'enflamme et fond de l'intérieur (combustion spontanée). Henry hurle qu'il dira tout si on l'aide à fuir. Drummond et ses compagnons survivants tentent de poursuivre les PJ, la Tierce à leurs trousses : les anges éliminent les démons de Belial mais laissent fuir les PJ (ils savent ce qu'ils voulaient et Yves pense que les PJ ont un rôle à jouer).\nPNJ du combat : la Garde carmine (adversaires). La Tierce, Henry et Jocelyne sont décrits dans les scènes voisines.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi13-drummond-15",
+              "nom": "Monsieur Drummond",
+              "source": "Démon de Belial, grade 3 – chef de l'équipe de la Garde carmine",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 30,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Club de golf maudit mineur",
+                  "att": 6,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Incendie",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 3, Défense 3, Baratin 5, Conduite 3, Droit des affaires 4 ; avertissement sans frais : dandy. Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Homme mince d'une soixantaine d'années, dégarni, tiré à quatre épingles, écharpe rouge carmin. Poli, réservé, violent à froid : chef sévère et juste, dévoué à Belial.\nLundi, il attend les PJ au bar de l'hôtel, ne cache ni sa nature ni son appartenance aux forces d'élite du prince du feu et les invite au thé. Belial, renseigné par Aurélie (ou par le micro qu'elle a posé dans le bureau de Fabien), le croit face à des alliés manipulables lancés sur Andrealphus ; plus froid si les PJ ont été reconnus lors des rixes précédentes.\nObjectif : les envoyer sur une fausse piste (Andrealphus aurait fait des recherches à la bibliothèque sur la cité d'Ys et loué un bateau la veille). Selon l'habileté des PJ, il peut lâcher qu'il est de la Garde carmine, avec une équipe complète, qu'il sait la reine de beauté possédée par la meuf, qu'il reste sur place et qu'il connaît leur mission. S'ils sont lents, c'est lui qui apprend qu'ils savent pour la meuf. Repart en van noir aux vitres teintées en leur conseillant de ne pas se mêler de ses affaires.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-drummond"
+            },
+            {
+              "id": "fi13-virginia-16",
+              "nom": "Virginia",
+              "source": "Démone de Belial, grade 3 – Garde carmine",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 4,
+                "vo": 8,
+                "pr": 6,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre (arme estimée)",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 6
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 6
+                }
+              ],
+              "talents": "Tir 3, Défense 5, Séduction 4, Rouler des joints 4 ; avertissement sans frais : besoin d'acte sexuel. Feu de Prométhée 3 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande rousse de 19 ans, mi-provocante mi-sainte-nitouche : chemisier, jupe plissée et couettes, mais bas résille et talons aiguilles démesurés. Mène Willy par le bout du nez.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée par le livre : revolver petit calibre estimé d'après son talent de Tir.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-virginia"
+            },
+            {
+              "id": "fi13-arnold-17",
+              "nom": "Arnold",
+              "source": "Démon de Belial, grade 3 – Garde carmine",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 8,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 11,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Réduction",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                }
+              ],
+              "talents": "Corps à corps 5+, Défense 5, Combat 5, S'occuper des poissons rouges 3 ; avertissement sans frais : tic (« Qu'est-ce que tu me racontes là ? »). Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné dans un gamin noir de douze ans, petit, bouille sympathique et sourire permanent : joue l'enfant innocent, mais c'est un bagarreur cruel et vicieux.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée : attaque à mains nues avec Corps à corps 5+.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-arnold"
+            },
+            {
+              "id": "fi13-willy-18",
+              "nom": "Willy",
+              "source": "Démon de Belial, grade 3 – Garde carmine",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 26,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Batte (arme estimée)",
+                  "att": 14,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Incendie",
+                  "r": 6
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 6
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 7, Défense 6+, Basket-ball 5 ; avertissement sans frais : kleptomanie. Feu de Prométhée 3 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand ado noir, mince et musclé, coupe afro courte, habillé en petit bourgeois catholique (chemisette, pull marin, velours, mocassins). Obnubilé par Virginia, qui en fait ce qu'elle veut : il la protège toujours en combat.\nPendant l'assaut de la villa, descend avec Madame Garret à la cave pour exfiltrer les prisonniers.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée : batte estimée pour son talent de Combat 7.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-willy"
+            },
+            {
+              "id": "fi13-garret-19",
+              "nom": "Madame Garret",
+              "source": "Démone de Belial, grade 3 – Garde carmine (intendante)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 2,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 27,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Aspirateur chromé",
+                  "att": 15,
+                  "prec": -2,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Incendie",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 4
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 7+, Défense 2, Tir 3, Torture 3, Faire le thé 4 ; avertissement sans frais : grasse. Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grosse dame d'une cinquantaine d'années, chignon, tailleur beigeasse : mère poule souriante qui veille à la santé et à l'intendance du groupe. En combat, manie avec une redoutable efficacité un aspirateur chromé.\nPendant l'assaut de la villa, descend avec Willy à la cave pour exfiltrer les prisonniers.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-garret"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi13-ch-villa",
+              "q": "Comment les PJ abordent-ils la villa ?",
+              "opts": [
+                {
+                  "t": "Infiltration discrète par la cave",
+                  "suite": "Henry les contacte par télépathie ; l'assaut de la Tierce éclate quand ils ouvrent sa porte : Garret et Willy leur tombent dessus à la cave."
+                },
+                {
+                  "t": "Attaque frontale",
+                  "suite": "Les cinq gardes de grade 3 les reçoivent au complet avant l'arrivée de la Tierce : très dangereux."
+                },
+                {
+                  "t": "Ils restent en observation",
+                  "suite": "La Tierce attaque seule ; les PJ assistent de loin à la combustion de Jocelyne et peuvent récupérer Henry en fuite."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi13-sc-omen",
+          "nom": "9. A good omen : l'interrogatoire d'Henry",
+          "lieu": "En lieu sûr, puis le train du retour pour Paris – mardi",
+          "notes": "Au calme, Henry raconte : la meuf est une humaine morte que Belial essaie d'invoquer depuis un moment ; les corps d'accueil humains ne tiennent pas et finissent en combustion spontanée au bout de quelques jours ou heures ; l'invocation ratée la fait osciller entre les Marches et la Terre, et la Garde carmine est là pour effacer les traces. Elle se rapprochera de la Terre d'ici quelque temps (il ne sait pas quand) et Belial semble avoir un projet pour cette occasion. D'après les conversations des démons, l'incarnation ne chasse pas l'esprit de l'hôte : leurs esprits se mêlent, ce qui donne à la meuf le don de prophétie. Il n'a jamais eu le droit d'approcher les incarnations, mais Drummond lui a avoué que cela avait à voir avec la fin du monde.\nFabien laisse carte blanche pour Henry mais ordonne de rentrer au plus vite : cette histoire de fin du monde ne le rassure pas du tout. Les PJ prennent le train pour Paris (suite : « Interzone », qui commence par l'attaque du Centre de Tri par la Garde carmine).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi13-henry-20",
+              "nom": "Henry Leones",
+              "source": "Sorcier humain, pisteur prisonnier de la Garde carmine",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 8,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Aisance sociale 3, Baratin 2, Écrire des nouvelles fantastiques 4 ; sorcellerie : Pentacle pour ange 2, Invocation d'un ange 2, Demande à un ange 2, Contrôle d'un ange 2, Basse sorcellerie 3 ; sorts annexes : Vrai nom, Localisation",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vingtaine, long et maigre, grosses lunettes rondes, crâne rasé. Étudiant en sorcellerie et auteur de nouvelles (bière et bretzels) jusqu'à son enlèvement par les serviteurs de Belial pour pister les incarnations de la meuf. Malin : sa seule chance est de trahir ses employeurs.\nRepère les PJ dès qu'ils entrent dans la cave et les contacte par télépathie pour qu'ils le libèrent, contre tout ce qu'il sait.\nCe qu'il sait : la meuf est une humaine morte que Belial essaie d'invoquer ; les corps d'accueil humains ne tiennent pas (combustion spontanée en quelques jours ou quelques heures) ; l'invocation ratée la fait osciller entre Marches et Terre et la Garde est là pour effacer les traces ; elle sera bientôt proche de la Terre (quand, il l'ignore) et Belial a un projet pour cette occasion ; l'esprit de l'hôte reste et se mélange à celui de la meuf, d'où la prophétie ; Drummond lui a dit que ça avait à voir avec la fin du monde.\nPas de PP ni de défense indiquée : défense fixée à 2 (niveau 1).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82.",
+              "typeId": "type-fi13-henry"
+            },
+            {
+              "id": "fi13-fabien-21",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Briefing du samedi matin : persuadé qu'Andrealphus est derrière la mort de la reine de beauté, il a déjà réservé TGV pour Quimper et hôtel. Mission : mettre la main sur le prince du sexe, discrètement, et camoufler l'étrangeté de l'affaire en orientant police et anges vers un coupable local. Demande un rapport téléphonique régulier.\nSurpris par le dessin des pendentifs « B » et « C » ; conseille d'éliminer le pharmacien ; laisse carte blanche pour Henry mais exige un retour rapide (la « fin du monde » l'inquiète).\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "noSource": true,
+              "typeId": "type-fi13-fabien"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi13-ch-henry",
+              "q": "Que font les PJ d'Henry Leones ?",
+              "opts": [
+                {
+                  "t": "Ils le ramènent au Centre de Tri",
+                  "suite": "Fabien récupère un sorcier capable de pister la meuf ; Belial a une raison de plus d'en vouloir au Centre (voir « Interzone »)."
+                },
+                {
+                  "t": "Ils le relâchent",
+                  "suite": "Henry disparaît dans la nature, trop heureux d'avoir échappé à Belial."
+                },
+                {
+                  "t": "Ils le tuent",
+                  "suite": "Plus de témoin humain ; ce qu'il savait ne survit que dans le rapport des PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795375954211,
+      "updatedAt": 1795375954211
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi13-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Briefing du samedi matin : persuadé qu'Andrealphus est derrière la mort de la reine de beauté, il a déjà réservé TGV pour Quimper et hôtel. Mission : mettre la main sur le prince du sexe, discrètement, et camoufler l'étrangeté de l'affaire en orientant police et anges vers un coupable local. Demande un rapport téléphonique régulier.\nSurpris par le dessin des pendentifs « B » et « C » ; conseille d'éliminer le pharmacien ; laisse carte blanche pour Henry mais exige un retour rapide (la « fin du monde » l'inquiète).\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+      "noSource": true
+    },
+    {
+      "id": "type-fi13-anne-edec",
+      "nom": "Anne Edec",
+      "source": "Humaine, logeuse de l'hôtel de la place de l'Enfer",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieille fille charmante qui tient l'hôtel avec son fils Erwan (quadragénaire maigrichon, grosses lunettes, pulls jacquard trop grands, un peu simplet). Accueille les PJ avec du kouign-amann et un « Lancelot » (bière blonde, cidre brut et chouchen à parts égales).\nConnaissait un peu Nathalie : donne l'adresse des parents si on le lui demande gentiment. Interrogée sur les préparations à base de champignons, elle cite le pharmacien André Carrefour, qui lui a vendu des remèdes « ancestraux ».\nAnnonce la visite de Drummond au bar de l'hôtel.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-ascoet",
+      "nom": "Inspecteur Gwénaël Ascoët",
+      "source": "Humain, police judiciaire, chargé de l'enquête",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Près de deux mètres, gueule de bagnard de film avec Lino Ventura ; laconique, déteste journalistes et curieux. Sans très bonne excuse, il éconduit les PJ ; pouvoirs ou violence sur un policier se paieront en discrétion.\nCe qu'il sait : le touriste (écossais) qui a trouvé le corps a été relâché ; autopsie sans trace de violence ; suspects habituels sans consistance (Rachid, les rôlistes, Henri Petitbois).\nLundi, après la visite de Drummond, il débarque à l'hôtel : nouvelle victime, Émeline Duchez. Questions sur la nuit des PJ, contrôle des papiers, fouille des chambres (« et cette épée longue sous le lit ? »), questions sur la botanique et les champignons. Si on le fait parler, il lâche que la police scientifique a trouvé des traces d'un poison artisanal aux champignons locaux dans le sang de Nathalie (information non publiée).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-guy-hemon",
+      "nom": "Guy et Marie Hémon",
+      "source": "Humains, parents de Nathalie",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Guy : professeur d'histoire-géo, militant d'un parti d'extrême droite dissident tendance catho intégriste, fier d'avoir une Miss Bretagne « de souche ». Ravi de parler à des journalistes ou à de « bons Français ». Marie : effacée, éplorée, réfugiée dans le ménage et le point de croix.\nRien d'utile dans leurs propos, mais ils montrent la chambre de Nathalie : pièce impersonnelle ; sur le bureau, des dessins au fusain dont un fleuve où se baigne une jeune femme noire vue de dos, observée par deux hommes portant des pendentifs « B » et « C » (Belial et Crocell : visions de la meuf pendant la possession).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-marion",
+      "nom": "Marion Leguennec",
+      "source": "Humaine, meilleure amie de Nathalie",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite brune boulotte, effondrée, facile à faire parler. Décrit Nathalie comme sérieuse et serviable (défilés mineurs, BTS Action commerciale). Mise en confiance, elle parle de son cousin Bernard et de ses amis rôlistes, et des mœurs d'Henri Petitbois, à qui Nathalie a dû céder pour ses ambitions de miss (confidence faite sous le sceau du secret).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-rachid",
+      "nom": "Rachid",
+      "source": "Humain, jeune Kurde de Turquie sans papiers",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Coupable idéal n° 1. Réfugié parti de Sangatte après deux échecs pour passer en Angleterre, il espère embarquer clandestinement depuis Douarnenez. Dort sur la plage, mendie, a parlé plusieurs fois avec Nathalie devant témoins près de l'hôtel. Le soir du meurtre, il a tenté de monter sur un cargo et s'est fait tabasser par l'équipage ; depuis, il se cache sur la plage du Ris.\nFacile à accuser : cacher sur lui des affaires de Nathalie et le livrer à la police.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-petitbois",
+      "nom": "Henri Petitbois",
+      "source": "Humain, responsable du comité Miss France local",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Coupable idéal n° 2. Cinquantenaire mielleux qui abuse de sa position auprès des candidates ; Nathalie y est passée. Enregistre ses ébats sur un petit magnétophone posé sur la table de nuit et garde les cassettes : si la police les trouve, il sera fortement soupçonné d'avoir voulu faire taire la belle. On murmure qu'il était secrètement amoureux d'elle.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-rolistes",
+      "nom": "Les rôlistes (Bernard, Grégoire, Ludovic, Tristan)",
+      "source": "Humains, bande de joueurs de jeux de rôle",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Coupables idéaux n° 3. Bernard Mazéas (23 ans, maigrichon acnéique, cousin germain de Nathalie), Grégoire Nepont (19 ans, grand et gros, fan d'informatique), Ludovic Garnier (25 ans, hardos, pentacle au cou), Tristan Stivell (20 ans, meneur de jeu « charismatique », baggies et néométal).\nIls jouent à un In Nomine Satanis maison (personnages grade 3 à 70 PP…), font des chasses à l'ange dans les bois, des profanations de tombes et de l'épée en mousse chez Ludovic. Tous ont tenté leur chance avec Nathalie (parties dans la cave de Tristan), sans succès.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-jocelyne",
+      "nom": "Jocelyne Rochot",
+      "source": "Humaine, vendeuse de poisson à la criée, corps d'accueil de la meuf",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Mère de quatre enfants, mari alcoolique. Devenue le nouveau corps d'accueil de la meuf après la mort de Nathalie. Prisonnière de la Garde carmine dans la cave de la villa, interrogée sans grand résultat.\nPendant l'assaut de la Tierce, Stout l'enlève et la met dans la 4L ; elle en ressort en psalmodiant puis meurt de combustion spontanée devant tout le monde.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-andre",
+      "nom": "André Carrefour",
+      "source": "Tueur en série possédé, pharmacien à Douarnenez",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 26,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Charme",
+          "r": 4
+        },
+        {
+          "n": "Augmentation de Volonté",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Détection des ennemis",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        },
+        {
+          "n": "Camisole",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 3, Défense 3, Pharmacologie 4, Vélo 3, Faire des cocktails 3 ; avertissement sans frais : tueur psychopathe",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quinquagénaire, cheveu rare, moustache, sourire de pub pour dentifrice. Ancien pharmacien parisien coureur de jupons, mort d'une crise cardiaque en plein ébat puis « miraculeusement » ranimé ; installé à Douarnenez depuis un an. Obsédé par les femmes, créatures maléfiques, et par les chiffres de leurs corps.\nLe vrai meurtrier de Nathalie (sa 4e victime ; les trois autres pourrissent dans les bois) et d'Émeline Duchez : il les invite pour un « dernier verre » chez lui, les empoisonne à l'amanite phalloïde, relève leurs mensurations puis jette le corps dans un fourré.\nDans la journée, à la pharmacie toujours pleine : souriant, ment par omission (Détection du mensonge efficace s'il passe ses défenses mentales). Effraction de l'appartement : alarme, il arrive quelques minutes plus tard. Le soir, il traîne en « repérage » jusque vers minuit.\nAppartement : loft blanc, d'un ordre maniaque ; champignons dans le double fond du minibar ; derrière une tenture, des colonnes de mensurations écrites avec son propre sang, les noms de tous les princes-démons et d'une centaine de démons, et sous le numéro de Nathalie « Trône » et « Fin du monde » (les derniers mots de la mourante).\nMécanique sans conscience, il entend ces noms en dormant et ne sait rien d'Andrealphus ni de la meuf. Attaqué : Charme sur le démon le plus bourrin pour le retourner contre ses camarades, puis il grille tous ses PP. Pouvoirs démoniaques, mais ni aura, ni réaction à Détection du mal, ni langage démoniaque ; son corps ne disparaît pas à sa mort (il faut s'en débarrasser).\nPas d'arme : Corps à corps 3 à mains nues.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-drummond",
+      "nom": "Monsieur Drummond",
+      "source": "Démon de Belial, grade 3 – chef de l'équipe de la Garde carmine",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 8,
+        "vo": 6,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 30,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Club de golf maudit mineur",
+          "att": 6,
+          "prec": 3,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 8
+        },
+        {
+          "n": "Incendie",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Détection du bien",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Peur",
+          "r": 2
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 3, Défense 3, Baratin 5, Conduite 3, Droit des affaires 4 ; avertissement sans frais : dandy. Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Homme mince d'une soixantaine d'années, dégarni, tiré à quatre épingles, écharpe rouge carmin. Poli, réservé, violent à froid : chef sévère et juste, dévoué à Belial.\nLundi, il attend les PJ au bar de l'hôtel, ne cache ni sa nature ni son appartenance aux forces d'élite du prince du feu et les invite au thé. Belial, renseigné par Aurélie (ou par le micro qu'elle a posé dans le bureau de Fabien), le croit face à des alliés manipulables lancés sur Andrealphus ; plus froid si les PJ ont été reconnus lors des rixes précédentes.\nObjectif : les envoyer sur une fausse piste (Andrealphus aurait fait des recherches à la bibliothèque sur la cité d'Ys et loué un bateau la veille). Selon l'habileté des PJ, il peut lâcher qu'il est de la Garde carmine, avec une équipe complète, qu'il sait la reine de beauté possédée par la meuf, qu'il reste sur place et qu'il connaît leur mission. S'ils sont lents, c'est lui qui apprend qu'ils savent pour la meuf. Repart en van noir aux vitres teintées en leur conseillant de ne pas se mêler de ses affaires.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-virginia",
+      "nom": "Virginia",
+      "source": "Démone de Belial, grade 3 – Garde carmine",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 4,
+        "vo": 8,
+        "pr": 6,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Revolver petit calibre (arme estimée)",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Incendie",
+          "r": 6
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Détection du bien",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 6
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Détection du danger",
+          "r": 6
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 6
+        }
+      ],
+      "talents": "Tir 3, Défense 5, Séduction 4, Rouler des joints 4 ; avertissement sans frais : besoin d'acte sexuel. Feu de Prométhée 3 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande rousse de 19 ans, mi-provocante mi-sainte-nitouche : chemisier, jupe plissée et couettes, mais bas résille et talons aiguilles démesurés. Mène Willy par le bout du nez.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée par le livre : revolver petit calibre estimé d'après son talent de Tir.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-arnold",
+      "nom": "Arnold",
+      "source": "Démon de Belial, grade 3 – Garde carmine",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 8,
+        "pe": 8,
+        "vo": 6,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 11,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 8
+        },
+        {
+          "n": "Incendie",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 6
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Réduction",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 4
+        }
+      ],
+      "talents": "Corps à corps 5+, Défense 5, Combat 5, S'occuper des poissons rouges 3 ; avertissement sans frais : tic (« Qu'est-ce que tu me racontes là ? »). Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné dans un gamin noir de douze ans, petit, bouille sympathique et sourire permanent : joue l'enfant innocent, mais c'est un bagarreur cruel et vicieux.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée : attaque à mains nues avec Corps à corps 5+.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-willy",
+      "nom": "Willy",
+      "source": "Démon de Belial, grade 3 – Garde carmine",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 10,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 26,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Batte (arme estimée)",
+          "att": 14,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 6
+        },
+        {
+          "n": "Incendie",
+          "r": 6
+        },
+        {
+          "n": "Invisibilité",
+          "r": 6
+        },
+        {
+          "n": "Non-détection",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 7, Défense 6+, Basket-ball 5 ; avertissement sans frais : kleptomanie. Feu de Prométhée 3 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand ado noir, mince et musclé, coupe afro courte, habillé en petit bourgeois catholique (chemisette, pull marin, velours, mocassins). Obnubilé par Virginia, qui en fait ce qu'elle veut : il la protège toujours en combat.\nPendant l'assaut de la villa, descend avec Madame Garret à la cave pour exfiltrer les prisonniers.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nArme non précisée : batte estimée pour son talent de Combat 7.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-garret",
+      "nom": "Madame Garret",
+      "source": "Démone de Belial, grade 3 – Garde carmine (intendante)",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 2,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 10
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 27,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Aspirateur chromé",
+          "att": 15,
+          "prec": -2,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 8
+        },
+        {
+          "n": "Incendie",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Vitesse",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        },
+        {
+          "n": "Détection du danger",
+          "r": 4
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 7+, Défense 2, Tir 3, Torture 3, Faire le thé 4 ; avertissement sans frais : grasse. Feu de Prométhée 4 (pouvoir de la Garde carmine absent des règles, Fire and Ice p. 140 : langue de feu bleutée, précision +2, puissance niveau +3, portée très courte, brûle même les immunisés au feu ; en constant, enflamme une arme de contact en métal)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grosse dame d'une cinquantaine d'années, chignon, tailleur beigeasse : mère poule souriante qui veille à la santé et à l'intendance du groupe. En combat, manie avec une redoutable efficacité un aspirateur chromé.\nPendant l'assaut de la villa, descend avec Willy à la cave pour exfiltrer les prisonniers.\nMembre de la Garde carmine (élite de Belial) : écharpe rouge carmin, loge à la villa louée par Drummond sous le nom de Georges Michel.\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-henry",
+      "nom": "Henry Leones",
+      "source": "Sorcier humain, pisteur prisonnier de la Garde carmine",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 8,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Aisance sociale 3, Baratin 2, Écrire des nouvelles fantastiques 4 ; sorcellerie : Pentacle pour ange 2, Invocation d'un ange 2, Demande à un ange 2, Contrôle d'un ange 2, Basse sorcellerie 3 ; sorts annexes : Vrai nom, Localisation",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vingtaine, long et maigre, grosses lunettes rondes, crâne rasé. Étudiant en sorcellerie et auteur de nouvelles (bière et bretzels) jusqu'à son enlèvement par les serviteurs de Belial pour pister les incarnations de la meuf. Malin : sa seule chance est de trahir ses employeurs.\nRepère les PJ dès qu'ils entrent dans la cave et les contacte par télépathie pour qu'ils le libèrent, contre tout ce qu'il sait.\nCe qu'il sait : la meuf est une humaine morte que Belial essaie d'invoquer ; les corps d'accueil humains ne tiennent pas (combustion spontanée en quelques jours ou quelques heures) ; l'invocation ratée la fait osciller entre Marches et Terre et la Garde est là pour effacer les traces ; elle sera bientôt proche de la Terre (quand, il l'ignore) et Belial a un projet pour cette occasion ; l'esprit de l'hôte reste et se mélange à celui de la meuf, d'où la prophétie ; Drummond lui a dit que ça avait à voir avec la fin du monde.\nPas de PP ni de défense indiquée : défense fixée à 2 (niveau 1).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-saint-patrick",
+      "nom": "Saint Patrick",
+      "source": "Ange d'Yves, grade 3 – chef de la Tierce européenne",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 6,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 7,
+      "pfFix": 9,
+      "pp": 38,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de pacification",
+          "r": 6
+        },
+        {
+          "n": "Télépathie",
+          "r": 4
+        },
+        {
+          "n": "Philosophie",
+          "r": 8
+        },
+        {
+          "n": "Charme",
+          "r": 6
+        },
+        {
+          "n": "Bénédiction",
+          "r": 2
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 2
+        },
+        {
+          "n": "Augmentation de Volonté",
+          "r": 4
+        },
+        {
+          "n": "Psychométrie",
+          "r": 2
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 4
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Champ de force",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 6+, Corps à corps 6, Défense 6, Culture irlandaise 6, Gaélique 6, Savoir militaire 4 (tactique 7), Tenir l'alcool 5 ; Bénédiction « guérison de folies » ; avantages : Section d'enquête de serviteurs de Dieu (IRA – n'intervient pas ici), Contact avec un politicien (Sinn Féin) ; gilet pare-balles béni (protection 7)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ange quadragénaire de Belfast, froid, renfermé, solitaire et têtu ; près de deux mètres, épaules larges, bras comme des troncs, roux, taches de rousseur et collier de barbe. Évangélisateur de l'Irlande, chargé par Yves de veiller sur l'Angleterre, il préfère défendre la culture irlandaise.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nPas d'arme indiquée : attaque à mains nues (Corps à corps 6, Arts martiaux).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-stout",
+      "nom": "Stout",
+      "source": "Ange d'Yves, grade 3 – Tierce européenne",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 10,
+        "pr": 10,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 35,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Revolver gros calibre (arme estimée)",
+          "att": 10,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Philosophie",
+          "r": 8
+        },
+        {
+          "n": "Charme",
+          "r": 6
+        },
+        {
+          "n": "Bénédiction",
+          "r": 2
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 2
+        },
+        {
+          "n": "Augmentation de Volonté",
+          "r": 4
+        },
+        {
+          "n": "Psychométrie",
+          "r": 8
+        },
+        {
+          "n": "Détection des créatures invisibles",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 8
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Déphasage",
+          "r": 2
+        },
+        {
+          "n": "Non-détection",
+          "r": 5
+        }
+      ],
+      "talents": "Combat 6+, Tir 3 (armes de poing 5), Corps à corps 5, Discrétion 5, Défense 6, Culture irlandaise 5+, Gaélique 5, Tenir l'alcool 4 ; Bénédiction « fertilité » ; avantage : Lieu de réunion (château)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vingtaine apparente, blond, yeux verts, menton puissant, nez cassé avec élégance, plus d'1,90 m : plaît beaucoup aux femmes. Habitant de Derry, gardien des lutins et du gaélique depuis le Ve siècle ; le plus discret et subtil du trio.\nPendant l'assaut de la villa : Invisibilité, Déphasage dans la cave, puis Téléportation dehors avec Jocelyne qu'il range dans la 4L avant de se jeter dans la mêlée.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nArme non précisée : revolver gros calibre estimé (Tir, armes de poing 5).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    },
+    {
+      "id": "type-fi13-pure-malt",
+      "nom": "Pure Malt",
+      "source": "Ange d'Yves, grade 3 – Tierce européenne",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 35,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 12,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Aura de pacification",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 4
+        },
+        {
+          "n": "Philosophie",
+          "r": 8
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 2
+        },
+        {
+          "n": "Psychométrie",
+          "r": 6
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 6
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Téléportation",
+          "r": 2
+        },
+        {
+          "n": "Régénération",
+          "r": 6
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 6, Corps à corps 6, Défense 6, Culture irlandaise 5+, Gaélique 5+, Baratin 7, Danses folkloriques irlandaises 5, Tenir l'alcool 7+ ; avertissement sans frais : gras",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentaine apparente, caricature d'Irlandais : gros ventre, oreilles décollées, nez rougi par la Guinness, cheveux roux frisés. Habitant de Cork, en poste depuis le Ve siècle ; jovial, blagueur, toujours prêt à payer sa tournée… et à la fois très malin et très bourrin.\nMembre de la Tierce européenne d'Yves (la « Saint Patrick's Irish Crew »), basée en Irlande et en service depuis le VIe siècle : accent, tatouages celtiques, shamrocks, odeur de Guinness, 4L verte crachant des chansons traditionnelles. Bagarreurs mais très expérimentés et très intelligents. Tiers parti : ni alliés ni ennemis des PJ.\nPas d'arme indiquée : attaque à mains nues (Corps à corps 6, Arts martiaux, Membre blindé).\nSource : Fire and Ice 2, « La stratégie du pourtour », p. 71-82."
+    }
+  ],
+  "memoire": []
+}

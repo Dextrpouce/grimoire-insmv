@@ -1,0 +1,3947 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "jr4-salt-lake-city",
+      "nom": "Jésus Reviens ! – 4. Salt Lake City",
+      "resume": "Campagne « Jésus Reviens ! » (opération JR), épisode de Salt Lake City (« No Voices in the Sky »), pour anges de grade 1 à 2 envoyés par Ange et Alain (avec Yves, prévenus par Michel) via leur chargée de mission Régine. Le prophète mormon vient d'être assassiné par Moroni, ange de Laurent cofondateur du mormonisme, incarné dans un apôtre et libéré avec la complicité de Semper Fidelis. En une semaine d'élection au Quorum des Douze Apôtres, entre un démon de Scox infiltré, un psy qui s'ignore, une équipe de démons venue de Denver et les renforts sudistes de Semper Fidelis, les PJ doivent empêcher Moroni de devenir prophète (et de faire sécession) tout en accumulant des preuves contre Laurent.",
+      "notes": "Source : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77. Commanditaires des PJ : Ange et Alain (avec Yves), prévenus par Michel, via Régine ; Laurent, Dominique et Georges sont les archanges visés par l'Index d'Accusation (index L, G, D). Voir le fichier « Jésus Reviens ! – Cadre de la campagne » pour les PNJ récurrents (Régine, Sharah, Semper Fidelis…).\nHuis clos urbain dans les hautes sphères mormones, scénario non linéaire : la chronologie (J à J+7) décrit ce qui se passe sans les PJ ; au MJ d'improviser selon les motivations des PNJ.\n\nHistoire secrète (résumé) :\n• Début du XIXe : Moroni, grade 3 de Laurent dégoûté par l'Europe post-napoléonienne, s'associe à Mormon (ange d'Yves, renégat). Ils écrivent le Livre de Mormon et le font « découvrir » à Joseph Smith (années 1820-1830), qui fonde l'Église des Saints des Derniers Jours ; polygamie pour canaliser les appétits du prophète.\n• Après le lynchage de Smith, Brigham Young prend la tête de l'Église ; exode vers l'Ouest et fondation de Salt Lake City, théocratie du Deseret (1848), fortune tirée de l'or de Californie, massacre des dissidents.\n• Le Paradis découvre l'affaire. 1894 : accord négocié par Sharah, Semper Fidelis et Yves ; l'Utah rejoint les USA, rattaché à la Confédération (Semper Fidelis) ; fin officielle de la polygamie ; Moroni arrêté, dégradé et mis au placard, Mormon envoyé au purgatoire.\n• 1978 : révélation opportune autorisant les Noirs dans l'Église.\n• Opération JR : Laurent laisse Moroni « s'évader » de sa résidence surveillée ; Semper Fidelis lui expose son plan ; Moroni s'incarne dans l'apôtre Boyd K. Packer, fait passer la succession à l'élection et tue le prophète quand l'opération commence. Plan à long terme : prendre l'Utah, puis les USA, puis le monde.\n\nOrganisation de l'Église : un président (prophète et voyant), deux vice-présidents, le Quorum des Douze Apôtres (douze régions), les Septante (évêques des pieux), un prêtre par paroisse ; tout homme est prêtre entre 12 et 19 ans et part deux ans en mission à 18 ans. Doctrine secrète : Dieu est un homme exalté, tout homme peut devenir Dieu. Les temples mormons ne sont pas des lieux sacrés au regard du Grand Jeu.\n\nLe Quorum (12) : Moroni (Boyd K. Packer), Viatix (L. Tom Perry), David B. Haight (psy), Neal A. Maxwell, Russell M. Nelson, Dallin H. Oaks, M. Russell Ballard, Joseph B. Wirthlin, Richard G. Scott, Robert D. Hales, Jeffrey R. Holland, Henry B. Eyring. Vice-présidents : Thomas S. Monson, James E. Faust.\n\nTRIC – modificateurs de l'épisode :\n• Vade retro satanas dans la cathédrale catholique de SLC : +1\n• Moroni est neutralisé : −1\n• Thomas S. Monson devient prophète et dénonce l'arnaque qu'est l'Église mormone : −5\n• Viatix devient prophète et commence à pervertir l'Église mormone : −3\n• Ve'eem lo ach'shav se fait photographier bourré, métamorphosé en David Haight : −5\n• Richard G. Scott devient prophète : +1\n• Par scandale révélé sur un des apôtres : −2\n• Un humain autre que Thomas S. Monson et Richard G. Scott devient prophète : −1\n• Moroni devient le prophète des mormons : +10\n• Par semaine où Moroni est prophète : +3\n• Moroni déclenche la sécession de l'Utah : +10\n• (Jacksonville) Le KKK soutient l'Utah dans sa sécession : +10\nSeuils liés à l'épisode : TRIC 15, Semper Fidelis fait libérer Moroni, qui s'incarne dans un apôtre et fait changer la règle de succession ; TRIC 25, Moroni tue le prophète, la course à la succession commence et, sans les PJ, il devient prophète au bout d'une semaine (+10) ; TRIC 60, si Moroni est prophète, l'Utah fait sécession (+10), soutenu par le Klan s'il a fusionné (+10).\n\nIndex d'Accusation – preuves de l'épisode :\n• Témoignage de Moroni : 2 à 6L\n• Témoignage de Mormon : 2L\n• Témoignage de Thomas S. Monson : 1\n• Dossiers de Thomas S. Monson : 2\n• Témoignage des apôtres : 0\n• Témoignage de Viatix : 1\n• Témoignage des marshals de la Confédération : 2L\n(Valeur sans lettre : compte dans l'IA officiel seulement ; L = Laurent. Le MJ choisit dans la fourchette selon la qualité de la preuve.)\n\nRécompenses : pas de barème de PA propre à l'épisode ; les PA dépendent de l'IA transmis à Régine.\nFiches : caractéristiques en niveaux INS/MV (Ch des humains reporté en Foi). Valeurs estimées signalées dans les notes des fiches (griffes et ongles d'acier, Défense des zombies). Les soldats de Dieu californiens de Sharah sont des alliés et ne figurent dans aucune scène de combat.",
+      "scenes": [
+        {
+          "id": "jr4-sc-arrivee",
+          "nom": "1. Arrivée à Salt Lake City",
+          "lieu": "Salt Lake City (Utah), territoire de la Confédération – Jour J",
+          "notes": "Les PJ arrivent sur une piste laissée (plus ou moins volontairement) par Semper Fidelis ou ses proches, en pleine « campagne électorale » : le prophète vient de mourir (officiellement d'une crise cardiaque, à 93 ans) et le Quorum des Douze Apôtres doit désigner son successeur, pour la première fois par un vote.\nObjectif : empêcher Moroni (incarné dans l'apôtre Boyd K. Packer) de prendre l'Église en main, et rassembler des preuves pour l'Index d'Accusation.\nContraintes :\n• Le clergé mormon refuse toute ingérence des forces du Bien et ne pense qu'à l'élection.\n• Sharah (grade 3 de Laurent pour l'Union) ne peut aider qu'indirectement : intervenir en Confédération romprait son statu quo avec Semper Fidelis. Si les PJ lui font remarquer que Semper Fidelis ne s'est pas gêné à New York, il devient plus généreux (matériel, renseignements, voire soldats de Dieu : scène 11).\n• Huis clos urbain dans les hautes sphères mormones. Moroni veut rester discret (le meurtre du prophète était déjà « limite »). Le Quorum cache aussi un démon de Scox (Viatix = Tom Perry) et un psy (David Haight) qui s'ignorent mutuellement ; Moroni sait qu'il y a des êtres à pouvoirs parmi les apôtres et espère, à tort, qu'il s'agit d'un espion de Dominique.\n• Ville : quadrillage de blocks sans vrai centre-ville ; Temple Square (le « Vatican » des mormons, temple interdit aux non-mormons, gratte-ciel des bureaux de l'Église, musée de la foi kitsch), tramway gratuit, lac salé immense. Deux communautés qui se côtoient sans se mélanger : les « gentils » (non-mormons, clubs privés pour boire) et les LDS. Police et presse locales contrôlées par l'Église. Racisme ambiant : des PJ blancs et bien portants passent inaperçus, d'autres beaucoup moins.\n• Plus la TRIC est haute, plus les méchants sont sûrs d'eux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-monson-1",
+              "nom": "Thomas S. Monson",
+              "source": "Premier vice-président de l'Église mormone (86 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 2,
+                "pe": 3,
+                "vo": 5,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Savoir occulte 1 (Église des Saints des Derniers Jours 3+), Métier (vice-président mormon) 1+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Être convaincu de la supercherie de l'Église 2+, Soupçonner tout le monde 2, Vouloir détruire l'Église 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus âgé des vice-présidents, persuadé qu'il deviendrait prophète d'office : grosse déception. Secret : une « révélation » lui a montré que Joseph Smith était un imposteur ; depuis, il accumule en cachette les preuves des incohérences de la doctrine. Se prend un peu pour le vrai prophète qui chassera les marchands du temple, mais trop vieux, indécis et passif pour agir. Pense que la mort du prophète est un meurtre, n'ose pas faire de scandale. S'il est élu, il annoncera publiquement la supercherie (fin de l'Église).\nCoffre-fort chez lui : notes, preuves et journal de recherche (dossiers de Monson, IA 2). Candidat déclaré (argument unique : la préséance) ; se retire à J+3 pour soutenir David Haight.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-monson"
+            },
+            {
+              "id": "jr4-faust-2",
+              "nom": "James E. Faust",
+              "source": "Second vice-président de l'Église mormone (78 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 3,
+                "pe": 4,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Baratin 2, Savoir occulte 0+ (Église des Saints des Derniers Jours 1), Métier (vice-président mormon) 1+, Culture générale 1 (vie dans l'Utah au XXIe siècle 3), Paraître concerné en ne faisant rien 2, Se contenter de ce qu'il a 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Apparatchik issu d'une vieille famille riche de l'Utah, très mauvais prêtre qui trouve les rites grotesques. Aime le pouvoir sans les responsabilités : ne veut surtout pas être prophète et espère un successeur peu réformateur. En réunion, silencieux, l'air inspiré.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-faust"
+            },
+            {
+              "id": "jr4-moroni-3",
+              "nom": "Moroni (Boyd K. Packer)",
+              "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 10,
+                "vo": 14,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 56,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Épée bâtarde du Moyen-Âge ancienne",
+                  "att": 20,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 14
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Chant angélique",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Illusions",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-moroni"
+            },
+            {
+              "id": "jr4-viatix-4",
+              "nom": "Viatix (L. Tom Perry)",
+              "source": "Démon de Scox, grade 2 – apôtre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 10,
+                "vo": 13,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Possession",
+                  "r": 6
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-viatix"
+            },
+            {
+              "id": "jr4-haight-5",
+              "nom": "David B. Haight",
+              "source": "Psy indépendant – apôtre",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-haight"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr4-sc-j0",
+          "nom": "2. J : la prophétie de Russell Nelson",
+          "lieu": "Temple de Temple Square, puis hôtel Wigham – Jour J",
+          "notes": "• Tôt le matin, le Quorum prie au temple. Moroni envoie des messages subliminaux à Russell Nelson, qui entend pour la première fois une voix étrangère et répète qu'un nouveau prophète doit être désigné avant un demi-mois.\n• David Haight panique (les voix parlent à un autre que lui), mitraille Russell de questions et lit ses pensées. Moroni et Tom Perry sentent le pouvoir, prennent chacun David pour un ennemi infiltré et ne remarquent pas leur propre étrangeté.\n• Richard G. Scott fait fixer une date butoir : trois heures de débat pour retenir « dans une semaine pile ».\n• En sortant, Tom, convaincu qu'un ange est infiltré au Quorum, appelle ses collègues de Las Vegas. L'après-midi, une équipe de trois démons décolle de Denver ; elle atterrit à SLC dans la nuit et s'installe à l'hôtel Wigham, à côté de Temple Square. Tom leur rend visite : trouver l'ange et le neutraliser discrètement.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-nelson-6",
+              "nom": "Russell M. Nelson",
+              "source": "Apôtre (79 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Baratin 2, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Entendre des voix 2+, Changer d'avis subitement 2+, Portugais",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieillard schizophrène, heureux et mystique : entend des voix (son subconscient), demande la réponse au Seigneur à la moindre question et change d'avis à chaque fois. Moroni se sert de lui à J pour « prophétiser » qu'un prophète doit être désigné sous un demi-mois. Sa femme, épuisée, parle volontiers de ses délires ; ses voisins non mormons racontent ses bourdes.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-nelson"
+            },
+            {
+              "id": "jr4-haight-7",
+              "nom": "David B. Haight",
+              "source": "Psy indépendant – apôtre",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-haight"
+            },
+            {
+              "id": "jr4-moroni-8",
+              "nom": "Moroni (Boyd K. Packer)",
+              "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 10,
+                "vo": 14,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 56,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Épée bâtarde du Moyen-Âge ancienne",
+                  "att": 20,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 14
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Chant angélique",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Illusions",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-moroni"
+            },
+            {
+              "id": "jr4-viatix-9",
+              "nom": "Viatix (L. Tom Perry)",
+              "source": "Démon de Scox, grade 2 – apôtre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 10,
+                "vo": 13,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Possession",
+                  "r": 6
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-viatix"
+            },
+            {
+              "id": "jr4-scott-10",
+              "nom": "Richard G. Scott",
+              "source": "Apôtre (58 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 3,
+                "vo": 4,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3+, Baratin 3, Savoir occulte 0+ (Église des Saints des Derniers Jours 1+), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 3+, Vomir sur les gens 2, Faire des sous-entendus mesquins 3+, Écraser les autres 2, Séduction 2+, Espagnol, Humilier les gens 2, Flagorner 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arriviste obséquieux, sans morale, lâche et mesquin ; se croit le seul candidat possible. Détesté jusque dans sa famille (facile à faire parler). Relation sado-masochiste psychologique avec Jeffrey Holland, qu'il humilie en public. S'il devient prophète : TRIC +1.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-scott"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr4-sc-j1",
+          "nom": "3. J+1 : la campagne électorale",
+          "lieu": "Gratte-ciel de l'Église et ville – J+1",
+          "notes": "• Les démons repèrent la ville séparément, déguisés en touristes, et recensent les présences angéliques autour du temple : les PJ doivent rester discrets.\n• Au gratte-ciel, les apôtres se rendent visite de bureau en bureau. Candidats déclarés : Thomas Monson, Moroni, Tom Perry, David Haight, Richard G. Scott, Robert Hales (Jeffrey Holland fait campagne pour Scott).\n• Méthodes : Monson invoque sa place de premier vice-président ; Moroni joue la doctrine et la tradition (efficace sur les croyants) ; Tom joue la psychologie et laisse entendre à Neal Maxwell que certains secrets pourraient sortir (sans preuve) ; Scott et Holland flattent et menacent à mots couverts ; Hales, depuis son fauteuil médicalisé, vend une candidature de transition puisqu'il va mourir.\nBon moment pour que les PJ rencontrent les apôtres (fiches et motivations dans les PNJ).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-monson-11",
+              "nom": "Thomas S. Monson",
+              "source": "Premier vice-président de l'Église mormone (86 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 2,
+                "pe": 3,
+                "vo": 5,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Savoir occulte 1 (Église des Saints des Derniers Jours 3+), Métier (vice-président mormon) 1+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Être convaincu de la supercherie de l'Église 2+, Soupçonner tout le monde 2, Vouloir détruire l'Église 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus âgé des vice-présidents, persuadé qu'il deviendrait prophète d'office : grosse déception. Secret : une « révélation » lui a montré que Joseph Smith était un imposteur ; depuis, il accumule en cachette les preuves des incohérences de la doctrine. Se prend un peu pour le vrai prophète qui chassera les marchands du temple, mais trop vieux, indécis et passif pour agir. Pense que la mort du prophète est un meurtre, n'ose pas faire de scandale. S'il est élu, il annoncera publiquement la supercherie (fin de l'Église).\nCoffre-fort chez lui : notes, preuves et journal de recherche (dossiers de Monson, IA 2). Candidat déclaré (argument unique : la préséance) ; se retire à J+3 pour soutenir David Haight.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-monson"
+            },
+            {
+              "id": "jr4-moroni-12",
+              "nom": "Moroni (Boyd K. Packer)",
+              "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 10,
+                "vo": 14,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 56,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Épée bâtarde du Moyen-Âge ancienne",
+                  "att": 20,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 14
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Chant angélique",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Illusions",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-moroni"
+            },
+            {
+              "id": "jr4-viatix-13",
+              "nom": "Viatix (L. Tom Perry)",
+              "source": "Démon de Scox, grade 2 – apôtre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 10,
+                "vo": 13,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Possession",
+                  "r": 6
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-viatix"
+            },
+            {
+              "id": "jr4-haight-14",
+              "nom": "David B. Haight",
+              "source": "Psy indépendant – apôtre",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-haight"
+            },
+            {
+              "id": "jr4-scott-15",
+              "nom": "Richard G. Scott",
+              "source": "Apôtre (58 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 3,
+                "vo": 4,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3+, Baratin 3, Savoir occulte 0+ (Église des Saints des Derniers Jours 1+), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 3+, Vomir sur les gens 2, Faire des sous-entendus mesquins 3+, Écraser les autres 2, Séduction 2+, Espagnol, Humilier les gens 2, Flagorner 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arriviste obséquieux, sans morale, lâche et mesquin ; se croit le seul candidat possible. Détesté jusque dans sa famille (facile à faire parler). Relation sado-masochiste psychologique avec Jeffrey Holland, qu'il humilie en public. S'il devient prophète : TRIC +1.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-scott"
+            },
+            {
+              "id": "jr4-holland-16",
+              "nom": "Jeffrey R. Holland",
+              "source": "Apôtre (71 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 2, Baratin 3+, Savoir occulte 0+ (Église des Saints des Derniers Jours 1), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle et films de peplum 2+), Médire 2, Soutenir Richard G. Scott 2, Se faire humilier par Richard G. Scott 3+, Hobby (sado-masochisme) 2, Aisance sociale 2+, Savoir d'espion 1 (espionnage culturel 3+), Arabe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bras droit et souffre-douleur de Richard G. Scott, à qui il doit tout ; célibataire (rare chez les mormons). Matériel porno masochiste caché dans un coffre-fort chez lui. Allié inconditionnel de Scott.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-holland"
+            },
+            {
+              "id": "jr4-hales-17",
+              "nom": "Robert D. Hales",
+              "source": "Apôtre (83 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 3,
+                "pe": 5,
+                "vo": 7,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Savoir occulte 1+ (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Avoir le cancer de la prostate 3+, Perdre ses cheveux 3+, Faire chier le monde 2+, En vouloir au monde entier 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Cancer en phase terminale, perfusion et infirmières jour et nuit, veuf. Candidat : Dieu ne laisserait pas mourir son prophète… et un prophète mourant ferait une trêve. Pousse à accélérer. Assassiné par Ve'eem lo ach'shav (déguisé en infirmière) à J+5 dans la chronologie par défaut.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-hales"
+            },
+            {
+              "id": "jr4-maxwell-18",
+              "nom": "Neal A. Maxwell",
+              "source": "Apôtre (81 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 3,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 2, Baratin 1, Savoir occulte 1 (Église des Saints des Derniers Jours 2), Métier (apôtre mormon) 2, Culture générale 1 (vie dans l'Utah au XXIe siècle et films pornos trash 2+), Torture 3, Viol 3+, Séduction 3+, Hobby (photo) 2, Hobby (vidéo) 2, Russe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ancien enfant martyrisé, sauvé de la rue par les missions mormones, devenu un pervers sexuel : polygame en secret (17 épouses qu'il maltraite). Soutenu par la branche la plus réactionnaire : non-candidat, mais son appui est indispensable à tout candidat. Donjon sado-maso chez lui, cassettes et photos ; ses femmes et petits-enfants peuvent parler (scandale : TRIC −2).\nCible de chantage de Moroni puis de Viatix ; se suicide à J+6 dans la chronologie par défaut.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-maxwell"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr4-sc-j2",
+          "nom": "4. J+2 : la journée œcuménique",
+          "lieu": "Cathédrale catholique de SLC, puis appartement de l'évêque – J+2",
+          "notes": "• Après avoir vérifié auprès de Semper Fidelis qu'aucun ange de la Confédération n'est infiltré, Moroni organise une journée œcuménique à la cathédrale catholique pour démasquer David. Absents : Tom (il dénigre la visite chez les « papistes »), qui a rallié Joseph Wirthlin et Henry Eyring ; Dallin Oaks (fauteuil) ; Robert Hales (reste avec ses infirmières).\n• Pendant la messe, Moroni envoie des visions à l'évêque, qui se jette sur David en hurlant « Vade retro satanas » et l'asperge d'eau bénite : mêlée, fidèles en fuite, apôtres outrés (TRIC +1). Moroni est critiqué, perd du crédit et conclut que David est un ange de l'Union.\n• Au retour des apôtres, Tom comprend que la journée était un piège tendu par quelqu'un qui croit David démon : le piégeur est donc un ange, sans doute Boyd Packer, l'organisateur. Il demande à ses démons d'accélérer et de surveiller Packer. Les démons arpentent la ville à la recherche d'anges en mission.\n• Le soir, les démons torturent l'évêque chez lui (un ange télépathe l'a manipulé, sans savoir lequel), puis lestent son corps de béton et le jettent dans le Grand Lac Salé. David y voit une épreuve divine.\nCombat possible si les PJ protègent l'évêque ou surprennent les démons.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr4-ukshe-19",
+              "nom": "U'kshe (Gerry Carjaval)",
+              "source": "Démon de Baal, grade 3 – chef de la force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 13,
+                "vo": 6,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 48,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Hache de pompier (inadaptée à la parade)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes maudit ancien et rapide (attaque multiple)",
+                  "att": 14,
+                  "prec": -1,
+                  "puis": 19,
+                  "melee": false
+                },
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 21,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Douleur",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 3, Corps à corps 10+, Défense 8, Combat 3 (haches 8), Discrétion 5, Discussion 5, Enquête 5, Fouille 6, Intrusion 6, Tir 3 (armes de guerre 7), Acrobatie 8, Hobby (collection de cartes de joueurs de base-ball) 3, Athlétisme 6, Intimidation 4, Savoir d'espion 2 (se déguiser 5), Savoir militaire 2 (tactique 6), Culture générale 2 (vie aux USA au troisième millénaire 5), Savoir occulte 2 (le Grand Jeu aux USA 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Professionnel méthodique qui planifie tout ; quand le plan déraille, il passe en force. Discipliné, indifférent à la mort de ses équipiers (28 partenaires morts avant ceux-ci). Se déguise selon la mission : à SLC, en missionnaire mormon avec badge et cravate.\nArmure corporelle (chitine), Membre exotique (griffes, précision 0 / puissance +1 estimées). Lance-roquettes : précision −1, puissance +19, pénétration importante (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-ukshe"
+            },
+            {
+              "id": "jr4-veeem-20",
+              "nom": "Ve'eem lo ach'shav (David Deitzer)",
+              "source": "Démon de Hornet, grade 2 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 8,
+                "vo": 6,
+                "pr": 5,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 4
+                },
+                {
+                  "n": "Larves sous-cutanées",
+                  "r": 6
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Augmentation de force",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 8
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                }
+              ],
+              "talents": "Culture générale 1 (vie au XIXe siècle 3), Savoir occulte 1 (le Grand Jeu aux USA 3), Hobby (thé) 4, Paraître hors du coup 4, Baratin 3, Corps à corps 4, Défense 5, Discussion 4, Anglais du XIXe siècle 5, Enquête 4, Savoir militaire 2 (commander une escouade de zombies 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné depuis plus d'un siècle, resté à la fin du XIXe : courtois, gentleman de la Côte Est, sportivité très britannique même au combat ; seul péché, le thé à la bergamote. Plus ancien partenaire vivant d'U'kshe, ne se lie pas aux nouveaux. Maître des neuf zombies (cachés dans son van).\nC'est lui qui prend l'apparence de David Haight au Nevada (J+3) puis d'une infirmière pour tuer Robert Hales (J+5).\nArmure corporelle (chitine), Malédiction (maladie). Arme non donnée : poings (Corps à corps 4).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-veeem"
+            },
+            {
+              "id": "jr4-metatron-21",
+              "nom": "Métatron (Colleen Dunn)",
+              "source": "Démon de Furfur, grade 1 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 11,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Guitare électrique maudite mineure (inadaptée à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 4
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                }
+              ],
+              "talents": "Art 1 (chant 1+), Culture générale 1 (hardcore américain 3), Savoir occulte 1 (le Grand Jeu 2), Combat 2+ (armes improvisées 7), Défense 2, Acrobatie 5, Athlétisme 4, Hobby (slam diving) 4, Parler en argot sans articuler et en mangeant ses cheveux 5, Survie 1 (concerts 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le guignol de l'équipe : métalleux sympathique, limité mais enthousiaste, se bat en hurlant du Napalm Death. Refuse de quitter son look de hardeux, déteste l'ambiance puritaine de SLC.\nGuitare : précision +1, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-metatron"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-eveque",
+              "q": "Les PJ interviennent-ils pour l'évêque catholique ?",
+              "opts": [
+                {
+                  "t": "Oui, ils le protègent",
+                  "suite": "Affrontement avec la force d'intervention ; l'évêque devient un témoin (Moroni lui a envoyé des visions). Les démons savent qu'il y a d'autres anges en ville."
+                },
+                {
+                  "t": "Non",
+                  "suite": "L'évêque disparaît dans le lac ; sa disparition, signalée à J+3, sert de prétexte à Semper Fidelis pour envoyer des renforts."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-j3",
+          "nom": "5. J+3 : la chute de David Haight",
+          "lieu": "Salle du conseil du gratte-ciel ; casino du Nevada – J+3",
+          "notes": "• Débriefing du Quorum : Moroni est critiqué, David affirme sincèrement que les papistes démoniaques ne veulent pas de lui, donc qu'il doit être élu. Euphorique, il prie à voix haute et envoie des messages télépathiques à Robert Hales, Jeffrey Holland et Richard G. Scott ; Moroni (persuadé que David est un ange de l'Union) envoie des contre-messages. Robert, affaibli, fait une crise : séance levée. David sent un autre télépathe, sans l'identifier.\n• Tom fait cambrioler la maison de David par ses démons (vêtements, cartes de crédit). David prie au temple tout l'après-midi. Thomas Monson se retire et soutient David : il devient favori.\n• La police (contrôlée par l'Église) note mollement la disparition de l'évêque. Moroni appelle Semper Fidelis, qui envoie une vingtaine de soldats de Dieu d'Alabama escortant deux marshals fédéraux de la Confédération.\n• La nuit, Ve'eem lo ach'shav prend l'apparence de David, va se saouler dans un casino du Nevada avec des prostituées et se fait arrêter puis photographier par la presse locale (Polymorphie limitée : il ne se transforme qu'en présence des journalistes). Il paie sa caution et disparaît ; ses collègues surveillent la maison de David, dont la famille jure qu'il n'est pas sorti.\nTRIC : si les PJ révèlent la machination (Ve'eem photographié bourré sous l'apparence de David), −5.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr4-veeem-22",
+              "nom": "Ve'eem lo ach'shav (David Deitzer)",
+              "source": "Démon de Hornet, grade 2 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 8,
+                "vo": 6,
+                "pr": 5,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 4
+                },
+                {
+                  "n": "Larves sous-cutanées",
+                  "r": 6
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Augmentation de force",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 8
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                }
+              ],
+              "talents": "Culture générale 1 (vie au XIXe siècle 3), Savoir occulte 1 (le Grand Jeu aux USA 3), Hobby (thé) 4, Paraître hors du coup 4, Baratin 3, Corps à corps 4, Défense 5, Discussion 4, Anglais du XIXe siècle 5, Enquête 4, Savoir militaire 2 (commander une escouade de zombies 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné depuis plus d'un siècle, resté à la fin du XIXe : courtois, gentleman de la Côte Est, sportivité très britannique même au combat ; seul péché, le thé à la bergamote. Plus ancien partenaire vivant d'U'kshe, ne se lie pas aux nouveaux. Maître des neuf zombies (cachés dans son van).\nC'est lui qui prend l'apparence de David Haight au Nevada (J+3) puis d'une infirmière pour tuer Robert Hales (J+5).\nArmure corporelle (chitine), Malédiction (maladie). Arme non donnée : poings (Corps à corps 4).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-veeem"
+            },
+            {
+              "id": "jr4-zombies-23",
+              "nom": "Zombies de Ve'eem",
+              "source": "Morts-vivants (9) cachés dans le van de leur maître",
+              "type": "mortvivant",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier (Membre exotique)",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Apparence horrifique",
+                  "r": 2
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                }
+              ],
+              "talents": "Athlétisme 2, Corps à corps 3+, Intimidation 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Calmes, obéissants, et cherchent sincèrement leur tante Alice.\nOngles d'acier : précision 0 / puissance +1 estimées ; Défense non donnée (1).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-zombies"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-nevada",
+              "q": "Les PJ empêchent-ils ou exposent-ils la mise en scène du Nevada ?",
+              "opts": [
+                {
+                  "t": "Ils l'empêchent",
+                  "suite": "David reste favori ; Tom doit trouver autre chose. Affrontement probable avec Ve'eem et ses zombies."
+                },
+                {
+                  "t": "Ils la prouvent publiquement",
+                  "suite": "TRIC −5. David est blanchi ; les démons sont repérés."
+                },
+                {
+                  "t": "Ils ne voient rien",
+                  "suite": "Le scandale accable David à J+4."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-j4",
+          "nom": "6. J+4 : le conseil de discipline",
+          "lieu": "Gratte-ciel de l'Église ; temple (enterrement du prophète) – J+4",
+          "notes": "• À midi, séance extraordinaire du Quorum sur les « écarts » de David. Rapport de police du Nevada, photos, presse : tout l'accable. Tom insinue en plus que David a acheté l'évêque puis l'a fait disparaître par la mafia du Nevada. Sans vrai procès, David ne peut se défendre.\n• Richard G. Scott fait reporter le « procès » après la désignation et propose une déclaration de soutien (jésuitique) : David est à moitié blanchi mais hors course.\n• Les deux marshals enquêtent et apprennent, par des petits-enfants, les vices de Neal Maxwell ; ils préviennent Moroni.\n• En fin d'après-midi, enterrement du prophète au temple devant une foule recueillie (fenêtre pour examiner le corps avant : scène 11).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-marshals-24",
+              "nom": "Marshals de la Confédération (Walther MacDougall et William Golding)",
+              "source": "Serviteurs de Dieu de Semper Fidelis, marshals fédéraux (37 et 42 ans)",
+              "type": "serviteur",
+              "qty": 2,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 6,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil à pompe",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Peur",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 1, Corps à corps 2+, Défense 3, Enquête 3, Fouille 2+, Intrusion 2+, Métier (marshal fédéral) 2, Athlétisme 2, Culture générale 1 (droit fédéral américain et vie aux USA au troisième millénaire 2+), Savoir occulte 1 (la Confédération de Laurent 2), Être raciste sans en donner l'air 2, Intimidation 2+, Savoir occulte 1 (KKK 2), Tir 2 (armes d'épaule 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pros, calmes, sûrs de leur bon droit, pères de famille honnêtes ; leur plaque leur permet d'enquêter dans tous les États. Arrivent à J+3 escortés par les soldats de Dieu d'Alabama. Leur témoignage vaut 2L à l'IA.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-marshals"
+            },
+            {
+              "id": "jr4-haight-25",
+              "nom": "David B. Haight",
+              "source": "Psy indépendant – apôtre",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-haight"
+            },
+            {
+              "id": "jr4-scott-26",
+              "nom": "Richard G. Scott",
+              "source": "Apôtre (58 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 3,
+                "vo": 4,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3+, Baratin 3, Savoir occulte 0+ (Église des Saints des Derniers Jours 1+), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 3+, Vomir sur les gens 2, Faire des sous-entendus mesquins 3+, Écraser les autres 2, Séduction 2+, Espagnol, Humilier les gens 2, Flagorner 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arriviste obséquieux, sans morale, lâche et mesquin ; se croit le seul candidat possible. Détesté jusque dans sa famille (facile à faire parler). Relation sado-masochiste psychologique avec Jeffrey Holland, qu'il humilie en public. S'il devient prophète : TRIC +1.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-scott"
+            },
+            {
+              "id": "jr4-viatix-27",
+              "nom": "Viatix (L. Tom Perry)",
+              "source": "Démon de Scox, grade 2 – apôtre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 10,
+                "vo": 13,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Possession",
+                  "r": 6
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-viatix"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr4-sc-j5",
+          "nom": "7. J+5 : chantage et meurtre à l'hôpital",
+          "lieu": "Bureaux de l'Église ; chevet de Robert Hales ; maison de Neal Maxwell – J+5",
+          "notes": "• Restent en course : Tom, Scott, Hales et Moroni (David est mis à l'écart). Scott et Holland font la tournée des apôtres. Moroni, mal vu depuis la cathédrale, en fait autant et fait chanter Neal Maxwell (les marshals ont découvert ses travers) : Neal fait campagne pour lui, efficacement. Moroni soupçonne désormais qu'un démon a monté l'affaire du Nevada.\n• Tom comprend l'accord Neal-Moroni et passe aux grands moyens : le soir, ses démons assomment l'infirmière de relève de Robert Hales ; Ve'eem prend son apparence et tue Robert d'une bulle d'air dans la perfusion. L'infirmière est replacée dans son fauteuil après avoir été forcée à fumer du crack (pour expliquer l'« erreur médicale »).\n• La nuit, les démons fouillent la maison de Neal, découvrent son donjon et emportent photos et gadgets.\nCombat possible si les PJ veillent sur Robert ou sur Neal.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr4-ukshe-28",
+              "nom": "U'kshe (Gerry Carjaval)",
+              "source": "Démon de Baal, grade 3 – chef de la force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 13,
+                "vo": 6,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 48,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Hache de pompier (inadaptée à la parade)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes maudit ancien et rapide (attaque multiple)",
+                  "att": 14,
+                  "prec": -1,
+                  "puis": 19,
+                  "melee": false
+                },
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 21,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Douleur",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 3, Corps à corps 10+, Défense 8, Combat 3 (haches 8), Discrétion 5, Discussion 5, Enquête 5, Fouille 6, Intrusion 6, Tir 3 (armes de guerre 7), Acrobatie 8, Hobby (collection de cartes de joueurs de base-ball) 3, Athlétisme 6, Intimidation 4, Savoir d'espion 2 (se déguiser 5), Savoir militaire 2 (tactique 6), Culture générale 2 (vie aux USA au troisième millénaire 5), Savoir occulte 2 (le Grand Jeu aux USA 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Professionnel méthodique qui planifie tout ; quand le plan déraille, il passe en force. Discipliné, indifférent à la mort de ses équipiers (28 partenaires morts avant ceux-ci). Se déguise selon la mission : à SLC, en missionnaire mormon avec badge et cravate.\nArmure corporelle (chitine), Membre exotique (griffes, précision 0 / puissance +1 estimées). Lance-roquettes : précision −1, puissance +19, pénétration importante (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-ukshe"
+            },
+            {
+              "id": "jr4-veeem-29",
+              "nom": "Ve'eem lo ach'shav (David Deitzer)",
+              "source": "Démon de Hornet, grade 2 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 8,
+                "vo": 6,
+                "pr": 5,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 4
+                },
+                {
+                  "n": "Larves sous-cutanées",
+                  "r": 6
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Augmentation de force",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 8
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                }
+              ],
+              "talents": "Culture générale 1 (vie au XIXe siècle 3), Savoir occulte 1 (le Grand Jeu aux USA 3), Hobby (thé) 4, Paraître hors du coup 4, Baratin 3, Corps à corps 4, Défense 5, Discussion 4, Anglais du XIXe siècle 5, Enquête 4, Savoir militaire 2 (commander une escouade de zombies 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné depuis plus d'un siècle, resté à la fin du XIXe : courtois, gentleman de la Côte Est, sportivité très britannique même au combat ; seul péché, le thé à la bergamote. Plus ancien partenaire vivant d'U'kshe, ne se lie pas aux nouveaux. Maître des neuf zombies (cachés dans son van).\nC'est lui qui prend l'apparence de David Haight au Nevada (J+3) puis d'une infirmière pour tuer Robert Hales (J+5).\nArmure corporelle (chitine), Malédiction (maladie). Arme non donnée : poings (Corps à corps 4).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-veeem"
+            },
+            {
+              "id": "jr4-metatron-30",
+              "nom": "Métatron (Colleen Dunn)",
+              "source": "Démon de Furfur, grade 1 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 11,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Guitare électrique maudite mineure (inadaptée à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 4
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                }
+              ],
+              "talents": "Art 1 (chant 1+), Culture générale 1 (hardcore américain 3), Savoir occulte 1 (le Grand Jeu 2), Combat 2+ (armes improvisées 7), Défense 2, Acrobatie 5, Athlétisme 4, Hobby (slam diving) 4, Parler en argot sans articuler et en mangeant ses cheveux 5, Survie 1 (concerts 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le guignol de l'équipe : métalleux sympathique, limité mais enthousiaste, se bat en hurlant du Napalm Death. Refuse de quitter son look de hardeux, déteste l'ambiance puritaine de SLC.\nGuitare : précision +1, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-metatron"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-hales",
+              "q": "Robert Hales survit-il à la nuit ?",
+              "opts": [
+                {
+                  "t": "Oui, les PJ déjouent le meurtre",
+                  "suite": "Affrontement avec les démons ; l'infirmière droguée devient une piste."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Second « accident » au Quorum : la pression monte."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-j6",
+          "nom": "8. J+6 : le massacre chez Boyd Packer",
+          "lieu": "Gratte-ciel (25e étage) ; villa de Boyd Packer au bord du lac – J+6",
+          "notes": "• Tom montre à Neal les photos et objets volés, apprend que Packer le faisait chanter et le « reprend » à son compte. Paniqué, Neal se jette du 25e étage du gratte-ciel.\n• Le Quorum se réunit malgré les deux morts : consensus vers un vote à un tour. David, sans chance, frappe un grand coup : il souffle aux vice-présidents que le Seigneur choisira lui-même son prophète par un miracle ; le Quorum crie au miracle et adopte l'idée. Scott passe la nuit à prier. Tom craint que Packer, s'il est vraiment un ange, fabrique ce miracle : il envoie ses démons le tuer et prendre sa place.\n• Nuit : les trois démons massacrent la femme et les sept enfants de Packer. Absent (il cherchait David avec les soldats de Dieu et les marshals ; ceux-ci, chez David, interrogent sa famille), Moroni repère l'anomalie et appelle ses renforts : assaut de la villa. Dans la chronologie par défaut, les démons retournent en Enfer après avoir tué un marshal et douze soldats de Dieu.\n• Moroni maquille ensuite tout : ses soldats et le marshal survivant ramènent quatre ou cinq jeunes Afro-Américains (de préférence des rappeurs) qu'il abat au fusil à pompe et dispose parmi les corps ; les morts de son camp sont enterrés dans les étendues salées. Il joue la victime face à la police : la presse fait de lui un héros de l'autodéfense contre des « gangsters drogués ». Soldats et marshal survivants filent vers l'Alabama.\nScène de combat probable : démons et zombies d'un côté, Moroni et ses troupes de l'autre, tous hostiles aux PJ. Des PJ témoins du maquillage tiennent une preuve énorme contre Moroni.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr4-ukshe-31",
+              "nom": "U'kshe (Gerry Carjaval)",
+              "source": "Démon de Baal, grade 3 – chef de la force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 13,
+                "vo": 6,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 16,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 48,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Hache de pompier (inadaptée à la parade)",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Lance-roquettes maudit ancien et rapide (attaque multiple)",
+                  "att": 14,
+                  "prec": -1,
+                  "puis": 19,
+                  "melee": false
+                },
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 21,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Douleur",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 3, Corps à corps 10+, Défense 8, Combat 3 (haches 8), Discrétion 5, Discussion 5, Enquête 5, Fouille 6, Intrusion 6, Tir 3 (armes de guerre 7), Acrobatie 8, Hobby (collection de cartes de joueurs de base-ball) 3, Athlétisme 6, Intimidation 4, Savoir d'espion 2 (se déguiser 5), Savoir militaire 2 (tactique 6), Culture générale 2 (vie aux USA au troisième millénaire 5), Savoir occulte 2 (le Grand Jeu aux USA 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Professionnel méthodique qui planifie tout ; quand le plan déraille, il passe en force. Discipliné, indifférent à la mort de ses équipiers (28 partenaires morts avant ceux-ci). Se déguise selon la mission : à SLC, en missionnaire mormon avec badge et cravate.\nArmure corporelle (chitine), Membre exotique (griffes, précision 0 / puissance +1 estimées). Lance-roquettes : précision −1, puissance +19, pénétration importante (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-ukshe"
+            },
+            {
+              "id": "jr4-veeem-32",
+              "nom": "Ve'eem lo ach'shav (David Deitzer)",
+              "source": "Démon de Hornet, grade 2 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 8,
+                "vo": 6,
+                "pr": 5,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 4
+                },
+                {
+                  "n": "Larves sous-cutanées",
+                  "r": 6
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Augmentation de force",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 8
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                }
+              ],
+              "talents": "Culture générale 1 (vie au XIXe siècle 3), Savoir occulte 1 (le Grand Jeu aux USA 3), Hobby (thé) 4, Paraître hors du coup 4, Baratin 3, Corps à corps 4, Défense 5, Discussion 4, Anglais du XIXe siècle 5, Enquête 4, Savoir militaire 2 (commander une escouade de zombies 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Incarné depuis plus d'un siècle, resté à la fin du XIXe : courtois, gentleman de la Côte Est, sportivité très britannique même au combat ; seul péché, le thé à la bergamote. Plus ancien partenaire vivant d'U'kshe, ne se lie pas aux nouveaux. Maître des neuf zombies (cachés dans son van).\nC'est lui qui prend l'apparence de David Haight au Nevada (J+3) puis d'une infirmière pour tuer Robert Hales (J+5).\nArmure corporelle (chitine), Malédiction (maladie). Arme non donnée : poings (Corps à corps 4).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-veeem"
+            },
+            {
+              "id": "jr4-metatron-33",
+              "nom": "Métatron (Colleen Dunn)",
+              "source": "Démon de Furfur, grade 1 – force d'intervention",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 11,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Guitare électrique maudite mineure (inadaptée à la parade)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 4
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                }
+              ],
+              "talents": "Art 1 (chant 1+), Culture générale 1 (hardcore américain 3), Savoir occulte 1 (le Grand Jeu 2), Combat 2+ (armes improvisées 7), Défense 2, Acrobatie 5, Athlétisme 4, Hobby (slam diving) 4, Parler en argot sans articuler et en mangeant ses cheveux 5, Survie 1 (concerts 4)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le guignol de l'équipe : métalleux sympathique, limité mais enthousiaste, se bat en hurlant du Napalm Death. Refuse de quitter son look de hardeux, déteste l'ambiance puritaine de SLC.\nGuitare : précision +1, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-metatron"
+            },
+            {
+              "id": "jr4-zombies-34",
+              "nom": "Zombies de Ve'eem",
+              "source": "Morts-vivants (9) cachés dans le van de leur maître",
+              "type": "mortvivant",
+              "qty": 9,
+              "car": {
+                "fo": 6,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier (Membre exotique)",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Apparence horrifique",
+                  "r": 2
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 2
+                }
+              ],
+              "talents": "Athlétisme 2, Corps à corps 3+, Intimidation 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Calmes, obéissants, et cherchent sincèrement leur tante Alice.\nOngles d'acier : précision 0 / puissance +1 estimées ; Défense non donnée (1).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-zombies"
+            },
+            {
+              "id": "jr4-moroni-35",
+              "nom": "Moroni (Boyd K. Packer)",
+              "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 10,
+                "vo": 14,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 56,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Épée bâtarde du Moyen-Âge ancienne",
+                  "att": 20,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 14
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Chant angélique",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Illusions",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-moroni"
+            },
+            {
+              "id": "jr4-alabama-36",
+              "nom": "Soldats de Dieu d'Alabama (Dixiemen)",
+              "source": "Groupe d'intervention de Semper Fidelis (20 hommes)",
+              "type": "soldat",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 5,
+                "vo": 3,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Barre de fer",
+                  "att": 5,
+                  "prec": -1,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil à pompe",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de force",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 2+, Combat 1 (contondantes 2+), Défense 2+, Fouille 2, Tir 1 (armes d'épaule 2), Athlétisme 2+, Culture générale 1 (vie du sud des USA 2), Savoir occulte 1 (KKK et Confédération de Laurent 2), Savoir militaire 1 (tactique 2), Hobby (lynchage) 2+, Regarder le super-bowl en rotant de la Bud 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bœufs sponsorisés en T-shirts sudistes, grandes gueules, surarmés, brutaux et pas discrets : Moroni a du mal à les employer en pleine ville. Obéissent tant que ça va dans le sens de leurs convictions. Arrivent à J+3 ; douze d'entre eux meurent dans l'assaut de J+6 (chronologie par défaut).\nQuantité de la scène à ajuster (6 par défaut sur 20).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-alabama"
+            },
+            {
+              "id": "jr4-marshals-37",
+              "nom": "Marshals de la Confédération (Walther MacDougall et William Golding)",
+              "source": "Serviteurs de Dieu de Semper Fidelis, marshals fédéraux (37 et 42 ans)",
+              "type": "serviteur",
+              "qty": 2,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 6,
+                "vo": 5,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 5,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de cowboy",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Fusil à pompe",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Peur",
+                  "r": 2
+                }
+              ],
+              "talents": "Baratin 1, Corps à corps 2+, Défense 3, Enquête 3, Fouille 2+, Intrusion 2+, Métier (marshal fédéral) 2, Athlétisme 2, Culture générale 1 (droit fédéral américain et vie aux USA au troisième millénaire 2+), Savoir occulte 1 (la Confédération de Laurent 2), Être raciste sans en donner l'air 2, Intimidation 2+, Savoir occulte 1 (KKK 2), Tir 2 (armes d'épaule 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Pros, calmes, sûrs de leur bon droit, pères de famille honnêtes ; leur plaque leur permet d'enquêter dans tous les États. Arrivent à J+3 escortés par les soldats de Dieu d'Alabama. Leur témoignage vaut 2L à l'IA.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-marshals"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-massacre",
+              "q": "Que deviennent les témoins du massacre chez Packer ?",
+              "opts": [
+                {
+                  "t": "Les PJ ont des preuves du maquillage de Moroni",
+                  "suite": "Preuves accablantes contre Moroni (témoignages, corps dans les étendues salées) ; le scandale peut l'empêcher d'être prophète."
+                },
+                {
+                  "t": "Les PJ capturent un soldat de Dieu ou le marshal survivant",
+                  "suite": "Témoignage des marshals de la Confédération : 2L."
+                },
+                {
+                  "t": "Rien",
+                  "suite": "Moroni passe pour un héros ; l'enquête de police est bâclée et orientée."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-j7",
+          "nom": "9. J+7 : le miracle qui ne vient pas",
+          "lieu": "Temple de Temple Square – J+7, vers 10 h",
+          "notes": "Chronologie par défaut (échec total des PJ) :\n• Grande prière du Quorum au temple : chacun attend le miracle. David envoie à tous un message télépathique disant qu'il est le prophète.\n• Tom se lève, se déclare ange, accuse David d'être l'agent de Satan et s'entoure d'un halo (Illusions). Moroni se lève à son tour, se révèle comme l'ange fondateur, fait apparaître son épée bénie et attaque Tom en hurlant en angélique. Combat bref : Tom part en nuage de soufre après un Hurlement démoniaque qui glace l'assistance.\n• Moroni fait avouer à David ses pouvoirs, l'absout… et le décapite. Il dissout le Quorum, exige la fidélité des apôtres et des vice-présidents et le secret, puis s'installe aux bureaux de l'Église pour restaurer la théocratie (TRIC +10, puis +3 par semaine ; il peut ensuite déclencher la sécession de l'Utah : TRIC +10).\nLes PJ doivent l'empêcher de se révéler ou de parader devant ses ouailles, avec l'aide éventuelle des catholiques de SLC et de Sharah.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "jr4-moroni-38",
+              "nom": "Moroni (Boyd K. Packer)",
+              "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 13,
+                "ag": 12,
+                "pe": 10,
+                "vo": 14,
+                "pr": 15,
+                "foi": 10
+              },
+              "def": 18,
+              "prot": 0,
+              "pfFix": 13,
+              "pp": 56,
+              "seuilsFix": [
+                9,
+                19,
+                28,
+                38
+              ],
+              "armes": [
+                {
+                  "n": "Épée bâtarde du Moyen-Âge ancienne",
+                  "att": 20,
+                  "prec": 6,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 16
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 14
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Bénédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Chant angélique",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Supériorité martiale",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                },
+                {
+                  "n": "Illusions",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-moroni"
+            },
+            {
+              "id": "jr4-viatix-39",
+              "nom": "Viatix (L. Tom Perry)",
+              "source": "Démon de Scox, grade 2 – apôtre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 10,
+                "pe": 10,
+                "vo": 13,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Illusions",
+                  "r": 6
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Possession",
+                  "r": 6
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 4
+                },
+                {
+                  "n": "Malédiction",
+                  "r": 4
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-viatix"
+            },
+            {
+              "id": "jr4-haight-40",
+              "nom": "David B. Haight",
+              "source": "Psy indépendant – apôtre",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 6,
+                "vo": 7,
+                "pr": 7,
+                "foi": 6
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-haight"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-prophete",
+              "q": "Qui devient prophète de l'Église mormone ?",
+              "opts": [
+                {
+                  "t": "Moroni",
+                  "suite": "TRIC +10, puis +3 par semaine où il est prophète. TRIC 60 : sécession de l'Utah (+10, et +10 de plus si les Klans ont fusionné)."
+                },
+                {
+                  "t": "Thomas S. Monson (il dénonce l'arnaque)",
+                  "suite": "TRIC −5. L'Église mormone s'effondre."
+                },
+                {
+                  "t": "Viatix (Tom Perry)",
+                  "suite": "TRIC −3 : il commence à pervertir l'Église (problème pour plus tard)."
+                },
+                {
+                  "t": "Richard G. Scott",
+                  "suite": "TRIC +1."
+                },
+                {
+                  "t": "Un autre humain",
+                  "suite": "TRIC −1 (David Haight, Henry Eyring, Russell Ballard…)."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr4-ch-moroni",
+              "q": "Moroni est-il neutralisé ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "TRIC −1. Son témoignage peut être obtenu (2 à 6L)."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Il reste dans l'Église, prophète ou non, et peut se révéler."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-enquete",
+          "nom": "10. L'enquête : maisons, coffres et témoins",
+          "lieu": "Collines au bord du Grand Lac Salé, morgue, Régine – à tout moment",
+          "notes": "Les maisons des apôtres et vice-présidents : grandes villas de plain-pied sur les collines du lac, modestes d'aspect, rarement équipées d'alarme (criminalité la plus basse des USA), toujours pleines d'enfants et petits-enfants. Exceptions : Robert Hales (veuf, avec ses infirmières), Jeffrey Holland (célibataire), Dallin Oaks (bureau médicalisé).\nCe qu'on trouve :\n• Thomas Monson : coffre-fort avec notes, preuves extérieures et son journal de recherche sur l'escroquerie mormone et son projet de la révéler (dossiers de Monson).\n• Neal Maxwell : donjon sado-maso ; ses femmes, enfants et petits-enfants parlent ; cassettes et photos prises par des appareils automatiques.\n• Russell Nelson : rien de caché ; sa femme raconte longuement ses délires et ses revirements. Ses voisins (surtout non mormons) ont des dizaines d'anecdotes sur sa nullité.\n• Tom Perry : dans son coffre, son agenda de démon (numéros codés des contacts, supérieurs et équipe d'intervention).\n• Jeffrey Holland : matériel porno masochiste dans un coffre.\n• David Haight : sa famille se vante auprès des voisins qu'il entend des voix.\n• Richard G. Scott : détesté jusque dans sa famille ; les gens parlent facilement, Jeffrey aussi en prend pour son grade. Sa femme le méprise mais parle plus difficilement.\nLa mort du prophète : version officielle, crise cardiaque dans son lit à 93 ans (Gordon B. Hinckley ; la fiche de Monson l'appelle Kindsey). En vérité, Moroni lui rendait visite (femme et secrétaire particulier, Simon Nattanun, présents) ; vers 22 h 30, il s'est absenté « aux toilettes », est monté invisible et l'a étouffé avec l'oreiller, puis est reparti vers 23 h 30. Rapport de police et témoignages des trois témoins de la soirée disponibles ; Moroni a étouffé les questions et évité l'autopsie. À la morgue, avant l'enterrement (J+4), un examen du corps révèle des traces de housse d'oreiller dans la bouche et de légères ecchymoses sur le visage.\nMormon : l'ange d'Yves cofondateur est au purgatoire pour quelques siècles. Si les PJ en parlent à Régine, ses supérieurs demanderont à Yves de l'interroger : son témoignage s'ajoute au dossier (2L).\nRappel : seules les informations transmises à Régine comptent dans l'IA officiel ; les méchants réagissent à l'IA (garder des preuves pour le procès est possible).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-nelson-41",
+              "nom": "Russell M. Nelson",
+              "source": "Apôtre (79 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Baratin 2, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Entendre des voix 2+, Changer d'avis subitement 2+, Portugais",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieillard schizophrène, heureux et mystique : entend des voix (son subconscient), demande la réponse au Seigneur à la moindre question et change d'avis à chaque fois. Moroni se sert de lui à J pour « prophétiser » qu'un prophète doit être désigné sous un demi-mois. Sa femme, épuisée, parle volontiers de ses délires ; ses voisins non mormons racontent ses bourdes.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-nelson"
+            },
+            {
+              "id": "jr4-scott-42",
+              "nom": "Richard G. Scott",
+              "source": "Apôtre (58 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 3,
+                "vo": 4,
+                "pr": 4,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3+, Baratin 3, Savoir occulte 0+ (Église des Saints des Derniers Jours 1+), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 3+, Vomir sur les gens 2, Faire des sous-entendus mesquins 3+, Écraser les autres 2, Séduction 2+, Espagnol, Humilier les gens 2, Flagorner 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arriviste obséquieux, sans morale, lâche et mesquin ; se croit le seul candidat possible. Détesté jusque dans sa famille (facile à faire parler). Relation sado-masochiste psychologique avec Jeffrey Holland, qu'il humilie en public. S'il devient prophète : TRIC +1.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-scott"
+            },
+            {
+              "id": "jr4-holland-43",
+              "nom": "Jeffrey R. Holland",
+              "source": "Apôtre (71 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 7,
+                "vo": 4,
+                "pr": 3,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 2, Baratin 3+, Savoir occulte 0+ (Église des Saints des Derniers Jours 1), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle et films de peplum 2+), Médire 2, Soutenir Richard G. Scott 2, Se faire humilier par Richard G. Scott 3+, Hobby (sado-masochisme) 2, Aisance sociale 2+, Savoir d'espion 1 (espionnage culturel 3+), Arabe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bras droit et souffre-douleur de Richard G. Scott, à qui il doit tout ; célibataire (rare chez les mormons). Matériel porno masochiste caché dans un coffre-fort chez lui. Allié inconditionnel de Scott.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-holland"
+            },
+            {
+              "id": "jr4-maxwell-44",
+              "nom": "Neal A. Maxwell",
+              "source": "Apôtre (81 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 3,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 3
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 2, Baratin 1, Savoir occulte 1 (Église des Saints des Derniers Jours 2), Métier (apôtre mormon) 2, Culture générale 1 (vie dans l'Utah au XXIe siècle et films pornos trash 2+), Torture 3, Viol 3+, Séduction 3+, Hobby (photo) 2, Hobby (vidéo) 2, Russe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ancien enfant martyrisé, sauvé de la rue par les missions mormones, devenu un pervers sexuel : polygame en secret (17 épouses qu'il maltraite). Soutenu par la branche la plus réactionnaire : non-candidat, mais son appui est indispensable à tout candidat. Donjon sado-maso chez lui, cassettes et photos ; ses femmes et petits-enfants peuvent parler (scandale : TRIC −2).\nCible de chantage de Moroni puis de Viatix ; se suicide à J+6 dans la chronologie par défaut.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-maxwell"
+            },
+            {
+              "id": "jr4-eyring-45",
+              "nom": "Henry B. Eyring",
+              "source": "Apôtre (64 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 5,
+                "vo": 7,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3+, Savoir occulte 1+ (Église des Saints des Derniers Jours 3+), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 2+, Démonter l'argumentation de quelqu'un 3+, Se prendre la tête sur un problème 2+, Hobby (chasse) 2, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Apôtre consciencieux et sans a priori, l'esprit le plus ouvert du Quorum ; prêt à être prophète seulement s'il peut apporter quelque chose. Rallié à Tom Perry à J+2. Un interlocuteur possible pour les PJ.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-eyring"
+            },
+            {
+              "id": "jr4-ballard-46",
+              "nom": "M. Russell Ballard",
+              "source": "Apôtre (88 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 3,
+                "pe": 4,
+                "vo": 6,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 3, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 3), Prêcher avec conviction 3, Allemand",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Bien conservé, croyant sincère, humble et honnête : un des modérateurs du Quorum. Rêve d'être élu mais sa modestie l'empêche de se déclarer. Le plus choqué en cas de scandale moral touchant l'Église ou le Quorum.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-ballard"
+            },
+            {
+              "id": "jr4-wirthlin-47",
+              "nom": "Joseph B. Wirthlin",
+              "source": "Apôtre (67 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 7,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Discussion 1, Savoir occulte 1 (Église des Saints des Derniers Jours 3+), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Ne pas choisir 3, Français",
+              "esquive": false,
+              "volonte": false,
+              "notes": "L'indécis de la majorité silencieuse : suit toujours la majorité ou le plus bruyant ; peu estimé de ses pairs. Rallié à Tom Perry (ne va pas à la cathédrale à J+2).\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-wirthlin"
+            },
+            {
+              "id": "jr4-oaks-48",
+              "nom": "Dallin H. Oaks",
+              "source": "Apôtre, doyen du Quorum (91 ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 3,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 2,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Baver 3+, Faire pipi sous lui 1, Ânonner 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Totalement sénile, en fauteuil roulant dans son bureau médicalisé. Doyen : il aurait dû succéder d'office, ce qui a servi à Moroni pour faire voter l'élection. Jadis bon orateur et bon vivant.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-oaks"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "jr4-ch-mormon",
+              "q": "Les PJ demandent-ils à Régine de faire interroger Mormon ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Témoignage de Mormon versé au dossier : 2L."
+                },
+                {
+                  "t": "Non",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "jr4-ch-scandale",
+              "q": "Les PJ révèlent-ils des scandales sur les apôtres ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "TRIC −2 par scandale révélé (Maxwell, Holland, Scott…). Ballard est le plus choqué."
+                },
+                {
+                  "t": "Non",
+                  "suite": ""
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "jr4-sc-sharah",
+          "nom": "11. Les renforts de Sharah",
+          "lieu": "Planque des PJ à SLC – si Sharah est convaincu",
+          "notes": "Si les PJ convainquent Sharah que Semper Fidelis a rompu le statu quo (attentat de New York, soldats d'Alabama à SLC…), il envoie matériel, renseignements, voire vingt soldats de Dieu californiens : surfeurs bronzés en chemise hawaïenne, bons combattants, capables d'initiative, qui respectent les anges à condition d'être respectés. Ils sont des alliés des PJ (à jouer à leurs côtés, pas comme adversaires).\nVoir aussi les modificateurs de TRIC de New York sur Sharah (notes du scénario).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "jr4-californiens-49",
+              "nom": "Soldats de Dieu californiens",
+              "source": "Renforts envoyés par Sharah (20 hommes) – alliés des PJ",
+              "type": "soldat",
+              "qty": 4,
+              "car": {
+                "fo": 7,
+                "ag": 5,
+                "pe": 5,
+                "vo": 4,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 5,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Corps à corps",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 4
+                }
+              ],
+              "talents": "Surfer 2, Bronzer 2, Corps à corps 3, Défense 3, Tir 1+ (armes de poing 3), Séduction 3+, Athlétisme 2, Rouler des mécaniques en calbut de bain et chemise hawaïenne 2, Culture générale 1 (vie de surfer de la Côte Ouest 2), Savoir occulte 1 (l'Union de Laurent 2+), Espagnol, Savoir militaire 1 (tactique 2), Se mettre du gel 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Beaux gosses bronzés et cools, holster sous la chemise hawaïenne : détonnent à SLC. Motivés, protestants ouverts, capables d'initiative ; respectent les anges si le respect est réciproque.\nLe livre donne « Tir 3 » et « Tir 1+ (armes de poing 3) » : pistolet au niveau 3. Pistolet : précision −2, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77.",
+              "typeId": "type-jr4-californiens"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "jr4-sc-bilan",
+          "nom": "12. Bilan : TRIC et Index d'Accusation",
+          "lieu": "Après la désignation du prophète",
+          "notes": "Faire le compte des modificateurs de TRIC et des preuves transmises (listes dans les notes du scénario).\nLes PA des PJ dépendent de l'IA transmis ; les preuves gardées peuvent encore servir au procès final (épilogue « Heaven Can Wait »).\nSuites possibles : sécession de l'Utah (TRIC 60) si Moroni est prophète ; Viatix prophète = Église pervertie à surveiller ; soldats et marshal survivants repartis en Alabama (pistes vers Jacksonville).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795376519286,
+      "updatedAt": 1795376519286
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-jr4-monson",
+      "nom": "Thomas S. Monson",
+      "source": "Premier vice-président de l'Église mormone (86 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 2,
+        "pe": 3,
+        "vo": 5,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Savoir occulte 1 (Église des Saints des Derniers Jours 3+), Métier (vice-président mormon) 1+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Être convaincu de la supercherie de l'Église 2+, Soupçonner tout le monde 2, Vouloir détruire l'Église 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le plus âgé des vice-présidents, persuadé qu'il deviendrait prophète d'office : grosse déception. Secret : une « révélation » lui a montré que Joseph Smith était un imposteur ; depuis, il accumule en cachette les preuves des incohérences de la doctrine. Se prend un peu pour le vrai prophète qui chassera les marchands du temple, mais trop vieux, indécis et passif pour agir. Pense que la mort du prophète est un meurtre, n'ose pas faire de scandale. S'il est élu, il annoncera publiquement la supercherie (fin de l'Église).\nCoffre-fort chez lui : notes, preuves et journal de recherche (dossiers de Monson, IA 2). Candidat déclaré (argument unique : la préséance) ; se retire à J+3 pour soutenir David Haight.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-faust",
+      "nom": "James E. Faust",
+      "source": "Second vice-président de l'Église mormone (78 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 3,
+        "pe": 4,
+        "vo": 3,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Baratin 2, Savoir occulte 0+ (Église des Saints des Derniers Jours 1), Métier (vice-président mormon) 1+, Culture générale 1 (vie dans l'Utah au XXIe siècle 3), Paraître concerné en ne faisant rien 2, Se contenter de ce qu'il a 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Apparatchik issu d'une vieille famille riche de l'Utah, très mauvais prêtre qui trouve les rites grotesques. Aime le pouvoir sans les responsabilités : ne veut surtout pas être prophète et espère un successeur peu réformateur. En réunion, silencieux, l'air inspiré.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-moroni",
+      "nom": "Moroni (Boyd K. Packer)",
+      "source": "Ange de Laurent, grade 3 (officiellement prisonnier et dégradé en grade 0, mais avec ses pouvoirs) – apôtre",
+      "type": "ange",
+      "car": {
+        "fo": 13,
+        "ag": 12,
+        "pe": 10,
+        "vo": 14,
+        "pr": 15,
+        "foi": 10
+      },
+      "def": 18,
+      "prot": 0,
+      "pfFix": 13,
+      "pp": 56,
+      "seuilsFix": [
+        9,
+        19,
+        28,
+        38
+      ],
+      "armes": [
+        {
+          "n": "Épée bâtarde du Moyen-Âge ancienne",
+          "att": 20,
+          "prec": 6,
+          "puis": 8,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 16
+        },
+        {
+          "n": "Télépathie",
+          "r": 14
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Bénédiction",
+          "r": 4
+        },
+        {
+          "n": "Chant angélique",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 4
+        },
+        {
+          "n": "Caméléon",
+          "r": 4
+        },
+        {
+          "n": "Polymorphie",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 12
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        },
+        {
+          "n": "Illusions",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 6
+        }
+      ],
+      "talents": "Combat 4 (épées 10), Défense 9, Discrétion 7, Discussion 6, Aisance sociale 5, Athlétisme 7, Culture générale 2 (vie des USA au XIXe siècle et Confédération de Laurent 5), Savoir occulte 3 (Église des Saints des Derniers Jours 10+), Intimidation 8, Langue bidon du Livre de Mormon, Savoir militaire 1 (tactique en bataille rangée du Moyen-Âge 6), Survie 2 (montagne 6), Français, Allemand",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand méchant de l'épisode. Cofondateur du mormonisme avec Mormon (ange d'Yves), mis au placard depuis 1894, libéré en douce grâce à Semper Fidelis et à la complaisance de Laurent ; incarné dans l'apôtre Boyd K. Packer. A fait changer la règle de succession (élection par les pairs au lieu de l'ancienneté) puis étouffé le prophète avec un oreiller. Veut être élu ; sinon il se révélera comme ange fondateur. Fanatique, impatient, un peu perdu sans Mormon ; croit qu'un espion de Dominique noyaute l'Église. Tom Perry a remarqué son changement de personnalité.\nArmure corporelle (argent), Bénédiction (fertilité). Épée : précision +6, puissance +8 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-viatix",
+      "nom": "Viatix (L. Tom Perry)",
+      "source": "Démon de Scox, grade 2 – apôtre",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 10,
+        "pe": 10,
+        "vo": 13,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 22,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Griffes (Membre exotique)",
+          "att": 8,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Illusions",
+          "r": 6
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Possession",
+          "r": 6
+        },
+        {
+          "n": "Hurlement démoniaque",
+          "r": 4
+        },
+        {
+          "n": "Malédiction",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        },
+        {
+          "n": "Télékinésie",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        }
+      ],
+      "talents": "Baratin 5, Corps à corps 4, Défense 3, Discrétion 3, Séduction 5, Discussion 5, Aisance sociale 4, Savoir occulte 3 (témoins de Jéhovah 5), Métier (prêtre témoin de Jéhovah) 3, Métier (apôtre mormon) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Manipulateur formé chez les témoins de Jéhovah, premier démon à infiltrer durablement les mormons : incarné depuis 27 ans dans L. Tom Perry (mort dans un peep-show de Las Vegas). Veut mettre l'Église au service du Mal. Sait que le prophète a été assassiné, soupçonne un collègue humain, et cherche l'ange infiltré (il soupçonne d'abord David Haight, puis Boyd Packer). N'utilise plus ses pouvoirs depuis qu'il sent un ange dans le coin ; fait venir une équipe d'intervention de Las Vegas/Denver.\nCoffre-fort chez lui : son agenda de démon (numéros codés de ses contacts, supérieurs et de l'équipe d'intervention).\nMalédiction (folie), Membre exotique (griffes). Griffes : précision 0 / puissance +1 estimées.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-haight",
+      "nom": "David B. Haight",
+      "source": "Psy indépendant – apôtre",
+      "type": "psi",
+      "car": {
+        "fo": 3,
+        "ag": 4,
+        "pe": 6,
+        "vo": 7,
+        "pr": 7,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 8,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Baratin 3, Discussion 3, Défense 2, Aisance sociale 4, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Tchèque. Pouvoirs psioniques : Pouvoirs psychiques 3 (Télépathie 3), Pouvoirs offensifs 2 (Lire les pensées 2), Pouvoirs martiaux 2 (Détection des ennemis 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le plus jeune et le plus sympathique du Quorum : psy qui s'ignore (pas « aware », ne connaît rien du Grand Jeu), converti parce que les mormons trouvent normal d'entendre des voix. Honnête, pieux, persuadé d'être l'élu. Blocage psychologique : n'utilise ses pouvoirs qu'en priant ou dans un temple. Moroni le prend pour un ange infiltré (de Dominique puis de l'Union), Viatix pour un ange ou un démon. Toute sa famille (femme, sept enfants) se vante qu'il entend des voix.\nAucun talent de combat : pas d'arme.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-maxwell",
+      "nom": "Neal A. Maxwell",
+      "source": "Apôtre (81 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 3,
+        "pe": 4,
+        "vo": 6,
+        "pr": 5,
+        "foi": 3
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 2, Baratin 1, Savoir occulte 1 (Église des Saints des Derniers Jours 2), Métier (apôtre mormon) 2, Culture générale 1 (vie dans l'Utah au XXIe siècle et films pornos trash 2+), Torture 3, Viol 3+, Séduction 3+, Hobby (photo) 2, Hobby (vidéo) 2, Russe",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ancien enfant martyrisé, sauvé de la rue par les missions mormones, devenu un pervers sexuel : polygame en secret (17 épouses qu'il maltraite). Soutenu par la branche la plus réactionnaire : non-candidat, mais son appui est indispensable à tout candidat. Donjon sado-maso chez lui, cassettes et photos ; ses femmes et petits-enfants peuvent parler (scandale : TRIC −2).\nCible de chantage de Moroni puis de Viatix ; se suicide à J+6 dans la chronologie par défaut.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-nelson",
+      "nom": "Russell M. Nelson",
+      "source": "Apôtre (79 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 3,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Baratin 2, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Entendre des voix 2+, Changer d'avis subitement 2+, Portugais",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieillard schizophrène, heureux et mystique : entend des voix (son subconscient), demande la réponse au Seigneur à la moindre question et change d'avis à chaque fois. Moroni se sert de lui à J pour « prophétiser » qu'un prophète doit être désigné sous un demi-mois. Sa femme, épuisée, parle volontiers de ses délires ; ses voisins non mormons racontent ses bourdes.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-oaks",
+      "nom": "Dallin H. Oaks",
+      "source": "Apôtre, doyen du Quorum (91 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 3,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 2,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Baver 3+, Faire pipi sous lui 1, Ânonner 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Totalement sénile, en fauteuil roulant dans son bureau médicalisé. Doyen : il aurait dû succéder d'office, ce qui a servi à Moroni pour faire voter l'élection. Jadis bon orateur et bon vivant.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-ballard",
+      "nom": "M. Russell Ballard",
+      "source": "Apôtre (88 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 3,
+        "pe": 4,
+        "vo": 6,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Savoir occulte 1 (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 3), Prêcher avec conviction 3, Allemand",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Bien conservé, croyant sincère, humble et honnête : un des modérateurs du Quorum. Rêve d'être élu mais sa modestie l'empêche de se déclarer. Le plus choqué en cas de scandale moral touchant l'Église ou le Quorum.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-wirthlin",
+      "nom": "Joseph B. Wirthlin",
+      "source": "Apôtre (67 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 4,
+        "pe": 4,
+        "vo": 7,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 1, Savoir occulte 1 (Église des Saints des Derniers Jours 3+), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Ne pas choisir 3, Français",
+      "esquive": false,
+      "volonte": false,
+      "notes": "L'indécis de la majorité silencieuse : suit toujours la majorité ou le plus bruyant ; peu estimé de ses pairs. Rallié à Tom Perry (ne va pas à la cathédrale à J+2).\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-scott",
+      "nom": "Richard G. Scott",
+      "source": "Apôtre (58 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 3,
+        "vo": 4,
+        "pr": 4,
+        "foi": 3
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3+, Baratin 3, Savoir occulte 0+ (Église des Saints des Derniers Jours 1+), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 3+, Vomir sur les gens 2, Faire des sous-entendus mesquins 3+, Écraser les autres 2, Séduction 2+, Espagnol, Humilier les gens 2, Flagorner 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Arriviste obséquieux, sans morale, lâche et mesquin ; se croit le seul candidat possible. Détesté jusque dans sa famille (facile à faire parler). Relation sado-masochiste psychologique avec Jeffrey Holland, qu'il humilie en public. S'il devient prophète : TRIC +1.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-hales",
+      "nom": "Robert D. Hales",
+      "source": "Apôtre (83 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 3,
+        "pe": 5,
+        "vo": 7,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3, Savoir occulte 1+ (Église des Saints des Derniers Jours 3), Métier (apôtre mormon) 3+, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Avoir le cancer de la prostate 3+, Perdre ses cheveux 3+, Faire chier le monde 2+, En vouloir au monde entier 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Cancer en phase terminale, perfusion et infirmières jour et nuit, veuf. Candidat : Dieu ne laisserait pas mourir son prophète… et un prophète mourant ferait une trêve. Pousse à accélérer. Assassiné par Ve'eem lo ach'shav (déguisé en infirmière) à J+5 dans la chronologie par défaut.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-holland",
+      "nom": "Jeffrey R. Holland",
+      "source": "Apôtre (71 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 7,
+        "vo": 4,
+        "pr": 3,
+        "foi": 3
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 2, Baratin 3+, Savoir occulte 0+ (Église des Saints des Derniers Jours 1), Métier (apôtre mormon) 1, Culture générale 1 (vie dans l'Utah au XXIe siècle et films de peplum 2+), Médire 2, Soutenir Richard G. Scott 2, Se faire humilier par Richard G. Scott 3+, Hobby (sado-masochisme) 2, Aisance sociale 2+, Savoir d'espion 1 (espionnage culturel 3+), Arabe",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Bras droit et souffre-douleur de Richard G. Scott, à qui il doit tout ; célibataire (rare chez les mormons). Matériel porno masochiste caché dans un coffre-fort chez lui. Allié inconditionnel de Scott.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-eyring",
+      "nom": "Henry B. Eyring",
+      "source": "Apôtre (64 ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 5,
+        "vo": 7,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Discussion 3+, Savoir occulte 1+ (Église des Saints des Derniers Jours 3+), Métier (apôtre mormon) 3, Culture générale 1 (vie dans l'Utah au XXIe siècle 2), Aisance sociale 2+, Démonter l'argumentation de quelqu'un 3+, Se prendre la tête sur un problème 2+, Hobby (chasse) 2, Allemand",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Apôtre consciencieux et sans a priori, l'esprit le plus ouvert du Quorum ; prêt à être prophète seulement s'il peut apporter quelque chose. Rallié à Tom Perry à J+2. Un interlocuteur possible pour les PJ.\nAucun talent de combat : pas d'arme, Défense 1 (non donnée).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-californiens",
+      "nom": "Soldats de Dieu californiens",
+      "source": "Renforts envoyés par Sharah (20 hommes) – alliés des PJ",
+      "type": "soldat",
+      "car": {
+        "fo": 7,
+        "ag": 5,
+        "pe": 5,
+        "vo": 4,
+        "pr": 5,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 5,
+      "seuilsFix": [
+        4,
+        9,
+        13,
+        18
+      ],
+      "armes": [
+        {
+          "n": "Pistolet",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Corps à corps",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Anaérobiose",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 4
+        }
+      ],
+      "talents": "Surfer 2, Bronzer 2, Corps à corps 3, Défense 3, Tir 1+ (armes de poing 3), Séduction 3+, Athlétisme 2, Rouler des mécaniques en calbut de bain et chemise hawaïenne 2, Culture générale 1 (vie de surfer de la Côte Ouest 2), Savoir occulte 1 (l'Union de Laurent 2+), Espagnol, Savoir militaire 1 (tactique 2), Se mettre du gel 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Beaux gosses bronzés et cools, holster sous la chemise hawaïenne : détonnent à SLC. Motivés, protestants ouverts, capables d'initiative ; respectent les anges si le respect est réciproque.\nLe livre donne « Tir 3 » et « Tir 1+ (armes de poing 3) » : pistolet au niveau 3. Pistolet : précision −2, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-marshals",
+      "nom": "Marshals de la Confédération (Walther MacDougall et William Golding)",
+      "source": "Serviteurs de Dieu de Semper Fidelis, marshals fédéraux (37 et 42 ans)",
+      "type": "serviteur",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 6,
+        "vo": 5,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 5,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Revolver de cowboy",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Fusil à pompe",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Corps à corps",
+          "att": 5,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Peur",
+          "r": 2
+        }
+      ],
+      "talents": "Baratin 1, Corps à corps 2+, Défense 3, Enquête 3, Fouille 2+, Intrusion 2+, Métier (marshal fédéral) 2, Athlétisme 2, Culture générale 1 (droit fédéral américain et vie aux USA au troisième millénaire 2+), Savoir occulte 1 (la Confédération de Laurent 2), Être raciste sans en donner l'air 2, Intimidation 2+, Savoir occulte 1 (KKK 2), Tir 2 (armes d'épaule 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Pros, calmes, sûrs de leur bon droit, pères de famille honnêtes ; leur plaque leur permet d'enquêter dans tous les États. Arrivent à J+3 escortés par les soldats de Dieu d'Alabama. Leur témoignage vaut 2L à l'IA.\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-alabama",
+      "nom": "Soldats de Dieu d'Alabama (Dixiemen)",
+      "source": "Groupe d'intervention de Semper Fidelis (20 hommes)",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 5,
+        "vo": 3,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 5,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Barre de fer",
+          "att": 5,
+          "prec": -1,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Fusil à pompe",
+          "att": 4,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de force",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 2+, Combat 1 (contondantes 2+), Défense 2+, Fouille 2, Tir 1 (armes d'épaule 2), Athlétisme 2+, Culture générale 1 (vie du sud des USA 2), Savoir occulte 1 (KKK et Confédération de Laurent 2), Savoir militaire 1 (tactique 2), Hobby (lynchage) 2+, Regarder le super-bowl en rotant de la Bud 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Bœufs sponsorisés en T-shirts sudistes, grandes gueules, surarmés, brutaux et pas discrets : Moroni a du mal à les employer en pleine ville. Obéissent tant que ça va dans le sens de leurs convictions. Arrivent à J+3 ; douze d'entre eux meurent dans l'assaut de J+6 (chronologie par défaut).\nQuantité de la scène à ajuster (6 par défaut sur 20).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-ukshe",
+      "nom": "U'kshe (Gerry Carjaval)",
+      "source": "Démon de Baal, grade 3 – chef de la force d'intervention",
+      "type": "demon",
+      "car": {
+        "fo": 13,
+        "ag": 12,
+        "pe": 13,
+        "vo": 6,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 16,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 48,
+      "seuilsFix": [
+        8,
+        17,
+        25,
+        34
+      ],
+      "armes": [
+        {
+          "n": "Hache de pompier (inadaptée à la parade)",
+          "att": 16,
+          "prec": 0,
+          "puis": 3,
+          "melee": true
+        },
+        {
+          "n": "Lance-roquettes maudit ancien et rapide (attaque multiple)",
+          "att": 14,
+          "prec": -1,
+          "puis": 19,
+          "melee": false
+        },
+        {
+          "n": "Griffes (Membre exotique)",
+          "att": 21,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Art de combat",
+          "r": 12
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Douleur",
+          "r": 8
+        },
+        {
+          "n": "Éventration",
+          "r": 6
+        },
+        {
+          "n": "Supériorité martiale",
+          "r": 6
+        },
+        {
+          "n": "Vitesse",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        }
+      ],
+      "talents": "Baratin 3, Corps à corps 10+, Défense 8, Combat 3 (haches 8), Discrétion 5, Discussion 5, Enquête 5, Fouille 6, Intrusion 6, Tir 3 (armes de guerre 7), Acrobatie 8, Hobby (collection de cartes de joueurs de base-ball) 3, Athlétisme 6, Intimidation 4, Savoir d'espion 2 (se déguiser 5), Savoir militaire 2 (tactique 6), Culture générale 2 (vie aux USA au troisième millénaire 5), Savoir occulte 2 (le Grand Jeu aux USA 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Professionnel méthodique qui planifie tout ; quand le plan déraille, il passe en force. Discipliné, indifférent à la mort de ses équipiers (28 partenaires morts avant ceux-ci). Se déguise selon la mission : à SLC, en missionnaire mormon avec badge et cravate.\nArmure corporelle (chitine), Membre exotique (griffes, précision 0 / puissance +1 estimées). Lance-roquettes : précision −1, puissance +19, pénétration importante (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-veeem",
+      "nom": "Ve'eem lo ach'shav (David Deitzer)",
+      "source": "Démon de Hornet, grade 2 – force d'intervention",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 8,
+        "vo": 6,
+        "pr": 5,
+        "foi": 8
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Nécrose",
+          "r": 4
+        },
+        {
+          "n": "Larves sous-cutanées",
+          "r": 6
+        },
+        {
+          "n": "Résurrection macabre",
+          "r": 8
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Augmentation de force",
+          "r": 8
+        },
+        {
+          "n": "Éventration",
+          "r": 8
+        },
+        {
+          "n": "Ténèbres sataniques",
+          "r": 6
+        },
+        {
+          "n": "Malédiction",
+          "r": 4
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        }
+      ],
+      "talents": "Culture générale 1 (vie au XIXe siècle 3), Savoir occulte 1 (le Grand Jeu aux USA 3), Hobby (thé) 4, Paraître hors du coup 4, Baratin 3, Corps à corps 4, Défense 5, Discussion 4, Anglais du XIXe siècle 5, Enquête 4, Savoir militaire 2 (commander une escouade de zombies 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Incarné depuis plus d'un siècle, resté à la fin du XIXe : courtois, gentleman de la Côte Est, sportivité très britannique même au combat ; seul péché, le thé à la bergamote. Plus ancien partenaire vivant d'U'kshe, ne se lie pas aux nouveaux. Maître des neuf zombies (cachés dans son van).\nC'est lui qui prend l'apparence de David Haight au Nevada (J+3) puis d'une infirmière pour tuer Robert Hales (J+5).\nArmure corporelle (chitine), Malédiction (maladie). Arme non donnée : poings (Corps à corps 4).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-metatron",
+      "nom": "Métatron (Colleen Dunn)",
+      "source": "Démon de Furfur, grade 1 – force d'intervention",
+      "type": "demon",
+      "car": {
+        "fo": 11,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Guitare électrique maudite mineure (inadaptée à la parade)",
+          "att": 14,
+          "prec": 1,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Suicide",
+          "r": 4
+        },
+        {
+          "n": "Hurlement démoniaque",
+          "r": 4
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Absorption de violence",
+          "r": 4
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        }
+      ],
+      "talents": "Art 1 (chant 1+), Culture générale 1 (hardcore américain 3), Savoir occulte 1 (le Grand Jeu 2), Combat 2+ (armes improvisées 7), Défense 2, Acrobatie 5, Athlétisme 4, Hobby (slam diving) 4, Parler en argot sans articuler et en mangeant ses cheveux 5, Survie 1 (concerts 4)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le guignol de l'équipe : métalleux sympathique, limité mais enthousiaste, se bat en hurlant du Napalm Death. Refuse de quitter son look de hardeux, déteste l'ambiance puritaine de SLC.\nGuitare : précision +1, puissance +4 (livre).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    },
+    {
+      "id": "type-jr4-zombies",
+      "nom": "Zombies de Ve'eem",
+      "source": "Morts-vivants (9) cachés dans le van de leur maître",
+      "type": "mortvivant",
+      "car": {
+        "fo": 6,
+        "ag": 2,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 5,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Ongles d'acier (Membre exotique)",
+          "att": 7,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Apparence horrifique",
+          "r": 2
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 2
+        }
+      ],
+      "talents": "Athlétisme 2, Corps à corps 3+, Intimidation 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Calmes, obéissants, et cherchent sincèrement leur tante Alice.\nOngles d'acier : précision 0 / puissance +1 estimées ; Défense non donnée (1).\nSource : Jésus Reviens ! (INS/MV4), chap. 5 « No Voices in the Sky », p. 58-77."
+    }
+  ],
+  "memoire": []
+}

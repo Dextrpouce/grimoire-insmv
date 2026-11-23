@@ -1,0 +1,2245 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "ag7-dollars-eau-fraiche",
+      "nom": "Angelots en gelée – De dollars et d'eau fraîche",
+      "resume": "Scénario d'In Nomine Satanis parodique (« Space Devils »), en une grosse séance, pour 3 à 5 démons de grade 0 ou bas grade 1 (100-120 PA chacun). En mission officielle, les PJ doivent garantir la mise en orbite de Yukie 3, un satellite trafiqué pour Ouikka (projet « Têtard du Cosmos »), lancé par Nanane 5 depuis la base guyanaise de Kurukuku. Après un contact assassiné et une fouille de camion-poubelle, ils affrontent en temps réel des apprentis terroristes, un démon de Vapula corrompu, des parachutistes menés par des anges de Laurent, puis un bug informatique que seule une stagiaire possédée par un démon d'Haagenti peut réparer. Derrière tout cela : Gojgat, démon de Mammon, qui spécule en bourse sur la catastrophe.",
+      "notes": "Source : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.\nPages : imprimées 98-109 = PDF 97-108 (scan en bandes inversées). Pour 3 à 5 démons à 100-120 PA ; pour des PJ plus puissants, gonfler les PNJ.\n\nHistoire secrète (annexe, résumé) : Yukie 3, satellite de télécommunication norvégien, a été modifié par Shaksaya (Vapula) pour offrir aux réseaux d'Ouikka des fréquences protégées des anges : d'abord pour des terroristes humains, puis pour tout le réseau démoniaque (projet Têtard du Cosmos). Gojgat, démon de Mammon de grade 1, l'a appris en graissant la patte de Shaksaya. Il préparait déjà le sabotage d'un lancement de Nanane 5, financé par un concurrent humain : un échec ruinerait l'aérospatiale franco-européenne et l'influence de Notre-Dame sur le secteur. Il a avancé l'opération pour ensuite vendre à Ouikka son projet « Grenouille du sub-espace ». Mammon, qui a senti la spéculation, laisse faire mais ne veut pas y être mêlé : il envoie une mission officielle (les PJ) pour « vérifier les rumeurs d'attentat », prévient Ouikka par Baalberith, et donne à Gojgat l'adresse du contact des PJ.\nLes complices de Gojgat : Miju (démon de combat, corrompu avec des sucettes, tue le contact Ujkze), Shaksaya (100 000 $ et une clé USB), Grax alias Annette Ferrojite (démon d'Haagenti infiltré comme stagiaire, qui a piégé le réseau, puis rendu fou par un démon d'Abalam), le chef de la cellule terroriste (corrompu pour le « détournement »), le préfet (corrompu).\nLes anges du 9-7 : capitaine Dupont et lieutenant Trondin (Laurent), colonel Moustache (Joseph). Ils protègent les intérêts franco-européens : alliés de fait tant qu'ils ignorent Têtard du Cosmos.\nChronologie : décollage, deux minutes pour réagir aux terroristes ; minutes 1 à 4 (Shaksaya, Marie-Madeleine) ; minutes 5 à 7 (paras et anges) ; minutes 8 à 10 (négociation) ; minute 19 (grand bug) ; minute 21 (arrivée de Moustache, dossier deux heures plus tard) ; minute 181 (Shaksaya torturé s'il est capturé) ; minute 800 (fin de l'énergie de Yukie 3, Chronopost pour Kuala Lumpur).\nRécompenses (résultat de la mission) : par ange exterminé +1 PA ; Yukie 3 sur orbite +6 PA ; Gojgat démasqué +3 PA ; Shaksaya détruit -1 PA ; Yukie 3 foutu -6 PA ; par PJ corrompu et dénoncé +1 PA. Suite possible : Gojgat en PNJ récurrent.\nFiches : chiffres du livre pour les terroristes, les parachutistes (mêmes valeurs que le bestiaire des livres), Shaksaya, Trondin, Dupont, Moustache, Gojgat, la grenouille Gojgat et Grax. Miju (renvoi au livre de base) est estimé ; Marie-Madeleine reprend le serviteur de Dieu typique du livre de base ; Geogie, Marcsoin, Podzeron et Ouikka ont une fiche minimale.",
+      "scenes": [
+        {
+          "id": "ag7-sc-prologue",
+          "nom": "0. Prologue (pour le MJ)",
+          "lieu": "New York, suite de luxe ; puis le 114 allée des Groseilles",
+          "notes": "À lire ou à jouer pour planter le décor, sans les PJ.\nGojgat, démon de Mammon, spécule sur l'aérospatial : il mise tout sur un concurrent de Nanane Espace en attendant une catastrophe au prochain lancement. Mammon le surprend, flaire la combine et réclame sa part (66,6 % du chiffre d'affaires). Il refuse d'avoir l'air d'y tremper mais lui donne l'adresse du contact de la mission officielle qu'il vient d'envoyer à Kurukuku.\nGojgat se rend au 114 allée des Groseilles, polymorphé en femme, et corrompt le démon de combat qui lui ouvre avec un pot de sucettes. On entend des hurlements dans le bureau.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag7-sc-briefing",
+          "nom": "1. Requiem pour un non-briefing",
+          "lieu": "114 allée des Groseilles (pavillon dans un quartier résidentiel désert)",
+          "notes": "Chaque PJ reçoit un ordre de mission officiel, apporté par un livreur cul-de-jatte de Spaza' Trente (il surgit de la rue, du sol ou de sous le lit : témoins humains à faire disparaître). Ordre : contacter au plus vite le démon Ujkze au 114 allée des Groseilles.\nPar la fenêtre : un démon de combat à grandes cornes fait les cent pas, un pot de sucettes Chubie Chuba à la main. Il ouvre si on sonne, cache maladroitement le pot dans son dos, transpire la culpabilité, et affirme qu'Ujkze est sorti.\nMiju a l'esprit d'un enfant de huit ans : en le cuisinant gentiment, il avoue tout. Une « Nicole Kidman » est passée le matin et lui a offert les sucettes pour éliminer Ujkze et faire disparaître ses dossiers (Corruption de Mammon). Ujkze a fait PLOP ; les dossiers sont dans la grande poubelle de dehors… et les PJ se souviennent avoir croisé le camion des éboueurs en arrivant.\nMenacer Miju ou le frapper le met dans une colère noire.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-miju-1",
+              "nom": "Miju",
+              "source": "Démon de combat (grandes cornes, QI d'un enfant de huit ans)",
+              "type": "combat",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 4,
+                "vo": 3,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 10,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Grandes cornes",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 2
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 2
+                }
+              ],
+              "talents": "Athlétisme 4, Corps à corps 5, Intimidation 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Garde le pavillon du 114 allée des Groseilles. Corrompu par Gojgat (déguisé en Nicole Kidman) pour un pot de sucettes Chubie Chuba : il a éliminé Ujkze, le contact, et jeté ses dossiers dans la grande poubelle de dehors. Menteur maladroit, il cache son pot de sucettes dans son dos. Se met à table si on le cuisine gentiment ; menaces physiques ou coups le rendent fou furieux.\nLe livre renvoie au démon de combat du livre de base (p. 127) sans donner ses chiffres : profil entièrement estimé (cornes traitées comme un coup de boule casqué : précision -2, puissance +2).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-miju"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-miju",
+              "q": "Comment les PJ font-ils parler Miju ?",
+              "opts": [
+                {
+                  "t": "En douceur (flatterie, sucettes, ruse)",
+                  "suite": "Il raconte la visite de « Nicole Kidman », la mort d'Ujkze et la poubelle."
+                },
+                {
+                  "t": "Par la menace ou les coups",
+                  "suite": "Miju se fâche tout rouge : combat contre un démon de combat. Les dossiers restent à retrouver seuls."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-camion",
+          "nom": "2. La chasse au camion-poubelle",
+          "lieu": "Rues du chef-lieu, camion des éboueurs",
+          "notes": "Seule solution : rattraper et détourner le camion, puis plonger les mains dedans. Le fouiller sur la voie publique attire l'attention des humains et entraîne des complications en chaîne ; un peu de professionnalisme est attendu.\nUne fouille minutieuse rapporte : fausses cartes de la DST et faux passeports aux noms bidon mais avec les photos des couvertures des PJ, accréditations pour la base spatiale de Kurukuku (Guyane), billets pour le prochain vol.\nOption (pour ne pas jouer en mode « demi-dieu ») : un dossier technique avec l'objectif. Plans du lanceur Nanane 5 et des satellites de télécommunication, dont Yukie 3 (norvégien), trafiqué pour offrir aux sbires d'Ouikka des canaux de fréquences sécurisés contre les anges : opération « Têtard du Cosmos ». Les PJ doivent s'assurer que Yukie 3 soit bien mis en orbite, car une tentative de détournement de Nanane 5 au décollage est redoutée.\nLe décollage a lieu dans douze heures, à peu près le temps du voyage.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-fouille",
+              "q": "Où les PJ fouillent-ils le camion ?",
+              "opts": [
+                {
+                  "t": "À l'abri des regards",
+                  "suite": "Ils récupèrent tout tranquillement."
+                },
+                {
+                  "t": "En pleine rue",
+                  "suite": "Témoins, police, presse locale : complications en chaîne, au MJ de broder."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-base",
+          "nom": "3. Le 9-7 et sa base spatiale",
+          "lieu": "Kurukuku (Guyane), base de Nanane Espace, centre de commandement (CoC)",
+          "notes": "Pas de tourisme : taxi, puis la base. Grâce aux accréditations, les PJ passent six check-points en jeep jusqu'au CoC. La base comprend la rampe d'assemblage (BIF), le stockage des satellites (BAF), le pas de tir (Truz), la R&D (RuD) et le centre logistique (LOG), plein de produits chimiques prêts à sauter.\nDans la tour de contrôle : 150 ingénieurs en open space devant les écrans, la rampe derrière les baies vitrées. Au-dessus, dans le sas de coordination, quatre coordinateurs, les douze directeurs techniques des satellites, la directrice Geogie Pepelkuet et le chef de la sécurité Marcsoin Debonnaire. Le personnel fait de la figuration (« Hourra ! », « Mon Dieu ! »).\nCe que personne ne sait : douze jeunes créoles de la branche locale de la cellule terroriste ont infiltré le centre de sécurité du CoC avec de faux badges ; ils contrôlent les portes et la vidéosurveillance.\nPendant que Marcsoin vient s'enquérir de la visite de la DST, le haut-parleur égrène la procédure de mise à feu, à imiter au micro. Les PJ ont environ deux minutes : sous pression, Marcsoin appelle le centre de sécurité, qui répond que tout va bien… en jurant sur la Mecque.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag7-geogie-2",
+              "nom": "Geogie Pepelkuet",
+              "source": "Directrice de la mission Nanane 5",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 3 (estimé), Technique 3 (estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite brune impeccable qui dirige le CoC d'une main de fer ; elle prend d'abord les faux agents de la DST pour des subalternes. Les catastrophes la font craquer peu à peu, jusqu'à s'en remettre totalement aux PJ s'ils se montrent « les hommes de la situation ». Elle peut leur donner l'adresse d'Annette et, en cas de réussite, leur propose un rendez-vous à la minute 800. S'ils se sont mis le personnel à dos, elle se tourne vers Dupont et Trondin.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-geogie"
+            },
+            {
+              "id": "ag7-marcsoin-3",
+              "nom": "Marcsoin Debonnaire",
+              "source": "Responsable de la sécurité de Nanane Espace",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand métis baraqué, aux petits soins pour Geogie, méprisant avec les autres, totalement dépassé, mais prompt à s'attribuer les idées d'autrui. Sous pression, il appelle le centre de sécurité pour prouver que tout va bien (réponse : « RAS »).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-marcsoin"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag7-sc-detournement",
+          "nom": "4. Détournement de Nanane",
+          "lieu": "Tour de contrôle du CoC : sas de coordination, coursives, centre de sécurité",
+          "notes": "Les terroristes : deux au centre de sécurité, six par équipes de deux contre les trois accès de la tour (ils abattent les agents de sécurité à l'Uzi silencieux), quatre qui font irruption dans le sas.\nSi les PJ ne font rien en deux minutes : les quatre déboulent, tout le monde se jette au sol (Marcsoin en profite pour plaquer Geogie… par la poitrine), ils tirent sur les terminaux et la mission est fichue.\nS'ils réagissent à temps : ils nettoient les coursives, grimpent par une échelle externe au centre de sécurité, etc. Toute idée, même fumeuse, doit marcher : ce ne sont que des humains et les PJ doivent se sentir puissants. Nanane 5 décolle, les terroristes sont maîtrisés.\nPendant la lutte, un terminal du sas surnommé « Robert Mitchum » plante ; on passe en manuel. Un PJ resté dans le sas voit un directeur technique en profiter pour brancher une clé USB dans un autre ordinateur. Geogie appelle le centre de télémesure de Toulouse : « Toulouse, nous avons un problème. »\nPrésents mais non combattants : Geogie, Marcsoin, le personnel du sas (otages potentiels). Les autres terroristes (2 au centre de sécurité, 6 aux accès) peuvent être ajoutés.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-terroristes-4",
+              "nom": "Apprentis terroristes",
+              "source": "Branche locale de la cellule (jeunes créoles armés d'Uzi)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 3,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Uzi avec silencieux",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Baratin 1+, Conduite 2, Corps à corps 2, Défense 1+, Tir 1+ (Uzi 2), Jurer sur la vie de la Mecque 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Douze en tout : deux tiennent le centre de sécurité, six (par deux) attaquent les trois accès de la tour de contrôle, quatre font irruption dans le sas de coordination. Ils ne savent rien : leur chef, qui a donné l'ordre, a été corrompu et se trouve dans un camp d'entraînement au Soudan.\nUtiliser des pouvoirs devant eux déclenche une crise mystique aux effets variables.\nMêmes valeurs que l'entrée « Apprentis terroristes » du bestiaire des livres.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-terroristes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-deux-minutes",
+              "q": "Les PJ réagissent-ils dans les deux minutes ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Terroristes maîtrisés, Nanane 5 décolle ; Robert Mitchum plante et un directeur glisse une clé USB."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Les terroristes détruisent les terminaux : la mission de lancement est perdue."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-shaksaya",
+          "nom": "5. Dix-huit minutes : le Norvégien",
+          "lieu": "Sas de coordination, puis les toilettes du CoC",
+          "notes": "Au ralenti : le directeur à la clé USB est Andrej Belowahf, chef de projet norvégien de Yukie 3, en réalité Shaksaya, démon de Vapula de l'équipe qui a trafiqué le satellite. Corrompu par Gojgat, il sabote sa propre mission. Robert Mitchum n'était qu'une diversion (Poltergeist). La clé envoie un signal au réseau du CoC ; une stagiaire a piégé l'architecture du réseau pour déclencher le « grand bug » dès réception du signal, dix-huit minutes plus tard, au largage des satellites.\nMinute 1 : panique. Un PJ qui l'a vu faire, ou qui a Perception supérieure à 3, remarque le Norvégien qui file vers la porte.\nInterrogatoire aux toilettes : il se débat, se rend, essaie de tenir dix-huit minutes. Il finit par lâcher : « Tom Cruise » lui a donné 100 000 $ et la clé il y a deux jours ; il propose l'argent contre sa liberté. Avec Rêve, on trouve le nom de Gojgat (Mammon), avec qui il fait la fête de temps à autre.\nMinute 3 : Geogie remotive ses troupes, Nanane 5 est sur la bonne trajectoire.\nMinute 4 : au haut-parleur, « Marie-Madeleine est demandée à son poste ». Cet ingénieur prosélyte, serviteur de Dieu infiltré, a prévenu les anges et s'éclipse : on peut l'attraper si on contrôle les accès.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-shaksaya-5",
+              "nom": "Shaksaya, alias Andrej Belowahf",
+              "source": "Démon de Vapula, grade 1 (chef de projet norvégien de Yukie 3)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 22,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Jet d'acide",
+                  "att": 6,
+                  "prec": 2,
+                  "puis": 6,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Déguisement superficiel",
+                  "r": 6
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 2
+                },
+                {
+                  "n": "Invention",
+                  "r": 10
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 4
+                },
+                {
+                  "n": "Langage universel",
+                  "r": 0
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 4
+                },
+                {
+                  "n": "Poltergeist",
+                  "r": 6
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Athlétisme 2, Aisance sociale 3, Baratin 4, Conduite 4, Corps à corps 3, Défense 4, Discussion 5, Discrétion 4, Enquête 3, Informatique 6, Intrusion 2+, Science 3 (astrophysique 4), Technique (télécommunications) 8, Tir 3 (armes lourdes 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A trafiqué Yukie 3 pour le projet Têtard du Cosmos, puis s'est laissé corrompre par Gojgat (déguisé en Tom Cruise) : 100 000 $ (le livre parle aussi de 200 000 $) et une clé USB à brancher au CoC. Il a fait planter « Robert Mitchum » par Poltergeist pour faire diversion. Aigri : le logiciel de Vapula a donné « son » grade 2 à un grade 0.\nInterrogé, il se débat, se rend, puis tient le plus longtemps possible ; il propose ses 100 000 $ contre sa liberté. Il déteste les anges et ne leur dira rien (plutôt mourir). Fouiller sa mémoire (Rêve) révèle le nom de Gojgat.\nJet d'acide : niveau de l'attaque pris sur Tir 3 (le livre ne précise pas), précision +2, puissance +6 du livre. Esprit multiple du livre = Esprits multiples.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-shaksaya"
+            },
+            {
+              "id": "ag7-marie-madeleine-6",
+              "nom": "« Marie-Madeleine »",
+              "source": "Ingénieur du CoC, serviteur de Dieu infiltré",
+              "type": "serviteur",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 5,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Acrobatie 2, Aisance sociale 2, Corps à corps 2, Discrétion 2, Enquête 2, Fouille 2, Intrusion 2, Informatique 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Surnommé ainsi parce qu'il cherche ostensiblement à convertir ses collègues. A repéré les terroristes une heure avant et prévenu les anges ; quand il entend son surnom au haut-parleur (minute 4), il file en douce. Si les PJ contrôlent les accès, ils peuvent l'attraper : il ne sait que ce qui se passera entre les minutes 5 et 7 (l'arrivée des anges).\nLe livre ne le chiffre pas : profil « serviteur de Dieu typique » du livre de base (p. 88), Informatique estimée.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-marie-madeleine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-shaksaya",
+              "q": "Que font les PJ de Shaksaya ?",
+              "opts": [
+                {
+                  "t": "Ils le gardent sous la main",
+                  "suite": "Il reste un levier (ses 100 000 $) mais ne doit surtout pas tomber aux mains des anges."
+                },
+                {
+                  "t": "Ils le laissent filer contre l'argent",
+                  "suite": "Les 100 000 $ changent de mains ; il peut être capturé plus tard par Moustache."
+                },
+                {
+                  "t": "Ils le détruisent",
+                  "suite": "-1 PA au débriefing."
+                },
+                {
+                  "t": "Les anges le capturent",
+                  "suite": "Ils le font parler : sous Torture, le projet Têtard du Cosmos est révélé (vers la minute 181)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-paras",
+          "nom": "6. Minutes 5 à 10 : la cavalerie",
+          "lieu": "CoC encerclé : check-points, toit, centre de sécurité, tour de contrôle",
+          "notes": "Minute 5 : rafales à l'extérieur, Debonnaire (ou son adjoint) hurle des ordres sans rien comprendre.\nMinutes 5 à 7 : vingt parachutistes donnent l'assaut avec le feu vert de la Défense (alerte terroriste). Dix encerclent les check-points, huit sautent sur le toit, deux ratent leur atterrissage. Ils tirent sur la sécurité si elle ne se rend pas ; si les PJ ne font rien, elle se rend à la minute 7 avec deux blessés graves.\nSi les PJ s'en mêlent : prendre le commandement de la sécurité par radio (jet d'opposition tactique contre le capitaine : réussite, la sécurité se retranche dans le CoC ; échec, deux morts et douze blessés graves) et tenir le centre de sécurité, qui commande les portes.\nAvec les paras : le capitaine Dupont et le lieutenant Trondin, anges de Laurent sous couverture, qui s'attendent à une présence démoniaque. Six paras tiennent le toit pendant que les anges foncent au centre de sécurité. Ils n'emploient leurs pouvoirs qu'après les démons (« c'est toi qui as commencé ») ; témoins humains de la sécu : à éliminer. L'idée : les forcer à se retrancher dans la tour. Si la résistance est trop forte, les anges se replient sur le toit avec les paras ; une grenade « salvatrice » enverra ensuite les témoins au paradis.\nMinute 8 : Robert Mitchum redémarre.\nMinutes 8 à 10 : trois cas (PJ retranchés dans la tour ; PJ maîtres du CoC et anges sur le toit ; bagarre générale sur le toit). Dans tous les cas Dupont ouvre la négociation. En jouant fin, les PJ comprennent que Notre-Dame a infiltré la Défense, donc Nanane Espace, et qu'un échec serait sans doute le dernier lancement d'une entreprise au bord de la faillite. Les anges sont là pour protéger les intérêts franco-européens… tant qu'ils ignorent Têtard du Cosmos. Shaksaya ne doit pas tomber entre leurs mains.\nDehors, l'armée est prête à l'assaut et le personnel ne restera pas longtemps derrière les PJ. Arrangez-vous pour qu'au moins un PJ soit encore dans le CoC à la minute 19.\nNon-combattants présents : Geogie, Marcsoin, le personnel (à protéger ou à prendre en otage).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-paras-7",
+              "nom": "Parachutistes en opération",
+              "source": "Régiment en garnison à Kurukuku (humains)",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 2
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil d'assaut",
+                  "att": 6,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3+, Conduite 2, Corps à corps 3, Défense 2, Hobby (parachutisme) 3, Savoir militaire 2 (fermer sa gueule 3), Tir 2 (armes d'épaule 3), Attendre la solde 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vingt prennent la base d'assaut : dix autour des check-points, huit sur le toit du CoC (six arrivent avec les anges), deux ont raté leur atterrissage. Le reste du régiment encercle la station.\nIls ignorent tout du Grand Jeu : témoins de phénomènes surnaturels, ils deviennent fous, à tendance berserk suicidaire. Galvanisés par leurs chefs (les anges), ils font front.\nMêmes valeurs que l'entrée « Parachutistes en opération » du bestiaire des livres.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-paras"
+            },
+            {
+              "id": "ag7-dupont-8",
+              "nom": "Capitaine Dupont",
+              "source": "Ange de Laurent, grade 1 (chef du détachement de paras)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 17,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 14,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Famas",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 4, Athlétisme 5, Baratin 3, Corps à corps 3, Combat 3 (épée 7), Conduite 2, Défense 4, Discrétion 4, Discussion 3, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3 (tactique 5), Survie 3, Tir 3 (armes automatiques 5), Vouloir négocier 4, Épée bénie mineure (objet)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La mission avant tout : il adore discuter avec le camp d'en face avant de se battre et préfère prêcher la bonne parole. C'est lui qui ouvre les négociations entre les minutes 8 et 10 ; en cas de succès au lancement, il peut aller jusqu'à embrasser un démon.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-dupont"
+            },
+            {
+              "id": "ag7-trondin-9",
+              "nom": "Lieutenant Trondin",
+              "source": "Ange de Laurent, grade 1 (exterminateur sous couverture militaire)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 14,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Famas",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 4, Athlétisme 5, Baratin 2, Corps à corps 4, Combat 3 (épée 7), Conduite 2, Défense 5, Discrétion 4, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3, Survie 3, Séduction 3, Tir 3 (armes automatiques 5), Parler rarement 6, Épée bénie mineure (objet)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Taiseux, se voit en héros du film. Ne rêve que d'exterminer la racaille démoniaque mais attend le feu vert de Dupont ; il compte laisser ensuite les humains s'entretuer. Il peut aller jusqu'à séduire Annette pour l'approcher, et les PJ peuvent même le manipuler pour qu'il joue le prince charmant à leur place.\nN'utilise ses pouvoirs que si les démons ont commencé (sauf devant des témoins qu'il compte éliminer).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-trondin"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-treve",
+              "q": "Comment se terminent les négociations avec Dupont ?",
+              "opts": [
+                {
+                  "t": "Trêve",
+                  "suite": "Les anges attendent la mise en orbite pour régler leurs comptes dans la jungle ; ils accompagnent les PJ et fouinent partout."
+                },
+                {
+                  "t": "Guerre",
+                  "suite": "Les PJ doivent quitter une base encerclée ; les anges retrouvent seuls la piste d'Annette et débarquent chez elle."
+                },
+                {
+                  "t": "Les anges apprennent Têtard du Cosmos",
+                  "suite": "Ils sabotent l'alimentation et le groupe de secours : mission ratée, « attentat terroriste » à la une."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-bug",
+          "nom": "7. Le grand bug de la minute dix-neuf",
+          "lieu": "Tour de contrôle du CoC",
+          "notes": "Ambiance téléfilm catastrophe. Orbite de transfert atteinte, séparation réussie : « Hourra ! » général (Dupont, s'il est là, embrasse un démon). Trois secondes plus tard, tout le réseau de la tour plante.\nCoup de fil d'Okinawa : Yukie 3 n'a pas lancé son logiciel de vol automatique. Tant que le réseau est en panne, rien ne peut être transmis : le satellite ne déploie pas son générateur solaire et, dans 799 minutes, il sera à court d'énergie et fondra comme une aspirine.\nGeogie convoque l'ingénieur réseau Herbert Podzeron, à moitié hébété, qui finit par avouer : c'est sa stagiaire, Mlle Annette Ferrojite, qui a refait toute l'architecture il y a trois mois pendant qu'il jouait au golf, et il l'a renvoyée la semaine dernière. Personne sur place ne sait réparer.\nUn PJ avec Informatique supérieure à 3 voit qu'il s'agit d'un sabotage de petit génie : il pourrait relancer le réseau, mais en des heures, voire des jours. Cas particuliers : s'il s'y est mis dès la clé USB, il voit le signal mais doit chercher des heures ; s'il fait 666, il comprend tout d'avance (le bug, le logiciel de vol, un saboteur aux capacités surhumaines) mais ne peut que couper le courant, et Nanane 5 file droit dans l'espace (échec ; bonus : une vidéo compromettante de Margaret Thatcher).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag7-geogie-10",
+              "nom": "Geogie Pepelkuet",
+              "source": "Directrice de la mission Nanane 5",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 3 (estimé), Technique 3 (estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite brune impeccable qui dirige le CoC d'une main de fer ; elle prend d'abord les faux agents de la DST pour des subalternes. Les catastrophes la font craquer peu à peu, jusqu'à s'en remettre totalement aux PJ s'ils se montrent « les hommes de la situation ». Elle peut leur donner l'adresse d'Annette et, en cas de réussite, leur propose un rendez-vous à la minute 800. S'ils se sont mis le personnel à dos, elle se tourne vers Dupont et Trondin.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-geogie"
+            },
+            {
+              "id": "ag7-podzeron-11",
+              "nom": "Herbert Podzeron",
+              "source": "Ingénieur maintenance réseau de Nanane Espace",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A l'air à moitié hébété : il prétend maîtriser la situation mais avoue vite qu'il ne comprend rien. C'est sa stagiaire Annette Ferrojite qui a refait toute l'architecture du réseau pendant qu'il jouait au golf, et il l'a virée la semaine dernière. Ses excuses minables pourraient déclencher une crise de Grax.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-podzeron"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-reseau",
+              "q": "Comment les PJ réagissent-ils au bug ?",
+              "opts": [
+                {
+                  "t": "Ils remontent la piste de la stagiaire",
+                  "suite": "Direction Annette Ferrojite (scène suivante)."
+                },
+                {
+                  "t": "Un PJ coupe l'alimentation",
+                  "suite": "Nanane 5 poursuit sa course : Yukie 3 est perdu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-ferrojite",
+          "nom": "8. Ferrojite aiguë",
+          "lieu": "CoC, bâtiments administratifs de la base",
+          "notes": "Bilan : les terroristes ne savent rien (leur chef, corrompu, est au Soudan). Shaksaya a tout dit sauf qu'il a gardé 100 000 $ ; il ne parlera pas aux anges, mais leur chef, un expert de Joseph, peut le faire parler en trois heures s'il est capturé.\nL'adresse d'Annette : Geogie la récupère et la donne aux PJ s'ils ont bien joué ; sinon il faut s'introduire dans l'administration et fouiller les fichiers du personnel. Si les PJ se sont mis le personnel à dos (menaces, refus de négocier, attitude bien peu DST), Geogie se tourne vers Dupont et Trondin.\nTrêve : les anges veulent comprendre pourquoi les démons sauvent le lancement ; l'histoire d'un démon renégat qui aurait commandité l'attaque peut les convaincre. Ils accompagnent les PJ chez Annette.\nGuerre : les PJ doivent quitter la base encerclée ; les anges apprennent l'adresse et arrivent chez Annette. Ils doivent gêner les PJ tout le long : évitez qu'ils meurent trop tôt.\nCe que révèle l'enquête : Grax, démon d'Haagenti et informaticien hors pair, a été recruté il y a trois mois par Gojgat pour piéger le réseau (plan A ; les terroristes ne servaient qu'à brouiller les pistes). Pour effacer ses traces, Gojgat l'a fait rendre fou par un démon d'Abalam : Grax se prend pour sa couverture humaine et ne se souvient de rien, mais il peut réparer le réseau en dix minutes.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag7-sc-annette",
+          "nom": "9. Annette et la confiture de goyave",
+          "lieu": "Appartement de 90 m² dans une résidence chic du quartier du Lac au Diable",
+          "notes": "Annette vit le renvoi comme un échec cuisant et se gave de confiture de goyave devant les soaps depuis une semaine : l'appartement est jonché de pots vides. Fragile, elle croit les pires bobards. Elle refuse catégoriquement de revenir au centre, et ne croira jamais qu'on lui offre un emploi.\nSi on la brusque, Grax prend le dessus, comme une possession : il frappe tout ce qui bouge et dévore tout. On peut la pousser à s'inscrire au Club Med ou à vendre son âme, mais pas la maltraiter.\nPouvoirs : Charme marche, mais parler de Nanane Espace déclenche Grax (qui s'en prend aux autres ou au mobilier) ; Possession est sans effet sur un démon ; Camisole la rend encore plus folle ; Corruption coûte au moins un million de dollars ; un Pari stupide (« pas cap' de réparer le réseau ») peut marcher.\nLa seule vraie solution : lui redonner confiance, être gentil (le pire des supplices pour un démon). Son complexe vient de Wilmid Cancan, l'amour de jeunesse qui l'a poussée à se jeter par la fenêtre : il faut jouer au prince charmant (dîner aux chandelles, limousine sur la côte, panne sèche dans la jungle). Le coup de maître : convaincre Trondin de faire le prince charmant à leur place. Attention avec Rêve, Lire les pensées ou Polymorphie (elle pense sans cesse à Wilmid) : un faux Wilmid qui disparaît faute de PP met Grax en rage. Plus elle reprend confiance, plus vite Grax s'énerve quand on la contrarie.\nSi Grax est détruit, la mission est perdue.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-grax-12",
+              "nom": "Grax, alias Annette Ferrojite",
+              "source": "Démon d'Haagenti, grade 1 (stagiaire informaticienne renvoyée)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 18,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Crocs",
+                  "att": 10,
+                  "prec": 3,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Goinfrerie",
+                  "r": 6
+                },
+                {
+                  "n": "Graisse",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Peur",
+                  "r": 4
+                }
+              ],
+              "talents": "Aisance sociale 2, Athlétisme 2, Baratin 3, Corps à corps 5, Culture générale 2 (soap 4), Défense 4, Discussion 3, Discrétion 3, Informatique 6, Hobby (cuisine) 5, Séduction 1, Manger des confitures de goyave 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune femme timide et complexée, suicidée après un chagrin d'amour (Wilmid Cancan), dont l'enveloppe a accueilli Grax. Recruté il y a trois mois par Gojgat pour saboter le réseau de Nanane Espace ; un démon d'Abalam l'a ensuite rendu fou : il se prend pour sa couverture et ne se souvient de rien. C'est pourtant la seule capable de réparer le réseau en moins de dix minutes.\nQuand on la brusque, Grax prend le dessus : monstre colérique sans conscience de lui-même, qui frappe et dévore tout ce qui bouge jusqu'à la fin de la crise. Le détruire, c'est rater la mission. Le nourrir d'ange le calme pour un moment.\nMembre exotique (croc) du livre = Membre exotique : crocs.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-grax"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-annette",
+              "q": "Comment les PJ convainquent-ils Annette ?",
+              "opts": [
+                {
+                  "t": "Gentillesse et prince charmant",
+                  "suite": "Elle reprend confiance et accepte de réparer le réseau."
+                },
+                {
+                  "t": "Charme, Pari stupide ou Corruption",
+                  "suite": "Possible, à condition de ne pas évoquer Nanane Espace trop tôt (Corruption : un million de dollars)."
+                },
+                {
+                  "t": "Menaces ou maltraitance",
+                  "suite": "Crise de Grax : combat contre un démon d'Haagenti affamé. Le nourrir d'ange le calme."
+                },
+                {
+                  "t": "Grax est détruit",
+                  "suite": "Le réseau ne sera pas réparé : Yukie 3 est perdu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-moustache",
+          "nom": "10. L'arrivée du colonel Moustache",
+          "lieu": "Abords du centre spatial, domicile d'Annette, partout où sont les PJ",
+          "notes": "Troisième ange de la cellule du 9-7 : le colonel Louis Moustache (Joseph), sous couverture de haut gradé, qui commande le régiment de paras et a l'oreille de la préfecture et de la gendarmerie. Les trois anges sont de grade 1, mais ils se réfèrent à leurs grades militaires : Moustache a autorité morale sur les deux autres.\nIl arrive à la minute 19 + 2 et prend en main le bataillon autour du centre. Deux heures plus tard, un admirateur anonyme (Gojgat) lui envoie le dossier Têtard du Cosmos. Méfiant (intox démoniaque ?), il enquête minutieusement.\nSi Shaksaya est aux mains de l'armée, Moustache le fait parler vers la minute 181 (Torture) : convaincu, il ordonne à Dupont et Trondin d'éliminer Annette en priorité, puis les démons s'ils ont le temps. Avec finesse… autant que possible : Trondin propose par exemple de séduire Annette pour se retrouver seul avec elle.\nSinon, Moustache cherche à capturer Shaksaya, ou rejoint ses acolytes pour capturer un PJ en douce et le faire parler. Les PJ n'ont alors qu'une marge très réduite pour faire croire qu'ils réparent juste les bêtises d'un collègue et que Yukie 3 est un banal satellite.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-moustache-13",
+              "nom": "Colonel Louis Moustache",
+              "source": "Ange de Joseph, grade 1 (haut gradé de l'armée, chef de la cellule angélique du 9-7)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 6,
+                "vo": 8,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Gros calibre",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Jet d'eau bénite",
+                  "att": 4,
+                  "prec": 2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Jet d'eau bénite",
+                  "r": 3
+                },
+                {
+                  "n": "Psychométrie",
+                  "r": 4
+                },
+                {
+                  "n": "Torture",
+                  "r": 6
+                }
+              ],
+              "talents": "Aisance sociale 3, Athlétisme 3, Baratin 4, Corps à corps 3, Combat 3, Conduite 2, Défense 3, Discussion 4, Discrétion 3, Enquête 4+, Fouille 3, Savoir militaire 2 (« guerre totale » 4), Survie 2 (jungle 3), Torture 7, Tir 2 (armes de poing 3), Se lisser la moustache 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Barbouze plus qu'ange ; autorité sur le régiment de paras, excellentes relations avec la préfecture et la gendarmerie. Arrive à la minute 19 + 2 ; deux heures plus tard, Gojgat lui fait parvenir le dossier Têtard du Cosmos. S'il tient Shaksaya, il le fait parler (Torture) vers la minute 181, puis ordonne à Dupont et Trondin d'éliminer Annette en priorité.\nJet d'eau bénite : niveau d'attaque pris sur Tir 2 (non précisé dans le livre), précision +2, puissance +5 du livre.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-moustache"
+            },
+            {
+              "id": "ag7-dupont-14",
+              "nom": "Capitaine Dupont",
+              "source": "Ange de Laurent, grade 1 (chef du détachement de paras)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 17,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 14,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Famas",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 4, Athlétisme 5, Baratin 3, Corps à corps 3, Combat 3 (épée 7), Conduite 2, Défense 4, Discrétion 4, Discussion 3, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3 (tactique 5), Survie 3, Tir 3 (armes automatiques 5), Vouloir négocier 4, Épée bénie mineure (objet)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La mission avant tout : il adore discuter avec le camp d'en face avant de se battre et préfère prêcher la bonne parole. C'est lui qui ouvre les négociations entre les minutes 8 et 10 ; en cas de succès au lancement, il peut aller jusqu'à embrasser un démon.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-dupont"
+            },
+            {
+              "id": "ag7-trondin-15",
+              "nom": "Lieutenant Trondin",
+              "source": "Ange de Laurent, grade 1 (exterminateur sous couverture militaire)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 8,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 14,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Famas",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 4, Athlétisme 5, Baratin 2, Corps à corps 4, Combat 3 (épée 7), Conduite 2, Défense 5, Discrétion 4, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3, Survie 3, Séduction 3, Tir 3 (armes automatiques 5), Parler rarement 6, Épée bénie mineure (objet)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Taiseux, se voit en héros du film. Ne rêve que d'exterminer la racaille démoniaque mais attend le feu vert de Dupont ; il compte laisser ensuite les humains s'entretuer. Il peut aller jusqu'à séduire Annette pour l'approcher, et les PJ peuvent même le manipuler pour qu'il joue le prince charmant à leur place.\nN'utilise ses pouvoirs que si les démons ont commencé (sauf devant des témoins qu'il compte éliminer).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-trondin"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-moustache",
+              "q": "Moustache découvre-t-il la vérité sur Têtard du Cosmos ?",
+              "opts": [
+                {
+                  "t": "Oui (Shaksaya ou un PJ a parlé)",
+                  "suite": "Les anges cherchent à tuer Annette en priorité."
+                },
+                {
+                  "t": "Non, les PJ le bluffent",
+                  "suite": "Les anges restent méfiants mais ne visent pas Annette."
+                },
+                {
+                  "t": "Les anges sont détruits",
+                  "suite": "+1 PA par ange exterminé ; l'entrée au CoC devient facile."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-gojgat",
+          "nom": "11. Gojgat entre en scène",
+          "lieu": "Rendez-vous « neutre » choisi par Gojgat",
+          "notes": "Gojgat roule pour lui : beaucoup d'argent, donc de puissance, et des « super plans » à vendre à ses supérieurs. Certains PJ pourraient s'y retrouver. Il suit l'opération de loin grâce à des employés de Kurukuku, Toulouse et Okinawa, et croit Grax hors d'état de nuire. Il espère que Moustache les gênera, voire les renverra en Enfer.\nPlutôt que de corrompre les anges, il tente sa chance sur un PJ. Au téléphone, il se présente comme Abu Al Bawr, n° 3 de la cellule terroriste, parle en démoniaque et promet des informations sur Têtard du Cosmos. Il vient seul, polymorphé en barbu, mais il a corrompu le préfet : si les PJ appellent les forces de l'ordre pour arrêter un terroriste, la gendarmerie déclenche le plan « Pépépervier » et tente de les arrêter pour usurpation de fonction.\nAu rendez-vous, il fait profil bas, flatte les PJ, et leur propose un compte en Suisse garni d'un million de dollars pour qu'ils laissent tomber Yukie 3. Corruption visera un seul PJ, de préférence le « butor » ; un PJ joué « loyauté sans faille » est incorruptible. Dans tous les cas, les PJ repartent avec un crédit d'un million (condition de son pouvoir). En cas de grabuge, Gojgat se téléporte.\nS'il a corrompu un PJ sans être attaqué, il lui dévoile le projet Grenouille du sub-espace, sur place ou plus tard au téléphone.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag7-gojgat-16",
+              "nom": "Gojgat, alias Kidman, alias Cruise, alias Bawr",
+              "source": "Démon de Mammon, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 20,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Petit calibre",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Corruption",
+                  "r": 7
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 2
+                }
+              ],
+              "talents": "Aisance sociale 5, Athlétisme 2, Baratin 5, Corps à corps 2, Culture générale 2 (économie 6), Défense 3, Discussion 5, Discrétion 3+, Enquête 5+, Informatique 3, Savoir criminel 3 (blanchiment d'argent 4), Séduction 4, Tir 1+ (armes de poing 2)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Malin, vicieux, avare, narcissique et ambitieux. Le cerveau du sabotage : il spécule sur l'aérospatial et veut vendre ensuite à Ouikka son projet « Grenouille du sub-espace ». Il prend les traits de Nicole Kidman, Tom Cruise ou Abu Al Bawr (n° 3 de la cellule) selon les besoins.\nCorruption : il lui faut un million de dollars sur un compte suisse pour corrompre un démon. En cas de grabuge, il fuit par Téléportation.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-gojgat"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-gojgat",
+              "q": "Comment se passe le rendez-vous avec Gojgat ?",
+              "opts": [
+                {
+                  "t": "Un PJ est corrompu",
+                  "suite": "Il touche le million (que Ouikka saisira) et apprend le projet Grenouille du sub-espace ; +1 PA par PJ corrompu et dénoncé au débriefing."
+                },
+                {
+                  "t": "Les PJ refusent ou le démasquent",
+                  "suite": "+3 PA si Gojgat est démasqué devant Ouikka."
+                },
+                {
+                  "t": "Les PJ l'attaquent",
+                  "suite": "Gojgat se téléporte ; le compte suisse reste crédité."
+                },
+                {
+                  "t": "Les PJ appellent la police",
+                  "suite": "Plan Pépépervier : la gendarmerie tente de les arrêter."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-retour",
+          "nom": "12. Annette et les moustachus : retour au CoC",
+          "lieu": "Check-points et tour de contrôle de Nanane Espace",
+          "notes": "À un moment, la nature démoniaque d'Annette la fait pencher vers les PJ (par exemple si on donne un ange à manger à Grax en pleine crise).\nEntrer au CoC avec elle : facile si les trois anges sont détruits, ou s'ils vivent sans connaître Têtard du Cosmos (les paras laissent passer les agents de la DST attendus par Geogie ; les anges proposent un règlement de comptes à l'ancienne ensuite). Sinon, il faut s'infiltrer.\nPendant qu'Annette répare le réseau, éviter toute crise de Grax (par exemple si Podzeron vient s'excuser).\nMinute 800 : « Oh mon Dieu » ou « Hourra », selon que le générateur solaire de Yukie 3 se déploie ou non. En cas de succès, Geogie propose un rendez-vous à un PJ.\nÀ cette même minute, chaque PJ reçoit par Chronopost un ordre de mission officiel et un billet pour Kuala Lumpur, avec ordre de ramener Grax, et Shaksaya s'il est encore dans les parages.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag7-geogie-17",
+              "nom": "Geogie Pepelkuet",
+              "source": "Directrice de la mission Nanane 5",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 6,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Aisance sociale 3 (estimé), Technique 3 (estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite brune impeccable qui dirige le CoC d'une main de fer ; elle prend d'abord les faux agents de la DST pour des subalternes. Les catastrophes la font craquer peu à peu, jusqu'à s'en remettre totalement aux PJ s'ils se montrent « les hommes de la situation ». Elle peut leur donner l'adresse d'Annette et, en cas de réussite, leur propose un rendez-vous à la minute 800. S'ils se sont mis le personnel à dos, elle se tourne vers Dupont et Trondin.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-geogie"
+            },
+            {
+              "id": "ag7-podzeron-18",
+              "nom": "Herbert Podzeron",
+              "source": "Ingénieur maintenance réseau de Nanane Espace",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A l'air à moitié hébété : il prétend maîtriser la situation mais avoue vite qu'il ne comprend rien. C'est sa stagiaire Annette Ferrojite qui a refait toute l'architecture du réseau pendant qu'il jouait au golf, et il l'a virée la semaine dernière. Ses excuses minables pourraient déclencher une crise de Grax.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-podzeron"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-minute800",
+              "q": "Yukie 3 déploie-t-il son générateur solaire à la minute 800 ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "« Hourra » : Yukie 3 est sur orbite (+6 PA)."
+                },
+                {
+                  "t": "Non",
+                  "suite": "« Oh mon Dieu » : Yukie 3 est foutu (-6 PA)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag7-sc-debriefing",
+          "nom": "13. Débriefing chez Ouikka",
+          "lieu": "Kuala Lumpur : temple bouddhiste réaménagé en mosquée",
+          "notes": "Ne pas venir, c'est devenir renégat. Un enfant de huit ans accueille les PJ ; c'est Ouikka, qui cache son aura mais exige qu'ils dévoilent la leur. Il fait semblant de les féliciter d'avoir voulu détourner Nanane 5 et leur propose un stage de pilotage d'Airbus.\nIl veut leur faire croire qu'il les soupçonne : pourquoi ce compte d'un million en Suisse ? (Le compte a été récupéré pour le budget « Bagdad 2005 » : les PJ ne verront jamais l'argent.) Il attend que chacun dénonce les autres (Shaksaya, le PJ corrompu…). Ceux qui jouent les fortes têtes gagnent la limitation « bombe humaine » de la table d'Ouikka, en fait une bonne impression : il les garde sous le coude (éviter les transports en commun quelque temps).\nSentence selon le résultat :\n• Yukie 3 irrécupérable : Ouikka présente Gojgat, créatif de Mammon venu lui vendre le projet Grenouille du sub-espace pour rattraper le coup. Les PJ perdent des PA. Ouikka n'est pas dupe mais apprécie l'initiative : Gojgat reviendra, plus riche encore.\n• Yukie 3 sur orbite : stage d'une semaine en Afghanistan. Ouikka présente une grosse grenouille nommée Gojgat (Mammon l'a puni pour lui apprendre l'humilité) : le PJ le moins efficace ou le plus corrompu voit ses PA de la mission convertis en acquisition de ce familier, et doit veiller sur Annette jusqu'à ce que Grax retrouve ses esprits.\n• Grand Jeu non respecté (ou attaque contre l'avatar d'Ouikka) : accident d'avion au retour, réincarnation en grosses grenouilles guyanaises chargées de détraquer l'écosystème de leur étang (ou explosion du temple une seconde après la téléportation du prince).\nRésultat de la mission : par ange exterminé +1 PA ; Yukie 3 sur orbite +6 PA ; Gojgat démasqué +3 PA ; Shaksaya détruit -1 PA ; Yukie 3 foutu -6 PA ; par PJ corrompu et dénoncé +1 PA.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag7-ouikka-19",
+              "nom": "Ouikka (avatar)",
+              "source": "Prince-démon des terroristes, sous l'apparence d'un enfant de huit ans",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Reçoit les PJ au débriefing, dans un temple bouddhiste réaménagé en mosquée. Il joue les naïfs, exige qu'ils dévoilent leur aura, et pousse chacun à dénoncer les autres. L'attaquer est suicidaire : il se téléporte et le temple explose une seconde plus tard.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-ouikka"
+            },
+            {
+              "id": "ag7-grenouille-20",
+              "nom": "La grenouille Gojgat",
+              "source": "Familier (Gojgat puni par Mammon)",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 6,
+              "seuilsFix": [
+                2,
+                5,
+                7,
+                10
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Caméléon",
+                  "r": 2
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Acrobatie 3, Aisance sociale 3, Athlétisme 2, Baratin 3, Culture générale 1 (économie 3), Corps à corps 2, Défense 3, Discrétion 3, Survie 1 (étangs 3), Mal digérer 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Si Yukie 3 est sur orbite, Ouikka présente cette grosse grenouille : le PJ le moins efficace ou le plus corrompu voit tous les PA gagnés dans la mission convertis en acquisition de ce familier.\nAucune attaque dans le livre : coup (langue, pattes) traité comme un coup de poing niveau 2 (Corps à corps 2).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109.",
+              "typeId": "type-ag7-grenouille"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag7-ch-sentence",
+              "q": "Quelle est la sentence d'Ouikka ?",
+              "opts": [
+                {
+                  "t": "Yukie 3 sur orbite",
+                  "suite": "Stage en Afghanistan ; le PJ le moins efficace hérite de la grenouille Gojgat et de la garde d'Annette."
+                },
+                {
+                  "t": "Yukie 3 irrécupérable",
+                  "suite": "Perte de PA ; Gojgat vend son projet Grenouille du sub-espace et devient un PNJ récurrent."
+                },
+                {
+                  "t": "Grand Jeu non respecté ou prince attaqué",
+                  "suite": "Mort des PJ et réincarnation en grenouilles guyanaises."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795358331514,
+      "updatedAt": 1795358331514
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-ag7-terroristes",
+      "nom": "Apprentis terroristes",
+      "source": "Branche locale de la cellule (jeunes créoles armés d'Uzi)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 3,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Uzi avec silencieux",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 2, Baratin 1+, Conduite 2, Corps à corps 2, Défense 1+, Tir 1+ (Uzi 2), Jurer sur la vie de la Mecque 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Douze en tout : deux tiennent le centre de sécurité, six (par deux) attaquent les trois accès de la tour de contrôle, quatre font irruption dans le sas de coordination. Ils ne savent rien : leur chef, qui a donné l'ordre, a été corrompu et se trouve dans un camp d'entraînement au Soudan.\nUtiliser des pouvoirs devant eux déclenche une crise mystique aux effets variables.\nMêmes valeurs que l'entrée « Apprentis terroristes » du bestiaire des livres.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-paras",
+      "nom": "Parachutistes en opération",
+      "source": "Régiment en garnison à Kurukuku (humains)",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 2
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Fusil d'assaut",
+          "att": 6,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 3+, Conduite 2, Corps à corps 3, Défense 2, Hobby (parachutisme) 3, Savoir militaire 2 (fermer sa gueule 3), Tir 2 (armes d'épaule 3), Attendre la solde 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vingt prennent la base d'assaut : dix autour des check-points, huit sur le toit du CoC (six arrivent avec les anges), deux ont raté leur atterrissage. Le reste du régiment encercle la station.\nIls ignorent tout du Grand Jeu : témoins de phénomènes surnaturels, ils deviennent fous, à tendance berserk suicidaire. Galvanisés par leurs chefs (les anges), ils font front.\nMêmes valeurs que l'entrée « Parachutistes en opération » du bestiaire des livres.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-miju",
+      "nom": "Miju",
+      "source": "Démon de combat (grandes cornes, QI d'un enfant de huit ans)",
+      "type": "combat",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 4,
+        "vo": 3,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 10,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Grandes cornes",
+          "att": 10,
+          "prec": -2,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Forme de combat",
+          "r": 2
+        },
+        {
+          "n": "Membre exotique : grandes cornes",
+          "r": 0
+        },
+        {
+          "n": "Peur",
+          "r": 2
+        }
+      ],
+      "talents": "Athlétisme 4, Corps à corps 5, Intimidation 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Garde le pavillon du 114 allée des Groseilles. Corrompu par Gojgat (déguisé en Nicole Kidman) pour un pot de sucettes Chubie Chuba : il a éliminé Ujkze, le contact, et jeté ses dossiers dans la grande poubelle de dehors. Menteur maladroit, il cache son pot de sucettes dans son dos. Se met à table si on le cuisine gentiment ; menaces physiques ou coups le rendent fou furieux.\nLe livre renvoie au démon de combat du livre de base (p. 127) sans donner ses chiffres : profil entièrement estimé (cornes traitées comme un coup de boule casqué : précision -2, puissance +2).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-shaksaya",
+      "nom": "Shaksaya, alias Andrej Belowahf",
+      "source": "Démon de Vapula, grade 1 (chef de projet norvégien de Yukie 3)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 22,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Jet d'acide",
+          "att": 6,
+          "prec": 2,
+          "puis": 6,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Corps liquide",
+          "r": 0
+        },
+        {
+          "n": "Déguisement superficiel",
+          "r": 6
+        },
+        {
+          "n": "Esprits multiples",
+          "r": 2
+        },
+        {
+          "n": "Invention",
+          "r": 10
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 4
+        },
+        {
+          "n": "Langage universel",
+          "r": 0
+        },
+        {
+          "n": "Non-détection",
+          "r": 4
+        },
+        {
+          "n": "Poltergeist",
+          "r": 6
+        },
+        {
+          "n": "Psychométrie",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        }
+      ],
+      "talents": "Athlétisme 2, Aisance sociale 3, Baratin 4, Conduite 4, Corps à corps 3, Défense 4, Discussion 5, Discrétion 4, Enquête 3, Informatique 6, Intrusion 2+, Science 3 (astrophysique 4), Technique (télécommunications) 8, Tir 3 (armes lourdes 6)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A trafiqué Yukie 3 pour le projet Têtard du Cosmos, puis s'est laissé corrompre par Gojgat (déguisé en Tom Cruise) : 100 000 $ (le livre parle aussi de 200 000 $) et une clé USB à brancher au CoC. Il a fait planter « Robert Mitchum » par Poltergeist pour faire diversion. Aigri : le logiciel de Vapula a donné « son » grade 2 à un grade 0.\nInterrogé, il se débat, se rend, puis tient le plus longtemps possible ; il propose ses 100 000 $ contre sa liberté. Il déteste les anges et ne leur dira rien (plutôt mourir). Fouiller sa mémoire (Rêve) révèle le nom de Gojgat.\nJet d'acide : niveau de l'attaque pris sur Tir 3 (le livre ne précise pas), précision +2, puissance +6 du livre. Esprit multiple du livre = Esprits multiples.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-gojgat",
+      "nom": "Gojgat, alias Kidman, alias Cruise, alias Bawr",
+      "source": "Démon de Mammon, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 8,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 20,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Petit calibre",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 5
+        },
+        {
+          "n": "Corruption",
+          "r": 7
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Non-détection",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        },
+        {
+          "n": "Téléportation",
+          "r": 2
+        }
+      ],
+      "talents": "Aisance sociale 5, Athlétisme 2, Baratin 5, Corps à corps 2, Culture générale 2 (économie 6), Défense 3, Discussion 5, Discrétion 3+, Enquête 5+, Informatique 3, Savoir criminel 3 (blanchiment d'argent 4), Séduction 4, Tir 1+ (armes de poing 2)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Malin, vicieux, avare, narcissique et ambitieux. Le cerveau du sabotage : il spécule sur l'aérospatial et veut vendre ensuite à Ouikka son projet « Grenouille du sub-espace ». Il prend les traits de Nicole Kidman, Tom Cruise ou Abu Al Bawr (n° 3 de la cellule) selon les besoins.\nCorruption : il lui faut un million de dollars sur un compte suisse pour corrompre un démon. En cas de grabuge, il fuit par Téléportation.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-grax",
+      "nom": "Grax, alias Annette Ferrojite",
+      "source": "Démon d'Haagenti, grade 1 (stagiaire informaticienne renvoyée)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 18,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Crocs",
+          "att": 10,
+          "prec": 3,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Goinfrerie",
+          "r": 6
+        },
+        {
+          "n": "Graisse",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Peur",
+          "r": 4
+        }
+      ],
+      "talents": "Aisance sociale 2, Athlétisme 2, Baratin 3, Corps à corps 5, Culture générale 2 (soap 4), Défense 4, Discussion 3, Discrétion 3, Informatique 6, Hobby (cuisine) 5, Séduction 1, Manger des confitures de goyave 7",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune femme timide et complexée, suicidée après un chagrin d'amour (Wilmid Cancan), dont l'enveloppe a accueilli Grax. Recruté il y a trois mois par Gojgat pour saboter le réseau de Nanane Espace ; un démon d'Abalam l'a ensuite rendu fou : il se prend pour sa couverture et ne se souvient de rien. C'est pourtant la seule capable de réparer le réseau en moins de dix minutes.\nQuand on la brusque, Grax prend le dessus : monstre colérique sans conscience de lui-même, qui frappe et dévore tout ce qui bouge jusqu'à la fin de la crise. Le détruire, c'est rater la mission. Le nourrir d'ange le calme pour un moment.\nMembre exotique (croc) du livre = Membre exotique : crocs.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-grenouille",
+      "nom": "La grenouille Gojgat",
+      "source": "Familier (Gojgat puni par Mammon)",
+      "type": "familier",
+      "car": {
+        "fo": 2,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        2,
+        5,
+        7,
+        10
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Caméléon",
+          "r": 2
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Acrobatie 3, Aisance sociale 3, Athlétisme 2, Baratin 3, Culture générale 1 (économie 3), Corps à corps 2, Défense 3, Discrétion 3, Survie 1 (étangs 3), Mal digérer 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Si Yukie 3 est sur orbite, Ouikka présente cette grosse grenouille : le PJ le moins efficace ou le plus corrompu voit tous les PA gagnés dans la mission convertis en acquisition de ce familier.\nAucune attaque dans le livre : coup (langue, pattes) traité comme un coup de poing niveau 2 (Corps à corps 2).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-ouikka",
+      "nom": "Ouikka (avatar)",
+      "source": "Prince-démon des terroristes, sous l'apparence d'un enfant de huit ans",
+      "type": "demon",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Reçoit les PJ au débriefing, dans un temple bouddhiste réaménagé en mosquée. Il joue les naïfs, exige qu'ils dévoilent leur aura, et pousse chacun à dénoncer les autres. L'attaquer est suicidaire : il se téléporte et le temple explose une seconde plus tard.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-trondin",
+      "nom": "Lieutenant Trondin",
+      "source": "Ange de Laurent, grade 1 (exterminateur sous couverture militaire)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 8,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée bénie mineure",
+          "att": 14,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Famas",
+          "att": 10,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Juste-lame",
+          "r": 4
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Acrobatie 4, Athlétisme 5, Baratin 2, Corps à corps 4, Combat 3 (épée 7), Conduite 2, Défense 5, Discrétion 4, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3, Survie 3, Séduction 3, Tir 3 (armes automatiques 5), Parler rarement 6, Épée bénie mineure (objet)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Taiseux, se voit en héros du film. Ne rêve que d'exterminer la racaille démoniaque mais attend le feu vert de Dupont ; il compte laisser ensuite les humains s'entretuer. Il peut aller jusqu'à séduire Annette pour l'approcher, et les PJ peuvent même le manipuler pour qu'il joue le prince charmant à leur place.\nN'utilise ses pouvoirs que si les démons ont commencé (sauf devant des témoins qu'il compte éliminer).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-dupont",
+      "nom": "Capitaine Dupont",
+      "source": "Ange de Laurent, grade 1 (chef du détachement de paras)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 17,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée bénie mineure",
+          "att": 14,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Famas",
+          "att": 10,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Juste-lame",
+          "r": 4
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Acrobatie 4, Athlétisme 5, Baratin 3, Corps à corps 3, Combat 3 (épée 7), Conduite 2, Défense 4, Discrétion 4, Discussion 3, Intimidation 5, Hobby (parachutisme) 4, Savoir militaire 3 (tactique 5), Survie 3, Tir 3 (armes automatiques 5), Vouloir négocier 4, Épée bénie mineure (objet)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La mission avant tout : il adore discuter avec le camp d'en face avant de se battre et préfère prêcher la bonne parole. C'est lui qui ouvre les négociations entre les minutes 8 et 10 ; en cas de succès au lancement, il peut aller jusqu'à embrasser un démon.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-moustache",
+      "nom": "Colonel Louis Moustache",
+      "source": "Ange de Joseph, grade 1 (haut gradé de l'armée, chef de la cellule angélique du 9-7)",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 6,
+        "vo": 8,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 19,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Gros calibre",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Jet d'eau bénite",
+          "att": 4,
+          "prec": 2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Détection du mensonge",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Jet d'eau bénite",
+          "r": 3
+        },
+        {
+          "n": "Psychométrie",
+          "r": 4
+        },
+        {
+          "n": "Torture",
+          "r": 6
+        }
+      ],
+      "talents": "Aisance sociale 3, Athlétisme 3, Baratin 4, Corps à corps 3, Combat 3, Conduite 2, Défense 3, Discussion 4, Discrétion 3, Enquête 4+, Fouille 3, Savoir militaire 2 (« guerre totale » 4), Survie 2 (jungle 3), Torture 7, Tir 2 (armes de poing 3), Se lisser la moustache 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Barbouze plus qu'ange ; autorité sur le régiment de paras, excellentes relations avec la préfecture et la gendarmerie. Arrive à la minute 19 + 2 ; deux heures plus tard, Gojgat lui fait parvenir le dossier Têtard du Cosmos. S'il tient Shaksaya, il le fait parler (Torture) vers la minute 181, puis ordonne à Dupont et Trondin d'éliminer Annette en priorité.\nJet d'eau bénite : niveau d'attaque pris sur Tir 2 (non précisé dans le livre), précision +2, puissance +5 du livre.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-marie-madeleine",
+      "nom": "« Marie-Madeleine »",
+      "source": "Ingénieur du CoC, serviteur de Dieu infiltré",
+      "type": "serviteur",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 5,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 6,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Acrobatie 2, Aisance sociale 2, Corps à corps 2, Discrétion 2, Enquête 2, Fouille 2, Intrusion 2, Informatique 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Surnommé ainsi parce qu'il cherche ostensiblement à convertir ses collègues. A repéré les terroristes une heure avant et prévenu les anges ; quand il entend son surnom au haut-parleur (minute 4), il file en douce. Si les PJ contrôlent les accès, ils peuvent l'attraper : il ne sait que ce qui se passera entre les minutes 5 et 7 (l'arrivée des anges).\nLe livre ne le chiffre pas : profil « serviteur de Dieu typique » du livre de base (p. 88), Informatique estimée.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-geogie",
+      "nom": "Geogie Pepelkuet",
+      "source": "Directrice de la mission Nanane 5",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 6,
+        "pr": 5,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Aisance sociale 3 (estimé), Technique 3 (estimé)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite brune impeccable qui dirige le CoC d'une main de fer ; elle prend d'abord les faux agents de la DST pour des subalternes. Les catastrophes la font craquer peu à peu, jusqu'à s'en remettre totalement aux PJ s'ils se montrent « les hommes de la situation ». Elle peut leur donner l'adresse d'Annette et, en cas de réussite, leur propose un rendez-vous à la minute 800. S'ils se sont mis le personnel à dos, elle se tourne vers Dupont et Trondin.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-marcsoin",
+      "nom": "Marcsoin Debonnaire",
+      "source": "Responsable de la sécurité de Nanane Espace",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand métis baraqué, aux petits soins pour Geogie, méprisant avec les autres, totalement dépassé, mais prompt à s'attribuer les idées d'autrui. Sous pression, il appelle le centre de sécurité pour prouver que tout va bien (réponse : « RAS »).\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    },
+    {
+      "id": "type-ag7-podzeron",
+      "nom": "Herbert Podzeron",
+      "source": "Ingénieur maintenance réseau de Nanane Espace",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A l'air à moitié hébété : il prétend maîtriser la situation mais avoue vite qu'il ne comprend rien. C'est sa stagiaire Annette Ferrojite qui a refait toute l'architecture du réseau pendant qu'il jouait au golf, et il l'a virée la semaine dernière. Ses excuses minables pourraient déclencher une crise de Grax.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « De dollars et d'eau fraîche [Space Devils] » (T. Cheilan), p. 98-109."
+    }
+  ],
+  "memoire": []
+}

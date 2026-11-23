@@ -1,0 +1,980 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "ag3-ca-complote",
+      "nom": "Angelots en gelée – Ça complote dans la compote",
+      "resume": "Scénario d'In Nomine Satanis, parodique et linéaire. La compote Poterne rend les gens heureux et gentils : l'Enfer charge les PJ, via un lapin démoniaque d'animalerie, d'éliminer Henry Potier, le dernier humain qui connaît l'ingrédient secret, et de détruire la recette. De fausse piste en fausse piste (une voiture volée, une ferme, une maîtresse, un colloque, un restaurant de Honfleur, une fille cachée), ils remontent jusqu'à Brest, où Henry s'apprête à vendre son brevet à Jerbé, une filiale tenue par des anges.",
+      "notes": "Source : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.\nPage manquante : la page imprimée 39 n'est pas dans le scan (PDF 35-42 = imprimé 35-38 et 40-43). Elle contenait la fin de la scène de la ferme et la piste vers Élisabeth (sans doute par le relevé de compte et l'adresse du vol, à Rambouillet). La scène 5 est reconstituée d'après la p. 40 : vérifier sur un exemplaire papier si possible.\n\nHistoire secrète (résumé) : Henry Potier, 42 ans, a inventé la compote par accident (une compote renversée sur un plan de travail où il avait fait des expériences de chimie). Avec des copains du foot, il a monté l'entreprise Poterne, mais a fait breveter la recette à son seul nom. Volage, il couvre ses escapades avec l'alibi de son collègue Dutilleul. Ce week-end-là, à Honfleur avec sa maîtresse Élisabeth, il a rencontré par hasard sa fille cachée Brune, puis il est parti à Brest vendre en secret son brevet à Ellèmol (ange de Marc) pour Jerbé, filiale d'une multinationale angélique. Il a prêté sa voiture à Élisabeth, qui se l'est fait voler par Lou Zeur ; l'accident de Lou fait croire à la mort d'Henry.\nFil de l'enquête : domicile et bureau → voiture dans le champ → ferme (Lou Zeur, relevé de compte) → Élisabeth → (Strasbourg, Dutilleul, facultatif) → restaurant AAA de Honfleur (Augustin, Romain De Ségur) → Brune à Pont-l'Évêque → Brest (hôtel d'Henry, Jerbé).\nGestion du temps : le MJ décide si les PJ arrivent avant ou après la vente, selon leur rapidité.\nRécompenses : le livre ne donne pas de barème de PA ; succès seulement si le secret est détruit ou rapporté avec preuves, bonus pour les anges contrariés et les mauvaises actions commises en route.\nFiches : seul Ellèmol est chiffré dans le livre. Les vigiles et les anges de Jerbé sont estimés (profil « ange de Marc » des PNJ rapides pour les anges) ; les autres PNJ ont une fiche minimale.",
+      "scenes": [
+        {
+          "id": "ag3-sc-lapin",
+          "nom": "1. La Maison du Lapin",
+          "lieu": "Animalerie du quartier des PJ",
+          "notes": "Convocation par la poste : enveloppe rose ornée d'un lapin, rendez-vous à l'animalerie « La maison du Lapin ». Magasin banal, vendeuse humaine qui ne sait rien.\nEntre les cages, un petit lapin noir et blanc les interpelle et donne la mission : saboter la production de la compote Poterne, qui rend les gens heureux… et gentils les uns envers les autres (insupportable pour l'Enfer, sans parler de la pub et de son refrain).\nTrois personnes connaissent l'ingrédient secret : Gérard Manvussat et Jean Évudotre seront éliminés par d'autres équipes, les PJ doivent s'occuper de la troisième, Henry Potier (tuer ou enlever), et détruire ou récupérer toute trace écrite de la recette, discrètement.\nLe lapin donne la description et l'adresse d'Henry, et prévient que la compote pourrait être une opération angélique, ou au moins protégée par des anges.\n\nCe que les PJ ignorent : Henry n'est pas en danger, il est simplement parti vendre en douce sa recette à Jerbé, une filiale angélique de Brest. Le scénario est linéaire : chaque témoin mène au suivant, et le MJ doit tenir le compte du temps (arriver avant ou après la vente change tout).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag3-lapin-1",
+              "nom": "Le lapin de la Maison du Lapin",
+              "source": "Démon commanditaire (petit lapin noir et blanc d'animalerie)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Morsure",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Donne la mission aux PJ au milieu des cages ; la vendeuse n'est au courant de rien. Les prévient que la compote pourrait être protégée par des anges.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-lapin"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-domicile",
+          "nom": "2. La scène du futur crime",
+          "lieu": "Domicile et bureau d'Henry Potier",
+          "notes": "Chez Henry : personne. Sa femme Anne-Sophie est en tournée de réunions « Boîtes-en-plastique », un enfant en colonie, l'autre en Bretagne chez une copine.\nQuand ils la trouvent, elle croit Henry au colloque de Strasbourg sur les quotas européens de pommes, à la place de son collègue Dutilleul, empêché au dernier moment (Henry disait avoir une intervention importante à y faire).\nAu bureau : personne ne s'inquiète, son absence était prévue. Si on demande Dutilleul : parti à Strasbourg, injoignable en journée (portable éteint pendant les conférences), au restaurant le soir.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-voiture",
+          "nom": "3. La voiture dans le champ",
+          "lieu": "Parking de Poterne, puis un champ en pleine campagne",
+          "notes": "Impasse : la piste passe par la voiture d'Henry. Sa place réservée au parking (avec l'immatriculation), un contact policier, la presse locale, France 3 (voire le journal national), un coup de chance ou une recherche GPS mènent à la voiture abandonnée dans un champ.\nElle est cabossée, inutilisable, avec du sang récent côté conducteur. Si les PJ concluent à la mort d'Henry et s'arrêtent là, leur hiérarchie leur tombera dessus.\nDes traces de passage et de sang, de plus en plus rares, mènent à la seule ferme des environs. Si la police est passée, elle n'a rien trouvé : analyse du sang en cours, les fermiers n'ont rien vu.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-ferme",
+          "nom": "4. La ferme, sans célébrités dedans",
+          "lieu": "Ferme isolée (vieux cheval, moutons, poules, oies)",
+          "notes": "Un couple de fermiers robustes et rougeauds, la cinquantaine, potager et marchés. Interrogés ou non par la police, ils voient d'un mauvais œil les PJ, n'ont « rien vu » et pressent tout le monde de partir (empressement suspect). Autour, d'autres traces de sang : le blessé s'est traîné ou a été porté jusqu'à la ferme.\nPour entrer : se faire inviter (un duel à la liqueur d'oignon ?) ou fureter discrètement.\nAu grenier : Lou Zeur, leur fils unique, presque trente ans, blessé et soigné à la maison. Ce n'est pas Henry : il a volé la voiture à Rambouillet, rue Victor-Huguenot, et s'est planté près de chez ses parents, qui le protègent.\nIndice : la mère a vidé la voiture et tout brûlé (papiers, courrier, un préservatif usagé), sauf un rouge à lèvres qu'elle a gardé. Un bout de relevé de compte a échappé aux flammes.\n\n[Page imprimée 39 absente du scan] La suite de la ferme et le début de la piste suivante manquent. D'après la p. 40, le relevé de compte et l'adresse du vol mènent à Élisabeth, la maîtresse d'Henry, chez qui la voiture était garée.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag3-lou-2",
+              "nom": "Lou Zeur",
+              "source": "Voleur de la voiture, fils des fermiers (près de trente ans)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A volé la voiture d'Henry rue Victor-Huguenot à Rambouillet et s'est planté près de la ferme de ses parents. Blessé, caché au grenier, il a peur et s'ennuie.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-lou"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-elisabeth",
+          "nom": "5. Élisabeth (page manquante)",
+          "lieu": "Rambouillet, chez Élisabeth",
+          "notes": "[La page imprimée 39 manque : scène reconstituée d'après la p. 40.]\nÉlisabeth a passé le week-end avec Henry à Honfleur. Au restaurant AAA, une jolie jeune femme à la table voisine regardait Henry ; il s'est absenté en même temps qu'elle. Ensuite, Henry a écourté le week-end en prétextant une urgence liée à la compote. Comme elle a la phobie des trains, il lui a prêté sa voiture (garée dans sa rue, d'où le vol), refusé qu'elle reste seule à l'hôtel, puis il devait prendre le train pour Paris et Strasbourg.\nElle peut se mettre à douter de son amant selon ce que disent les PJ (surtout s'ils ont déjà semé la zizanie chez Anne-Sophie), ou péter les plombs et compliquer l'enquête. Elle n'en sait pas plus. Elle peut donner le nom du restaurant.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag3-elisabeth-3",
+              "nom": "Élisabeth",
+              "source": "Maîtresse d'Henry (mariée, phobie des trains)",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "A passé le week-end à Honfleur avec Henry ; il lui a prêté sa voiture pour rentrer et elle l'a garée dans sa rue, à Rambouillet, où Lou Zeur l'a volée. Elle a remarqué la jolie blonde du restaurant AAA. Selon l'attitude des PJ, elle peut se mettre à douter de son amant, voire péter les plombs.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-elisabeth"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag3-ch-elisabeth",
+              "q": "Comment Élisabeth réagit-elle aux questions des PJ ?",
+              "opts": [
+                {
+                  "t": "Elle doute de son amant",
+                  "suite": "Elle confie l'épisode de la jolie blonde du restaurant AAA."
+                },
+                {
+                  "t": "Elle pète les plombs",
+                  "suite": "Scandale, crise de nerfs : les PJ devront retrouver le restaurant par eux-mêmes."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag3-sc-strasbourg",
+          "nom": "6. Colloque à Strasbourg",
+          "lieu": "Colloque « Les pommes en question », Strasbourg",
+          "notes": "Facultatif : les PJ peuvent y aller dès qu'ils entendent parler du colloque. Producteurs, transformateurs et cuisiniers de pommes ; Dutilleul s'apprête à présenter la compote Poterne.\nDutilleul n'a pas de nouvelles d'Henry : au téléphone, Henry lui a dit partir en week-end avec sa maîtresse et l'a pris pour alibi, comme d'habitude (ils se rendent ce service). Méfiant au début (des privés de l'épouse ?), il cède vite si on le menace.\nIl peut décrire Henry et laisser entendre que le vrai patron c'est lui (le brevet est à son nom), que la concurrence bave d'envie et qu'Henry refuse régulièrement des offres juteuses. Au MJ de distiller ces infos sans que les PJ devinent trop vite qu'Henry est parti vendre sa recette.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag3-dutilleul-4",
+              "nom": "Dutilleul",
+              "source": "Collègue d'Henry chez Poterne, son alibi habituel",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Officiellement au colloque de Strasbourg à la place d'Henry. Sait qu'Henry était en week-end avec sa maîtresse. Méfiant (il croit à des détectives de l'épouse) mais facile à impressionner. Peut révéler que le brevet est au nom d'Henry et que la concurrence fait des offres juteuses.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-dutilleul"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-honfleur",
+          "nom": "7. Honfleur la romantique",
+          "lieu": "Restaurant AAA, Honfleur",
+          "notes": "Passage obligé : la jeune femme du restaurant mènera les PJ jusqu'à Henry.\nAugustin, maître d'hôtel (grand, mince, vieux, digne), ne parle pas des clients aux inconnus. Mais les réservations (nom et numéro de table) et les paiements par chèque ou carte permettent de retrouver les clients. Il se souvient qu'une jeune fille de la table derrière Henry lui a demandé, contre un bon pourboire, de faire appeler Henry au téléphone ; elle est revenue ravie. Il ne parle que s'il y trouve un intérêt moral, financier, ou par instinct de survie.\nLes trois tables voisines :\n• Alain Delamotte, professeur d'université à Caen, déjeunait avec sa vieille mère : fausse piste vite écartée.\n• Eliott Warsaw, jeune Anglais en vacances dans un hôtel de Honfleur avec sa copine : fausse piste.\n• Romain De Ségur, peintre de Honfleur, avait invité ses amis pour fêter sa première expo dans une galerie connue (affiches partout, adresse sur son chèque). Sympathique et lunaire, il répond volontiers ; un bobard crédible suffit pour avoir les adresses. Avec lui : Antoine Bergeaux, Lucille Fère (laide, ce n'est pas elle), Brune Lampion (jolie blonde) et Sylvain Martine. Il a une photo du groupe, sait que Brune travaille chez un fleuriste à Pont-l'Évêque et a ses numéros de fixe et de portable.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-pont-leveque",
+          "nom": "8. Pont-l'Évêque",
+          "lieu": "Pont-l'Évêque : petit immeuble du centre, puis boutique de fleuriste",
+          "notes": "Brune est dans l'annuaire. Pas chez elle (au travail) ; les voisins peuvent indiquer la boutique de fleurs du centre-ville. Elle compose un bouquet et vient accueillir les PJ.\nCe qu'elle sait : née d'une mère instable et d'un homme de passage, elle avait vu des photos de son père sans connaître son nom. Au restaurant, l'homme qui s'est retourné pour leur demander moins de bruit, c'était lui. Elle l'a fait appeler au téléphone et s'est présentée ; il s'est souvenu de sa mère et a accepté de la revoir. Le lendemain, journée idyllique (glace, cadeaux, « je peux t'appeler papa ? »). Henry écoute plus qu'il ne parle.\nLe soir, il est parti pour un déplacement d'affaires très important à Brest, « un tournant dans sa carrière ». Ils ont échangé leurs portables ; il l'a appelée la veille au soir depuis Brest.\nSa coopération dépend de la façon dont les PJ présentent les choses.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "ag3-brune-5",
+              "nom": "Brune Lampion",
+              "source": "Fleuriste à Pont-l'Évêque, 21 ans, fille cachée d'Henry",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 3,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite blonde timide, élevée par une mère instable morte il y a deux ans. Au restaurant AAA de Honfleur, elle a reconnu son père (Henry) et l'a fait demander au téléphone ; ils ont passé la journée suivante ensemble. Elle a son numéro et sait qu'il est parti à Brest pour un déplacement « décisif ». Coopère plus ou moins selon la manière des PJ. Levier possible (menace) contre Henry.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-brune"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "ag3-sc-brest",
+          "nom": "9. Brest la venteuse",
+          "lieu": "Brest : hôtel de luxe d'Henry, puis siège de Jerbé",
+          "notes": "Henry loge dans un hôtel chic. Une entreprise agroalimentaire de la périphérie affiche le slogan « Manger bon rend meilleur » : Jerbé, filiale d'une multinationale (agroalimentaire, textile, services) dirigée par des anges pour rendre la vie des gens plus douce et les rendre meilleurs. La compote Poterne est leur rêve.\nEllèmol, ange de Marc, a proposé à Henry une somme astronomique et une rente pour son brevet. Henry hésite encore mais a accepté de le rencontrer ; ses associés ne savent rien (le brevet est à son seul nom, l'entreprise appartient à plusieurs). Ellèmol le fait surveiller et protéger.\nAu MJ de décider selon la rapidité des PJ depuis le début : ils trouvent Henry avant la vente, ou trop tard.\nAvant la vente : l'enveloppe est dans le coffre de l'hôtel, que seul Henry peut ouvrir ; il y en a deux, dont une falsifiée. Moyens de pression : menacer Henry ou sa fille, le faire chanter avec sa double vie… Henry ruse au maximum ou exige une compensation au moins égale à l'offre d'Ellèmol. S'en prendre physiquement à lui, c'est attirer les anges (qui ont peut-être déjà repéré les PJ et peuvent tenter de les capturer et de les garder à l'usine). Victime de chantage, Henry peut prévenir Ellèmol.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag3-henry-6",
+              "nom": "Henry Potier",
+              "source": "Inventeur de la compote Poterne, 42 ans",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 5,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Baratin 3 (estimé), Chimie amateur 2 (estimé)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fils d'un prof de chimie, BTS de vente. Une compote ratée renversée sur un plan de travail souillé par ses expériences de chimie est devenue la compote qui rend heureux ; il a fait breveter la recette à son seul nom. Marié à Anne-Sophie, deux enfants, volage ; maîtresse régulière : Élisabeth. Rusé, il protège son secret ou exige une compensation équivalente à l'offre d'Ellèmol. Il a deux enveloppes dans le coffre de son hôtel de Brest, dont une falsifiée.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-henry"
+            },
+            {
+              "id": "ag3-ellemol-7",
+              "nom": "Ellèmol",
+              "source": "Ange de Marc, grade 2 (Jerbé, filiale angélique de Brest)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 25,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 6
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Baratin 7, Défense 4, Discussion 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chargé par la multinationale angélique de racheter le secret de la compote : il a proposé à Henry une somme astronomique et une rente pour son brevet, et fait surveiller (et protéger) Henry jusqu'à la vente. Négociateur redoutable, pas un combattant.\nAucune arme ni Corps à corps dans le livre : coup de poing niveau 1 estimé.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-ellemol"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag3-ch-timing",
+              "q": "Les PJ arrivent-ils avant que Henry ait vendu son secret ?",
+              "opts": [
+                {
+                  "t": "Oui, avant la vente",
+                  "suite": "Il faut obtenir l'enveloppe (la vraie) du coffre de l'hôtel par la ruse, la menace ou le chantage."
+                },
+                {
+                  "t": "Non, trop tard",
+                  "suite": "La recette est chez Jerbé : infiltration de l'usine et baston avec les anges."
+                }
+              ],
+              "entry": null
+            },
+            {
+              "id": "ag3-ch-henry",
+              "q": "Que deviennent Henry et son secret ?",
+              "opts": [
+                {
+                  "t": "Les PJ récupèrent la vraie enveloppe",
+                  "suite": "Recette détruite ou rapportée : mission réussie."
+                },
+                {
+                  "t": "Ils récupèrent l'enveloppe falsifiée",
+                  "suite": "Les PJ se font avoir : le secret court toujours."
+                },
+                {
+                  "t": "Henry prévient Ellèmol",
+                  "suite": "Les anges protègent Henry et traquent les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag3-sc-jerbe",
+          "nom": "10. La forteresse de la bouffe",
+          "lieu": "Usine et siège social de Jerbé, périphérie de Brest",
+          "notes": "Site immense, grillagé et barbelé, chiens et maîtres-chiens la nuit, barrière gardée (il faut être attendu), accueil où des hôtesses gardent une pièce d'identité « pour vérification ». Un vigile à chaque coin de couloir, incorruptible. Au MJ de faire confiance aux idées des joueurs pour entrer.\nQuatre pôles : l'entrée (accueil, commercial, commandes, SAV, réclamations) ; la conception (les grosses têtes) ; l'administration et les chefs ; la fabrication, le plus gros bâtiment.\nLe secret est dans le coffre du bureau du PDG, côté administration, là où se trouvent les anges, décidés à le garder. Mais rien ne garantit qu'il y soit : un des anges dirigeants, voire Ellèmol, peut l'avoir gardé sur lui ou mis à l'abri.\nLes PJ peuvent chercher l'enveloppe ou tout faire sauter.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "ag3-vigiles-8",
+              "nom": "Vigiles de Jerbé",
+              "source": "Sécurité de l'usine (humains incorruptibles)",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 5,
+                "ag": 4,
+                "pe": 5,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Matraque",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Corps à corps 2, Défense 2, Tir 2, Vigilance 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Un vigile à chaque coin de couloir, maîtres-chiens la nuit ; aucun ne se laisse corrompre.\nAucune caractéristique dans le livre : profil de vigile moyen entièrement estimé.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-vigiles"
+            },
+            {
+              "id": "ag3-anges-9",
+              "nom": "Anges de Jerbé",
+              "source": "Anges dirigeants de la filiale (profil estimé : ange de Marc, PNJ rapide de grade 0)",
+              "type": "ange",
+              "qty": 2,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 10,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Arme de prédilection",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 2
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 2
+                }
+              ],
+              "talents": "Attaque 2, Défense 4, Physique 3, Mental 5, Social 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Les anges qui tiennent la direction et gardent le coffre du PDG, « dévoués corps et âme » à leur cause. Le livre ne les chiffre pas : profil « ange de Marc » des PNJ rapides (livret de l'écran), arme estimée ; nombre au choix du MJ.\nTalents regroupés façon « PNJ rapide » : Attaque = arme de prédilection, Physique / Mental / Social = tous les talents du groupe.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-anges"
+            },
+            {
+              "id": "ag3-ellemol-10",
+              "nom": "Ellèmol",
+              "source": "Ange de Marc, grade 2 (Jerbé, filiale angélique de Brest)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 10,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 25,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 6
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 6
+                }
+              ],
+              "talents": "Baratin 7, Défense 4, Discussion 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Chargé par la multinationale angélique de racheter le secret de la compote : il a proposé à Henry une somme astronomique et une rente pour son brevet, et fait surveiller (et protéger) Henry jusqu'à la vente. Négociateur redoutable, pas un combattant.\nAucune arme ni Corps à corps dans le livre : coup de poing niveau 1 estimé.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43.",
+              "typeId": "type-ag3-ellemol"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag3-ch-jerbe",
+              "q": "Comment les PJ règlent-ils l'affaire Jerbé ?",
+              "opts": [
+                {
+                  "t": "Ils volent la recette dans le coffre",
+                  "suite": "Mission réussie si elle y est bien ; les anges savent désormais qui les a doublés."
+                },
+                {
+                  "t": "Ils font tout sauter",
+                  "suite": "Le secret est sans doute détruit, mais impossible d'en être sûr : à prouver à la hiérarchie."
+                },
+                {
+                  "t": "Ils sont capturés",
+                  "suite": "Les anges les gardent dans l'usine pour les interroger et décider de leur sort."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "ag3-sc-fin",
+          "nom": "11. La fin",
+          "lieu": "Retour chez le lapin",
+          "notes": "Le succès n'est reconnu que si le secret est rapporté ou détruit, preuves à l'appui. Le sort d'Henry importe peu, tant que les gens cessent de se gaver de compote avec cet air béat.\nBonus appréciés : avoir contrecarré les plans des anges et leur avoir cassé la figure, et toutes les mauvaises actions commises en route.\nÉchec : la hiérarchie n'est pas contente ; les PJ doivent se racheter vite ou se faire oublier.\nLe livre ne donne aucun barème chiffré de PA.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "ag3-ch-resultat",
+              "q": "Bilan de la mission ?",
+              "opts": [
+                {
+                  "t": "Secret détruit ou rapporté, preuves à l'appui",
+                  "suite": "Succès ; bonus si les anges ont été humiliés."
+                },
+                {
+                  "t": "Échec",
+                  "suite": "Colère des patrons : se racheter ou se faire tout petit."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795357950277,
+      "updatedAt": 1795357950277
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-ag3-ellemol",
+      "nom": "Ellèmol",
+      "source": "Ange de Marc, grade 2 (Jerbé, filiale angélique de Brest)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 8,
+        "vo": 10,
+        "pr": 10,
+        "foi": 8
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 25,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 8
+        },
+        {
+          "n": "Détection des ennemis",
+          "r": 6
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 6
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 6
+        }
+      ],
+      "talents": "Baratin 7, Défense 4, Discussion 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Chargé par la multinationale angélique de racheter le secret de la compote : il a proposé à Henry une somme astronomique et une rente pour son brevet, et fait surveiller (et protéger) Henry jusqu'à la vente. Négociateur redoutable, pas un combattant.\nAucune arme ni Corps à corps dans le livre : coup de poing niveau 1 estimé.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-vigiles",
+      "nom": "Vigiles de Jerbé",
+      "source": "Sécurité de l'usine (humains incorruptibles)",
+      "type": "humain",
+      "car": {
+        "fo": 5,
+        "ag": 4,
+        "pe": 5,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Matraque",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        },
+        {
+          "n": "Revolver",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 2, Corps à corps 2, Défense 2, Tir 2, Vigilance 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Un vigile à chaque coin de couloir, maîtres-chiens la nuit ; aucun ne se laisse corrompre.\nAucune caractéristique dans le livre : profil de vigile moyen entièrement estimé.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-anges",
+      "nom": "Anges de Jerbé",
+      "source": "Anges dirigeants de la filiale (profil estimé : ange de Marc, PNJ rapide de grade 0)",
+      "type": "ange",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 10,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Arme de prédilection",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 2
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 2
+        }
+      ],
+      "talents": "Attaque 2, Défense 4, Physique 3, Mental 5, Social 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Les anges qui tiennent la direction et gardent le coffre du PDG, « dévoués corps et âme » à leur cause. Le livre ne les chiffre pas : profil « ange de Marc » des PNJ rapides (livret de l'écran), arme estimée ; nombre au choix du MJ.\nTalents regroupés façon « PNJ rapide » : Attaque = arme de prédilection, Physique / Mental / Social = tous les talents du groupe.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-lapin",
+      "nom": "Le lapin de la Maison du Lapin",
+      "source": "Démon commanditaire (petit lapin noir et blanc d'animalerie)",
+      "type": "demon",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Morsure",
+          "att": 2,
+          "prec": -2,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Donne la mission aux PJ au milieu des cages ; la vendeuse n'est au courant de rien. Les prévient que la compote pourrait être protégée par des anges.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-henry",
+      "nom": "Henry Potier",
+      "source": "Inventeur de la compote Poterne, 42 ans",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 5,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Baratin 3 (estimé), Chimie amateur 2 (estimé)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fils d'un prof de chimie, BTS de vente. Une compote ratée renversée sur un plan de travail souillé par ses expériences de chimie est devenue la compote qui rend heureux ; il a fait breveter la recette à son seul nom. Marié à Anne-Sophie, deux enfants, volage ; maîtresse régulière : Élisabeth. Rusé, il protège son secret ou exige une compensation équivalente à l'offre d'Ellèmol. Il a deux enveloppes dans le coffre de son hôtel de Brest, dont une falsifiée.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1). Talents estimés.\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-elisabeth",
+      "nom": "Élisabeth",
+      "source": "Maîtresse d'Henry (mariée, phobie des trains)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A passé le week-end à Honfleur avec Henry ; il lui a prêté sa voiture pour rentrer et elle l'a garée dans sa rue, à Rambouillet, où Lou Zeur l'a volée. Elle a remarqué la jolie blonde du restaurant AAA. Selon l'attitude des PJ, elle peut se mettre à douter de son amant, voire péter les plombs.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-dutilleul",
+      "nom": "Dutilleul",
+      "source": "Collègue d'Henry chez Poterne, son alibi habituel",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Officiellement au colloque de Strasbourg à la place d'Henry. Sait qu'Henry était en week-end avec sa maîtresse. Méfiant (il croit à des détectives de l'épouse) mais facile à impressionner. Peut révéler que le brevet est au nom d'Henry et que la concurrence fait des offres juteuses.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-lou",
+      "nom": "Lou Zeur",
+      "source": "Voleur de la voiture, fils des fermiers (près de trente ans)",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "A volé la voiture d'Henry rue Victor-Huguenot à Rambouillet et s'est planté près de la ferme de ses parents. Blessé, caché au grenier, il a peur et s'ennuie.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    },
+    {
+      "id": "type-ag3-brune",
+      "nom": "Brune Lampion",
+      "source": "Fleuriste à Pont-l'Évêque, 21 ans, fille cachée d'Henry",
+      "type": "humain",
+      "car": {
+        "fo": 3,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite blonde timide, élevée par une mère instable morte il y a deux ans. Au restaurant AAA de Honfleur, elle a reconnu son père (Henry) et l'a fait demander au téléphone ; ils ont passé la journée suivante ensemble. Elle a son numéro et sait qu'il est parti à Brest pour un déplacement « décisif ». Coopère plus ou moins selon la manière des PJ. Levier possible (menace) contre Henry.\nPas de caractéristiques dans le livre : fiche minimale (humain moyen, niveau 2 partout, coup de poing niveau 1).\nSource : Angelots en gelée, « Ça complote dans la compote » (O. Fanton), p. 35-43."
+    }
+  ],
+  "memoire": []
+}

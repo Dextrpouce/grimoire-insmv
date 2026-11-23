@@ -1,0 +1,3707 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa6-clint-eastwood",
+      "nom": "Petites Apocalypses – La douloureuse absence de Clint Eastwood",
+      "resume": "Scénario en trois étapes pour agents de la troisième Force employés par la DTC d'Hercule, à espacer en intercalant d'autres aventures. 1) La cervelle au girofle : des psis d'un squat de Montreuil sont décapités par un dentiste fou, démon de Bifrons, et ses complices, qui collectent leurs cerveaux. 2) Ainsi, par le zoo tout sera : les gorilles du zoo de Vincennes disparaissent, enlevés par des démons de Caym, et un faux Front de libération des gorilles revendique l'affaire ; Jordi engage la DTC. 3) La méchante combo : les cerveaux greffés sur les gorilles donnent des gorilles psioniques-zombies-cyborgs qu'Ozgur Phalange, grade 3 de Bifrons, lâche sur des banques puis sur un avion de ligne, jusqu'à l'assaut final dans une usine de pâte à tartiner. Ton kitsch et grand-guignol assumé, beaucoup de bagarre.",
+      "notes": "Source : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108 ; adaptations p. 116.\n\nStructure : trois étapes liées par l'histoire et par des indices (un détail de chez Mortau repéré à l'étape 1 réapparaît sur la cassette de l'étape 2 ; la voisine sert aux deux). Le livre conseille d'intercaler d'autres scénarios entre elles pour que les liens ne soient pas trop évidents. Chaque étape mêle un peu d'enquête et une grosse bagarre. Tout est à jouer dans l'excès : dentiste fou, FLG, gorilles psioniques-zombies-cyborgs.\n\nComptabilité des gorilles : chaque cerveau récolté à l'étape 1 (au moins quatre : Sébastien meurt quoi qu'il arrive) et chaque gorille livré à l'étape 2 (sept enlevés, un s'échappe) détermine combien de gorilles psioniques-zombies-cyborgs (six au maximum) affrontent les PJ à l'étape 3. Les PJ ne peuvent ni démanteler toute l'organisation à l'étape 1 ni retrouver les gorilles à l'étape 2 : il en faut pour la suite.\n\nCommanditaires : étape 1, les squatteurs (argent du père de Pierre) ; étapes 2 et 3, Jordi.\nRécompenses : le livre n'en donne pas. Suggestion : salaire DTC à chaque étape, modulé selon les squatteurs sauvés, les démons éliminés et les attentats évités.\n\nAdaptations (ch. 14, p. 116) :\n• INS : le livre juge l'adaptation quasi impossible, sauf équipe de démons ravie de saboter les projets de leurs collègues. Variante lourde : remplacer Bifrons par un renégat de Jean ; les gorilles ne sont alors plus zombies et il faut admettre une vraie greffe de cerveau réussie (limite du grotesque, reconnaît l'auteur).\n• MV : le père de Pierre Milon est un soldat de Dieu qui, pour protéger son fils, obtient d'un grade 3 qui lui doit un service l'envoi d'une équipe d'anges. Pour les étapes 2 et 3, la même équipe est envoyée pour le compte de Jordi (moins méfiant que dans la version DTC, puisqu'il emploie alors des anges).\n• Dans tous les cas, ajuster la puissance des adversaires à celle des PJ.\n\nFiches : caractéristiques, PP, PF, seuils et attaques repris du livre (vérifiés sur les pages 100-107). Attaques converties depuis la notation « seuil/RU+X/M+Y » (précision et puissance d'origine rappelées dans les notes). Estimations signalées dans les notes des fiches : coups de poing ajoutés aux démons sans arme au corps à corps, fusil à fléchettes des gorilles de Caym, Téléportation d'Alonzo, gorilles psioniques classés Familier, protection temporaire de la combo de Mabel non comptée. Les squatteurs, la voisine, Jordi, Hercule, Armand et Henri ont des fiches minimales.",
+      "scenes": [
+        {
+          "id": "pa6-sc-squat",
+          "nom": "1. Étape 1 – Le squat de Montreuil",
+          "lieu": "Immeuble « squatté » près d'un grand parc, Montreuil",
+          "notes": "Ouverture de « La cervelle au girofle ». Trois squatteurs ont disparu en quelques jours (Georges-Antoine, Alicia, Alister) en laissant leurs affaires. Pendant que Pierre et Lucas s'en inquiètent, Sébastien, en sortant la poubelle, trébuche sur un corps décapité à demi caché sous un arbuste : Georges-Antoine, mort depuis quelques jours.\nLucas impose le silence (pas de police : les jeunes psis craignent l'expulsion et tiennent à leur discrétion) et propose la DTC ; Pierre soutire une grosse somme à son père sous un prétexte bidon.\nHercule confie aux PJ : trouver l'assassin, récupérer la tête avant quiconque, retrouver Alicia et Alister (entiers si possible) et, à la demande de Lucas, protéger Pierre.\nInterrogatoires : peu productifs (portraits croisés, langues de vipère) ; la dispute violente entre Georges-Antoine et Alicia la veille de sa disparition rend Alicia suspecte tant qu'on n'a pas trouvé son corps. Lucas est le plus utile et révèle que l'immeuble est au père de Pierre.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-pierre-1",
+              "nom": "Pierre Milon",
+              "source": "Psi, « leader » du squat de Montreuil",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "24 ans, grand et maigre, cheveux châtains en brosse, sourires trop larges, regard fuyant, un peu faux-jeton. Étudiant en psycho, psi assez doué. L'immeuble appartient en secret à son père, très riche (et non psi), qui paie la DTC. Lucas demande qu'on le protège en priorité : sans lui, plus de squat.\nDernier sur la liste des démons.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-pierre"
+            },
+            {
+              "id": "pa6-lucas-2",
+              "nom": "Lucas Dupré",
+              "source": "Psi, meilleur ami de Pierre, vrai ciment du squat",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Ivoirien, 1,95 m, cheveux très courts, regard doux ; étudiant en médecine (5e année). Réfléchi, diplomate, apaise les conflits, soigne les bobos. Rationnel et coopératif : c'est l'interlocuteur le plus utile aux PJ (il sait que l'immeuble est à Pierre). Il propose la DTC et se porte volontaire comme appât pour un « plan chèvre ». Avant-dernier sur la liste : sa survie dépend des PJ.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-lucas"
+            },
+            {
+              "id": "pa6-squatteurs-3",
+              "nom": "Les autres squatteurs",
+              "source": "Une vingtaine de jeunes psis aisés (une dizaine à demeure)",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Victimes déjà décapitées : Georges-Antoine Delapierre (punk provocateur, disputé avec Alicia la veille), Alicia Latour (étudiante à HEC), Alister Mock (menuisier roux, apprécié).\nProchaines cibles, dans l'ordre : Sébastien Huart (pâle et sensible ; il découvre le premier corps, puis doit mourir quoi qu'il arrive), Alonzo (s'échappe), Arnold Elmer (allure de brute, en fait poète cultivé), Firmin Stragu (dents répugnantes, postillonne : épargné par Mortau), Aurélie Lillian (blondinette bavarde et soupe au lait, amoureuse d'Alister ; peut photographier ses agresseurs), Lucas, Pierre.\nAmbiance : communauté anar-bourgeoise, sans électricité, réchauds, sacs de couchage, débats sans fin ; hostile à la police.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-squatteurs"
+            },
+            {
+              "id": "pa6-hercule-4",
+              "nom": "Hercule",
+              "source": "Patron de la DTC, héros païen",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Reçoit Pierre et Lucas (étape 1) puis Jordi (étape 2) et confie les missions aux PJ. Peut transmettre l'information d'Échelon à l'étape 3 si le MJ le préfère. Ses services peuvent identifier Mortau d'après la photo d'Aurélie.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa6-sc-cadavres",
+          "nom": "2. La découverte des cadavres",
+          "lieu": "Jardin du squat, puis ancienne fabrique désaffectée sur le chemin du métro",
+          "notes": "• Georges-Antoine : vêtu, aucune autre blessure, mort le soir de la dispute ; trop peu de sang sous le buisson, il a été tué ailleurs. Tête tranchée proprement.\n• Lieu du meurtre : près d'une petite mare artificielle cachée par la verdure, loin de la maison (où il aimait traîner) : traces de lutte, sang sous un grand arbre et, en cherchant très bien, un éclat de lame de scalpel. Les tueurs l'attendaient et ont agi vite et en silence ; le scalpel servait à ne pas abîmer la tête, qui devait rester utilisable.\n• Alister : décapité de la même façon, coincé à trois mètres dans le feuillage d'un arbre (sang au pied et sur le tronc ; il a fallu être costaud). Ses affaires de travail dans un buisson : pris au départ, tôt le matin.\n• Alicia : aucune trace au squat. Il faut suivre son trajet vers HEC (Aurélie le connaît) : elle coupait par une fabrique désaffectée pour rejoindre le métro. Sang près d'un bâtiment, corps à l'intérieur, même mode opératoire, pas d'autre indice.\nReste à décider quoi faire des corps (avec les squatteurs et la DTC).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-squatteurs-5",
+              "nom": "Les autres squatteurs",
+              "source": "Une vingtaine de jeunes psis aisés (une dizaine à demeure)",
+              "type": "psi",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Victimes déjà décapitées : Georges-Antoine Delapierre (punk provocateur, disputé avec Alicia la veille), Alicia Latour (étudiante à HEC), Alister Mock (menuisier roux, apprécié).\nProchaines cibles, dans l'ordre : Sébastien Huart (pâle et sensible ; il découvre le premier corps, puis doit mourir quoi qu'il arrive), Alonzo (s'échappe), Arnold Elmer (allure de brute, en fait poète cultivé), Firmin Stragu (dents répugnantes, postillonne : épargné par Mortau), Aurélie Lillian (blondinette bavarde et soupe au lait, amoureuse d'Alister ; peut photographier ses agresseurs), Lucas, Pierre.\nAmbiance : communauté anar-bourgeoise, sans électricité, réchauds, sacs de couchage, débats sans fin ; hostile à la police.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-squatteurs"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa6-sc-traque",
+          "nom": "3. Gare à vos têtes !",
+          "lieu": "Montreuil : rues et parcs entre le squat et la maison du dentiste",
+          "notes": "En coulisses : quatre démons de Bifrons (Mortau, Polo, Martinez, Mabel) doivent rapporter 5 à 10 cerveaux de psis, conservés en cuves (fluide, sang artificiel, oxygénateur) pour être greffés plus tard. Ils en ont trois. Ils n'opèrent plus dans le jardin du squat : ils suivent leurs cibles et les décapitent, toujours à deux, dans un coin discret près de chez Mortau (qui habite non loin), car le prélèvement doit être rapide.\nPlanning (au MJ de dérouler selon les progrès des PJ ; Sébastien doit mourir, pour garantir au moins quatre gorilles) :\n• Sébastien, attiré pour tailler la haie d'une maison inoccupée, y est tué ; corps laissé sur place.\n• Alonzo, suivi vers son lycée par Mabel et Martinez, se téléporte au dernier moment : description de Martinez, aperçu de Mabel et d'une grande lame, odeur de clou de girofle.\n• Arnold : corps retrouvé dans une poubelle si les PJ piétinent.\n• Firmin, attiré dans un parc par Mabel jouant la femme en détresse, tombe sur Mortau (en blouse si le MJ veut aider) qui renonce, écœuré par ses dents, et s'enfuit avec Mabel.\n• Aurélie peut photographier Mortau et Martinez avec son portable avant d'être tuée : la DTC identifie le dentiste.\n• Puis Lucas et Pierre. Si tous y passent, le squat se disperse et les meurtres cessent.\nDéductions : meurtres tous situés entre le squat et la maison du dentiste ; girofle + lame + dents → un dentiste ; les pages jaunes recoupées donnent une ou deux adresses, dont celle de Mortau.\nPlan chèvre : un squatteur sous surveillance (Lucas se porte volontaire) peut permettre de coincer deux des démons.\nDès qu'ils se sentent repérés, les démons préviennent leurs chefs, qui déplacent les cerveaux chez un démon de Caym à Sceaux (puis les cages). Comptez les cerveaux récoltés : c'est le nombre de gorilles de l'étape 3.\n\nAlonzo est un allié des PJ : il n'est pas dans la liste des adversaires du combat (sa fiche reste dans le bestiaire du scénario).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa6-mortau-7",
+              "nom": "Dr Alain Mortau, le dentiste fou",
+              "source": "Démon de Bifrons, grade 2, chef de la bande",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 26,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Scalpel, fraise, instruments divers",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Décharge électrique (portée moyenne)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Champ magnétique",
+                  "r": 12
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre l'électricité",
+                  "r": 0
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 1, Combat 3 (scalpel, fraise et instruments divers 6), Défense 6, Discrétion 3, Médecine 2, Métier : dentiste 2, Sixième sens 3, Survie 2 (bizutage 4), Torture 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le cliché du dentiste sadique à pousser au maximum : blouse blanche tachée, voix suraiguë ridicule, petites lunettes rondes, cheveux châtains frisés, lèvres minces et sourire sardonique ; 1,80 m, très baraqué. Mauvais praticien, peu de clientèle. Maison de brique et de silex à Montreuil (cabinet au rez-de-chaussée, appartements à l'étage, « laboratoire » à la cave). Amateur de vin. Le livre écrit son nom Mortau ou Morteau.\nIl opère toujours avec un complice et une grande lame ; il épargne Firmin, dégoûté par ses dents.\nInstruments : précision −2, puissance +0 dans le livre (63/RU+5/M+4) ; Décharge électrique 64/RU+5/M+7.\nRôle pour la suite : s'il reste libre, c'est lui qui greffe les cerveaux sur les gorilles (étape 3) ; il peut réapparaître à Sceaux.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-mortau"
+            },
+            {
+              "id": "pa6-mabel-8",
+              "nom": "Mabel Otruc",
+              "source": "Démon de Bifrons, grade 1, secrétaire (et maîtresse) de Mortau",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 2,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 20,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Ongles d'acier (combo)",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 8
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Graisse",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                }
+              ],
+              "talents": "Athlétisme 6, Conduite 6, Corps à corps 8+, Défense 7+, Intimidation 5, Médecine 2, Séduction 1+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Faux air de Cruella ; trop maigre et habillée trop jeune pour son âge. Sert d'appât (elle fait signe à Firmin de venir l'aider). Ses bas servent de cagoules aux deux plaisantins du FLG.\nCombo : elle active ses quatre pouvoirs d'un coup pour 10 PP, pendant 1 minute ; Force 8 et protection 6 (non comptée sur la fiche : à ajouter en combat). Ongles d'acier 66/RU+9/M+7, M+10 avec la combo.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-mabel"
+            },
+            {
+              "id": "pa6-martinez-9",
+              "nom": "Alexandre Martinez",
+              "source": "Démon de Bifrons, grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 9,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Jet d'acide (portée très courte, pénétration importante)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 2
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 2
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 4, Aisance sociale 3, Baratin 3, Conduite 5, Corps à corps 4, Défense 4, Discrétion 5, Enquête 3, Fouille 4, Informatique 4, Intrusion 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tête de grenouille aux gros yeux globuleux : Alonzo peut en donner une description précise après l'agression ratée, et Aurélie peut le photographier.\nJet d'acide : 46/RU+3/M+6 dans le livre. Coup de poing ajouté (Corps à corps 4).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-martinez"
+            },
+            {
+              "id": "pa6-polo-10",
+              "nom": "Polo Jarmish",
+              "source": "Démon de Bifrons, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 4,
+                "vo": 2,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Machin qui fait boum (portée longue, pénétration importante)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Déphasage",
+                  "r": 4
+                },
+                {
+                  "n": "Illusions",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 8, Corps à corps 5, Défense 7, Discrétion 8, Tir 3 (armes d'épaule 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Belles moustaches noires et vraie tête de malfrat. Spécialiste de la filature discrète.\nArme d'épaule « machin qui fait boum » : 64/RU+4/M+4 dans le livre. Coup de poing ajouté (Corps à corps 5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-polo"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-chevre",
+              "q": "Les PJ tendent-ils un piège (plan chèvre) ?",
+              "opts": [
+                {
+                  "t": "Oui, et il réussit",
+                  "suite": "Deux des quatre démons (le binôme envoyé) sont tués ou capturés ; les deux autres se replient chez Mortau et l'alerte est donnée : les cerveaux partent pour Sceaux."
+                },
+                {
+                  "t": "Oui, mais il rate",
+                  "suite": "L'appât (souvent Lucas) risque sa tête ; les démons, méfiants, accélèrent le déménagement."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Les meurtres continuent selon le planning jusqu'à ce que les PJ remontent jusqu'au dentiste."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa6-sc-mortau",
+          "nom": "4. Chez le docteur Mortau",
+          "lieu": "Maison de brique et de silex du Dr Mortau, Montreuil (cabinet, étage, cave-laboratoire)",
+          "notes": "Rez-de-chaussée : cabinet dentaire à l'ancienne, salle d'attente, secrétariat, cuisine. Étage : appartements. Une porte mène à la cave : néons, humidité, crasse, matériel chirurgical (voire de bûcheron), cuves de liquide épais et bouillonnant reliées à des tuyaux, table d'opération, sang partout, bocaux d'expériences, bonne cave à vin, matériel vidéo et deux grandes cages vides au fond. Ambiance de film gore grotesque.\nBagarre : les démons restants sont là (éventuellement avec deux ou trois démons de Caym venus aider) ou arrivent pendant la fouille. Un ou deux peuvent s'échapper, ce qui désigne les PJ comme fauteurs de troubles pour la suite.\nÀ placer absolument pour l'étape 2 :\n• un détail caractéristique de la maison (cloche fêlée voisine qui rate un « dong », pendule ou vase d'une laideur mémorable…) qui réapparaîtra sur la cassette du FLG ;\n• Madame Delabarre à sa fenêtre : les PJ se sentent épiés jusqu'à découvrir que ce n'est que la voisine.\nAucun autre lien avec la suite pour l'instant. Reste à régler le sort des corps et des démons capturés, avec les squatteurs et la DTC.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa6-mortau-11",
+              "nom": "Dr Alain Mortau, le dentiste fou",
+              "source": "Démon de Bifrons, grade 2, chef de la bande",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 26,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Scalpel, fraise, instruments divers",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Décharge électrique (portée moyenne)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Champ magnétique",
+                  "r": 12
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre l'électricité",
+                  "r": 0
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 1, Combat 3 (scalpel, fraise et instruments divers 6), Défense 6, Discrétion 3, Médecine 2, Métier : dentiste 2, Sixième sens 3, Survie 2 (bizutage 4), Torture 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le cliché du dentiste sadique à pousser au maximum : blouse blanche tachée, voix suraiguë ridicule, petites lunettes rondes, cheveux châtains frisés, lèvres minces et sourire sardonique ; 1,80 m, très baraqué. Mauvais praticien, peu de clientèle. Maison de brique et de silex à Montreuil (cabinet au rez-de-chaussée, appartements à l'étage, « laboratoire » à la cave). Amateur de vin. Le livre écrit son nom Mortau ou Morteau.\nIl opère toujours avec un complice et une grande lame ; il épargne Firmin, dégoûté par ses dents.\nInstruments : précision −2, puissance +0 dans le livre (63/RU+5/M+4) ; Décharge électrique 64/RU+5/M+7.\nRôle pour la suite : s'il reste libre, c'est lui qui greffe les cerveaux sur les gorilles (étape 3) ; il peut réapparaître à Sceaux.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-mortau"
+            },
+            {
+              "id": "pa6-mabel-12",
+              "nom": "Mabel Otruc",
+              "source": "Démon de Bifrons, grade 1, secrétaire (et maîtresse) de Mortau",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 2,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 20,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Ongles d'acier",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Ongles d'acier (combo)",
+                  "att": 18,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Augmentation de Force",
+                  "r": 8
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 8
+                },
+                {
+                  "n": "Graisse",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                }
+              ],
+              "talents": "Athlétisme 6, Conduite 6, Corps à corps 8+, Défense 7+, Intimidation 5, Médecine 2, Séduction 1+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Faux air de Cruella ; trop maigre et habillée trop jeune pour son âge. Sert d'appât (elle fait signe à Firmin de venir l'aider). Ses bas servent de cagoules aux deux plaisantins du FLG.\nCombo : elle active ses quatre pouvoirs d'un coup pour 10 PP, pendant 1 minute ; Force 8 et protection 6 (non comptée sur la fiche : à ajouter en combat). Ongles d'acier 66/RU+9/M+7, M+10 avec la combo.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-mabel"
+            },
+            {
+              "id": "pa6-martinez-13",
+              "nom": "Alexandre Martinez",
+              "source": "Démon de Bifrons, grade 0",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 9,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Jet d'acide (portée très courte, pénétration importante)",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 2
+                },
+                {
+                  "n": "Détection des ennemis",
+                  "r": 2
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 4, Aisance sociale 3, Baratin 3, Conduite 5, Corps à corps 4, Défense 4, Discrétion 5, Enquête 3, Fouille 4, Informatique 4, Intrusion 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Tête de grenouille aux gros yeux globuleux : Alonzo peut en donner une description précise après l'agression ratée, et Aurélie peut le photographier.\nJet d'acide : 46/RU+3/M+6 dans le livre. Coup de poing ajouté (Corps à corps 4).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-martinez"
+            },
+            {
+              "id": "pa6-polo-14",
+              "nom": "Polo Jarmish",
+              "source": "Démon de Bifrons, grade 1",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 10,
+                "pe": 4,
+                "vo": 2,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Machin qui fait boum (portée longue, pénétration importante)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Déphasage",
+                  "r": 4
+                },
+                {
+                  "n": "Illusions",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 8, Corps à corps 5, Défense 7, Discrétion 8, Tir 3 (armes d'épaule 6)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Belles moustaches noires et vraie tête de malfrat. Spécialiste de la filature discrète.\nArme d'épaule « machin qui fait boum » : 64/RU+4/M+4 dans le livre. Coup de poing ajouté (Corps à corps 5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-polo"
+            },
+            {
+              "id": "pa6-gorille-caym-15",
+              "nom": "Gorille de Caym",
+              "source": "Démon de Caym, grade 1 (la dizaine de sbires de Lucien)",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 2,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Crocs (portée lutte, 1 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Ongles d'acier (2 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil à fléchettes tranquillisantes",
+                  "att": 10,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                },
+                {
+                  "n": "Transformation",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 5, Conduite 4, Corps à corps 6, Défense 6, Tir 3 (armes d'épaule 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Démons-braconniers urbains qui prennent forme de gorille pour l'enlèvement. Valeurs identiques au « Gorille de Caym » du bestiaire de l'appli.\nCrocs 66/RU+7/M+6, ongles d'acier 66/RU+7/M+7. Le fusil (fléchettes anesthésiantes du zoo) n'a pas de profil dans le livre : profil de carabine estimé, effet tranquillisant à l'appréciation du MJ.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-gorille-caym"
+            },
+            {
+              "id": "pa6-delabarre-16",
+              "nom": "Madame Delabarre",
+              "source": "Vieille voisine de Mortau, à Montreuil",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Passe ses journées à sa fenêtre du premier étage à espionner le voisinage ; désagréable mais précieuse. Aime la camomille et les sonates de Chopin, déteste qu'on salisse son parquet. Les PJ doivent sentir qu'on les observe dès l'étape 1.\nÉtape 2 : elle a vu des hommes patibulaires charger des cages dans un gros camion ; si les PJ sont aimables, boivent son infusion et respectent son parquet, elle donne l'immatriculation, qui mène à Sceaux.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-delabarre"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-dentiste",
+              "q": "Qu'advient-il du Dr Mortau ?",
+              "opts": [
+                {
+                  "t": "Tué ou capturé",
+                  "suite": "Un autre démon aussi « doué » le remplace pour les greffes ; les PJ ont arrêté le carnage."
+                },
+                {
+                  "t": "En fuite",
+                  "suite": "Il pratiquera lui-même les greffes à Sceaux et pourra y être retrouvé à la fin de l'étape 2."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa6-sc-jordi",
+          "nom": "5. Étape 2 – Jordi à la DTC",
+          "lieu": "Locaux de la DTC, Paris (quelque temps après l'étape 1)",
+          "notes": "« Ainsi, par le zoo tout sera » : à jouer après un autre scénario, ou en parallèle. Les sept gorilles du zoo de Vincennes ont disparu dans la nuit il y a quelques jours (affaire très médiatisée, ni trace ni témoin officiel). Nouveauté : plusieurs chaînes ont reçu une cassette de revendication du Front de libération des gorilles.\nJordi, archange des animaux, veut des extérieurs : il s'inquiète du sort des bêtes et craint que certains de ses anges soient derrière le FLG. Il engage la DTC.\nEn coulisses (la nuit de l'enlèvement) : une dizaine de démons de Caym armés de fusils franchissent le mur, se changent en gorilles, forcent la cage, endorment les vrais gorilles aux fléchettes et les emmènent en camion, alarme déclenchée trop tard. Le dernier de la file a vu Henri dans un fourré et lui a fait « chut ». Direction Sceaux, chez Lucien Darfin, où attendent des cages (dont celles de Mortau). En route, un gorille mal endormi s'échappe à Sceaux : il en reste six.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-jordi-17",
+              "nom": "Jordi",
+              "source": "Archange des animaux, commanditaire de l'étape 2",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Inquiet pour les gorilles et surtout de voir la main de ses propres anges derrière le FLG : il préfère engager la DTC plutôt que ses troupes ou d'autres anges, par fierté. Une fois convaincu que ses anges sont innocents, il détache l'un d'eux auprès des PJ et exige qu'on élimine les démons responsables. À l'étape 3, il (ou son ange) transmet les mails interceptés par Échelon ; ses anges peuvent servir de cavalerie à l'usine.\nPas de caractéristiques dans ce scénario : fiche indicative.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-jordi"
+            },
+            {
+              "id": "pa6-hercule-18",
+              "nom": "Hercule",
+              "source": "Patron de la DTC, héros païen",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Reçoit Pierre et Lucas (étape 1) puis Jordi (étape 2) et confie les missions aux PJ. Peut transmettre l'information d'Échelon à l'étape 3 si le MJ le préfère. Ses services peuvent identifier Mortau d'après la photo d'Aurélie.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-hercule"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa6-sc-zoo",
+          "nom": "6. L'enquête du zoo",
+          "lieu": "Zoo de Vincennes, associations, marchés de gros",
+          "notes": "• Armand, le gardien : n'a rien vu, mais mentionne Henri, à qui il fait confiance.\n• Henri : décrit la scène devant la cage (gorilles armés, le « chut », un moteur de camion). Personne ne l'a cru. Pour qui sait que les démons de Caym prennent forme animale, la piste est claire.\n• SPA, WWF : rencontres hautes en couleur, mais fausses pistes.\n• Idées farfelues à récompenser (grossistes en bananes, Rungis…) : elles peuvent mener à l'adresse de Sceaux, mais les PJ arriveront après le départ des gorilles.\n• Le gorille évadé est retrouvé à Sceaux peu après (parc de la ville, ou il saccage le lycée Lakanal) : indice que l'affaire se passe à Sceaux, sans plus.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-armand-19",
+              "nom": "Armand",
+              "source": "Gardien de nuit du zoo de Vincennes",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quinze ans de maison, fait sa sieste après ses rondes, laisse quelques sans-abri dormir dans le zoo. N'a rien vu, rien entendu. Ne néglige aucune piste et fait confiance à Henri : c'est par lui que les PJ entendent parler du témoin.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-armand"
+            },
+            {
+              "id": "pa6-henri-20",
+              "nom": "Henri",
+              "source": "SDF alcoolique, témoin de l'enlèvement",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Dormait dans un fourré près de la cage. Il raconte avoir vu une bande de gorilles armés de fusils venir « libérer » les pensionnaires ; le dernier lui a fait signe de se taire. Il a entendu ensuite un gros moteur (camion). Personne ne l'a cru. Son témoignage oriente vers des démons de Caym (transformation animale).\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-henri"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa6-sc-flg",
+          "nom": "7. La cassette du FLG et la voisine",
+          "lieu": "Maison de Mortau à Montreuil ; repaire de Sceaux (en coulisses)",
+          "notes": "En coulisses : venus chercher les cages chez Mortau, les démons de Caym trouvent son matériel vidéo. Anthony et Christian, cagoulés avec des bas de Mabel, improvisent une revendication grandiloquente (libération de tous les gorilles, monument à Dian Fossey) ; tout le monde rit, et ils l'envoient aux télés. Lucien, furieux de ce manque de professionnalisme, les houspille : la dissension s'installe.\nPistes :\n• Sur la cassette, le détail caractéristique de chez Mortau placé à l'étape 1 (bruit, objet) : les PJ doivent avoir l'impression de l'avoir repéré eux-mêmes. Ils ont aussi vu les cages dans la cave.\n• Chez Mortau : cages disparues, matériel vidéo en place (la cassette a été tournée ici).\n• Madame Delabarre : a vu des hommes patibulaires charger des cages dans un gros camion. Avec politesse, infusion et parquet propre, elle donne l'immatriculation → Sceaux.\n• Le délateur : l'un des deux plaisantins, viré de l'affaire (ou en fuite après que Lucien a exécuté son complice pour « dérapage »), se venge en livrant l'adresse à la DTC, sans rien dire du but de l'opération.\nCerveaux de psis + gorilles : les joueurs devraient commencer à comprendre.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-delabarre-21",
+              "nom": "Madame Delabarre",
+              "source": "Vieille voisine de Mortau, à Montreuil",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Passe ses journées à sa fenêtre du premier étage à espionner le voisinage ; désagréable mais précieuse. Aime la camomille et les sonates de Chopin, déteste qu'on salisse son parquet. Les PJ doivent sentir qu'on les observe dès l'étape 1.\nÉtape 2 : elle a vu des hommes patibulaires charger des cages dans un gros camion ; si les PJ sont aimables, boivent son infusion et respectent son parquet, elle donne l'immatriculation, qui mène à Sceaux.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-delabarre"
+            },
+            {
+              "id": "pa6-christian-22",
+              "nom": "Christian Fannot",
+              "source": "Démon de Caym, grade 0, plaisantin du FLG",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Transformation",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 4, Corps à corps 5, Défense 5, Discrétion 4, Hobby : art Caym 4, Humour 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Taille moyenne, roux en brosse, zozote ; il court vite (ce qui peut lui sauver la vie). Bon candidat pour le délateur.\nLes deux plaisantins du « Front de libération des gorilles » : étudiants (véto et chaudronnerie), ils tournent la fausse revendication chez Mortau, visage couvert d'un bas, et l'envoient aux télés. Le livre donne un seul profil pour les deux.\nAucune arme dans le livre : coup de poing au niveau de Corps à corps (5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-christian"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-delateur",
+              "q": "Lucien exécute-t-il l'un des plaisantins du FLG ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "L'autre (le roux, qui court vite) s'enfuit et dénonce la bande à la DTC."
+                },
+                {
+                  "t": "Non, il est seulement viré",
+                  "suite": "Rancunier, il livre quand même l'adresse de Sceaux à la DTC."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa6-sc-sceaux",
+          "nom": "8. Bagarre à Sceaux",
+          "lieu": "Propriété de Lucien Darfin, Sceaux",
+          "notes": "Si les PJ trouvent la propriété, les gorilles en sont déjà partis, greffés. Restent des démons de Caym qui rangent et effacent les traces (et peut-être des survivants de l'étape 1, Mortau compris) : grosse bagarre.\nSur place : cages vides, bacs à cerveaux vides (sauf cerveaux en surplus) et les cerveaux des gorilles dans un ou deux seaux. Aucun indice vers l'étape 3.\nFin de l'étape : la mission (retrouver les gorilles) n'est pas finie. Si les PJ ont prouvé que les anges n'y sont pour rien, Jordi exige l'élimination des démons et détache un de ses anges auprès d'eux ; sinon l'enquête continue. Hercule leur donne une autre mission en attendant une piste.\nSi les PJ n'ont pas trouvé Sceaux : tant pis, les gorilles feront bientôt parler d'eux.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa6-lucien-23",
+              "nom": "Lucien Darfin",
+              "source": "Démon de Caym, grade 2, chef de l'enlèvement",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 4,
+                "vo": 10,
+                "pr": 8,
+                "foi": 8
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 31,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                },
+                {
+                  "n": "« Fusil à éléphant » (portée moyenne)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de violence",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 8
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Poison",
+                  "r": 12
+                },
+                {
+                  "n": "Transformation",
+                  "r": 12
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 5, Corps à corps 7, Défense 6, Discussion 6, Médecine 4, Survie 7, Tir 4 (armes d'épaule 7)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La soixantaine, taille moyenne, cheveux et yeux gris ; commerçant retraité, propriétaire de la maison de Sceaux. Cruel, ambitieux, violent et tyrannique avec ses hommes : il a déjà exécuté ceux qui « dérapaient ». La cassette du FLG le met hors de lui.\nFusil à éléphant (cadeau d'un grade 3 de Kobal) : précision −3, puissance +8 (64/RU+5/M+8) ; il tire des éléphants de 4 tonnes qui se dissipent en une heure. Griffes 66/RU+7/M+8.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-lucien"
+            },
+            {
+              "id": "pa6-anthony-24",
+              "nom": "Anthony Jussy",
+              "source": "Démon de Caym, grade 0, plaisantin du FLG",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Transformation",
+                  "r": 4
+                }
+              ],
+              "talents": "Baratin 4, Corps à corps 5, Défense 5, Discrétion 4, Hobby : art Caym 4, Humour 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit, blond, une cicatrice en travers de la joue (l'attribution de la description à l'un ou l'autre est libre).\nLes deux plaisantins du « Front de libération des gorilles » : étudiants (véto et chaudronnerie), ils tournent la fausse revendication chez Mortau, visage couvert d'un bas, et l'envoient aux télés. Le livre donne un seul profil pour les deux.\nAucune arme dans le livre : coup de poing au niveau de Corps à corps (5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-anthony"
+            },
+            {
+              "id": "pa6-gorille-caym-25",
+              "nom": "Gorille de Caym",
+              "source": "Démon de Caym, grade 1 (la dizaine de sbires de Lucien)",
+              "type": "demon",
+              "qty": 4,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 2,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Crocs (portée lutte, 1 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Ongles d'acier (2 PP)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Fusil à fléchettes tranquillisantes",
+                  "att": 10,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : ongles d'acier",
+                  "r": 0
+                },
+                {
+                  "n": "Transformation",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 5, Conduite 4, Corps à corps 6, Défense 6, Tir 3 (armes d'épaule 5)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Démons-braconniers urbains qui prennent forme de gorille pour l'enlèvement. Valeurs identiques au « Gorille de Caym » du bestiaire de l'appli.\nCrocs 66/RU+7/M+6, ongles d'acier 66/RU+7/M+7. Le fusil (fléchettes anesthésiantes du zoo) n'a pas de profil dans le livre : profil de carabine estimé, effet tranquillisant à l'appréciation du MJ.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-gorille-caym"
+            },
+            {
+              "id": "pa6-mortau-26",
+              "nom": "Dr Alain Mortau, le dentiste fou",
+              "source": "Démon de Bifrons, grade 2, chef de la bande",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 8,
+                "vo": 10,
+                "pr": 2,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 26,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Scalpel, fraise, instruments divers",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Décharge électrique (portée moyenne)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Champ magnétique",
+                  "r": 12
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 8
+                },
+                {
+                  "n": "Immunité contre l'électricité",
+                  "r": 0
+                },
+                {
+                  "n": "Rebond",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 1, Combat 3 (scalpel, fraise et instruments divers 6), Défense 6, Discrétion 3, Médecine 2, Métier : dentiste 2, Sixième sens 3, Survie 2 (bizutage 4), Torture 7",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le cliché du dentiste sadique à pousser au maximum : blouse blanche tachée, voix suraiguë ridicule, petites lunettes rondes, cheveux châtains frisés, lèvres minces et sourire sardonique ; 1,80 m, très baraqué. Mauvais praticien, peu de clientèle. Maison de brique et de silex à Montreuil (cabinet au rez-de-chaussée, appartements à l'étage, « laboratoire » à la cave). Amateur de vin. Le livre écrit son nom Mortau ou Morteau.\nIl opère toujours avec un complice et une grande lame ; il épargne Firmin, dégoûté par ses dents.\nInstruments : précision −2, puissance +0 dans le livre (63/RU+5/M+4) ; Décharge électrique 64/RU+5/M+7.\nRôle pour la suite : s'il reste libre, c'est lui qui greffe les cerveaux sur les gorilles (étape 3) ; il peut réapparaître à Sceaux.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-mortau"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-innocence",
+              "q": "Les PJ ont-ils établi que les anges de Jordi sont innocents ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Jordi demande l'élimination des démons et affecte un ange aux PJ ; c'est lui qui apportera l'information d'Échelon."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Jordi maintient sa demande d'enquête ; Hercule (ou Jordi en personne) transmettra l'information plus tard."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa6-sc-renaissance",
+          "nom": "9. Étape 3 – La méchante combo",
+          "lieu": "Sceaux (en coulisses), puis banques de France et ciel d'Europe",
+          "notes": "Retour en arrière : avant la descente des PJ à Sceaux, Mortau (ou un démon aussi doué) greffe les cerveaux sur les gorilles, qui meurent dans l'opération comme prévu ; les pouvoirs survivent. Bifrons y loge l'âme d'un damné méritant : des familiers améliorés, gorilles psioniques-zombies-cyborgs (écrous et plaques sur le crâne), rebaptisés Bart, Homère, Marge, Lisa, Maggie et Milouze (autant qu'il reste de cerveaux et de gorilles). Plus faibles qu'une équipe d'anges ou de démons équivalente, mais redoutables.\nOzgur Phalange, grade 3 de Bifrons, les teste pour son prince : si l'essai réussit, Bifrons veut une armée. Vapula fournit les gadgets (grenades anti-sécurité, etc.).\n1) Casses de banques de nuit dans toute la France, sans témoins, jusqu'au siège de la Banque de France : l'argent financera les explosifs.\n2) Crash d'un avion de ligne : en jet-packs et combinaisons XXXXL, les gorilles se posent sur l'appareil en vol et détruisent les moteurs. Énorme bilan. Les rares survivants parlent de gorilles ; Bifrons recycle le FLG pour signer les attentats (on croira à des hommes déguisés) et pour ramener la DTC sur l'affaire.\nLes PJ, sans piste, suivent l'actualité ; le crash et la revendication font le lien avec la cassette de l'étape 2.\nInformation providentielle (l'ange de Jordi, Jordi ou Hercule) : des mails décryptés par Échelon, sans adresse physique, échangés entre Ozgur et un autre démon de Bifrons. En substance : liste d'idées (barrage, centrales nucléaires, avions, tour Eiffel, prise d'otage du patron d'une enseigne de chasse et pêche), banques pour commencer, et le souhait du chef de tester les gorilles contre des anges et contre l'équipe d'Hercule. Trop de cibles possibles pour tout surveiller.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa6-ange-jordi-27",
+              "nom": "L'ange de Jordi",
+              "source": "Ange détaché auprès des PJ (étapes 2-3)",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Accompagne et assiste les PJ dans leurs recherches ; porteur possible de l'information d'Échelon. À créer selon la puissance du groupe.\nPas de caractéristiques dans le livre : fiche indicative.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-ange-jordi"
+            },
+            {
+              "id": "pa6-jordi-28",
+              "nom": "Jordi",
+              "source": "Archange des animaux, commanditaire de l'étape 2",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Inquiet pour les gorilles et surtout de voir la main de ses propres anges derrière le FLG : il préfère engager la DTC plutôt que ses troupes ou d'autres anges, par fierté. Une fois convaincu que ses anges sont innocents, il détache l'un d'eux auprès des PJ et exige qu'on élimine les démons responsables. À l'étape 3, il (ou son ange) transmet les mails interceptés par Échelon ; ses anges peuvent servir de cavalerie à l'usine.\nPas de caractéristiques dans ce scénario : fiche indicative.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-jordi"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa6-sc-gorilles",
+          "nom": "10. Affrontement avec les gorilles",
+          "lieu": "Selon le MJ : tour Eiffel (14 juillet, 31 décembre), centrale, barrage… ou là où sont les PJ",
+          "notes": "Le MJ choisit les méfaits suivants et fait monter la pression sans dépasser les bornes (une attaque de centrale doit échouer). Si les PJ alertent les autorités, les sites sensibles sont renforcés ; reste à le faire discrètement.\nPour provoquer la rencontre : les gorilles viennent attaquer les PJ (objectif de Bifrons), ou les PJ devinent une cible et le MJ y place ses gorilles ; une date symbolique proche (14 juillet, Nouvel An) désigne la tour Eiffel pour un combat spectaculaire.\nGrosse bagarre : n'aligner que les gorilles qui existent (selon les cerveaux récoltés à l'étape 1). Décrire les pouvoirs psioniques (*) comme des réminiscences des squatteurs, avec quelques souvenirs.\nPour la suite : un gorille peut avouer où se cachent ses maîtres, ou une étiquette avec l'adresse de l'usine Patachoco est collée sous un sac à dos.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa6-bart-29",
+              "nom": "Bart",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 2,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                6,
+                13,
+                19,
+                26
+              ],
+              "armes": [
+                {
+                  "n": "Poings (non létal)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Télékinésie (portée moyenne, 1 PP)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Champ de force",
+                  "r": 8
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 4
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                }
+              ],
+              "talents": "Acrobatie 3, Athlétisme 4, Corps à corps 4+, Défense 4+, Discrétion 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Champ de force*, Invisibilité*, Télékinésie*. Poings précision +0, puissance +0 (61/RU+4/M+5) ; Télékinésie 43/RU+2/M+4. 2 points de protection naturelle. Mêmes valeurs que le « Gorille psionique-zombie-cyborg » du bestiaire.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-bart"
+            },
+            {
+              "id": "pa6-homere-30",
+              "nom": "Homère",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 3,
+              "pfFix": 9,
+              "pp": 15,
+              "seuilsFix": [
+                8,
+                17,
+                25,
+                34
+              ],
+              "armes": [
+                {
+                  "n": "Poings",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Grandes cornes (3 PP)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 11,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : grandes cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 8
+                }
+              ],
+              "talents": "Athlétisme 5, Corps à corps 4, Défense 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Armure corporelle (pierre)*, Onde de choc*. Poings 55/RU+4/M+7, grandes cornes 55/RU+4/M+11. 3 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-homere"
+            },
+            {
+              "id": "pa6-marge-31",
+              "nom": "Marge",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 6,
+                "pe": 8,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 9,
+              "prot": 2,
+              "pfFix": 9,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Poings",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                },
+                {
+                  "n": "Jet de flammes (2 PP)",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Tourbillon de feu",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 6
+                }
+              ],
+              "talents": "Acrobatie 2, Athlétisme 4, Corps à corps 4+, Défense 4+, Kama-sutra 3, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Immunité contre le feu*, Jet de flammes*, Tourbillon de feu*. Poings 61/RU+4/M+6, jet de flammes 65/RU+6/M+6. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-marge"
+            },
+            {
+              "id": "pa6-lisa-32",
+              "nom": "Lisa",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 2,
+              "pfFix": 8,
+              "pp": 15,
+              "seuilsFix": [
+                5,
+                11,
+                16,
+                22
+              ],
+              "armes": [
+                {
+                  "n": "Poings",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Élastique",
+                  "r": 8
+                },
+                {
+                  "n": "Étouffement",
+                  "r": 4
+                },
+                {
+                  "n": "Régénération",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 3, Athlétisme 3, Corps à corps 4+, Défense 4+, Science 3, Technique 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Élastique*, Étouffement*. Poings 61/RU+4/M+4. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-lisa"
+            },
+            {
+              "id": "pa6-maggie-33",
+              "nom": "Maggie",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 8,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 3,
+              "pfFix": 8,
+              "pp": 13,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Rapière",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Forme de combat",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : queue barbelée",
+                  "r": 0
+                },
+                {
+                  "n": "Obscurité",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 3, Athlétisme 4, Combat 2+ (épées 4+), Corps à corps 3+, Défense 4+, Discrétion 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Obscurité*, Téléportation*. Rapière 63/RU+5/M+7. Queue barbelée sans profil dans le livre (coup de poing ajouté au niveau de Corps à corps). 3 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-maggie"
+            },
+            {
+              "id": "pa6-milouze-34",
+              "nom": "Milouze",
+              "source": "Gorille psionique-zombie-cyborg",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 2,
+              "pfFix": 10,
+              "pp": 15,
+              "seuilsFix": [
+                6,
+                13,
+                19,
+                26
+              ],
+              "armes": [
+                {
+                  "n": "Poings",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 5,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 8
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 4
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Acrobatie 3, Athlétisme 3, Corps à corps 3, Défense 4+, Discrétion 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Psioniques : Charme*, Paralysie*, Télépathie*. Poings 46/RU+3/M+5. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-milouze"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-cible",
+              "q": "Où les PJ affrontent-ils les gorilles ?",
+              "opts": [
+                {
+                  "t": "Les gorilles attaquent les PJ",
+                  "suite": "Combat sur le terrain des PJ ; Bifrons teste ses créatures contre la DTC."
+                },
+                {
+                  "t": "Sur un site visé deviné par les PJ",
+                  "suite": "Le MJ y place les gorilles ; attentat déjoué si les PJ gagnent."
+                },
+                {
+                  "t": "À la tour Eiffel",
+                  "suite": "Combat spectaculaire lors d'une date symbolique (14 juillet, Nouvel An)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa6-sc-patachoco",
+          "nom": "11. Assaut à l'usine Patachoco",
+          "lieu": "Annexe « désaffectée » d'une usine de pâte à tartiner chocolat-noisette, grande banlieue parisienne",
+          "notes": "Le patron de l'usine, un démon, prête l'annexe aux démons de Bifrons et aux gorilles. Une partie de l'usine tourne normalement ; le site est petit, la planque facile à trouver. Les démons, prévenus du fiasco des gorilles, ne fuient pas : Bifrons ne leur pardonnerait pas de ne pas avoir essayé d'éliminer les PJ.\nDécor à exploiter : glissades sur les noisettes, cuve de lait bouillant, bassin de chocolat fondu où noyer un adversaire…\nOzgur et ses trois acolytes (Lili, Valéry, Marcel), plus les gorilles survivants s'il en reste. Si le combat tourne mal pour les PJ, des anges de Jordi arrivent en renfort.\nFin : l'aventure est résolue ; avec un peu de chance, Bifrons sera déçu de ses gorilles.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa6-ozgur-35",
+              "nom": "Ozgur Phalange",
+              "source": "Démon de Bifrons, grade 3, exécutant du plan sur Terre",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 10,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 14,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 41,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Crosse maudite majeure",
+                  "att": 22,
+                  "prec": 0,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Adhérence",
+                  "r": 8
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 12
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 8
+                },
+                {
+                  "n": "Éventration",
+                  "r": 12
+                },
+                {
+                  "n": "Immunité contre le froid",
+                  "r": 0
+                },
+                {
+                  "n": "Jeûne",
+                  "r": 0
+                },
+                {
+                  "n": "Nécrose",
+                  "r": 12
+                },
+                {
+                  "n": "Régénération",
+                  "r": 12
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 14
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 8
+                }
+              ],
+              "talents": "Baratin 6, Combat 5 (contondantes 9), Défense 7, Discussion 4, Médecine 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "La cinquantaine, grand, bronzé aux UV, yeux bleus, sourire de séducteur carnassier. Visiteur médical, coureur de jupons. Grade 3 récent, perfectionniste, il veut faire ses preuves auprès de Bifrons et recycle l'idée du FLG pour signer les attentats.\nCrosse maudite majeure : précision +5, puissance +4 (66/RU+11/M+9).\nIl ne fuit pas lors de l'assaut final.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-ozgur"
+            },
+            {
+              "id": "pa6-lili-36",
+              "nom": "Lili Delanoix",
+              "source": "Démon de Furfur, grade 2, acolyte d'Ozgur",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 6,
+                "pe": 4,
+                "vo": 6,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 29,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Poings (arts martiaux)",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 6,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arts martiaux",
+                  "r": 12
+                },
+                {
+                  "n": "Hurlement démoniaque",
+                  "r": 6
+                },
+                {
+                  "n": "Lecture d'aura",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 6
+                },
+                {
+                  "n": "Suicide",
+                  "r": 12
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 12
+                }
+              ],
+              "talents": "Baratin 6, Corps à corps 5, Défense 5, Discrétion 4, Intrusion 3, Séduction 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande bringue blonde décolorée aux dents en avant. Poings : précision +3, puissance +1 (66/RU+6/M+6).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-lili"
+            },
+            {
+              "id": "pa6-valery-37",
+              "nom": "Valéry Lepers",
+              "source": "Démon de Vapula, grade 2, inventeur",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 2,
+                "pe": 6,
+                "vo": 12,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 40,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Emberlificoteur (boule de laine)",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Absorption de volonté",
+                  "r": 12
+                },
+                {
+                  "n": "Augmentation de Volonté",
+                  "r": 12
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 4
+                },
+                {
+                  "n": "Invention",
+                  "r": 12
+                },
+                {
+                  "n": "Parasite intellectuel",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 12
+                }
+              ],
+              "talents": "Corps à corps 2, Défense 2, Médecine 5, Science 7, Technique 7, Tir 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Immense dadais dégarni, myope comme une taupe. Fournisseur des gadgets des gorilles (grenades anti-sécurité, jet-packs…).\nEmberlificoteur : précision −3, pas de dégâts (33/RU+1/–). La cible touchée perd 1d6 points d'Agilité (à 0 ou moins, elle ne peut plus bouger) ; un round d'effort et un test de Force réussi retirent un point d'emberlificotage. Dégâts mis à 0 sur la fiche : appliquer l'effet à la main.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-valery"
+            },
+            {
+              "id": "pa6-marcel-38",
+              "nom": "Marcel Ségur",
+              "source": "Démon de Bifrons, grade 2, acolyte d'Ozgur",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 8,
+                "pe": 8,
+                "vo": 2,
+                "pr": 2,
+                "foi": 12
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 26,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Hache de bataille rouillée",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Arme exaltée",
+                  "r": 12
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 12
+                },
+                {
+                  "n": "Douleur",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Résurrection macabre",
+                  "r": 12
+                },
+                {
+                  "n": "Ténèbres sataniques",
+                  "r": 8
+                }
+              ],
+              "talents": "Combat 4 (haches 7), Défense 5, Torture 6",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Large d'épaules, cheveux gris, mâchoire carrée, tape fort. Hache : 66/RU+7/M+9 (et risque de tétanos). Peut aussi être le démon de Bifrons qui échange les mails avec Ozgur (au choix du MJ).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108.",
+              "typeId": "type-pa6-marcel"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa6-ch-fin",
+              "q": "Comment se termine l'assaut ?",
+              "opts": [
+                {
+                  "t": "Victoire des PJ",
+                  "suite": "Ozgur et ses acolytes éliminés ; Bifrons renonce (pour l'instant) à son armée de gorilles. Jordi et la DTC sont satisfaits."
+                },
+                {
+                  "t": "Les PJ sont en difficulté",
+                  "suite": "La cavalerie : des anges de Jordi interviennent pour sauver les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795357946778,
+      "updatedAt": 1795357946778
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa6-mortau",
+      "nom": "Dr Alain Mortau, le dentiste fou",
+      "source": "Démon de Bifrons, grade 2, chef de la bande",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 8,
+        "vo": 10,
+        "pr": 2,
+        "foi": 6
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 26,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Scalpel, fraise, instruments divers",
+          "att": 10,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Décharge électrique (portée moyenne)",
+          "att": 10,
+          "prec": 0,
+          "puis": 7,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ électrique",
+          "r": 8
+        },
+        {
+          "n": "Champ magnétique",
+          "r": 12
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 8
+        },
+        {
+          "n": "Immunité contre l'électricité",
+          "r": 0
+        },
+        {
+          "n": "Rebond",
+          "r": 8
+        }
+      ],
+      "talents": "Baratin 1, Combat 3 (scalpel, fraise et instruments divers 6), Défense 6, Discrétion 3, Médecine 2, Métier : dentiste 2, Sixième sens 3, Survie 2 (bizutage 4), Torture 7",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le cliché du dentiste sadique à pousser au maximum : blouse blanche tachée, voix suraiguë ridicule, petites lunettes rondes, cheveux châtains frisés, lèvres minces et sourire sardonique ; 1,80 m, très baraqué. Mauvais praticien, peu de clientèle. Maison de brique et de silex à Montreuil (cabinet au rez-de-chaussée, appartements à l'étage, « laboratoire » à la cave). Amateur de vin. Le livre écrit son nom Mortau ou Morteau.\nIl opère toujours avec un complice et une grande lame ; il épargne Firmin, dégoûté par ses dents.\nInstruments : précision −2, puissance +0 dans le livre (63/RU+5/M+4) ; Décharge électrique 64/RU+5/M+7.\nRôle pour la suite : s'il reste libre, c'est lui qui greffe les cerveaux sur les gorilles (étape 3) ; il peut réapparaître à Sceaux.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-polo",
+      "nom": "Polo Jarmish",
+      "source": "Démon de Bifrons, grade 1",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 10,
+        "pe": 4,
+        "vo": 2,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 13,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Machin qui fait boum (portée longue, pénétration importante)",
+          "att": 8,
+          "prec": 0,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Déphasage",
+          "r": 4
+        },
+        {
+          "n": "Illusions",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 8, Corps à corps 5, Défense 7, Discrétion 8, Tir 3 (armes d'épaule 6)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Belles moustaches noires et vraie tête de malfrat. Spécialiste de la filature discrète.\nArme d'épaule « machin qui fait boum » : 64/RU+4/M+4 dans le livre. Coup de poing ajouté (Corps à corps 5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-martinez",
+      "nom": "Alexandre Martinez",
+      "source": "Démon de Bifrons, grade 0",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 9,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Jet d'acide (portée très courte, pénétration importante)",
+          "att": 6,
+          "prec": 0,
+          "puis": 6,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 8,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Adhérence",
+          "r": 2
+        },
+        {
+          "n": "Détection des ennemis",
+          "r": 2
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 4, Aisance sociale 3, Baratin 3, Conduite 5, Corps à corps 4, Défense 4, Discrétion 5, Enquête 3, Fouille 4, Informatique 4, Intrusion 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Tête de grenouille aux gros yeux globuleux : Alonzo peut en donner une description précise après l'agression ratée, et Aurélie peut le photographier.\nJet d'acide : 46/RU+3/M+6 dans le livre. Coup de poing ajouté (Corps à corps 4).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-mabel",
+      "nom": "Mabel Otruc",
+      "source": "Démon de Bifrons, grade 1, secrétaire (et maîtresse) de Mortau",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 2,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 15,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 20,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Ongles d'acier",
+          "att": 18,
+          "prec": 0,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "Ongles d'acier (combo)",
+          "att": 18,
+          "prec": 0,
+          "puis": 10,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Augmentation de Force",
+          "r": 8
+        },
+        {
+          "n": "Forme de combat",
+          "r": 8
+        },
+        {
+          "n": "Graisse",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : ongles d'acier",
+          "r": 0
+        }
+      ],
+      "talents": "Athlétisme 6, Conduite 6, Corps à corps 8+, Défense 7+, Intimidation 5, Médecine 2, Séduction 1+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Faux air de Cruella ; trop maigre et habillée trop jeune pour son âge. Sert d'appât (elle fait signe à Firmin de venir l'aider). Ses bas servent de cagoules aux deux plaisantins du FLG.\nCombo : elle active ses quatre pouvoirs d'un coup pour 10 PP, pendant 1 minute ; Force 8 et protection 6 (non comptée sur la fiche : à ajouter en combat). Ongles d'acier 66/RU+9/M+7, M+10 avec la combo.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-lucien",
+      "nom": "Lucien Darfin",
+      "source": "Démon de Caym, grade 2, chef de l'enlèvement",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 4,
+        "vo": 10,
+        "pr": 8,
+        "foi": 8
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 31,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 14,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        },
+        {
+          "n": "« Fusil à éléphant » (portée moyenne)",
+          "att": 10,
+          "prec": 0,
+          "puis": 8,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption de violence",
+          "r": 8
+        },
+        {
+          "n": "Détection du bien",
+          "r": 8
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Poison",
+          "r": 12
+        },
+        {
+          "n": "Transformation",
+          "r": 12
+        },
+        {
+          "n": "Vitesse",
+          "r": 8
+        }
+      ],
+      "talents": "Baratin 5, Corps à corps 7, Défense 6, Discussion 6, Médecine 4, Survie 7, Tir 4 (armes d'épaule 7)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La soixantaine, taille moyenne, cheveux et yeux gris ; commerçant retraité, propriétaire de la maison de Sceaux. Cruel, ambitieux, violent et tyrannique avec ses hommes : il a déjà exécuté ceux qui « dérapaient ». La cassette du FLG le met hors de lui.\nFusil à éléphant (cadeau d'un grade 3 de Kobal) : précision −3, puissance +8 (64/RU+5/M+8) ; il tire des éléphants de 4 tonnes qui se dissipent en une heure. Griffes 66/RU+7/M+8.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-anthony",
+      "nom": "Anthony Jussy",
+      "source": "Démon de Caym, grade 0, plaisantin du FLG",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        },
+        {
+          "n": "Transformation",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 4, Corps à corps 5, Défense 5, Discrétion 4, Hobby : art Caym 4, Humour 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit, blond, une cicatrice en travers de la joue (l'attribution de la description à l'un ou l'autre est libre).\nLes deux plaisantins du « Front de libération des gorilles » : étudiants (véto et chaudronnerie), ils tournent la fausse revendication chez Mortau, visage couvert d'un bas, et l'envoient aux télés. Le livre donne un seul profil pour les deux.\nAucune arme dans le livre : coup de poing au niveau de Corps à corps (5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-christian",
+      "nom": "Christian Fannot",
+      "source": "Démon de Caym, grade 0, plaisantin du FLG",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        },
+        {
+          "n": "Transformation",
+          "r": 4
+        }
+      ],
+      "talents": "Baratin 4, Corps à corps 5, Défense 5, Discrétion 4, Hobby : art Caym 4, Humour 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Taille moyenne, roux en brosse, zozote ; il court vite (ce qui peut lui sauver la vie). Bon candidat pour le délateur.\nLes deux plaisantins du « Front de libération des gorilles » : étudiants (véto et chaudronnerie), ils tournent la fausse revendication chez Mortau, visage couvert d'un bas, et l'envoient aux télés. Le livre donne un seul profil pour les deux.\nAucune arme dans le livre : coup de poing au niveau de Corps à corps (5).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-gorille-caym",
+      "nom": "Gorille de Caym",
+      "source": "Démon de Caym, grade 1 (la dizaine de sbires de Lucien)",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 2,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Crocs (portée lutte, 1 PP)",
+          "att": 14,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Ongles d'acier (2 PP)",
+          "att": 14,
+          "prec": 0,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "Fusil à fléchettes tranquillisantes",
+          "att": 10,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : ongles d'acier",
+          "r": 0
+        },
+        {
+          "n": "Transformation",
+          "r": 8
+        }
+      ],
+      "talents": "Athlétisme 5, Conduite 4, Corps à corps 6, Défense 6, Tir 3 (armes d'épaule 5)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Démons-braconniers urbains qui prennent forme de gorille pour l'enlèvement. Valeurs identiques au « Gorille de Caym » du bestiaire de l'appli.\nCrocs 66/RU+7/M+6, ongles d'acier 66/RU+7/M+7. Le fusil (fléchettes anesthésiantes du zoo) n'a pas de profil dans le livre : profil de carabine estimé, effet tranquillisant à l'appréciation du MJ.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-bart",
+      "nom": "Bart",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 9,
+      "prot": 2,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        6,
+        13,
+        19,
+        26
+      ],
+      "armes": [
+        {
+          "n": "Poings (non létal)",
+          "att": 8,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        },
+        {
+          "n": "Télékinésie (portée moyenne, 1 PP)",
+          "att": 4,
+          "prec": 0,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Champ de force",
+          "r": 8
+        },
+        {
+          "n": "Invisibilité",
+          "r": 4
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Télékinésie",
+          "r": 6
+        }
+      ],
+      "talents": "Acrobatie 3, Athlétisme 4, Corps à corps 4+, Défense 4+, Discrétion 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Champ de force*, Invisibilité*, Télékinésie*. Poings précision +0, puissance +0 (61/RU+4/M+5) ; Télékinésie 43/RU+2/M+4. 2 points de protection naturelle. Mêmes valeurs que le « Gorille psionique-zombie-cyborg » du bestiaire.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-homere",
+      "nom": "Homère",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 14,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 3,
+      "pfFix": 9,
+      "pp": 15,
+      "seuilsFix": [
+        8,
+        17,
+        25,
+        34
+      ],
+      "armes": [
+        {
+          "n": "Poings",
+          "att": 8,
+          "prec": 0,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "Grandes cornes (3 PP)",
+          "att": 8,
+          "prec": 0,
+          "puis": 11,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : grandes cornes",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Onde de choc",
+          "r": 8
+        }
+      ],
+      "talents": "Athlétisme 5, Corps à corps 4, Défense 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Armure corporelle (pierre)*, Onde de choc*. Poings 55/RU+4/M+7, grandes cornes 55/RU+4/M+11. 3 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-marge",
+      "nom": "Marge",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 12,
+        "ag": 6,
+        "pe": 8,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 9,
+      "prot": 2,
+      "pfFix": 9,
+      "pp": 15,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Poings",
+          "att": 8,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        },
+        {
+          "n": "Jet de flammes (2 PP)",
+          "att": 12,
+          "prec": 0,
+          "puis": 6,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Tourbillon de feu",
+          "r": 4
+        },
+        {
+          "n": "Vol",
+          "r": 6
+        }
+      ],
+      "talents": "Acrobatie 2, Athlétisme 4, Corps à corps 4+, Défense 4+, Kama-sutra 3, Séduction 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Immunité contre le feu*, Jet de flammes*, Tourbillon de feu*. Poings 61/RU+4/M+6, jet de flammes 65/RU+6/M+6. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-lisa",
+      "nom": "Lisa",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 9,
+      "prot": 2,
+      "pfFix": 8,
+      "pp": 15,
+      "seuilsFix": [
+        5,
+        11,
+        16,
+        22
+      ],
+      "armes": [
+        {
+          "n": "Poings",
+          "att": 8,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Élastique",
+          "r": 8
+        },
+        {
+          "n": "Étouffement",
+          "r": 4
+        },
+        {
+          "n": "Régénération",
+          "r": 8
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 3, Athlétisme 3, Corps à corps 4+, Défense 4+, Science 3, Technique 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Élastique*, Étouffement*. Poings 61/RU+4/M+4. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-maggie",
+      "nom": "Maggie",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 8,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 9,
+      "prot": 3,
+      "pfFix": 8,
+      "pp": 13,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Rapière",
+          "att": 10,
+          "prec": 0,
+          "puis": 7,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Forme de combat",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : queue barbelée",
+          "r": 0
+        },
+        {
+          "n": "Obscurité",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 3, Athlétisme 4, Combat 2+ (épées 4+), Corps à corps 3+, Défense 4+, Discrétion 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Obscurité*, Téléportation*. Rapière 63/RU+5/M+7. Queue barbelée sans profil dans le livre (coup de poing ajouté au niveau de Corps à corps). 3 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-milouze",
+      "nom": "Milouze",
+      "source": "Gorille psionique-zombie-cyborg",
+      "type": "familier",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 9,
+      "prot": 2,
+      "pfFix": 10,
+      "pp": 15,
+      "seuilsFix": [
+        6,
+        13,
+        19,
+        26
+      ],
+      "armes": [
+        {
+          "n": "Poings",
+          "att": 6,
+          "prec": 0,
+          "puis": 5,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 8
+        },
+        {
+          "n": "Paralysie",
+          "r": 4
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Acrobatie 3, Athlétisme 3, Corps à corps 3, Défense 4+, Discrétion 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Psioniques : Charme*, Paralysie*, Télépathie*. Poings 46/RU+3/M+5. 2 points de protection naturelle.\nGorille du zoo tué par la greffe d'un cerveau de psi, ranimé par l'âme d'un damné envoyée par Bifrons : un familier amélioré (type Familier dans la fiche, pour le camp démoniaque ; seuils du livre). Plaques et écrous dépassent du crâne. Les pouvoirs marqués * sont d'origine psionique (hérités du squatteur). Gadgets au choix du MJ (lance-grenades dans le bras, gatling dans le nombril, laser dans l'œil…) et grenades de Vapula qui neutralisent les systèmes de sécurité.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-ozgur",
+      "nom": "Ozgur Phalange",
+      "source": "Démon de Bifrons, grade 3, exécutant du plan sur Terre",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 10,
+        "pr": 8,
+        "foi": 10
+      },
+      "def": 14,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 41,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Crosse maudite majeure",
+          "att": 22,
+          "prec": 0,
+          "puis": 9,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Adhérence",
+          "r": 8
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 12
+        },
+        {
+          "n": "Boomerang",
+          "r": 8
+        },
+        {
+          "n": "Éventration",
+          "r": 12
+        },
+        {
+          "n": "Immunité contre le froid",
+          "r": 0
+        },
+        {
+          "n": "Jeûne",
+          "r": 0
+        },
+        {
+          "n": "Nécrose",
+          "r": 12
+        },
+        {
+          "n": "Régénération",
+          "r": 12
+        },
+        {
+          "n": "Résurrection macabre",
+          "r": 14
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 8
+        }
+      ],
+      "talents": "Baratin 6, Combat 5 (contondantes 9), Défense 7, Discussion 4, Médecine 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "La cinquantaine, grand, bronzé aux UV, yeux bleus, sourire de séducteur carnassier. Visiteur médical, coureur de jupons. Grade 3 récent, perfectionniste, il veut faire ses preuves auprès de Bifrons et recycle l'idée du FLG pour signer les attentats.\nCrosse maudite majeure : précision +5, puissance +4 (66/RU+11/M+9).\nIl ne fuit pas lors de l'assaut final.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-lili",
+      "nom": "Lili Delanoix",
+      "source": "Démon de Furfur, grade 2, acolyte d'Ozgur",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 6,
+        "pe": 4,
+        "vo": 6,
+        "pr": 8,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 29,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Poings (arts martiaux)",
+          "att": 12,
+          "prec": 0,
+          "puis": 6,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arts martiaux",
+          "r": 12
+        },
+        {
+          "n": "Hurlement démoniaque",
+          "r": 6
+        },
+        {
+          "n": "Lecture d'aura",
+          "r": 6
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 6
+        },
+        {
+          "n": "Suicide",
+          "r": 12
+        },
+        {
+          "n": "Téléportation",
+          "r": 12
+        }
+      ],
+      "talents": "Baratin 6, Corps à corps 5, Défense 5, Discrétion 4, Intrusion 3, Séduction 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande bringue blonde décolorée aux dents en avant. Poings : précision +3, puissance +1 (66/RU+6/M+6).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-valery",
+      "nom": "Valéry Lepers",
+      "source": "Démon de Vapula, grade 2, inventeur",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 2,
+        "pe": 6,
+        "vo": 12,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 40,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Emberlificoteur (boule de laine)",
+          "att": 2,
+          "prec": 0,
+          "puis": 0,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Absorption de volonté",
+          "r": 12
+        },
+        {
+          "n": "Augmentation de Volonté",
+          "r": 12
+        },
+        {
+          "n": "Esprits multiples",
+          "r": 4
+        },
+        {
+          "n": "Invention",
+          "r": 12
+        },
+        {
+          "n": "Parasite intellectuel",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 12
+        }
+      ],
+      "talents": "Corps à corps 2, Défense 2, Médecine 5, Science 7, Technique 7, Tir 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Immense dadais dégarni, myope comme une taupe. Fournisseur des gadgets des gorilles (grenades anti-sécurité, jet-packs…).\nEmberlificoteur : précision −3, pas de dégâts (33/RU+1/–). La cible touchée perd 1d6 points d'Agilité (à 0 ou moins, elle ne peut plus bouger) ; un round d'effort et un test de Force réussi retirent un point d'emberlificotage. Dégâts mis à 0 sur la fiche : appliquer l'effet à la main.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-marcel",
+      "nom": "Marcel Ségur",
+      "source": "Démon de Bifrons, grade 2, acolyte d'Ozgur",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 8,
+        "pe": 8,
+        "vo": 2,
+        "pr": 2,
+        "foi": 12
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 26,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Hache de bataille rouillée",
+          "att": 14,
+          "prec": 0,
+          "puis": 9,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Arme exaltée",
+          "r": 12
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 12
+        },
+        {
+          "n": "Douleur",
+          "r": 8
+        },
+        {
+          "n": "Peur",
+          "r": 8
+        },
+        {
+          "n": "Résurrection macabre",
+          "r": 12
+        },
+        {
+          "n": "Ténèbres sataniques",
+          "r": 8
+        }
+      ],
+      "talents": "Combat 4 (haches 7), Défense 5, Torture 6",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Large d'épaules, cheveux gris, mâchoire carrée, tape fort. Hache : 66/RU+7/M+9 (et risque de tétanos). Peut aussi être le démon de Bifrons qui échange les mails avec Ozgur (au choix du MJ).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-hercule",
+      "nom": "Hercule",
+      "source": "Patron de la DTC, héros païen",
+      "type": "paien",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Reçoit Pierre et Lucas (étape 1) puis Jordi (étape 2) et confie les missions aux PJ. Peut transmettre l'information d'Échelon à l'étape 3 si le MJ le préfère. Ses services peuvent identifier Mortau d'après la photo d'Aurélie.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-pierre",
+      "nom": "Pierre Milon",
+      "source": "Psi, « leader » du squat de Montreuil",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "24 ans, grand et maigre, cheveux châtains en brosse, sourires trop larges, regard fuyant, un peu faux-jeton. Étudiant en psycho, psi assez doué. L'immeuble appartient en secret à son père, très riche (et non psi), qui paie la DTC. Lucas demande qu'on le protège en priorité : sans lui, plus de squat.\nDernier sur la liste des démons.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-lucas",
+      "nom": "Lucas Dupré",
+      "source": "Psi, meilleur ami de Pierre, vrai ciment du squat",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Ivoirien, 1,95 m, cheveux très courts, regard doux ; étudiant en médecine (5e année). Réfléchi, diplomate, apaise les conflits, soigne les bobos. Rationnel et coopératif : c'est l'interlocuteur le plus utile aux PJ (il sait que l'immeuble est à Pierre). Il propose la DTC et se porte volontaire comme appât pour un « plan chèvre ». Avant-dernier sur la liste : sa survie dépend des PJ.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-alonzo",
+      "nom": "Alonzo Gracco",
+      "source": "Psi téléporteur, prof d'espagnol",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Téléportation",
+          "r": 8
+        }
+      ],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Brun, barbu, lunettes, teint mat, très colérique. Attaqué par Mabel et Martinez sur le chemin du lycée, il se téléporte au squat in extremis. Il décrit précisément Martinez, reconnaîtrait Mabel, a entrevu une grande lame… et a senti une odeur de clou de girofle (l'odeur des cabinets dentaires).\nNiveau de Téléportation non donné : estimé.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-squatteurs",
+      "nom": "Les autres squatteurs",
+      "source": "Une vingtaine de jeunes psis aisés (une dizaine à demeure)",
+      "type": "psi",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Victimes déjà décapitées : Georges-Antoine Delapierre (punk provocateur, disputé avec Alicia la veille), Alicia Latour (étudiante à HEC), Alister Mock (menuisier roux, apprécié).\nProchaines cibles, dans l'ordre : Sébastien Huart (pâle et sensible ; il découvre le premier corps, puis doit mourir quoi qu'il arrive), Alonzo (s'échappe), Arnold Elmer (allure de brute, en fait poète cultivé), Firmin Stragu (dents répugnantes, postillonne : épargné par Mortau), Aurélie Lillian (blondinette bavarde et soupe au lait, amoureuse d'Alister ; peut photographier ses agresseurs), Lucas, Pierre.\nAmbiance : communauté anar-bourgeoise, sans électricité, réchauds, sacs de couchage, débats sans fin ; hostile à la police.\nPsi sans caractéristiques dans le livre : fiche minimale (valeurs moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-delabarre",
+      "nom": "Madame Delabarre",
+      "source": "Vieille voisine de Mortau, à Montreuil",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Passe ses journées à sa fenêtre du premier étage à espionner le voisinage ; désagréable mais précieuse. Aime la camomille et les sonates de Chopin, déteste qu'on salisse son parquet. Les PJ doivent sentir qu'on les observe dès l'étape 1.\nÉtape 2 : elle a vu des hommes patibulaires charger des cages dans un gros camion ; si les PJ sont aimables, boivent son infusion et respectent son parquet, elle donne l'immatriculation, qui mène à Sceaux.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-jordi",
+      "nom": "Jordi",
+      "source": "Archange des animaux, commanditaire de l'étape 2",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Inquiet pour les gorilles et surtout de voir la main de ses propres anges derrière le FLG : il préfère engager la DTC plutôt que ses troupes ou d'autres anges, par fierté. Une fois convaincu que ses anges sont innocents, il détache l'un d'eux auprès des PJ et exige qu'on élimine les démons responsables. À l'étape 3, il (ou son ange) transmet les mails interceptés par Échelon ; ses anges peuvent servir de cavalerie à l'usine.\nPas de caractéristiques dans ce scénario : fiche indicative.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-ange-jordi",
+      "nom": "L'ange de Jordi",
+      "source": "Ange détaché auprès des PJ (étapes 2-3)",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Accompagne et assiste les PJ dans leurs recherches ; porteur possible de l'information d'Échelon. À créer selon la puissance du groupe.\nPas de caractéristiques dans le livre : fiche indicative.\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-armand",
+      "nom": "Armand",
+      "source": "Gardien de nuit du zoo de Vincennes",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quinze ans de maison, fait sa sieste après ses rondes, laisse quelques sans-abri dormir dans le zoo. N'a rien vu, rien entendu. Ne néglige aucune piste et fait confiance à Henri : c'est par lui que les PJ entendent parler du témoin.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    },
+    {
+      "id": "type-pa6-henri",
+      "nom": "Henri",
+      "source": "SDF alcoolique, témoin de l'enlèvement",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Dormait dans un fourré près de la cage. Il raconte avoir vu une bande de gorilles armés de fusils venir « libérer » les pensionnaires ; le dernier lui a fait signe de se taire. Il a entendu ensuite un gros moteur (camion). Personne ne l'a cru. Son témoignage oriente vers des démons de Caym (transformation animale).\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 11 « La douloureuse absence de Clint Eastwood », p. 96-108."
+    }
+  ],
+  "memoire": []
+}

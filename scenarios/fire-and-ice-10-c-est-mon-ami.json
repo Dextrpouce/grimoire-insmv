@@ -1,0 +1,2462 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-10-c-est-mon-ami",
+      "nom": "Fire and Ice (scénario 10) – C'est mon ami et bien plus encore",
+      "resume": "Et Nox Facta Est, scénario 10 (INS), premier scénario de Fire and Ice 2. Lucifer a renoncé au trône ; Andromalius est favori de la succession. Baalberith (l'ancien ange Kiel) veut se venger de lui avec ses alliés du Daemonis Malificum. Les PJ sont envoyés à Perpignan sur une fausse alerte, enquêtent sur la disparition d'un paléontologue et des os de « balouchosaure », visitent un muséum la nuit et traquent une bête dans les montagnes de Prades. Ils y recueillent le témoignage de Denver, « dinosaure de Dieu » (en réalité Ishtar, un démon de Caym), qui accuse Andromalius et Dominique. Leur rapport écarte Andromalius du trône.",
+      "notes": "Source : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24. Aides de jeu : prolégomènes « Et Nox Facta Est » (p. 7-10), « La guerre en Enfer » (p. 25-34), « Tempus Fugit » (p. 152-154).\nEnquête de faux-semblants façon med-fan : ville étrange de province, amorce tirée par les cheveux, donjon (le muséum) et bête à traquer en plein air (le « Messie préhistorique »). Le fond est une magouille de la hiérarchie : tout ce que les PJ trouvent a été planté pour eux.\nDéroulement : prologue (secret) → Centre de Tri → Luxe Studio et pistes de Perpignan → conférence annulée et maison de Lentenoir → (Notre-Dame, optionnel) → Albi → muséum → Prades → Straight contre Denver → témoignage de Denver → rapport à Paris.\n\nRécompense : 6 PA chacun dans les 48 heures qui suivent la transmission du dossier (même si Baalberith l'a fabriqué lui-même).\n\nLe complot (opération « Jurassic Park » de Baalberith) :\n• Aurélie (Centre de Tri) : guide les PJ, tue Lentenoir avec Valoche, joue « Bright », faux ange de Dominique du Labyrinthe (curé en soutane), sabote les véhicules, fait le rapport si les PJ rechignent.\n• Valoche : joue « Straight », faux démon d'Andromalius du Labyrinthe ; s'est renseignée auprès de Jasmin, se fait tuer (ou se bat à mort) devant Denver.\n• Ishtar (Caym) : joue Denver ; a vidé la chambre forte, terrorise Prades, livre le faux témoignage.\n• Alonzo : agent de liaison à Paris.\nAnaïs et Jasmin, Ursule, Loris et les autres sont de bonne foi.\nConseil de MJ : sous-jouer Aurélie pour qu'elle passe inaperçue ; les membres du Daemonis Malificum défendent la crédibilité de Denver jusqu'au bout, quitte à se sacrifier.\n\nContexte (prolégomènes) : Lucifer, parti en vacances sur Terre en 1997 (en même temps que la retraite de Dieu à La Bourboule), a compris que son pouvoir venait de Dieu et vient d'annoncer à la télévision qu'il ne reviendra pas. La Cour se dispute le trône. Andrealphus a disparu, enceint de Damien ; Bifrons est la marionnette de Hornet ; Baal doit gérer sa paternité ; Kronos sait qu'il ne doit pas bouger ; Belial et Crocell se déchirent pour une femme morte depuis dix mille ans ; Uphir est de retour et furieux contre l'usurpateur. Baalberith, jadis l'ange Kiel proche d'Yves et de Kronos, a été précipité en Enfer par Dominique et Andromalius pendant l'affaire Denver ; il en a gardé une haine qu'il partage avec les parias du Daemonis Malificum, anges devenus fous par la Chute à qui il a rendu une liberté illégale.\n\n« La guerre en Enfer » (positions des princes, extrait utile) :\n• Andromalius : pro-Belial, anti-Crocell, candidat à la régence (le Premier Né le plus compétent selon lui) ; une fois écarté, il rumine dans l'ombre.\n• Baal : pro-Belial (ordre et discipline) ; se résigne à régir les Enfers en l'absence du patron.\n• Baalberith : contre tout le monde ; en façade, pour un châtiment exemplaire de Belial et Crocell, et soutien affiché d'Andromalius.\n• Asmodée : plutôt pro-Belial, légitimiste, mais prêt à soutenir Andromalius si Lucifer tarde.\n• Beleth : discret, sait que la crise ne durera pas et cherche à sauver le monde à sa manière.\n• Belial et Crocell : chacun contre l'autre ; Crocell, écarté, rassemble des preuves contre son frère.\n• Abalam : tape au hasard ; Andrealphus et Damien s'en moquent ; Bifrons a postulé sous la pression de ses amis et s'endort aux réunions ; Caym refuse de choisir et propose un ou deux mois de réflexion ; Furfur pro-Crocell, soutient Baal ; Gaziel pro-Belial, soutient mollement Baal ; Haagenti et Kobal pro-Crocell (Kobal mène une candidature parodique).\n\nChronologie (Tempus Fugit) : J-10 Lentenoir et Loris reviennent du Panchir et mettent les os à l'abri au muséum ; J-3 réunion de crise du Daemonis Malificum ; J-2 Valoche (Straight) et Ishtar (Denver) arrivent à Perpignan ; J-1 Straight passe voir Jasmin, Ishtar et elle cambriolent le muséum, puis le faux dino file se cacher dans les montagnes ; à la Cour, deux grands finalistes se détachent. J1 convocation, départ pour Perpignan avec Aurélie ; le concert de Bouge ta France dégénère ; la même nuit, Valoche et Aurélie tuent Lentenoir (Valoche seule si les PJ surveillent leur collègue) ; premiers incidents du dinosaure. J2-4 conférence annulée, enquête autour du professeur, séjour à Albi, descente au muséum ; Denver continue ses méfaits. J4 arrivée du couple royal espagnol. J3-5 séjour à Prades, battues nocturnes, combat contre Straight, entretien avec Denver. J4-6 retour à Paris, enquête complémentaire. J5-7 le dossier est remis à la hiérarchie ; Andromalius est écarté de la course au trône et de la tête de l'administration infernale.\n\nSuite de la campagne (Lux Aeterna, « Les cahiers du labyrinthe ») : une fois Lucifer revenu, Andromalius est blanchi et rétabli ; Baalberith redevient sa carpette et doit organiser la traque de Kiel, c'est-à-dire de lui-même.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reportée en Foi). Fiches de Monsieur Fabien, Gilbert et Aurélie : aide de jeu « Le Centre de Tri » (Fire and Ice, volume 1, p. 24-26). Valeurs estimées signalées dans chaque fiche.",
+      "scenes": [
+        {
+          "id": "fi10-sc-prologue",
+          "nom": "0. Prologue : la réunion du bar perdu (secret MJ)",
+          "lieu": "Bar-restaurant sordide de banlieue – trois jours avant la convocation",
+          "notes": "Scène d'ambiance à lire ou paraphraser, sans les PJ. Cinq inconnus à une table d'angle, sous un brochet empaillé : un homme pâle et silencieux à grosses lunettes (Baalberith), Aurélie au diabolo grenadine, Alonzo en salopette, Valoche la pin-up, et un gamin à lunettes rondes qui boit du whisky sec (Ishtar).\nIls cherchent comment discréditer Andromalius : fausse rumeur sexuelle, membre du Bureau qui balancerait… Ishtar propose un dinosaure, et Baalberith tranche : ce sera Denver, le dernier dinosaure.\nCe que le MJ doit savoir : Baalberith, ancien ange Kiel, a été jeté en Enfer par Dominique et Andromalius lors de l'« affaire Denver » (Dieu voulait se révéler aux dinosaures). Il tient enfin sa vengeance : Andromalius est favori pour le trône. Opération « Jurassic Park » : trois démons du Daemonis Malificum sur le terrain (Aurélie, Valoche, Ishtar), un agent de liaison à Paris (Alonzo) et toute la machinerie administrative qu'il contrôle. Les PJ, réputés fiables, doivent déterrer les preuves plantées pour eux puis rencontrer un témoin fabriqué : Denver.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-alonzo-1",
+              "nom": "Alonzo",
+              "source": "Démon, membre du Daemonis Malificum (agent de liaison à Paris)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Méditerranéen mal rasé en salopette verte, sirote une Suze en se grattant. Présent à la réunion du Daemonis Malificum du prologue ; c'est l'agent de liaison parisien de l'opération « Jurassic Park ». N'intervient pas dans ce scénario (on le retrouve plus tard dans la campagne).\nFiche minimale (pas de caractéristiques dans ce scénario).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-alonzo"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi10-sc-cdt",
+          "nom": "1. Convocation au Centre de Tri",
+          "lieu": "Centre de Tri, Paris – jour 1",
+          "notes": "Trois jours après « Nuit bleue ». Gilbert et Aurélie offrent le thé dans l'ancienne salle de pause. Nouvelles d'Enfer : plusieurs Premiers Nés briguent le trône ; les deux finalistes probables sont Andromalius et Baal ; l'administration craque, Gilbert est pessimiste, Aurélie prend l'air grave.\nMonsieur Fabien, yeux explosés par l'écran, félicite les PJ pour « Nuit bleue » : on se les arrache. Une offensive angélique se préparerait à Perpignan et les démons locaux ont demandé de l'aide ; message venu directement des bureaux de Baalberith. Frais payés, Aurélie les accompagne au moins au début pour les contacts locaux. Puis ses téléphones sonnent et il les congédie.\nLogistique : sans véhicule, Aurélie propose une camionnette de La Poste.\nConseil : sous-jouer Aurélie (peu d'initiatives, saillies drolatiques), pour qu'on l'oublie.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-fabien-2",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : convoque les PJ trois jours après « Nuit bleue », yeux rougis par l'écran, et les envoie à Perpignan sur un message venu des bureaux de Baalberith (une « offensive angélique » qui n'existe pas). Tous frais payés par le Centre. À la fin, reçoit le dossier des PJ (ou celui d'Aurélie) et le transmet en Enfer.\nSecret MJ : c'est Beleth qui occupe son corps ; il ignore tout du complot de Baalberith.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-fabien"
+            },
+            {
+              "id": "fi10-gilbert-3",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : sert le thé en salle de pause avec Aurélie et se montre de plus en plus pessimiste sur la guerre de succession.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-gilbert"
+            },
+            {
+              "id": "fi10-aurelie-4",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi10-sc-luxe-studio",
+          "nom": "2. Perpignan : Luxe Studio",
+          "lieu": "Locaux de Luxe Studio, vieux quartiers de Perpignan – jour 1",
+          "notes": "Après une interminable autoroute du soleil, Aurélie conduit les PJ chez les deux derniers démons de la ville : Anaïs (Kronos) et Jasmin (Vapula), dans un appartement-bureau au bordel réglementaire (placards débordants, Velleda illisibles, stickers Linux). Pastis de bienvenue, mais surprise : leur appel à l'aide date d'il y a deux mois et visait… des familiers pour ranger les archives. Aucun lien avec « Nuit bleue ». Aurélie rétorque que, puisque les PJ sont là, ils vont aider.\nAurélie reste classer et envoie les PJ « voir ce qu'il y a à faire en ville ». Pistes fournies par Anaïs et Jasmin :\n• Pollution maritime : depuis trois semaines, une algue orange plus coriace que Caulerpa taxifolia ravage la côte. Recoupement possible : trois démons de Vephar du musée océanographique de Monaco ont disparu au début de la propagation ; planqués en Corse, ils travaillent sur une mutation pire encore (accroche pour plus tard).\n• Visite du roi d'Espagne : Juan Carlos et Sofia viennent dans quatre jours (manifestation sur les liens franco-catalans). Rumeurs d'actions anti-Carlos (autonomistes, anti-royalistes, opposants à la guerre en Irak, entarteurs). Guirlandes, fanfares, chasseurs pyrénéens : la visite se passe sans souci si les démons ne s'en mêlent pas.\n• Concert hip-hop : le soir même, l'association Bouge ta France organise un concert qui dégénère en bataille rangée entre deux cités puis mini-émeute. Derrière : une escouade d'anges de Khalid venue rosser des Laurent en goguette, eux-mêmes chauffés par un gros Majûj incarné dans Souad, la « rebeute » qui dirige l'association. Le lendemain, crédits coupés, éditos indignés.\n• Conférence de presse : le lendemain à 14 h, salle de la mairie, Ernest Lentenoir annonce une découverte qui bouleverserait la préhistoire (affiche dessinée par Anaïs et Jasmin ; il reviendrait d'Afghanistan). Si on insiste, Jasmin raconte la visite de Straight la veille.\nChronologie : la nuit même, Valoche et Aurélie (ou Valoche seule si les PJ surveillent leur collègue) assassinent Lentenoir. Premiers incidents attribués au dinosaure.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-anais-5",
+              "nom": "Anaïs « la limande »",
+              "source": "Démone de Kronos, grade 1 – Luxe Studio",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Projection temporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 2
+                }
+              ],
+              "talents": "Savoir occulte 2 (administration infernale 5), Sens de l'organisation 5, Classeur/fichier/perforeuse/trombone 4, Informatique 4, Chuinter en travaillant 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande perche de près de deux mètres, cheveux décolorés en parasol, dents en avant et défaut d'élocution qui postillonne. Timide, rougit, tripote sa jupe quand elle se sent en faute. Seule avec ses dossiers, c'est une virtuose de l'administratif ; sur le terrain, nulle.\nAvec Jasmin, l'organisation infernale de Perpignan en pleine crise : façade de microboîte de PAO (Luxe Studio, bulletin municipal). Ils avaient demandé de l'aide il y a deux mois… pour ranger leurs archives. Étrangers au complot, ils aiguillent malgré eux les PJ.\nPas d'arme ni de défense donnée : défense 2.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-anais"
+            },
+            {
+              "id": "fi10-jasmin-6",
+              "nom": "Jasmin « le shooté »",
+              "source": "Démon de Vapula, grade 1 – Luxe Studio",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 11,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Invention",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 2
+                },
+                {
+                  "n": "Douleur",
+                  "r": 2
+                }
+              ],
+              "talents": "Informatique 7+, Mac Gyving 5, Discussion 4, Conduite 3, Culture générale 2 (musiques traditionnelles jamaïcaines 4), Monoculture intensive sous des lampes au sodium 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand ado méditerranéen au teint mat, pulls aux manches trop longues, cheveux frisés dans les yeux, yeux rougis par l'écran. « Coolitude » absolue : vit deux fois plus lentement que tout le monde. Webmaster d'un site de jardinage en placard. Très bon infographiste (il a dessiné l'affiche de la conférence).\nIndice : la veille de l'arrivée des PJ, un certain Straight, démon d'Andromalius, est passé lui demander si Lentenoir était un démon local (réponse : non) ; il peut le décrire précisément.\nPas d'arme ni de défense donnée : défense 2 (Trait d'énergie pour se battre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-jasmin"
+            },
+            {
+              "id": "fi10-aurelie-7",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-pistes",
+              "q": "Quelle piste les PJ suivent-ils d'abord ?",
+              "opts": [
+                {
+                  "t": "La conférence de Lentenoir",
+                  "suite": "Piste principale : conférencier absent, enquête chez lui (scène 3)."
+                },
+                {
+                  "t": "Le concert de hip-hop",
+                  "suite": "Bagarre Khalid / Laurent / Majûj : diversion savoureuse, sans lien avec le complot ; risque d'attirer l'attention d'Ursule."
+                },
+                {
+                  "t": "La pollution maritime",
+                  "suite": "Accroche vers les démons de Vephar en Corse ; Aurélie ramène vite les PJ vers Lentenoir."
+                },
+                {
+                  "t": "La visite royale",
+                  "suite": "Sans intervention, rien ne se passe ; s'ils s'en mêlent, gros risque de scandale (et d'enquête de Notre-Dame)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-lentenoir",
+          "nom": "3. La conférence sans conférencier",
+          "lieu": "Mairie de Perpignan, puis maison de Lentenoir (village-vacances dans les dunes) – jours 2-4",
+          "notes": "La conférence est annulée faute de conférencier (journalistes scientifiques furieux d'avoir sacrifié un congrès à Tahiti) ; les journaux relaient la disparition dès le lendemain. Si les PJ traînent, Aurélie insiste : on n'est pas en congé.\nErnest Lentenoir : vieux savant dispensé de cours, chasseur d'os de dinosaures, vit à quelques kilomètres au sud de Perpignan dans un village-vacances fantôme en basse saison.\nTémoins : Lucien et Ginette Darond (break Volkswagen marron, poisson stylisé, petit Jésus au rétro ; Straight et un petit chauve en soutane la veille vers 18 h).\nLa maison (en échappant aux pipelettes) : trois pièces de savant fou, rangement hermétique ; des heures de fouille donnent :\n• le Post-it des coordonnées en cité U de Loris Giaddana, sous une maquette de bateau ;\n• un article en scientific english sur le « balouchosaure » ;\n• au bout de plusieurs heures, une bibliothèque trop épaisse : double fond de 50 cm, le professeur plié dedans, décapité à l'arme blanche (médecine ou bouteille démoniaque).\nPendant qu'ils pataugent dans le sang, la police arrive (première visite ou vérification) : parmi eux Ursule Jeanpaulhan, ange de Jean-Luc, qui fera tout ensuite pour étouffer l'affaire.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-darond-8",
+              "nom": "Lucien et Ginette Darond",
+              "source": "Humains, retraités franciliens voisins de Lentenoir",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Seuls habitants à l'année du village-vacances en saison basse. Accent et mépris du Parisien de souche, gonflants, solitaires, ennuyeux… et seuls témoins crédibles.\nLa veille de la conférence, vers 18 h, un break Volkswagen marron devant chez Lentenoir : autocollant de poisson sur le pare-chocs, petit Jésus en plastique au rétro. À la sortie, dans l'obscurité, deux hommes : l'un correspond à Straight, l'autre petit, chauve, en robe ou soutane (Bright). Ils ont fermé à clé et sont partis en voiture.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-darond"
+            },
+            {
+              "id": "fi10-ursule-9",
+              "nom": "Ursule Jeanpaulhan",
+              "source": "Ange de Jean-Luc, grade 0 – policier de Perpignan",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 8,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de service",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Sacrifice ultime",
+                  "r": 2
+                },
+                {
+                  "n": "Champ électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Conversion physique",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre l'électricité",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 4+, Tir 2 (armes de poing 4), Savoir militaire 2 (procédures policières 4), Discrétion 3, Psychologie 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Flic affable aux tempes grises et aux yeux malicieux, « flic gentil » qui laisse toujours le bénéfice du doute. Loyauté angélique à pleurer : moitié de sa paye à Notre-Dame, le reste au Secours catholique, courses équitables, veillées œcuméniques.\nArrive avec la police chez Lentenoir ; étouffe ensuite l'affaire. Si les PJ sont trop peu discrets, prévient Notre-Dame et mène l'« enquête préliminaire » avec des soldats de Dieu déguisés en pionniers ; une fois convaincu, fait arrêter les PJ puis les fait abattre discrètement en garde à vue.\nArme non précisée (« armes de poing ») : revolver de service petit calibre retenu.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-ursule"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-police",
+              "q": "Comment les PJ gèrent-ils l'arrivée de la police ?",
+              "opts": [
+                {
+                  "t": "Fuite discrète ou pouvoirs",
+                  "suite": "Ursule étouffe l'affaire sans soupçonner les PJ ; l'enquête continue."
+                },
+                {
+                  "t": "Bluff ou coopération",
+                  "suite": "Possible avec de bons arguments ; Ursule reste affable mais garde un œil sur eux."
+                },
+                {
+                  "t": "Grabuge, violence ou pouvoirs voyants",
+                  "suite": "Ursule prévient Notre-Dame et lance une enquête préliminaire (scène 4)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-notre-dame",
+          "nom": "4. Notre-Dame s'en mêle (optionnel)",
+          "lieu": "Perpignan – à tout moment si les PJ sont trop voyants",
+          "notes": "Si les démons ont été trop peu discrets (police, concert, visite royale, muséum), Ursule prévient Notre-Dame et prend la tête d'une faction de soldats de Dieu déguisés en pionniers pour une « enquête préliminaire » destinée à éviter une réaction trop hâtive.\nFilatures, questions aux voisins, contrôle d'identité. Une fois convaincu de leur culpabilité, Ursule les fait arrêter puis abattre discrètement en garde à vue. Les PJ peuvent fuir, le piéger, l'acheter (peine perdue) ou l'affronter.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi10-ursule-10",
+              "nom": "Ursule Jeanpaulhan",
+              "source": "Ange de Jean-Luc, grade 0 – policier de Perpignan",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 9,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 8,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de service",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Sacrifice ultime",
+                  "r": 2
+                },
+                {
+                  "n": "Champ électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Conversion physique",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre l'électricité",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 4+, Tir 2 (armes de poing 4), Savoir militaire 2 (procédures policières 4), Discrétion 3, Psychologie 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Flic affable aux tempes grises et aux yeux malicieux, « flic gentil » qui laisse toujours le bénéfice du doute. Loyauté angélique à pleurer : moitié de sa paye à Notre-Dame, le reste au Secours catholique, courses équitables, veillées œcuméniques.\nArrive avec la police chez Lentenoir ; étouffe ensuite l'affaire. Si les PJ sont trop peu discrets, prévient Notre-Dame et mène l'« enquête préliminaire » avec des soldats de Dieu déguisés en pionniers ; une fois convaincu, fait arrêter les PJ puis les fait abattre discrètement en garde à vue.\nArme non précisée (« armes de poing ») : revolver de service petit calibre retenu.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-ursule"
+            },
+            {
+              "id": "fi10-soldats-11",
+              "nom": "Soldats de Dieu « pionniers »",
+              "source": "Soldat de Dieu typique (Livre de base) aux ordres d'Ursule",
+              "type": "soldat",
+              "qty": 4,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 5,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Grenade (×2)",
+                  "att": 6,
+                  "prec": -4,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Combat 2, Conduite 2+, Corps à corps 2, Intimidation 2, Savoir militaire 2 (tactique 2+), Survie 1 (au choix 2+), Tir 2 (au choix 3)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre cite seulement « une faction de soldats de Dieu déguisés en pionniers » : valeurs du soldat de Dieu typique (livre de base, p. 88), nombre estimé. Un pouvoir défensif et un pouvoir utilitaire au choix au niveau 1.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-soldats"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-ursule",
+              "q": "Comment se règle le problème Ursule ?",
+              "opts": [
+                {
+                  "t": "Les PJ le semant ou le neutralisent discrètement",
+                  "suite": "Notre-Dame reste dans le flou ; l'enquête continue."
+                },
+                {
+                  "t": "Affrontement ouvert",
+                  "suite": "Victoire possible, mais Notre-Dame sait désormais que des démons s'agitent à Perpignan."
+                },
+                {
+                  "t": "Arrestation",
+                  "suite": "Garde à vue mortelle prévue : les PJ doivent s'évader, Aurélie appelle le Centre à l'aide."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-albi",
+          "nom": "5. Recherches et virée à Albi",
+          "lieu": "Bibliothèques, faculté des sciences, cité U, puis Albi – jours 2-4",
+          "notes": "Aurélie, Anaïs et Jasmin n'aident pas beaucoup (Aurélie insiste, hystérique). Recherches : Lentenoir, spécialiste de races de dinosaures, fouilles à Spokane (Illinois) fin des années 80 ; depuis dix ans convaincu que les derniers dinosaures se sont concentrés en Extrême-Orient. Revenu d'Afghanistan avec plusieurs conteneurs d'os ; ses collègues, qui lui en veulent, ignorent où il les a mis.\nLoris Giaddana a fui Perpignan, persuadé d'un Grand Complot. Ses amis de fac donnent sa chambre en cité U ; de là (lettres d'amour ou voisins), on remonte à Claire Martinez, à Albi.\nAlbi : quelques heures d'autoroute. Loris et Claire vivent chez les parents de Claire : parano du jeune homme, méfiance bourgeoise ; venir avec un bon prétexte. Mis en confiance, Loris parle du balouchosaure (presque complet, pièce unique), du Panchir et, si on insiste, de la chambre forte du muséum. Il ajoute que, selon Lentenoir, le balouchosaure aurait beaucoup à apprendre sur l'histoire des dinosaures.\nEn sortant : face-à-face avec le break Volkswagen conduit par un curé en soutane (Aurélie polymorphée en Bright, ange de Dominique). La rencontre doit tourner court ; le « curé » s'éclipse. Les PJ se savent repérés.\nRetour à Perpignan : dans les montagnes, une dizaine de chèvres écrasées comme par un énorme 4×4. Au journal local : cabane de randonneurs rasée, vieux arbres abattus, un touriste hollandais sous champignons a vu une bête de la taille d'un petit éléphant. Personne n'a fait le rapprochement.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-loris-12",
+              "nom": "Loris Giaddana",
+              "source": "Humain, thésard en paléontologie",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 2,
+                "pe": 4,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "Science 2 (paléontologie 3), Informatique 2+, Conduite 2, « Hail Eris ! » 2, Greuh 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Mi-vingtaine, cheveux noirs dressés sur la tête, parle très vite en se frottant les mains, tics nerveux. Trois mois de fouilles sous escorte de chefs de guerre dans le Panchir l'ont rendu paranoïaque : ne tourne jamais le dos à une fenêtre, sursaute au moindre bruit. Susceptible : mal abordé, il part en vrille et déblatère sur le « discordianisme ».\nDepuis la disparition de Lentenoir, réfugié chez sa copine Claire Martinez, chez les parents de celle-ci à Albi (famille bourgeoise méfiante).\nBien mis en condition, mine d'informations : le balouchosaure (créature unique), le séjour afghan, et surtout, s'il est pressé, que les os sont dans une chambre forte du muséum (seuls lui, Lentenoir et le directeur le savent).\nPas d'arme ; défense 2. Humain : Ch reportée en Foi, pas de PP.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-loris"
+            },
+            {
+              "id": "fi10-claire-13",
+              "nom": "Claire Martinez",
+              "source": "Humaine, copine albigeoise de Loris",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Héberge Loris chez ses parents à Albi. On la retrouve en fouillant la chambre de Loris en cité U (lettres d'amour enflammées) ou en interrogeant ses voisins de palier.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-claire"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi10-sc-museum",
+          "nom": "6. Retour au temple du mal élémentaire",
+          "lieu": "Muséum d'Histoire naturelle de Perpignan (bâtiment XVIe classé) – de jour ou de nuit",
+          "notes": "Visite légale : collections de papillons, squelettes, égyptienneries maudites, guide moustachu monocorde. Le directeur, Gonzague Octave de Grémissieux, ne reçoit que sur solides références et refuse toute visite des sous-sols sans pouvoir. S'ils obtiennent l'ouverture, on saute directement à la chambre forte (sans dungeon crawling).\nVersion recommandée : effraction par une nuit sans lune sous l'orage. Le jour, une dizaine de jeunes gardiens blasés ; la nuit, quatre gardiens à matraque en caoutchouc qui jouent à la manille et appellent vite la police au moindre pépin.\nAvant d'entrer : le break de Straight et Bright garé dans une ruelle (bible et Code civil dans la boîte à gants, revues pornos, une vingtaine de litres d'essence en jerricans).\nPendant l'exploration, Straight et Bright (Valoche et Aurélie, qui a « disparu » un moment) font peur aux PJ sans les blesser : Télékinésie sur un gnou empaillé, bruits pour attirer les gardiens, une main dans le dos dans l'escalier, un lustre qui tombe… Exploiter l'ambiance Adèle Blanc-Sec (vitrines, parquets qui grincent, squelettes aux ombres longues).\nLes chambres fortes : sas de sous-marin, boîtes de conserve géantes. Pour ouvrir la bonne : la clé (les gardiens ont un double), chalumeau ou dynamite, le pouvoir Ouverture, ou frapper très fort longtemps.\nDedans : rien. Le mur du fond est défoncé de l'intérieur (blindage replié en peau de banane), donnant sur un large tunnel d'égout. Comme si le dinosaure s'était réassemblé et enfui…\nVérité (à ne pas dire) : un ou deux jours plus tôt, Valoche et Ishtar sont entrés avec le trousseau de Lentenoir ; Ishtar en rhinocéros a défoncé le mur, ils ont jeté les os aux égouts et refermé. Ishtar attend dans les montagnes.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-gremissieux-14",
+              "nom": "Gonzague Octave de Grémissieux",
+              "source": "Humain, directeur du muséum d'Histoire naturelle",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Quarantenaire snob tiré à quatre épingles, couvert de plaques d'allergie, nez qui coule. Supérieur et inaccessible : il faut de solides références pour une brève entrevue. Doit à Lentenoir une bonne part de ses notices de squelettes ; lui a prêté une chambre forte pour ses os afghans et lui a remis une des clés.\nSans pouvoir, impossible d'obtenir de lui la visite des sous-sols et l'ouverture du sanctuaire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-gremissieux"
+            },
+            {
+              "id": "fi10-gardiens-15",
+              "nom": "César, Panisse, Escartefigue et Eblis O'Shaughnessy",
+              "source": "Humains, gardiens de nuit du muséum",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 2,
+                "pe": 4,
+                "vo": 2,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Matraque en caoutchouc",
+                  "att": 5,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Métier (gardien) 3, Corps à corps 2+, Tenir l'alcool 2, Jouer à la manille 2, « Tu me fends le cœur » 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trois caricatures pagnolesques (petit gilet, moustache improbable, accent à couper au couteau, odeur de criée) et un colosse au physique de basketteur américain. Fonctionnaires fiers de l'être, pas courageux : face à des intrus, ils appellent la police. Entre deux rondes, manille et perroquets. Ils ont un double de la clé de la chambre forte.\nDéfense non donnée : 2.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-gardiens"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-museum",
+              "q": "Comment les PJ entrent-ils dans la chambre forte ?",
+              "opts": [
+                {
+                  "t": "Visite autorisée (pouvoirs sur le directeur)",
+                  "suite": "Accès direct à la chambre vide, sans la séquence de cache-cache nocturne."
+                },
+                {
+                  "t": "Effraction nocturne discrète",
+                  "suite": "Cache-cache avec les gardiens et les farces de Straight et Bright ; mur défoncé découvert."
+                },
+                {
+                  "t": "Effraction bruyante",
+                  "suite": "Les gardiens appellent la police : risque d'enquête d'Ursule (scène 4)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-prades",
+          "nom": "7. La bête est entrée dans le village",
+          "lieu": "Prades et ses montagnes, à une vingtaine de kilomètres de Perpignan – jours 3-5",
+          "notes": "Une carte ou Anaïs et Jasmin montrent que tous les incidents ont eu lieu à moins de deux kilomètres de Prades. Si les joueurs patinent : des chasseurs locaux annoncent une battue contre la bête.\nAurélie a fini son classement et veut venir ; sinon, elle suit avec Anaïs et Jasmin (« c'est notre juridiction »).\nPour que Valoche arrive avant eux, elle (ou Aurélie) met du sucre dans les réservoirs : panne sur une bretelle d'autoroute, et pendant le garage, Straight briefe le faux dinosaure.\nIshtar vit dans une cabane en rondins à un kilomètre et demi de Prades ; la nuit, il devient Denver et sème la terreur.\nÀ Prades, montagnards remontés, battues avec chiens et matériel lourd, expert lyonnais attendu. Trois épreuves pour gagner leur estime : tenir l'alcool, entretenir un fusil, reprendre une paillarde en catalan ; ils racontent alors tout et montrent les lieux. Seuls, les PJ se perdent sur des sentiers non balisés et croisent des chasseurs avinés à la nuit tombée.\nLe soir, le faux Denver se fait repérer : arbres abattus, pylône renversé, piétinements. Poursuite d'une demi-heure (Vitesse, voire Vol hors de vue) pour épuiser les PJ et les éloigner de la civilisation ; tirs préventifs de chasseurs possibles.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-chasseurs-16",
+              "nom": "Chasseurs de Prades",
+              "source": "Humains, montagnards organisés en battues",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Fusil de chasse",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Survie 2, Tir 2, Tenir l'alcool 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Montagnards remontés contre « la Bête », battues nocturnes avec chiens et matériel lourd ; question de fierté, ils veulent l'abattre avant l'arrivée d'un expert lyonnais. Admiratifs de qui tient l'alcool, entretient un fusil et reprend une paillarde en catalan : ils racontent alors tout et montrent les lieux.\nAvinés à la nuit tombée : tirs « préventifs » possibles sur les PJ.\nFiche estimée (pas de caractéristiques dans le livre) : humains ordinaires armés de carabines de chasse.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-chasseurs"
+            },
+            {
+              "id": "fi10-anais-17",
+              "nom": "Anaïs « la limande »",
+              "source": "Démone de Kronos, grade 1 – Luxe Studio",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 12,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Projection temporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Déplacement temporel",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 2
+                }
+              ],
+              "talents": "Savoir occulte 2 (administration infernale 5), Sens de l'organisation 5, Classeur/fichier/perforeuse/trombone 4, Informatique 4, Chuinter en travaillant 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande perche de près de deux mètres, cheveux décolorés en parasol, dents en avant et défaut d'élocution qui postillonne. Timide, rougit, tripote sa jupe quand elle se sent en faute. Seule avec ses dossiers, c'est une virtuose de l'administratif ; sur le terrain, nulle.\nAvec Jasmin, l'organisation infernale de Perpignan en pleine crise : façade de microboîte de PAO (Luxe Studio, bulletin municipal). Ils avaient demandé de l'aide il y a deux mois… pour ranger leurs archives. Étrangers au complot, ils aiguillent malgré eux les PJ.\nPas d'arme ni de défense donnée : défense 2.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-anais"
+            },
+            {
+              "id": "fi10-jasmin-18",
+              "nom": "Jasmin « le shooté »",
+              "source": "Démon de Vapula, grade 1 – Luxe Studio",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 8,
+                "vo": 8,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 11,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Invention",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du danger",
+                  "r": 2
+                },
+                {
+                  "n": "Douleur",
+                  "r": 2
+                }
+              ],
+              "talents": "Informatique 7+, Mac Gyving 5, Discussion 4, Conduite 3, Culture générale 2 (musiques traditionnelles jamaïcaines 4), Monoculture intensive sous des lampes au sodium 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand ado méditerranéen au teint mat, pulls aux manches trop longues, cheveux frisés dans les yeux, yeux rougis par l'écran. « Coolitude » absolue : vit deux fois plus lentement que tout le monde. Webmaster d'un site de jardinage en placard. Très bon infographiste (il a dessiné l'affiche de la conférence).\nIndice : la veille de l'arrivée des PJ, un certain Straight, démon d'Andromalius, est passé lui demander si Lentenoir était un démon local (réponse : non) ; il peut le décrire précisément.\nPas d'arme ni de défense donnée : défense 2 (Trait d'énergie pour se battre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-jasmin"
+            },
+            {
+              "id": "fi10-aurelie-19",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-chasseurs",
+              "q": "Comment les PJ abordent-ils les gens de Prades ?",
+              "opts": [
+                {
+                  "t": "Réussir les trois épreuves",
+                  "suite": "Témoignages intarissables et visite des lieux : la piste de la bête est vite trouvée."
+                },
+                {
+                  "t": "Se débrouiller seuls",
+                  "suite": "Errance, mauvaises rencontres et chasseurs avinés ; Denver se fait repérer quand même."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-straight",
+          "nom": "8. Straight contre Denver",
+          "lieu": "Champ de cailloux en montagne au-dessus de Prades – nuit",
+          "notes": "Denver fait mine de peiner dans un pierrier pour se laisser rattraper. Au milieu du champ de cailloux, Straight surgit entre les PJ et la bête (Corps gazeux) et proclame en démoniaque qu'il est serviteur d'Andromalius et membre du Labyrinthe, et que ce dinosaure est à lui.\nSi les PJ acquiescent, il se jette sur la bête, qui implore à l'aide d'une voix de fausset ; Aurélie surenchérit pour qu'on sauve la pauvre bête.\nAux joueurs de choisir leur camp : l'idéal (pour le complot) est qu'ils défendent Denver ou retiennent Straight. Dans ce cas, Straight se retourne contre eux et se bat jusqu'à la mort pendant que Denver tente de fuir. Même si les PJ ne bougent pas, la bête l'emporte : Valoche/Straight se fait tuer par Denver, aidé plus ou moins discrètement par Aurélie.\nCombat : seul Straight est un adversaire ; Denver et Aurélie jouent la comédie (fiches dans les scènes 7 et 9 si le MJ en a besoin).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi10-valoche-20",
+              "nom": "Valoche (alias Straight)",
+              "source": "Démone de Baalberith, grade 1 – membre du Daemonis Malificum (se fait passer pour Straight, démon d'Andromalius)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Épée",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "Séduction 7+, Comédie 4, Discrétion 5, Défense 4, Combat 4, Corps à corps 3, « Ça fait mal quand j'appuie là ? » 3 ; Limitation : Daemonis Malificum",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vraie forme : pin-up brune à forte poitrine. Les PJ la voient surtout en Straight, soi-disant grade 1 d'Andromalius et membre du Labyrinthe : beau garçon de vingt ans, style étudiant en droit (jean à pli, veste de velours noir col relevé, mocassins).\nAnge déchu rendu fou par la Chute : hait anges et démons, prête à mourir pour la cause. Meilleure amie d'Aurélie.\nEn scène finale, si les PJ l'aident contre Denver, elle se retourne contre eux et se bat jusqu'à la mort ; sinon elle se fait « tuer » par la bête avec l'aide d'Aurélie.\nArme : « se bat à l'épée » ; épée longue retenue (valeurs des règles). Limitation (Daemonis Malificum) reportée dans les talents.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-valoche"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-camp",
+              "q": "Quel camp choisissent les PJ ?",
+              "opts": [
+                {
+                  "t": "Ils défendent Denver",
+                  "suite": "Straight se bat jusqu'à la mort ; Denver, sauvé, remercie et propose de discuter (scène 9)."
+                },
+                {
+                  "t": "Ils laissent faire",
+                  "suite": "Denver tue Straight avec l'aide d'Aurélie ; le plan suit son cours."
+                },
+                {
+                  "t": "Ils aident Straight",
+                  "suite": "Straight se retourne quand même contre eux ; Denver s'enfuit et se laisse retrouver plus tard."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-denver",
+          "nom": "9. Denver témoigne : être dino, c'était l'enfer",
+          "lieu": "Coin tranquille en montagne",
+          "notes": "Denver remercie Aurélie (et peut-être les PJ) et propose de discuter : il est Denver, dinosaure de Dieu revenu à la vie. Il demande d'abord qui ils sont et pour qui ils travaillent, puis raconte à rebours :\n• sa survie dans les Pyrénées, les battues, la traque de Straight et Bright (qu'il prétend avoir tué) ;\n• son réveil conscient dans les sous-sols du muséum, sa fuite par les égouts, sa sortie de Perpignan en petit garçon, les vagues souvenirs de son exhumation au Panchir ;\n• sa première vie : deux anges de puissance jumeaux, Sariel et Raguel, lui ont donné la parole pour évangéliser les autres dinosaures, accompagnés d'un ange plus petit et sceptique, Kiel. Échec : les dinosaures broutaient et se battaient. Les jumeaux décident de le crucifier pour frapper un grand coup ; Kiel s'y oppose, et ils le rouent de coups jusqu'à ce qu'il disparaisse dans des plumes blanches. Denver est crucifié, entend Dieu dire que c'était une erreur, puis sent le sol trembler : le Créateur efface son expérience.\nAurélie rappelle au besoin que Sariel et Raguel sont aujourd'hui Dominique et Andromalius, et que le Labyrinthe est leur service secret commun ; elle n'a jamais entendu parler de Kiel. Elle propose de rentrer vite à Paris.\nIronie pour le MJ : Kiel est devenu Baalberith, qui monte toute la farce.\nLe sort de Denver : la solution retenue par le Daemonis Malificum dépend des PJ ; ils garderont le personnage crédible jusqu'au bout, quitte à se sacrifier.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-ishtar-21",
+              "nom": "Ishtar (alias Denver, le dinosaure de Dieu)",
+              "source": "Démon de Caym, grade 2 – membre du Daemonis Malificum",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 19,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Griffes (Membre exotique)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Ergots (Membre exotique)",
+                  "att": 10,
+                  "prec": 1,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Petites cornes (Membre exotique)",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Augmentation de Force",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Membre exotique : ergots",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique : petites cornes",
+                  "r": 0
+                },
+                {
+                  "n": "Absorption de force",
+                  "r": 2
+                },
+                {
+                  "n": "Étouffement",
+                  "r": 2
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 5, Survie 3+, Athlétisme 3, « Oh, non, pas Morton Fizbac ! » 3 ; Limitation : Daemonis Malificum",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vraie forme : petit garçon propret d'une dizaine d'années, raie sur le côté, lunettes à la Harry Potter, petite voix fluette qui part dans les aigus (même transformé). Boit du whisky sec.\nDenver : chimère grâce à une faille du pouvoir de son prince (corps de rhinocéros, écailles de serpent, cou de girafe, queue de crocodile, tête d'ornithorynque) ; Augmentation de Force et Étouffement pour faire illusion. Sa seule faille : il en fait trop.\nAvec Valoche, a vidé la chambre forte du muséum (charge en rhinocéros contre le mur, os jetés aux égouts), puis s'est caché dans une cabane près de Prades d'où il terrorise la région la nuit.\nAttaques : Corps à corps 5 avec les membres exotiques (précision et puissance des règles). Défense non donnée : 2 (estimée).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24.",
+              "typeId": "type-fi10-ishtar"
+            },
+            {
+              "id": "fi10-aurelie-22",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-sort",
+              "q": "Que font les PJ de Denver ?",
+              "opts": [
+                {
+                  "t": "Le laisser dans les montagnes",
+                  "suite": "Solution préférée du dino : quelques jours pour reprendre forme humaine et filer vivre dans une jungle."
+                },
+                {
+                  "t": "Le ramener au Centre de Tri",
+                  "suite": "Transport et hébergement acrobatiques ; Denver fausse compagnie à la première occasion avec un mot déchirant (plutôt mourir que vivre en cage)."
+                },
+                {
+                  "t": "Lui céder de la force",
+                  "suite": "Absorption de force : il « prend forme humaine » (reprend en fait son apparence) puis disparaît avec le même mot d'adieu."
+                },
+                {
+                  "t": "Le tuer",
+                  "suite": "Il fait « plop » ; ou Aurélie, ou Valoche si elle vit encore, l'élimine si les PJ sont trop soupçonneux ; au pire, il se suicide."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi10-sc-justice",
+          "nom": "10. Justice à deux vitesses",
+          "lieu": "Centre de Tri, Paris – jours 4-7",
+          "notes": "Rapport à Monsieur Fabien (ou par Aurélie si les PJ rechignent). Contexte : Andromalius est sur le point de monter sur le trône (voir « La guerre en Enfer ») ; des outsiders veulent peut-être le saboter, mais ces révélations à quelques jours de la réunion extraordinaire de la Cour ne peuvent être ignorées.\nEnquête complémentaire (CRD, Aphte, Chez Régis, anciens contacts angéliques) : tout concorde. Kiel est un ange porté disparu depuis l'affaire Denver, ni chez Ceux Qui Ont Chuté ni chez Ceux Qui Sont Restés (« effacé par un coup de gomme divin »). Les magouilles Andromalius-Dominique ont laissé des traces (Bureau, projet Antéchrist, opération « J'adore ce que vous faites ! ») et leur connivence est légendaire. L'évangélisation des dinosaures serait le plus gros raté du Pré-Grand-Jeu.\nLe dossier doit parvenir à Fabien juste avant la réunion en Enfer. Si les PJ, paranoïaques, refusent de cautionner ou soupçonnent Aurélie, Baalberith fabrique lui-même un vrai faux dossier signé de leurs noms.\nDénouement : réunion extraordinaire, les princes ajournent la succession. Andromalius est écarté de la course ; ses serviteurs et ses outils de contrôle passent sous les ordres de Baalberith. Baal reste le seul candidat crédible mais se contente de faire tourner les Enfers. Sous 48 heures : 6 PA pour chaque PJ.\nLa vérité éclatera dans le quatrième scénario de cet acte.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi10-fabien-23",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : convoque les PJ trois jours après « Nuit bleue », yeux rougis par l'écran, et les envoie à Perpignan sur un message venu des bureaux de Baalberith (une « offensive angélique » qui n'existe pas). Tous frais payés par le Centre. À la fin, reçoit le dossier des PJ (ou celui d'Aurélie) et le transmet en Enfer.\nSecret MJ : c'est Beleth qui occupe son corps ; il ignore tout du complot de Baalberith.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-fabien"
+            },
+            {
+              "id": "fi10-gilbert-24",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : sert le thé en salle de pause avec Aurélie et se montre de plus en plus pessimiste sur la guerre de succession.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-gilbert"
+            },
+            {
+              "id": "fi10-aurelie-25",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi10-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi10-ch-rapport",
+              "q": "Qui transmet le dossier en Enfer ?",
+              "opts": [
+                {
+                  "t": "Les PJ eux-mêmes",
+                  "suite": "Andromalius est écarté ; 6 PA. Les PJ ont, sans le savoir, servi la vengeance de Baalberith."
+                },
+                {
+                  "t": "Aurélie, faute de mieux",
+                  "suite": "Même résultat ; les PJ restent un peu en retrait mais touchent leurs 6 PA."
+                },
+                {
+                  "t": "Personne : ils soupçonnent un coup monté",
+                  "suite": "Baalberith fabrique un faux dossier à leur nom ; même récompense, mais les PJ seront plus méfiants pour la suite (et ils auront raison)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795358440830,
+      "updatedAt": 1795358440830
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi10-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : convoque les PJ trois jours après « Nuit bleue », yeux rougis par l'écran, et les envoie à Perpignan sur un message venu des bureaux de Baalberith (une « offensive angélique » qui n'existe pas). Tous frais payés par le Centre. À la fin, reçoit le dossier des PJ (ou celui d'Aurélie) et le transmet en Enfer.\nSecret MJ : c'est Beleth qui occupe son corps ; il ignore tout du complot de Baalberith.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi10-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : sert le thé en salle de pause avec Aurélie et se montre de plus en plus pessimiste sur la guerre de succession.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi10-aurelie",
+      "nom": "Aurélie",
+      "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 5
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : accompagne les PJ à Perpignan et s'occupe des contacts locaux. Incompétente pour tout effort physique, très bonne dans l'administratif. Peu d'initiatives, saillies hystériques, mais insiste lourdement pour que l'enquête avance.\nDouble jeu (Daemonis Malificum) : avec Valoche, elle tue Lentenoir le soir de l'arrivée ; elle joue « Bright », faux ange de Dominique et du Labyrinthe (curé en soutane noire, teint gris, cheveux rares, grand chapelet), au volant du break Volkswagen ; elle sucre les réservoirs des PJ avant Prades et aide Denver contre Straight. Meilleure amie de Valoche.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi10-anais",
+      "nom": "Anaïs « la limande »",
+      "source": "Démone de Kronos, grade 1 – Luxe Studio",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 12,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [],
+      "pouvoirs": [
+        {
+          "n": "Projection temporelle",
+          "r": 2
+        },
+        {
+          "n": "Déplacement temporel",
+          "r": 4
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Sommeil",
+          "r": 2
+        }
+      ],
+      "talents": "Savoir occulte 2 (administration infernale 5), Sens de l'organisation 5, Classeur/fichier/perforeuse/trombone 4, Informatique 4, Chuinter en travaillant 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande perche de près de deux mètres, cheveux décolorés en parasol, dents en avant et défaut d'élocution qui postillonne. Timide, rougit, tripote sa jupe quand elle se sent en faute. Seule avec ses dossiers, c'est une virtuose de l'administratif ; sur le terrain, nulle.\nAvec Jasmin, l'organisation infernale de Perpignan en pleine crise : façade de microboîte de PAO (Luxe Studio, bulletin municipal). Ils avaient demandé de l'aide il y a deux mois… pour ranger leurs archives. Étrangers au complot, ils aiguillent malgré eux les PJ.\nPas d'arme ni de défense donnée : défense 2.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-jasmin",
+      "nom": "Jasmin « le shooté »",
+      "source": "Démon de Vapula, grade 1 – Luxe Studio",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 8,
+        "vo": 8,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 11,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [],
+      "pouvoirs": [
+        {
+          "n": "Invention",
+          "r": 4
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 4
+        },
+        {
+          "n": "Détection du danger",
+          "r": 2
+        },
+        {
+          "n": "Douleur",
+          "r": 2
+        }
+      ],
+      "talents": "Informatique 7+, Mac Gyving 5, Discussion 4, Conduite 3, Culture générale 2 (musiques traditionnelles jamaïcaines 4), Monoculture intensive sous des lampes au sodium 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand ado méditerranéen au teint mat, pulls aux manches trop longues, cheveux frisés dans les yeux, yeux rougis par l'écran. « Coolitude » absolue : vit deux fois plus lentement que tout le monde. Webmaster d'un site de jardinage en placard. Très bon infographiste (il a dessiné l'affiche de la conférence).\nIndice : la veille de l'arrivée des PJ, un certain Straight, démon d'Andromalius, est passé lui demander si Lentenoir était un démon local (réponse : non) ; il peut le décrire précisément.\nPas d'arme ni de défense donnée : défense 2 (Trait d'énergie pour se battre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-ursule",
+      "nom": "Ursule Jeanpaulhan",
+      "source": "Ange de Jean-Luc, grade 0 – policier de Perpignan",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 9,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 8,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Revolver de service",
+          "att": 8,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Sacrifice ultime",
+          "r": 2
+        },
+        {
+          "n": "Champ électrique",
+          "r": 2
+        },
+        {
+          "n": "Conversion physique",
+          "r": 2
+        },
+        {
+          "n": "Immunité contre l'électricité",
+          "r": 0
+        }
+      ],
+      "talents": "Défense 4+, Tir 2 (armes de poing 4), Savoir militaire 2 (procédures policières 4), Discrétion 3, Psychologie 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Flic affable aux tempes grises et aux yeux malicieux, « flic gentil » qui laisse toujours le bénéfice du doute. Loyauté angélique à pleurer : moitié de sa paye à Notre-Dame, le reste au Secours catholique, courses équitables, veillées œcuméniques.\nArrive avec la police chez Lentenoir ; étouffe ensuite l'affaire. Si les PJ sont trop peu discrets, prévient Notre-Dame et mène l'« enquête préliminaire » avec des soldats de Dieu déguisés en pionniers ; une fois convaincu, fait arrêter les PJ puis les fait abattre discrètement en garde à vue.\nArme non précisée (« armes de poing ») : revolver de service petit calibre retenu.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-soldats",
+      "nom": "Soldats de Dieu « pionniers »",
+      "source": "Soldat de Dieu typique (Livre de base) aux ordres d'Ursule",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 4,
+        "vo": 5,
+        "pr": 3,
+        "foi": 6
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 8,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Pistolet-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Grenade (×2)",
+          "att": 6,
+          "prec": -4,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 3, Combat 2, Conduite 2+, Corps à corps 2, Intimidation 2, Savoir militaire 2 (tactique 2+), Survie 1 (au choix 2+), Tir 2 (au choix 3)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le livre cite seulement « une faction de soldats de Dieu déguisés en pionniers » : valeurs du soldat de Dieu typique (livre de base, p. 88), nombre estimé. Un pouvoir défensif et un pouvoir utilitaire au choix au niveau 1.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-loris",
+      "nom": "Loris Giaddana",
+      "source": "Humain, thésard en paléontologie",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 2,
+        "pe": 4,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "Science 2 (paléontologie 3), Informatique 2+, Conduite 2, « Hail Eris ! » 2, Greuh 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Mi-vingtaine, cheveux noirs dressés sur la tête, parle très vite en se frottant les mains, tics nerveux. Trois mois de fouilles sous escorte de chefs de guerre dans le Panchir l'ont rendu paranoïaque : ne tourne jamais le dos à une fenêtre, sursaute au moindre bruit. Susceptible : mal abordé, il part en vrille et déblatère sur le « discordianisme ».\nDepuis la disparition de Lentenoir, réfugié chez sa copine Claire Martinez, chez les parents de celle-ci à Albi (famille bourgeoise méfiante).\nBien mis en condition, mine d'informations : le balouchosaure (créature unique), le séjour afghan, et surtout, s'il est pressé, que les os sont dans une chambre forte du muséum (seuls lui, Lentenoir et le directeur le savent).\nPas d'arme ; défense 2. Humain : Ch reportée en Foi, pas de PP.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-gardiens",
+      "nom": "César, Panisse, Escartefigue et Eblis O'Shaughnessy",
+      "source": "Humains, gardiens de nuit du muséum",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 2,
+        "pe": 4,
+        "vo": 2,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Matraque en caoutchouc",
+          "att": 5,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Métier (gardien) 3, Corps à corps 2+, Tenir l'alcool 2, Jouer à la manille 2, « Tu me fends le cœur » 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trois caricatures pagnolesques (petit gilet, moustache improbable, accent à couper au couteau, odeur de criée) et un colosse au physique de basketteur américain. Fonctionnaires fiers de l'être, pas courageux : face à des intrus, ils appellent la police. Entre deux rondes, manille et perroquets. Ils ont un double de la clé de la chambre forte.\nDéfense non donnée : 2.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-valoche",
+      "nom": "Valoche (alias Straight)",
+      "source": "Démone de Baalberith, grade 1 – membre du Daemonis Malificum (se fait passer pour Straight, démon d'Andromalius)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Épée",
+          "att": 8,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télékinésie",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        }
+      ],
+      "talents": "Séduction 7+, Comédie 4, Discrétion 5, Défense 4, Combat 4, Corps à corps 3, « Ça fait mal quand j'appuie là ? » 3 ; Limitation : Daemonis Malificum",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vraie forme : pin-up brune à forte poitrine. Les PJ la voient surtout en Straight, soi-disant grade 1 d'Andromalius et membre du Labyrinthe : beau garçon de vingt ans, style étudiant en droit (jean à pli, veste de velours noir col relevé, mocassins).\nAnge déchu rendu fou par la Chute : hait anges et démons, prête à mourir pour la cause. Meilleure amie d'Aurélie.\nEn scène finale, si les PJ l'aident contre Denver, elle se retourne contre eux et se bat jusqu'à la mort ; sinon elle se fait « tuer » par la bête avec l'aide d'Aurélie.\nArme : « se bat à l'épée » ; épée longue retenue (valeurs des règles). Limitation (Daemonis Malificum) reportée dans les talents.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-ishtar",
+      "nom": "Ishtar (alias Denver, le dinosaure de Dieu)",
+      "source": "Démon de Caym, grade 2 – membre du Daemonis Malificum",
+      "type": "demon",
+      "car": {
+        "fo": 12,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 19,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Griffes (Membre exotique)",
+          "att": 10,
+          "prec": 0,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Ergots (Membre exotique)",
+          "att": 10,
+          "prec": 1,
+          "puis": 3,
+          "melee": true
+        },
+        {
+          "n": "Petites cornes (Membre exotique)",
+          "att": 10,
+          "prec": -2,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Transformation",
+          "r": 6
+        },
+        {
+          "n": "Augmentation de Force",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Membre exotique : ergots",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique : petites cornes",
+          "r": 0
+        },
+        {
+          "n": "Absorption de force",
+          "r": 2
+        },
+        {
+          "n": "Étouffement",
+          "r": 2
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 5, Survie 3+, Athlétisme 3, « Oh, non, pas Morton Fizbac ! » 3 ; Limitation : Daemonis Malificum",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vraie forme : petit garçon propret d'une dizaine d'années, raie sur le côté, lunettes à la Harry Potter, petite voix fluette qui part dans les aigus (même transformé). Boit du whisky sec.\nDenver : chimère grâce à une faille du pouvoir de son prince (corps de rhinocéros, écailles de serpent, cou de girafe, queue de crocodile, tête d'ornithorynque) ; Augmentation de Force et Étouffement pour faire illusion. Sa seule faille : il en fait trop.\nAvec Valoche, a vidé la chambre forte du muséum (charge en rhinocéros contre le mur, os jetés aux égouts), puis s'est caché dans une cabane près de Prades d'où il terrorise la région la nuit.\nAttaques : Corps à corps 5 avec les membres exotiques (précision et puissance des règles). Défense non donnée : 2 (estimée).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-alonzo",
+      "nom": "Alonzo",
+      "source": "Démon, membre du Daemonis Malificum (agent de liaison à Paris)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Méditerranéen mal rasé en salopette verte, sirote une Suze en se grattant. Présent à la réunion du Daemonis Malificum du prologue ; c'est l'agent de liaison parisien de l'opération « Jurassic Park ». N'intervient pas dans ce scénario (on le retrouve plus tard dans la campagne).\nFiche minimale (pas de caractéristiques dans ce scénario).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-darond",
+      "nom": "Lucien et Ginette Darond",
+      "source": "Humains, retraités franciliens voisins de Lentenoir",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Seuls habitants à l'année du village-vacances en saison basse. Accent et mépris du Parisien de souche, gonflants, solitaires, ennuyeux… et seuls témoins crédibles.\nLa veille de la conférence, vers 18 h, un break Volkswagen marron devant chez Lentenoir : autocollant de poisson sur le pare-chocs, petit Jésus en plastique au rétro. À la sortie, dans l'obscurité, deux hommes : l'un correspond à Straight, l'autre petit, chauve, en robe ou soutane (Bright). Ils ont fermé à clé et sont partis en voiture.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-gremissieux",
+      "nom": "Gonzague Octave de Grémissieux",
+      "source": "Humain, directeur du muséum d'Histoire naturelle",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Quarantenaire snob tiré à quatre épingles, couvert de plaques d'allergie, nez qui coule. Supérieur et inaccessible : il faut de solides références pour une brève entrevue. Doit à Lentenoir une bonne part de ses notices de squelettes ; lui a prêté une chambre forte pour ses os afghans et lui a remis une des clés.\nSans pouvoir, impossible d'obtenir de lui la visite des sous-sols et l'ouverture du sanctuaire.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-claire",
+      "nom": "Claire Martinez",
+      "source": "Humaine, copine albigeoise de Loris",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Héberge Loris chez ses parents à Albi. On la retrouve en fouillant la chambre de Loris en cité U (lettres d'amour enflammées) ou en interrogeant ses voisins de palier.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    },
+    {
+      "id": "type-fi10-chasseurs",
+      "nom": "Chasseurs de Prades",
+      "source": "Humains, montagnards organisés en battues",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Fusil de chasse",
+          "att": 4,
+          "prec": -1,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Survie 2, Tir 2, Tenir l'alcool 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Montagnards remontés contre « la Bête », battues nocturnes avec chiens et matériel lourd ; question de fierté, ils veulent l'abattre avant l'arrivée d'un expert lyonnais. Admiratifs de qui tient l'alcool, entretient un fusil et reprend une paillarde en catalan : ils racontent alors tout et montrent les lieux.\nAvinés à la nuit tombée : tirs « préventifs » possibles sur les PJ.\nFiche estimée (pas de caractéristiques dans le livre) : humains ordinaires armés de carabines de chasse.\nSource : Fire and Ice 2, « C'est mon ami et bien plus encore », p. 11-24."
+    }
+  ],
+  "memoire": []
+}

@@ -1,0 +1,3855 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-9-plus-forte-que-toi",
+      "nom": "Fire and Ice (scénario 9) – Elle est plus forte que toi, la crise",
+      "resume": "De bello civili, scénario 9 (INS), conclusion de la première moitié de la campagne. Paris, guerre civile en Enfer : Notre-Dame teste une attaque frontale contre les démons du Quartier latin, l'opération « Nuit bleue », menée par les troupes de Daniel, Laurent et Michel. Les PJ remontent la piste depuis une descente de police au Black Velvet, découvrent le plan, puis doivent organiser la résistance (démons locaux, pègre humaine, zizanie entre archanges) avant la nuit de samedi. Scénario ouvert, conclu par l'annonce télévisée de la démission de Lucifer.",
+      "notes": "Source : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157. Aide de jeu « Tempus Fugit », p. 158-160.\nScénario ouvert : enquête, diplomatie, magouille ou baston selon les goûts. Déroulement : CdT (mardi) → Black Velvet → Aphte → Buc → plan « Nuit bleue » → préparatifs (résistance démoniaque, alternative, déstabilisation) → nuit de samedi 21 h-2 h 20 → after party et message de Lucifer.\n\nRécompense : 6 PA (Monsieur Fabien) et l'Accolade du Respect de Gilbert, quel que soit le succès réel ; le MJ juge honnêtement l'efficacité des plans des PJ (pas de système de règles).\n\nForces angéliques (Fiend Folio) :\n• Daniel : 10 anges (1 gr3, 3 gr2, 4 gr1, 2 gr0), 40 soldats de Dieu, sans véhicule, armes légères. Sous-sols (égouts, parkings, catacombes, métro) ; patrouilles de cinq façon dungeon crawling, talkies, chefs télépathes. Forts sous terre, mais obsédés par la Terre Creuse (capables d'abandonner un combat contre des démons pour un renégat). Bases avancées installées sous le quartier (travaux municipaux suspendus).\n• Laurent : 8 anges (3 gr2, 5 gr1), 10 soldats de Dieu, 50 policiers ; véhicules de police, armement lourd (épées, matraques, flashballs, lacrymos, canons sciés, PM). Descentes, fausses arrestations, interrogatoires ; liste de lieux démoniaques récupérée au Black Velvet. Vernis de légalité (préfet acquis via les anges de Blandine, Didier et Francis), mais policiers mal conditionnés et descentes impopulaires.\n• Michel : 20 anges (3 gr3, 6 gr2, 5 gr1, 6 gr0) sur vingt motos, haches, barres à mine, Molotov, fusils d'assaut. Rattrapent les fuyards, intimident, font du « show ». Forts en frappe et mobilité ; faibles par sentiment d'invulnérabilité, frustration et dérapages (alcool).\nPour les soldats de Dieu : soldat typique du livre de base. Démons divers : improviser.\n\nRumeurs du Quartier latin (D66 ; dizaine 2 = Daniel, 3 = Laurent, 5 = Michel ; interroger le bavard donne des infos bonus) :\n• 11-12 : café à 1 € dans un bar de Versailles (rien).\n• 13-14 : le mari de Céline Dion remplacé par un sosie (rien).\n• 15-16 : propos racistes de comptoir (rien).\n• 21-22 : montée du racisme, épicerie incendiée par des skins.\n• 23-24 : plus d'eau courante, « problème de voirie » (travaux souterrains).\n• 25-26 : nouvelle bande de squatters dans le métro.\n• 31-32 : quatrième descente de police en huit jours, réunion de protestation ce soir.\n• 33-34 : le sex-shop de la rue Lepic a fermé.\n• 35-36 : la police chasse les filles « mal habillées ».\n• 41-42 : querelle de voisinage (rien).\n• 43-44 : le violeur du campus des années 80, jamais arrêté.\n• 45-46 : un bavard en sait trop sur ce violeur… (piste annexe).\n• 51-52 : plein de Harley dans le quartier.\n• 53-54 : motards barbus et crasseux.\n• 55-56 : motards ivres et armés roulant par dix.\n• 61-62 : prêcheurs de l'Apocalypse.\n• 63-64 : « la rue Lucifer », vous connaissez ?\n• 65-66 : un nouveau bar sympa vers la Sorbonne, Chez Régis.\n\nChronologie du scénario (Tempus Fugit) : J-5 grève des humains du CdT, transformé en base ; J-4 le préfet accepte l'opération sous l'influence des anges de Blandine ; J-3 concentrations de motards ; J-2 Daniel prend les sous-sols (boucherie halal, Tziganes) ; lundi soir descente au Black Velvet, mort de Dugomier ; mardi Anne-Clémence, Black Velvet, Aphte, Buc, défenestration d'un flic, carambolage ; mercredi autocollants FN, nouveau carambolage ; jeudi SDF pétrifié, bagarre au Saint-Quentin ; vendredi article de France-Soir, restes d'une cliente retrouvés ; samedi 21 h-2 h opération, puis Lucifer branche le DIF666 et annonce sa démission.\n\nAide de jeu « Tempus Fugit » (conclut la première moitié de la campagne) : chronologie secrète de toute la campagne, utile pour relier les fils. Points clés :\n• Arrière-plan : chute de Kiel (devenu Baalberith), brouille Belial-Crocell née de leur rivalité amoureuse, Belial prince du feu (1566) puis Crocell prince du froid (1834) ; manuscrit inédit de Nostradamus caché à Auxerre ; Gilbert sauve Fabien en Laponie (années 70) ; Ange Luther, fille d'un ange de Michel et d'une démone d'Andrealphus (Drina), dernière exception aux édits de stérilité ; été 1997 « Nuit des longues battes », Dieu et Lucifer en vacances ; Belial infiltre ses démons chez Crocell (dont Julie Delahaye) ; Crocell crée les Flocons de sang ; Hornet invoque Bifrons.\n• Andrealphus a conçu Damien avec Baal en 1999 ; descendu sur Terre sous les traits de Yolande Jolimont, il pompe l'énergie de séides assassinés (Hakim Izmet tué par Orgasme mortel au scénario 1).\n• Beleth occupe le corps et les souvenirs de Monsieur Fabien depuis le scénario 2 ; via la MRC, il cherche à provoquer une guerre en Enfer pour justifier le retour de Lucifer.\n• Gabriel, à Paris sous le nom de Gabriel Leminor, est parti à la recherche de Samaël.\n• Enchaînement des scénarios : 1 Le photocopillage tue le livre, 2 Quatre fragments d'une chronologie du hasard, 3 Soigner le Bien par le Mal, 4 La Sierra de Sergio, 5 Ice, ice baby, 6 The roof is on fire, 7 Le démon est un animal politique, 8 Voir le pôle et courir, 9 Elle est plus forte que toi, la crise. Après le scénario 8 : loi martiale en Enfer, guerre reconnue, Andromalius et Baal se disputent la coordination des troupes en l'absence de Satan.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reporté en Foi). Valeurs estimées signalées dans chaque fiche.",
+      "scenes": [
+        {
+          "id": "fi9-sc-cdt",
+          "nom": "1. Le Centre de Tri en état de siège",
+          "lieu": "Centre de Tri, Paris – mardi matin",
+          "notes": "Après dix jours de repos accordés par Monsieur Fabien, les PJ sont convoqués. Le CdT a l'air fermé : tract syndical sur la porte (les employés humains sont en grève illimitée), fenêtres condamnées par des sacs de sable, mitrailleuse sur trépied face à l'entrée. Le personnel démoniaque se relaie en trois-huit autour des téléphones de la salle de pause, des ordinateurs sont branchés en direct sur la CRD, Gilbert a monté un rack d'armes et de quoi tenir une semaine de siège dans la cave.\nContexte : le CdT est devenu une base avancée de l'Enfer, sur ordre d'en haut et à l'initiative de Beleth, qui veut limiter la casse pendant la guerre civile. Des rumeurs de percées angéliques courent dans Paris.\n\nArrivée : Anne-Clémence attend dans sa Mini Cooper et demande le « responsable des chaudières ». Gilbert, en treillis et peinturluré, fait entrer tout le monde au pas de course. Il faut calmer l'humaine paniquée.\nDans le bureau de Fabien, elle raconte : effeuilleuse au Black Velvet (bar à hôtesses du Quartier latin tenu par Guillaume « Main froide » Dugomier) ; descente de police la nuit dernière avec des flics en civil en nombre, fusillade, un policier armé d'une épée, le barman Gégé disparu dans un éclair, incendie spontané ; Dugomier l'a exfiltrée puis un groupe de bikers les a massacrés. Plus aucune trace, même des corps.\nFabien confirme via la CRD : Dugomier était un démon de Nybbas grade 2, le Black Velvet un repaire démoniaque réputé. Une attaque frontale à découvert de l'autre camp, flics et bikers de concert : mission d'enquête, en lien étroit avec le Centre.\nFabien prend en charge Anne-Clémence : si les PJ la recroisent, elle a tout oublié.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-anne-clemence-1",
+              "nom": "Anne-Clémence",
+              "source": "Humaine, thésarde en économie le jour, strip-teaseuse au Black Velvet la nuit",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune femme trop maquillée en Mini Cooper, qui se lime les ongles en attendant devant le Centre de Tri. Paniquée par l'ambiance de siège ; il faut la calmer (courtoisie, psychologie, pouvoir mental… ou baffe).\nTémoin de la descente au Black Velvet : flics en civil en nombre, un « policier » sortant une épée, le barman Gégé disparu dans un éclair, un incendie spontané, puis une embuscade de bikers qui ont fait disparaître jusqu'aux corps. Dugomier lui a dit de prévenir les « responsables des chaudières » au Centre de Tri s'il ne passait pas la nuit.\nMonsieur Fabien s'en occupe : si les PJ la recroisent, elle a tout oublié (au mieux, elle les prend pour des collègues de fac).\nCaractéristiques non fournies par le livre : valeurs estimées d'humaine ordinaire.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-anne-clemence"
+            },
+            {
+              "id": "fi9-fabien-2",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Accorde dix jours de repos aux PJ au retour d'Antarctique, puis les accueille dans un CdT transformé en base avancée. Vérifie sur la CRD que Dugomier était un démon de Nybbas grade 2.\nPerplexe et inquiet : ses téléphones sonnent sans arrêt, des gradés ont disparu, des services entiers ne répondent plus. Après une quinzaine d'appels sans réponse à la hiérarchie, il admet que le Centre est seul.\nSecret MJ (Tempus Fugit) : depuis « Quatre fragments d'une chronologie du hasard », Beleth occupe son corps et ses souvenirs. Il veut limiter la casse pendant le flou politique : pour lui ce n'est pas (encore) la fin du monde.\nRécompense finale : 6 PA aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-fabien"
+            },
+            {
+              "id": "fi9-gilbert-3",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "En treillis, maquillage de guerre, gros calibre au poing : fait entrer tout le monde « go, go, go ! ». A monté un rack d'armes, des munitions et des rations dans la cave pour une semaine de siège. Fournit du matériel (y compris militaire).\nÀ la fin, remet aux PJ l'Accolade du Respect réservée aux plus valeureux.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-gilbert"
+            },
+            {
+              "id": "fi9-aurelie-4",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Porte une casquette kaki pour l'occasion. Garde Anne-Clémence pendant que Fabien parle aux PJ ; soigne les blessés et débouche les bouteilles à l'after party.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi9-sc-velvet",
+          "nom": "2. Le Black Velvet",
+          "lieu": "Ruelle près du boulevard Saint-Michel – rez-de-chaussée et deux sous-sols",
+          "notes": "Porte principale sous scellés (fermeture judiciaire). Quartier calme : entrée possible en crochetant, en forçant ou par pouvoir ; de l'autre côté du pâté de maisons, un soupirail (entrée des artistes) donne sur le premier sous-sol.\nIntérieur : deux salles de spectacle, salons privés, alcôves, deux bars, vestiaire et loges ; déco érotico-kitsch saccagée. Odeur de cochon grillé, murs noircis, verre brisé, flaques de sang, présentoirs pillés.\nIndices :\n• Une dizaine de douilles (revolver et fusil à pompe), impacts dans les murs et les canapés, sacs à main vidés.\n• Le petit bureau près des réserves est retourné : meubles éventrés, ordinateur ouvert en deux, traces de pompes sur la paperasse.\n• Psychométrie (douilles de fusil à pompe) : grand gaillard mal rasé, chapeau de feutre beige et gabardine assortie (Eliott). Même info possible via un témoin (propriétaire d'un permis tombé près du bar) ou une enquête de voisinage.\n• Voisins et passants : une dizaine de flics en uniforme et quatre gaillards habillés « comme dans les films en noir et blanc », mitraillettes, façon Lino Ventura. Pimenter l'enquête de voisinage avec les rumeurs du quartier (voir notes du scénario).\nPour retrouver les faux mafieux : relations humaines (police, justice), PNJ alliés des scénarios précédents, ou retour au CdT : Fabien consulte les bases, appelle un certain docteur Gérald et remet une carte de lecteur plastifiée pour la bibliothèque de Massy-Palaiseau (« demandez Carmen »).",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi9-sc-aphte",
+          "nom": "3. Les archives de l'Aphte",
+          "lieu": "Bibliothèque Saint-Exupéry, Massy",
+          "notes": "Carmen, assistante de conservation (et démone de Malphas grade 2, archiviste de l'Aphte, l'organisation secrète et hors-la-loi du prince de la discorde), accueille les PJ sur présentation de la carte. Elle les emmène dans les réserves où pourrissent une dizaine de cartons de déménagement pleins de fiches bristol, en tire une au bout de quinze secondes et débite d'une traite :\n• les gens recherchés se font appeler les Incorruptibles ;\n• des soldats de Dieu menés par un ange de Laurent, Eliott ;\n• dernière planque connue : un garage en tôle, zone industrielle de Buc.\nElle refuse l'accès à quiconque ne s'est pas lavé dans les 24 heures.\nDésormais, les PJ peuvent exploiter les archives de l'Aphte pour leurs enquêtes ; en cas d'abus, leur mettre des bâtons dans les roues. Croisements possibles avec d'autres PNJ de la gamme (docteur Gérald, Memorex, un vieux lecteur acariâtre).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-carmen-5",
+              "nom": "Carmen",
+              "source": "Démone de Malphas, grade 2 – bibliothécaire de l'Aphte",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 22,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Discorde",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Non-détection",
+                  "r": 6
+                }
+              ],
+              "talents": "Bibliothéconomie 7, Conduite 4, Séduction 3, Hobby (tricot) 3, Discrétion 3, Eau de Cologne cinq litres 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite cinquantenaire brune et boulotte, coupe à la Jeanne d'Arc, pull à fleurs tricoté main, rit beaucoup. Assistante de conservation à la bibliothèque Saint-Exupéry de Massy, et archiviste de l'Aphte (organisation secrète de Malphas).\nSur présentation de la carte de lecteur fournie par Fabien (via le docteur Gérald), mène les PJ aux réserves, pioche une fiche bristol en quinze secondes et débite tout d'une traite : les faux mafieux sont les Incorruptibles, soldats de Dieu menés par Eliott, ange de Laurent ; dernière planque connue, un garage en tôle dans la zone industrielle de Buc.\nN'aime pas qu'on plaisante sur son classement ni sur l'hygiène : refuse sa réserve à quiconque ne s'est pas lavé depuis moins de 24 heures.\nAvertissement sans frais : monomaniaque (propreté). Pas d'arme : défense non donnée, fixée à 2.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-carmen"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi9-sc-buc",
+          "nom": "4. Descente à Buc : les Incorruptibles",
+          "lieu": "Hangar en tôle, zone industrielle de Buc, puis siège d'un éditeur de jeux voisin",
+          "notes": "Les Incorruptibles vivent à quatre dans un soixante mètres carrés spartiate : évier, toilettes, quatre lits de camp, demi-bouteilles de whisky frelaté. Le hangar a deux issues.\nAttaqués par surprise, ils fuient à découvert et se réfugient dans le premier bâtiment ouvert et éclairé : le siège d'un célèbre éditeur de jeux de simulation. Baston brève et brutale entre les piles de cartes et les invendus.\nEliott ne se rend pas ; Guiliani, Filip et Maréchal se rendent si ça tourne mal.\nUne fois maîtrisés, les survivants parlent ; sinon, leur local contient assez de documents compromettants. Dans tous les cas, les PJ découvrent l'existence de l'opération « Nuit bleue » (encadré du dossier N+D, à remettre aux joueurs).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi9-eliott-6",
+              "nom": "Eliott",
+              "source": "Ange de Laurent, grade 1 – chef des Incorruptibles",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 16,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Mitraillette à camembert bénie mineure (attaque multiple, pénétration importante, portée moyenne)",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": 7,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                },
+                {
+                  "n": "Protection de l'âme",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 5, Tir 3 (armes d'épaule 5), Défense 5, Conduite 4, Allumer du premier coup ses cigarettes au milieu d'une tornade ou sous une averse tropicale 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand brun ténébreux, Burberry, chapeau feutre, lunettes argentées, mise en plis Prohibition, barbe de trois jours laborieuse. Pur malt et holster en peau de chamois. Poseur en combat, optimiste jusque dans les pires situations : ne se rend pas.\nC'est lui qui, d'après les témoins, portait des rangers, un feutre beige et une gabardine (douilles de fusil à pompe au Black Velvet, Psychométrie).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-eliott"
+            },
+            {
+              "id": "fi9-incorruptibles-7",
+              "nom": "Guiliani, Filip et Maréchal",
+              "source": "Soldats de Dieu – Incorruptibles et inoxydables",
+              "type": "soldat",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 4,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fusil à pompe (portée moyenne)",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 2 (armes d'épaule 3), Défense 3, Discrétion 3, Conduite 2, Mener des enquêtes dignes d'une série américaine en noir et blanc 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes gens pétris de foi, chapeaux mous clairs, sportswear, veste en jean et rangers. Contrairement à Eliott, se rendent si la situation tourne mal.\nArme non précisée par le livre (seulement « armes d'épaule ») : fusil à pompe retenu (douilles retrouvées au Black Velvet).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-incorruptibles"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-buc",
+              "q": "Comment se termine l'assaut contre les Incorruptibles ?",
+              "opts": [
+                {
+                  "t": "Prisonniers interrogés",
+                  "suite": "Les soldats (et peut-être Eliott) révèlent l'opération « Nuit bleue » : objectifs, archanges impliqués, date et zone. Bonus possible sur les effectifs ou les chefs."
+                },
+                {
+                  "t": "Main trop lourde (tous morts)",
+                  "suite": "Les documents du hangar suffisent à reconstituer le dossier « Nuit bleue ». Pas d'infos bonus."
+                },
+                {
+                  "t": "Ils s'échappent",
+                  "suite": "Les PJ récupèrent le dossier dans la planque ; Eliott, s'il survit, peut réapparaître dans une des équipes de Laurent samedi soir."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-nuit-bleue",
+          "nom": "5. Opération « Nuit bleue » : le plan de bataille",
+          "lieu": "Centre de Tri – mercredi à samedi",
+          "notes": "Le dossier N+D (résolution du Conseil angélique) : action militaire test pour mesurer les chances d'une attaque frontale. Samedi à partir de 21 h, 4 à 6 heures, Quartier latin. Trois archanges collaborent :\n• Daniel : prend les sous-sols et élimine la résistance surnaturelle (chef : Jean-Luc le Ténia).\n• Laurent : avec la police humaine, arrête les démons, ferme leurs établissements, achemine les suspects à Notre-Dame (chefs : Gros Charlie et P'tit Nico).\n• Michel : élimine les hauts gradés et maintient la pression (trois grade 3 motards : Poy-Poy, Eddie, Krûl).\nAu CdT, Fabien est perplexe : depuis 48 heures, missions mal distribuées, gradés disparus, contacts muets, services entiers hors service. Après quinze tentatives pour joindre la hiérarchie, verdict : ils sont seuls.\nEnjeu : si les anges tiennent facilement le Quartier latin, ils lanceront une offensive plus vaste. Mission double : résister physiquement et faire croire aux anges que l'organisation infernale tient malgré la guerre.\nMoyens : base de données de l'Aphte, téléphones du CdT, Fabien, Gilbert, Aurélie et leurs propres ressources.\nTrois approches combinables (scènes 6 à 8) ; on peut réussir sur une seule, mais c'est plus facile en jouant sur les trois. Les princes des PJ, même sollicités officiellement, ne bougeront que symboliquement.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-fabien-8",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Accorde dix jours de repos aux PJ au retour d'Antarctique, puis les accueille dans un CdT transformé en base avancée. Vérifie sur la CRD que Dugomier était un démon de Nybbas grade 2.\nPerplexe et inquiet : ses téléphones sonnent sans arrêt, des gradés ont disparu, des services entiers ne répondent plus. Après une quinzaine d'appels sans réponse à la hiérarchie, il admet que le Centre est seul.\nSecret MJ (Tempus Fugit) : depuis « Quatre fragments d'une chronologie du hasard », Beleth occupe son corps et ses souvenirs. Il veut limiter la casse pendant le flou politique : pour lui ce n'est pas (encore) la fin du monde.\nRécompense finale : 6 PA aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-fabien"
+            },
+            {
+              "id": "fi9-gilbert-9",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "En treillis, maquillage de guerre, gros calibre au poing : fait entrer tout le monde « go, go, go ! ». A monté un rack d'armes, des munitions et des rations dans la cave pour une semaine de siège. Fournit du matériel (y compris militaire).\nÀ la fin, remet aux PJ l'Accolade du Respect réservée aux plus valeureux.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-gilbert"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-strategie",
+              "q": "Quelle approche les PJ privilégient-ils ?",
+              "opts": [
+                {
+                  "t": "Résistance démoniaque",
+                  "suite": "Prévenir et fédérer les démons du Quartier latin (scène 6)."
+                },
+                {
+                  "t": "Résistance alternative",
+                  "suite": "Mobiliser humains (pègre, motards, manifestants) et alliés surnaturels marginaux (scène 7)."
+                },
+                {
+                  "t": "Déstabilisation de l'ennemi",
+                  "suite": "Exploiter les bavures et rivalités des trois factions pour briser l'alliance (scène 8)."
+                },
+                {
+                  "t": "Tout à la fois",
+                  "suite": "Le plus efficace, mais demande une vraie organisation de « petits chefs »."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-resistance-d",
+          "nom": "6. Résistance démoniaque",
+          "lieu": "Quartier latin – mercredi à samedi",
+          "notes": "Fédérer les forces du Mal est difficile (indiscipline, méfiance depuis la mise à l'index de Crocell) : les PJ doivent prendre leurs responsabilités et jouer les petits chefs.\nOrganisations :\n• CdT : soutien total de Fabien, Gilbert et Aurélie (y compris militaire) ; accès à la CRD de Baalberith (test d'Informatique) pour lister les démons du quartier.\n• Aphte : convaincre les démons de Malphas, les acheter ou promettre une récompense. Rencontrer leur prince en personne prend du temps mais s'avère très efficace ; leurs dossiers compromettants sur les serviteurs des trois archanges sont idéaux pour les monter les uns contre les autres.\nNids démoniaques du secteur :\n• Paulo (Nisroch) et Rotka (Belial), dealers de la Sorbonne : argent et une dizaine d'hommes de main peu armés.\n• Delikatessen (Haagenti) et la communauté « osso buco » du Boul'Mich : une dizaine de familles cannibales lobotomisées.\n• Nosferax (Samigina) et ses familiers vampires des glaciers Baskin Robbins, plus ses potes Groquick (Crocell) et Sabbath (Furfur).\n• Claude et Claude (Scox et Mammon, grade 2), Penthouse 69 : une dizaine d'hommes de la mafia polonaise.\n• Une trentaine de zombies sous les arènes de Lutèce : alliés de poids sous terre.\nAutres démons isolés : amis des scénarios précédents (habitués du Chez Régis…), Deprofundis (redoutable contre Daniel), les égoutiers du U-Boat Crew, Conrad Sechepine, des membres de la commission d'enquête ; Marie-Jolie, Salomon, Jézabel ou Le Professeur, durs à convaincre mais précieux.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-paulo-10",
+              "nom": "Paulo et Rotka",
+              "source": "Démon de Nisroch et son second Belial – dealers de la Sorbonne",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Contrôlent shit, coke, ecstasy et amphètes autour de la Sorbonne. Roulent pour eux-mêmes depuis des années ; les nouvelles de la Cour les confortent dans leur envie de rester à l'écart. Rotka est un Belial aussi neuneu que violent.\nS'ils sont convaincus : aide financière conséquente et une dizaine d'hommes de main humains peu armés.\nSans intervention : repérés à 23 h, poursuivis en voiture de sport, éliminés par Laurent et Michel.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-paulo"
+            },
+            {
+              "id": "fi9-delikatessen-11",
+              "nom": "Delikatessen",
+              "source": "Démon de Haagenti – communauté « osso buco » du Boul'Mich",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Freluquet ombrageux et moite, méfiant envers la hiérarchie depuis un avertissement sans frais qui a abîmé son goût. Depuis dix mois, tous les habitants d'un immeuble bourgeois du Boul'Mich mangent de la chair humaine le dimanche midi.\nRallié : une dizaine de familles de gastronomes lobotomisés.\nSans intervention : 21 h, l'immeuble est investi par Laurent, Michel et une vingtaine de flics ; Delikatessen est tué sur les toits, deux adolescents gravement blessés.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-delikatessen"
+            },
+            {
+              "id": "fi9-nosferax-12",
+              "nom": "Nosferax",
+              "source": "Démon de Samigina – patron des glaciers Baskin Robbins",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieux Samigina gothique et punk ; les deux glaciers Baskin Robbins sont tenus par ses familiers vampires. Allié pompeux, prétentieux et assommant, mais ne rechigne pas s'il comprend le danger. Peut rameuter Groquick (Crocell, tas de graisse qui pouffe) et Sabbath (Furfur, énorme tatoué flûtiste d'indus acoustique).\nSans intervention : 22 h, il fuit les Michel par Corps gazeux dans les égouts, est capturé par Daniel vers 23 h ; à minuit, Laurent lui arrache les coordonnées de Groquick et Sabbath, tués à 1 h (Molodoï).\nFiche minimale : Corps gazeux cité par le livre, niveau non donné.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-nosferax"
+            },
+            {
+              "id": "fi9-claudes-13",
+              "nom": "Claude et Claude",
+              "source": "Démons de Scox et de Mammon, grade 2 – Penthouse 69",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Starlettes androgynes maquillées « Boy George au saut du lit ». Dirigent Penthouse 69, fausse agence d'escort girls couvrant un réseau de prostitution hardcore étendu à l'Europe de l'Est.\nContactés à temps : une dizaine d'hommes de main de la mafia polonaise.\nSans intervention : 2 h, les trois factions investissent l'immeuble (deux démons, des familiers, quelques mafieux polonais). À 2 h 20, plus aucune résistance maléfique dans le quartier.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-claudes"
+            },
+            {
+              "id": "fi9-zombies-14",
+              "nom": "Zombies des arènes de Lutèce",
+              "source": "Une trentaine de morts-vivants portés disparus depuis le XIe siècle",
+              "type": "mortvivant",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vivent en autarcie dans des galeries sous les arènes de Lutèce. Les convaincre demande du roleplay inspiré, mais ce sont des alliés de poids pour les combats souterrains.\nSans intervention : 21 h, Daniel boucle les sous-sols des arènes et les élimine.\nFiche minimale : pas de caractéristiques dans le livre (valeurs par défaut, à ajuster).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-zombies"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-nids",
+              "q": "Quels nids démoniaques les PJ parviennent-ils à rallier ?",
+              "opts": [
+                {
+                  "t": "Paulo et Rotka",
+                  "suite": "Fonds et une dizaine d'hommes de main ; sinon, ils meurent en fuyant vers 23 h."
+                },
+                {
+                  "t": "Delikatessen",
+                  "suite": "Une dizaine de familles de gastronomes ; sinon, mort sur les toits à 21 h."
+                },
+                {
+                  "t": "Nosferax et ses potes",
+                  "suite": "Familiers vampires, Groquick et Sabbath ; sinon, capturés puis tués entre 22 h et 1 h."
+                },
+                {
+                  "t": "Claude et Claude",
+                  "suite": "Mafia polonaise en renfort ; sinon, Penthouse 69 tombe à 2 h."
+                },
+                {
+                  "t": "Les zombies de Lutèce",
+                  "suite": "Alliés solides dans les galeries ; sinon, éliminés par Daniel dès 21 h."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-resistance-h",
+          "nom": "7. Résistance alternative",
+          "lieu": "Quartier latin et Paris – mercredi à samedi",
+          "notes": "Les démons seuls ne suffiront pas : se tourner vers les humains, dont certains commencent à se poser des questions.\n• Le Beau Lulu (Lucien Chasle), pègre « touristique », au Quat'Zarts : ses contacts policiers peuvent diviser par deux les effectifs humains de Laurent.\n• Aldo Romani, mafia calabraise (suite à l'hôtel Americana) : une quinzaine d'hommes armés et sans morale, mais exige beaucoup d'argent. Les deux parrains refusent de travailler ensemble.\n• Motards parisiens (fans de Johnny, Hells de Malakoff) agacés par l'omniprésence des anges de Michel : un discours et de l'alcool suffisent pour qu'ils causent des ennuis aux motards angéliques.\n• Mouvement pacifique (manifestations, sit-in, tracts, résistance passive), efficace car les anges restent tenus par la discrétion : associations de résidents excédés par les motos, syndicats étudiants, égoutiers au chômage technique, agents RATP inquiets des sous-sols.\n• Alliés surnaturels marginaux : renégats ou musulmans (des anges de Khalid adoreraient casser du Laurent), Ignace Blanchoux contre de futures faveurs (renseignements), sorciers, psis ou autres membres de la troisième force.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-beau-lulu-15",
+              "nom": "Lucien Chasle « le Beau Lulu »",
+              "source": "Ex-maquereau, parrain de la criminalité « touristique »",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Gangster old school gominé : cabarets-bordels, deal en club, pickpockets mondains, tripots. Préfère chantage et corruption à la violence. Se rencontre au Quat'Zarts (bistro faux Montmartre).\nGrâce à ses contacts policiers, peut réduire de moitié les effectifs humains des troupes de Laurent. Refuse toute collaboration avec Aldo Romani (et réciproquement).\nSans intervention : ses hommes se font tuer au Quat'Zarts par les Michel vers minuit (trois morts).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-beau-lulu"
+            },
+            {
+              "id": "fi9-romani-16",
+              "nom": "Aldo Romani",
+              "source": "Responsable local de la mafia calabraise",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Moins de trente ans, poussah rougeaud, vit à l'année dans une suite de l'hôtel Americana. Difficile à motiver sans un gros apport financier ; refuse de travailler avec le Beau Lulu.\nRallié : une quinzaine d'hommes de main armés, entraînés et sans scrupules.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-romani"
+            },
+            {
+              "id": "fi9-hommes-main-17",
+              "nom": "Hommes de main (mafia, dealers, motards)",
+              "source": "Renforts humains recrutables",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver petit calibre (pénétration importante, portée moyenne)",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Cran d'arrêt",
+                  "att": 4,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 2, Corps à corps 2, Intimidation 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Fiche générique estimée (pas de caractéristiques dans le livre) pour les renforts : dizaine d'hommes de Paulo (peu armés : cran d'arrêt, pistolet d'alarme), mafia polonaise de Claude et Claude, quinzaine de Calabrais d'Aldo Romani (mieux armés), motards parisiens éméchés.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-hommes-main"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-parrain",
+              "q": "Quel parrain de la pègre les PJ s'allient-ils ?",
+              "opts": [
+                {
+                  "t": "Le Beau Lulu",
+                  "suite": "Effectifs humains de Laurent réduits de moitié ; Romani reste à l'écart."
+                },
+                {
+                  "t": "Aldo Romani",
+                  "suite": "Une quinzaine d'hommes armés contre une forte somme ; le Beau Lulu refuse alors toute aide."
+                },
+                {
+                  "t": "Aucun",
+                  "suite": "Les hommes du Beau Lulu se feront quand même tabasser par les Michel au Quat'Zarts vers minuit."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-destabilisation",
+          "nom": "8. Déstabiliser l'alliance",
+          "lieu": "Quartier latin – mercredi à samedi",
+          "notes": "Option plus pacifique, compatible avec les deux autres, demandant enquête et tactique. Chaque faction a des débordements honteux :\n• Daniel : le Ténia est un ancien Hammerskin passé près de rejoindre la Terre Creuse ; il a recruté des anges aux idées brunes. Bilan : deux violonistes tziganes du métro tabassés (dans le coma), caves d'une boucherie halal incendiées, stations couvertes d'autocollants FN ; jeudi soir, un clochard africain changé en pierre.\n• Laurent : Gros Charlie et P'tit Nico se détestent et ont bâclé le conditionnement des policiers. Après le Black Velvet, un flic se défenestre, un autre se met en arrêt maladie, un troisième raconte la magie noire à un journaliste (article dans France-Soir vendredi). Un ange de grade 0 psychopathe a découpé une cliente du Black Velvet (restes retrouvés vendredi matin).\n• Michel : motards ivres, carambolage sur le périph' mardi puis mercredi, bagarre au Saint-Quentin vendredi (bâtiment ravagé, une dizaine de blessés).\nPlutôt que de signaler à la hiérarchie : faire circuler les infos entre groupes (dénoncer le racisme des Daniel aux Michel), accuser une faction des fautes d'une autre, ou provoquer soi-même des incidents attribués aux anges (saccager un kebab en chantant des cantiques de légionnaires en allemand).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-tenia-18",
+              "nom": "Jean-Luc le Ténia",
+              "source": "Ange de Daniel, grade 3 – chef des troupes de Daniel",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 12,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 26,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Batte bénie mineure",
+                  "att": 11,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pétrification",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 6
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 4
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 4
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 7, Défense 6, Combat 5+, Survie 2 (sous-sols 4), Savoir militaire 3 (tactique 5), Bertrand Cantat 3, Martyriser une guitare sèche 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Échalas d'une vingtaine d'années, cheveux et peau gras, aime exhiber son estomac rebondi torse nu. Allure d'informaticien en fin de beuverie, mais stratège tordu et brute redoutable au corps à corps. Fanatique : frappe ses propres rangs en cas de tirage au flanc.\nPoint faible exploitable : ancien Hammerskin ayant fréquenté la Terre Creuse et failli passer chez eux avant que Daniel ne le reprenne en main ; il a recruté des anges aux idées brunes (bavures racistes à dénoncer).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-tenia"
+            },
+            {
+              "id": "fi9-gros-charlie-19",
+              "nom": "Gros Charlie",
+              "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 22,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre béni mineur",
+                  "att": 15,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Armoire de deux mètres sur deux, petits yeux, triple menton, haleine de pastis, accent du Sud, parle avec les mains. Triste réputation même chez les siens.\nNe peut pas voir P'tit Nico en peinture : les deux se sont tirés dans les pattes pendant le conditionnement des policiers (Laurent les a mis tous deux sur l'affaire).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-gros-charlie"
+            },
+            {
+              "id": "fi9-ptit-nico-20",
+              "nom": "P'tit Nico",
+              "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 22,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret béni mineur",
+                  "att": 15,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Nain râblé, yeux globuleux sous des paupières gonflées, petite voix crispante, s'agite sans cesse. Nouveau grade 2 aux dents longues : veut la place de Gros Charlie, qui n'est pas dupe. Même fiche que Gros Charlie dans le livre.\nDents creuses à exploiter : les deux chefs ne s'entendent que tant que personne ne s'en mêle.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-ptit-nico"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-zizanie",
+              "q": "Comment les PJ sèment-ils la zizanie ?",
+              "opts": [
+                {
+                  "t": "Faire circuler les bavures entre factions",
+                  "suite": "Rapide et efficace : la coordination entre archanges se grippe samedi soir."
+                },
+                {
+                  "t": "Accuser une faction des crimes d'une autre",
+                  "suite": "Les factions se méfient : poursuites et assauts communs moins bien coordonnés."
+                },
+                {
+                  "t": "Provoquer des incidents attribués aux anges",
+                  "suite": "Risqué mais efficace ; renforce aussi la résistance humaine."
+                },
+                {
+                  "t": "Signaler les exactions à la hiérarchie angélique",
+                  "suite": "Procédurier et lent : peu d'effet avant samedi."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-assaut-1",
+          "nom": "9. Paris sous les bombes : 21 h – minuit",
+          "lieu": "Quartier latin, surface et sous-sols – samedi soir",
+          "notes": "Les PJ dirigent la résistance depuis le CdT, les sous-sols ou la rue. Planning prévu sans intervention des démons (à modifier selon leurs actions) :\n• 21 h : Laurent, appuyé de motards de Michel et d'une vingtaine de flics, investit l'immeuble osso buco, perquisitionne et embarque tous les habitants ; Delikatessen tué en fuyant par les toits, deux adolescents grièvement blessés. Daniel boucle les galeries des arènes de Lutèce et élimine les zombies.\n• 22 h : des Michel attaquent le domicile de Nosferax, qui fuit dans les égouts par Corps gazeux. Les flics sont occupés au poste avec les prisonniers. Laurent cherche Paulo autour de la Sorbonne. Daniel abat un mur porteur vers les catacombes et une base de la Terre Creuse : mini-effondrement, une heure de déblaiement.\n• 23 h : Paulo et Rotka, repérés, fuient en voiture de sport ; Laurent et Michel coordonnés les arrêtent et les éliminent. Des Daniel retardataires capturent Nosferax dans les égouts.\n• Minuit : grosse mêlée souterraine entre Daniel, des guérilleros de la Terre Creuse et un anaconda géant bleu pâle. Nosferax, livré à Laurent, livre sous pouvoirs mentaux les coordonnées de Groquick et Sabbath. Des Michel vident une chope au Quat'Zarts et déclenchent une rixe avec les hommes du Beau Lulu : trois morts.\nConseil de MJ : noyer les joueurs sous l'information, plusieurs échauffourées simultanées, alliances qui craquent, humains qui pètent les plombs. Prendre des notes sur qui est où.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi9-tenia-21",
+              "nom": "Jean-Luc le Ténia",
+              "source": "Ange de Daniel, grade 3 – chef des troupes de Daniel",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 12,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 26,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Batte bénie mineure",
+                  "att": 11,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pétrification",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Régénération",
+                  "r": 6
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 6
+                },
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 4
+                },
+                {
+                  "n": "Paralysie",
+                  "r": 4
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 7, Défense 6, Combat 5+, Survie 2 (sous-sols 4), Savoir militaire 3 (tactique 5), Bertrand Cantat 3, Martyriser une guitare sèche 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Échalas d'une vingtaine d'années, cheveux et peau gras, aime exhiber son estomac rebondi torse nu. Allure d'informaticien en fin de beuverie, mais stratège tordu et brute redoutable au corps à corps. Fanatique : frappe ses propres rangs en cas de tirage au flanc.\nPoint faible exploitable : ancien Hammerskin ayant fréquenté la Terre Creuse et failli passer chez eux avant que Daniel ne le reprenne en main ; il a recruté des anges aux idées brunes (bavures racistes à dénoncer).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-tenia"
+            },
+            {
+              "id": "fi9-iron-skull-22",
+              "nom": "Iron Skull",
+              "source": "Ange de Daniel moyen, grade 0",
+              "type": "ange",
+              "qty": 2,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Batte bénie mineure",
+                  "att": 10,
+                  "prec": 1,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Revolver gros calibre (pénétration importante, portée moyenne)",
+                  "att": 10,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Pétrification",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Déphasage",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 5, Tir 2 (armes de poing 5), Corps à corps 4, Défense 4, Chants de légionnaires 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Archétype de l'ange de Daniel : crâne rasé, tatouages, bombers, batte et canettes de bière ; quelques skins « d'autres horizons » ou trentenaires en costume et bretelles dans les rangs.\nRevolver : arme non précisée par le livre (seulement « armes de poing ») ; gros calibre retenu.\nTroupes de Daniel : 10 anges (1 gr3, 3 gr2, 4 gr1, 2 gr0) et 40 soldats de Dieu, en patrouilles de cinq (un ange pour quatre humains) ; deux sur cinq ont un talkie-walkie, chefs de patrouille avec Télépathie.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-iron-skull"
+            },
+            {
+              "id": "fi9-soldats-23",
+              "nom": "Soldats de Dieu (patrouilles)",
+              "source": "Soldat de Dieu typique (Livre de base)",
+              "type": "soldat",
+              "qty": 8,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 5,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Combat 2, Conduite 2+, Corps à corps 2, Intimidation 2, Savoir militaire 2 (tactique 2+), Tir 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre renvoie au soldat de Dieu du livre de base : valeurs du bestiaire (p. 88 des règles). Escortent les anges de Daniel (patrouilles de cinq en sous-sol) et de Laurent. Certains, racistes, font du zèle (caves d'une boucherie halal incendiées, violonistes tziganes tabassés).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-soldats"
+            },
+            {
+              "id": "fi9-gros-charlie-24",
+              "nom": "Gros Charlie",
+              "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 22,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Sabre béni mineur",
+                  "att": 15,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Armoire de deux mètres sur deux, petits yeux, triple menton, haleine de pastis, accent du Sud, parle avec les mains. Triste réputation même chez les siens.\nNe peut pas voir P'tit Nico en peinture : les deux se sont tirés dans les pattes pendant le conditionnement des policiers (Laurent les a mis tous deux sur l'affaire).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-gros-charlie"
+            },
+            {
+              "id": "fi9-blade-25",
+              "nom": "Blade",
+              "source": "Ange de Laurent moyen, grade 0",
+              "type": "ange",
+              "qty": 2,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 5, Défense 5, Corps à corps 4, Savoir militaire 2 (tactique 4), Scout toujours 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Blond, athlétique, propre sur lui, belle épée. Courageux jusqu'à la témérité, obéissant jusqu'à la servilité.\nTroupes de Laurent : 8 anges (3 gr2, 5 gr1), 10 soldats de Dieu, 50 policiers « normaux » ; chaque grade 2 mène une quinzaine d'hommes (descentes dans les lieux publics), les cinq autres anges chassent chacun un démon ciblé avec une poignée d'humains.\nBavure exploitable : un ange de grade 0 de la troupe est un tueur psychopathe qui a découpé une cliente du Black Velvet (restes retrouvés vendredi matin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-blade"
+            },
+            {
+              "id": "fi9-flic-26",
+              "nom": "Rémi Labavure (flic moyen)",
+              "source": "Policier allié des troupes de Laurent",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de service (pénétration importante, portée moyenne)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Conduite 2, Tir 1+ (armes de poing 2+), Corps à corps 2, Police/menottes/prison 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le flic moyen : cernes, caféine et nicotine, flingue, badge et uniforme. Conditionnement bâclé : certains craquent (un s'est défenestré, un autre est en arrêt maladie, un troisième a parlé à un journaliste de magie noire au Quartier latin).\nArmes non précisées : revolver petit calibre et matraque retenus. Défense non donnée : 2. Pas de PP (humain).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-flic"
+            },
+            {
+              "id": "fi9-bauduret-27",
+              "nom": "Patrick Bauduret",
+              "source": "Ange de Michel moyen, grade 0",
+              "type": "ange",
+              "qty": 5,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 15,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Hache à deux mains (inadaptée à la parade)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 2
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 2
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4, Défense 4, Corps à corps 4, Conduite 4, Hit the road Jack 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Motard chevelu et barbu sur grosse cylindrée à franges. Se bat bien à jeun, mieux encore ivre ; aime les armes lourdes (hache, marteau, parpaing). Sociable, violent, pas rancunier.\nArme non précisée par le livre : hache de bataille retenue (valeurs R.ARMES).\nTroupes de Michel : 20 anges (3 gr3, 6 gr2, 5 gr1, 6 gr0) à moto, toujours au moins par cinq, portables mains libres et langage de combat ; frustrés de leur petit rôle, ils boivent et dérapent (carambolages, bagarre au Saint-Quentin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-bauduret"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi9-sc-assaut-2",
+          "nom": "10. Paris sous les bombes : 1 h – 2 h 20",
+          "lieu": "Quartier latin – nuit de samedi à dimanche",
+          "notes": "• 1 h : flics et anges de Laurent investissent la salle de concert du Molodoï pour un contrôle d'identité musclé (une dizaine d'arrestations) et tuent discrètement Sabbath en coulisses. Les Michel traquent et démolissent Groquick à pied (dix minutes d'avance pour le sport). Daniel pose des charges pour entrer chez Penthouse 69 par les sous-sols.\n• 2 h : les trois factions investissent Penthouse 69 ensemble ; faible résistance (deux démons, des familiers, quelques mafieux polonais).\n• 2 h 20 : sans intervention des PJ, plus aucune résistance maléfique dans le Quartier latin ; les anges rentrent à Notre-Dame avec leurs prisonniers.\nÉvaluation : aucun système de règles possible vu la liberté des PJ ; juger honnêtement. Des PJ qui se sont démenés ne doivent pas être punis même s'ils ont été mauvais sur le terrain ; des PJ passifs comptant sur leurs griffes peuvent subir un joli massacre.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi9-ptit-nico-28",
+              "nom": "P'tit Nico",
+              "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 6,
+                "pr": 2,
+                "foi": 8
+              },
+              "def": 15,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 22,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret béni mineur",
+                  "att": 15,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 6
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Nain râblé, yeux globuleux sous des paupières gonflées, petite voix crispante, s'agite sans cesse. Nouveau grade 2 aux dents longues : veut la place de Gros Charlie, qui n'est pas dupe. Même fiche que Gros Charlie dans le livre.\nDents creuses à exploiter : les deux chefs ne s'entendent que tant que personne ne s'en mêle.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-ptit-nico"
+            },
+            {
+              "id": "fi9-blade-29",
+              "nom": "Blade",
+              "source": "Ange de Laurent moyen, grade 0",
+              "type": "ange",
+              "qty": 2,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Juste-lame",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 5, Défense 5, Corps à corps 4, Savoir militaire 2 (tactique 4), Scout toujours 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Blond, athlétique, propre sur lui, belle épée. Courageux jusqu'à la témérité, obéissant jusqu'à la servilité.\nTroupes de Laurent : 8 anges (3 gr2, 5 gr1), 10 soldats de Dieu, 50 policiers « normaux » ; chaque grade 2 mène une quinzaine d'hommes (descentes dans les lieux publics), les cinq autres anges chassent chacun un démon ciblé avec une poignée d'humains.\nBavure exploitable : un ange de grade 0 de la troupe est un tueur psychopathe qui a découpé une cliente du Black Velvet (restes retrouvés vendredi matin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-blade"
+            },
+            {
+              "id": "fi9-flic-30",
+              "nom": "Rémi Labavure (flic moyen)",
+              "source": "Policier allié des troupes de Laurent",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 0,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "Revolver de service (pénétration importante, portée moyenne)",
+                  "att": 5,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 2, Conduite 2, Tir 1+ (armes de poing 2+), Corps à corps 2, Police/menottes/prison 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le flic moyen : cernes, caféine et nicotine, flingue, badge et uniforme. Conditionnement bâclé : certains craquent (un s'est défenestré, un autre est en arrêt maladie, un troisième a parlé à un journaliste de magie noire au Quartier latin).\nArmes non précisées : revolver petit calibre et matraque retenus. Défense non donnée : 2. Pas de PP (humain).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-flic"
+            },
+            {
+              "id": "fi9-poy-poy-31",
+              "nom": "Poy-Poy",
+              "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 28,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Sagaie bénie mineure (adaptée à la charge)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Arme de poing",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 10
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), À ses construire l'envers phrases 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Vieux dread loqueteux au visage grêlé, mi-clochard mi-chaman (veste mitée, haut-de-forme à plumes, grigris), pilote une moto pourrie qui sent le kérosène ; charge à la sagaie sans descendre de selle.\nArme de poing : modèle non précisé (petit calibre retenu).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-poy-poy"
+            },
+            {
+              "id": "fi9-eddie-32",
+              "nom": "Eddie",
+              "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 28,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Pelle bénie mineure (inadaptée à la parade)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Arme de poing",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 10
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), Riiiio… Riiiio Graaaaande 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le crooner des forces du Bien : Harley crème sans casque, brushing, smoking beige, chapeau de cow-boy et boots en croco, toujours impeccable. Se bat à la pelle de fossoyeur aiguisée en chantant de la country. Même fiche que Poy-Poy dans le livre.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-eddie"
+            },
+            {
+              "id": "fi9-krul-33",
+              "nom": "Krûl",
+              "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 12,
+                "ag": 10,
+                "pe": 4,
+                "vo": 8,
+                "pr": 2,
+                "foi": 10
+              },
+              "def": 12,
+              "prot": 0,
+              "pfFix": 10,
+              "pp": 28,
+              "seuilsFix": [
+                9,
+                18,
+                27,
+                36
+              ],
+              "armes": [
+                {
+                  "n": "Fléau d'armes béni mineur « Ça » (parade difficile)",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 3,
+                  "melee": true
+                },
+                {
+                  "n": "Arme de poing",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 10
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 6
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Trait d'énergie",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                }
+              ],
+              "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), Nope 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaire bodybuildé à dégaine de pitbull-garou, Honda jaune canari, vocabulaire de trente mots, tatouages aux biceps. Yeux invisibles sous les sourcils. Même fiche que Poy-Poy dans le livre.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-krul"
+            },
+            {
+              "id": "fi9-bauduret-34",
+              "nom": "Patrick Bauduret",
+              "source": "Ange de Michel moyen, grade 0",
+              "type": "ange",
+              "qty": 5,
+              "car": {
+                "fo": 10,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 15,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Hache à deux mains (inadaptée à la parade)",
+                  "att": 8,
+                  "prec": 0,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Maîtrise martiale",
+                  "r": 4
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Champ de force",
+                  "r": 2
+                },
+                {
+                  "n": "Arts martiaux",
+                  "r": 2
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 2
+                },
+                {
+                  "n": "Membre blindé",
+                  "r": 0
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                }
+              ],
+              "talents": "Combat 4, Défense 4, Corps à corps 4, Conduite 4, Hit the road Jack 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Motard chevelu et barbu sur grosse cylindrée à franges. Se bat bien à jeun, mieux encore ivre ; aime les armes lourdes (hache, marteau, parpaing). Sociable, violent, pas rancunier.\nArme non précisée par le livre : hache de bataille retenue (valeurs R.ARMES).\nTroupes de Michel : 20 anges (3 gr3, 6 gr2, 5 gr1, 6 gr0) à moto, toujours au moins par cinq, portables mains libres et langage de combat ; frustrés de leur petit rôle, ils boivent et dérapent (carambolages, bagarre au Saint-Quentin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-bauduret"
+            },
+            {
+              "id": "fi9-soldats-35",
+              "nom": "Soldats de Dieu (patrouilles)",
+              "source": "Soldat de Dieu typique (Livre de base)",
+              "type": "soldat",
+              "qty": 4,
+              "car": {
+                "fo": 6,
+                "ag": 5,
+                "pe": 4,
+                "vo": 5,
+                "pr": 3,
+                "foi": 6
+              },
+              "def": 5,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 8,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Pistolet-mitrailleur",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                },
+                {
+                  "n": "Matraque (non-létale)",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Athlétisme 3, Combat 2, Conduite 2+, Corps à corps 2, Intimidation 2, Savoir militaire 2 (tactique 2+), Tir 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Le livre renvoie au soldat de Dieu du livre de base : valeurs du bestiaire (p. 88 des règles). Escortent les anges de Daniel (patrouilles de cinq en sous-sol) et de Laurent. Certains, racistes, font du zèle (caves d'une boucherie halal incendiées, violonistes tziganes tabassés).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-soldats"
+            },
+            {
+              "id": "fi9-claudes-36",
+              "nom": "Claude et Claude",
+              "source": "Démons de Scox et de Mammon, grade 2 – Penthouse 69",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Starlettes androgynes maquillées « Boy George au saut du lit ». Dirigent Penthouse 69, fausse agence d'escort girls couvrant un réseau de prostitution hardcore étendu à l'Europe de l'Est.\nContactés à temps : une dizaine d'hommes de main de la mafia polonaise.\nSans intervention : 2 h, les trois factions investissent l'immeuble (deux démons, des familiers, quelques mafieux polonais). À 2 h 20, plus aucune résistance maléfique dans le quartier.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157.",
+              "typeId": "type-fi9-claudes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi9-ch-issue",
+              "q": "Quel bilan pour la résistance démoniaque ?",
+              "opts": [
+                {
+                  "t": "Les anges sont tenus en échec",
+                  "suite": "Notre-Dame juge l'attaque frontale prématurée ; pas d'offensive plus vaste à court terme. Quart d'heure de gloire pour les PJ."
+                },
+                {
+                  "t": "Victoire angélique partielle",
+                  "suite": "Plusieurs nids tombent, mais l'organisation infernale a montré qu'elle réagissait : Notre-Dame hésite."
+                },
+                {
+                  "t": "Déroute totale à 2 h 20",
+                  "suite": "Les anges contrôlent le Quartier latin et préparent une offensive plus large."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi9-sc-epilogue",
+          "nom": "11. After party et message de Lucifer",
+          "lieu": "Centre de Tri – nuit de samedi à dimanche",
+          "notes": "Retour au CdT, harassés, blessés, démoralisés : surprise, une petite after party a été organisée (chips, Curly, bouteilles de roteuse débouchées par Aurélie), même si le succès est douteux. Fabien leur accorde 6 PA ; Gilbert leur remet l'Accolade du Respect. Aurélie soigne les blessés, on écoute leur récit.\nPuis tous les téléphones, portables compris, sonnent en même temps, les ordinateurs se rallument seuls, le moniteur de vidéosurveillance grésille. Sur tous les écrans, un jeune homme blond aux cheveux courts et lunettes noires parle en langage démoniaque : Lucifer. En substance, il est fatigué, il a réfléchi, il a appris la guerre entre Belial et Crocell et les tensions à la Cour ; il ne reviendra pas. Il abandonne la cité de Dis à qui voudra la prendre (« organisez des élections »), il est inutile de le chercher. Adieu.\nLa communication s'achève sur la plus grosse déflagration d'aura jamais vue par des démons. Puis le noir, le silence. Fin de la première moitié de la campagne (suite dans Fire and Ice 2).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi9-fabien-37",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Accorde dix jours de repos aux PJ au retour d'Antarctique, puis les accueille dans un CdT transformé en base avancée. Vérifie sur la CRD que Dugomier était un démon de Nybbas grade 2.\nPerplexe et inquiet : ses téléphones sonnent sans arrêt, des gradés ont disparu, des services entiers ne répondent plus. Après une quinzaine d'appels sans réponse à la hiérarchie, il admet que le Centre est seul.\nSecret MJ (Tempus Fugit) : depuis « Quatre fragments d'une chronologie du hasard », Beleth occupe son corps et ses souvenirs. Il veut limiter la casse pendant le flou politique : pour lui ce n'est pas (encore) la fin du monde.\nRécompense finale : 6 PA aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-fabien"
+            },
+            {
+              "id": "fi9-gilbert-38",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "En treillis, maquillage de guerre, gros calibre au poing : fait entrer tout le monde « go, go, go ! ». A monté un rack d'armes, des munitions et des rations dans la cave pour une semaine de siège. Fournit du matériel (y compris militaire).\nÀ la fin, remet aux PJ l'Accolade du Respect réservée aux plus valeureux.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-gilbert"
+            },
+            {
+              "id": "fi9-aurelie-39",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Porte une casquette kaki pour l'occasion. Garde Anne-Clémence pendant que Fabien parle aux PJ ; soigne les blessés et débouche les bouteilles à l'after party.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi9-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795281381403,
+      "updatedAt": 1795281381403
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi9-anne-clemence",
+      "nom": "Anne-Clémence",
+      "source": "Humaine, thésarde en économie le jour, strip-teaseuse au Black Velvet la nuit",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune femme trop maquillée en Mini Cooper, qui se lime les ongles en attendant devant le Centre de Tri. Paniquée par l'ambiance de siège ; il faut la calmer (courtoisie, psychologie, pouvoir mental… ou baffe).\nTémoin de la descente au Black Velvet : flics en civil en nombre, un « policier » sortant une épée, le barman Gégé disparu dans un éclair, un incendie spontané, puis une embuscade de bikers qui ont fait disparaître jusqu'aux corps. Dugomier lui a dit de prévenir les « responsables des chaudières » au Centre de Tri s'il ne passait pas la nuit.\nMonsieur Fabien s'en occupe : si les PJ la recroisent, elle a tout oublié (au mieux, elle les prend pour des collègues de fac).\nCaractéristiques non fournies par le livre : valeurs estimées d'humaine ordinaire.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Accorde dix jours de repos aux PJ au retour d'Antarctique, puis les accueille dans un CdT transformé en base avancée. Vérifie sur la CRD que Dugomier était un démon de Nybbas grade 2.\nPerplexe et inquiet : ses téléphones sonnent sans arrêt, des gradés ont disparu, des services entiers ne répondent plus. Après une quinzaine d'appels sans réponse à la hiérarchie, il admet que le Centre est seul.\nSecret MJ (Tempus Fugit) : depuis « Quatre fragments d'une chronologie du hasard », Beleth occupe son corps et ses souvenirs. Il veut limiter la casse pendant le flou politique : pour lui ce n'est pas (encore) la fin du monde.\nRécompense finale : 6 PA aux PJ.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi9-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "En treillis, maquillage de guerre, gros calibre au poing : fait entrer tout le monde « go, go, go ! ». A monté un rack d'armes, des munitions et des rations dans la cave pour une semaine de siège. Fournit du matériel (y compris militaire).\nÀ la fin, remet aux PJ l'Accolade du Respect réservée aux plus valeureux.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi9-aurelie",
+      "nom": "Aurélie",
+      "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 5
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Porte une casquette kaki pour l'occasion. Garde Anne-Clémence pendant que Fabien parle aux PJ ; soigne les blessés et débouche les bouteilles à l'after party.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi9-carmen",
+      "nom": "Carmen",
+      "source": "Démone de Malphas, grade 2 – bibliothécaire de l'Aphte",
+      "type": "demon",
+      "car": {
+        "fo": 2,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 22,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Discorde",
+          "r": 8
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 6
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Charme",
+          "r": 4
+        },
+        {
+          "n": "Polymorphie",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        },
+        {
+          "n": "Non-détection",
+          "r": 6
+        }
+      ],
+      "talents": "Bibliothéconomie 7, Conduite 4, Séduction 3, Hobby (tricot) 3, Discrétion 3, Eau de Cologne cinq litres 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite cinquantenaire brune et boulotte, coupe à la Jeanne d'Arc, pull à fleurs tricoté main, rit beaucoup. Assistante de conservation à la bibliothèque Saint-Exupéry de Massy, et archiviste de l'Aphte (organisation secrète de Malphas).\nSur présentation de la carte de lecteur fournie par Fabien (via le docteur Gérald), mène les PJ aux réserves, pioche une fiche bristol en quinze secondes et débite tout d'une traite : les faux mafieux sont les Incorruptibles, soldats de Dieu menés par Eliott, ange de Laurent ; dernière planque connue, un garage en tôle dans la zone industrielle de Buc.\nN'aime pas qu'on plaisante sur son classement ni sur l'hygiène : refuse sa réserve à quiconque ne s'est pas lavé depuis moins de 24 heures.\nAvertissement sans frais : monomaniaque (propreté). Pas d'arme : défense non donnée, fixée à 2.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-eliott",
+      "nom": "Eliott",
+      "source": "Ange de Laurent, grade 1 – chef des Incorruptibles",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 16,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Mitraillette à camembert bénie mineure (attaque multiple, pénétration importante, portée moyenne)",
+          "att": 10,
+          "prec": 0,
+          "puis": 7,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 2
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        },
+        {
+          "n": "Protection de l'âme",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 5, Tir 3 (armes d'épaule 5), Défense 5, Conduite 4, Allumer du premier coup ses cigarettes au milieu d'une tornade ou sous une averse tropicale 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand brun ténébreux, Burberry, chapeau feutre, lunettes argentées, mise en plis Prohibition, barbe de trois jours laborieuse. Pur malt et holster en peau de chamois. Poseur en combat, optimiste jusque dans les pires situations : ne se rend pas.\nC'est lui qui, d'après les témoins, portait des rangers, un feutre beige et une gabardine (douilles de fusil à pompe au Black Velvet, Psychométrie).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-incorruptibles",
+      "nom": "Guiliani, Filip et Maréchal",
+      "source": "Soldats de Dieu – Incorruptibles et inoxydables",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 4,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Fusil à pompe (portée moyenne)",
+          "att": 6,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        }
+      ],
+      "talents": "Tir 2 (armes d'épaule 3), Défense 3, Discrétion 3, Conduite 2, Mener des enquêtes dignes d'une série américaine en noir et blanc 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeunes gens pétris de foi, chapeaux mous clairs, sportswear, veste en jean et rangers. Contrairement à Eliott, se rendent si la situation tourne mal.\nArme non précisée par le livre (seulement « armes d'épaule ») : fusil à pompe retenu (douilles retrouvées au Black Velvet).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-tenia",
+      "nom": "Jean-Luc le Ténia",
+      "source": "Ange de Daniel, grade 3 – chef des troupes de Daniel",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 12,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 26,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Batte bénie mineure",
+          "att": 11,
+          "prec": 1,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 14,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Pétrification",
+          "r": 8
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Régénération",
+          "r": 6
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 6
+        },
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Détection du mal",
+          "r": 4
+        },
+        {
+          "n": "Paralysie",
+          "r": 4
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 7, Défense 6, Combat 5+, Survie 2 (sous-sols 4), Savoir militaire 3 (tactique 5), Bertrand Cantat 3, Martyriser une guitare sèche 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Échalas d'une vingtaine d'années, cheveux et peau gras, aime exhiber son estomac rebondi torse nu. Allure d'informaticien en fin de beuverie, mais stratège tordu et brute redoutable au corps à corps. Fanatique : frappe ses propres rangs en cas de tirage au flanc.\nPoint faible exploitable : ancien Hammerskin ayant fréquenté la Terre Creuse et failli passer chez eux avant que Daniel ne le reprenne en main ; il a recruté des anges aux idées brunes (bavures racistes à dénoncer).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-iron-skull",
+      "nom": "Iron Skull",
+      "source": "Ange de Daniel moyen, grade 0",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Batte bénie mineure",
+          "att": 10,
+          "prec": 1,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Revolver gros calibre (pénétration importante, portée moyenne)",
+          "att": 10,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Pétrification",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Déphasage",
+          "r": 4
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 4
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 5, Tir 2 (armes de poing 5), Corps à corps 4, Défense 4, Chants de légionnaires 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Archétype de l'ange de Daniel : crâne rasé, tatouages, bombers, batte et canettes de bière ; quelques skins « d'autres horizons » ou trentenaires en costume et bretelles dans les rangs.\nRevolver : arme non précisée par le livre (seulement « armes de poing ») ; gros calibre retenu.\nTroupes de Daniel : 10 anges (1 gr3, 3 gr2, 4 gr1, 2 gr0) et 40 soldats de Dieu, en patrouilles de cinq (un ange pour quatre humains) ; deux sur cinq ont un talkie-walkie, chefs de patrouille avec Télépathie.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-gros-charlie",
+      "nom": "Gros Charlie",
+      "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 8
+      },
+      "def": 15,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 22,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Sabre béni mineur",
+          "att": 15,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 8
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Détection du mal",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Armoire de deux mètres sur deux, petits yeux, triple menton, haleine de pastis, accent du Sud, parle avec les mains. Triste réputation même chez les siens.\nNe peut pas voir P'tit Nico en peinture : les deux se sont tirés dans les pattes pendant le conditionnement des policiers (Laurent les a mis tous deux sur l'affaire).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-ptit-nico",
+      "nom": "P'tit Nico",
+      "source": "Ange de Laurent, grade 2 – co-chef des troupes de Laurent",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 6,
+        "pr": 2,
+        "foi": 8
+      },
+      "def": 15,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 22,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Fleuret béni mineur",
+          "att": 15,
+          "prec": 3,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 8
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Détection du mal",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 6
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 7+, Défense 7+, Conduite 6, Discussion 3, Culture générale 3 (procédures pénales 5), Savoir militaire 3 (stratégie 5), Savoir occulte 2 (administration angélique 4), Hobby (politique humaine) 4, Interrogatoires musclés 4, Avoir confiance en la justice de son pays 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Nain râblé, yeux globuleux sous des paupières gonflées, petite voix crispante, s'agite sans cesse. Nouveau grade 2 aux dents longues : veut la place de Gros Charlie, qui n'est pas dupe. Même fiche que Gros Charlie dans le livre.\nDents creuses à exploiter : les deux chefs ne s'entendent que tant que personne ne s'en mêle.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-blade",
+      "nom": "Blade",
+      "source": "Ange de Laurent moyen, grade 0",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée bénie mineure",
+          "att": 10,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Juste-lame",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 4
+        },
+        {
+          "n": "Détection du mal",
+          "r": 2
+        }
+      ],
+      "talents": "Combat 5, Défense 5, Corps à corps 4, Savoir militaire 2 (tactique 4), Scout toujours 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Blond, athlétique, propre sur lui, belle épée. Courageux jusqu'à la témérité, obéissant jusqu'à la servilité.\nTroupes de Laurent : 8 anges (3 gr2, 5 gr1), 10 soldats de Dieu, 50 policiers « normaux » ; chaque grade 2 mène une quinzaine d'hommes (descentes dans les lieux publics), les cinq autres anges chassent chacun un démon ciblé avec une poignée d'humains.\nBavure exploitable : un ange de grade 0 de la troupe est un tueur psychopathe qui a découpé une cliente du Black Velvet (restes retrouvés vendredi matin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-flic",
+      "nom": "Rémi Labavure (flic moyen)",
+      "source": "Policier allié des troupes de Laurent",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver de service (pénétration importante, portée moyenne)",
+          "att": 5,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Matraque (non-létale)",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 2, Conduite 2, Tir 1+ (armes de poing 2+), Corps à corps 2, Police/menottes/prison 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le flic moyen : cernes, caféine et nicotine, flingue, badge et uniforme. Conditionnement bâclé : certains craquent (un s'est défenestré, un autre est en arrêt maladie, un troisième a parlé à un journaliste de magie noire au Quartier latin).\nArmes non précisées : revolver petit calibre et matraque retenus. Défense non donnée : 2. Pas de PP (humain).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-poy-poy",
+      "nom": "Poy-Poy",
+      "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 28,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Sagaie bénie mineure (adaptée à la charge)",
+          "att": 14,
+          "prec": 1,
+          "puis": 3,
+          "melee": true
+        },
+        {
+          "n": "Arme de poing",
+          "att": 8,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 10
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 10
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), À ses construire l'envers phrases 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieux dread loqueteux au visage grêlé, mi-clochard mi-chaman (veste mitée, haut-de-forme à plumes, grigris), pilote une moto pourrie qui sent le kérosène ; charge à la sagaie sans descendre de selle.\nArme de poing : modèle non précisé (petit calibre retenu).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-eddie",
+      "nom": "Eddie",
+      "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 28,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Pelle bénie mineure (inadaptée à la parade)",
+          "att": 14,
+          "prec": -2,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Arme de poing",
+          "att": 8,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 10
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 10
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), Riiiio… Riiiio Graaaaande 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le crooner des forces du Bien : Harley crème sans casque, brushing, smoking beige, chapeau de cow-boy et boots en croco, toujours impeccable. Se bat à la pelle de fossoyeur aiguisée en chantant de la country. Même fiche que Poy-Poy dans le livre.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-krul",
+      "nom": "Krûl",
+      "source": "Ange de Michel, grade 3 – un des trois chefs motards",
+      "type": "ange",
+      "car": {
+        "fo": 12,
+        "ag": 10,
+        "pe": 4,
+        "vo": 8,
+        "pr": 2,
+        "foi": 10
+      },
+      "def": 12,
+      "prot": 0,
+      "pfFix": 10,
+      "pp": 28,
+      "seuilsFix": [
+        9,
+        18,
+        27,
+        36
+      ],
+      "armes": [
+        {
+          "n": "Fléau d'armes béni mineur « Ça » (parade difficile)",
+          "att": 14,
+          "prec": 1,
+          "puis": 3,
+          "melee": true
+        },
+        {
+          "n": "Arme de poing",
+          "att": 8,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 10
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 10
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 6
+        },
+        {
+          "n": "Champ de force",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Trait d'énergie",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        }
+      ],
+      "talents": "Combat 7, Corps à corps 7, Défense 6, Conduite 6, Tenir l'alcool 5, Tir 2 (armes de poing 4), Nope 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentenaire bodybuildé à dégaine de pitbull-garou, Honda jaune canari, vocabulaire de trente mots, tatouages aux biceps. Yeux invisibles sous les sourcils. Même fiche que Poy-Poy dans le livre.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-bauduret",
+      "nom": "Patrick Bauduret",
+      "source": "Ange de Michel moyen, grade 0",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 15,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Hache à deux mains (inadaptée à la parade)",
+          "att": 8,
+          "prec": 0,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Maîtrise martiale",
+          "r": 4
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Champ de force",
+          "r": 2
+        },
+        {
+          "n": "Arts martiaux",
+          "r": 2
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 2
+        },
+        {
+          "n": "Membre blindé",
+          "r": 0
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        }
+      ],
+      "talents": "Combat 4, Défense 4, Corps à corps 4, Conduite 4, Hit the road Jack 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Motard chevelu et barbu sur grosse cylindrée à franges. Se bat bien à jeun, mieux encore ivre ; aime les armes lourdes (hache, marteau, parpaing). Sociable, violent, pas rancunier.\nArme non précisée par le livre : hache de bataille retenue (valeurs R.ARMES).\nTroupes de Michel : 20 anges (3 gr3, 6 gr2, 5 gr1, 6 gr0) à moto, toujours au moins par cinq, portables mains libres et langage de combat ; frustrés de leur petit rôle, ils boivent et dérapent (carambolages, bagarre au Saint-Quentin).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-soldats",
+      "nom": "Soldats de Dieu (patrouilles)",
+      "source": "Soldat de Dieu typique (Livre de base)",
+      "type": "soldat",
+      "car": {
+        "fo": 6,
+        "ag": 5,
+        "pe": 4,
+        "vo": 5,
+        "pr": 3,
+        "foi": 6
+      },
+      "def": 5,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 8,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Pistolet-mitrailleur",
+          "att": 6,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        },
+        {
+          "n": "Matraque (non-létale)",
+          "att": 4,
+          "prec": 0,
+          "puis": 1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Athlétisme 3, Combat 2, Conduite 2+, Corps à corps 2, Intimidation 2, Savoir militaire 2 (tactique 2+), Tir 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Le livre renvoie au soldat de Dieu du livre de base : valeurs du bestiaire (p. 88 des règles). Escortent les anges de Daniel (patrouilles de cinq en sous-sol) et de Laurent. Certains, racistes, font du zèle (caves d'une boucherie halal incendiées, violonistes tziganes tabassés).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-paulo",
+      "nom": "Paulo et Rotka",
+      "source": "Démon de Nisroch et son second Belial – dealers de la Sorbonne",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Contrôlent shit, coke, ecstasy et amphètes autour de la Sorbonne. Roulent pour eux-mêmes depuis des années ; les nouvelles de la Cour les confortent dans leur envie de rester à l'écart. Rotka est un Belial aussi neuneu que violent.\nS'ils sont convaincus : aide financière conséquente et une dizaine d'hommes de main humains peu armés.\nSans intervention : repérés à 23 h, poursuivis en voiture de sport, éliminés par Laurent et Michel.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-delikatessen",
+      "nom": "Delikatessen",
+      "source": "Démon de Haagenti – communauté « osso buco » du Boul'Mich",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Freluquet ombrageux et moite, méfiant envers la hiérarchie depuis un avertissement sans frais qui a abîmé son goût. Depuis dix mois, tous les habitants d'un immeuble bourgeois du Boul'Mich mangent de la chair humaine le dimanche midi.\nRallié : une dizaine de familles de gastronomes lobotomisés.\nSans intervention : 21 h, l'immeuble est investi par Laurent, Michel et une vingtaine de flics ; Delikatessen est tué sur les toits, deux adolescents gravement blessés.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-nosferax",
+      "nom": "Nosferax",
+      "source": "Démon de Samigina – patron des glaciers Baskin Robbins",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        }
+      ],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vieux Samigina gothique et punk ; les deux glaciers Baskin Robbins sont tenus par ses familiers vampires. Allié pompeux, prétentieux et assommant, mais ne rechigne pas s'il comprend le danger. Peut rameuter Groquick (Crocell, tas de graisse qui pouffe) et Sabbath (Furfur, énorme tatoué flûtiste d'indus acoustique).\nSans intervention : 22 h, il fuit les Michel par Corps gazeux dans les égouts, est capturé par Daniel vers 23 h ; à minuit, Laurent lui arrache les coordonnées de Groquick et Sabbath, tués à 1 h (Molodoï).\nFiche minimale : Corps gazeux cité par le livre, niveau non donné.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-claudes",
+      "nom": "Claude et Claude",
+      "source": "Démons de Scox et de Mammon, grade 2 – Penthouse 69",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Starlettes androgynes maquillées « Boy George au saut du lit ». Dirigent Penthouse 69, fausse agence d'escort girls couvrant un réseau de prostitution hardcore étendu à l'Europe de l'Est.\nContactés à temps : une dizaine d'hommes de main de la mafia polonaise.\nSans intervention : 2 h, les trois factions investissent l'immeuble (deux démons, des familiers, quelques mafieux polonais). À 2 h 20, plus aucune résistance maléfique dans le quartier.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-zombies",
+      "nom": "Zombies des arènes de Lutèce",
+      "source": "Une trentaine de morts-vivants portés disparus depuis le XIe siècle",
+      "type": "mortvivant",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Vivent en autarcie dans des galeries sous les arènes de Lutèce. Les convaincre demande du roleplay inspiré, mais ce sont des alliés de poids pour les combats souterrains.\nSans intervention : 21 h, Daniel boucle les sous-sols des arènes et les élimine.\nFiche minimale : pas de caractéristiques dans le livre (valeurs par défaut, à ajuster).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-beau-lulu",
+      "nom": "Lucien Chasle « le Beau Lulu »",
+      "source": "Ex-maquereau, parrain de la criminalité « touristique »",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Gangster old school gominé : cabarets-bordels, deal en club, pickpockets mondains, tripots. Préfère chantage et corruption à la violence. Se rencontre au Quat'Zarts (bistro faux Montmartre).\nGrâce à ses contacts policiers, peut réduire de moitié les effectifs humains des troupes de Laurent. Refuse toute collaboration avec Aldo Romani (et réciproquement).\nSans intervention : ses hommes se font tuer au Quat'Zarts par les Michel vers minuit (trois morts).\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-romani",
+      "nom": "Aldo Romani",
+      "source": "Responsable local de la mafia calabraise",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Moins de trente ans, poussah rougeaud, vit à l'année dans une suite de l'hôtel Americana. Difficile à motiver sans un gros apport financier ; refuse de travailler avec le Beau Lulu.\nRallié : une quinzaine d'hommes de main armés, entraînés et sans scrupules.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    },
+    {
+      "id": "type-fi9-hommes-main",
+      "nom": "Hommes de main (mafia, dealers, motards)",
+      "source": "Renforts humains recrutables",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 0,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "Revolver petit calibre (pénétration importante, portée moyenne)",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        },
+        {
+          "n": "Cran d'arrêt",
+          "att": 4,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 2, Corps à corps 2, Intimidation 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Fiche générique estimée (pas de caractéristiques dans le livre) pour les renforts : dizaine d'hommes de Paulo (peu armés : cran d'arrêt, pistolet d'alarme), mafia polonaise de Claude et Claude, quinzaine de Calabrais d'Aldo Romani (mieux armés), motards parisiens éméchés.\nSource : Fire and Ice, « Elle est plus forte que toi, la crise », p. 142-157."
+    }
+  ],
+  "memoire": []
+}

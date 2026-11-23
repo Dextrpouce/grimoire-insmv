@@ -1,0 +1,886 @@
+{
+ "Alain": {
+  "grades": [
+   "Serviteur des êtres humains",
+   "Ami des pauvres",
+   "Maître des affamés"
+  ],
+  "invocation": "Légendaire (il est sur terre)",
+  "communication": 1,
+  "intervention": "Préfère la diplomatie mais se bat étonnamment bien avec son bâton béni, une crosse papale ornée d'un ankh.",
+  "blames": [
+   "1-2 : skeletor : sa musculature fond, il devient squelettique et pitoyable ; Force divisée par deux.",
+   "3-4 : odeur de fumier : une puanteur de fumier impossible à masquer le suit ; Présence divisée par deux.",
+   "5-6 : indigent : ne récupère plus de PP normalement ; d'autres anges doivent lui en donner par contact."
+  ],
+  "page": "96-97",
+  "combat": "Fo 5, Ag 5+, Pe 9, Vo 7, Pr 6, Foi 7+ ; 90 PP, 12 PF, BL 9/BG 18/BF 27/MS 36 ; bâton béni ancien (précision +6, puissance +7)"
+ },
+ "Ange": {
+  "grades": [
+   "Serviteur des pécheurs",
+   "Ami des fidèles",
+   "Maître des convertis"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Face à de nombreux ennemis, reste invisible ; frappe d'Assaut spirituel ceux dont la Lecture d'aura révèle des PP.",
+  "blames": [
+   "1-2 : marques rituelles : tatouages noirs et rouges indélébiles et mouvants sur tout le corps ; Foi divisée par deux.",
+   "3-4 : sangsue : ne récupère des PP qu'après avoir approché une créature du mal ou païenne dans les 24 h ; plus de dons de PP.",
+   "5-6 : voilé : ne peut plus activer son aura angélique et doit réussir un test de Volonté incroyable pour parler l'angélique."
+  ],
+  "page": "97",
+  "combat": "Fo 6, Ag 7, Pe 5, Vo 8+, Pr 7, Foi 8+ ; 108 PP, 14 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Blandine": {
+  "grades": [
+   "Serviteur du bonheur éternel",
+   "Ami des rêves divins",
+   "Maître du sommeil"
+  ],
+  "invocation": "Incroyable",
+  "communication": 3,
+  "intervention": "Évite l'affrontement direct : Voix impérieuse contre les humains, Chant angélique contre les démons, Sommeil contre les coriaces.",
+  "blames": [
+   "1-2 : empathie : ressent la détresse des humains sur des kilomètres ; déprimé si l'un l'est, Volonté divisée par deux.",
+   "3-4 : rêve réciproque : la victime de son Rêve divin lui rend visite au sommeil suivant et peut lui infliger cauchemar ou rêve (niveau 4).",
+   "5-6 : cauchemars : un cauchemar récurrent l'empêche de se reposer ; malus de 2 colonnes à toutes ses actions physiques ou mentales."
+  ],
+  "page": "97-98",
+  "combat": "Fo 3, Ag 5, Pe 7, Vo 8, Pr 9, Foi 9 ; 105 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Christophe": {
+  "grades": [
+   "Serviteur des bambins",
+   "Ami des enfants",
+   "Maître de l'éducation"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "En combat, se protège (Aura d'inattention, Membre blindé, Rebond), utilise Absorption de force tant qu'on le laisse, et Enfance s'il est attaqué.",
+  "blames": [
+   "1-2 : babysitter : doit s'occuper en permanence d'un bébé illusoire qui revient toujours ; perd 2d6 PP s'il le maltraite.",
+   "3-4 : adulte : devient un adulte caricatural sans imagination ; -4 colonnes à la plupart des talents physiques, plus de Coup de bol ni d'Enfance.",
+   "5-6 : poisse : chaque Coup de bol accumule un point de poisse ; au prochain échec, catastrophe, et il perd un point."
+  ],
+  "page": "98",
+  "combat": "Fo 5, Ag 6+, Pe 6, Vo 8, Pr 8, Foi 8 ; 102 PP, 13 PF, BL 9/BG 18/BF 27/MS 36"
+ },
+ "Daniel": {
+  "grades": [
+   "Serviteur du monde souterrain",
+   "Ami des skinheads",
+   "Maître des continents"
+  ],
+  "invocation": "Légendaire (il est sur terre)",
+  "communication": 1,
+  "intervention": "Cogne sans relâche avec sa batte bénie dès que le combat commence, sans guère d'autres pouvoirs ; il ne pense à se protéger qu'après une première blessure.",
+  "blames": [
+   "1-2 : agoraphobie : terrifié par les espaces ouverts ; test de Volonté incroyable pour sortir, et perd tout de même 1d6 PP.",
+   "3-4 : protecteur : gardien d'une église consacrée, il n'y récupère qu'1 PP toutes les 6 h et nulle part ailleurs.",
+   "5-6 : besoin de foot : fan de foot intarissable ; perd 2d6 PP s'il ne voit pas au moins un match par semaine."
+  ],
+  "page": "98-99",
+  "combat": "Fo 8, Ag 8, Pe 5+, Vo 5+, Pr 5, Foi 7+ ; 99 PP, 13 PF, BL 12/BG 24/BF 36/MS 48 ; batte bénie suprême (précision +7, puissance +10) ; limitation : accès de colère"
+ },
+ "Didier": {
+  "grades": [
+   "Serviteur des messagers",
+   "Ami des postiers",
+   "Maître des messages officiels"
+  ],
+  "invocation": "Difficile",
+  "communication": 5,
+  "intervention": "N'aime pas se battre mais n'hésite pas à embrocher un démon pour défendre ses serviteurs.",
+  "blames": [
+   "1-2 : muet : ne peut plus parler, seulement s'exprimer par signes ; le joueur ne s'adresse qu'au MJ.",
+   "3-4 : en triple exemplaire : tout ce qu'il écrit ou dit doit être répété trois fois ; Présence divisée par deux.",
+   "5-6 : garantie sur ma vie : lié aux messages qu'il porte ; perd 2d6 PP si l'un arrive abîmé ou en retard, meurt s'il est détruit ou perdu."
+  ],
+  "page": "99",
+  "combat": "Fo 5, Ag 5, Pe 7, Vo 8, Pr 7, Foi 7 ; 101 PP, 13 PF, BL 9/BG 18/BF 27/MS 36 ; fleuret béni ancien (précision +7, puissance +7)"
+ },
+ "Dominique": {
+  "grades": [
+   "Serviteur du jugement dernier",
+   "Ami des êtres purs",
+   "Maître de la justice"
+  ],
+  "invocation": "Légendaire",
+  "communication": 4,
+  "intervention": "Plus enquêteur que bagarreur ; redoutable contre les démons (Lumière céleste, Jet d'eau bénite), moins contre les païens (Perturbation de pouvoir).",
+  "blames": [
+   "1-2 : doutes : rongé par l'autocritique au moindre écart ; Volonté divisée par deux.",
+   "3-4 : pourfendeur d'impie : quand sa Détection du mal réagit, rage folle jusqu'à tuer une créature du mal ; -4 colonnes aux actions mentales.",
+   "5-6 : audit permanent : interrogé chaque soir sur sa journée par un grade 3 ; à la moindre faute, perd 2d6 PP et ne récupère rien de la nuit."
+  ],
+  "page": "99-100",
+  "combat": "Fo 6, Ag 5, Pe 7, Vo 9, Pr 8+, Foi 9 ; 109 PP, 15 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Francis": {
+  "grades": [
+   "Serviteur des émissaires",
+   "Ami des nouveaux amis",
+   "Maître des alliances"
+  ],
+  "invocation": "Très difficile",
+  "communication": 4,
+  "intervention": "Voit comme un aveu de faiblesse d'être appelé pour un conflit déjà violent ; cherche à réconcilier les protagonistes et ne frappe que pour se défendre.",
+  "blames": [
+   "1-2 : pacifisme : test de Volonté incroyable pour tenir une arme ou user d'un pouvoir offensif, et blessure légère même en cas de réussite.",
+   "3-4 : cristallisation : les conflits latents ressurgissent et se focalisent sur lui ; au moins -8 colonnes en Discussion.",
+   "5-6 : malaise : perd des PP à chaque conflit proche (dispute 1d6, combat 2d6, conflit majeur 3d6), irrécupérables avant sa fin."
+  ],
+  "page": "100",
+  "combat": "Fo 5, Ag 5, Pe 5+, Vo 8, Pr 9, Foi 7+ ; 101 PP, 13 PF, BL 9/BG 18/BF 27/MS 36"
+ },
+ "Guy": {
+  "grades": [
+   "Serviteur des blessés",
+   "Ami des médecins",
+   "Maître des chirurgiens"
+  ],
+  "invocation": "Très difficile",
+  "communication": 3,
+  "intervention": "Déteste être appelé en plein combat ; il peut alors soigner indifféremment les deux camps (sauf les démons).",
+  "blames": [
+   "1-2 : stigmates : chaque Guérison lui inflige une blessure légère qui ne se referme qu'au bout de 6 heures.",
+   "3-4 : cicatrice : une large cicatrice indélébile lui barre le visage ; Présence divisée par deux.",
+   "5-6 : pacifisme : comme pour Francis (test de Volonté incroyable pour tenir une arme ou user d'un pouvoir offensif, blessure légère)."
+  ],
+  "page": "100",
+  "combat": "Fo 5+, Ag 5+, Pe 7, Vo 8, Pr 5, Foi 9 ; 103 PP, 13 PF, BL 9/BG 19/BF 28/MS 38"
+ },
+ "Janus": {
+  "grades": [
+   "Serviteur des pauvres",
+   "Ami des pauvres",
+   "Maître de l'emprunt"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Privilégie la discrétion au combat ; s'il doit se battre, il sort un élégant pistolet semi-automatique.",
+  "blames": [
+   "1-2 : prodigue : doit donner aux nécessiteux tout ce qu'il vole ; perd tous ses PP s'il garde un butin plus de 24 h.",
+   "3-4 : misérable : ne récupère des PP qu'en réussissant un casse difficile (1d6 à 3d6 selon l'ampleur), une fois par semaine pour les petits larcins.",
+   "5-6 : mondain : ne perçoit plus les gens possédant moins d'un million d'euros que comme des formes floues, sauf effort de Foi."
+  ],
+  "page": "100-101",
+  "combat": "Fo 5, Ag 9, Pe 7+, Vo 7, Pr 7+, Foi 7 ; 100 PP, 12 PF, BL 9/BG 18/BF 27/MS 36 ; petit calibre béni ancien (précision +3, puissance +9 ; pénétration importante, portée moyenne)"
+ },
+ "Jean": {
+  "grades": [
+   "Serviteur des créateurs",
+   "Ami des concepteurs illuminés",
+   "Maître de la technologie"
+  ],
+  "invocation": "Très difficile",
+  "communication": 3,
+  "intervention": "Préfère les projets aux affrontements ; active ses défenses puis attaque par décharges électriques ou, s'il est vraiment ennuyé, avec une arme expérimentale.",
+  "blames": [
+   "1-2 : cyborg : cobaye de Jean, il reçoit un membre mécanique voyant et peu fiable ; Force, Agilité ou Perception divisée par deux.",
+   "3-4 : paratonnerre : attire la foudre ; une chance sur deux de prendre les attaques électriques à moins de 10 m, et dérègle les appareils fragiles.",
+   "5-6 : matérialiste : ne peut plus utiliser ses pouvoirs physiques ou mentaux et doit se reposer sur ses gadgets."
+  ],
+  "page": "101",
+  "combat": "Fo 5, Ag 5, Pe 6, Vo 7, Pr 7, Foi 7+ ; 100 PP, 12 PF, BL 9/BG 18/BF 27/MS 36 ; canon-laser expérimental béni ancien (précision +9, puissance +9 ; dangereux, intangible)"
+ },
+ "Jean-Luc": {
+  "grades": [
+   "Serviteur de l'armure divine",
+   "Ami des opprimés",
+   "Maître des défenseurs"
+  ],
+  "invocation": "Difficile",
+  "communication": 3,
+  "intervention": "Prêt à prendre les coups pour ses serviteurs : se poste au milieu du champ de bataille, toutes défenses activées, sauf s'il protège une personne précise.",
+  "blames": [
+   "1-2 : cicatrice : comme pour Guy (large cicatrice indélébile au visage, Présence divisée par deux).",
+   "3-4 : flagellation : ne récupère plus de PP normalement, seulement autant de PP que les PF que lui coûte chaque blessure.",
+   "5-6 : mortification : ne sent plus la douleur et ne peut plus connaître magiquement ses PF ni ses blessures ; doit recourir à Médecine."
+  ],
+  "page": "101-102",
+  "combat": "Fo 8, Ag 5+, Pe 6, Vo 7, Pr 5, Foi 8 ; 101 PP, 15 PF, BL 12/BG 24/BF 36/MS 48 ; gros calibre béni ancien (précision +4, puissance +9 ; pénétration importante, portée moyenne), veste de Kevlar bénie (protection 7)"
+ },
+ "Jordi": {
+  "grades": [
+   "Serviteur des animaux",
+   "Ami des bêtes",
+   "Maître de la puissance animale"
+  ],
+  "invocation": "Légendaire (il est sur terre)",
+  "communication": 1,
+  "intervention": "Face à des démons belliqueux, il a de quoi survivre, mais pas forcément de quoi faire gagner ses serviteurs.",
+  "blames": [
+   "1-2 : bouseux : ne récupère aucun PP en zone fortement urbanisée ; à la campagne, tout va bien.",
+   "3-4 : esprit de la proie : réagit comme un petit animal face aux prédateurs (chiens, la plupart des humains) : se fige ou fuit, sauf test de Volonté incroyable.",
+   "5-6 : peau de bête : couvert d'une épaisse fourrure, yeux inhumains ; Présence divisée par deux (sauf face aux animaux)."
+  ],
+  "page": "102",
+  "combat": "Fo 5+, Ag 7+, Pe 8, Vo 6+, Pr 5, Foi 7+ ; 100 PP, 12 PF, BL 9/BG 19/BF 28/MS 38"
+ },
+ "Joseph": {
+  "grades": [
+   "Serviteur des geôliers",
+   "Ami des tortionnaires",
+   "Maître de la vérité"
+  ],
+  "invocation": "Légendaire",
+  "communication": 3,
+  "intervention": "Peu combatif, il préfère arriver après la bataille pour achever les restes ; contre un démon, il manie une lourde masse bénie à deux mains.",
+  "blames": [
+   "1-2 : doutes : comme pour Dominique (autocritique permanente, Volonté divisée par deux).",
+   "3-4 : illuminé : son aura angélique reste allumée en permanence et ne peut être camouflée.",
+   "5-6 : intégriste : doit faire avouer ou tuer dans les 24 h tout hérétique ou démon soupçonné qu'il approche, sous peine de perdre tous ses PP."
+  ],
+  "page": "102-103",
+  "combat": "Fo 4+, Ag 4+, Pe 6+, Vo 8+, Pr 5+, Foi 8+ ; 103 PP, 13 PF, BL 8/BG 17/BF 25/MS 34 ; masse lourde bénie ancienne (précision +4, puissance +9) ; limitation : paranoïaque"
+ },
+ "Laurent": {
+  "grades": [
+   "Serviteur des porteurs d'épée",
+   "Ami des troupes du Seigneur",
+   "Maître des armées de Dieu"
+  ],
+  "invocation": "Difficile",
+  "communication": 3,
+  "intervention": "Escrimeur quasi invincible avec sa Juste-lame ; ses défenses (Supériorité martiale, Esquive acrobatique, Champ de force) le rendent presque intouchable.",
+  "blames": [
+   "1-2 : discipliné : doit suivre à la lettre tout ordre d'un supérieur, sous peine de perdre 2d6 PP.",
+   "3-4 : pourfendeur d'impie : comme pour Dominique (rage folle contre toute créature du mal détectée, -4 colonnes aux actions mentales).",
+   "5-6 : aveugle : perd la vue ; ne sert plus en combat que comme commandant et tacticien."
+  ],
+  "page": "103-104",
+  "combat": "Fo 8, Ag 9, Pe 6, Vo 8, Pr 5+, Foi 8 ; 102 PP, 16 PF, BL 12/BG 24/BF 36/MS 48 ; épée bénie suprême (précision +8, puissance +10) ; limitation : besoin de tuer"
+ },
+ "Marc": {
+  "grades": [
+   "Serviteur des économes",
+   "Ami des actionnaires",
+   "Maître des finances"
+  ],
+  "invocation": "Très difficile",
+  "communication": 4,
+  "intervention": "Préfère la bourse aux champs de bataille ; attaque surtout par Charme et Paralysie et se défend au corps à corps avec Arts martiaux.",
+  "blames": [
+   "1-2 : mondain : comme pour Janus (ne perçoit plus les gens possédant moins d'un million d'euros que comme des formes floues).",
+   "3-4 : Géronimo ! : ne peut parler qu'en hurlant à pleins poumons ; Présence divisée par deux.",
+   "5-6 : la dèche : perd tous ses PP sauf 1 ; n'en récupère 2d6 qu'à chaque Contrat divin signé."
+  ],
+  "page": "103",
+  "combat": "Fo 4+, Ag 5, Pe 5, Vo 8, Pr 8+, Foi 7 ; 101 PP, 12 PF, BL 8/BG 17/BF 25/MS 34"
+ },
+ "Mathias": {
+  "grades": [
+   "Serviteur des délateurs",
+   "Ami des traîtres",
+   "Maître des agents doubles"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Aime surgir déguisé en prince-démon (Apparence démoniaque, Polymorphie) pour poignarder un démon dans le dos.",
+  "blames": [
+   "1-2 : schizophrène : 1d6 personnalités mineures, dont certaines se croient démons ; changements en situation de crise et au moins une fois par jour.",
+   "3-4 : mise à l'épreuve : Mathias, déguisé en démon, propose au personnage de passer renégat ; s'il accepte, il finit chez Dominique.",
+   "5-6 : redressement : perd tout statut d'ange (seuil de blessure -1, plus d'aura ni d'angélique) et tous les pouvoirs réservés aux anges."
+  ],
+  "page": "103-104",
+  "combat": "Fo 5+, Ag 6, Pe 6, Vo 7, Pr 6+, Foi 7 ; 100 PP, 12 PF, BL 9/BG 19/BF 28/MS 38 ; dague bénite ancienne (précision +6, puissance +6)"
+ },
+ "Michel": {
+  "grades": [
+   "Serviteur de la mort",
+   "Ami des combattants",
+   "Maître de guerre"
+  ],
+  "invocation": "Légendaire (il est sur terre)",
+  "communication": 1,
+  "intervention": "Brute mais pas bourrin : choisit le pouvoir le plus efficace parmi un vaste arsenal, et adore trancher avec sa gigantesque hache bipenne.",
+  "blames": [
+   "1-2 : barbare : perd toute étiquette et retenue ; Aisance sociale divisée par deux, incapable d'utiliser la technologie postérieure à 1800.",
+   "3-4 : prix de la lâcheté : perd 3d6 PP s'il fuit ou refuse un combat nécessaire.",
+   "5-6 : démembré : perd son bras droit, qui repousse quand le blâme est levé."
+  ],
+  "page": "104",
+  "combat": "Fo 9, Ag 7, Pe 6, Vo 6, Pr 5, Foi 7 ; 99 PP, 15 PF, BL 13/BG 26/BF 39/MS 52 ; hache de bataille bénie suprême tueuse de démons (précision +8, puissance +11 ; inadaptée à la parade)"
+ },
+ "Novalis": {
+  "grades": [
+   "Serviteur du repos divin",
+   "Ami des jardiniers",
+   "Maître du calme éternel"
+  ],
+  "invocation": "Légendaire (il est sur terre)",
+  "communication": 1,
+  "intervention": "Ne se bat que dans des conditions exceptionnelles, et cherche alors à neutraliser ses adversaires plutôt qu'à les détruire.",
+  "blames": [
+   "1-2 : chlorophylle : peau verte ; sans deux heures de soleil par jour, subit une blessure grave qui ne guérit qu'au soleil.",
+   "3-4 : bouseux : comme pour Jordi (aucune récupération de PP en ville).",
+   "5-6 : colérique : agressif et irritable ; Discussion divisée par deux, Pollen inopérant, perd 2d6 PP s'il déclenche une bagarre."
+  ],
+  "page": "104-105",
+  "combat": "Fo 4+, Ag 4+, Pe 7+, Vo 8, Pr 8, Foi 8+ ; 102 PP, 12 PF, BL 8/BG 17/BF 25/MS 34"
+ },
+ "Walther": {
+  "grades": [
+   "Serviteur des esprits perdus",
+   "Ami des guerriers psychiques",
+   "Maître des âmes"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Adore faire souffrir les démons et use d'abord des pouvoirs qui les blessent le plus (Jet d'eau bénite, Lumière céleste, Chant angélique).",
+  "blames": [
+   "1-2 : illuminé : comme pour Joseph (aura angélique allumée en permanence).",
+   "3-4 : pitié : perd tous ses PP s'il tue un démon, et 2d6 PP si un membre de son groupe en tue un.",
+   "5-6 : sacrifice sanglant : doit verser son sang pour chaque pouvoir utilisé, l'équivalent d'une blessure légère."
+  ],
+  "page": "105",
+  "combat": "Fo 6+, Ag 5, Pe 6+, Vo 8+, Pr 5, Foi 8+ ; 103 PP, 15 PF, BL 10/BG 21/BF 31/MS 42 ; lance bénie ancienne (précision +5, puissance +7 ; adaptée à la charge) ; limitation : schizophrénie"
+ },
+ "Yves": {
+  "grades": [
+   "Serviteur de la connaissance",
+   "Ami des sages",
+   "Maître du savoir divin"
+  ],
+  "invocation": "Légendaire",
+  "communication": 4,
+  "intervention": "Ne s'est jamais battu de mémoire d'ange : il se contente de parler, souvent avec plus d'efficacité.",
+  "blames": [
+   "1-2 : muet : comme pour Didier (ne peut plus parler, seulement par signes).",
+   "3-4 : énigmatique : ne parle que par énigmes et répond aux questions par des questions ; Baratin, Discussion et Séduction divisés par deux.",
+   "5-6 : bibliomane : ne récupère plus de PP normalement, sauf dans une bibliothèque."
+  ],
+  "page": "105-106",
+  "combat": "Fo 5, Ag 5, Pe 8, Vo 9+, Pr 9+, Foi 9+ ; 110 PP, 14 PF, BL 9/BG 18/BF 27/MS 36"
+ },
+ "Abalam": {
+  "grades": [
+   "Chevalier des fous",
+   "Capitaine de l'asile",
+   "Baron des psychopathes"
+  ],
+  "invocation": "Incroyable",
+  "communication": 1,
+  "intervention": "Redoutable sur le plan mental plutôt qu'au corps à corps ; peu de gens résistent à sa Camisole.",
+  "blames": [
+   "1-2 : discours aberrant : incapable de s'exprimer clairement ; Discussion et Séduction divisées par deux.",
+   "3-4 : étêté : perd littéralement la tête, qu'il peut porter ; aucune récupération de PP si elle est à plus d'un mètre du corps.",
+   "5-6 : menteur invétéré : dit toujours le contraire de ce qu'il pense, même en essayant de ruser."
+  ],
+  "page": "106",
+  "combat": "Fo 4, Ag 4, Pe 6, Vo 8, Pr 5+, Foi 7+ ; 96 PP, 12 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Andrealphus": {
+  "grades": [
+   "Chevalier des plaisirs infernaux",
+   "Capitaine de la jouissance démoniaque",
+   "Baron de l'orgasme éternel"
+  ],
+  "invocation": "Légendaire",
+  "communication": 1,
+  "intervention": "Un des rares à aimer être invoqué hors urgence ; assez inefficace en combat.",
+  "blames": [
+   "1-2 : perversion : n'est plus excité que par une perversion précise ; Orgasme mortel et récupération spéciale n'opèrent que par elle.",
+   "3-4 : impuissance : désirs intacts mais totalement incapable de les satisfaire.",
+   "5-6 : sexual healing : ne guérit plus naturellement ni en dépensant des PP, sauf pendant l'acte sexuel."
+  ],
+  "page": "106",
+  "combat": "Fo 3+, Ag 6, Pe 5+, Vo 7, Pr 8+, Foi 8 ; 96 PP, 10 PF, BL 6/BG 13/BF 19/MS 26"
+ },
+ "Andromalius": {
+  "grades": [
+   "Chevalier du jugement",
+   "Capitaine des légions salvatrices",
+   "Baron de la justice"
+  ],
+  "invocation": "Légendaire",
+  "communication": 4,
+  "intervention": "Implacable contre les forces du bien (Absorption du bien, Ténèbres sataniques), moins à l'aise face aux humains ou aux héros païens.",
+  "blames": [
+   "1-2 : pourfendeur des purs : rage folle dès qu'il détecte le bien, à l'inverse du blâme de Dominique.",
+   "3-4 : responsable d'office : tenu pour responsable des fautes de son groupe ; subit une limitation pour chacune imposée à un membre.",
+   "5-6 : audit permanent : comme pour Dominique, mais c'est Andromalius qui l'interroge chaque soir."
+  ],
+  "page": "107",
+  "combat": "Fo 4+, Ag 5, Pe 6+, Vo 8+, Pr 6+, Foi 8+ ; 103 PP, 13 PF, BL 7/BG 15/BF 22/MS 30 ; hache d'arme maudite ancienne tueuse d'anges (précision +5, puissance +8 ; inadaptée à la parade)"
+ },
+ "Asmodée": {
+  "grades": [
+   "Chevalier du Morpion",
+   "Capitaine du Juste Prix",
+   "Baron de la Roue de la Fortune"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "N'aime guère se battre, mais dispose de quelques talents redoutables (Jet d'acide, Pari stupide).",
+  "blames": [
+   "1-2 : parieur invétéré : avant chaque test, le joueur parie 1 PP sur l'issue ; il le perd s'il se trompe et ne gagne rien sinon.",
+   "3-4 : jeu du Destin : tire une carte d'un paquet à chaque test, un pique fait échouer ; les cartes tirées pour les attaques sont retirées, paquet vide = plus de pouvoirs offensifs.",
+   "5-6 : perdant : perd à tous les jeux auxquels il participe, même en trichant."
+  ],
+  "page": "107",
+  "combat": "Fo 4, Ag 5, Pe 5+, Vo 8, Pr 6, Foi 8 ; 97 PP, 12 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Baal": {
+  "grades": [
+   "Chevalier de l'ordre noir",
+   "Capitaine des armées infernales",
+   "Baron de la victoire"
+  ],
+  "invocation": "Légendaire",
+  "communication": 1,
+  "intervention": "Dispose de nombreuses options de combat et est assez rusé pour choisir la plus efficace.",
+  "blames": [
+   "1-2 : aveugle : comme pour Laurent (perd la vue).",
+   "3-4 : prix de la lâcheté : comme pour Michel (perd 3d6 PP s'il fuit ou refuse un combat nécessaire).",
+   "5-6 : monstre : son apparence trahit en permanence ses pouvoirs physiques (membre exotique à moitié sorti, langue de feu…)."
+  ],
+  "page": "107-108",
+  "combat": "Fo 7+, Ag 5, Pe 5, Vo 5, Pr 7, Foi 7 ; 93 PP, 12 PF, BL 10/BG 21/BF 31/MS 42 ; hache de bataille maudite suprême (précision +8, puissance +11 ; inadaptée à la parade)"
+ },
+ "Baalberith": {
+  "grades": [
+   "Chevalier des rumeurs",
+   "Capitaine du téléphone arabe",
+   "Baron du bouche à oreille"
+  ],
+  "invocation": "Difficile",
+  "communication": 5,
+  "intervention": "Déteste être appelé en plein combat et ne reste pas, sauf si son serviteur a une information capitale à transmettre.",
+  "blames": [
+   "1-2 : La poste : le logo de la Poste apparaît, indélébile, sur son front.",
+   "3-4 : bavard : parle sans arrêt, même en dormant ; une chance sur deux de laisser échapper une information secrète au pire moment.",
+   "5-6 : en triple exemplaire : comme pour Didier (tout doit être dit ou écrit trois fois, Présence divisée par deux)."
+  ],
+  "page": "108",
+  "combat": "Fo 4+, Ag 4+, Pe 7, Vo 6, Pr 5+, Foi 7+ ; 94 PP, 10 PF, BL 7/BG 15/BF 22/MS 30"
+ },
+ "Beleth": {
+  "grades": [
+   "Chevalier des preneurs de tête",
+   "Capitaine des esprits torturés",
+   "Baron des cauchemars"
+  ],
+  "invocation": "Légendaire",
+  "communication": 3,
+  "intervention": "Mal à l'aise en confrontation directe, il neutralise ses adversaires à distance (Sommeil, Peur, Charme).",
+  "blames": [
+   "1-2 : insomniaque : dort mais présente tous les signes d'un manque de sommeil ; PF maximum divisés par deux.",
+   "3-4 : cauchemar réciproque : la victime de son Cauchemar mortel le visite au sommeil suivant et peut lui infliger rêve ou cauchemar (niveau 4).",
+   "5-6 : hallucinations : hallucinations éveillées ; sur un double à l'échec, coupé de la réalité 1d6 secondes."
+  ],
+  "page": "108-109",
+  "combat": "Fo 4, Ag 5, Pe 6, Vo 8, Pr 6+, Foi 7+ ; 96 PP, 12 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Belial": {
+  "grades": [
+   "Chevalier des fournaises infernales",
+   "Capitaine du feu éternel",
+   "Baron du brasier démoniaque"
+  ],
+  "invocation": "Légendaire",
+  "communication": 1,
+  "intervention": "Malgré ses airs raffinés, une brute qui adore la violence physique, surtout quand c'est lui qui frappe.",
+  "blames": [
+   "1-2 : couronne de flammes : sa chevelure devient des flammèches orangées très voyantes.",
+   "3-4 : fièvres : le feu ronge son corps ; perd 1 PF à chaque pouvoir lié au feu.",
+   "5-6 : thermophile : ne regagne aucun PP sous 30° ou au-dessus de 50 % d'humidité."
+  ],
+  "page": "109",
+  "combat": "Fo 7, Ag 7, Pe 5, Vo 6, Pr 6, Foi 7+ ; 94 PP, 13 PF, BL 10/BG 20/BF 30/MS 40 ; espadon maudit suprême (précision +7, puissance +11), lance-flammes factice (alimenté par Jet de flammes)"
+ },
+ "Bifrons": {
+  "grades": [
+   "Chevalier du cimetière",
+   "Capitaine des légions infernales",
+   "Baron du royaume des morts"
+  ],
+  "invocation": "Incroyable",
+  "communication": 1,
+  "intervention": "Peu subtil dans ses affrontements, ce qui ne retire rien à sa dangerosité vu sa puissance.",
+  "blames": [
+   "1-2 : état cadavérique : plus aucun signe vital, chair froide et odeur de viande avariée ; Présence divisée par deux.",
+   "3-4 : vitaphobe : ne regagne aucun PP tant que des êtres vivants sont à moins de 10 m.",
+   "5-6 : syndicalisme morbide : ses morts-vivants réclament salaire, chair fraîche ou repos avant d'obéir."
+  ],
+  "page": "109",
+  "combat": "Fo 7, Ag 6, Pe 6+, Vo 6, Pr 5+, Foi 8 ; 95 PP, 13 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Caym": {
+  "grades": [
+   "Chevalier du chat noir",
+   "Capitaine de la nuée mortelle",
+   "Baron du loup démoniaque"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Chasseur et assassin redoutable : il apparaît loin du combat et tire depuis une position embusquée.",
+  "blames": [
+   "1-2 : charabia : ne parle plus aucune langue humaine, seulement par grognements et sifflements.",
+   "3-4 : répulsion animale : les animaux le craignent ; la plupart fuient, chiens de garde et prédateurs l'attaquent.",
+   "5-6 : sanguinaire : irrésistiblement attiré par le sang ; Volonté divisée par deux quand il en sent du frais."
+  ],
+  "page": "110",
+  "combat": "Fo 5+, Ag 7, Pe 8, Vo 5+, Pr 4, Foi 7 ; 93 PP, 11 PF, BL 8/BG 17/BF 25/MS 34 ; carabine maudite ancienne (précision +5, puissance +10 ; pénétration importante, portée longue)"
+ },
+ "Crocell": {
+  "grades": [
+   "Chevalier des glaces",
+   "Capitaine du blizzard",
+   "Baron des statues translucides"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Adversaire redoutable au corps à corps (griffes, Éventration, Douleur) comme à distance (Éclats de glace).",
+  "blames": [
+   "1-2 : bonhomme de glace : sa chair devient une glace légèrement translucide, sans les avantages de Couche de glace.",
+   "3-4 : engelure : perpétuellement engourdi ; Agilité divisée par deux.",
+   "5-6 : cryophile : ne regagne aucun PP au-dessus de -5°."
+  ],
+  "page": "110",
+  "combat": "Fo 8, Ag 6, Pe 6, Vo 6, Pr 4+, Foi 7+ ; 94 PP, 14 PF, BL 11/BG 22/BF 33/MS 44"
+ },
+ "Furfur": {
+  "grades": [
+   "Chevalier des rave-parties",
+   "Capitaine des DJ",
+   "Baron du sampling"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Plutôt que se battre, il déclenche des bagarres entre humains ou les dresse contre les anges (Voix impérieuse).",
+  "blames": [
+   "1-2 : rebelle : perd 2d6 PP chaque fois qu'il se plie à une règle ou à une loi (sauf ordre de mission ou du chef de groupe).",
+   "3-4 : Géronimo ! : comme pour Marc (ne parle qu'en hurlant, Présence divisée par deux).",
+   "5-6 : sourd : devient complètement sourd."
+  ],
+  "page": "110-111",
+  "combat": "Fo 7, Ag 8, Pe 5+, Vo 5, Pr 5, Foi 7 ; 93 PP, 12 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Gaziel": {
+  "grades": [
+   "Chevalier des cavernes",
+   "Capitaine des armées cavernicoles",
+   "Baron du monde souterrain"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Adversaire tenace qui s'échauffe lentement ; recourt surtout aux attaques de zone (Onde de choc, Séisme).",
+  "blames": [
+   "1-2 : agoraphobie : comme pour Daniel (phobie des espaces ouverts).",
+   "3-4 : lithophile : ne regagne de PP qu'au contact direct de la terre ; perd 2d6 PP au-dessus du 1er étage, tous en avion.",
+   "5-6 : golem : semble fait de glaise mal dégrossie."
+  ],
+  "page": "111",
+  "combat": "Fo 8+, Ag 5, Pe 7, Vo 5, Pr 4, Foi 7+ ; 93 PP, 13 PF, BL 11/BG 23/BF 34/MS 46 ; pioche maudite ancienne (précision +4, puissance +8 ; inadaptée à la parade)"
+ },
+ "Haagenti": {
+  "grades": [
+   "Chevalier des festins",
+   "Capitaine des cannibales",
+   "Baron des mets sataniques"
+  ],
+  "invocation": "Très difficile",
+  "communication": 3,
+  "intervention": "A un faible gourmand pour les anges, même nature, mais les préfère au beurre d'ail.",
+  "blames": [
+   "1-2 : obèse : énorme (près d'une tonne) ; Agilité divisée par deux, gêné partout.",
+   "3-4 : gourmet : ne mange plus qu'une substance bizarre et difficile à obtenir ; ne récupère de PP qu'en en ingurgitant des kilos.",
+   "5-6 : rage de dents : souffre atrocement en mangeant ; test de Volonté très difficile pour utiliser Goinfrerie."
+  ],
+  "page": "111-112",
+  "combat": "Fo 6+, Ag 7+, Pe 5, Vo 6, Pr 6, Foi 7 ; 13 PP (sic, coquille probable), 12 PF, BL 9/BG 19/BF 28/MS 38 ; banane maudite (précision +2, puissance +0 ; non létale)"
+ },
+ "Kobal": {
+  "grades": [
+   "Chevalier du calembour",
+   "Capitaine du jeu de mots",
+   "Baron du fou qui repeint son plafond"
+  ],
+  "invocation": "Très difficile",
+  "communication": 3,
+  "intervention": "Peut se battre avec son poulet en plastique, mais préfère abuser de ses Illusions et de Gag absurde.",
+  "blames": [
+   "1-2 : nez rouge : un gros nez rouge de clown, impossible à enlever.",
+   "3-4 : désarticulé : articulations en caoutchouc ; Agilité divisée par deux.",
+   "5-6 : dissonant : ses actions font des bruits de dessin animé ridicules."
+  ],
+  "page": "112",
+  "combat": "Fo 6, Ag 7, Pe 5+, Vo 6, Pr 8, Foi 7 ; 94 PP, 12 PF, BL 9/BG 18/BF 27/MS 36 ; poulet en plastique maudit (précision +2, puissance +0 ; non létal)"
+ },
+ "Kronos": {
+  "grades": [
+   "Chevalier de la quatrième dimension",
+   "Capitaine du sablier infernal",
+   "Baron du temps"
+  ],
+  "invocation": "Légendaire",
+  "communication": 4,
+  "intervention": "N'a qu'un pouvoir offensif, Projection temporelle, mais il est universellement redouté.",
+  "blames": [
+   "1-2 : mode rétro : ses vêtements prennent peu à peu le style d'une autre époque.",
+   "3-4 : douleur temporelle : les paradoxes temporels lui infligent une douleur de blessure légère qui s'aggrave s'il ne les répare pas.",
+   "5-6 : lapin blanc : perd 3d6 PP s'il arrive en retard à un rendez-vous."
+  ],
+  "page": "112",
+  "combat": "Fo 4, Ag 4, Pe 7+, Vo 8+, Pr 6, Foi 9 ; 103 PP, 12 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Malphas": {
+  "grades": [
+   "Chevalier de l'embrouille",
+   "Capitaine de la mauvaise foi",
+   "Baron de la mesquinerie"
+  ],
+  "invocation": "Incroyable",
+  "communication": 3,
+  "intervention": "Ne participe pas directement au conflit mais sème la zizanie chez l'adversaire (Lire les pensées, Discorde).",
+  "blames": [
+   "1-2 : cristallisation : comme pour Francis (les conflits latents se focalisent sur lui, au moins -8 colonnes en Discussion).",
+   "3-4 : mondain : comme pour Janus (ne perçoit plus les gens possédant moins d'un million d'euros que comme des formes floues).",
+   "5-6 : psychologie inversée : perd 2d6 PP chaque fois qu'il demande ou reçoit de l'aide."
+  ],
+  "page": "113",
+  "combat": "Fo 4, Ag 5, Pe 6, Vo 7, Pr 8, Foi 7 ; 95 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Malthus": {
+  "grades": [
+   "Chevalier des épidémies",
+   "Capitaine de la garde morbide",
+   "Baron de la lente décrépitude"
+  ],
+  "invocation": "Légendaire",
+  "communication": 1,
+  "intervention": "Ses maladies agissant trop lentement, il paralyse ses ennemis, les égorge, puis utilise Infection sur les cadavres.",
+  "blames": [
+   "1-2 : porteur malsain : ne récupère aucun PP s'il n'est pas exposé à un vecteur d'infection.",
+   "3-4 : allergique : les médicaments ont sur lui l'effet inverse ; entrer dans un hôpital lui inflige une blessure légère.",
+   "5-6 : fiévreux : forte fièvre ; Force et PF maximum divisés par deux."
+  ],
+  "page": "113",
+  "combat": "Fo 5, Ag 6, Pe 6, Vo 8, Pr 4, Foi 7+ ; 96 PP, 13 PF, BL 8/BG 16/BF 24/MS 32 ; dague maudite ancienne (précision +6, puissance +6)"
+ },
+ "Mammon": {
+  "grades": [
+   "Chevalier du pourboire",
+   "Capitaine des pots-de-vin",
+   "Baron de la corruption"
+  ],
+  "invocation": "Difficile",
+  "communication": 4,
+  "intervention": "Peu fait pour les champs de bataille, il calme ses agresseurs avec Charme.",
+  "blames": [
+   "1-2 : pouvoir indexé : ne récupère des PP que si le CAC 40 est en hausse (un dé par heure à défaut).",
+   "3-4 : avare : perd 2d6 PP chaque fois qu'il donne quelque chose sans contrepartie, services compris.",
+   "5-6 : mondain : comme pour Janus (ne perçoit plus les gens possédant moins d'un million d'euros que comme des formes floues)."
+  ],
+  "page": "113-114",
+  "combat": "Fo 4, Ag 5, Pe 6, Vo 7+, Pr 7+, Foi 7+ ; 96 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Morax": {
+  "grades": [
+   "Chevalier de l'imagination morbide",
+   "Capitaine de l'inspiration ultime",
+   "Baron du génie démoniaque"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Peu de pouvoirs directement utilisables : il se défend par Charme et attaque avec Malédiction « folie ».",
+  "blames": [
+   "1-2 : rimeur : ne s'exprime plus qu'en vers, en alexandrins si possible.",
+   "3-4 : muse : ne récupère plus de PP normalement, seulement 1d6 à 3d6 par œuvre créée ou inspirée.",
+   "5-6 : panne d'inspiration : perd toute créativité ; test de Foi incroyable pour utiliser un pouvoir spirituel."
+  ],
+  "page": "114",
+  "combat": "Fo 3+, Ag 4, Pe 7, Vo 6, Pr 7+, Foi 7 ; 94 PP, 9 PF, BL 6/BG 13/BF 19/MS 26"
+ },
+ "Nisroch": {
+  "grades": [
+   "Chevalier du joint",
+   "Capitaine des junkies",
+   "Baron des dealers"
+  ],
+  "invocation": "Difficile",
+  "communication": 4,
+  "intervention": "Attaque rarement de front : tire depuis une cachette et se téléporte régulièrement.",
+  "blames": [
+   "1-2 : en manque : symptômes de manque permanents envers une substance anodine qu'il ignore.",
+   "3-4 : accro aux accros : doit réussir son Accoutumance au moins une fois par jour, sinon subit le manque.",
+   "5-6 : retours d'acide : sur un échec spécial ou critique, hallucination qui le coupe de la réalité (1d6 rounds ou 1d6 minutes)."
+  ],
+  "page": "114",
+  "combat": "Fo 5, Ag 6, Pe 5+, Vo 7+, Pr 6+, Foi 7 ; 95 PP, 12 PF, BL 8/BG 16/BF 24/MS 32 ; petit calibre maudit ancien (précision +4, puissance +9 ; pénétration importante, portée moyenne)"
+ },
+ "Nog": {
+  "grades": [
+   "Chevalier des bâillements",
+   "Capitaine de la glande",
+   "Baron de l'A.N.P.E"
+  ],
+  "invocation": "Légendaire",
+  "communication": 0,
+  "intervention": "Très doué pour arrêter un combat (Glandage, Sommeil), beaucoup moins pour y prendre part.",
+  "blames": [
+   "1-2 : somnambule : dort en permanence et agit en somnambule ; -4 colonnes à toutes ses actions.",
+   "3-4 : grosse fatigue : son maximum de PF tombe à 1.",
+   "5-6 : oreiller maudit : trouve un gros oreiller en plumes dans chaque contenant qu'il ouvre."
+  ],
+  "page": "115",
+  "combat": "Fo 4, Ag 4, Pe 5, Vo 8, Pr 5, Foi 9 ; 103 PP, 12 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Nybbas": {
+  "grades": [
+   "Chevalier des divertissements de masse",
+   "Capitaine des leaders d'opinion",
+   "Baron de l'opium du peuple"
+  ],
+  "invocation": "Difficile",
+  "communication": 4,
+  "intervention": "Monte les humains contre les anges (Message subliminal, Voix impérieuse) ; attaqué, il lance Ténèbres sataniques et se fond dans la foule.",
+  "blames": [
+   "1-2 : téléphage : ne récupère des PP qu'en regardant la télévision.",
+   "3-4 : syndrome Guy Lux : voit et appelle toutes les femmes Simone et tous les hommes Léon, sosies de vedettes télé.",
+   "5-6 : zapping : ne peut poursuivre une activité plus de 2d6 secondes ou minutes ; même ses rêves changent sans cesse."
+  ],
+  "page": "115",
+  "combat": "Fo 4, Ag 4, Pe 4+, Vo 7, Pr 8+, Foi 7 ; 95 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Ouikka": {
+  "grades": [
+   "Chevalier des geôliers",
+   "Capitaine des terroristes",
+   "Baron des attentats"
+  ],
+  "invocation": "Très difficile",
+  "communication": 3,
+  "intervention": "Préfère embuscades et guérilla aux attaques frontales, et excelle dans les premières.",
+  "blames": [
+   "1-2 : terroriste : ne récupère plus de PP normalement, seulement 1d6 par victime d'un attentat qu'il organise.",
+   "3-4 : kamikaze : Ouikka lui a implanté une bombe qu'il fera sauter au milieu d'anges au moment opportun (+2 au test de réincarnation).",
+   "5-6 : voyageur : perd 1d6 PP après deux nuits au même endroit ; blessure légère après une semaine dans la même ville, fatale après un mois."
+  ],
+  "page": "115-116",
+  "combat": "Fo 6, Ag 7, Pe 6, Vo 5, Pr 6, Foi 7 ; 12 PP (sic, coquille probable), 11 PF, BL 9/BG 18/BF 27/MS 36 ; gros calibre maudit suprême (précision +6, puissance +12 ; pénétration importante, portée moyenne)"
+ },
+ "Samigina": {
+  "grades": [
+   "Chevalier des Carpathes",
+   "Capitaine de la Roumanie",
+   "Baron des armées vampiriques"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Accro au sang angélique, il est très doué pour la lutte (Étouffement, Baiser vampirique).",
+  "blames": [
+   "1-2 : superstitions : soumis aux faiblesses classiques des vampires (invitation, ail, croix, soleil, pieu).",
+   "3-4 : nocturne : -4 colonnes à toutes ses actions de jour ; ne récupère des PP que la nuit, dans un cercueil.",
+   "5-6 : goût du sang : seul le sang humain du sexe opposé le rassasie ; chaque jour sans en boire compte comme un jour de jeûne."
+  ],
+  "page": "116-117",
+  "combat": "Fo 7, Ag 5+, Pe 4, Vo 5, Pr 7+, Foi 7 ; 93 PP, 12 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Scox": {
+  "grades": [
+   "Chevalier de la possession",
+   "Capitaine des armées humaines",
+   "Baron de la communion démoniaque"
+  ],
+  "invocation": "Difficile",
+  "communication": 2,
+  "intervention": "Spécialiste de la manipulation mentale (Charme, Lire les pensées) ; il attaque les anges avec Ténèbres sataniques.",
+  "blames": [
+   "1-2 : gourou : ne récupère plus de PP normalement, seulement 1 PP par humain entrant dans une secte qu'il contrôle.",
+   "3-4 : perte d'âme : Scox lui prend la moitié de son âme ; Chance/Foi et total de PP divisés par deux.",
+   "5-6 : syndicalisme sectaire : comme pour Bifrons, mais ce sont ses démons mineurs qui réclament des compensations."
+  ],
+  "page": "117",
+  "combat": "Fo 4, Ag 4, Pe 5, Vo 7+, Pr 7, Foi 8+ ; 97 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Shaytan": {
+  "grades": [
+   "Chevalier du furoncle",
+   "Capitaine des lépreux",
+   "Baron de l'eczéma"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Commence presque toujours par Décrépitude ; si cela ne suffit pas, il s'acharne sur un ennemi (Membre exotique, Éventration).",
+  "blames": [
+   "1-2 : furoncle : couvert de furoncles et de boutons ; Présence divisée par deux.",
+   "3-4 : muse impure : ne récupère de PP que par des œuvres franchement laides (1d6 à 3d6) et 1 PP par personne défigurée.",
+   "5-6 : immondain : ne perçoit les personnes de Présence supérieure à 2 que comme des taches floues (voir « mondain » de Janus)."
+  ],
+  "page": "117",
+  "combat": "Fo 7, Ag 5, Pe 5, Vo 7+, Pr 4+, Foi 7+ ; 96 PP, 14 PF, BL 10/BG 20/BF 30/MS 40"
+ },
+ "Uphir": {
+  "grades": [
+   "Chevalier de la Strychnine",
+   "Capitaine du Pyralène",
+   "Baron de la Dioxine"
+  ],
+  "invocation": "Incroyable",
+  "communication": 2,
+  "intervention": "Dangereux à attaquer (Peau acide, Vengeance toxique) ; projette de l'acide et use de Perturbation de pouvoir contre les coriaces.",
+  "blames": [
+   "1-2 : anaturel : asphyxie en milieu sain ; blessures croissantes avec la durée (heure : BL, jour : BG, semaine : BG, mois : MS).",
+   "3-4 : toxique : empoisonne lentement son entourage, ses camarades et son équipement.",
+   "5-6 : bio-luminescent : émet une lueur verdâtre, discrète au jour mais très voyante la nuit."
+  ],
+  "page": "118",
+  "combat": "Fo 6, Ag 5+, Pe 5+, Vo 7+, Pr 5+, Foi 7 ; 95 PP, 13 PF, BL 9/BG 18/BF 27/MS 36"
+ },
+ "Valefor": {
+  "grades": [
+   "Chevalier des larcins",
+   "Capitaine des brigands",
+   "Baron du crime parfait"
+  ],
+  "invocation": "Très difficile",
+  "communication": 2,
+  "intervention": "Privilégie la discrétion au combat ; s'il doit se battre, il sort un élégant pistolet semi-automatique.",
+  "blames": [
+   "1-2 : prodigue : comme pour Janus (doit donner tout ce qu'il vole, perd tous ses PP s'il garde un butin plus de 24 h).",
+   "3-4 : misérable : comme pour Janus (ne récupère des PP qu'en réussissant des casses).",
+   "5-6 : borsalino : porte en permanence un borsalino noir impossible à ôter, même sous la douche."
+  ],
+  "page": "118",
+  "combat": "Fo 5, Ag 9, Pe 7+, Vo 7, Pr 7+, Foi 7 ; 100 PP, 12 PF, BL 9/BG 18/BF 27/MS 36 ; petit calibre maudit (précision +3, puissance +9 ; pénétration importante, portée moyenne)"
+ },
+ "Vapula": {
+  "grades": [
+   "Chevalier du moteur à explosion",
+   "Capitaine du béton armé",
+   "Baron de cyanure"
+  ],
+  "invocation": "Très difficile",
+  "communication": 2,
+  "intervention": "N'aime pas se battre, pouvoirs surtout défensifs ; n'emploie Trait d'énergie que s'il ne risque rien et que l'invocateur le mérite.",
+  "blames": [
+   "1-2 : rat de laboratoire : hors d'un laboratoire, malheureux et déplacé ; Présence divisée par deux.",
+   "3-4 : cyborg : comme pour Jean (membre mécanique peu fiable, caractéristique divisée par deux).",
+   "5-6 : interférences : perturbe l'électronique (téléphones inutilisables ; ordinateurs et voitures une chance sur deux de défaillir)."
+  ],
+  "page": "118-119",
+  "combat": "Fo 4, Ag 4, Pe 6+, Vo 7, Pr 4, Foi 7+ ; 95 PP, 11 PF, BL 7/BG 14/BF 21/MS 28"
+ },
+ "Vephar": {
+  "grades": [
+   "Chevalier des mers",
+   "Capitaine des légions aquatiques",
+   "Baron du royaume au-delà du miroir"
+  ],
+  "invocation": "Légendaire",
+  "communication": 2,
+  "intervention": "Dans l'eau, prend une forme monstrueuse (Forme de combat, Membre exotique, Poison) ; sur terre, combat au trident et garde Vie subaquatique pour les plus dangereux.",
+  "blames": [
+   "1-2 : déshydratation : blessure légère par heure hors de l'eau ; ne récupère des PP qu'immergé.",
+   "3-4 : branchies : branchies voyantes, yeux globuleux, peau écailleuse, et sifflote du Schubert sans arrêt.",
+   "5-6 : bébé phoque : un bébé phoque bruyant le suit partout ; s'il le tue, un autre le remplace dans l'heure."
+  ],
+  "page": "119",
+  "combat": "Fo 7, Ag 5, Pe 6+, Vo 6, Pr 5, Foi 7+ ; 94 PP, 13 PF, BL 10/BG 20/BF 30/MS 40 ; trident maudit ancien (précision +5, puissance +7 ; adapté à la charge)"
+ }
+}

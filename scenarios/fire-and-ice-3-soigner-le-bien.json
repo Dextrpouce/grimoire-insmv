@@ -1,0 +1,1312 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-3-soigner-le-bien",
+      "nom": "Fire and Ice (scénario 3) – Soigner le Bien par le Mal",
+      "resume": "Nihil ex nihilo, scénario 3 (INS). Beleth, incarné en secret dans Monsieur Fabien, envoie les PJ en sous-marin au C.H.U. Louis Pasteur sous un prétexte. Trois intrigues en parallèle : le trafic de médicaments du professeur Morlaix (démon de Malthus) et de son associé angélique, la folie qui gagne le pavillon psychiatrique, et les morts de nouveau-nés en maternité. Toutes mènent à Yolande, alias Andrealphus, qui nourrit Damien de bébés ; elle se révèle, s'échappe et laisse les PJ face aux You-Yous. La piste mène en Sierra Leone.",
+      "notes": "Source : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68. Scénario d'enquête et d'ambiance médicale ; le climat se durcit à partir d'ici.\nDéroulement : briefing → arrivée et couverture au C.H.U. → trois dossiers en parallèle (trafic de Morlaix, pavillon psychiatrique, maternité), ponctués d'incidents errants → poursuite de Yolande et baston avec les You-Yous → hôtel Bellevue et débriefing.\nPNJ sans stats : Monsieur Fabien (Beleth incarné), Gilbert, Aurélie ; le bébé Athanase et ses parents.\n\nRécompenses : aucune indiquée dans ces pages (« pas de cadeau de fin de scénario ») ; Fabien promet une récompense conséquente pour la mission suivante en Sierra Leone.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reportée en Foi). Yolande/Andrealphus : fiche minimale estimée (voir livre de base p. 106).",
+      "scenes": [
+        {
+          "id": "fi3-sc-briefing",
+          "nom": "1. Opération Brise matinale",
+          "lieu": "Centre de Tri, Paris – après une semaine de congé syndical",
+          "notes": "Secret MJ (« Péril en la demeure ») : depuis l'épisode précédent, Beleth a retrouvé la trace des PJ et s'est incarné dans le corps de Monsieur Fabien (l'âme du démon de Baalberith est expulsée). Il veut une équipe neutre, qui a vu Yolande de près, pour enquêter discrètement sur les projets de Damien.\nRègles de la relation : le prince reste incognito le plus longtemps possible ; il garantit le silence des PJ (morts, lavage de cerveau, ou compromis jusqu'au cou). Il n'est pas omniscient et peut faire des erreurs de calcul.\nDeux détails trahissent l'imposture : Fabien ne raconte plus son anecdote de Laponie spontanément (seulement si on la lui réclame) et allume désormais sa pipe au briquet au lieu des allumettes.\n\nBriefing : Fabien accueille les PJ sur le perron, les félicite, puis Gilbert et Aurélie se joignent à eux autour du percolateur.\n• Mission officielle : une circulaire de Beleth cherche un lieu de repos sûr, au contact de nombreux humains, pour une demi-douzaine de ses serviteurs (étude de créatures endormies). Plusieurs sites sont testés (maisons de retraite, cités-dortoirs, rayons literie…).\n• Les PJ vont en sous-marin au C.H.U. Louis Pasteur (Hauts-de-Seine) pendant trois ou quatre jours ; contact sur place : le professeur Morlaix, démon de Malthus.\n• Rapport circonstancié attendu ; signaler toute activité angélique ou de la troisième force. Moyens d'infiltration libres.\nSi les PJ vérifient a posteriori : un pilier de bar du Chez Régis leur apprendra que Beleth a bien d'autres chats à fouetter… et leur enquête est la seule réellement lancée.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi3-sc-chu",
+          "nom": "2. Arrivée au C.H.U. Louis Pasteur",
+          "lieu": "C.H.U. Louis Pasteur – clinique d'orthopédie, bâtiment E, 7e étage",
+          "notes": "Le C.H.U. : énorme étoile de béton déformée par les ajouts (années 50), 8 étages, 3 sous-sols, 2 500 places de parking, 2 200 lits, 1 300 médicaux et 5 000 non-médicaux. Polyclinique tentaculaire, kafkaïenne, ouverte 24 h/24. Choisir quatre ou cinq lieux phares et laisser le reste dans le flou ; saupoudrer de jargon médical.\nAprès une demi-heure d'errance, les PJ trouvent Morlaix en pleine tournée, suivi de ses internes. Il faut patience et tact pour le voir seul, entre deux portes, avant qu'il ne file au bloc.\nMorlaix n'a pas été prévenu et le prend mal : qu'ils ne traînent pas dans son service et se trouvent vite une couverture. Il nie toute activité angélique et ne lâche son numéro de bipeur que s'ils insistent.\n\nCouverture : se faire passer pour patient est une très mauvaise idée (les démons ne souffrent pas, métabolisme différent) ; simple visiteur, ils seront vite refoulés. Une blouse et un badge suffisent, au risque d'être réquisitionné par un supérieur.\nTrois intrigues surnaturelles se mêlent, dont deux liées à la campagne ; elles se traitent en parallèle.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi3-morlaix-1",
+              "nom": "Professeur Augustin Morlaix",
+              "source": "Démon de Malthus, grade 2 – chef de clinique orthopédique",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 22,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Infection",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction : maladie",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                }
+              ],
+              "talents": "Métier (chirurgien orthopédique) 5, Médecine 4, Séduction 3, Hobby (administration hospitalière) 2, Faux et usage de faux 3, Parler du nez 4. Couverture : chirurgien réputé",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sexagénaire bedonnant au crâne dégarni, pince-nez, voix nasillarde. Hautain avec les patients, pédant avec les collègues, méprisant avec les internes, d'abord agressif avec les PJ.\nCraint de perdre son poste et d'être repéré par Notre-Dame : très prudent, prêt à tout arrêter à la moindre alerte.\nSecret : trafic de médicaments psychotropes (ordonnances falsifiées, doubles cahiers de commande, stagiaires payés) avec l'ange Bernauld. N'avoue qu'avec insistance ; les « révélations » de Bernauld le font parler de colère.\nAucun talent de combat ni défense dans le livre : Défense 2 et coup de poing par défaut (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-morlaix"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi3-sc-incidents",
+          "nom": "3. Incidents errants (table D66)",
+          "lieu": "N'importe quel service du C.H.U.",
+          "notes": "À tirer quand le rythme faiblit (D66) :\n• 11-12 Urgence : un accidenté arrive sur un brancard ; les PJ en blouse sont réquisitionnés.\n• 13-14 Calme plat : service désert, néons qui clignotent, ambiance inquiétante.\n• 15-16 Affluence : lits partout dans les couloirs, infirmières à bout.\n• 21-22 Trois alcooliques en cure se sont barricadés… en fait ils se goinfrent dans les cuisines.\n• 23-24 Eustache, patient de psychiatrie, ne veut que boire de l'eau (potomanie).\n• 25-26 Un garçonnet de six ans, opéré de l'œil, s'est perdu et cherche l'ophtalmo.\n• 31-32 Visite d'inspection ministérielle : tout le monde est sur les dents.\n• 33-34 Deux vieilles dames se battent pour une histoire de ronflements.\n• 35-36 Un patient s'effondre devant les PJ : gestes de premiers secours ou il meurt en trois minutes.\n• 41-42 Des clowns bénévoles en pédiatrie ; des adultes exigent aussi leur visite.\n• 43-44 Travaux en plein service, au grand dam du personnel.\n• 45-46 Une star de la chanson hospitalisée : marée de fans.\n• 51-52 Courses d'ambulances sur les parkings, avec paris du personnel.\n• 53-54 Pot de départ en retraite d'un professeur, au champagne.\n• 55-56 Un brancardier confie deux cadavres à descendre à la morgue (visite des sous-sols).\n• 61-62 Début d'incendie : pompiers et évacuation.\n• 63-64 Un tueur à gages (9 mm silencieux) vient finir une victime ratée.\n• 65-66 Quatre héroïnomanes armés de couteaux et seringues pillent la pharmacie.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi3-sc-science",
+          "nom": "4. Premier dossier : le trafic de Morlaix",
+          "lieu": "Clinique d'orthopédie, bureaux de la comptabilité – jours 1 à 3",
+          "notes": "Morlaix arrondit ses fins de mois depuis deux ou trois ans avec un trafic de psychotropes (antalgiques, antidépresseurs…) vendu à la haute société et à ses collègues : ordonnanciers falsifiés, doubles cahiers de commande, stagiaires grassement payés.\nIl y a huit mois, Christophe Bernauld (finances du C.H.U.) a découvert la combine en maquillant lui-même les comptes pour son propre trafic de matériel. Il s'est associé : Bernauld est un ange de Marc. Les deux compères s'apprécient (vol, falsification, croquet du dimanche à Châtenay-Malabry).\n\nDéroulement :\n• Jour 1 : Morlaix fait suivre les PJ par Gonzague (blouse et badge d'une infirmière en congé parental, « Claude Novack »). Piège même grossier = Gonzague pris.\n• Jour 2 : Bernauld, averti, panique : brûle la moitié de ses dossiers, glisse le reste dans le bureau de Morlaix. Fouiller ce bureau révèle le trafic et mène à Bernauld, qui joue le comptable terrorisé et menacé (prétend avoir été endormi par Morlaix).\n• Il faut insister et patienter pour que Morlaix avoue ; les « révélations » de Bernauld le font parler de son associé sous la colère.\n• Entre-temps Bernauld a signalé les PJ à Notre-Dame : Thanauser (ange de Laurent) vient les éliminer, de préférence hors du C.H.U. Une ou deux échauffourées, puis le garder pour le final.\nSi les PJ rament : un témoin providentiel (infirmière, patient, collègue de Bernauld).\nConséquences : à eux de choisir. Si Morlaix s'en sort, il devient bien plus coopératif et ouvre l'accès à des informations confidentielles.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi3-morlaix-2",
+              "nom": "Professeur Augustin Morlaix",
+              "source": "Démon de Malthus, grade 2 – chef de clinique orthopédique",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 5,
+              "pp": 22,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Infection",
+                  "r": 6
+                },
+                {
+                  "n": "Malédiction : maladie",
+                  "r": 4
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Anaérobiose",
+                  "r": 0
+                }
+              ],
+              "talents": "Métier (chirurgien orthopédique) 5, Médecine 4, Séduction 3, Hobby (administration hospitalière) 2, Faux et usage de faux 3, Parler du nez 4. Couverture : chirurgien réputé",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sexagénaire bedonnant au crâne dégarni, pince-nez, voix nasillarde. Hautain avec les patients, pédant avec les collègues, méprisant avec les internes, d'abord agressif avec les PJ.\nCraint de perdre son poste et d'être repéré par Notre-Dame : très prudent, prêt à tout arrêter à la moindre alerte.\nSecret : trafic de médicaments psychotropes (ordonnances falsifiées, doubles cahiers de commande, stagiaires payés) avec l'ange Bernauld. N'avoue qu'avec insistance ; les « révélations » de Bernauld le font parler de colère.\nAucun talent de combat ni défense dans le livre : Défense 2 et coup de poing par défaut (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-morlaix"
+            },
+            {
+              "id": "fi3-gonzague-3",
+              "nom": "Gonzague",
+              "source": "Familier, majordome de Morlaix",
+              "type": "familier",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 5,
+                "pe": 4,
+                "vo": 4,
+                "pr": 6,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 8,
+              "seuilsFix": [
+                3,
+                7,
+                10,
+                14
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 2
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 2
+                }
+              ],
+              "talents": "Aisance sociale 4, Corps à corps 3, Discussion 3, Séduction 4, Médecine 2",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grande bringue d'apparence quadragénaire, yeux apeurés, petite moustache, visage osseux, port princier, blouse trop ample. Vouvoie tout le monde, poli jusque dans la bagarre.\nFile les PJ dès le premier jour sous la blouse d'une infirmière en congé parental (badge « Claude Novack ») : peu discret, sans imagination, tombe dans le moindre piège.\nDéfense non donnée : 2 (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-gonzague"
+            },
+            {
+              "id": "fi3-bernauld-4",
+              "nom": "Christophe Bernauld",
+              "source": "Ange de Marc, grade 1 – comptable du C.H.U.",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 10,
+                "vo": 10,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 7,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Contrat divin",
+                  "r": 4
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Aura de pacification",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                }
+              ],
+              "talents": "Métier (comptable) 5, Arnaques diverses 4, Corps à corps 3+, Défense 3+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeune cadre dynamique trentenaire, bronzé aux U.V. Rêve d'entrer au Club 406 (anges fortunés) ; investit ses gains dans des arnaques (dont un trafic de déchets radioactifs vers le Golfe). Ne tiendrait pas trois heures face à un contrôle de sa hiérarchie.\nResponsable financier qui a découvert la combine de Morlaix il y a huit mois en falsifiant lui-même les comptes, et s'y est associé.\nJour 2 : panique, détruit la moitié de ses dossiers, glisse l'autre dans le bureau de Morlaix et se pose en comptable terrorisé et victime ; signale les PJ à Notre-Dame.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-bernauld"
+            },
+            {
+              "id": "fi3-thanauser-5",
+              "nom": "Thanauser",
+              "source": "Ange de Laurent, grade 2 – émissaire de Notre-Dame",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 23,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Revolvers 9 mm (deux à la fois)",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 5, Défense 5, Conduite 4, Tir 1 (armes de poing 3), Avoir l'air ténébreux et inquiétant 3, Fredonner l'introduction de Thanauser 4. Avertissement sans frais : intégrisme",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand brun ténébreux, cache-poussière et Ray-Ban, grosse moto japonaise ; caricature d'ange vengeur à monosyllabes et répliques de baston. Fredonne du Wagner sans desserrer les dents quand le stress monte.\nEnvoyé par Notre-Dame sur signalement de Bernauld : éliminer les PJ vite, de préférence hors du C.H.U. Discret ; une ou deux échauffourées, puis peut revenir pour le final.\nRevolvers : petit calibre de R.ARMES (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-thanauser"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi3-ch-trafic",
+              "q": "Que font les PJ du trafic Morlaix-Bernauld ?",
+              "opts": [
+                {
+                  "t": "Ils dénoncent Morlaix",
+                  "suite": "Morlaix est discrédité et ne les aidera plus ; Bernauld s'en tire."
+                },
+                {
+                  "t": "Ils tuent Bernauld",
+                  "suite": "Le trafic s'arrête ; risque de nouvelles représailles angéliques."
+                },
+                {
+                  "t": "Ils livrent Bernauld à sa hiérarchie",
+                  "suite": "Option élégante : jugé par ses pairs. Morlaix, reconnaissant et descendu de son piédestal, devient un allié."
+                },
+                {
+                  "t": "Ils laissent faire",
+                  "suite": "Le trafic continue en paix ; Morlaix leur doit une faveur."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi3-sc-psy",
+          "nom": "5. Deuxième dossier : le pavillon psychiatrique",
+          "lieu": "Pavillon psychiatrique, caves et morgue du C.H.U.",
+          "notes": "Rumeurs : depuis dix jours les fous sont intenables (pleine lune ? nouveau chef ?) et les calmants vont manquer ; en parallèle, huit morts suspectes en maternité en une semaine, que le personnel étouffe.\nLe pavillon : bâtiment autonome au bout d'une esplanade-parking, relié aux sous-sols par des couloirs souterrains. Règlement strict (pièce d'identité, fouille, portes sécurisées), murs bleu ciel, fenêtres entrebâillées de 5 cm, prises au plafond, fumeurs dépendants des infirmiers.\nChef de clinique : Paras Ram, ange de Guy, en poste depuis un an. Le personnel signale une moitié de patients en crise, certains en pleine crise mystique (visions de la Vierge, du Christ) ; ceux qu'on approche débitent un charabia mystico-apocalyptique.\nÉvénement : deux patients tranquilles, Calvin et Collaud, ont fugué par une porte mal fermée vers les sous-sols. Si les PJ les retrouvent les premiers, ils les voient se prosterner devant les petits cadavres de la morgue puis vouloir les crucifier aux murs. Faciles à maîtriser, incapables de parler.\nConséquence : prévenue par Paras Ram, une escouade de soldats de Dieu menée par Xavier Chanterelle (ange de Dominique) se met à rôder autour du C.H.U.\nIndice : en interrogeant le personnel, on date la première crise mystique ; le registre des visites (accessible via Morlaix, ou à voler) mentionne ce jour-là, vers 17 h, une certaine Yolande Jolimont, enceinte, dont les infirmières se souviennent.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi3-paras-ram-6",
+              "nom": "Professeur Paras Ram",
+              "source": "Ange de Guy, grade 1 – chef de clinique psychiatrique",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 10,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 14,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Guérison",
+                  "r": 6
+                },
+                {
+                  "n": "Bénédiction : guérison de folies",
+                  "r": 6
+                },
+                {
+                  "n": "Immunité contre les maladies et les poisons",
+                  "r": 0
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                }
+              ],
+              "talents": "Métier (psychiatre) 5, Médecine 5+, Parler plein de langues différentes 4, Sourire en hochant la tête en signe de compassion 3. Avertissement sans frais : lâche",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Malgache d'origine tamoule, petit homme à la peau très noire, cheveux lisses, phalanges poilues. En poste depuis un an ; excellent médecin, souvent absent (missions pour Notre-Dame).\nNe repère pas les PJ au début s'ils restent discrets. Fuit au premier danger ; repéré, il avoue tout et plus encore. Son acte le plus courageux : appeler des renforts.\nDéfense non donnée : 2 (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-paras-ram"
+            },
+            {
+              "id": "fi3-calvin-collaud-7",
+              "nom": "Calvin et Collaud",
+              "source": "Patients psychiatriques fugueurs",
+              "type": "humain",
+              "qty": 2,
+              "car": {
+                "fo": 2,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 5
+              },
+              "def": 4,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Corps à corps 2, Défense 2, Baver 3, Crucifier des cadavres 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaires aux yeux révulsés, cheveux en bataille, barbe mal rasée, pyjamas verts trop grands. L'un autiste prostré depuis quatre ans, l'autre schizophrène paisible. Convertis par l'influence du fœtus, mais pas plus loquaces qu'un râle.\nLeur Ch (2+) est reportée en Foi.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-calvin-collaud"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi3-sc-maternite",
+          "nom": "6. Troisième dossier : la maternité",
+          "lieu": "Clinique obstétrique, vestiaires et parking du C.H.U.",
+          "notes": "Secret : Damien s'est réveillé dans le ventre d'Andrealphus il y a deux semaines, affamé. Après avoir tenté de se nourrir des fous (effet décevant), il pousse sa mère porteuse à tuer des nouveau-nés. Andrealphus, déguisée en infirmière stagiaire en obstétrique, a laissé assez de traces pour que Beleth la repère.\nLes huit bébés : quatre morts dans leur sommeil au dortoir (étouffés à l'oreiller, pris pour des morts subites), deux prématurés lors d'une panne de couveuse (sabotée), deux mort-nés (Absorption de douleur pendant l'accouchement). À chaque fois, la « petite nouvelle » était dans les parages.\nPersonnel méfiant, enquête interne en cours ; une couverture solide est nécessaire. Quelques sages-femmes au bord de la crise de nerfs parlent avec un peu de psychologie.\nYolande est introuvable. L'infirmière en chef (ou Morlaix) ouvre son casier : boîte à outils, pantalon moulant et tunique ample, maquillage, Viagra, deux sacs de viande crue (poulet, haché, charcuterie, foie). Dans un sac à main : faux permis au nom de Yolande Jolimont (adresse bidon) et clés d'une Mégane de location beige sur le parking. Dans la boîte à gants : carte de l'hôtel Bellevue (Paris XIe) et une grosse clé n° 13.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi3-sc-poursuite",
+          "nom": "7. Comme on se retrouve !",
+          "lieu": "Clinique obstétrique puis sous-sols du C.H.U.",
+          "notes": "Par hasard, en traversant l'obstétrique, les PJ voient Yolande parler à une jeune mère (son bébé Athanase dans les bras, le père fier à côté). Elle les reconnaît, sourit, arrache le bébé et s'enfuit.\nPoursuite : couloirs bondés (pouvoirs visuels déconseillés), internes, lits roulants, fauteuils, plateaux-repas ; Yolande saute dans un ascenseur vers les sous-sols, labyrinthe de couloirs et de galeries bétonnées où ses pas résonnent de partout. Elle est très affaiblie (PP 3) et cherche un coin isolé pour tuer le bébé, s'en nourrir et se téléporter.\nDans un recoin, elle serre le cou du nourrisson. Si on la menace, elle se révèle : « flash » d'aura de prince-démon qui illumine tout le C.H.U. Les PJ devraient hésiter… Elle étrangle Athanase (arc lumineux rouge entre l'enfant et son ventre), reprend des couleurs (PP 8), leur souhaite bon courage et disparaît en laissant le corps.\nC'est alors que débarquent les You-Yous attirés par l'aura (cris, prières en latin, jurons angéliques) : pour eux, les démons sont responsables de tout. Grosse baston dans les sous-sols ; ils ne lâchent prise que si le combat devient trop visible (en remontant dans la foule, par exemple). Thanauser peut se joindre au final.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi3-yolande-8",
+              "nom": "Yolande Jolimont (Andrealphus)",
+              "source": "Prince-démon du sexe, affaibli",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 3,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 0
+                },
+                {
+                  "n": "Orgasme mortel",
+                  "r": 0
+                },
+                {
+                  "n": "Absorption de douleur",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 0
+                }
+              ],
+              "talents": "Séduction, Kama sutra",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici). Fiche minimale : caractéristiques et pouvoirs estimés, PF et seuils laissés au calcul automatique. PP 3 pendant la poursuite, remontent à 8 après la mort d'Athanase.\nJeune femme mate aux yeux sombres, cheveux bruns très courts, beauté trop lisse et féline ; blouse d'infirmière trop grande sur un ventre proéminent. Porte Damien, qui l'oblige à se nourrir de nouveau-nés.\nInaffrontable dans ce scénario : se révèle (« flash » d'aura de prince-démon), tue le bébé et se téléporte.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-yolande"
+            },
+            {
+              "id": "fi3-chanterelle-9",
+              "nom": "Xavier Chanterelle",
+              "source": "Ange de Dominique, grade 1 – chef d'escouade",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 4,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 16,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Peur",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 4
+                },
+                {
+                  "n": "Jet d'eau bénite",
+                  "r": 4
+                },
+                {
+                  "n": "Jugement",
+                  "r": 4
+                }
+              ],
+              "talents": "Savoir militaire 1+ (tactique 3), Sixième sens 3, Défense 3, Avoir l'air à côté de la plaque 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Surnommé « le champignon » : corps rachitique, membres courts, grosse tête surmontée d'une touffe de cheveux crépus. Allure comique trompeuse : esprit redoutable, fidélité absolue au Bien.\nPrévenu par Paras Ram après la fugue des fous ; rôde autour du C.H.U. avec son escouade.\nAucune arme dans le livre : coup de poing par défaut (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-chanterelle"
+            },
+            {
+              "id": "fi3-gratchen-10",
+              "nom": "Ulrike, Tania, Veronika, Lotte et Gisella",
+              "source": "Soldats de Dieu, les « Grätchen de Notre-Dame »",
+              "type": "soldat",
+              "qty": 5,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 6,
+                "foi": 5
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 4,
+              "pp": 4,
+              "seuilsFix": [
+                3,
+                6,
+                9,
+                12
+              ],
+              "armes": [
+                {
+                  "n": "M16",
+                  "att": 8,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                },
+                {
+                  "n": "Couteau papillon",
+                  "att": 2,
+                  "prec": -1,
+                  "puis": -1,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes d'épaule 4), Séduction 3, Défense 3, Jurer en allemand 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Belles blondes germano-scandinaves aux joues roses, en blouses blanches réglementaires (stéthoscope au cou). Air ingénu et effrayé : effet de surprise au combat.\nLotte porte aussi trois grenades (précision −4, puissance 4, aire d'effet).\nM16 : fusil-mitrailleur de R.ARMES. Couteau papillon : cran d'arrêt, sans talent de mêlée dans le livre (attaque estimée au niveau 1).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-gratchen"
+            },
+            {
+              "id": "fi3-thanauser-11",
+              "nom": "Thanauser",
+              "source": "Ange de Laurent, grade 2 – émissaire de Notre-Dame",
+              "type": "ange",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 10,
+                "pe": 6,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 9,
+              "pp": 23,
+              "seuilsFix": [
+                8,
+                16,
+                24,
+                32
+              ],
+              "armes": [
+                {
+                  "n": "Épée bénie mineure",
+                  "att": 10,
+                  "prec": 2,
+                  "puis": 4,
+                  "melee": true
+                },
+                {
+                  "n": "Revolvers 9 mm (deux à la fois)",
+                  "att": 6,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 10
+                },
+                {
+                  "n": "Juste-lame",
+                  "r": 6
+                },
+                {
+                  "n": "Décharge électrique",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mal",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Esquive acrobatique",
+                  "r": 2
+                }
+              ],
+              "talents": "Combat 5, Défense 5, Conduite 4, Tir 1 (armes de poing 3), Avoir l'air ténébreux et inquiétant 3, Fredonner l'introduction de Thanauser 4. Avertissement sans frais : intégrisme",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand brun ténébreux, cache-poussière et Ray-Ban, grosse moto japonaise ; caricature d'ange vengeur à monosyllabes et répliques de baston. Fredonne du Wagner sans desserrer les dents quand le stress monte.\nEnvoyé par Notre-Dame sur signalement de Bernauld : éliminer les PJ vite, de préférence hors du C.H.U. Discret ; une ou deux échauffourées, puis peut revenir pour le final.\nRevolvers : petit calibre de R.ARMES (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68.",
+              "typeId": "type-fi3-thanauser"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi3-ch-baston",
+              "q": "Comment se termine l'affrontement avec les You-Yous ?",
+              "opts": [
+                {
+                  "t": "Les PJ l'emportent",
+                  "suite": "Les anges sont éliminés ou mis en fuite ; Notre-Dame risque de renvoyer du monde plus tard."
+                },
+                {
+                  "t": "Les PJ fuient dans la foule",
+                  "suite": "Les anges renoncent pour ne pas se montrer ; les PJ sont fichés par Notre-Dame."
+                },
+                {
+                  "t": "Les PJ sont submergés",
+                  "suite": "Capture ou mort ; Beleth veille à ce qu'ils ne parlent pas."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi3-sc-hotel",
+          "nom": "8. Séquelles postopératoires",
+          "lieu": "Hôtel Bellevue (Paris XIe), chambre 13, puis Centre de Tri",
+          "notes": "Débriefing : s'ils préviennent le Centre, ils sont rappelés d'urgence (Fabien, Gilbert, Aurélie, très préoccupés) ; Fabien fait répéter les points clés puis les accompagne à l'hôtel. Sinon, même séance après l'hôtel, avec un gentil reproche.\nHôtel Bellevue : bouge étroit, une étoile, patron scotché à sa télé et vivant des passes de quelques habituées ; on circule sans peine.\nChambre 13 : odeur de sang et de pourriture, mouches, viande crue partout (abats à divers stades de décomposition, certains morceaux mordus par des dents humaines). Valise de baise-en-ville : vêtements, lingerie, cuir et latex, calibre .45, couteau de commando, faux passeport suisse vierge, liasses d'euros, carte American Express au nom de Yolande Jolimont. Le personnel la trouve « gentille mais bizarre » et la date d'arrivée coïncide avec la mort d'Hakim Izmet. Elle ne reviendra pas : déjà à l'étranger.\nPiste bancaire (Aurélie au besoin) : depuis six mois, retraits en Sierra Leone ; environ trois semaines sur place avec escale à Dakar à l'aller, grosses dépenses.\nFabien : rapport négatif envoyé sur le C.H.U. (jugé trop dangereux) ; les révélations sur Andrealphus ne remontent pas, il demande de garder le secret. Il promet de financer une mission en Sierra Leone et une récompense conséquente en cas de succès. Pas de cadeau pour ce scénario.",
+          "combat": false,
+          "npcs": [],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi3-ch-prevenir",
+              "q": "Les PJ préviennent-ils le Centre de Tri avant l'hôtel ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "Rappel d'urgence et débriefing ; Fabien les accompagne à l'hôtel Bellevue."
+                },
+                {
+                  "t": "Non",
+                  "suite": "Débriefing après l'hôtel ; Fabien leur reproche gentiment de ne pas l'avoir prévenu."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795281278934,
+      "updatedAt": 1795281278934
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi3-morlaix",
+      "nom": "Professeur Augustin Morlaix",
+      "source": "Démon de Malthus, grade 2 – chef de clinique orthopédique",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 5,
+      "pp": 22,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Infection",
+          "r": 6
+        },
+        {
+          "n": "Malédiction : maladie",
+          "r": 4
+        },
+        {
+          "n": "Corps liquide",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Anaérobiose",
+          "r": 0
+        }
+      ],
+      "talents": "Métier (chirurgien orthopédique) 5, Médecine 4, Séduction 3, Hobby (administration hospitalière) 2, Faux et usage de faux 3, Parler du nez 4. Couverture : chirurgien réputé",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sexagénaire bedonnant au crâne dégarni, pince-nez, voix nasillarde. Hautain avec les patients, pédant avec les collègues, méprisant avec les internes, d'abord agressif avec les PJ.\nCraint de perdre son poste et d'être repéré par Notre-Dame : très prudent, prêt à tout arrêter à la moindre alerte.\nSecret : trafic de médicaments psychotropes (ordonnances falsifiées, doubles cahiers de commande, stagiaires payés) avec l'ange Bernauld. N'avoue qu'avec insistance ; les « révélations » de Bernauld le font parler de colère.\nAucun talent de combat ni défense dans le livre : Défense 2 et coup de poing par défaut (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-gonzague",
+      "nom": "Gonzague",
+      "source": "Familier, majordome de Morlaix",
+      "type": "familier",
+      "car": {
+        "fo": 4,
+        "ag": 5,
+        "pe": 4,
+        "vo": 4,
+        "pr": 6,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 8,
+      "seuilsFix": [
+        3,
+        7,
+        10,
+        14
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 6,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 2
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 2
+        }
+      ],
+      "talents": "Aisance sociale 4, Corps à corps 3, Discussion 3, Séduction 4, Médecine 2",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grande bringue d'apparence quadragénaire, yeux apeurés, petite moustache, visage osseux, port princier, blouse trop ample. Vouvoie tout le monde, poli jusque dans la bagarre.\nFile les PJ dès le premier jour sous la blouse d'une infirmière en congé parental (badge « Claude Novack ») : peu discret, sans imagination, tombe dans le moindre piège.\nDéfense non donnée : 2 (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-bernauld",
+      "nom": "Christophe Bernauld",
+      "source": "Ange de Marc, grade 1 – comptable du C.H.U.",
+      "type": "ange",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 10,
+        "vo": 10,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 7,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 13,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Contrat divin",
+          "r": 4
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Aura de pacification",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        }
+      ],
+      "talents": "Métier (comptable) 5, Arnaques diverses 4, Corps à corps 3+, Défense 3+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeune cadre dynamique trentenaire, bronzé aux U.V. Rêve d'entrer au Club 406 (anges fortunés) ; investit ses gains dans des arnaques (dont un trafic de déchets radioactifs vers le Golfe). Ne tiendrait pas trois heures face à un contrôle de sa hiérarchie.\nResponsable financier qui a découvert la combine de Morlaix il y a huit mois en falsifiant lui-même les comptes, et s'y est associé.\nJour 2 : panique, détruit la moitié de ses dossiers, glisse l'autre dans le bureau de Morlaix et se pose en comptable terrorisé et victime ; signale les PJ à Notre-Dame.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-thanauser",
+      "nom": "Thanauser",
+      "source": "Ange de Laurent, grade 2 – émissaire de Notre-Dame",
+      "type": "ange",
+      "car": {
+        "fo": 10,
+        "ag": 10,
+        "pe": 6,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 23,
+      "seuilsFix": [
+        8,
+        16,
+        24,
+        32
+      ],
+      "armes": [
+        {
+          "n": "Épée bénie mineure",
+          "att": 10,
+          "prec": 2,
+          "puis": 4,
+          "melee": true
+        },
+        {
+          "n": "Revolvers 9 mm (deux à la fois)",
+          "att": 6,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 10
+        },
+        {
+          "n": "Juste-lame",
+          "r": 6
+        },
+        {
+          "n": "Décharge électrique",
+          "r": 4
+        },
+        {
+          "n": "Détection du mal",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        },
+        {
+          "n": "Esquive acrobatique",
+          "r": 2
+        }
+      ],
+      "talents": "Combat 5, Défense 5, Conduite 4, Tir 1 (armes de poing 3), Avoir l'air ténébreux et inquiétant 3, Fredonner l'introduction de Thanauser 4. Avertissement sans frais : intégrisme",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand brun ténébreux, cache-poussière et Ray-Ban, grosse moto japonaise ; caricature d'ange vengeur à monosyllabes et répliques de baston. Fredonne du Wagner sans desserrer les dents quand le stress monte.\nEnvoyé par Notre-Dame sur signalement de Bernauld : éliminer les PJ vite, de préférence hors du C.H.U. Discret ; une ou deux échauffourées, puis peut revenir pour le final.\nRevolvers : petit calibre de R.ARMES (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-paras-ram",
+      "nom": "Professeur Paras Ram",
+      "source": "Ange de Guy, grade 1 – chef de clinique psychiatrique",
+      "type": "ange",
+      "car": {
+        "fo": 2,
+        "ag": 10,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 14,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Guérison",
+          "r": 6
+        },
+        {
+          "n": "Bénédiction : guérison de folies",
+          "r": 6
+        },
+        {
+          "n": "Immunité contre les maladies et les poisons",
+          "r": 0
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        }
+      ],
+      "talents": "Métier (psychiatre) 5, Médecine 5+, Parler plein de langues différentes 4, Sourire en hochant la tête en signe de compassion 3. Avertissement sans frais : lâche",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Malgache d'origine tamoule, petit homme à la peau très noire, cheveux lisses, phalanges poilues. En poste depuis un an ; excellent médecin, souvent absent (missions pour Notre-Dame).\nNe repère pas les PJ au début s'ils restent discrets. Fuit au premier danger ; repéré, il avoue tout et plus encore. Son acte le plus courageux : appeler des renforts.\nDéfense non donnée : 2 (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-calvin-collaud",
+      "nom": "Calvin et Collaud",
+      "source": "Patients psychiatriques fugueurs",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 5
+      },
+      "def": 4,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Corps à corps 2, Défense 2, Baver 3, Crucifier des cadavres 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentenaires aux yeux révulsés, cheveux en bataille, barbe mal rasée, pyjamas verts trop grands. L'un autiste prostré depuis quatre ans, l'autre schizophrène paisible. Convertis par l'influence du fœtus, mais pas plus loquaces qu'un râle.\nLeur Ch (2+) est reportée en Foi.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-chanterelle",
+      "nom": "Xavier Chanterelle",
+      "source": "Ange de Dominique, grade 1 – chef d'escouade",
+      "type": "ange",
+      "car": {
+        "fo": 8,
+        "ag": 4,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 9,
+      "pp": 16,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Peur",
+          "r": 6
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 6
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 4
+        },
+        {
+          "n": "Jet d'eau bénite",
+          "r": 4
+        },
+        {
+          "n": "Jugement",
+          "r": 4
+        }
+      ],
+      "talents": "Savoir militaire 1+ (tactique 3), Sixième sens 3, Défense 3, Avoir l'air à côté de la plaque 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Surnommé « le champignon » : corps rachitique, membres courts, grosse tête surmontée d'une touffe de cheveux crépus. Allure comique trompeuse : esprit redoutable, fidélité absolue au Bien.\nPrévenu par Paras Ram après la fugue des fous ; rôde autour du C.H.U. avec son escouade.\nAucune arme dans le livre : coup de poing par défaut (estimation).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-gratchen",
+      "nom": "Ulrike, Tania, Veronika, Lotte et Gisella",
+      "source": "Soldats de Dieu, les « Grätchen de Notre-Dame »",
+      "type": "soldat",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 6,
+        "foi": 5
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 4,
+      "pp": 4,
+      "seuilsFix": [
+        3,
+        6,
+        9,
+        12
+      ],
+      "armes": [
+        {
+          "n": "M16",
+          "att": 8,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        },
+        {
+          "n": "Couteau papillon",
+          "att": 2,
+          "prec": -1,
+          "puis": -1,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2 (armes d'épaule 4), Séduction 3, Défense 3, Jurer en allemand 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Belles blondes germano-scandinaves aux joues roses, en blouses blanches réglementaires (stéthoscope au cou). Air ingénu et effrayé : effet de surprise au combat.\nLotte porte aussi trois grenades (précision −4, puissance 4, aire d'effet).\nM16 : fusil-mitrailleur de R.ARMES. Couteau papillon : cran d'arrêt, sans talent de mêlée dans le livre (attaque estimée au niveau 1).\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    },
+    {
+      "id": "type-fi3-yolande",
+      "nom": "Yolande Jolimont (Andrealphus)",
+      "source": "Prince-démon du sexe, affaibli",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 3,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 0
+        },
+        {
+          "n": "Orgasme mortel",
+          "r": 0
+        },
+        {
+          "n": "Absorption de douleur",
+          "r": 0
+        },
+        {
+          "n": "Téléportation",
+          "r": 0
+        }
+      ],
+      "talents": "Séduction, Kama sutra",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici). Fiche minimale : caractéristiques et pouvoirs estimés, PF et seuils laissés au calcul automatique. PP 3 pendant la poursuite, remontent à 8 après la mort d'Athanase.\nJeune femme mate aux yeux sombres, cheveux bruns très courts, beauté trop lisse et féline ; blouse d'infirmière trop grande sur un ventre proéminent. Porte Damien, qui l'oblige à se nourrir de nouveau-nés.\nInaffrontable dans ce scénario : se révèle (« flash » d'aura de prince-démon), tue le bébé et se téléporte.\nSource : Fire and Ice, « Soigner le Bien par le Mal », p. 56-68."
+    }
+  ],
+  "memoire": []
+}

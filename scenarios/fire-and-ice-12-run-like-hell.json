@@ -1,0 +1,3912 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "fire-and-ice-12-run-like-hell",
+      "nom": "Fire and Ice (scénario 12) – Run like Hell",
+      "resume": "Et Nox Facta Est, scénario 12 (INS), suite directe de « La Bibliothèque du Marchand de Sable ». Baalberith envoie les PJ à Bâle avec un faux ordre de mission : retrouver Andrealphus (Yolande Jolimont, enceinte de Damien) et le convaincre de rentrer aux Enfers, munis d'un Message officiel piégé remis par Aurélie. Sur place, ils croisent l'équipe de Baal (Thomas Hobbes) et la Garde carmine de Belial : opéra explosif, poursuite en voiture, assaut du chalet de Grindelwald et poursuite à ski. De retour à Paris, ils démasquent Aurélie et remontent jusqu'à Alonzo, branche du Daemonis Malificum.",
+      "notes": "Source : Fire and Ice 2, « Run like Hell », p. 51-65. Aide de jeu « Tempus Fugit », p. 154. Fiches de Monsieur Fabien, Gilbert et Aurélie : Fire and Ice, « Le Centre de Tri », p. 24-26.\nTon : espionnage bondesque, diplomatie tendue et grosses bastons. Si les joueurs ne comprennent pas tout, ils se concentreront vite sur des problèmes pratiques (survivre, savoir qui veut les tuer) ; l'explication (pourquoi Belial veut Yolande et son fœtus) viendra plus tard dans la campagne.\n\nCe que trame Baalberith : depuis la destitution partielle d'Andromalius, il contrôle ses outils de surveillance (Labyrinthe, CRD) et a retrouvé Andrealphus en recoupant les dossiers des agents d'Andromalius. Double manœuvre : occuper Baal hors de l'Enfer en lui signalant le prince, et faire écraser les PJ entre les forces en présence grâce à un Message officiel qui est une bombe à retardement. Baal a confié l'affaire à son lieutenant Thomas Hobbes (avec Knut Freihart et Lisa Lockerby) : ramener Andrealphus, de gré ou de force. Une équipe de la Garde carmine de Belial, avertie par une fuite, arrive peu après.\nCe qu'a fait Andrealphus : après le CHU Louis-Pasteur, fuite en Macédoine par Polymorphie, Invisibilité et Téléportation ; quelques semaines de plaisirs, puis besoin impérieux de rentrer en France. Dans une station-service slovaque, il dévore les testicules d'une demi-douzaine de clients et se fait repérer par Geneviève Lehmann (ex-Andromalius passée chez Baalberith), qui le suit jusqu'à Bâle.\n\nConsignes du livre : Andrealphus ne doit pas mourir (tricher pour qu'elle s'échappe), Thomas Hobbes non plus ; la fin de l'action en Suisse doit être frustrante, compensée par de petits cadeaux.\nRécompense : une semaine de congés et un pouvoir offert en secret par Beleth (table de ses pouvoirs privilégiés, sauf Cauchemar mortel) si l'affaire Aurélie est résolue ; si les PJ ont rapporté l'enveloppe fermée sans rien comprendre, une semaine de repos sans récompense et Aurélie reste taupe.\nPP d'Andrealphus : 5 avant l'opéra, 0 après la poursuite, 3 à Grindelwald, 9 après avoir dévoré Hans Helmut.\n\nChronologie (Tempus Fugit), immédiatement après le scénario précédent :\n• J-5 : Geneviève Lehmann retrouve la trace d'Andrealphus et prévient sa hiérarchie.\n• J-3 : Baalberith rend visite à Baal et lui apprend la nouvelle ; un serviteur indiscret de Baal informe Belial, qui envoie une équipe à Bâle.\n• J-1 : Baalberith fabrique le faux ordre de mission des PJ et rédige le Message officiel, qu'il envoie à Aurélie.\n• J1 : briefing au Centre de Tri, départ pour Bâle.\n• J2 : rendez-vous sur le Rhin avec Geneviève, enquête bâloise, soirée à l'opéra, poursuite et baston.\n• J3 : suite de l'enquête, Grindelwald, approche du chalet, poursuite et grosse baston à la station.\n• J4-6 : retour à Paris, enquête sur Aurélie, Alonzo, démantèlement de cette branche du Daemonis Malificum.\n\nFiches adaptées du livre : caractéristiques en niveaux INS/MV (Ch des humains reportée en Foi). Andrealphus : fiche minimale estimée (livre de base p. 106). Pouvoirs absents des règles du Grimoire (Feu de Prométhée, pouvoirs de grade Administration et Messages) reportés dans les talents. Valeurs estimées signalées dans chaque fiche.",
+      "scenes": [
+        {
+          "id": "fi12-sc-briefing",
+          "nom": "1. Briefing urgentissime",
+          "lieu": "Centre de Tri, bureau de Monsieur Fabien – J1",
+          "notes": "Les PJ sortent à peine de la MRC, épuisés, quand Monsieur Fabien les attire dans son bureau (fumée de pipe au plafond, percolateur en fin de cycle, Gilbert et Aurélie déjà installés).\nVersion officielle : Yolande Jolimont a été repérée à Bâle (Suisse alémanique) par une ex-Andromalius lancée à ses trousses. La hiérarchie choisit les PJ, seuls démons en service à avoir vu le prince du sexe dans son corps d'emprunt et survécu. Mission : aller à Bâle, contacter Geneviève Lehmann, convenir d'un plan et convaincre Andrealphus de rentrer aux Enfers.\nSi les joueurs trouvent le plan bien mince, Fabien précise : filer en Suisse, ne pas perdre Yolande de vue et attendre les ordres. Billets de train en première réservés, grosse liasse de francs suisses, numéro de portable du contact. Départ dans deux heures : valises, fromages et armes lourdes.\nEn coulisses : l'ordre de mission est un faux fabriqué par Baalberith, qui veut à la fois occuper Baal hors de l'Enfer et se débarrasser des PJ, devenus gênants après la chute d'Andromalius.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-fabien-1",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : briefe les PJ sur la « mission » à Bâle (billets de train en première, liasse de francs suisses, numéro de portable du contact), sans savoir que l'ordre est un faux de Baalberith. Interrogé sur l'enveloppe d'Aurélie, dit ne rien savoir mais lui faire confiance ; en réalité Beleth vérifie de son côté et grille la couverture d'Aurélie.\nSi les PJ lui confient leurs soupçons : conseille de faire comme si de rien n'était et de surveiller Aurélie deux ou trois jours ; raconte qu'elle est arrivée huit jours après la mort violente de Vanessa. Si Aurélie lui est livrée : l'enferme une nuit au sous-sol, lui soutire ses secrets pendant son sommeil, puis ordonne aux PJ de l'exécuter. À la fin, demande le silence et offre en secret un pouvoir.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-fabien"
+            },
+            {
+              "id": "fi12-gilbert-2",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : présent au briefing dans le bureau enfumé de Monsieur Fabien ; soutien logistique au retour.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-gilbert"
+            },
+            {
+              "id": "fi12-aurelie-3",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-gare",
+          "nom": "2. Une enveloppe sur le quai",
+          "lieu": "Gare de l'Est, Paris – J1",
+          "notes": "Pendant que les PJ font leurs bagages, Aurélie récupère pour le Daemonis Malificum un « vrai faux » Message officiel rédigé par Baalberith. Elle attend les PJ sur le quai du train Corail et leur remet une enveloppe fermée, anonyme et visiblement officielle, censée venir d'arriver de la hiérarchie : à remettre en mains propres à Andrealphus, « ça pourrait vous faciliter la tâche ». Elle prétend en ignorer le contenu et les presse de monter.\n• Appel à Monsieur Fabien : il ne sait rien de cette enveloppe mais fait confiance à Aurélie, plus proche des services de Baalberith. En réalité Beleth vérifie et grille la couverture d'Aurélie, ce qui l'aidera à la démasquer en fin de scénario.\n• Ouvrir l'enveloppe : un Message officiel ouvert perd sa nature magique (le rappeler aux joueurs). Contenu : une feuille A4 signée « votre ami B. » expliquant à Andrealphus que son enfant est une aberration, que sa grossesse l'a rendu(e) incontrôlable, et que les porteurs sont des experts en avortement venus mettre fin à la situation.\n• Le remettre tel quel : la première réaction du prince sera de vouloir réduire les PJ en purée. C'est le but de Baalberith.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-aurelie-4",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi12-ch-enveloppe",
+              "q": "Que font les PJ de l'enveloppe d'Aurélie ?",
+              "opts": [
+                {
+                  "t": "Ils la gardent fermée pour la remettre",
+                  "suite": "Remise à Andrealphus (scène 9 ou 10) : colère du prince, griffes et vivisection, irruption des Belial. Au retour, les PJ réclament des comptes à Aurélie ou à Fabien."
+                },
+                {
+                  "t": "Ils l'ouvrent",
+                  "suite": "Le Message perd sa valeur officielle ; les PJ savent qu'on veut les faire tuer et peuvent soupçonner Aurélie dès le retour (scène 12)."
+                },
+                {
+                  "t": "Ils ne la remettent jamais et la rapportent fermée",
+                  "suite": "Fin sèche au retour : débriefing, une semaine de repos sans récompense ; Aurélie récupère l'enveloppe et reste taupe pour la suite de la campagne."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi12-sc-arrivee",
+          "nom": "3. Bâle, première soirée",
+          "lieu": "Bâle (Suisse) – soir du J1",
+          "notes": "Arrivée en début de soirée après sept heures de trajet. Cadre : ville rhénane propre et opulente, vieille ville à colombages et ruelles tortueuses, ponts et bacs à fond plat sur le Rhin, banques, horlogerie, chocolats, grands musées, drogue discrètement dépénalisée ; tout est cher.\nGeneviève, appelée sur son portable, raccroche aussitôt et rappelle d'une cabine quelques minutes plus tard. Très tendue : la situation est plus compliquée que prévu, d'autres cherchent à mettre la main sur Andrealphus. Elle refuse d'être vue avec les PJ et fixe un rendez-vous le lendemain matin sur un des bacs du Rhin. Après une description du groupe, elle donne le mot de passe : elle dira « C'est incroyable comme nous avançons vite », réponse « Et encore, vous devriez voir quand il y a du vent ». Elle interdit de la rappeler sauf extrême urgence.\nReste à trouver un hôtel, boire une bière dans le vieux quartier et flâner.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-genevieve-5",
+              "nom": "Geneviève Lehmann",
+              "source": "Démon de Baalberith, grade 0 (ex-Andromalius, grade 2) – le contact à Bâle",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 22,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret maudit mineur",
+                  "att": 8,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Humanité",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 2
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                }
+              ],
+              "talents": "Séduction 5, Conduite 4, Défense 4, Combat 4, Porter des bas résille 4, Découper des aloyaux de chippendales 3 ; avertissement sans frais : besoin de jeunesse",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite sexagénaire menue et pimpante, sourire de grand-mère, cheveux bleutés trop teints ; en privé, démon taré qui torture des chippendales. Contact fiable de l'ex-prince du jugement, constante et méticuleuse, mais peu discrète et sans initiative.\nA repéré Andrealphus en Slovaquie et l'a suivie jusqu'à Bâle ; a infiltré le Vater Rhein grâce à un groom complice. Fournit les photos (disquette) de l'équipe de Baal.\nCapturée par l'équipe de Hobbes le soir de l'opéra : victime du pouvoir Suicide de Knut, elle vient embrasser les PJ à l'entracte et fait exploser la ceinture d'explosifs cachée sous son manteau de fourrure (1D6 dommages dans un rayon de 2 m, moitié jusqu'à 5 m ; Perception très difficile pour remarquer les reliefs à sa ceinture).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-genevieve"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-bac",
+          "nom": "4. Rendez-vous sur le Rhin",
+          "lieu": "Bac sur le Rhin, Bâle – matin du J2",
+          "notes": "Échange de mots de passe, puis huit minutes exactement de briefing à voix basse ; Geneviève surveille sans cesse ses arrières.\n• Andrealphus est à Bâle depuis cinq jours, à l'hôtel quatre étoiles Vater Rhein sous le nom de Josiane Darmentière. Un groom complice a renseigné Geneviève (numéro de sa voiture de location, argent changé, billets de concert).\n• Elle passe ses journées dans les lieux publics (musées, piscines, bibliothèques, grands restaurants) et ses soirées aux spectacles chers ; ce soir, première du Toutankhamon de Philip Glass au Theater Basel.\n• Une équipe patibulaire rôde autour du Vater Rhein depuis 48 heures. Geneviève a pris des photos des trois individus et remet une disquette.\nConsignes : ne pas approcher l'hôtel, ne pas se montrer avec elle ni avec Andrealphus, rester discrets. L'opéra servira à identifier formellement le prince ; nouveau rendez-vous le soir même au salon Haydn, à l'entracte. Puis elle disparaît dans une ruelle.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-genevieve-6",
+              "nom": "Geneviève Lehmann",
+              "source": "Démon de Baalberith, grade 0 (ex-Andromalius, grade 2) – le contact à Bâle",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 22,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret maudit mineur",
+                  "att": 8,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Humanité",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 2
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                }
+              ],
+              "talents": "Séduction 5, Conduite 4, Défense 4, Combat 4, Porter des bas résille 4, Découper des aloyaux de chippendales 3 ; avertissement sans frais : besoin de jeunesse",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite sexagénaire menue et pimpante, sourire de grand-mère, cheveux bleutés trop teints ; en privé, démon taré qui torture des chippendales. Contact fiable de l'ex-prince du jugement, constante et méticuleuse, mais peu discrète et sans initiative.\nA repéré Andrealphus en Slovaquie et l'a suivie jusqu'à Bâle ; a infiltré le Vater Rhein grâce à un groom complice. Fournit les photos (disquette) de l'équipe de Baal.\nCapturée par l'équipe de Hobbes le soir de l'opéra : victime du pouvoir Suicide de Knut, elle vient embrasser les PJ à l'entracte et fait exploser la ceinture d'explosifs cachée sous son manteau de fourrure (1D6 dommages dans un rayon de 2 m, moitié jusqu'à 5 m ; Perception très difficile pour remarquer les reliefs à sa ceinture).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-genevieve"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-enquete",
+          "nom": "5. Journée d'enquête bâloise",
+          "lieu": "Bâle : cybercafé, Theater Basel, hôtel Vater Rhein – J2",
+          "notes": "• Les photos (cybercafé si besoin) : l'équipe de Baal, Thomas Hobbes (grade 3 de Baal, colosse noir au crâne rasé, polo vert sapin), Knut Freihart (grade 2 de Furfur, costume Gucci, piercing, lunettes noires) et Lisa Lockerby (grade 2 de Caym, vison, diamants, crinière blonde). Ils roulent en BMW bleu nuit et ont tout des agents secrets en tournée.\n• Places pour l'opéra : la première est complète depuis des jours ; acharnement ou gros billets, et selon les jets, places hors de prix au balcon, au fond de la fosse d'orchestre ou au paradis.\n• Theater Basel : bâtiment monumental de la vieille ville en pleine effervescence (techniciens, tapis rouge, champagne), facile à visiter. Salon Haydn : grande pièce en demi-cercle bleue, trois portes vers l'opéra et deux sorties de secours sur des escaliers extérieurs. Grande salle d'environ 500 places sous un lustre d'une tonne et demie.\n• Hôtel Vater Rhein (si les PJ passent outre) : tour bétonnée de luxe ennuyeux ; on y circule avec une tenue correcte. Sans investigation poussée (braquage de chambre, interrogatoire musclé), ils ne croisent ni Andrealphus ni l'équipe de Hobbes ; le réceptionniste confirme la présence de Josiane Darmentière contre un prétexte crédible.\n• Chercher la BMW, l'équipe de Baal, Andrealphus ou même Geneviève au hasard dans la ville : rien.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-hobbes-7",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            },
+            {
+              "id": "fi12-knut-8",
+              "nom": "Knut Freihart",
+              "source": "Démon de Furfur, grade 2 – équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Canon scié maudit mineur (portée très courte)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Bistouri",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-knut"
+            },
+            {
+              "id": "fi12-lisa-9",
+              "nom": "Lisa Lockerby",
+              "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 21,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Arbalète maudite mineure (portée longue)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-lisa"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-opera",
+          "nom": "6. A night at the opera",
+          "lieu": "Theater Basel – soir du J2",
+          "notes": "Vers 19 h, un PJ tiré au hasard entend la voix de Geneviève dans sa tête : « Ne venez pas ce soir, c'est un piège. » Puis plus rien, ni Télépathie ni portable : elle vient d'être coincée par l'équipe de Hobbes dans son propre hôtel.\nPas de fouille à l'entrée : on peut venir lourdement armé. Perception dans la file : une demi-douzaine de sapeurs-pompiers français en tenue ignifuge rouge et noire montent la garde près d'extincteurs et dévisagent les spectateurs (la Garde carmine de Belial).\nDans la salle : Yolande au balcon côté cour avec un moustachu couvert de bagues, Hobbes et ses deux acolytes en bout de rangée, Geneviève tout en haut. Les espions s'observent à la jumelle ; seule Andrealphus, souriante, semble à son aise. Gotha ou relations mondaines : le cavalier est Hans Helmut von Oxenstein, baronnet de Spa et vicomte de Volkenburg. Garder profil bas et subir la première partie (arias de castrat, musique minimaliste, costumes mi-antiques mi-Gaultier).\nEntracte : Geneviève fonce vers les PJ, les embrasse bruyamment et fait sauter la ceinture d'explosifs sous son manteau de fourrure (pouvoir Suicide de Knut). Perception très difficile pour remarquer des reliefs à sa ceinture et limiter les dégâts. Explosion : 1D6 dommages dans un rayon de 2 m, moitié jusqu'à 5 m. Cris, table soufflée, champagne et éclats de cristal, ruée vers les sorties : retrouver Yolande et l'équipe de Baal dans la cohue.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-genevieve-10",
+              "nom": "Geneviève Lehmann",
+              "source": "Démon de Baalberith, grade 0 (ex-Andromalius, grade 2) – le contact à Bâle",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 22,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Fleuret maudit mineur",
+                  "att": 8,
+                  "prec": 3,
+                  "puis": 3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Humanité",
+                  "r": 8
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 6
+                },
+                {
+                  "n": "Détection du bien",
+                  "r": 6
+                },
+                {
+                  "n": "Télékinésie",
+                  "r": 6
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 4
+                },
+                {
+                  "n": "Détection du mensonge",
+                  "r": 2
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                }
+              ],
+              "talents": "Séduction 5, Conduite 4, Défense 4, Combat 4, Porter des bas résille 4, Découper des aloyaux de chippendales 3 ; avertissement sans frais : besoin de jeunesse",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petite sexagénaire menue et pimpante, sourire de grand-mère, cheveux bleutés trop teints ; en privé, démon taré qui torture des chippendales. Contact fiable de l'ex-prince du jugement, constante et méticuleuse, mais peu discrète et sans initiative.\nA repéré Andrealphus en Slovaquie et l'a suivie jusqu'à Bâle ; a infiltré le Vater Rhein grâce à un groom complice. Fournit les photos (disquette) de l'équipe de Baal.\nCapturée par l'équipe de Hobbes le soir de l'opéra : victime du pouvoir Suicide de Knut, elle vient embrasser les PJ à l'entracte et fait exploser la ceinture d'explosifs cachée sous son manteau de fourrure (1D6 dommages dans un rayon de 2 m, moitié jusqu'à 5 m ; Perception très difficile pour remarquer les reliefs à sa ceinture).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-genevieve"
+            },
+            {
+              "id": "fi12-andrealphus-11",
+              "nom": "Josiane Darmentière / Yolande Jolimont (Andrealphus)",
+              "source": "Prince-démon du sexe, enceinte de Damien",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 5,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 0
+                },
+                {
+                  "n": "Orgasme mortel",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 0
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Séduction, Kama sutra",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici) ; fiche minimale aux valeurs estimées (comme au scénario 3), PF et seuils laissés au calcul automatique.\nPP : 5 avant l'opéra, 0 après la poursuite en voiture, 3 à Grindelwald, 9 après avoir dévoré Hans Helmut.\nJolie brunette aux cheveux courts, vêtements amples griffés, bijoux offerts par Hans Helmut ; faux accent anglais. Descendue au Vater Rhein sous le nom de Josiane Darmentière, voiture de location BMW bleue... et Porsche noire de son baronnet. Passe ses journées dans les lieux publics chics, ses soirées aux spectacles hors de prix.\nSi on lui remet le Message officiel : colère noire, envoie Hans chercher des martinis puis sort ses griffes (Membre exotique) pour vivisecter les PJ.\nConsigne du livre : elle ne doit pas mourir ; tricher discrètement pour qu'elle s'échappe quoi qu'il arrive.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-andrealphus"
+            },
+            {
+              "id": "fi12-hans-helmut-12",
+              "nom": "Hans Helmut von Oxenstein",
+              "source": "Sang bleu – baronnet de Spa et vicomte de Volkenburg",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Petite arme de poing",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Gotha 4, Ski de descente 3, Polo 3, Couiner comme une hermine qu'on écorche 3+, Bijoux de famille 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaire ramolli, voix couinante, mains moites ; visage bouffi et méprisant, fine moustache, épingles de cravate en diamant et chevalières énormes. Pilote une Porsche noire hors collection.\nCavalier d'Andrealphus à l'opéra, puis son garde-manger : elle le garde en vie comme « porte de sortie » et finit par le dévorer pour se recharger.\nArme : « petite arme de poing » sans talent de Tir chiffré ; revolver petit calibre au niveau 1 (estimé). Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hans-helmut"
+            },
+            {
+              "id": "fi12-hobbes-13",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            },
+            {
+              "id": "fi12-knut-14",
+              "nom": "Knut Freihart",
+              "source": "Démon de Furfur, grade 2 – équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Canon scié maudit mineur (portée très courte)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Bistouri",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-knut"
+            },
+            {
+              "id": "fi12-lisa-15",
+              "nom": "Lisa Lockerby",
+              "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 21,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Arbalète maudite mineure (portée longue)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-lisa"
+            },
+            {
+              "id": "fi12-garde-carmine-16",
+              "nom": "Jacques, Alexandre, Florian, Philippe, Thomas et Matthieu",
+              "source": "Démons de Belial, grade 1 – Garde carmine (faux sapeurs-pompiers)",
+              "type": "demon",
+              "qty": 6,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles du Grimoire)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Six jeunes gens de vingt à trente ans, plus petits, plus poilus et plus binoclards que la moyenne, crédibles en uniforme de pompiers français. Interchangeables, prompts à faire le coup de feu, très soudés. Devise : « take your piston, make it happen ». Arme favorite : le lance-flammes ; véhicule : un faux camion de pompiers trafiqué.\nMission de Belial : capturer Andrealphus (et son fœtus). Trahissent tôt ou tard tout allié de circonstance : ils ont les ordres de leur prince.\nLance-flammes : valeurs de la table des armes (Tir, armes de guerre 4).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-garde-carmine"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-poursuite",
+          "nom": "7. Poursuite dans Bâle",
+          "lieu": "Rues de Bâle, autoroute, zone industrielle – nuit du J2",
+          "notes": "Andrealphus réagit la première et file par une sortie de secours avec Hans Helmut ; ils sautent dans la Porsche noire. L'équipe de Hobbes suit, plus pressée d'attraper le prince que de vérifier la mort des PJ. Les PJ doivent trouver une voiture et se lancer à leur tour ; ambulances et police convergent vers l'opéra mais les rues sont larges (tests de Conduite).\nClichés de cinéma bienvenus : Andrealphus coupe par les zones piétonnes, dévale des escaliers, roule sur les trottoirs, défonce des échafaudages, grille les feux. Depuis la BMW, on tire sur les PJ (rafales de P.-M., Jets d'acide) tout en évitant de perdre la Porsche. Extras : police, autoroute, zone industrielle (canal à sauter, entrepôts, barils d'essence, voitures à l'eau), poids lourd égaré, bikers allemands.\nPour finir, un camion de pompiers sirènes hurlantes se joint à la course et nettoie les poursuivants au lance-flammes et aux pouvoirs de feu. Faire lâcher prise aux PJ quand la baston dégénère entre pompiers et BMW (vu leur état et celui de leur véhicule).\nAndrealphus disparaît ; les PJ ont intérêt à se mettre à couvert pour se soigner et récupérer des PP.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi12-hobbes-17",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            },
+            {
+              "id": "fi12-knut-18",
+              "nom": "Knut Freihart",
+              "source": "Démon de Furfur, grade 2 – équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Canon scié maudit mineur (portée très courte)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Bistouri",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-knut"
+            },
+            {
+              "id": "fi12-lisa-19",
+              "nom": "Lisa Lockerby",
+              "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 21,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Arbalète maudite mineure (portée longue)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-lisa"
+            },
+            {
+              "id": "fi12-garde-carmine-20",
+              "nom": "Jacques, Alexandre, Florian, Philippe, Thomas et Matthieu",
+              "source": "Démons de Belial, grade 1 – Garde carmine (faux sapeurs-pompiers)",
+              "type": "demon",
+              "qty": 6,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles du Grimoire)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Six jeunes gens de vingt à trente ans, plus petits, plus poilus et plus binoclards que la moyenne, crédibles en uniforme de pompiers français. Interchangeables, prompts à faire le coup de feu, très soudés. Devise : « take your piston, make it happen ». Arme favorite : le lance-flammes ; véhicule : un faux camion de pompiers trafiqué.\nMission de Belial : capturer Andrealphus (et son fœtus). Trahissent tôt ou tard tout allié de circonstance : ils ont les ordres de leur prince.\nLance-flammes : valeurs de la table des armes (Tir, armes de guerre 4).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-garde-carmine"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-piste",
+          "nom": "8. Courir dans l'alpage",
+          "lieu": "Bâle – J3",
+          "notes": "Au Centre de Tri, c'est Aurélie qui décroche : compatissante, elle rappelle avec insistance qu'il faut remettre le Message officiel à Andrealphus et propose de chercher où le prince a pu filer.\nLa bonne piste : épuisée par la poursuite, Andrealphus a eu besoin de se nourrir ; elle a gardé Hans Helmut en vie et l'a suivi vers sa résidence privée dans l'Oberland bernois.\nLes journaux du jour titrent sur l'attentat (supposé islamiste) du Theater Basel, photos macabres à l'appui. Un entrefilet people suggère que le baronnet de Spa et sa compagne figurent parmi les victimes, faute d'être sur la liste des survivants. Son auteur, Tobbias Vanschlumpfen, spécialiste local des têtes couronnées, est facile à trouver et ravi de parler de son noble préféré : il possède une maison de campagne près de Grindelwald, à une heure et demie de route.\nSinon, ou si les PJ n'ont pas suivi la piste de Hans Helmut : l'équipe de Baal les contacte pour une alliance temporaire. Hobbes ne s'attendait pas à tant de résistance et doit maintenant compter avec les Belial ; sa mission n'étant que d'éclaircir ce qu'Andrealphus porte, il peut jouer la carte « douce » et les invite à Grindelwald pour échanger des informations (option utile pour des PJ peu sûrs d'eux ou manquant de puissance de feu).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-aurelie-21",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-aurelie"
+            },
+            {
+              "id": "fi12-tobbias-22",
+              "nom": "Tobbias Vanschlumpfen",
+              "source": "Journaliste bâlois, spécialiste des têtes couronnées",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Auteur de l'entrefilet people sur la disparition de Hans Helmut après l'attentat du Theater Basel. Très lisse, ravi de faire un exposé sur son noble préféré : apprend aux PJ l'existence de son chalet près de Grindelwald, à une heure et demie de Bâle.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-tobbias"
+            },
+            {
+              "id": "fi12-hobbes-23",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi12-ch-hobbes",
+              "q": "Les PJ acceptent-ils l'offre de Thomas Hobbes ?",
+              "opts": [
+                {
+                  "t": "Oui, alliance temporaire",
+                  "suite": "Rendez-vous derrière la crête au-dessus de la station ; Hobbes les guide par portable. Échange de renseignements puis élimination commune des Belial (scène 9)."
+                },
+                {
+                  "t": "Non, ils montent seuls",
+                  "suite": "Trois groupes rivaux autour du chalet ; les Belial guettent tous ceux qui montent par la route."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi12-sc-grindelwald",
+          "nom": "9. C'est le bonheur un peu sauvage",
+          "lieu": "Grindelwald : station de ski et chalet de Hans Helmut – J3",
+          "notes": "Le chalet : immense bâtisse de bois sombre sur structure de béton, 200 m au-dessus de la station ; depuis ses terrasses panoramiques, on voit venir les visiteurs à 5 ou 10 km. Pentes raides, neige, verglas, vaches violettes.\nLa station est envahie par une quarantaine d'Indiens en doudoune multicolore qui tournent les scènes « exotiques » d'une comédie musicale bollywoodienne (caméras, figurantes en sari dans la neige, faux tigre, jeune premier capricieux), mal vus des autorités locales.\n• La Garde carmine se fond dans la foule occidentale qui encadre le tournage (élus, villageois, personnel de la station) ; le plateau étant sur la route du chalet, ils guettent les PJ et l'équipe de Hobbes à la redescente.\n• L'équipe de Baal a caché sa voiture dans une grange à mi-pente et s'est postée derrière une crête rocheuse d'où elle surveille le chalet, cherchant une approche discrète et une sortie de secours pour éviter les Belial.\n• Au chalet, Andrealphus a récupéré une demi-douzaine de PP ; Damien se manifeste de nouveau.\nRègles du jeu pour le MJ : les PJ ne doivent pas pouvoir tuer Andrealphus (tricher discrètement pour qu'elle s'en tire), éviter que Hobbes y passe, et laisser la baston tourner au film d'action à gros budget.\n• Frapper à la porte : accueil en peignoir, Hans Helmut braque une petite arme de poing. Si les PJ remettent le Message, le prince vire au rouge, envoie Hans chercher des martinis puis sort les griffes pour une vivisection ; la porte explose et les Belial déboulent au lance-flammes.\n• S'allier à Hobbes : interrogatoire poussé, confiance mutuelle, arrangement ; descente à la station pour éliminer les Belial ensemble : grosse baston au milieu d'une trentaine de civils indiens, qui déborde sur le tournage. Au plus chaud, la voiture de Hans Helmut et d'Andrealphus descend la route du chalet.\n• S'allier aux Belial : les convaincre d'écarter ensemble l'équipe de Hobbes ; on peut même investir le chalet avant le départ de ses occupants. Puis les Belial retournent leur veste et tentent de les griller : leur prince leur a donné des ordres.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi12-andrealphus-24",
+              "nom": "Josiane Darmentière / Yolande Jolimont (Andrealphus)",
+              "source": "Prince-démon du sexe, enceinte de Damien",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 5,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 0
+                },
+                {
+                  "n": "Orgasme mortel",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 0
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Séduction, Kama sutra",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici) ; fiche minimale aux valeurs estimées (comme au scénario 3), PF et seuils laissés au calcul automatique.\nPP : 5 avant l'opéra, 0 après la poursuite en voiture, 3 à Grindelwald, 9 après avoir dévoré Hans Helmut.\nJolie brunette aux cheveux courts, vêtements amples griffés, bijoux offerts par Hans Helmut ; faux accent anglais. Descendue au Vater Rhein sous le nom de Josiane Darmentière, voiture de location BMW bleue... et Porsche noire de son baronnet. Passe ses journées dans les lieux publics chics, ses soirées aux spectacles hors de prix.\nSi on lui remet le Message officiel : colère noire, envoie Hans chercher des martinis puis sort ses griffes (Membre exotique) pour vivisecter les PJ.\nConsigne du livre : elle ne doit pas mourir ; tricher discrètement pour qu'elle s'échappe quoi qu'il arrive.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-andrealphus"
+            },
+            {
+              "id": "fi12-hans-helmut-25",
+              "nom": "Hans Helmut von Oxenstein",
+              "source": "Sang bleu – baronnet de Spa et vicomte de Volkenburg",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Petite arme de poing",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Gotha 4, Ski de descente 3, Polo 3, Couiner comme une hermine qu'on écorche 3+, Bijoux de famille 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaire ramolli, voix couinante, mains moites ; visage bouffi et méprisant, fine moustache, épingles de cravate en diamant et chevalières énormes. Pilote une Porsche noire hors collection.\nCavalier d'Andrealphus à l'opéra, puis son garde-manger : elle le garde en vie comme « porte de sortie » et finit par le dévorer pour se recharger.\nArme : « petite arme de poing » sans talent de Tir chiffré ; revolver petit calibre au niveau 1 (estimé). Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hans-helmut"
+            },
+            {
+              "id": "fi12-hobbes-26",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            },
+            {
+              "id": "fi12-knut-27",
+              "nom": "Knut Freihart",
+              "source": "Démon de Furfur, grade 2 – équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Canon scié maudit mineur (portée très courte)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Bistouri",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-knut"
+            },
+            {
+              "id": "fi12-lisa-28",
+              "nom": "Lisa Lockerby",
+              "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 21,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Arbalète maudite mineure (portée longue)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-lisa"
+            },
+            {
+              "id": "fi12-garde-carmine-29",
+              "nom": "Jacques, Alexandre, Florian, Philippe, Thomas et Matthieu",
+              "source": "Démons de Belial, grade 1 – Garde carmine (faux sapeurs-pompiers)",
+              "type": "demon",
+              "qty": 6,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles du Grimoire)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Six jeunes gens de vingt à trente ans, plus petits, plus poilus et plus binoclards que la moyenne, crédibles en uniforme de pompiers français. Interchangeables, prompts à faire le coup de feu, très soudés. Devise : « take your piston, make it happen ». Arme favorite : le lance-flammes ; véhicule : un faux camion de pompiers trafiqué.\nMission de Belial : capturer Andrealphus (et son fœtus). Trahissent tôt ou tard tout allié de circonstance : ils ont les ordres de leur prince.\nLance-flammes : valeurs de la table des armes (Tir, armes de guerre 4).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-garde-carmine"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi12-ch-chalet",
+              "q": "Comment les PJ abordent-ils le chalet ?",
+              "opts": [
+                {
+                  "t": "Ils frappent à la porte",
+                  "suite": "Andrealphus reçoit en peignoir ; Message remis = griffes et vivisection, puis assaut des Belial au lance-flammes."
+                },
+                {
+                  "t": "Alliance avec Hobbes",
+                  "suite": "Baston commune contre la Garde carmine au milieu du tournage bollywoodien ; Andrealphus file en voiture pendant ce temps."
+                },
+                {
+                  "t": "Alliance avec les Belial",
+                  "suite": "Ensemble contre l'équipe de Baal, voire assaut du chalet ; puis les Belial trahissent les PJ."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi12-sc-ski",
+          "nom": "10. Poursuite à ski",
+          "lieu": "Pistes et forêts de Grindelwald – J3",
+          "notes": "Une fois la baston générale lancée, enchaîner sur une course-poursuite improbable : se débarrasser vite des voitures et passer aux classiques bondesques, skis, surfs, motoneiges (voire luges). Le matériel est facile à trouver à la station. Bosses, forêt clairsemée, skieurs bronzés, dameuse en goguette, à-pic invisible, avalanche ; fusillades, balles perdues, Jets de flammes et d'acide.\nLes groupes lancés après Andrealphus et Hans Helmut se canardent mais évitent soigneusement de blesser le prince. L'humain a de bonnes chances de survivre : il est sa porte de sortie. Au premier répit, elle le tue et le dévore (le bas-ventre en priorité), nourrit Damien et se téléporte de nouveau. Si Hans Helmut meurt en route, elle doit descendre dans la vallée trouver une autre victime dans la foule.\nAndrealphus hors d'atteinte, Belial et Baal décrochent en évitant de rester à portée de tir les uns des autres. Les PJ peuvent les poursuivre et éventuellement les faire parler pour comprendre leurs motivations. La fin de l'action doit être frustrante (aucune chance de rattraper le prince) : compenser par de petits cadeaux (éliminer les Belial, un membre de l'équipe de Hobbes, etc.).\nAu calme dans la vallée, Andrealphus envolée et les autres dispersés, il ne reste qu'à rentrer à Paris et à s'interroger sur ce Message officiel.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi12-hobbes-30",
+              "nom": "Thomas Hobbes",
+              "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 10,
+                "ag": 4,
+                "pe": 10,
+                "vo": 4,
+                "pr": 4,
+                "foi": 10
+              },
+              "def": 10,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 38,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Épée à deux mains maudite mineure",
+                  "att": 14,
+                  "prec": 1,
+                  "puis": 5,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Art de combat",
+                  "r": 10
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Peur",
+                  "r": 8
+                },
+                {
+                  "n": "Jet d'acide",
+                  "r": 6
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Poison",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                },
+                {
+                  "n": "Corps liquide",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hobbes"
+            },
+            {
+              "id": "fi12-knut-31",
+              "nom": "Knut Freihart",
+              "source": "Démon de Furfur, grade 2 – équipe de Baal",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 6,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 25,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Canon scié maudit mineur (portée très courte)",
+                  "att": 11,
+                  "prec": -1,
+                  "puis": 8,
+                  "melee": false
+                },
+                {
+                  "n": "Bistouri",
+                  "att": 6,
+                  "prec": 0,
+                  "puis": 0,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Suicide",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 6
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 6
+                },
+                {
+                  "n": "Rebond",
+                  "r": 4
+                },
+                {
+                  "n": "Absorption de violence",
+                  "r": 4
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-knut"
+            },
+            {
+              "id": "fi12-lisa-32",
+              "nom": "Lisa Lockerby",
+              "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 21,
+              "seuilsFix": [
+                7,
+                14,
+                21,
+                28
+              ],
+              "armes": [
+                {
+                  "n": "Arbalète maudite mineure (portée longue)",
+                  "att": 14,
+                  "prec": -2,
+                  "puis": 5,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 6
+                },
+                {
+                  "n": "Poison",
+                  "r": 6
+                },
+                {
+                  "n": "Contrôle des animaux",
+                  "r": 4
+                },
+                {
+                  "n": "Vol",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                },
+                {
+                  "n": "Augmentation de Perception",
+                  "r": 4
+                }
+              ],
+              "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-lisa"
+            },
+            {
+              "id": "fi12-garde-carmine-33",
+              "nom": "Jacques, Alexandre, Florian, Philippe, Thomas et Matthieu",
+              "source": "Démons de Belial, grade 1 – Garde carmine (faux sapeurs-pompiers)",
+              "type": "demon",
+              "qty": 6,
+              "car": {
+                "fo": 8,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 11,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 13,
+              "seuilsFix": [
+                6,
+                12,
+                18,
+                24
+              ],
+              "armes": [
+                {
+                  "n": "Lance-flammes",
+                  "att": 8,
+                  "prec": -3,
+                  "puis": 9,
+                  "melee": false
+                },
+                {
+                  "n": "Coup de poing",
+                  "att": 10,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Jet de flammes",
+                  "r": 6
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Régénération",
+                  "r": 4
+                },
+                {
+                  "n": "Immunité contre le feu",
+                  "r": 0
+                }
+              ],
+              "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles du Grimoire)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Six jeunes gens de vingt à trente ans, plus petits, plus poilus et plus binoclards que la moyenne, crédibles en uniforme de pompiers français. Interchangeables, prompts à faire le coup de feu, très soudés. Devise : « take your piston, make it happen ». Arme favorite : le lance-flammes ; véhicule : un faux camion de pompiers trafiqué.\nMission de Belial : capturer Andrealphus (et son fœtus). Trahissent tôt ou tard tout allié de circonstance : ils ont les ordres de leur prince.\nLance-flammes : valeurs de la table des armes (Tir, armes de guerre 4).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-garde-carmine"
+            },
+            {
+              "id": "fi12-andrealphus-34",
+              "nom": "Josiane Darmentière / Yolande Jolimont (Andrealphus)",
+              "source": "Prince-démon du sexe, enceinte de Damien",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 6,
+                "pe": 6,
+                "vo": 6,
+                "pr": 10,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 5,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Charme",
+                  "r": 0
+                },
+                {
+                  "n": "Orgasme mortel",
+                  "r": 0
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 0
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 0
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 0
+                },
+                {
+                  "n": "Membre exotique",
+                  "r": 0
+                }
+              ],
+              "talents": "Séduction, Kama sutra",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici) ; fiche minimale aux valeurs estimées (comme au scénario 3), PF et seuils laissés au calcul automatique.\nPP : 5 avant l'opéra, 0 après la poursuite en voiture, 3 à Grindelwald, 9 après avoir dévoré Hans Helmut.\nJolie brunette aux cheveux courts, vêtements amples griffés, bijoux offerts par Hans Helmut ; faux accent anglais. Descendue au Vater Rhein sous le nom de Josiane Darmentière, voiture de location BMW bleue... et Porsche noire de son baronnet. Passe ses journées dans les lieux publics chics, ses soirées aux spectacles hors de prix.\nSi on lui remet le Message officiel : colère noire, envoie Hans chercher des martinis puis sort ses griffes (Membre exotique) pour vivisecter les PJ.\nConsigne du livre : elle ne doit pas mourir ; tricher discrètement pour qu'elle s'échappe quoi qu'il arrive.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-andrealphus"
+            },
+            {
+              "id": "fi12-hans-helmut-35",
+              "nom": "Hans Helmut von Oxenstein",
+              "source": "Sang bleu – baronnet de Spa et vicomte de Volkenburg",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 2,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 3,
+              "pp": 0,
+              "seuilsFix": [
+                2,
+                4,
+                6,
+                8
+              ],
+              "armes": [
+                {
+                  "n": "Petite arme de poing",
+                  "att": 2,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Gotha 4, Ski de descente 3, Polo 3, Couiner comme une hermine qu'on écorche 3+, Bijoux de famille 2+",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Trentenaire ramolli, voix couinante, mains moites ; visage bouffi et méprisant, fine moustache, épingles de cravate en diamant et chevalières énormes. Pilote une Porsche noire hors collection.\nCavalier d'Andrealphus à l'opéra, puis son garde-manger : elle le garde en vie comme « porte de sortie » et finit par le dévorer pour se recharger.\nArme : « petite arme de poing » sans talent de Tir chiffré ; revolver petit calibre au niveau 1 (estimé). Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-hans-helmut"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-retour",
+          "nom": "11. Péril en la demeure II, le retour",
+          "lieu": "Centre de Tri, Paris – J4",
+          "notes": "• Message non remis, enveloppe restée fermée et rapportée : fin du scénario. Rapide débriefing, une semaine de repos sans récompense. Aurélie récupère l'enveloppe avant Gilbert ou Fabien et reste en poste comme taupe, pour mettre des bâtons dans les roues des PJ pendant la fin de la campagne.\n• Contenu du Message connu (lu par Andrealphus ou ouvert par les PJ) : les PJ veulent des explications d'Aurélie ou des responsables du Centre.\n  – S'ils agissent seuls (par méfiance envers Fabien, par exemple) : Aurélie nie, joue l'idiote (elle est douée), puis prévient son contact du Daemonis Malificum, Alonzo Balmasquez ; l'info remonte à Baalberith, qui lui ordonne de faire profil bas.\n  – S'ils parlent de leurs soupçons à Monsieur Fabien : Beleth leur conseille de faire comme si de rien n'était et de surveiller Aurélie deux ou trois jours, discrètement (une trahison interne est toujours à craindre vu les remous chez les forces du Mal). Il raconte qu'elle est arrivée au Centre huit jours après la mort violente de Vanessa, la secrétaire précédente.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-fabien-36",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : briefe les PJ sur la « mission » à Bâle (billets de train en première, liasse de francs suisses, numéro de portable du contact), sans savoir que l'ordre est un faux de Baalberith. Interrogé sur l'enveloppe d'Aurélie, dit ne rien savoir mais lui faire confiance ; en réalité Beleth vérifie de son côté et grille la couverture d'Aurélie.\nSi les PJ lui confient leurs soupçons : conseille de faire comme si de rien n'était et de surveiller Aurélie deux ou trois jours ; raconte qu'elle est arrivée huit jours après la mort violente de Vanessa. Si Aurélie lui est livrée : l'enferme une nuit au sous-sol, lui soutire ses secrets pendant son sommeil, puis ordonne aux PJ de l'exécuter. À la fin, demande le silence et offre en secret un pouvoir.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-fabien"
+            },
+            {
+              "id": "fi12-gilbert-37",
+              "nom": "Gilbert",
+              "source": "Démon de Morax, grade 1 (Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 8,
+                "vo": 8,
+                "pr": 6,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 18,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Œuvre d'art",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 8
+                },
+                {
+                  "n": "Jet de flammes",
+                  "r": 4
+                },
+                {
+                  "n": "Sommeil",
+                  "r": 4
+                },
+                {
+                  "n": "Invisibilité",
+                  "r": 2
+                },
+                {
+                  "n": "Vitesse",
+                  "r": 2
+                },
+                {
+                  "n": "Vol",
+                  "r": 2
+                }
+              ],
+              "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : présent au briefing dans le bureau enfumé de Monsieur Fabien ; soutien logistique au retour.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-gilbert"
+            },
+            {
+              "id": "fi12-aurelie-38",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-aurelie"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi12-ch-retour",
+              "q": "Comment les PJ règlent-ils l'affaire Aurélie ?",
+              "opts": [
+                {
+                  "t": "Ils en parlent à Monsieur Fabien",
+                  "suite": "Filature discrète de deux ou trois jours (scène 12), avec la bénédiction de Beleth."
+                },
+                {
+                  "t": "Ils la confrontent eux-mêmes",
+                  "suite": "Aurélie joue l'idiote et prévient Alonzo ; Baalberith lui ordonne de faire profil bas. Les PJ peuvent encore enquêter."
+                },
+                {
+                  "t": "Ils laissent tomber",
+                  "suite": "Aurélie reste taupe pour la suite de la campagne."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi12-sc-clignancourt",
+          "nom": "12. Le passé trouble d'Aurélie",
+          "lieu": "Appartement d'Aurélie, près de la porte de Clignancourt – J4 à J6",
+          "notes": "Petit appartement dans un bel immeuble Grand Siècle. Porte renforcée de métal, trois verrous de sécurité à clés compliquées et infalsifiables. Le voisin de palier, chômeur de longue durée et amant d'Aurélie, remonté par elle contre les cambrioleurs, surveille l'immeuble : il chasse les rôdeurs, puis appelle directement le ministre de l'Intérieur en cas de récidive.\nÀ l'intérieur : studio étonnamment bien rangé, sans le kitsch attendu ; seule la garde-robe (fuchsia, paillettes, angora) trahit sa personnalité.\nLe coffre-fort, caché derrière une bibliothèque de cassettes vidéo de grands classiques, est difficile à ouvrir et piégé : mauvais code ou secousses, et une cartouche d'acide dissout son contenu. Si les PJ déjouent le piège : gros classeur beige de dossiers sur chacun d'eux (remarques désobligeantes, détails de vie privée), un chapitre « opération Jurassic Park » détaillant la manipulation qui a servi à destituer Andromalius, et des copies de courriers à un prince-démon commençant par « Monseigneur… ». Contenu détruit : Psychométrie sur le coffre pour en récupérer une partie.\nCapturer Aurélie et la passer à tabac : décevant. Elle crache, injurie, grimace, ne révèle rien de son employeur et reste hermétique aux menaces ; à la première occasion, elle tente de tuer ses geôliers ou de les monter les uns contre les autres en révélant leurs secrets honteux (limitation psychologique, etc.). Livrée à Monsieur Fabien : enfermée une nuit au sous-sol, il lui arrache dans son sommeil ce qui lui manque et ordonne aux PJ de l'exécuter le lendemain.\nSi le coffre a été raté mais la filature discrète : la piste mène à Alonzo.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi12-aurelie-39",
+              "nom": "Aurélie",
+              "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 6,
+                "pe": 6,
+                "vo": 10,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 8,
+              "pp": 10,
+              "seuilsFix": [
+                5,
+                10,
+                15,
+                20
+              ],
+              "armes": [
+                {
+                  "n": "Corps à corps",
+                  "att": 7,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Charme",
+                  "r": 5
+                },
+                {
+                  "n": "Lire les pensées",
+                  "r": 4
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 2
+                },
+                {
+                  "n": "Polymorphie",
+                  "r": 2
+                }
+              ],
+              "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-aurelie"
+            },
+            {
+              "id": "fi12-voisin-40",
+              "nom": "Le voisin de palier d'Aurélie",
+              "source": "Humain, chômeur de longue durée",
+              "type": "humain",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Amant d'Aurélie depuis deux ou trois ans, remonté par elle contre les cambrioleurs ; surveille les allées et venues de l'immeuble. Menace les rôdeurs, puis appelle directement le ministre de l'Intérieur (Sarkozy) en cas de récidive.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-voisin"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "fi12-ch-aurelie",
+              "q": "Comment les PJ percent-ils le secret d'Aurélie ?",
+              "opts": [
+                {
+                  "t": "Coffre-fort ouvert",
+                  "suite": "Dossiers sur les PJ, opération « Jurassic Park », courriers à « Monseigneur » : la manipulation est prouvée."
+                },
+                {
+                  "t": "Capture et interrogatoire",
+                  "suite": "Rien n'en sort ; livrée à Fabien, elle est vidée de ses secrets pendant la nuit et les PJ reçoivent l'ordre de l'exécuter."
+                },
+                {
+                  "t": "Filature",
+                  "suite": "Les PJ remontent jusqu'à Alonzo Balmasquez (scène 13)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "fi12-sc-alonzo",
+          "nom": "13. Pommes d'amour place de la Concorde",
+          "lieu": "Place de la Concorde et domicile d'Alonzo, Paris – J4 à J6",
+          "notes": "Alonzo Balmasquez vend des pommes d'amour sous la grande roue de la Concorde. Démon de Baalberith incarné illégalement, agent de liaison entre le Daemonis Malificum et son prince, maître d'œuvre de l'opération « Jurassic Park » sur Terre. Pas plus coopératif qu'Aurélie : armé d'un 9 mm, dent creuse au cyanure, il ne se laissera pas prendre vivant.\nChez lui, plusieurs renseignements sur le Daemonis Malificum et sur l'opération « Jurassic Park ». Démanteler cette branche de l'organisation.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "fi12-alonzo-41",
+              "nom": "Alonzo Balmasquez",
+              "source": "Démon de Baalberith, grade 1 – agent de liaison du Daemonis Malificum",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 10,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 8,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 17,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "9 mm",
+                  "att": 9,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 9
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Esprits multiples",
+                  "r": 2
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 2
+                }
+              ],
+              "talents": "Tir 4+, Discrétion 3, Défense 4, « Pomme d'amourtche pour les chamoureutch ? » 2, « Pomme d'amourtche pour les petits vieutch ? » 2 ; pouvoirs de grade secrets : Administration 3, Messages 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Petit Latino râblé, salopette verte et rouflaquettes, vendeur de pommes d'amour sous la grande roue de la Concorde. Fait partie d'un groupe de démons incarnés illégalement par Baalberith (dossiers falsifiés) ; liaison entre les membres du Daemonis Malificum et le prince. Maître d'œuvre sur Terre de l'opération « Jurassic Park ».\nToujours armé d'un 9 mm (valeurs du revolver petit calibre), dent creuse au cyanure : ne se laisse pas prendre vivant. Garde chez lui un ou deux documents compromettants sur « Jurassic Park ».\nSource : Fire and Ice 2, « Run like Hell », p. 51-65.",
+              "typeId": "type-fi12-alonzo"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "fi12-sc-epilogue",
+          "nom": "14. Le mieux est l'ennemi du bien",
+          "lieu": "Centre de Tri, Paris",
+          "notes": "En principe, cette partie s'achève sur la mort d'Aurélie et la révélation du complot : les PJ ont œuvré, sans le savoir, à la destitution d'Andromalius, commanditée par un autre prince-démon. Seul Baalberith semble en profiter, mais il est presque au-dessus de tout soupçon : de quoi perturber les joueurs.\nMis au courant, Beleth/Monsieur Fabien demande aux PJ de ne pas ébruiter l'affaire : un nouveau scandale aux Enfers serait de trop dans la situation actuelle, et le prince responsable viendrait régler ses comptes. Mieux vaut attendre et se concentrer sur des questions plus pressantes : pourquoi Belial veut-il à son tour mettre la main sur Andrealphus ?\nRécompense : une semaine de congés et un pouvoir offert en secret par Beleth contre leur silence (au choix du MJ dans la table de ses pouvoirs privilégiés, sauf Cauchemar mortel). Huit jours aux Maldives avant le dernier quart de la campagne.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "fi12-fabien-42",
+              "nom": "Monsieur Fabien",
+              "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 10,
+                "vo": 8,
+                "pr": 4,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 24,
+              "seuilsFix": [
+                4,
+                8,
+                12,
+                16
+              ],
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Message officiel",
+                  "r": 0
+                },
+                {
+                  "n": "Télépathie",
+                  "r": 10
+                },
+                {
+                  "n": "Boomerang",
+                  "r": 6
+                },
+                {
+                  "n": "Cauchemar",
+                  "r": 6
+                },
+                {
+                  "n": "Onde de choc",
+                  "r": 4
+                },
+                {
+                  "n": "Téléportation",
+                  "r": 4
+                },
+                {
+                  "n": "Corps gazeux",
+                  "r": 0
+                },
+                {
+                  "n": "Détection du futur proche",
+                  "r": 4
+                },
+                {
+                  "n": "Volonté supra-normale",
+                  "r": 4
+                }
+              ],
+              "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Rôle ici : briefe les PJ sur la « mission » à Bâle (billets de train en première, liasse de francs suisses, numéro de portable du contact), sans savoir que l'ordre est un faux de Baalberith. Interrogé sur l'enveloppe d'Aurélie, dit ne rien savoir mais lui faire confiance ; en réalité Beleth vérifie de son côté et grille la couverture d'Aurélie.\nSi les PJ lui confient leurs soupçons : conseille de faire comme si de rien n'était et de surveiller Aurélie deux ou trois jours ; raconte qu'elle est arrivée huit jours après la mort violente de Vanessa. Si Aurélie lui est livrée : l'enferme une nuit au sous-sol, lui soutire ses secrets pendant son sommeil, puis ordonne aux PJ de l'exécuter. À la fin, demande le silence et offre en secret un pouvoir.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26.",
+              "typeId": "type-fi12-fabien"
+            }
+          ],
+          "live": null,
+          "choix": []
+        }
+      ],
+      "createdAt": 1795375956101,
+      "updatedAt": 1795375956101
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-fi12-fabien",
+      "nom": "Monsieur Fabien",
+      "source": "Démon de Baalberith, grade 2 (chef du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 8,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 24,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 10
+        },
+        {
+          "n": "Boomerang",
+          "r": 6
+        },
+        {
+          "n": "Cauchemar",
+          "r": 6
+        },
+        {
+          "n": "Onde de choc",
+          "r": 4
+        },
+        {
+          "n": "Téléportation",
+          "r": 4
+        },
+        {
+          "n": "Corps gazeux",
+          "r": 0
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 4
+        }
+      ],
+      "talents": "Métier (administration) 7, Discussion 6, Baratin 4 ; avantage matériel : le Centre de Tri",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : briefe les PJ sur la « mission » à Bâle (billets de train en première, liasse de francs suisses, numéro de portable du contact), sans savoir que l'ordre est un faux de Baalberith. Interrogé sur l'enveloppe d'Aurélie, dit ne rien savoir mais lui faire confiance ; en réalité Beleth vérifie de son côté et grille la couverture d'Aurélie.\nSi les PJ lui confient leurs soupçons : conseille de faire comme si de rien n'était et de surveiller Aurélie deux ou trois jours ; raconte qu'elle est arrivée huit jours après la mort violente de Vanessa. Si Aurélie lui est livrée : l'enferme une nuit au sous-sol, lui soutire ses secrets pendant son sommeil, puis ordonne aux PJ de l'exécuter. À la fin, demande le silence et offre en secret un pouvoir.\nVétéran débonnaire, pipe, anecdote laponne. Secret : remplacé par Beleth (« le Grand Imposteur ») quelques semaines après l'arrivée des PJ.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi12-gilbert",
+      "nom": "Gilbert",
+      "source": "Démon de Morax, grade 1 (Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 8,
+        "vo": 8,
+        "pr": 6,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 18,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Œuvre d'art",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 8
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Sommeil",
+          "r": 4
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        }
+      ],
+      "talents": "Tartiner de la poésie 7, Trier du courrier 3, Conduite 4, Pilotage 3, Tir 2+ ; avertissement sans frais : gentil",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : présent au briefing dans le bureau enfumé de Monsieur Fabien ; soutien logistique au retour.\nDélégué CGT, gardien des lettres non distribuées, poète médiocre, habitué de Chez Régis ; bavard une fois éméché. Secret : s'est perdu un jour dans un dédale lumineux sous les caves.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi12-aurelie",
+      "nom": "Aurélie",
+      "source": "Démon de Baalberith, grade 0 (secrétaire du Centre de Tri)",
+      "type": "demon",
+      "car": {
+        "fo": 6,
+        "ag": 6,
+        "pe": 6,
+        "vo": 10,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 8,
+      "pp": 10,
+      "seuilsFix": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "armes": [
+        {
+          "n": "Corps à corps",
+          "att": 7,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Charme",
+          "r": 5
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 2
+        },
+        {
+          "n": "Polymorphie",
+          "r": 2
+        }
+      ],
+      "talents": "Corps à corps 3+, Baratin 4+, Hobby (vélo) 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Rôle ici : la taupe du Daemonis Malificum. Récupère auprès d'un membre de l'organisation le faux Message officiel rédigé par Baalberith et le remet aux PJ sur le quai de la gare de l'Est ; au téléphone, insiste pour que le message soit remis à Andrealphus.\nDémasquée et capturée : change du tout au tout (crache, injurie, grimace), ne dit rien de son employeur, tente de tuer ses geôliers ou de les monter les uns contre les autres (révèle les secrets honteux des PJ). Interrogée « gentiment » : joue l'idiote puis prévient son contact Alonzo Balmasquez.\nAppartement près de la porte de Clignancourt (porte blindée, trois verrous), coffre-fort piégé à l'acide derrière une bibliothèque de cassettes vidéo.\nSecrétaire bavarde et épuisante, chef en second ; fait chaque matin à vélo la tournée des boîtes aux lettres secrètes. Secret : membre infiltrée du Daemonis Maleficum, meurtrière de Vanessa.\nCaractéristiques : Fire and Ice, « Le Centre de Tri », p. 24-26."
+    },
+    {
+      "id": "type-fi12-genevieve",
+      "nom": "Geneviève Lehmann",
+      "source": "Démon de Baalberith, grade 0 (ex-Andromalius, grade 2) – le contact à Bâle",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 22,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Fleuret maudit mineur",
+          "att": 8,
+          "prec": 3,
+          "puis": 3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Humanité",
+          "r": 8
+        },
+        {
+          "n": "Polymorphie",
+          "r": 6
+        },
+        {
+          "n": "Détection du bien",
+          "r": 6
+        },
+        {
+          "n": "Télékinésie",
+          "r": 6
+        },
+        {
+          "n": "Lire les pensées",
+          "r": 4
+        },
+        {
+          "n": "Télépathie",
+          "r": 4
+        },
+        {
+          "n": "Détection du mensonge",
+          "r": 2
+        },
+        {
+          "n": "Invisibilité",
+          "r": 2
+        }
+      ],
+      "talents": "Séduction 5, Conduite 4, Défense 4, Combat 4, Porter des bas résille 4, Découper des aloyaux de chippendales 3 ; avertissement sans frais : besoin de jeunesse",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petite sexagénaire menue et pimpante, sourire de grand-mère, cheveux bleutés trop teints ; en privé, démon taré qui torture des chippendales. Contact fiable de l'ex-prince du jugement, constante et méticuleuse, mais peu discrète et sans initiative.\nA repéré Andrealphus en Slovaquie et l'a suivie jusqu'à Bâle ; a infiltré le Vater Rhein grâce à un groom complice. Fournit les photos (disquette) de l'équipe de Baal.\nCapturée par l'équipe de Hobbes le soir de l'opéra : victime du pouvoir Suicide de Knut, elle vient embrasser les PJ à l'entracte et fait exploser la ceinture d'explosifs cachée sous son manteau de fourrure (1D6 dommages dans un rayon de 2 m, moitié jusqu'à 5 m ; Perception très difficile pour remarquer les reliefs à sa ceinture).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-hobbes",
+      "nom": "Thomas Hobbes",
+      "source": "Démon de Baal, grade 3 – chef de l'équipe de Baal",
+      "type": "demon",
+      "car": {
+        "fo": 10,
+        "ag": 4,
+        "pe": 10,
+        "vo": 4,
+        "pr": 4,
+        "foi": 10
+      },
+      "def": 10,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 38,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Épée à deux mains maudite mineure",
+          "att": 14,
+          "prec": 1,
+          "puis": 5,
+          "melee": true
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Art de combat",
+          "r": 10
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Peur",
+          "r": 8
+        },
+        {
+          "n": "Jet d'acide",
+          "r": 6
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Jet de flammes",
+          "r": 4
+        },
+        {
+          "n": "Poison",
+          "r": 4
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        },
+        {
+          "n": "Corps liquide",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 5, Défense 5, Combat 4 (épées 7), Savoir militaire 5",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Énorme (près de deux mètres cubes), noir, crâne rasé, polo Lacoste vert sapin ; un des meilleurs tacticiens de Baal et son baron le plus proche, travaille directement pour lui depuis une dizaine d'années sans aucun échec. Fin négociateur, passe du langage châtié au registre ordurier ; voix d'infrabasses quand il s'énerve.\nMission : mettre la main sur Andrealphus et la ramener de force aux Enfers. Peut proposer aux PJ une alliance temporaire contre les Belial.\nMembre exotique quatre fois dans le livre : crocs, langue barbelée, griffes, cornes. Corps à corps 5 reporté en « Coup de poing ».\nConsigne du livre : éviter qu'il meure dans ce scénario.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-knut",
+      "nom": "Knut Freihart",
+      "source": "Démon de Furfur, grade 2 – équipe de Baal",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 6,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 25,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "Canon scié maudit mineur (portée très courte)",
+          "att": 11,
+          "prec": -1,
+          "puis": 8,
+          "melee": false
+        },
+        {
+          "n": "Bistouri",
+          "att": 6,
+          "prec": 0,
+          "puis": 0,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Suicide",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 6
+        },
+        {
+          "n": "Vitesse",
+          "r": 6
+        },
+        {
+          "n": "Rebond",
+          "r": 4
+        },
+        {
+          "n": "Absorption de violence",
+          "r": 4
+        },
+        {
+          "n": "Boomerang",
+          "r": 2
+        },
+        {
+          "n": "Vol",
+          "r": 2
+        },
+        {
+          "n": "Volonté supra-normale",
+          "r": 2
+        }
+      ],
+      "talents": "Tir 3 (armes d'épaule 5+), Corps à corps 3, Défense 3, Bistouri 3, Athlétisme 3, « Gomment talez fou dré chèr » 3, « Raus ! » 2 ; avertissement sans frais : tueur psychopathe",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Presque aussi grand que Hobbes mais taillé comme un laguiole : brosse peroxydée, piercing à la lèvre, barbe de trois jours, costume Gucci trop grand, Ray-Ban. Voix très douce, léger accent allemand. Fidèle à Hobbes depuis des années ; livré à lui-même, ses pulsions meurtrières deviennent incontrôlables.\nC'est lui qui conditionne Geneviève par Suicide. Membre exotique : griffes.\nBistouri : valeurs estimées (poignard). Tire au P.-M. depuis la BMW pendant la poursuite (arme non chiffrée).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-lisa",
+      "nom": "Lisa Lockerby",
+      "source": "Démon de Caym, grade 2 – équipe de Baal (conductrice de la BMW)",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 21,
+      "seuilsFix": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "armes": [
+        {
+          "n": "Arbalète maudite mineure (portée longue)",
+          "att": 14,
+          "prec": -2,
+          "puis": 5,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Transformation",
+          "r": 6
+        },
+        {
+          "n": "Poison",
+          "r": 6
+        },
+        {
+          "n": "Contrôle des animaux",
+          "r": 4
+        },
+        {
+          "n": "Vol",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        },
+        {
+          "n": "Augmentation de Perception",
+          "r": 4
+        }
+      ],
+      "talents": "Tir 2 (armes de trait 7), Séduction 5, Savoir militaire 2 (explosifs 4), Conduite 3, Cocktails et mondanités 2, Brushing bétonné 2 ; avertissement sans frais : asexuée",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Créature fatale entre Bardot jeune et Marilyn, crinière blonde léonine, manteau de vison, diamants aux oreilles : les conversations s'arrêtent sur son passage. Asexuée. Excellente conductrice, démolisseuse et tireuse à l'arbalète ; toujours impeccable, même en bobsleigh à 60 km/h.\nMembre exotique deux fois dans le livre : griffes et crocs. Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-andrealphus",
+      "nom": "Josiane Darmentière / Yolande Jolimont (Andrealphus)",
+      "source": "Prince-démon du sexe, enceinte de Damien",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 6,
+        "pe": 6,
+        "vo": 6,
+        "pr": 10,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 5,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Charme",
+          "r": 0
+        },
+        {
+          "n": "Orgasme mortel",
+          "r": 0
+        },
+        {
+          "n": "Polymorphie",
+          "r": 0
+        },
+        {
+          "n": "Invisibilité",
+          "r": 0
+        },
+        {
+          "n": "Téléportation",
+          "r": 0
+        },
+        {
+          "n": "Membre exotique",
+          "r": 0
+        }
+      ],
+      "talents": "Séduction, Kama sutra",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Caractéristiques complètes : livre de base INS/MV4, p. 106 (non reprises ici) ; fiche minimale aux valeurs estimées (comme au scénario 3), PF et seuils laissés au calcul automatique.\nPP : 5 avant l'opéra, 0 après la poursuite en voiture, 3 à Grindelwald, 9 après avoir dévoré Hans Helmut.\nJolie brunette aux cheveux courts, vêtements amples griffés, bijoux offerts par Hans Helmut ; faux accent anglais. Descendue au Vater Rhein sous le nom de Josiane Darmentière, voiture de location BMW bleue... et Porsche noire de son baronnet. Passe ses journées dans les lieux publics chics, ses soirées aux spectacles hors de prix.\nSi on lui remet le Message officiel : colère noire, envoie Hans chercher des martinis puis sort ses griffes (Membre exotique) pour vivisecter les PJ.\nConsigne du livre : elle ne doit pas mourir ; tricher discrètement pour qu'elle s'échappe quoi qu'il arrive.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-hans-helmut",
+      "nom": "Hans Helmut von Oxenstein",
+      "source": "Sang bleu – baronnet de Spa et vicomte de Volkenburg",
+      "type": "humain",
+      "car": {
+        "fo": 2,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 3,
+      "pp": 0,
+      "seuilsFix": [
+        2,
+        4,
+        6,
+        8
+      ],
+      "armes": [
+        {
+          "n": "Petite arme de poing",
+          "att": 2,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Gotha 4, Ski de descente 3, Polo 3, Couiner comme une hermine qu'on écorche 3+, Bijoux de famille 2+",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Trentenaire ramolli, voix couinante, mains moites ; visage bouffi et méprisant, fine moustache, épingles de cravate en diamant et chevalières énormes. Pilote une Porsche noire hors collection.\nCavalier d'Andrealphus à l'opéra, puis son garde-manger : elle le garde en vie comme « porte de sortie » et finit par le dévorer pour se recharger.\nArme : « petite arme de poing » sans talent de Tir chiffré ; revolver petit calibre au niveau 1 (estimé). Défense non donnée : 2.\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-tobbias",
+      "nom": "Tobbias Vanschlumpfen",
+      "source": "Journaliste bâlois, spécialiste des têtes couronnées",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Auteur de l'entrefilet people sur la disparition de Hans Helmut après l'attentat du Theater Basel. Très lisse, ravi de faire un exposé sur son noble préféré : apprend aux PJ l'existence de son chalet près de Grindelwald, à une heure et demie de Bâle.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-garde-carmine",
+      "nom": "Jacques, Alexandre, Florian, Philippe, Thomas et Matthieu",
+      "source": "Démons de Belial, grade 1 – Garde carmine (faux sapeurs-pompiers)",
+      "type": "demon",
+      "car": {
+        "fo": 8,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 11,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 13,
+      "seuilsFix": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "armes": [
+        {
+          "n": "Lance-flammes",
+          "att": 8,
+          "prec": -3,
+          "puis": 9,
+          "melee": false
+        },
+        {
+          "n": "Coup de poing",
+          "att": 10,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Jet de flammes",
+          "r": 6
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Vitesse",
+          "r": 2
+        },
+        {
+          "n": "Régénération",
+          "r": 4
+        },
+        {
+          "n": "Immunité contre le feu",
+          "r": 0
+        }
+      ],
+      "talents": "Défense 5+, Corps à corps 5, Athlétisme 4, Tir 3 (armes de guerre 4), Conduite 4+, Pousser des cris de guerre 3, Se retourner tous en même temps 2 ; pouvoir Feu de Prométhée 2 (absent des règles du Grimoire)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Six jeunes gens de vingt à trente ans, plus petits, plus poilus et plus binoclards que la moyenne, crédibles en uniforme de pompiers français. Interchangeables, prompts à faire le coup de feu, très soudés. Devise : « take your piston, make it happen ». Arme favorite : le lance-flammes ; véhicule : un faux camion de pompiers trafiqué.\nMission de Belial : capturer Andrealphus (et son fœtus). Trahissent tôt ou tard tout allié de circonstance : ils ont les ordres de leur prince.\nLance-flammes : valeurs de la table des armes (Tir, armes de guerre 4).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-voisin",
+      "nom": "Le voisin de palier d'Aurélie",
+      "source": "Humain, chômeur de longue durée",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Amant d'Aurélie depuis deux ou trois ans, remonté par elle contre les cambrioleurs ; surveille les allées et venues de l'immeuble. Menace les rôdeurs, puis appelle directement le ministre de l'Intérieur (Sarkozy) en cas de récidive.\nFiche minimale (pas de caractéristiques dans le livre).\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    },
+    {
+      "id": "type-fi12-alonzo",
+      "nom": "Alonzo Balmasquez",
+      "source": "Démon de Baalberith, grade 1 – agent de liaison du Daemonis Malificum",
+      "type": "demon",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 10,
+        "vo": 10,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 8,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 17,
+      "seuilsFix": [
+        4,
+        8,
+        12,
+        16
+      ],
+      "armes": [
+        {
+          "n": "9 mm",
+          "att": 9,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Message officiel",
+          "r": 0
+        },
+        {
+          "n": "Télépathie",
+          "r": 9
+        },
+        {
+          "n": "Détection du futur proche",
+          "r": 4
+        },
+        {
+          "n": "Esprits multiples",
+          "r": 2
+        },
+        {
+          "n": "Cauchemar",
+          "r": 2
+        }
+      ],
+      "talents": "Tir 4+, Discrétion 3, Défense 4, « Pomme d'amourtche pour les chamoureutch ? » 2, « Pomme d'amourtche pour les petits vieutch ? » 2 ; pouvoirs de grade secrets : Administration 3, Messages 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Petit Latino râblé, salopette verte et rouflaquettes, vendeur de pommes d'amour sous la grande roue de la Concorde. Fait partie d'un groupe de démons incarnés illégalement par Baalberith (dossiers falsifiés) ; liaison entre les membres du Daemonis Malificum et le prince. Maître d'œuvre sur Terre de l'opération « Jurassic Park ».\nToujours armé d'un 9 mm (valeurs du revolver petit calibre), dent creuse au cyanure : ne se laisse pas prendre vivant. Garde chez lui un ou deux documents compromettants sur « Jurassic Park ».\nSource : Fire and Ice 2, « Run like Hell », p. 51-65."
+    }
+  ],
+  "memoire": []
+}

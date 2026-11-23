@@ -1,0 +1,1120 @@
+{
+  "format": "insmv-scenario",
+  "version": 1,
+  "scenarios": [
+    {
+      "id": "pa7-kiti-kon",
+      "nom": "Petites Apocalypses – L'épopée du Kiti-Kon",
+      "resume": "Mini-scénario de protection pour agents de la troisième Force employés par la DTC d'Hercule. Pour regagner des fidèles, Njord fait construire un drakkar traditionnel, le Kiti-Kon, et lance une traversée Rouen-Tahiti suivie par les médias. Les PJ escortent le professeur Aimé Tapelku et ses étudiants : sabotages démoniaques sur le chantier de Rouen, serpent de mer envoyé par un démon de Velphar, gardes-côtes manipulés par Dominique, pirates des Caraïbes et aléas de la mer.",
+      "notes": "Source : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.\n\nStructure : pas d'enquête mais une mission de protection, peu détaillée et ouverte, à jouer en interlude à n'importe quel moment de la campagne. Les incidents s'ajoutent, se retirent ou se déplacent à volonté ; on peut étendre le voyage.\nContexte : avec le délitement des marches, Asgard s'affaiblit et manque d'énergie onirique ; les fidèles se font rares. Njord mise sur un exploit télévisé pour toucher le grand public. La médiatisation est l'enjeu : chaque péripétie spectaculaire (et réussie) fait monter l'énergie, chaque échec ridicule la fait retomber.\nItinéraire : Rouen, Atlantique, canal de Panama, Pacifique, Tahiti.\nEnnemis : des démons qui s'amusent (sabotages), un démon de Velphar (serpent de mer), Dominique (gardes-côtes), des pirates.\n\nAdaptations : le ch. 14 (p. 115-116) ne propose rien pour ce mini-scénario. Suggestion : en MV, remplacer Njord par un archange qui soutient le projet (Christophe pour les jeunes, par exemple) ; en INS, inverser le point de vue et faire jouer les saboteurs.\n\nRécompenses : le livre n'en donne pas. Suggestion : contrat de la DTC payé selon l'issue (plein tarif à l'arrivée, moitié pour un naufrage héroïque), et la reconnaissance de Njord.\n\nFiches : aucun PNJ n'est chiffré dans le livre. Tapelku, Njord et les figurants ont des fiches minimales ; les adversaires (démons saboteurs, serpent de mer, pirates, gardes-côtes) sont entièrement estimés à partir de profils du bestiaire, comme indiqué dans leurs notes.",
+      "scenes": [
+        {
+          "id": "pa7-sc-commande",
+          "nom": "1. Le contrat de Njord",
+          "lieu": "Locaux de la DTC, puis Rouen",
+          "notes": "Njord passe commande à la DTC : protéger le Kiti-Kon et son équipage, de la construction à l'arrivée. Hercule confie la mission aux PJ. Objectif simple à énoncer : que le bateau arrive à Tahiti avec tout le monde en un seul morceau.\nPrésenter Aimé Tapelku, qui supervise la construction et commandera la traversée ; les PJ rejoignent l'équipage.\nLe bateau : langskip en bois goudronné d'une quinzaine de mètres sur quatre, 24 rames, grande voile carrée. Coque renforcée pour la haute mer ; boîte noire et caméras reliées à des relais radio (l'équipage n'y a pas accès), mais ni radio ni électronique de navigation.\nMédias présents dès le début ; une équipe télé tourne un documentaire de bout en bout.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa7-njord-1",
+              "nom": "Njord",
+              "source": "Dieu viking du voyage, commanditaire",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Veut recharger Asgard en énergie onirique par un exploit médiatique : un langskip traditionnel qui relie Rouen à Tahiti. Engage la DTC pour protéger le bateau et son équipage.\nNe participe pas à l'action. Pas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Valeurs indicatives.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-njord"
+            },
+            {
+              "id": "pa7-hercule-2",
+              "nom": "Hercule",
+              "source": "Patron de la DTC, héros païen",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Accepte le contrat de Njord et choisit les PJ. Peut affecter d'autres agents de la DTC à la surveillance du chantier pour garder les PJ pour les moments chauds.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-hercule"
+            },
+            {
+              "id": "pa7-tapelku-3",
+              "nom": "Professeur Aimé Tapelku",
+              "source": "Héros païen viking, chef de l'expédition",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-tapelku"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa7-sc-chantier",
+          "nom": "2. Le chantier de Rouen",
+          "lieu": "Hangar de construction, Rouen (plusieurs mois)",
+          "notes": "Artisans venus de Norvège, du Danemark, du Japon et du Canada, étudiants en histoire triés par Tapelku. Les PJ peuvent sympathiser avec l'équipage et repérer les personnalités (dont un éventuel futur traître).\nPremier sabotage, au bout d'une semaine : des démons qui s'amusent mettent le feu à la réserve de bois. Selon l'organisation choisie, les PJ arrivent après coup (enquête sur les traces) ou sont là pour éteindre et chasser les fauteurs de trouble.\nRouen, capitale historique des vikings de France : profiter de la ville (vieux centre piéton, monuments).",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa7-tapelku-4",
+              "nom": "Professeur Aimé Tapelku",
+              "source": "Héros païen viking, chef de l'expédition",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-tapelku"
+            },
+            {
+              "id": "pa7-etudiant-5",
+              "nom": "Étudiant d'équipage",
+              "source": "Étudiant en histoire, bâtisseur puis rameur",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir (histoire) 2, Navigation 1, Athlétisme 1 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes gens choisis par Tapelku : dynamiques, compétents, sympathisants de la cause viking. Certains restent à bord pour la traversée.\nOption : l'un d'eux est un traître ou simplement insupportable (voir la scène des aléas de la mer).\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-etudiant"
+            },
+            {
+              "id": "pa7-saboteur-6",
+              "nom": "Démon saboteur",
+              "source": "Démon de grade 1 qui s'amuse (chantier de Rouen)",
+              "type": "demon",
+              "qty": 2,
+              "car": {
+                "fo": 11,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 7+, Discrétion 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Auteurs des deux sabotages (incendie de la réserve de bois, puis tentative de raser le hangar presque terminé). Fuient dès qu'ils sont repérés : prétexte à une poursuite nocturne dans le centre de Rouen.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Profil repris du « démon bourrin, grade 1 » (On Ferme, p. 116, déjà au bestiaire) ; prince non précisé.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-saboteur"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa7-ch-surveillance",
+              "q": "Qui surveille le chantier ?",
+              "opts": [
+                {
+                  "t": "Les PJ eux-mêmes",
+                  "suite": "Ils affrontent les saboteurs dès l'incendie de la réserve de bois."
+                },
+                {
+                  "t": "D'autres agents de la DTC",
+                  "suite": "Hercule garde les PJ pour d'autres missions en parallèle ; ils sont rappelés pour la seconde tentative."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa7-sc-sabotage",
+          "nom": "3. Second sabotage et poursuite nocturne",
+          "lieu": "Hangar presque achevé, puis rues de Rouen la nuit",
+          "notes": "Vers la fin de la construction, les démons reviennent pour détruire purement et simplement le hangar et le bateau quasi terminé. Idéalement les PJ sont sur place : bagarre, puis course-poursuite dans le centre de Rouen, désert la nuit (personne pour gêner).\nSi les PJ échouent, le chantier prend du retard et la presse s'en mêle ; le projet reste viable.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa7-saboteur-7",
+              "nom": "Démon saboteur",
+              "source": "Démon de grade 1 qui s'amuse (chantier de Rouen)",
+              "type": "demon",
+              "qty": 3,
+              "car": {
+                "fo": 11,
+                "ag": 8,
+                "pe": 6,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 13,
+              "prot": 0,
+              "pfFix": 7,
+              "pp": 15,
+              "seuilsFix": [
+                7,
+                15,
+                22,
+                30
+              ],
+              "armes": [
+                {
+                  "n": "Griffes",
+                  "att": 12,
+                  "prec": 0,
+                  "puis": 9,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Armure corporelle",
+                  "r": 4
+                },
+                {
+                  "n": "Forme de combat",
+                  "r": 4
+                },
+                {
+                  "n": "Membre exotique : griffes",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 7+, Discrétion 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Auteurs des deux sabotages (incendie de la réserve de bois, puis tentative de raser le hangar presque terminé). Fuient dès qu'ils sont repérés : prétexte à une poursuite nocturne dans le centre de Rouen.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Profil repris du « démon bourrin, grade 1 » (On Ferme, p. 116, déjà au bestiaire) ; prince non précisé.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-saboteur"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa7-sc-serpent",
+          "nom": "4. Le serpent de mer",
+          "lieu": "Plein océan Atlantique",
+          "notes": "Une fois en mer, un démon de Velphar sous forme de serpent de mer attaque le drakkar. Le plan de Njord marche trop bien à son goût : le public suit la vie à bord et l'énergie onirique remonte vers Asgard.\nL'attaque doit être spectaculaire : rameurs renversés, rames brisées, coque menacée. Protéger Tapelku et les étudiants autant que le bateau.\nQuestion médiatique : un monstre marin à l'écran, ça ne passe pas inaperçu. Décider si les caméras enregistrent tout, si l'image est inexploitable (embruns, roulis), ou si elles sont neutralisées (par le démon ou par les PJ).",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa7-serpent-8",
+              "nom": "Serpent de mer",
+              "source": "Démon de Velphar, grade 2, transformé",
+              "type": "demon",
+              "qty": 1,
+              "car": {
+                "fo": 14,
+                "ag": 8,
+                "pe": 6,
+                "vo": 6,
+                "pr": 4,
+                "foi": 6
+              },
+              "def": 12,
+              "prot": 4,
+              "pfFix": 10,
+              "pp": 25,
+              "seuilsFix": [
+                10,
+                20,
+                30,
+                40
+              ],
+              "armes": [
+                {
+                  "n": "Morsure",
+                  "att": 16,
+                  "prec": 0,
+                  "puis": 10,
+                  "melee": true
+                },
+                {
+                  "n": "Coup de queue (renverse les rameurs)",
+                  "att": 14,
+                  "prec": 0,
+                  "puis": 8,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [
+                {
+                  "n": "Transformation",
+                  "r": 8
+                },
+                {
+                  "n": "Armure corporelle",
+                  "r": 8
+                },
+                {
+                  "n": "Membre exotique : crocs",
+                  "r": 0
+                }
+              ],
+              "talents": "Corps à corps 8, Natation 8, Discrétion 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Agacé par le regain d'intérêt pour les vikings : un Asgard en déclin arrangeait bien les démons. Attaque le drakkar en pleine mer ; l'assaut doit être terrible, voire faire chavirer le bateau.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Base « démon bourrin, grade 2 » (On Ferme, p. 116) renforcée : Force 7, seuils plus hauts et écailles (protection 4) pour une forme de serpent de mer.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-serpent"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa7-ch-cameras",
+              "q": "Qu'enregistrent les caméras pendant l'attaque ?",
+              "opts": [
+                {
+                  "t": "Tout",
+                  "suite": "Images sensationnelles : énorme audience, mais questions gênantes et attention de tous les camps."
+                },
+                {
+                  "t": "Des images floues",
+                  "suite": "Rumeurs et débats sans preuve ; la légende du Kiti-Kon grandit."
+                },
+                {
+                  "t": "Rien (caméras neutralisées)",
+                  "suite": "Discrétion préservée, mais une coupure d'images suspecte à expliquer aux médias."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa7-sc-garde-cotes",
+          "nom": "5. Arraisonnés par les gardes-côtes",
+          "lieu": "Eaux territoriales des États-Unis",
+          "notes": "Dominique, agacé par tout ce tapage, veut faire échouer l'expédition sans gloire. Il manipule des gardes-côtes américains qui arraisonnent le drakkar et soumettent Tapelku, les PJ et les étudiants à un interrogatoire long et absurde.\nQuestions possibles (à pousser plus loin dans l'absurde) : substances illicites à bord ? but de la visite ? animaux ? vaccins à jour ? hygiène dentaire ? fréquence de changement de chaussettes ? Coca ou Pepsi ? interdiction (imaginaire) des vêtements orange sur un bateau dans les eaux américaines ? Examen médical en prime.\nIssues au choix du MJ : escale forcée le temps des vérifications, passager déclaré porteur d'une maladie indésirable, cannabis trouvé sur un étudiant ou un PJ… Les PJ doivent combiner diplomatie et initiative pour repartir. Un échec ici est le pire : l'expédition tombe vite dans l'oubli.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa7-garde-cote-9",
+              "nom": "Garde-côte américain",
+              "source": "Agent des US Coast Guard, manipulé par Dominique",
+              "type": "humain",
+              "qty": 3,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Pistolet de service",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 4,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Tir 2, Administration 3, Poser des questions idiotes 4",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Arraisonnent le drakkar dans les eaux des États-Unis et infligent un interrogatoire interminable. Ne cherchent pas le combat : frapper un garde-côte ferait un scandale qui couperait court à l'expédition, exactement ce que veut Dominique.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Tir et arme estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-garde-cote"
+            },
+            {
+              "id": "pa7-tapelku-10",
+              "nom": "Professeur Aimé Tapelku",
+              "source": "Héros païen viking, chef de l'expédition",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-tapelku"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa7-ch-issue",
+              "q": "Comment le Kiti-Kon se sort-il de l'arraisonnement ?",
+              "opts": [
+                {
+                  "t": "Diplomatie ou astuce",
+                  "suite": "Le drakkar repart, avec un peu de retard et une anecdote de plus pour le documentaire."
+                },
+                {
+                  "t": "Escale forcée",
+                  "suite": "Retard important et vérifications ; nouvelle occasion pour Dominique de compliquer les choses."
+                },
+                {
+                  "t": "Expédition arrêtée",
+                  "suite": "Échec sans gloire : Tapelku préférera peut-être un sabordage spectaculaire (voir conclusion)."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa7-sc-pirates",
+          "nom": "6. Pirates des Caraïbes",
+          "lieu": "Mer des Caraïbes",
+          "notes": "À partir des Caraïbes, des pirates attaquent le drakkar. Les jouer en pirates de roman : ricanants, désorganisés, sabre entre les dents et portable à la ceinture.\nBagarre héroïque et filmée contre des méchants caricaturaux : exactement ce qu'attend le public. Elle devrait bien finir, les PJ ne sont pas venus les mains vides.",
+          "combat": true,
+          "npcs": [
+            {
+              "id": "pa7-pirate-11",
+              "nom": "Pirate des Caraïbes",
+              "source": "Pirate de roman, déjanté et désorganisé",
+              "type": "humain",
+              "qty": 6,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 4,
+                "vo": 2,
+                "pr": 2,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": 6,
+              "pp": 0,
+              "seuilsFix": [
+                4,
+                9,
+                13,
+                18
+              ],
+              "armes": [
+                {
+                  "n": "Sabre ébréché",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": 2,
+                  "melee": true
+                },
+                {
+                  "n": "Pistolet",
+                  "att": 4,
+                  "prec": -2,
+                  "puis": 3,
+                  "melee": false
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Combat 2, Tir 2, Navigation 2, Intimidation 1, Ricaner bêtement 3",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Sabre usé entre les dents, portable à la ceinture : à jouer dans le cliché. La bagarre, filmée, ravit le public et dope l'énergie onirique.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Seuils et PF repris des « gros bras » (Petites Apocalypses, ch. 6, déjà au bestiaire) ; armes à niveau 1.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-pirate"
+            }
+          ],
+          "live": null,
+          "choix": []
+        },
+        {
+          "id": "pa7-sc-aleas",
+          "nom": "7. Les aléas de la traversée",
+          "lieu": "Atlantique, canal de Panama, Pacifique (triangle des Bermudes en passant)",
+          "notes": "Incidents à placer à volonté entre les grandes scènes :\n• le Kiti-Kon se perd (pas d'électronique) ;\n• pénurie d'eau ;\n• avarie : voile, gouvernail ;\n• tempête soudaine et violente ;\n• un étudiant traître ou insupportable : il monte l'équipage les uns contre les autres, provoque des pannes, jette du matériel par-dessus bord ;\n• près du triangle des Bermudes, tout peut arriver.\nCes incidents peuvent faire échouer l'expédition de façon ridicule (rebrousser chemin, accoster faute d'eau), ce qui ferait ricaner le monde entier.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa7-etudiant-12",
+              "nom": "Étudiant d'équipage",
+              "source": "Étudiant en histoire, bâtisseur puis rameur",
+              "type": "humain",
+              "qty": 4,
+              "car": {
+                "fo": 4,
+                "ag": 4,
+                "pe": 4,
+                "vo": 4,
+                "pr": 4,
+                "foi": 4
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Savoir (histoire) 2, Navigation 1, Athlétisme 1 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Jeunes gens choisis par Tapelku : dynamiques, compétents, sympathisants de la cause viking. Certains restent à bord pour la traversée.\nOption : l'un d'eux est un traître ou simplement insupportable (voir la scène des aléas de la mer).\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-etudiant"
+            },
+            {
+              "id": "pa7-tapelku-13",
+              "nom": "Professeur Aimé Tapelku",
+              "source": "Héros païen viking, chef de l'expédition",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-tapelku"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa7-ch-traitre",
+              "q": "Y a-t-il un traître parmi les étudiants ?",
+              "opts": [
+                {
+                  "t": "Oui",
+                  "suite": "À démasquer avant qu'il ne sabote une étape cruciale ; pour qui travaille-t-il ? (démons, Dominique, simple jaloux…)."
+                },
+                {
+                  "t": "Juste un pénible",
+                  "suite": "Tensions à bord, disputes, petites pannes : du jeu de rôle à bord plutôt qu'un ennemi."
+                },
+                {
+                  "t": "Non",
+                  "suite": "L'équipage reste soudé ; garder les autres aléas."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        },
+        {
+          "id": "pa7-sc-tahiti",
+          "nom": "8. Arrivée à Tahiti (ou naufrage héroïque)",
+          "lieu": "Papeete, Tahiti",
+          "notes": "Réussite : accueil en héros ; Njord a remis les vikings à la mode et Asgard reprend des forces. Tapelku gère l'après : best-sellers, jouets et maquettes vikings, prolongation de l'effet médiatique.\nÉchec : l'opération peut quand même avoir porté ses fruits, selon la manière. Couler sous les crocs d'un serpent de mer reste glorieux ; être stoppé par les gardes-côtes, se perdre ou manquer d'eau fait sombrer le projet dans l'oubli ou le ridicule. Face à un échec humiliant, Tapelku saborde lui-même le drakkar et met en scène un naufrage héroïque.",
+          "combat": false,
+          "npcs": [
+            {
+              "id": "pa7-tapelku-14",
+              "nom": "Professeur Aimé Tapelku",
+              "source": "Héros païen viking, chef de l'expédition",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 6,
+                "ag": 4,
+                "pe": 6,
+                "vo": 6,
+                "pr": 6,
+                "foi": 8
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 4,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-tapelku"
+            },
+            {
+              "id": "pa7-njord-15",
+              "nom": "Njord",
+              "source": "Dieu viking du voyage, commanditaire",
+              "type": "paien",
+              "qty": 1,
+              "car": {
+                "fo": 8,
+                "ag": 6,
+                "pe": 6,
+                "vo": 8,
+                "pr": 8,
+                "foi": 10
+              },
+              "def": 2,
+              "prot": 0,
+              "pfFix": null,
+              "pp": 0,
+              "seuilsFix": null,
+              "armes": [
+                {
+                  "n": "Coup de poing",
+                  "att": 2,
+                  "prec": 0,
+                  "puis": -3,
+                  "melee": true
+                }
+              ],
+              "pouvoirs": [],
+              "talents": "",
+              "esquive": false,
+              "volonte": false,
+              "notes": "Veut recharger Asgard en énergie onirique par un exploit médiatique : un langskip traditionnel qui relie Rouen à Tahiti. Engage la DTC pour protéger le bateau et son équipage.\nNe participe pas à l'action. Pas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Valeurs indicatives.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111.",
+              "typeId": "type-pa7-njord"
+            }
+          ],
+          "live": null,
+          "choix": [
+            {
+              "id": "pa7-ch-fin",
+              "q": "Comment se termine l'épopée ?",
+              "opts": [
+                {
+                  "t": "Arrivée triomphale",
+                  "suite": "Plein succès pour Njord : énergie onirique pour Asgard, contrat rempli pour la DTC."
+                },
+                {
+                  "t": "Naufrage héroïque",
+                  "suite": "Succès partiel : l'émotion du public profite encore au panthéon viking."
+                },
+                {
+                  "t": "Échec ridicule",
+                  "suite": "Effet médiatique quasi nul ; Njord est mécontent de la DTC."
+                }
+              ],
+              "entry": null
+            }
+          ]
+        }
+      ],
+      "createdAt": 1795358026042,
+      "updatedAt": 1795358026042
+    }
+  ],
+  "bestiaire": [
+    {
+      "id": "type-pa7-tapelku",
+      "nom": "Professeur Aimé Tapelku",
+      "source": "Héros païen viking, chef de l'expédition",
+      "type": "paien",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 6,
+        "vo": 6,
+        "pr": 6,
+        "foi": 8
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 4,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Navigation 4, Savoir (histoire viking) 5, Métier : charpentier de marine 3, Discussion 3 (valeurs estimées)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Grand, la cinquantaine, crâne dégarni et couronne de cheveux blancs, yeux bleus, sourire franc. D'origine scandinave, installé en France après une quinzaine d'années aux États-Unis ; connu pour ses reconstitutions vikings. Courageux, digne, dévoué au panthéon viking, engagé dans l'écologie et les droits de l'homme. Adore naviguer.\nSupervise la construction et commande la traversée. Si l'échec humiliant menace, il préfère saborder lui-même le bateau et mettre en scène un naufrage héroïque devant les caméras.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Caractéristiques, talents et Défense estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-njord",
+      "nom": "Njord",
+      "source": "Dieu viking du voyage, commanditaire",
+      "type": "paien",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 6,
+        "vo": 8,
+        "pr": 8,
+        "foi": 10
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Veut recharger Asgard en énergie onirique par un exploit médiatique : un langskip traditionnel qui relie Rouen à Tahiti. Engage la DTC pour protéger le bateau et son équipage.\nNe participe pas à l'action. Pas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Valeurs indicatives.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-hercule",
+      "nom": "Hercule",
+      "source": "Patron de la DTC, héros païen",
+      "type": "paien",
+      "car": {
+        "fo": 8,
+        "ag": 6,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Accepte le contrat de Njord et choisit les PJ. Peut affecter d'autres agents de la DTC à la surveillance du chantier pour garder les PJ pour les moments chauds.\nSes caractéristiques sont au ch. 4 (p. 21) ; non reprises ici, il ne combat pas dans ce scénario. Valeurs de la fiche indicatives.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-etudiant",
+      "nom": "Étudiant d'équipage",
+      "source": "Étudiant en histoire, bâtisseur puis rameur",
+      "type": "humain",
+      "car": {
+        "fo": 4,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Coup de poing",
+          "att": 2,
+          "prec": 0,
+          "puis": -3,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Savoir (histoire) 2, Navigation 1, Athlétisme 1 (valeurs estimées)",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Jeunes gens choisis par Tapelku : dynamiques, compétents, sympathisants de la cause viking. Certains restent à bord pour la traversée.\nOption : l'un d'eux est un traître ou simplement insupportable (voir la scène des aléas de la mer).\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut).\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-saboteur",
+      "nom": "Démon saboteur",
+      "source": "Démon de grade 1 qui s'amuse (chantier de Rouen)",
+      "type": "demon",
+      "car": {
+        "fo": 11,
+        "ag": 8,
+        "pe": 6,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 13,
+      "prot": 0,
+      "pfFix": 7,
+      "pp": 15,
+      "seuilsFix": [
+        7,
+        15,
+        22,
+        30
+      ],
+      "armes": [
+        {
+          "n": "Griffes",
+          "att": 12,
+          "prec": 0,
+          "puis": 9,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Armure corporelle",
+          "r": 4
+        },
+        {
+          "n": "Forme de combat",
+          "r": 4
+        },
+        {
+          "n": "Membre exotique : griffes",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 7+, Discrétion 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Auteurs des deux sabotages (incendie de la réserve de bois, puis tentative de raser le hangar presque terminé). Fuient dès qu'ils sont repérés : prétexte à une poursuite nocturne dans le centre de Rouen.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Profil repris du « démon bourrin, grade 1 » (On Ferme, p. 116, déjà au bestiaire) ; prince non précisé.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-serpent",
+      "nom": "Serpent de mer",
+      "source": "Démon de Velphar, grade 2, transformé",
+      "type": "demon",
+      "car": {
+        "fo": 14,
+        "ag": 8,
+        "pe": 6,
+        "vo": 6,
+        "pr": 4,
+        "foi": 6
+      },
+      "def": 12,
+      "prot": 4,
+      "pfFix": 10,
+      "pp": 25,
+      "seuilsFix": [
+        10,
+        20,
+        30,
+        40
+      ],
+      "armes": [
+        {
+          "n": "Morsure",
+          "att": 16,
+          "prec": 0,
+          "puis": 10,
+          "melee": true
+        },
+        {
+          "n": "Coup de queue (renverse les rameurs)",
+          "att": 14,
+          "prec": 0,
+          "puis": 8,
+          "melee": true
+        }
+      ],
+      "pouvoirs": [
+        {
+          "n": "Transformation",
+          "r": 8
+        },
+        {
+          "n": "Armure corporelle",
+          "r": 8
+        },
+        {
+          "n": "Membre exotique : crocs",
+          "r": 0
+        }
+      ],
+      "talents": "Corps à corps 8, Natation 8, Discrétion 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Agacé par le regain d'intérêt pour les vikings : un Asgard en déclin arrangeait bien les démons. Attaque le drakkar en pleine mer ; l'assaut doit être terrible, voire faire chavirer le bateau.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Base « démon bourrin, grade 2 » (On Ferme, p. 116) renforcée : Force 7, seuils plus hauts et écailles (protection 4) pour une forme de serpent de mer.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-pirate",
+      "nom": "Pirate des Caraïbes",
+      "source": "Pirate de roman, déjanté et désorganisé",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 2,
+        "pr": 2,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": 6,
+      "pp": 0,
+      "seuilsFix": [
+        4,
+        9,
+        13,
+        18
+      ],
+      "armes": [
+        {
+          "n": "Sabre ébréché",
+          "att": 4,
+          "prec": 0,
+          "puis": 2,
+          "melee": true
+        },
+        {
+          "n": "Pistolet",
+          "att": 4,
+          "prec": -2,
+          "puis": 3,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Combat 2, Tir 2, Navigation 2, Intimidation 1, Ricaner bêtement 3",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Sabre usé entre les dents, portable à la ceinture : à jouer dans le cliché. La bagarre, filmée, ravit le public et dope l'énergie onirique.\nLe mini-scénario ne chiffre aucun adversaire : fiche entièrement estimée pour pouvoir lancer le combat. Seuils et PF repris des « gros bras » (Petites Apocalypses, ch. 6, déjà au bestiaire) ; armes à niveau 1.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    },
+    {
+      "id": "type-pa7-garde-cote",
+      "nom": "Garde-côte américain",
+      "source": "Agent des US Coast Guard, manipulé par Dominique",
+      "type": "humain",
+      "car": {
+        "fo": 6,
+        "ag": 4,
+        "pe": 4,
+        "vo": 4,
+        "pr": 4,
+        "foi": 4
+      },
+      "def": 2,
+      "prot": 0,
+      "pfFix": null,
+      "pp": 0,
+      "seuilsFix": null,
+      "armes": [
+        {
+          "n": "Pistolet de service",
+          "att": 4,
+          "prec": -2,
+          "puis": 4,
+          "melee": false
+        }
+      ],
+      "pouvoirs": [],
+      "talents": "Tir 2, Administration 3, Poser des questions idiotes 4",
+      "esquive": false,
+      "volonte": false,
+      "notes": "Arraisonnent le drakkar dans les eaux des États-Unis et infligent un interrogatoire interminable. Ne cherchent pas le combat : frapper un garde-côte ferait un scandale qui couperait court à l'expédition, exactement ce que veut Dominique.\nPas de caractéristiques dans le livre : fiche minimale (valeurs humaines moyennes par défaut). Tir et arme estimés.\nSource : Les Petites Apocalypses, ch. 12 « L'épopée du Kiti-Kon » (mini-scénario), p. 109-111."
+    }
+  ],
+  "memoire": []
+}
