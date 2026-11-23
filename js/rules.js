@@ -531,7 +531,7 @@ export function powerUnitCost(c, def) {
   if (a.special != null) opts.push(a.special);
   if (!opts.length) {
     // accès réservé : on retient le premier coût connu
-    const any = [a.gen, a.ange, a.demon, a.psi, a.paien, ...Object.values(a.sup || {})].filter((x) => x != null);
+    const any = [a.gen, a.ange, a.demon, a.psi, a.paien, a.mage, ...Object.values(a.sup || {})].filter((x) => x != null && !isNaN(+x));
     return any.length ? Math.min(...any) : 3;
   }
   return Math.min(...opts);

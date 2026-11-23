@@ -1,0 +1,863 @@
+[
+ {
+  "n": "Affinité animale",
+  "nat": "spirituel",
+  "act": "constant (5 PP par minute)",
+  "q": "—",
+  "acc": "Jordi 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Jordi": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Le personnage acquiert certains traits d'un animal sans changer d'apparence. Il gagne un nombre de rangs (colonnes) de bonus égal au niveau du pouvoir dans une caractéristique physique ou un talent adapté à l'animal (Athlétisme, Acrobaties, Survie, Discrétion…). Avec l'accord du MJ, ces rangs peuvent être répartis entre plusieurs traits (ex. niveau 3 : +2 en Force et +1 en Corps à corps).",
+  "s": "Emprunte les qualités d'un animal : bonus égal au niveau, réparti entre caractéristiques physiques ou talents."
+ },
+ {
+  "n": "Allergie",
+  "nat": "spirituel",
+  "act": "activé (5 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Uphir 3",
+  "a": {
+   "sup": {
+    "Uphir": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Rend la cible allergique à une substance choisie par le démon (test résisté, modifié selon la rareté : omniprésente légendaire, très courante incroyable, courante très difficile, rare difficile, très rare facile). MR inférieure à 4 : simples éternuements et yeux rouges ; MR 4 ou plus : malus de 2 colonnes aux actions physiques et mentales tant que la victime est exposée ; MR 10 ou plus : contact avec la substance = blessure fatale.",
+  "s": "Rend une victime allergique à la substance de son choix, de la gêne bénigne jusqu'à la mort."
+ },
+ {
+  "n": "Aphasie",
+  "nat": "spirituel",
+  "act": "activé (5 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée moyenne",
+  "acc": "Baalberith 3",
+  "a": {
+   "sup": {
+    "Baalberith": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Si le test résisté réussit, la victime ne parvient plus à communiquer de façon compréhensible pendant un nombre d'heures égal à la MR finale : ni parole, ni écriture, ni gestes ne transmettent quoi que ce soit.",
+  "s": "Empêche la victime de communiquer, par aucun moyen, pendant MR heures."
+ },
+ {
+  "n": "Arsenal",
+  "nat": "spirituel",
+  "act": "activé (15 PP)",
+  "q": "—",
+  "acc": "Laurent 3",
+  "a": {
+   "sup": {
+    "Laurent": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Fait apparaître de quoi armer deux hommes par niveau du pouvoir, armes blanches ou à feu au choix, dans la limite du raisonnable selon le MJ (ni ogive, ni char). Les armes s'évanouissent après 24 heures, ou dès que les touche une personne qui ne croit pas en Dieu.",
+  "s": "Crée des armes pour deux hommes par niveau, pendant 24 heures."
+ },
+ {
+  "n": "Art de la parade",
+  "nat": "mental",
+  "act": "constant (4 PP par 10 secondes)",
+  "q": "—",
+  "acc": "Baal 3",
+  "a": {
+   "sup": {
+    "Baal": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Chaque tour, le personnage dispose d'une défense supplémentaire en parant avec une arme de contact, quoi qu'il fasse par ailleurs. Le talent Défense est remplacé par le niveau du pouvoir s'il est plus bas : on gagne un second essai, pas une meilleure défense. Si les deux défenses réussissent, leurs marges s'ajoutent contre l'attaquant. Dès le niveau 5, on peut parer armes à feu et pouvoirs physiques.",
+  "s": "Une parade supplémentaire par tour avec une arme de contact ; contre les balles dès le niveau 5."
+ },
+ {
+  "n": "Aura d'orthodoxie",
+  "nat": "mental",
+  "act": "constant (5 PP pour dix secondes)",
+  "q": "aire d'effet (rayon moyen), portée nulle",
+  "acc": "Joseph 3",
+  "a": {
+   "sup": {
+    "Joseph": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 99",
+  "d": "Une aura invisible centrée sur le personnage empêche d'agir contre la foi catholique (au sens du MJ, ce qui n'interdit généralement ni la violence ni la chasse aux démons). Quiconque veut pécher dans la zone doit d'abord réussir un test opposé de Volonté contre le niveau du pouvoir. Inutilisable si l'ange a eu des pensées impures dans les dix dernières minutes ; s'il en a pendant l'usage, l'aura s'éteint.",
+  "s": "Aura qui empêche de pécher autour de l'ange, sauf test de Volonté contre le niveau."
+ },
+ {
+  "n": "Avidité",
+  "nat": "spirituel",
+  "act": "activé (3 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Mammon 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Mammon": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Si le test résisté réussit, la victime éprouve un besoin pressant de posséder un bien matériel choisi par le démon (un type d'objet ou un modèle précis) et fera beaucoup pour l'obtenir, dans les limites de ses moyens et de sa morale. Le pouvoir ne crée aucun autre genre de désir (sexuel, amoureux…).",
+  "s": "Donne à la victime une envie irrésistible d'un bien matériel choisi par le démon."
+ },
+ {
+  "n": "Béatification",
+  "nat": "spirituel",
+  "act": "activé (10 PP)",
+  "q": "—",
+  "acc": "anges 3",
+  "a": {
+   "ange": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "L'ange fait d'un humain ordinaire un allié du Bien. Le béat reste humain et sans pouvoirs, mais gagne autant de rangs de caractéristiques que le niveau du pouvoir, répartis au choix de l'ange (PF, seuils de blessure et bases de talents recalculés). Il obtient la Foi à la place de la Chance. Un ange n'a qu'un seul béat à la fois.",
+  "s": "Fait d'un humain un béat : caractéristiques augmentées (rangs = niveau) et Foi au lieu de Chance."
+ },
+ {
+  "n": "Bénévolat",
+  "nat": "spirituel",
+  "act": "activé (5 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée très courte",
+  "acc": "Alain 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Alain": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Si le test résisté réussit, la cible accepte d'aider l'ange dans une tâche précise qu'il s'apprête à accomplir. Elle donne son temps et ses efforts, mais pas son argent ni ses biens. Sans effet sur une personne ouvertement hostile à l'ange.",
+  "s": "Oblige la cible à aider l'ange dans une tâche, de son temps mais pas de son argent."
+ },
+ {
+  "n": "Bourrasque",
+  "nat": "physique",
+  "act": "constant (2 PP par seconde)",
+  "q": "—",
+  "acc": "Janus 3",
+  "a": {
+   "sup": {
+    "Janus": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Un vent violent souffle devant le personnage sur une dizaine de mètres. Les objets non fixés de moins de 10 kg par niveau sont repoussés ; les créatures reculent aussi sauf si elles réussissent un test opposé de Force contre le niveau du pouvoir.",
+  "s": "Souffle un vent violent qui repousse objets et créatures sur une dizaine de mètres."
+ },
+ {
+  "n": "Chapardage",
+  "nat": "spirituel",
+  "act": "activé (6 PP)",
+  "q": "portée très courte",
+  "acc": "Valefor 3",
+  "a": {
+   "sup": {
+    "Valefor": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Test de pouvoir résisté par la Chance/Foi de la cible : en cas de réussite, un objet que la victime porte dans une poche se téléporte dans la main du démon. Celui-ci doit avoir vu l'objet ou pouvoir le désigner précisément (« son portefeuille » suffit).",
+  "s": "Téléporte dans la main du démon un objet tiré de la poche d'autrui."
+ },
+ {
+  "n": "Circulaire",
+  "nat": "spirituel",
+  "act": "activé (1 PP)",
+  "q": "portée spirituelle",
+  "acc": "Didier 3",
+  "a": {
+   "sup": {
+    "Didier": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Envoie une copie d'une note écrite (trois feuillets au plus) à deux destinataires par niveau du pouvoir, où qu'ils se trouvent. Les copies arrivent 1d6 minutes plus tard. Pratique pour diffuser une consigne à toute une équipe dispersée.",
+  "s": "Envoie une note écrite à deux destinataires par niveau, où qu'ils soient."
+ },
+ {
+  "n": "Confusion",
+  "nat": "spirituel",
+  "act": "constant (1 PP par minute)",
+  "q": "—",
+  "acc": "Mathias 9, condition (Apparence démoniaque), condition (20 PP)",
+  "a": {
+   "sup": {
+    "Mathias": 9
+   },
+   "cond": "Apparence démoniaque, 20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Étend temporairement les effets d'Apparence démoniaque à une personne par niveau : chacune peut parler le démoniaque et faire flasher une aura de démon, avec les mêmes risques d'être démasquée que l'ange lui-même. (Le coût de 9 PA est celui imprimé par le livre.)",
+  "s": "Prête les effets d'Apparence démoniaque à une personne par niveau."
+ },
+ {
+  "n": "Congélation",
+  "nat": "spirituel",
+  "act": "activé (4 PP)",
+  "q": "portée (contact)",
+  "acc": "Crocell 3",
+  "a": {
+   "sup": {
+    "Crocell": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Emprisonne un objet dans un bloc de glace magique qui le conserve tel quel jusqu'à un an par niveau ou jusqu'à ce que le démon y mette fin (un rôti en ressort chaud, une balle garde sa vitesse). En combat, il faut toucher la cible ; elle se libère par un test opposé de Force contre le niveau. La glace n'a pas de Défense, mais une protection et des PF égaux au niveau.",
+  "s": "Fige un objet ou une créature dans une glace magique qui le conserve intact."
+ },
+ {
+  "n": "Contrecoup métabolique",
+  "nat": "physique",
+  "act": "activé (4 PP)",
+  "q": "attaque physique (Précision +1, Puissance spéciale), portée (contact)",
+  "acc": "Guy 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Guy": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100",
+  "d": "Après avoir touché un adversaire, l'ange fait un test de pouvoir dont la difficulté dépend de la blessure à transférer (BL difficile, BG très difficile, BF incroyable, imprimé « BG », MS légendaire). En cas de succès, la blessure quitte son corps et apparaît sur l'adversaire, sans protection. Sans effet si l'ange n'est pas blessé.",
+  "s": "Transfère une blessure de l'ange à l'adversaire qu'il touche."
+ },
+ {
+  "n": "Corps de rêve",
+  "nat": "spirituel",
+  "act": "constant (3 PP par heure)",
+  "q": "—",
+  "acc": "Blandine 3",
+  "a": {
+   "sup": {
+    "Blandine": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 100-101",
+  "d": "Une substance onirique entoure l'ange : chaque observateur voit en lui son idéal masculin ou féminin, différent pour chacun (d'où des quiproquos), sans que l'ange sache comment on le perçoit. Bonus égal au niveau à la plupart des tests de Présence, Baratin, Kama Sutra, doublé en Séduction. Les appareils (photos, caméras) n'y sont pas sensibles, sauf si leur utilisateur voit aussi l'ange directement.",
+  "s": "Chacun voit en l'ange son idéal : bonus de niveau en Présence, double en Séduction."
+ },
+ {
+  "n": "Corps mémétique",
+  "nat": "spirituel",
+  "act": "activé (12 PP)",
+  "q": "—",
+  "acc": "général 12, invariable",
+  "a": {
+   "gen": 12,
+   "inv": true
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 101",
+  "d": "Le corps (et les vêtements) du personnage se dissout en idées, transmises aux dix humains les plus proches, puis de personne en personne quand elles communiquent (livres, films, sites). Sous cette forme, il est presque intouchable mais ne peut rien attaquer ; seules quelques attaques spirituelles et la corruption ou l'effacement de ses idées l'atteignent. Il se reforme là où se trouve un porteur, par un test de Volonté d'autant plus difficile qu'il est resté longtemps (facile sous une heure, légendaire au-delà d'un an).",
+  "s": "Se change en idées transmises de personne en personne ; se reforme auprès d'un porteur."
+ },
+ {
+  "n": "Coup de foudre",
+  "nat": "spirituel",
+  "act": "activé (9 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Novalis 3",
+  "a": {
+   "sup": {
+    "Novalis": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 101",
+  "d": "Si le test résisté réussit, la victime tombe amoureuse d'une personne choisie par l'ange, qui n'a pas besoin d'être présente mais que l'ange doit avoir vue au moins une fois. Des malus s'appliquent selon la situation (orientation sexuelle notamment). La MR finale mesure l'intensité des sentiments.",
+  "s": "Rend la victime amoureuse d'une personne choisie par l'ange."
+ },
+ {
+  "n": "Croque-mitaine",
+  "nat": "spirituel",
+  "act": "activé (8 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Beleth 3",
+  "a": {
+   "sup": {
+    "Beleth": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 101",
+  "d": "Fait surgir d'un coin sombre un monstre né des peurs de la victime, visible d'elle seule, pendant MR finale rounds ; s'il est tué trop tôt, un autre le remplace. Ses blessures sont illusoires, mais si la victime renonce à se défendre il inflige une blessure fatale sans protection. Monstre : Fo 3, Ag 5, Pe 3, Vo 3, Pr 5, Ch 3 ; Corps à corps 5, Défense 5, Intimidation 6 ; Apparence horrifique 6, ongles d'acier ; 6 PF ; morsure 66/RU+8/M+5.",
+  "s": "Un monstre issu des peurs de la victime l'attaque, visible d'elle seule."
+ },
+ {
+  "n": "Démonologie",
+  "nat": "spirituel",
+  "act": "activé (6 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée très courte",
+  "acc": "Walther 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Walther": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 101-102",
+  "d": "Après au moins dix minutes d'observation, l'ange fait un test résisté : en cas de réussite, il apprend le nom d'autant de pouvoirs de la cible que la MR finale, des plus hauts niveaux aux plus bas. Sans résultat, il ignore si c'est un échec ou une absence de pouvoirs. Fonctionne aussi sur les anges, sans révéler la nature de la cible.",
+  "s": "Révèle les pouvoirs d'une cible observée, autant que la MR, en commençant par les plus forts."
+ },
+ {
+  "n": "Dépression",
+  "nat": "mental",
+  "act": "activé (3 PP)",
+  "q": "attaque mentale (résistée par Volonté), portée courte",
+  "acc": "démons 3",
+  "a": {
+   "demon": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 102",
+  "d": "Si le test résisté réussit, la victime sombre dans la tristesse pendant MR jours. Le MJ décide des effets précis, qui ne gênent en général pas les performances en combat : le pouvoir sert surtout à répandre le Mal.",
+  "s": "Plonge la victime dans la déprime pendant MR jours."
+ },
+ {
+  "n": "Désordre",
+  "nat": "spirituel",
+  "act": "constant (3 PP par minute)",
+  "q": "aire d'effet (rayon long), portée nulle",
+  "acc": "Zanag 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Zanag": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 102",
+  "d": "Dans la zone, aucune créature surnaturelle (le démon compris) ne peut faire flasher son aura, bénéfique ou maléfique ; Apparence démoniaque et Apparence angélique sont affectées et Détection du Bien et du Mal ne fonctionne plus. Pour montrer malgré tout son aura, il faut réussir un test opposé de Foi contre le niveau du pouvoir.",
+  "s": "Empêche toute aura de se manifester dans une large zone et bloque les détections du Bien et du Mal."
+ },
+ {
+  "n": "Détection des desseins",
+  "nat": "spirituel",
+  "act": "activé (2 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Francis 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Francis": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 102",
+  "d": "Si le test résisté réussit, l'ange perçoit en termes assez vagues ce qui motive profondément la cible (être aimée, s'enrichir, nuire…), utile pour négocier. Sur un démon, il apprend ses motivations personnelles, ce qui ne suffit généralement pas à deviner sa nature.",
+  "s": "Révèle, en termes vagues, les motivations profondes de la cible."
+ },
+ {
+  "n": "Discours spécieux",
+  "nat": "spirituel",
+  "act": "activé (5 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée spéciale (discussion)",
+  "acc": "Malphas 3",
+  "a": {
+   "sup": {
+    "Malphas": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 102",
+  "d": "Pendant inverse de Philosophie. Après au moins 30 secondes de discours, le démon fait un test résisté : la victime admet ses arguments, même absurdes (« vous êtes un canard »), puis se rend compte de leur vacuité 1d6 minutes plus tard. Le démon ne doit pas croire lui-même ce qu'il raconte ; le MJ peut donner un bonus pour des arguments amusants.",
+  "s": "Fait gober n'importe quelle théorie à la cible, pour quelques minutes."
+ },
+ {
+  "n": "Échange spirituel",
+  "nat": "spirituel",
+  "act": "activé (15 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée (contact)",
+  "acc": "Abalam 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Abalam": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 102-103",
+  "d": "Si le test résisté réussit, les esprits du démon et de la victime échangent leurs corps, définitivement. Chacun garde ses caractéristiques mentales, talents, pouvoirs et PP, et prend l'apparence et les caractéristiques physiques de l'autre. On peut recalculer PF, seuils de blessure et bases de talents, ou s'en passer.",
+  "s": "Échange définitivement le corps du démon avec celui de la victime."
+ },
+ {
+  "n": "Effets secondaires",
+  "nat": "spirituel",
+  "act": "activé (8 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée moyenne",
+  "acc": "Malthus 3",
+  "a": {
+   "sup": {
+    "Malthus": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "Si le test résisté réussit, chaque soin se retourne contre la victime : un médicament lui fait perdre un point d'une caractéristique au hasard pour une journée, des PF rendus par un pouvoir lui coûtent autant de PP, et des PP récupérés lui coûtent autant de PF. Le total perdu ne dépasse pas la MR finale, et l'effet cesse au bout d'une semaine. Désagréments cosmétiques en prime.",
+  "s": "Chaque soin que reçoit la victime lui coûte des points, jusqu'à la MR."
+ },
+ {
+  "n": "Empathie",
+  "nat": "mental",
+  "act": "activé (2 PP)",
+  "q": "portée courte",
+  "acc": "général 3",
+  "a": {
+   "gen": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "Le personnage éprouve les mêmes sentiments que sa cible : tristesse, colère, amour, jalousie, qu'il fait siens. Utile pour comprendre ce qu'éprouve quelqu'un, au risque d'être soi-même submergé par sa colère ou son chagrin pendant la durée de l'effet.",
+  "s": "Fait ressentir au personnage les émotions de sa cible."
+ },
+ {
+  "n": "Épitaphe",
+  "nat": "spirituel",
+  "act": "activé (20 PP)",
+  "q": "—",
+  "acc": "Scox 12, invariable",
+  "a": {
+   "sup": {
+    "Scox": 12
+   },
+   "inv": true
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "En touchant un cadavre de moins d'une minute, le démon y incarne un démon tout juste sorti de l'Enfer, grade 0 débutant, dont le supérieur est tiré au hasard (d34). Ce nouveau venu n'est ni redevable au personnage ni sous ses ordres. Son usage hors des cas d'urgence est mal vu.",
+  "s": "Incarne un démon débutant dans un cadavre tout frais."
+ },
+ {
+  "n": "Euphorie",
+  "nat": "mental",
+  "act": "activé (2 PP)",
+  "q": "attaque mentale (résistée par Volonté), portée courte",
+  "acc": "anges 3",
+  "a": {
+   "ange": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "Si le test résisté réussit, la victime se sent soudain euphorique pendant MR heures. Le MJ décide des effets exacts, qui ne changent en général rien en combat : le pouvoir sert surtout à répandre le Bien.",
+  "s": "Rend la victime euphorique pendant MR heures."
+ },
+ {
+  "n": "Examen de conscience",
+  "nat": "spirituel",
+  "act": "activé (10 PP)",
+  "q": "portée très courte",
+  "acc": "Ange 3 (l'archange, pas les anges en général)",
+  "a": {
+   "sup": {
+    "Ange": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "Sur un test standard réussi, l'ange voit où irait la cible si elle mourait maintenant : Paradis, Enfer ou ailleurs (Purgatoire, Marches païennes et néant confondus). Anges et démons donnent Paradis et Enfer, sauf renégats ou futurs convertis. Le MJ peut faire le test en secret et mentir en cas d'échec.",
+  "s": "Révèle où irait l'âme de la cible si elle mourait maintenant."
+ },
+ {
+  "n": "Excavation",
+  "nat": "physique",
+  "act": "constant (1 PP par 10 minutes)",
+  "q": "—",
+  "acc": "Gaziel 3",
+  "a": {
+   "sup": {
+    "Gaziel": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103",
+  "d": "Mains et pieds s'élargissent et se renforcent, la tête devient triangulaire : le personnage creuse et avance sous terre comme une taupe, en plus rapide. Le MJ peut exiger un test de pouvoir pour traverser des matériaux plus durs qu'une terre meuble.",
+  "s": "Transforme le démon en taupe rapide capable de se déplacer sous terre."
+ },
+ {
+  "n": "Feu prométhéen",
+  "nat": "spirituel",
+  "act": "constant (3 PP par 10 secondes)",
+  "q": "—",
+  "acc": "Belial 3, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Belial": 3
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 103-104",
+  "d": "L'arme du démon se couvre de flammes bleutées magiques qui ne brûlent pas, mais augmentent sa puissance du niveau du pouvoir plus 2. Avec une arme à feu, les balles en profitent aussi. Ce bonus de dégâts touche même les créatures immunisées contre le feu.",
+  "s": "Flammes magiques sur l'arme : puissance + niveau + 2, même contre les immunisés au feu."
+ },
+ {
+  "n": "Fureur guerrière",
+  "nat": "mental",
+  "act": "constant (4 PP par seconde)",
+  "q": "—",
+  "acc": "Michel 3",
+  "a": {
+   "sup": {
+    "Michel": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "L'ange gagne en Force un nombre de rangs égal au niveau du pouvoir plus 1, mais subit un malus de 2 colonnes en Défense. Une fois lancé, il ne peut arrêter tant qu'il reste des ennemis à combattre et des PP pour entretenir le pouvoir.",
+  "s": "Force + niveau + 1, Défense −2 colonnes ; impossible d'arrêter tant qu'il reste des ennemis."
+ },
+ {
+  "n": "Hyperactivité",
+  "nat": "spirituel",
+  "act": "constant (10 PP par minute)",
+  "q": "—",
+  "acc": "Kronos 3",
+  "a": {
+   "sup": {
+    "Kronos": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "Chaque minute d'hyperactivité équivaut à une journée de travail par niveau : construire, réparer, lire, apprendre le piano… Le personnage, très rapide, ne peut pas quitter la pièce où il se trouve. Sans utilité en combat, où il se bat à sa vitesse normale.",
+  "s": "Abat une journée de travail par niveau en une minute, sans quitter la pièce."
+ },
+ {
+  "n": "Hypocrisie",
+  "nat": "spirituel",
+  "act": "activé (3 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée très courte",
+  "acc": "Nybbas 3",
+  "a": {
+   "sup": {
+    "Nybbas": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "Si le test résisté réussit, la victime se montre extrêmement polie et serviable envers le démon, comme devant un patron en visite, pendant un nombre d'heures égal à la MR finale. Pour des demandes extravagantes, le MJ peut exiger un nouveau test modifié.",
+  "s": "La victime se montre servile et polie envers le démon pendant MR heures."
+ },
+ {
+  "n": "Hystérie collective",
+  "nat": "spirituel",
+  "act": "activé (10 PP)",
+  "q": "aire d'effet (rayon long), portée longue",
+  "acc": "Furfur 3",
+  "a": {
+   "sup": {
+    "Furfur": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "Déclenche la panique dans une foule (concert, manif, match). Difficulté selon la taille et l'énervement : 20-100 personnes incroyable, 100-1000 très difficile, plus de 1000 difficile. Quelqu'un dont la Volonté dépasse 2+ n'est pas affecté ; les autres résistent par un test opposé de Chance/Foi contre le niveau. Un second test oriente la foule (pillage, lynchage…), difficulté au choix du MJ.",
+  "s": "Fait paniquer une foule, voire la pousse à piller ou lyncher."
+ },
+ {
+  "n": "Inondation",
+  "nat": "spirituel",
+  "act": "constant (2 PP pour dix secondes)",
+  "q": "aire d'effet (rayon moyen), portée nulle",
+  "acc": "Vephar 6",
+  "a": {
+   "sup": {
+    "Vephar": 6
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "L'eau monte autour du démon, jusqu'à environ deux mètres au centre et un mètre en bordure de zone ; dans un bâtiment, elle remplit la pièce et se répand ensuite. Un cours d'eau dans la zone monte d'autant de mètres que le niveau, sur une zone de rayon doublé. L'inondation suit le démon.",
+  "s": "Fait monter l'eau autour du démon ; la crue le suit dans ses déplacements."
+ },
+ {
+  "n": "Ironie",
+  "nat": "spirituel",
+  "act": "activé (2 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée longue",
+  "acc": "Kobal 3",
+  "a": {
+   "sup": {
+    "Kobal": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "Une vanne cruelle met la cible hors d'elle. Si le test résisté réussit, elle abandonne ce qu'elle fait pour attaquer le démon, au corps à corps si possible. Si elle ne le peut pas, elle subit un malus de 4 colonnes à toutes ses actions pendant une minute par niveau.",
+  "s": "Une vanne rend la cible furieuse : elle attaque le démon ou subit −4 colonnes."
+ },
+ {
+  "n": "Marchandage",
+  "nat": "mental",
+  "act": "activé (6 PP)",
+  "q": "attaque mentale (résistée par Volonté), portée très courte",
+  "acc": "Marc 3",
+  "a": {
+   "sup": {
+    "Marc": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104",
+  "d": "Si le test résisté réussit, la cible accepte les termes d'un échange ou d'un contrat proposé par l'ange. Le MJ est invité à imposer un fort malus si les conditions sont trop défavorables à la victime. Au niveau 5, il permet de faire signer un Contrat divin.",
+  "s": "Fait accepter à la cible les termes d'un échange ; un Contrat divin au niveau 5."
+ },
+ {
+  "n": "Martyre",
+  "nat": "spirituel",
+  "act": "activé (8 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée très courte",
+  "acc": "Ouikka 3",
+  "a": {
+   "sup": {
+    "Ouikka": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 104-105",
+  "d": "Si le test résisté réussit, la victime devient prête à tout pour ses convictions, jusqu'à tuer ou se faire exploser. Il faut un terrain propice (militant, régionaliste, fan, supporter…). Elle agit de sa propre initiative ; le démon peut seulement l'orienter en discutant avec elle au moment d'activer le pouvoir.",
+  "s": "Pousse un militant ou fanatique à se sacrifier pour sa cause."
+ },
+ {
+  "n": "Morlock",
+  "nat": "spirituel",
+  "act": "activé (12 PP dont 1 permanent)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée (contact)",
+  "acc": "Shaytan 3",
+  "a": {
+   "sup": {
+    "Shaytan": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Si le test résisté réussit, un humain devient une créature défigurée (poils blancs, griffes). Il perd la moitié de sa Présence, gagne en Force autant de rangs que le niveau, ainsi que Membre exotique (ongles d'acier) et Apparence horrifique 2. Il garde sa personnalité et n'est pas contrôlé, mais rend volontiers service contre abri et aide. Sans effet sur anges et démons.",
+  "s": "Change un humain en morlock difforme et fort, qui vit en marge de la société."
+ },
+ {
+  "n": "Odorat",
+  "nat": "physique",
+  "act": "constant (1 PP par minute)",
+  "q": "—",
+  "acc": "général 3",
+  "a": {
+   "gen": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Sur un test de pouvoir réussi, le personnage retrouve n'importe quelle personne dont il connaît l'odeur et peut suivre sa piste aussi longtemps que le pouvoir reste actif. Le pouvoir ne sert à rien face à un inconnu dont il n'a jamais senti l'odeur.",
+  "s": "Pister à l'odeur une personne connue tant que le pouvoir est actif."
+ },
+ {
+  "n": "Ombre dévorante",
+  "nat": "spirituel",
+  "act": "activé (10 PP)",
+  "q": "—",
+  "acc": "Samigina 3",
+  "a": {
+   "sup": {
+    "Samigina": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Le démon détache un fragment d'âme en ombre vivante intangible (10 PF, −1 PF par heure), à peu près aussi futée qu'un chien. Elle espionne, attaque ou sert de cachette, et rend sa mémoire en réintégrant le démon. Sa morsure frappe l'âme : Corps à corps du démon (ou le niveau si plus haut), précision +0, puissance égale au niveau. Lumière vive, feu et attaques mentales ou spirituelles la blessent.",
+  "s": "Fragment d'âme en ombre intangible qui espionne et mord les âmes."
+ },
+ {
+  "n": "Pédagogie",
+  "nat": "mental",
+  "act": "constant (1 PP par minute)",
+  "q": "portée moyenne",
+  "acc": "général 3",
+  "a": {
+   "gen": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Transmet un talent à un tiers au niveau du pouvoir, sans dépasser le niveau du personnage dans ce talent. Presque tous les talents conviennent, sauf les talents fantaisistes. Une cible non consentante résiste par le test opposé habituel.",
+  "s": "Prête à un tiers un talent du personnage, au niveau du pouvoir."
+ },
+ {
+  "n": "Rage",
+  "nat": "mental",
+  "act": "activé (4 PP)",
+  "q": "attaque mentale (résistée par Volonté), portée longue",
+  "acc": "Caym 3",
+  "a": {
+   "sup": {
+    "Caym": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Si le test résisté réussit, un animal redevient sauvage pendant MR heures et ne reconnaît plus son maître. Les prédateurs attaquent les humains à la moindre provocation, les autres seulement acculés. Au niveau 5, affecte une dizaine d'animaux à la fois.",
+  "s": "Rend sauvage un animal domestique pendant MR heures ; une dizaine au niveau 5."
+ },
+ {
+  "n": "Respect",
+  "nat": "spirituel",
+  "act": "activé (6 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée moyenne",
+  "acc": "Catherine 3",
+  "a": {
+   "sup": {
+    "Catherine": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Si le test résisté réussit, la victime traite les femmes avec égards et évite de les agresser, en paroles comme en actes, pendant MR heures. Si elle attaque malgré tout une femme, elle subit un malus de MR colonnes en Combat, Corps à corps ou Tir.",
+  "s": "Oblige la victime à respecter les femmes pendant MR heures."
+ },
+ {
+  "n": "Sanctification",
+  "nat": "spirituel",
+  "act": "activé (20 PP)",
+  "q": "—",
+  "acc": "Daniel 3, condition (20 PA)",
+  "a": {
+   "sup": {
+    "Daniel": 3
+   },
+   "cond": "20 PA (sic, sans doute 20 PP)"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 105",
+  "d": "Protège pour un an un lieu bien délimité (église, bâtiment, parc, cimetière) contre le Mal, sauf s'il est profané. Démons, morts-vivants et familiers doivent réussir un test opposé de Foi contre le niveau pour y entrer ; sinon ils rebroussent chemin, et s'ils réussissent ils y agissent librement. Dès le niveau 5, l'ange sent quand la protection est percée.",
+  "s": "Interdit pour un an un lieu aux forces du Mal, sauf test de Foi."
+ },
+ {
+  "n": "Sermon",
+  "nat": "spirituel",
+  "act": "activé (6 PP)",
+  "q": "attaque spirituelle (résistée par Chance/Foi), portée courte",
+  "acc": "Dominique 3, condition (20 PA)",
+  "a": {
+   "sup": {
+    "Dominique": 3
+   },
+   "cond": "20 PA (sic, sans doute 20 PP)"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Si le test résisté réussit, la personne à qui l'ange parle lui confesse d'elle-même ce qu'elle juge être ses pires péchés, avec d'autant plus de détails que la MR est élevée. Elle juge selon sa propre morale : un tueur fou peut taire ses meurtres, et un démon ne dévoile ni sa nature ni l'essentiel de ses activités.",
+  "s": "Pousse l'interlocuteur à confesser ses pires péchés."
+ },
+ {
+  "n": "Soufflette",
+  "nat": "physique",
+  "act": "activé (4 PP)",
+  "q": "aire d'effet (rayon très court), portée très courte",
+  "acc": "Nisroch 3",
+  "a": {
+   "sup": {
+    "Nisroch": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Un nuage de drogue provoque un mauvais trip : un test résisté par la Chance/Foi de chaque personne de la zone. Si le test réussit, violent mal de tête (−2 colonnes aux actions mentales) ; MR 4 ou plus, hallucinations légères en plus (−4 en Perception, Tir, etc.). Durée : MR finale minutes.",
+  "s": "Nuage de drogue : migraines et hallucinations pour tous ceux qui l'inhalent."
+ },
+ {
+  "n": "Spiritisme",
+  "nat": "spirituel",
+  "act": "activé (5 PP)",
+  "q": "—",
+  "acc": "général 3",
+  "a": {
+   "gen": 3
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Sur un test standard réussi, le personnage parle à un mort : un ange seulement à une âme montée au Paradis, un démon seulement à une âme descendue en Enfer. Le mort répond de son mieux, sans être tenu de dire la vérité.",
+  "s": "Converse avec un mort du Paradis (anges) ou de l'Enfer (démons)."
+ },
+ {
+  "n": "Symbolisme",
+  "nat": "spirituel",
+  "act": "activé (3 PP)",
+  "q": "—",
+  "acc": "Morax 3",
+  "a": {
+   "sup": {
+    "Morax": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Le démon donne vie à une œuvre (dessin, sculpture, poème) qui devient un objet réel et fonctionnel pendant MR heures. Il réussit d'abord un test d'Art, puis un test de pouvoir de même difficulté. Temps : 10 min (petit), 1 h (grand), 6 h (très grand), ×2 ou ×4 selon la complexité ; difficulté : difficile (simple), très difficile (complexe), incroyable (très complexe : arme à feu, voiture).",
+  "s": "Donne vie à une œuvre d'art, qui devient un objet réel pour MR heures."
+ },
+ {
+  "n": "Triche",
+  "nat": "spirituel",
+  "act": "spécial (5 PP)",
+  "q": "—",
+  "acc": "Asmodée 3",
+  "a": {
+   "sup": {
+    "Asmodée": 3
+   }
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Bonus de 3 colonnes plus le niveau sur une action où la chance intervient (jeu, combat, discussion…, au gré du MJ). En contrepartie, un malus équivalent frappe une action importante 1d6 actions significatives plus tard (dé lancé en secret par le MJ). Pas de nouvelle Triche tant que ce contrecoup n'est pas tombé.",
+  "s": "Bonus de 3 + niveau sur une action, payé par un malus égal un peu plus tard."
+ },
+ {
+  "n": "Vice de forme",
+  "nat": "spirituel",
+  "act": "spécial (7 PP)",
+  "q": "—",
+  "acc": "Andromalius 5, condition (20 PP)",
+  "a": {
+   "sup": {
+    "Andromalius": 5
+   },
+   "cond": "20 PP"
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 106",
+  "d": "Sur un test standard réussi, le démon échappe à une action ou un événement nuisible en invoquant une faille dans la logique de l'univers (« on ne tue pas un héros au milieu de l'histoire »). Le joueur doit justifier ce vice de forme et ne peut pas réutiliser la même raison dans la partie.",
+  "s": "Annule un coup du sort en trouvant une faille dans la logique du récit."
+ },
+ {
+  "n": "Vision transmatière",
+  "nat": "physique",
+  "act": "constant (1 PP par seconde)",
+  "q": "—",
+  "acc": "général 6",
+  "a": {
+   "gen": 6
+  },
+  "src": "onferme",
+  "ref": "On Ferme !, p. 107",
+  "d": "Sur un test de pouvoir réussi, le personnage voit à travers la matière : en se concentrant sur un objet, il voit ce qui se trouve derrière ou dedans (le contenu d'une boîte fermée), sans perte de netteté.",
+  "s": "Voit à travers les objets, comme l'intérieur d'une boîte fermée."
+ }
+]

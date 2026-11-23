@@ -1,0 +1,403 @@
+[
+ {
+  "n": "__mages",
+  "regles": "Mages urbains : humains liés à une ville, Volonté jusqu'à 4+. Leur Foi (1 à 6), accord avec la Ville, donne le niveau des pouvoirs accessibles ; les niveaux s'acquièrent dans l'ordre, chacun avec une obligation récurrente cumulative (flâner, sacrifier un nuisible, méditer, bloquer la circulation, vivre de la rue, changer la ville). Un pouvoir par point de Volonté ; (Foi + Volonté) utilisations par jour. Concentration avec un focus : +1 à +5 colonnes."
+ },
+ {
+  "n": "Voyage onirique",
+  "nat": "mental",
+  "act": "activé (2 PP par personne)",
+  "q": "—",
+  "acc": "général (4 PA), invariable",
+  "a": {
+   "gen": 4,
+   "inv": true
+  },
+  "src": "petapo",
+  "ref": "Les Petites Apocalypses, p. 124",
+  "d": "Le personnage quitte la marche où il se trouve et passe dans l'entrespace de la marche des Rêves et des Cauchemars, sans choisir son point d'arrivée. Des compagnons peuvent le suivre s'ils lui tiennent la main et qu'il paye 2 PP de plus pour chacun. Peu utile aux anges et démons (Rêve et Cauchemar mènent déjà dans une bulle), il sert surtout aux héros païens ; les sorciers le connaissent comme sort de basse sorcellerie (2 PF par personne, test difficile).",
+  "s": "Fait passer le personnage et ceux qui lui tiennent la main dans l'entrespace de la marche des Rêves."
+ },
+ {
+  "n": "Siphon onirique",
+  "nat": "mental",
+  "act": "activé (5 PP)",
+  "q": "attaque mentale (Volonté), portée courte",
+  "acc": "général (3 PA), conditions (Narcolepsie 6, Sommeil 4, Cauchemar ou Rêve 4)",
+  "a": {
+   "gen": 3,
+   "cond": "talent Narcolepsie 6, pouvoir Sommeil 4, pouvoir Cauchemar ou Rêve 4"
+  },
+  "src": "petapo",
+  "ref": "Les Petites Apocalypses, p. 125",
+  "d": "Utilisable seulement depuis la MRC par le démiurge d'une bulle. Il vise une personne éveillée proche de son propre corps endormi ou du corps d'un autre témoin de la bulle (une dizaine de mètres). S'il remporte le test opposé à la Volonté, la cible s'endort sur-le-champ et son esprit est aspiré dans la bulle.",
+  "s": "Depuis sa bulle de rêve, endort une personne proche d'un dormeur et attire son esprit dans la bulle."
+ },
+ {
+  "n": "Voyage intermarches",
+  "nat": "spirituel",
+  "act": "activé (8 PP)",
+  "q": "—",
+  "acc": "propre à Hercule",
+  "a": {
+   "propre": "Hercule"
+  },
+  "src": "petapo",
+  "ref": "Les Petites Apocalypses, p. 21",
+  "d": "Le personnage se laisse tomber hors d'une marche dans le Rien et y voyage. Départ : test de pouvoir très difficile depuis la Terre, difficile d'une marche intermédiaire, facile au Paradis ou en Enfer. Puis un test par jour dont les MR s'additionnent jusqu'à la distance du trajet (Paradis-Enfer 500, Paradis-Purgatoire 250, Olympe-Terre 30, Terre-Purgatoire 10). Sur un chemin inconnu, un test quotidien de Savoir occulte (marches intermédiaires) : en cas d'échec, la MR du jour est retranchée.",
+  "s": "Traverse le Rien d'une marche à l'autre en cumulant les marges de réussite quotidiennes jusqu'à la distance du trajet."
+ },
+ {
+  "n": "Miracle",
+  "nat": "spirituel",
+  "act": "spécial (1 PP)",
+  "q": "—",
+  "acc": "propre à Jésus, même pas en rêve pour les autres",
+  "a": {
+   "propre": "Jésus"
+  },
+  "src": "petapo",
+  "ref": "Les Petites Apocalypses, p. 30 ; Bible à Dudule – Anges, p. 75 (même texte)",
+  "d": "Jésus attire sur lui le regard de Dieu. Sur un test standard de pouvoir réussi, n'importe quel jet de dés devient un 111. Il peut aussi adresser à Dieu une prière détaillée pour obtenir un effet précis ; la difficulté du test est alors fixée par le MJ.",
+  "s": "Change n'importe quel jet de dés en 111, ou exauce une prière précise sur un test fixé par le MJ."
+ },
+ {
+  "n": "Tornade de feu",
+  "nat": "physique",
+  "act": "activé (2 PP)",
+  "q": "—",
+  "acc": "djinns (pouvoir de créature, sans coût indiqué)",
+  "a": {
+   "propre": "djinns"
+  },
+  "src": "dudule",
+  "ref": "Bible à Dudule – Anges, p. 59",
+  "d": "Le djinn devient un tourbillon de flammes intangible, aussi longtemps qu'il le veut ; la transformation prend un tour. Sous cette forme, les attaques physiques (même l'eau) ne lui font rien, et il bénéficie sans dépense supplémentaire de Vol 5 et de la brûlure d'un Tourbillon de feu 3. La nature du pouvoir n'est pas précisée par le livre.",
+  "s": "Le djinn devient un tourbillon de feu intangible avec Vol 5 et Tourbillon de feu 3."
+ },
+ {
+  "n": "Tornade de vent",
+  "nat": "physique",
+  "act": "activé (2 PP)",
+  "q": "—",
+  "acc": "djinns (pouvoir de créature, sans coût indiqué)",
+  "a": {
+   "propre": "djinns"
+  },
+  "src": "dudule",
+  "ref": "Bible à Dudule – Anges, p. 59",
+  "d": "Variante de Tornade de feu : le djinn se change en tourbillon de vent intangible, aussi longtemps qu'il le veut (transformation en un tour). Les attaques physiques sont sans effet sur lui et il obtient gratuitement Télékinésie 3 et Vol 5. La nature du pouvoir n'est pas précisée par le livre.",
+  "s": "Le djinn devient un tourbillon de vent intangible avec Télékinésie 3 et Vol 5."
+ },
+ {
+  "n": "Feu de Prométhée",
+  "nat": "spirituel",
+  "act": "activé (1 PP) ou constant (1 PP pour dix secondes)",
+  "q": "attaque spirituelle (précision +2, puissance niveau+3), portée très courte, type énergétique/feu",
+  "acc": "Belial (3 PA), condition (Garde carmine)",
+  "a": {
+   "sup": {
+    "Belial": 3
+   },
+   "cond": "Garde carmine"
+  },
+  "src": "fi1",
+  "ref": "Fire and Ice, p. 140 (aide de jeu Remedium amoris)",
+  "d": "Activé, le démon enflamme un objet pas plus grand qu'une chaise situé à 4 mètres, ou lance une langue de feu froid et bleuté qui brûle même les créatures immunisées contre le feu. En constant, il embrase une arme de contact en métal, qui gagne en puissance un bonus égal au niveau du pouvoir. Réservé aux membres de la Garde carmine.",
+  "s": "Flamme bleue qui brûle même les immunisés au feu, ou arme métallique enflammée (+niveau en puissance)."
+ },
+ {
+  "n": "Aujourd'hui c'est gratuit",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 107-108",
+  "d": "Pendant une journée, le mage prend tous les transports en commun sans payer : les contrôleurs oublient de lui demander son titre et ne remarquent pas qu'il passe au milieu de leur barrage, et les portillons s'ouvrent seuls devant lui.",
+  "s": "Une journée de transports en commun gratuits, sans contrôle ni portillon."
+ },
+ {
+  "n": "Caramba, encore raté",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "La Ville protège le mage pendant un nombre de minutes égal à sa Foi : sol glissant, reflet aveuglant, gamins dans les jambes… Toute action offensive qui le prend pour cible subit un malus de 3 colonnes.",
+  "s": "Pendant Foi minutes, la ville gêne ses agresseurs : −3 colonnes aux actions offensives contre lui."
+ },
+ {
+  "n": "Connaissance de la rue",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Le mage devine un fait concernant la Ville ou un groupe qui y vit (jamais un individu précis) : qu'il se passe quelque chose d'étrange dans une rue, où se trouvent les revendeurs les plus proches, etc., sans en connaître la cause exacte.",
+  "s": "Révèle un fait sur la ville ou un groupe qui y vit, jamais sur un individu."
+ },
+ {
+  "n": "Je suis un lampadaire",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Tant qu'il reste immobile, le mage passe pour un élément banal du mobilier urbain (poubelle, lampadaire, boîte aux lettres) aux yeux de tous. Dès qu'il bouge, l'illusion cesse ; le pouvoir ne trompe que l'œil, pas une recherche active.",
+  "s": "Immobile, le mage passe pour un élément ordinaire du mobilier urbain."
+ },
+ {
+  "n": "Paris sous les bombes",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Le mage dépose dans un quartier précis un message (tag, air fredonné par un passant…) que seules les personnes ou catégories qu'il a choisies pourront comprendre. Le message reste perceptible une semaine.",
+  "s": "Laisse dans un quartier un message d'une semaine compréhensible seulement par les destinataires choisis."
+ },
+ {
+  "n": "Pour la musique",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 1 (Foi 1)",
+  "a": {
+   "mage": 1
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "En une heure de manche, le mage récolte en petite monnaie un nombre d'euros égal à vingt fois sa Foi. Le pouvoir ne demande aucun talent musical : la Ville pousse simplement les passants à donner, et l'argent vient en pièces.",
+  "s": "Une heure de manche rapporte vingt fois sa Foi en euros."
+ },
+ {
+  "n": "Anonyme",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 2 (Foi 2)",
+  "a": {
+   "mage": 2
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Le mage se fond dans une foule : impossible de l'en distinguer, et il bénéficie de Non-détection niveau 2, pendant un nombre de minutes égal à sa Foi ou jusqu'à ce qu'il quitte la foule.",
+  "s": "Se fond dans une foule avec Non-détection 2 pendant Foi minutes."
+ },
+ {
+  "n": "Attention à la marche",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "attaque (test de Foi, puissance +1), cible en vue",
+  "acc": "mage urbain, niveau 2 (Foi 2)",
+  "a": {
+   "mage": 2
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Le mage frappe un adversaire qu'il voit grâce à l'environnement : pot de fleurs qui tombe, chien errant qui mord, porte qui claque, coup de couteau anonyme dans la foule. Il faut réussir un test de Foi pour toucher ; puissance +1.",
+  "s": "Attaque un adversaire en vue par un « accident » urbain : test de Foi, puissance +1."
+ },
+ {
+  "n": "Sur ses gardes",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 2 (Foi 2)",
+  "a": {
+   "mage": 2
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "Pendant un nombre d'heures égal à sa Foi, le mage perçoit les sentiments d'une foule ou d'une personne à son égard et sent venir toute action offensive sur le point d'être commise contre lui.",
+  "s": "Pendant Foi heures, perçoit les intentions envers lui et pressent les attaques."
+ },
+ {
+  "n": "Je l'ai trouvé par terre",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 2 (Foi 2)",
+  "a": {
+   "mage": 2
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "En fouillant poubelles et trottoirs, le mage trouve en (10 − Foi) minutes n'importe quel objet valant moins de cent euros. Il peut aussi localiser précisément un objet qu'il a possédé au moins une heure.",
+  "s": "Trouve en (10 − Foi) minutes un objet bon marché, ou localise un objet qu'il a possédé."
+ },
+ {
+  "n": "Saloperie de bestiole",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "portée contact",
+  "acc": "mage urbain, niveau 2 (Foi 2)",
+  "a": {
+   "mage": 2
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108",
+  "d": "En touchant un animal errant (rat, pigeon, chien…), le mage en prend possession : il le dirige, voit et entend par lui, sans pouvoir le forcer à agir contre son instinct. L'effet dure jusqu'à ce qu'il l'annule ; son propre corps reste inerte pendant ce temps.",
+  "s": "Possède un animal errant touché, voit et entend par lui ; son corps reste inanimé."
+ },
+ {
+  "n": "C'est chez moi",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "aire d'effet (200 m² maximum)",
+  "acc": "mage urbain, niveau 3 (Foi 3)",
+  "a": {
+   "mage": 3
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 108-109",
+  "d": "Sur un test de Foi, le mage marque un territoire de 200 m² au plus, pour une semaine ; renouvelé au même endroit, le test gagne une colonne par fois (3 au maximum), un échec ramène à zéro. Il y sent tout événement surnaturel, y profite en permanence d'Anonyme, Sur ses gardes et Caramba, encore raté, et peut y lancer un de ses pouvoirs gratuitement une fois par jour. Un seul territoire à la fois.",
+  "s": "Marque un petit territoire : il y détecte le surnaturel et y garde plusieurs pouvoirs actifs."
+ },
+ {
+  "n": "Déjà arrivé",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 3 (Foi 3)",
+  "a": {
+   "mage": 3
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Le mage rejoint très vite un lieu qu'il connaît au moins de nom : feux verts, foule qui bloque la circulation, bus qui ne s'arrête plus. Rien de fâcheux ni de dangereux ne peut lui arriver durant le trajet.",
+  "s": "Trajet express et sans danger vers un lieu connu, la ville lui ouvrant la route."
+ },
+ {
+  "n": "Où ça ?",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 3 (Foi 3)",
+  "a": {
+   "mage": 3
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Le mage devient invisible pendant un nombre de minutes égal à sa Foi. Comme les autres pouvoirs de mage, il compte parmi ses (Foi + Volonté) utilisations quotidiennes ; plus sa Foi est haute, plus il dure longtemps.",
+  "s": "Invisibilité pendant Foi minutes."
+ },
+ {
+  "n": "T'es pas au courant ?",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 3 (Foi 3)",
+  "a": {
+   "mage": 3
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Le mage lance dans sa ville une rumeur ou une légende urbaine. Tout le monde y croit et agit en conséquence, même ceux qui savent qu'elle est fausse, et sa source est introuvable. Elle dure un nombre de mois égal à la Foi du mage puis s'éteint d'un coup.",
+  "s": "Lance une rumeur à laquelle toute la ville croit pendant Foi mois."
+ },
+ {
+  "n": "L'autre droite",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 4 (Foi 4)",
+  "a": {
+   "mage": 4
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Lors de son prochain déplacement en ville, la cible finit immanquablement dans le lieu public choisi par le mage, poussée par la foule, la circulation et les coïncidences. Si elle résiste, les coïncidences deviennent plus étranges et dangereuses, mais le résultat est le même.",
+  "s": "Le prochain trajet de la cible la conduit, par coïncidences, au lieu public choisi."
+ },
+ {
+  "n": "L'effet villageoise",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "attaque (test résisté de Volonté si la victime refuse)",
+  "acc": "mage urbain, niveau 4 (Foi 4)",
+  "a": {
+   "mage": 4
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Le mage possède un SDF ou un fou qui parle tout seul pendant un nombre d'heures égal à sa Foi, comme avec Saloperie de bestiole. Si la victime n'est pas consentante, il doit remporter un test résisté de Volonté. Il peut la faire agir violemment, mais le corps est en général en piteux état.",
+  "s": "Possède un SDF ou un fou pendant Foi heures (test de Volonté résisté s'il refuse)."
+ },
+ {
+  "n": "Paria",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "cible déjà vue",
+  "acc": "mage urbain, niveau 4 (Foi 4)",
+  "a": {
+   "mage": 4
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Une personne que le mage a déjà vue devient une paria pour une semaine : on l'ignore, on change de trottoir, les commerçants ferment boutique, la police la trouve suspecte. Seuls ses amis et sa famille proche y échappent.",
+  "s": "Une semaine durant, la cible est rejetée de tous sauf de ses proches."
+ },
+ {
+  "n": "Attention au camion",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "attaque (test de Foi, puissance +3)",
+  "acc": "mage urbain, niveau 5 (Foi 5)",
+  "a": {
+   "mage": 5
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Version renforcée d'Attention à la marche, active pendant un nombre de tours égal à la Foi du mage. Chaque coup demande un test de Foi et a une puissance de +3 ; les dégâts viennent de « coïncidences » graves : conduite de gaz qui explose, camion qui monte sur le trottoir…",
+  "s": "Pendant Foi tours, accidents urbains meurtriers contre ses ennemis : test de Foi, puissance +3."
+ },
+ {
+  "n": "Les rebuts se rebiffent",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "attaque (test résisté de Volonté si les victimes refusent)",
+  "acc": "mage urbain, niveau 5 (Foi 5)",
+  "a": {
+   "mage": 5
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Comme L'effet villageoise, mais le mage contrôle autant de SDF ou de fous que sa Foi, pendant un nombre d'heures égal à sa Foi. Chaque victime non consentante a droit à son test résisté de Volonté ; le mage peut les faire agir ensemble, violence comprise.",
+  "s": "Possède Foi SDF ou fous à la fois pendant Foi heures."
+ },
+ {
+  "n": "White Riot",
+  "nat": "spirituel",
+  "act": "activé",
+  "q": "—",
+  "acc": "mage urbain, niveau 6 (Foi 6)",
+  "a": {
+   "mage": 6
+  },
+  "src": "fi2",
+  "ref": "Fire and Ice 2, p. 109",
+  "d": "Une demi-heure après la décision du mage, une émeute éclate à l'endroit choisi, dirigée contre les cibles qu'il a désignées. Il ne peut plus rien contrôler une fois qu'elle a commencé.",
+  "s": "Déclenche une émeute au lieu et contre les cibles choisis, puis échappe à tout contrôle."
+ }
+]

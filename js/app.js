@@ -322,6 +322,8 @@ function weaponLevel(c, w) {
 
 // ================= Pouvoirs =================
 const ppCostOf = (act) => { const m = String(act || '').match(/(\d+)\s*PP/); return m ? +m[1] : null; };
+// Résumé d'un pouvoir (1 ou 2 phrases), affiché sans ouvrir la description
+const powSum = (d, par) => { const s = d?.s || par?.s; return s ? `<div class="psum">${esc(s)}</div>` : ''; };
 function renderPouvoirs(c) {
   const t = R.typeOf(c); const sup = R.supByName(c.superieur);
   const list = c.pouvoirs.map((p, i) => {
@@ -335,6 +337,7 @@ function renderPouvoirs(c) {
         ${ui.mode !== 'normal' && !inv ? pmButtons('pow', i) : ''}
         <div class="pl">${inv ? '—' : L(p.r)}</div></div>
       <div class="meta">${d.nat ? `<span class="badge ${d.nat}">${d.nat}</span>` : ''}${esc(d.act || par?.act || '')}${d.q && d.q !== '—' ? ' · ' + esc(d.q) : ''}</div>
+      ${powSum(d, par)}
       <div class="row" style="margin-top:6px">
         ${!t.nopp && pp ? `<button class="btn sm pri" data-act="pow-use" data-i="${i}">Activer (${pp} PP)</button>` : ''}
         ${!inv ? `<button class="btn sm" data-act="pow-roll" data-i="${i}">Test de pouvoir</button>` : ''}
@@ -496,9 +499,10 @@ function renderBiblio(c) {
       list.slice(0, 150).map((p) => {
         const par = p.parent ? R.powerDef(p.parent) : null;
         const open = ui.open['b' + p.n];
-        return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div><span class="small muted">${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'}</span>
+        return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div><span class="small muted">${hasPA(p) ? `${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'}` : ''}</span>
           <button class="btn sm ghost" data-act="toggle" data-key="b${esc(p.n)}">${open ? '–' : '+'}</button></div>
           <div class="meta"><span class="badge ${p.nat}">${p.nat}</span>${esc(p.act)} · <i>${esc(accessTxt(p))}</i>${p.q && p.q !== '—' ? ' · ' + esc(p.q) : ''}</div>
+          ${powSum(p, par)}
           ${open ? `<div class="desc">${esc(p.d || (par ? 'Voir ' + par.n + ' : ' + par.d : ''))}${p.var ? '\n\n' + esc(p.var) : ''}</div>` : ''}</div>`;
       }).join('');
   } else if (ui.biblio === 'sup') {
@@ -522,6 +526,8 @@ function renderBiblio(c) {
     ${ui.biblio !== 'regles' && ui.biblio !== 'armes' ? `<input class="inp" id="bq" style="margin-top:8px" placeholder="Rechercher…" value="${esc(ui.q)}">` : ''}</div>
     <section class="card">${body}</section>`;
 }
+// Le pouvoir s'achète-t-il en PA ? (non pour les pouvoirs de mage urbain et ceux propres à un PNJ)
+const hasPA = (p) => ['gen', 'ange', 'demon', 'psi', 'paien', 'special'].some((k) => p.a?.[k] != null) || Object.keys(p.a?.sup || {}).length > 0;
 function accessTxt(p) {
   const a = p.a || {}; const o = [];
   if (a.gen != null) o.push('général ' + a.gen);
@@ -533,7 +539,10 @@ function accessTxt(p) {
   for (const [k, v] of Object.entries(a.sup || {})) o.push(k + ' ' + v);
   if (a.inv) o.push('invariable');
   if (a.cond) o.push('condition : ' + a.cond);
-  return o.join(', ') + (o.length && !a.inv ? ' PA/rang' : ' PA');
+  // Accès sans coût en PA : pouvoirs de mage urbain (niveau de Foi requis) et pouvoirs propres à un PNJ
+  const extra = [a.mage != null ? `mage urbain de niveau ${a.mage}` : '', a.propre ? `propre à ${a.propre}` : ''].filter(Boolean);
+  if (!o.length) return extra.join(', ') || '—';
+  return o.join(', ') + (!a.inv ? ' PA/rang' : ' PA') + (extra.length ? ', ' + extra.join(', ') : '');
 }
 function renderRegles() {
   return `<h3>Table Unique-Multiple</h3>
@@ -780,7 +789,7 @@ function chooseList(title, items, onPick, opts = {}) {
 function addPowerDialog() {
   const c = C();
   const items = R.POUVOIRS.filter((p) => !p.multi).map((p) => ({
-    p, label: p.n, sub: `${R.powerAccessible(c, p) ? '' : '[accès restreint] '}${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'} · ${p.nat} · ${p.act}`,
+    p, label: p.n, sub: `${R.powerAccessible(c, p) ? '' : '[accès restreint] '}${hasPA(p) ? `${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'} · ` : `${accessTxt(p)} · `}${p.nat} · ${p.act}${p.s || R.powerDef(p.parent)?.s ? ' — ' + (p.s || R.powerDef(p.parent).s) : ''}`,
   })).sort((a, b) => (R.powerAccessible(c, b.p) - R.powerAccessible(c, a.p)) || a.label.localeCompare(b.label, 'fr'));
   chooseList('Ajouter un pouvoir', items, ({ p }) => {
     const inv = !!p.a?.inv;
@@ -1299,6 +1308,7 @@ function renderMJFiche(x) {
       const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const k = 'mj' + x.id + i;
       return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div><div class="pl">${p.r ? L(p.r) : '—'}</div></div>
         <div class="meta">${d.nat ? `<span class="badge ${d.nat}">${d.nat}</span>` : ''}${esc(d.act || par?.act || '')}${d.q && d.q !== '—' ? ' · ' + esc(d.q) : ''}</div>
+        ${powSum(d, par)}
         <div class="row" style="margin-top:6px">${p.r ? `<button class="btn sm" data-act="mj-roll" data-id="${esc(x.id)}" data-k="pow" data-key="${i}">Test de pouvoir</button>` : ''}<button class="btn sm ghost" data-act="toggle" data-key="${k}">${ui.open[k] ? 'Masquer' : 'Description'}</button></div>
         ${ui.open[k] ? `<div class="desc">${esc(d.d || par?.d || '')}</div>` : ''}</div>`;
     }).join('') || '<div class="empty">Aucun</div>'}
@@ -1529,6 +1539,7 @@ function renderNpcEdit(s, sc, n) {
       return `<div class="pow"><div class="ph"><div class="pn">${esc(p.n)}</div>
         <select class="inp" style="width:auto" data-pw="${i}">${lvlOpts(14).map(([r, l]) => `<option value="${r}" ${r === +p.r ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
         <div class="meta">${d.nat ? `<span class="badge ${d.nat}">${d.nat}</span>` : ''}${esc(d.act || par?.act || '')}${d.q && d.q !== '—' ? ' · ' + esc(d.q) : ''}</div>
+        ${powSum(d, par)}
         <div class="row" style="margin-top:6px">${d.d || par?.d ? `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${ui.open[k] ? 'Masquer' : 'Description'}</button>` : ''}<button class="btn sm danger" data-act="sc-p-del" data-i="${i}">Retirer</button></div>
         ${ui.open[k] ? `<div class="desc">${esc(d.d || par?.d || '')}</div>` : ''}</div>`;
     }).join('') || '<div class="empty">Aucun</div>'}
@@ -1705,7 +1716,7 @@ function renderUnit(sc, u) {
       ${b.ouverte ? `<button class="btn sm" data-act="lv-wclose" ${at(`data-i="${i}"`)}>Refermer</button>` : ''}<button class="ibtn" style="width:32px;height:32px" data-act="lv-wdel" ${at(`data-i="${i}"`)}>${icon('x')}</button></div>`).join('')}</div>` : ''}
     ${n.pouvoirs.length ? `<div class="small" style="margin-top:8px">${n.pouvoirs.map((p, i) => {
       const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const cost = ppCostOf(d.act || par?.act);
-      return `<button class="pill light" data-act="lv-pow" ${at(`data-i="${i}"`)} title="${esc(d.act || par?.act || '')}">${esc(p.n)} <b>${p.r ? L(p.r) : '—'}</b>${cost ? ` <small>${cost} PP</small>` : ''}</button>`;
+      return `<button class="pill light" data-act="lv-pow" ${at(`data-i="${i}"`)} title="${esc([d.s || par?.s, d.act || par?.act].filter(Boolean).join(' — '))}">${esc(p.n)} <b>${p.r ? L(p.r) : '—'}</b>${cost ? ` <small>${cost} PP</small>` : ''}</button>`;
     }).join(' ')}</div>` : ''}
     ${n.talents ? `<div class="small muted" style="margin-top:6px">${esc(n.talents)}</div>` : ''}
     ${n.notes ? `<details class="small" style="margin-top:6px"><summary class="muted">Notes ▾</summary><div style="white-space:pre-line">${esc(n.notes)}</div></details>` : ''}
