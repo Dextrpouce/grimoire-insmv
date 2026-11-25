@@ -10,3 +10,7 @@ export const FIREBASE_CONFIG = {
   messagingSenderId: '1069878600833',
   appId: '1:1069878600833:web:5c43750aa4188833609980',
 };
+
+// Mot de passe du mode maître de jeu (empreinte PBKDF2, pas le mot de passe lui-même).
+// Hash vide = mode MJ ouvert à tous. Pour choisir ou changer le mot de passe : node tools/mj-motdepasse.mjs
+export const MJ_LOCK = { salt: 'fdaa40b2812f059b054a6fe7f1f3ea44', iter: 200000, hash: '3b788fe6a3ed4b31cc512420d92a491ba9cb92e38e32030c42569863271a5a11' };

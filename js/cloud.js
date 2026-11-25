@@ -72,7 +72,8 @@ export async function createTable(id, name) {
     json: JSON.stringify(state), updatedAt: Date.now(), createdAt: Date.now(),
   });
 }
-export async function joinTable(id) {
+// asGm : ouverture côté maître de jeu, réservée au compte qui a créé la table
+export async function joinTable(id, { asGm = false } = {}) {
   const u = me();
   return fb.runTransaction(db, async (tx) => {
     const snap = await tx.get(tableDoc(id));
@@ -80,6 +81,7 @@ export async function joinTable(id) {
     const d = snap.data();
     const st = JSON.parse(d.json || '{}');
     if (st.kind !== 'insmv') throw new Error('Ce code n\'est pas une table INS/MV');
+    if (asGm && st.gm?.uid !== u.uid) throw new Error('Seul le compte qui a créé cette table peut l\'ouvrir en maître de jeu');
     if (!d.members.includes(u.uid)) {
       tx.update(tableDoc(id), { members: [...d.members, u.uid], memberNames: { ...d.memberNames, [u.uid]: meName(u) } });
     }

@@ -1,6 +1,7 @@
 import * as R from './rules.js';
 import { store } from './store.js';
 import * as cloud from './cloud.js';
+import { mjLock } from './mjlock.js';
 import { table, errText } from './table.js';
 import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice, QUICK, quickNpc } from './scenario.js';
 import { QUICK_PP } from './data/pnjrapides.js';
@@ -64,7 +65,7 @@ const ui = {
   tab: localStorage.getItem('insmv.tab') || 'fiche',
   mode: 'normal', // normal | prog | libre | crea
   biblio: 'pouvoirs', q: '', onlyAccess: true, talFilter: 'tous', open: {},
-  screen: localStorage.getItem('insmv.screen') || 'perso', // perso | mj
+  screen: (localStorage.getItem('insmv.screen') === 'mj' && mjLock.unlocked) ? 'mj' : 'perso', // perso | mj
   mjTab: 'vue', mjChar: null,
   mjSec: localStorage.getItem('insmv.mjsec') || (store.configured ? 'table' : 'scen'), // table | scen | memo
   memoF: { open: false, pj: '', scen: '' }, // filtres du journal des choix
@@ -1234,7 +1235,30 @@ function renderTableCard(c) {
 }
 
 // ================= Table de jeu : écran du maître de jeu =================
+// Mot de passe du mode MJ (si un verrou est défini dans config.js), demandé une fois par appareil
+function mjPasswordDialog() {
+  return new Promise((resolve) => {
+    let ok = false;
+    const draw = (msg = '') => {
+      dialog('Mode maître de jeu', `<p class="small muted">Réservé au maître de jeu : saisis le mot de passe MJ. Il ne sera plus demandé sur cet appareil.</p>
+        <div class="field"><label>Mot de passe MJ</label><input id="mjpw" type="password" autocomplete="off"></div>
+        ${msg ? `<p class="small" style="color:#ff8a8f;margin-bottom:0">${esc(msg)}</p>` : ''}`,
+      `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="mjpw-ok">Entrer</button>`);
+      const inp = dlg.querySelector('#mjpw'); inp.focus();
+      const go = async () => {
+        try {
+          if (await mjLock.tryUnlock(inp.value)) { ok = true; closeDlg(); resolve(true); } else draw('Mot de passe incorrect');
+        } catch (e) { draw(e.message); }
+      };
+      dlg.querySelector('#mjpw-ok').onclick = go;
+      inp.onkeydown = (e) => { if (e.key === 'Enter') go(); };
+    };
+    draw();
+    onRealClose(() => { if (!ok) resolve(false); });
+  });
+}
 function enterMJ() {
+  if (!mjLock.unlocked) { mjPasswordDialog().then((ok) => { if (ok) enterMJ(); }); return; }
   ui.screen = 'mj'; localStorage.setItem('insmv.screen', 'mj');
   if (store.configured && table.openId && !table.current) table.open(table.openId);
   render(); window.scrollTo(0, 0);
@@ -1251,6 +1275,7 @@ function renderMJ() {
   return `<header class="top">
     <button class="ibtn" data-act="mj-exit" title="Retour à mes personnages">${icon('folder')}</button>
     <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
+    ${mjLock.enabled ? `<button class="ibtn" data-act="mj-lock" title="Verrouiller le mode MJ sur cet appareil">${icon('x')}</button>` : ''}
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
   <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
@@ -2097,6 +2122,7 @@ async function mjAction(act, b) {
       case 'mj-sec': ui.mjSec = b.dataset.v; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
       case 'mj-cloud': return cloudDialog();
       case 'mj-exit': ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
+      case 'mj-lock': mjLock.lock(); ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); toast('Mode MJ verrouillé sur cet appareil'); return render();
       case 'mj-create': {
         const name = document.getElementById('mj-name').value.trim();
         if (!name) return toast('Donne un nom à la table');

@@ -76,6 +76,18 @@ Pour utiliser un autre projet Firebase :
 
 Les personnages sont rangés dans `users/{ton-compte}/insmv`, à part de ceux du Grimoire WFRP.
 
+## Mot de passe du mode maître de jeu
+
+Par défaut, tout le monde peut ouvrir le mode maître de jeu. Pour le réserver au MJ :
+
+```
+node tools/mj-motdepasse.mjs
+```
+
+Le script demande le mot de passe (sans l'afficher) et écrit son empreinte dans `js/config.js` ; commit et push pour la publier. L'appli demande alors le mot de passe à l'entrée du mode MJ, une seule fois par appareil ; le bouton ✕ en haut du mode MJ le reverrouille (pratique avant de prêter sa tablette). `node tools/mj-motdepasse.mjs --off` retire le verrou.
+
+« Retrouver une de ses tables » (mode MJ) ne fonctionne qu'avec le compte qui a créé la table : un joueur qui connaît le code ne peut pas l'ouvrir en MJ. C'est un verrou de confort entre amis : les fichiers de l'appli (dont les scénarios des livres) restent lisibles dans le dépôt GitHub public.
+
 ## Organisation du code
 
 | Fichier | Rôle |

@@ -86,7 +86,7 @@ export const table = {
   async add(code) {
     const id = cleanCode(code);
     await store.ensureUser();
-    const name = await cloud.joinTable(id);
+    const name = await cloud.joinTable(id, { asGm: true });
     data.mine[id] = { name, createdAt: Date.now() }; persist();
     this.open(id);
     return name;
