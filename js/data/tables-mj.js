@@ -1,0 +1,2949 @@
+// Généré par tools/tables/build-tables.mjs : ne pas modifier à la main.
+// Tables aléatoires du MJ relevées dans les livres (résultats résumés, chiffres exacts).
+export const TABLES_MJ = [
+ {
+  "id": "mort-purgatoire",
+  "nom": "Mourir au Purgatoire",
+  "groupe": "Morts et Marches",
+  "livre": "Les Petites Apocalypses",
+  "ref": "p. 118",
+  "de": "d666",
+  "camp": "",
+  "usage": "Quand une âme (autochtone, ou âme d'un être mort avec son corps physique sur place) est tuée au Purgatoire : tirer pour savoir où et quand elle se reconstitue.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "111",
+    "t": "L'âme glisse hors de la marche et arrive aux portes du Paradis ; les gardiens méfiants peuvent la renvoyer, la jeter entre les marches ou la laisser entrer. Discussion à jouer."
+   },
+   {
+    "d": "112-136",
+    "t": "Perte de cohésion sans expulsion : l'âme se reconstitue peu à peu en 1d6 heures, jusqu'à pouvoir se refaire un avatar."
+   },
+   {
+    "d": "141-436",
+    "t": "Même chose, reconstitution en 1d6 jours."
+   },
+   {
+    "d": "441-566",
+    "t": "Même chose, reconstitution en 1d66 jours."
+   },
+   {
+    "d": "611-633",
+    "t": "Reconstitution en 1d666 jours et perte de 1d6 rangs de Chance/Foi ; à 0 ou moins, mort définitive."
+   },
+   {
+    "d": "634-665",
+    "t": "Test Très difficile de Chance/Foi : réussi, l'âme rate une marche (une âme forte est plus facilement éjectée) ; raté, elle se reconstitue en 1d6 ans."
+   },
+   {
+    "d": "666",
+    "t": "L'âme rate une marche et échoue aux portes de l'Enfer ; les gardiens la font souvent entrer de force, mais peuvent la jeter entre les marches ou la renvoyer au Purgatoire. Discussion à jouer."
+   }
+  ],
+  "note": "Si l'âme rate une marche, enchaîner sur les deux tables « Rater une marche ». Le livre précise que les chances d'atterrir au Paradis ou en Enfer sont exagérées pour le jeu. Un corps physique emmené au Purgatoire meurt normalement ; seule l'âme utilise la table."
+ },
+ {
+  "id": "mort-paradis-enfer",
+  "nom": "Mourir au Paradis, en Enfer ou sur une marche intermédiaire",
+  "groupe": "Morts et Marches",
+  "livre": "Les Petites Apocalypses",
+  "ref": "p. 118",
+  "de": "d666",
+  "camp": "",
+  "usage": "Quand un personnage meurt sur une marche peu matérielle (Paradis, Enfer, Asgard, Faërie…) : tirer le sort de son âme.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "111",
+    "t": "Avatar reconstitué en 1d6 heures ; l'épreuve le renforce : +1 rang de Chance/Foi."
+   },
+   {
+    "d": "112-116",
+    "t": "Avatar reconstitué en 1d6 jours."
+   },
+   {
+    "d": "121-136",
+    "t": "Avatar reconstitué en 1d66 jours."
+   },
+   {
+    "d": "141-366",
+    "t": "Avatar reconstitué en 1d666 jours."
+   },
+   {
+    "d": "411-665",
+    "t": "Test standard de Chance/Foi : réussi, l'âme rate une marche ; raté, elle se reconstitue en 1d6 ans."
+   },
+   {
+    "d": "666",
+    "t": "Chute à travers les marches jusqu'en Enfer, 1d6 ans plus tard : Chance/Foi divisée par 3, mémoire en grande partie perdue, il devient un simple damné tout en bas de la hiérarchie."
+   }
+  ],
+  "note": "Les damnés torturés à mort en Enfer s'y reconstituent généralement grâce à leur Chance très basse. Si l'âme rate une marche, enchaîner sur les tables « Rater une marche »."
+ },
+ {
+  "id": "chute-marches-duree",
+  "nom": "Rater une marche : durée de la chute",
+  "groupe": "Morts et Marches",
+  "livre": "Les Petites Apocalypses",
+  "ref": "p. 119",
+  "de": "d666",
+  "camp": "",
+  "usage": "Quand une âme est expulsée hors de sa marche : tirer la durée de sa chute dans le Rien, puis la table du résultat de la chute.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "111",
+    "t": "1d6 heures."
+   },
+   {
+    "d": "112-113",
+    "t": "1d6 jours."
+   },
+   {
+    "d": "114-136",
+    "t": "1d66 jours."
+   },
+   {
+    "d": "141-166",
+    "t": "1d666 jours."
+   },
+   {
+    "d": "211-366",
+    "t": "1d66 ans."
+   },
+   {
+    "d": "411-665",
+    "t": "1d66 siècles."
+   },
+   {
+    "d": "666",
+    "t": "1d66 millénaires."
+   }
+  ],
+  "note": "Pendant la chute, l'âme n'a ni corps ni avatar et ne peut rien faire. Retrouver quelqu'un dans le Rien exige un pouvoir de grade adapté de niveau 7+."
+ },
+ {
+  "id": "chute-marches-resultat",
+  "nom": "Rater une marche : résultat de la chute",
+  "groupe": "Morts et Marches",
+  "livre": "Les Petites Apocalypses",
+  "ref": "p. 119",
+  "de": "d666",
+  "camp": "",
+  "usage": "À tirer avec la durée de la chute pour savoir où l'âme finit.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "111",
+    "t": "Elle arrive sur une marche connue au choix du MJ (Terre, Faërie, MRC…), peut-être secourue par une âme charitable."
+   },
+   {
+    "d": "112",
+    "t": "Elle échoue seule sur une marche inconnue et déserte, pour quelques millénaires de solitude."
+   },
+   {
+    "d": "113-665",
+    "t": "Perte d'1 rang de Chance/Foi et nouvelle chute : relancer les deux tables. À 0, l'âme se dissout ; ses restes tombent dans le Compost après une dernière durée tirée."
+   },
+   {
+    "d": "666",
+    "t": "Elle plonge dans le Compost : destruction définitive."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "mort-en-reve",
+  "nom": "Mort en rêve (MRC)",
+  "groupe": "Morts et Marches",
+  "livre": "Les Petites Apocalypses",
+  "ref": "p. 123",
+  "de": "d666",
+  "camp": "",
+  "usage": "Quand un rêveur subit un coup fatal dans la MRC sans plus avoir de substance rêve pour l'éviter : son témoin est détruit, tirer les conséquences.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "111",
+    "t": "Réveil, renforcé : +2 rangs en Narcolepsie (+4 s'il n'avait pas le talent) et +1 rang en Chance/Foi."
+   },
+   {
+    "d": "112-116",
+    "t": "Réveil avec des souvenirs étranges : +1 rang en Narcolepsie (+2 s'il n'avait pas le talent)."
+   },
+   {
+    "d": "121-166",
+    "t": "Réveil sans gravité : il perd la moitié de ses PF et ne les récupère qu'après une nuit complète de sommeil."
+   },
+   {
+    "d": "211-366",
+    "t": "Réveil très diminué : −1d6 rangs dans son meilleur talent (pas sous le niveau de base) et −1 rang dans une caractéristique tirée au hasard."
+   },
+   {
+    "d": "411-566",
+    "t": "Mort dans son sommeil ; l'âme part vers sa destination comme pour une mort sur Terre."
+   },
+   {
+    "d": "611-665",
+    "t": "Même mort, mais l'âme est amoindrie : Chance/Foi divisée par 2 (ne compte que pour un ange ou un démon qui peut se réincarner)."
+   },
+   {
+    "d": "666",
+    "t": "L'âme est entièrement aspirée dans la MRC et y devient autochtone ; le corps meurt ou reste dans un coma profond (une chance sur deux, ou choix du MJ)."
+   }
+  ],
+  "note": "Le livre imprime « 661–665 » pour l'avant-dernière ligne, ce qui laisse 611 à 656 sans résultat ; ici la ligne est étendue à 611-665 (coquille probable). Avant d'en arriver là, 1 point de SR suffit à survivre à un coup fatal (test difficile de Volonté pour ne pas se réveiller)."
+ },
+ {
+  "id": "reincarnation",
+  "nom": "Mort et délai de réincarnation (table 26)",
+  "groupe": "Morts et Marches",
+  "livre": "Livret de règles (INS/MV 4e)",
+  "ref": "p. 51",
+  "de": "d6",
+  "camp": "",
+  "usage": "Quand le corps d'un ange ou d'un démon meurt sur Terre : Foi (sans les +) + grade + 1d6, modifié, donne le temps avant sa prochaine incarnation.",
+  "mods": "Ajouter Foi (sans les +) et grade au d6. Corps précédent « gâché » −3 ; par blâme actuel −1 ; PA < 0 −2 ; PA > 10 +1 ; PA > 20 +2 ; coup de pouce du supérieur +1 ; coup de pouce du MJ +1.",
+  "lignes": [
+   {
+    "d": "0-2",
+    "t": "Jamais de retour sur Terre."
+   },
+   {
+    "d": "3-5",
+    "t": "Nouvelle incarnation dans 1d6 millénaires."
+   },
+   {
+    "d": "6-7",
+    "t": "Dans 1d6 siècles."
+   },
+   {
+    "d": "8-9",
+    "t": "Dans 1d6 décennies."
+   },
+   {
+    "d": "10-11",
+    "t": "Dans 1d6 années."
+   },
+   {
+    "d": "12+",
+    "t": "Dans 1d6 mois."
+   }
+  ],
+  "note": "Les deux modificateurs de PA (> 10 et > 20) ne se cumulent sans doute pas : prendre le plus haut. Un total négatif tombe dans 0-2. Le supérieur peut rappeler plus tôt un agent précieux pour une mission."
+ },
+ {
+  "id": "aura",
+  "nom": "Couleur d'aura (table 27)",
+  "groupe": "Morts et Marches",
+  "livre": "Livret de règles (INS/MV 4e)",
+  "ref": "p. 54",
+  "de": "ref",
+  "camp": "",
+  "usage": "Pour décrire l'aura d'un ange, d'un démon ou d'un supérieur selon son total maximal de PP (pas le total actuel) : bleue pour le bien, rouge pour le mal, noir et blanc pour Lecture d'aura.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "1-10",
+    "t": "Bénéfique : bleu aquarelle. Maléfique : rouge aquarelle. Noir et blanc : blanc cassé."
+   },
+   {
+    "d": "11-20",
+    "t": "Bénéfique : bleu ciel. Maléfique : rose. Noir et blanc : gris clair."
+   },
+   {
+    "d": "21-40",
+    "t": "Bénéfique : bleu « moyen ». Maléfique : rouge « moyen ». Noir et blanc : gris « moyen »."
+   },
+   {
+    "d": "41-60",
+    "t": "Bénéfique : bleu marine. Maléfique : rouille. Noir et blanc : gris foncé."
+   },
+   {
+    "d": "61+",
+    "t": "Bénéfique : bleu nuit. Maléfique : pourpre foncé. Noir et blanc : gris anthracite."
+   }
+  ],
+  "note": "Pas de jet de dé : table de correspondance indexée sur le total maximal de PP (champ « de » laissé vide). Humains : petite aura blanche (~30 cm) ; autres créatures surnaturelles : aura grise (~50 cm) ; anges et démons : environ 1 m."
+ },
+ {
+  "id": "evenements-guerre",
+  "nom": "Événements aléatoires en temps de guerre",
+  "groupe": "Événements",
+  "livre": "Livret Magna Veritas (INS/MV 4e)",
+  "ref": "p. 89",
+  "de": "2d6",
+  "camp": "",
+  "usage": "Pendant les déplacements des PJ dans une zone en guerre (conçue pour la Tchétchénie du scénario « Notre peuple vaincra ») : tirer un incident d'ambiance ou de danger.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "2",
+    "t": "Tir d'artillerie raté (mortier, obusier, roquettes…) qui tombe tout près : au gré du MJ, blessure de dommage 1d6+3."
+   },
+   {
+    "d": "3",
+    "t": "Descente de collabos ou de mercenaires prorusses, parfois encadrés par le FSB : contrôle des papiers, suspects abattus ou arrêtés."
+   },
+   {
+    "d": "4",
+    "t": "Un imam de rue harangue la foule contre les infidèles, les États-Unis et la Russie ; si on le laisse parler, la foule cherche vite un bouc émissaire à lyncher."
+   },
+   {
+    "d": "5",
+    "t": "Convoi de la Croix-Rouge ou du Croissant-Rouge, parfois escorté par des Russes, des collabos ou des boïviki."
+   },
+   {
+    "d": "6",
+    "t": "Croisade orthodoxe : des Russes menés par un pope s'en prennent à l'hérétique dans leur quartier."
+   },
+   {
+    "d": "7",
+    "t": "Combats de rue entre factions ennemies, avec balles perdues."
+   },
+   {
+    "d": "8",
+    "t": "Enterrement russe ou tchétchène : ambiance lourde, la moindre provocation déclenche l'émeute."
+   },
+   {
+    "d": "9",
+    "t": "Convoi ou poste d'une ONG humanitaire, menacé par une population qui manque de tout."
+   },
+   {
+    "d": "10",
+    "t": "Rafle séparatiste : boïviki ou moudjahidin bouclent le secteur, contrôlent les motivations de chacun et exécutent sommairement."
+   },
+   {
+    "d": "11",
+    "t": "Les PJ découvrent les suites d'une rafle de collabos ou d'un raid punitif de moudjahidin : survivantes blessées et endeuillées."
+   },
+   {
+    "d": "12",
+    "t": "Un tireur embusqué, ou une faction ennemie, attaque sans prévenir."
+   }
+  ],
+  "note": "Table du scénario « Notre peuple vaincra » (Grozny) ; réutilisable pour toute zone de conflit en adaptant les factions."
+ },
+ {
+  "id": "pasteurs-d66",
+  "nom": "Catégorie de pasteur",
+  "groupe": "PNJ et ambiance",
+  "livre": "Bible à Dudule – Anges",
+  "ref": "p. 41-42",
+  "de": "d66",
+  "camp": "",
+  "usage": "Quand les PJ croisent un pasteur protestant improvisé (synode, office, enquête de quartier), tirer sa vraie nature.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "11-13",
+    "t": "Le bon apôtre : croyant sincère et irréprochable. Les anges le protègent, peuvent le mettre dans la confidence, voire en faire un serviteur de Dieu."
+   },
+   {
+    "d": "14-41",
+    "t": "L'entre-deux-eaux : pécheur ordinaire mais foi sincère. C'est le cas le plus courant ; on le laisse en place."
+   },
+   {
+    "d": "42-46",
+    "t": "Le délirant : prêche n'importe quoi mais de bonne foi. Il faut le recadrer ou le décourager, délicat car certains illuminés belliqueux plaisent à Dominique."
+   },
+   {
+    "d": "51-56",
+    "t": "Le mauvais apôtre : ambitieux cynique qui use de son ascendant sur les fidèles pour nuire. Les anges cherchent à l'écarter, fermement mais sans violence."
+   },
+   {
+    "d": "61-65",
+    "t": "L'apôtre malfaisant : hypocrite qui détourne ses ouailles par blasphème ou cynisme, parfois manipulé par une créature du Malin. Le corriger physiquement serait toléré."
+   },
+   {
+    "d": "66",
+    "t": "Le loup dans la bergerie : un démon déguisé en pasteur pour amuser ses collègues. Abattable à vue."
+   }
+  ],
+  "note": "La plage 14-41 englobe 14-16, 21-26, 31-36 et 41. Accroche liée (p. 42) : un nouveau pasteur qui serait un démon de Marie-Jolie, des dealers qui disparaissent."
+ },
+ {
+  "id": "citations-bibliques-errantes",
+  "nom": "Citation biblique errante",
+  "groupe": "PNJ et ambiance",
+  "livre": "Bible à Dudule – Anges",
+  "ref": "p. 47",
+  "de": "d6",
+  "camp": "",
+  "usage": "Pour fabriquer une fausse citation biblique dans la bouche d'un prédicateur évangélique ou d'un ange : un d6 par morceau (ouverture, sujet, fin, livre cité) et on assemble.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Ouverture « En vérité, je vous le dis » ; sujet : la volonté du Tout-Puissant ; fin : vaincra les ténèbres de la mort, ou châtiera les sodomites ; source : Apocalypse."
+   },
+   {
+    "d": "2",
+    "t": "Ouverture « Car viendra le jour où » ; sujet : le Seigneur frappera les infidèles comme la foudre le figuier du désert, ou les mènera en son royaume ; source : Ézéchiel."
+   },
+   {
+    "d": "3",
+    "t": "Ouverture « Alors il répondit que » ; sujet : l'Éternel séchera leurs larmes, ou partagera le pain de la vie éternelle ; source : Nombres."
+   },
+   {
+    "d": "4",
+    "t": "Ouverture « Et tous sauront que » ; sujet : Dieu récompensera le juste, ou ne manque jamais de paraboles ; source : Proverbes."
+   },
+   {
+    "d": "5",
+    "t": "Ouverture « Leur cœur sera saisi d'effroi » ; sujet : en voyant que le fils de Dieu ne les a pas oubliés, ou qu'il les écrase de sa vengeance ; source : Genèse."
+   },
+   {
+    "d": "6",
+    "t": "Ouverture « Celui qui doute de moi saura » ; sujet : que l'ange du Seigneur ressemble à un kiwi (poilu dehors, vert dedans), ou qu'il n'est pas avec nous et déteste les crétins de ton espèce ; source : Foutaises."
+   }
+  ],
+  "note": "Le livre présente une grille de 6 lignes en colonnes (ouverture, sujet, deux fins au choix séparées par « / », livre cité) : on peut tirer chaque colonne séparément puis accorder les temps. Résumés reformulés, fins à garder courtes."
+ },
+ {
+  "id": "of-sous-intrigues",
+  "nom": "Abécédaire des sous-intrigues (« C'est lundi, c'est ravioli »)",
+  "groupe": "PNJ et ambiance",
+  "livre": "On Ferme !",
+  "ref": "p. 70-74",
+  "de": "d26",
+  "camp": "",
+  "usage": "Pour compliquer un scénario trop simple ou meubler entre deux phases : tirez une lettre (ou choisissez selon le camp du groupe) et faites vivre ce problème du quotidien à un PJ.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "A",
+    "t": "Admiratrice : un PJ au charme surhumain reçoit des lettres enflammées d'une inconnue qui finit par proposer un rendez-vous ; c'est un démon de Baal chargé de l'éliminer.",
+    "camp": "ange"
+   },
+   {
+    "d": "B",
+    "t": "Braquage d'épicerie : le PJ assiste à un petit braquage ; s'il intervient, les copains du voyou jurent des représailles. Ce sont des lâches en bande, et un ange ne tue pas pour des pommes.",
+    "camp": "ange"
+   },
+   {
+    "d": "C",
+    "t": "Collègue : le nouveau collègue sympathique trahit des pouvoirs surnaturels (charme sur le patron, inattention). Pour quel camp travaille-t-il, et comment l'aborder ?"
+   },
+   {
+    "d": "D",
+    "t": "Débile en la demeure : le prince confie au PJ un démon de combat pendant quelques jours ; hygiène douteuse, chaos permanent (pizzaiolo dévoré, rituel tagué au mur), mais il peut servir.",
+    "camp": "demon"
+   },
+   {
+    "d": "E",
+    "t": "Enfants : un camarade de l'enfant du PJ se suicide ; le môme accuse le prof de maths. Réunion parents-profs en pleine mission : le prof est bien un démon mineur, son maître rôde.",
+    "camp": "ange"
+   },
+   {
+    "d": "F",
+    "t": "Frayeur nocturne : Nuyac, créature de la MRC se disant dieu olmèque oublié, harcèle les rêves du PJ pour obtenir une audience en Enfer ; l'Administration s'en moque, à lui de s'en débarrasser.",
+    "camp": "demon"
+   },
+   {
+    "d": "G",
+    "t": "Greffier : un chat de gouttière, familier renégat voulant se racheter, s'installe chez l'ange ; il pousse à des méthodes infernales et son ancien maître sanguinaire approche.",
+    "camp": "ange"
+   },
+   {
+    "d": "H",
+    "t": "Hood of horror : un caïd local se réclamant du Baron Samedi demande la bénédiction du démon ; allié criminel utile, mais problème à moyen terme dont il faudra peut-être se débarrasser.",
+    "camp": "demon"
+   },
+   {
+    "d": "I",
+    "t": "Idylle : l'ange reste épris de la belle indifférente aimée par son corps d'accueil et espionne son fiancé, qu'il croit démon. Option : sa récupération devient +1 PP par 2 heures de surveillance.",
+    "camp": "ange"
+   },
+   {
+    "d": "J",
+    "t": "Jardinage : une famille rachète l'ancienne maison du démon et déterre le cadavre de sa famille. Variante : l'Administration ressuscite cette famille en zombis, qu'il doit récupérer d'urgence.",
+    "camp": "demon"
+   },
+   {
+    "d": "K",
+    "t": "Kitch : Morax charge le PJ de garder la galerie d'art d'un de ses démons défunts, convoitée par un ange de Janus ; le PJ peut puiser dans les œuvres maudites.",
+    "camp": "demon"
+   },
+   {
+    "d": "L",
+    "t": "Langues de pute : les voisines curieuses espionnent le PJ, qu'elles prennent pour un agent secret ou un truand ; le mari de l'une est policier."
+   },
+   {
+    "d": "M",
+    "t": "Mariage : l'Administration interdit à un jeune ange de divorcer ; pendant que son recours traîne, son épouse parano engage un détective qui le suit jusque dans ses missions.",
+    "camp": "ange"
+   },
+   {
+    "d": "N",
+    "t": "Nuisible : le démon reçoit par erreur le blâme d'un homonyme (insectes sous la peau, attire rats et termites) ; il doit faire corriger la bévue auprès de Baalberith et Andromalius ou de son prince.",
+    "camp": "demon"
+   },
+   {
+    "d": "O",
+    "t": "Obsessionnel : l'ex du PJ le harcèle (menaces, cadeaux délirants) et vendrait son âme pour le récupérer ou le punir ; un ennemi pourrait l'assassiner pour y loger un démon.",
+    "camp": "ange"
+   },
+   {
+    "d": "P",
+    "t": "Proprio : les « parents » de l'ange vont être expulsés faute de payer le loyer ; trouver l'argent ou faire pression sur le propriétaire, rien de très catholique.",
+    "camp": "ange"
+   },
+   {
+    "d": "Q",
+    "t": "Que faites-vous tout nu dans mon placard ? : le contact du groupe demande à l'ange le plus séduisant de séduire sa femme pour divorcer. Piège de l'Administration pour tester sa droiture ?",
+    "camp": "ange"
+   },
+   {
+    "d": "R",
+    "t": "Revenant : l'épouse assassinée du corps d'accueil hante le démon de reproches ménagers. Variante : l'âme du corps d'accueil, fantôme à son image, lui joue des tours pendables.",
+    "camp": "demon"
+   },
+   {
+    "d": "S",
+    "t": "Satan m'habite : l'ado dont l'ange a la charge fréquente une bande satanique ; le meneur est en fait un ange de Mathias maladroit en infiltration, futur contact utile.",
+    "camp": "ange"
+   },
+   {
+    "d": "T",
+    "t": "Trottoir du Paradis : sainte Cunégonde apparaît et demande à l'ange d'héberger et relever un clochard, qui finit par parler de choses inhumaines vues dans le quartier.",
+    "camp": "ange"
+   },
+   {
+    "d": "U",
+    "t": "Un tueur dans le voisinage : troisième jeune fille ronde et myope tuée près de chez le démon ; flics et journalistes arrivent. Tueur en série, vampire, ou piège contre le démon ?",
+    "camp": "demon"
+   },
+   {
+    "d": "V",
+    "t": "Veuf : un ennemi tue l'épouse du PJ, qui élève seul ses enfants. Variante : un ange de Guy l'a sauvée mais elle est dans le coma ; Guy pourrait opérer contre un service.",
+    "camp": "ange"
+   },
+   {
+    "d": "W",
+    "t": "Wanted : des anges en civil encerclent le domicile du démon et la police a son signalement ; fuir, se déguiser, trouver une planque, et sauver familier ou documents.",
+    "camp": "demon"
+   },
+   {
+    "d": "X",
+    "t": "L'emplacement du magot : une riche tante anglaise lègue tout au démon, à condition de veiller son corps deux jours dans une église, sinon l'Église anglicane hérite.",
+    "camp": "demon"
+   },
+   {
+    "d": "Y",
+    "t": "Y'a un shoggoth dans mon frigo : une microfaille de la MRC s'ouvre dans le frigo du PJ ; les services de Blandine/Beleth l'y ont dirigée exprès pour qu'il surveille."
+   },
+   {
+    "d": "Z",
+    "t": "« Zog-zog master » : un jeu vidéo vraiment démoniaque abrutit la jeunesse ; seul l'ange le voit, Notre-Dame refuse d'y croire et veut l'envoyer au repos dans un monastère.",
+    "camp": "ange"
+   }
+  ],
+  "note": "Le livre ne donne pas de dé : d = la lettre (rang 1 à 26). Camp tiré du marquage (MV = ange, INS = démon, INS/MV = les deux). Récompense conseillée (p. 69) : un rang de talent utile, ou 1 PP pour les plus épiques, plutôt qu'un PA. Les lettres V à Z sont p. 74 (hors de la plage p. 70-73 annoncée)."
+ },
+ {
+  "id": "of-vie-privee-ange",
+  "nom": "Questionnaire de vie privée d'un ange",
+  "groupe": "PNJ et ambiance",
+  "livre": "On Ferme !",
+  "ref": "p. 70",
+  "de": "liste",
+  "camp": "ange",
+  "usage": "À la création ou entre deux missions : le joueur choisit (ou tire) une réponse par question pour camper la vie privée de son ange.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "Boulot",
+    "t": "a. Numéraire, employé de l'Administration (clergé, Notre-Dame, service d'un archange, association reconnue) ; b. Surnuméraire, métier hors de l'Administration (autre clergé, laïc)."
+   },
+   {
+    "d": "Si surnuméraire",
+    "t": "a. Indépendant, ne rend de comptes qu'à lui-même ; b. Salarié, doit justifier ses absences."
+   },
+   {
+    "d": "Famille",
+    "t": "a. Nombreuse et unie, modèle du quartier ; b. Moderne et recomposée (divorce, veuvage, parent seul) ; c. Réduite aux parents, oncles, tantes et cousins."
+   },
+   {
+    "d": "Famille (bis)",
+    "t": "a. Ne se doute de rien, il doit justifier ses absences ; b. S'interroge mais a l'habitude de ses disparitions ; c. Connaît sa vraie nature."
+   },
+   {
+    "d": "Samedi soir",
+    "t": "a. Bénévolat au service du Seigneur ; b. Repos bien mérité ; c. La fête, il faut profiter de l'incarnation."
+   },
+   {
+    "d": "La messe",
+    "t": "a. Chaque dimanche, pour l'exemple ; b. C'est pour les humains, grasse matinée ; c. La preuve que le Paradis est dépassé."
+   }
+  ],
+  "note": "Questionnaire « MV » : une question par ligne, réponses a, b, c au choix du joueur (pas de dé dans le livre)."
+ },
+ {
+  "id": "of-vie-privee-demon",
+  "nom": "Questionnaire de vie privée d'un démon",
+  "groupe": "PNJ et ambiance",
+  "livre": "On Ferme !",
+  "ref": "p. 70",
+  "de": "liste",
+  "camp": "demon",
+  "usage": "À la création ou entre deux missions : le joueur choisit (ou tire) une réponse par question pour camper la vie privée de son démon.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "Famille",
+    "t": "a. Il l'a supprimée (sans laisser de traces ? au MJ de voir) ; b. Il a disparu et refait sa vie ; c. Il vit parmi les siens comme si de rien n'était."
+   },
+   {
+    "d": "Si c",
+    "t": "a. Famille épargnée et en pleine forme ; b. Famille pervertie, tous morts, fous ou en prison ; c. Famille changée en serviteurs (familiers, morts-vivants, démons mineurs)."
+   },
+   {
+    "d": "Boulot",
+    "t": "a. Super poste utile à l'Enfer (récompense « couverture ») ; b. Bonne situation, ambitieux ; c. Petite situation utile à l'Enfer ; d. Planque dans les égouts et pouvoir « jeûne »."
+   },
+   {
+    "d": "Si b",
+    "t": "a. Indépendant, ne rend de comptes qu'à lui-même ; b. Salarié, doit justifier ses absences."
+   },
+   {
+    "d": "Police",
+    "t": "a. Au-dessus de tout soupçon hors missions ; b. Criminel à la merci d'une enquête poussée ; c. Hors-la-loi en marge ; d. Bête sauvage sans identité légale (prendre une « planque »)."
+   },
+   {
+    "d": "Amis",
+    "t": "a. Ne fréquente que des démons ; b. Aucun ami ; c. Des potes humains, petite faiblesse."
+   }
+  ],
+  "note": "Questionnaire « INS » : une question par ligne, réponses a, b, c (d) au choix du joueur (pas de dé dans le livre)."
+ },
+ {
+  "id": "of-croyance-humains",
+  "nom": "L'eusses-tu cru ? (croyance d'un humain au surnaturel)",
+  "groupe": "PNJ et ambiance",
+  "livre": "On Ferme !",
+  "ref": "p. 63",
+  "de": "d6",
+  "camp": "",
+  "usage": "Pour savoir d'un coup de dé à quel point un humain lambda croit à l'irrationnel.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "1-3",
+    "t": "N'y croit pas du tout."
+   },
+   {
+    "d": "4",
+    "t": "Admet que des choses bizarres existent, la télépathie par exemple."
+   },
+   {
+    "d": "5",
+    "t": "Se fie à l'astrologie, au tarot ou à une autre forme de divination."
+   },
+   {
+    "d": "6",
+    "t": "Croit aux fantômes et aux esprits."
+   }
+  ],
+  "note": "Le livre imprime « 3-3 » (coquille pour 1-3), puis « 4+ », « 5+ » et « 6 » : les croyances sont cumulatives (un 6 croit aussi à l'astrologie et à la télépathie). Ne porte ni sur la superstition ni sur la foi religieuse."
+ },
+ {
+  "id": "of-cadeau-abalam",
+  "nom": "Cadeau bonus : Abalam",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 93",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Abalam",
+  "usage": "Quand l'Administration veut récompenser un PJ de Abalam au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (imiter les comiques français morts) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Camisole en soie légère et solide, portable sous les vêtements, chaude en hiver ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Rien ne peut empêcher le démon de crier ; il s'échappe de presque toute camisole ou cellule capitonnée et les calmants n'ont aucun effet sur lui."
+   },
+   {
+    "d": "7-8",
+    "t": "Camisole fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Entonnoir : tant que le démon le porte sur la tête, personne ne réagit à ses agissements, aussi bizarres soient-ils."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-alain",
+  "nom": "Cadeau bonus : Alain",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 88",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Alain",
+  "usage": "Quand l'Administration veut récompenser un PJ de Alain au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (jardinage) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Baguette de sourcier : détecte l'eau potable jusqu'à 1 km."
+   },
+   {
+    "d": "5-6",
+    "t": "D'un coup d'œil, l'ange sait si un humain est vraiment malheureux, sans être trompé par l'hypocrisie ou un déguisement."
+   },
+   {
+    "d": "7-8",
+    "t": "Abondance nourrit 10 fois plus de monde (50 fois le niveau du pouvoir) et prend une forme discrète (sac de riz, conserves)."
+   },
+   {
+    "d": "9+",
+    "t": "Ankh en cuivre : effet permanent proche de Protection de l'âme et Protection de l'esprit, mais seulement contre les pouvoirs des païens égyptiens."
+   }
+  ],
+  "note": "Règle commune (p. 88-89) : le MJ décide quand un PJ reçoit un cadeau bonus (jamais acheté avec des PA, demandé ni réclamé) ; il le choisit ou lance 1d6 avec les modificateurs sur la table du supérieur. Talents : reçus au niveau indiqué, sans tenir compte des caractéristiques, puis améliorables avec des PA. Objets magiques : sans dépense de PP sauf mention. Pouvoirs spéciaux : spirituels, sans PP (le MJ peut exiger un test de Foi). Ces cadeaux ne sont pas équilibrés : modifiez ou écartez ceux qui vous gênent. Autres idées (p. 92) : +2 en précision ou puissance ou une qualité (Intangible, Pénétration…) pour une arme ou un pouvoir offensif ; +2 de protection, une qualité ou un défaut en moins pour une armure ; portée ou durée d'un cran au-dessus ; pouvoir mental devenu spirituel ; +4 niveaux contre une catégorie d'ennemis ; coût d'activation divisé par deux ; pouvoir constant gratuit dans certaines conditions."
+ },
+ {
+  "id": "of-cadeau-andromalius",
+  "nom": "Cadeau bonus : Andromalius",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 93-94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Andromalius",
+  "usage": "Quand l'Administration veut récompenser un PJ de Andromalius au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (agent et expert en assurance) au niveau 2."
+   },
+   {
+    "d": "3-4",
+    "t": "Marteau honorable : frappé sur un socle en bois, il impose trois secondes de silence à toute la salle."
+   },
+   {
+    "d": "5-6",
+    "t": "Un humain qui ne le connaît pas et dont la Volonté est inférieure à la moitié de la sienne lui fait spontanément confiance après une poignée de main ; confiance fragile selon ses actes."
+   },
+   {
+    "d": "7-8",
+    "t": "Les effets d'Humanité s'étendent aux coéquipiers du démon."
+   },
+   {
+    "d": "9+",
+    "t": "Tampon perfide : appliqué sur la paume d'un démon, il affiche la date de sa dernière action maléfique."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-ange",
+  "nom": "Cadeau bonus : Ange",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Ange",
+  "usage": "Quand l'Administration veut récompenser un PJ de Ange au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (danser le zouk) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Sachet d'épices ultrafortes, inépuisable : rend n'importe quel plat presque immangeable."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant le front d'un humain, l'ange sait s'il penche plutôt vers le Bien ou vers le Mal."
+   },
+   {
+    "d": "7-8",
+    "t": "Assaut spirituel inflige une blessure légère s'il retire 1 à 3 PP, grave de 4 à 6 PP, fatale à partir de 7 PP."
+   },
+   {
+    "d": "9+",
+    "t": "Baptistère : l'ange a la garde de fonts baptismaux (rares !) servant à transformer des démons en anges."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-asmodee",
+  "nom": "Cadeau bonus : Asmodée",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Asmodée",
+  "usage": "Quand l'Administration veut récompenser un PJ de Asmodée au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (auteur de jeu de rôle) au niveau 3, actuellement au chômage."
+   },
+   {
+    "d": "3-4",
+    "t": "Dés pipés qui portent la poisse au démon, pour mettre ses talents à l'épreuve même contre des adversaires sans Jeu surnaturel."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon estime son niveau en Jeu."
+   },
+   {
+    "d": "7-8",
+    "t": "Pari stupide touche un groupe (jusqu'à 2 humains par niveau) ; une victime gagnante n'est immunisée que 10 jours au lieu de 10 ans."
+   },
+   {
+    "d": "9+",
+    "t": "Dés du pouvoir : annoncer un nombre puis lancer 3 dés ; s'il sort, tous les PP reviennent, sinon tous sont perdus ; sous 10 PP, perte en plus de (10 − PP) PF."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-baal",
+  "nom": "Cadeau bonus : Baal",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Baal",
+  "usage": "Quand l'Administration veut récompenser un PJ de Baal au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (chants de corps de garde) au niveau 2."
+   },
+   {
+    "d": "3-4",
+    "t": "Toise militaire : mesure la fiabilité au combat d'une recrue plutôt que sa taille."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon connaît à tout moment la position et l'état de santé de ses subordonnés."
+   },
+   {
+    "d": "7-8",
+    "t": "Art de combat donne un nombre d'attaques supplémentaires égal à la moitié du niveau du pouvoir (arrondi au supérieur)."
+   },
+   {
+    "d": "9+",
+    "t": "Veste de vigueur : +1 au seuil de blessure légère du démon ; recalculer les autres seuils."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-baalberith",
+  "nom": "Cadeau bonus : Baalberith",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Baalberith",
+  "usage": "Quand l'Administration veut récompenser un PJ de Baalberith au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (archiviste) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Bottin universel de poche : contient tous les numéros de téléphone du monde."
+   },
+   {
+    "d": "5-6",
+    "t": "Chaque matin, le démon désigne une personne dont il connaît le nom : elle ne recevra aucun courrier (postal ou électronique) de la journée."
+   },
+   {
+    "d": "7-8",
+    "t": "Le démon sait exactement quand, où et par qui un Message officiel a été ouvert."
+   },
+   {
+    "d": "9+",
+    "t": "Courriel perso : l'adresse personnelle de Baalberith, qui répond aussi vite que Croc."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-beleth",
+  "nom": "Cadeau bonus : Beleth",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Beleth",
+  "usage": "Quand l'Administration veut récompenser un PJ de Beleth au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan de Freddy) au niveau 3, intégrale en DVD comprise."
+   },
+   {
+    "d": "3-4",
+    "t": "Tisane de grand-mère (en vrais poils de grand-mère), inépuisable : sommeil agité et non réparateur, +2 contre Rêve et Rêve divin."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant un dormeur, le démon sait s'il rêve ou cauchemarde et dans quelle partie de la MRC il se trouve."
+   },
+   {
+    "d": "7-8",
+    "t": "Cauchemar mortel frappe d'un coup tous les humains endormis dans le même bâtiment."
+   },
+   {
+    "d": "9+",
+    "t": "Le démon reçoit la garde d'un univers de poche de la taille d'un département français dans la MRC."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-belial",
+  "nom": "Cadeau bonus : Belial",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Belial",
+  "usage": "Quand l'Administration veut récompenser un PJ de Belial au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (chauffagiste) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Briquet « d'époque » inépuisable à belle flamme (personne ne sait de quelle époque)."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon voit parfaitement à travers flammes et fumée."
+   },
+   {
+    "d": "7-8",
+    "t": "Incendie fonctionne à portée longue et ses temps de latence sont divisés par cinq."
+   },
+   {
+    "d": "9+",
+    "t": "Brosse de désamiantage : tenue en main, elle annule toute protection contre le feu (naturelle ou surnaturelle) dans un rayon moyen."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-bifrons",
+  "nom": "Cadeau bonus : Bifrons",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 94",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Bifrons",
+  "usage": "Quand l'Administration veut récompenser un PJ de Bifrons au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (président d'un fan-club de Romero) au niveau 3 (Croc serait membre)."
+   },
+   {
+    "d": "3-4",
+    "t": "Certificat de décès : signé, le démon présente tous les signes d'une mort récente (ni pouls ni souffle) jusqu'à ce qu'il efface sa signature."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant le front (ou les restes) d'un cadavre, le démon apprend les causes de la mort, mais pas le nom du tueur."
+   },
+   {
+    "d": "7-8",
+    "t": "Résurrection macabre marche aussi sur les morts tués par d'autres et touche d'un coup tous les morts à portée ; limite d'une minute maintenue."
+   },
+   {
+    "d": "9+",
+    "t": "Fémur de tyrannosaure : massue maudite (précision +3, puissance +6) ; chaque attaque réussie brise un os, au moins une blessure légère."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-blandine",
+  "nom": "Cadeau bonus : Blandine",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Blandine",
+  "usage": "Quand l'Administration veut récompenser un PJ de Blandine au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (vendeur de literie) au niveau 2, avec un poste dans un magasin d'ameublement."
+   },
+   {
+    "d": "3-4",
+    "t": "Oreiller du bon sommeil : endormissement rapide, sommeil paisible, +2 contre Cauchemar et Cauchemar mortel."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant un dormeur, l'ange sait s'il rêve ou cauchemarde et dans quelle partie de la MRC il se trouve."
+   },
+   {
+    "d": "7-8",
+    "t": "Rêve divin touche en une fois tous les humains ayant vécu la même expérience (par exemple témoins d'un combat ange-démon)."
+   },
+   {
+    "d": "9+",
+    "t": "L'ange reçoit la garde d'un univers de poche de la taille d'un département français dans la MRC."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-catherine",
+  "nom": "Cadeau bonus : Catherine",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Catherine",
+  "usage": "Quand l'Administration veut récompenser un PJ de Catherine au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (sage-femme) au niveau 5."
+   },
+   {
+    "d": "3-4",
+    "t": "Pilules du bonheur : contraceptif qui protège aussi de la plupart des MST et peut servir de conduit au pouvoir Conscience."
+   },
+   {
+    "d": "5-6",
+    "t": "Don de marraine-fée : l'ange entrevoit l'avenir d'un nouveau-né et le décrit en termes très vagues (heureux ou non, paisible ou tourmenté)."
+   },
+   {
+    "d": "7-8",
+    "t": "Conscience fonctionne à portée longue et sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Arc de Déméter : arc court béni majeur (précision +0, puissance +4, portée courte) ; protection 5 tant que le porteur a les deux pieds au sol."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-caym",
+  "nom": "Cadeau bonus : Caym",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Caym",
+  "usage": "Quand l'Administration veut récompenser un PJ de Caym au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (taxidermiste) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Appeau universel : imite le cri de n'importe quel animal, sauf la carpe."
+   },
+   {
+    "d": "5-6",
+    "t": "En fixant un animal domestique dans les yeux, le démon efface toute trace de domestication et d'attachement à son maître."
+   },
+   {
+    "d": "7-8",
+    "t": "Le démon peut utiliser ses pouvoirs physiques ou mentaux pendant une Transformation, limités au niveau de ce pouvoir."
+   },
+   {
+    "d": "9+",
+    "t": "Fusil empailleur maudit (précision +3, puissance +9) : tue et empaille tout animal à qui il inflige au moins une blessure grave."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-christophe",
+  "nom": "Cadeau bonus : Christophe",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Christophe",
+  "usage": "Quand l'Administration veut récompenser un PJ de Christophe au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (animateur de colo) au niveau 3, BAFA compris."
+   },
+   {
+    "d": "3-4",
+    "t": "Hochet rigolo qui captive les enfants pendant des heures."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange peut mettre presque n'importe qui de bonne humeur."
+   },
+   {
+    "d": "7-8",
+    "t": "Enfance fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Flûte de Hamelin : quand l'ange en joue, tous les enfants du voisinage le suivent aveuglément."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-crocell",
+  "nom": "Cadeau bonus : Crocell",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Crocell",
+  "usage": "Quand l'Administration veut récompenser un PJ de Crocell au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (poseur de climatisation) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Sac congélation parfaitement isotherme : garde glace et produits froids indéfiniment."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon voit parfaitement à travers brume et glace."
+   },
+   {
+    "d": "7-8",
+    "t": "Froid polaire fonctionne à portée longue et ses temps de latence sont divisés par cinq."
+   },
+   {
+    "d": "9+",
+    "t": "Pic à glace maudit (précision +3, puissance +5) : frappé au sol, crée un bloc de glace gros comme une voiture, un camion en deux coups, une maison en trois (maximum)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-dajjal",
+  "nom": "Cadeau bonus : Dajjâl",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Daiàl",
+  "usage": "Quand l'Administration veut récompenser un PJ de Dajjâl au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (chanteur de rap) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Téléphone arabe : appels gratuits dans les pays où l'islam est religion d'État."
+   },
+   {
+    "d": "5-6",
+    "t": "En serrant la main d'un humain, le démon peut s'assurer qu'il sera violemment en désaccord avec lui."
+   },
+   {
+    "d": "7-8",
+    "t": "Révolte fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Mégaphone de dissension : quoi qu'on y dise, la foule qui écoute se divise en deux camps violemment opposés."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-daniel",
+  "nom": "Cadeau bonus : Daniel",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Daniel",
+  "usage": "Quand l'Administration veut récompenser un PJ de Daniel au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (spéléologie) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Cire d'abeille inépuisable : appliquée sur une batte, +1 en puissance."
+   },
+   {
+    "d": "5-6",
+    "t": "Église : l'ange devient protecteur d'une église vieille de 1d6 siècles et y fait presque ce qu'il veut, sauf pendant la messe du dimanche."
+   },
+   {
+    "d": "7-8",
+    "t": "Pétrification touche d'un coup toutes les créatures qui regardent l'ange dans le round."
+   },
+   {
+    "d": "9+",
+    "t": "Canettes de panacée : pack de 6, chacune vaut Guérison niveau 6 ; renouvelé entre deux missions."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-didier",
+  "nom": "Cadeau bonus : Didier",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 89-90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Didier",
+  "usage": "Quand l'Administration veut récompenser un PJ de Didier au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (philatélie) au niveau 3, classeurs compris."
+   },
+   {
+    "d": "3-4",
+    "t": "Cachet faisant foi : toute lettre tamponnée arrive exactement 24 heures plus tard, où que ce soit."
+   },
+   {
+    "d": "5-6",
+    "t": "Pigeon dressé très intelligent : porte des messages ou fiente sur les ennemis avec une précision diabolique."
+   },
+   {
+    "d": "7-8",
+    "t": "L'ange sait exactement quand, où et par qui un Message officiel a été ouvert."
+   },
+   {
+    "d": "9+",
+    "t": "Ligne directe : le numéro de portable de Didier, qui décroche sauf en réunion (il est souvent en réunion)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-dominique",
+  "nom": "Cadeau bonus : Dominique",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Dominique",
+  "usage": "Quand l'Administration veut récompenser un PJ de Dominique au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (inspecteur des impôts) au niveau 3, avec un poste en direction régionale."
+   },
+   {
+    "d": "3-4",
+    "t": "Costume impeccable qui ne se tache ni ne se froisse jamais."
+   },
+   {
+    "d": "5-6",
+    "t": "Regard courroucé : en fronçant les sourcils, l'ange fait craquer tout humain dont la Volonté est strictement inférieure à la moitié de la sienne."
+   },
+   {
+    "d": "7-8",
+    "t": "Jugement s'applique à un groupe (jusqu'à 2 humains par niveau) ; s'ils sont coupables, autant d'épées que d'accusés apparaissent."
+   },
+   {
+    "d": "9+",
+    "t": "Balance de l'âme : pèse-personne indiquant si un humain ira au Paradis, au Purgatoire ou en Enfer."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-eli",
+  "nom": "Cadeau bonus : Eli",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Eli",
+  "usage": "Quand l'Administration veut récompenser un PJ de Eli au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (militant écologiste) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Local : l'ange reçoit un local écologiste et ses militants."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange ne peut être ni interrompu ni bâillonné tant qu'il parle d'écologie."
+   },
+   {
+    "d": "7-8",
+    "t": "Communication divine force plantes et minéraux à l'écouter et répondre au mieux ; animaux et humains peuvent toujours mentir."
+   },
+   {
+    "d": "9+",
+    "t": "Gemme de beauté grosse comme le poing : empêche toute altération de la nature à 1 km (constructions, abattage, dressage), par coïncidences ou surnaturel."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-francis",
+  "nom": "Cadeau bonus : Francis",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Francis",
+  "usage": "Quand l'Administration veut récompenser un PJ de Francis au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (jouer à Diplomacy) au niveau 3, boîte du jeu comprise."
+   },
+   {
+    "d": "3-4",
+    "t": "Table ronde : +2 colonnes en Discussion à tous ceux qui y sont assis."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant deux personnes, l'ange connaît la nature du conflit qui les oppose."
+   },
+   {
+    "d": "7-8",
+    "t": "Alliance peut toucher un nombre quelconque de personnes."
+   },
+   {
+    "d": "9+",
+    "t": "Anneau unique en or : gagne 1 PP à chaque Alliance nouée ; l'ange y puise à volonté, mais par blocs de 5 PP."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-furfur",
+  "nom": "Cadeau bonus : Furfur",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95-96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Furfur",
+  "usage": "Quand l'Administration veut récompenser un PJ de Furfur au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (danser en transe) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Baladeur bruyant, taille d'un iPod, puissance d'un ampli de concert."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon tient une conversation normale en plein concert ou en discothèque assourdissante."
+   },
+   {
+    "d": "7-8",
+    "t": "Suicide marche aussi sur les créatures surnaturelles (avec 2 colonnes de bonus pour elles) et sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Guitare héroïque indestructible, arme maudite (précision +2, puissance +6) : rend sourd pour 1d6 jours quiconque elle frappe."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-gaziel",
+  "nom": "Cadeau bonus : Gaziel",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Gaziel",
+  "usage": "Quand l'Administration veut récompenser un PJ de Gaziel au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (chercheur d'or) au niveau 3, avec pelle et tamis."
+   },
+   {
+    "d": "3-4",
+    "t": "Lunettes de taupe à verres de 3 cm : voir à travers 1 m de terre (pas pierre, mur ni bois), la tête plongée dedans."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon voit dans le noir comme en plein jour."
+   },
+   {
+    "d": "7-8",
+    "t": "Séisme peut viser une seule créature : test de pouvoir résisté par son Agilité, sinon elle tombe dans une faille sans fond qui se referme."
+   },
+   {
+    "d": "9+",
+    "t": "Pelle de sauvegarde : son propriétaire ne peut mourir enseveli ou piégé par un éboulement ; il réapparaît à l'air libre quelques heures plus tard, pelle en main."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-georges",
+  "nom": "Cadeau bonus : Georges",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Georges",
+  "usage": "Quand l'Administration veut récompenser un PJ de Georges au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (histoire des croisades) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Dent de dragon arrachée au cadavre de son propriétaire au Ve siècle ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Les subordonnés de l'ange ne discutent jamais ses ordres, même révoltants."
+   },
+   {
+    "d": "7-8",
+    "t": "Colère divine touche aussi les soldats sous ses ordres (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Armure de splendeur : armure d'officier romain bénie (protection 6, couverture importante) ; inflige une blessure légère à tout démon qui frappe le porteur à mains nues, griffes ou crocs."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-guy",
+  "nom": "Cadeau bonus : Guy",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Guy",
+  "usage": "Quand l'Administration veut récompenser un PJ de Guy au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan d'Urgences) au niveau 3, avec un pin's."
+   },
+   {
+    "d": "3-4",
+    "t": "Stéthoscope divinatoire : diagnostique presque n'importe quelle maladie."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange réanime un humain évanoui ou dans le coma en lui touchant le front."
+   },
+   {
+    "d": "7-8",
+    "t": "L'ange stocke des Guérison dans des médicaments utilisables par n'importe qui ; les PP restent engagés tant que le remède n'a pas servi."
+   },
+   {
+    "d": "9+",
+    "t": "Cuve miraculeuse, intransportable : toute personne vivante plongée dedans en sort en pleine santé (PF au maximum, sans blessure ni maladie)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-haagenti",
+  "nom": "Cadeau bonus : Haagenti",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Haagenti",
+  "usage": "Quand l'Administration veut récompenser un PJ de Haagenti au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (pâtissier) au niveau 5."
+   },
+   {
+    "d": "3-4",
+    "t": "Ingrédient secret inépuisable : donne à tout plat un goût mystérieux et indéfinissable."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon apprend ses goûts culinaires et ses boissons préférées."
+   },
+   {
+    "d": "7-8",
+    "t": "Cuisine démoniaque touche plusieurs personnes à la fois ou à la suite (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Cuillère en bois : donne à un aliment ou une boisson le goût ou l'apparence (pas les deux) de n'importe quel autre."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-hassan",
+  "nom": "Cadeau bonus : Hassan",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Hassan",
+  "usage": "Quand l'Administration veut récompenser un PJ de Hassan au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (poésie arabe) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Colombe dressée presque intelligente qui porte des messages (et roucoule)."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant quelqu'un une minute, l'ange estime son niveau en Savoir occulte."
+   },
+   {
+    "d": "7-8",
+    "t": "Tolérance fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Couronne de gloire : tenue à bout de bras au-dessus de la tête, elle génère une Aura de pacification niveau 8 autour de l'ange."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-janus",
+  "nom": "Cadeau bonus : Janus",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 90",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Janus",
+  "usage": "Quand l'Administration veut récompenser un PJ de Janus au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Langues (langue des signes, argot des voleurs)."
+   },
+   {
+    "d": "3-4",
+    "t": "Balance numismatique : affiche le prix (ou une bonne estimation) de l'objet posé plutôt que son poids."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant un objet, l'ange sait s'il a été acquis légalement."
+   },
+   {
+    "d": "7-8",
+    "t": "Ouverture fonctionne à portée moyenne et sur toutes les serrures d'un même bâtiment à la fois."
+   },
+   {
+    "d": "9+",
+    "t": "Matraque d'Arsène bénie (précision +4, puissance +5) : si elle inflige au moins une blessure légère, la victime perd tous ses PF d'un coup."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-jean",
+  "nom": "Cadeau bonus : Jean",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Jean",
+  "usage": "Quand l'Administration veut récompenser un PJ de Jean au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan de MacGyver) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Calculatrice probabiliste : estime assez précisément les chances de réussite d'une action (sauf imprévus laissés au MJ)."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant un objet en panne, l'ange connaît l'origine du problème et comment le réparer."
+   },
+   {
+    "d": "7-8",
+    "t": "Les objets créés par Innovation peuvent avoir des pouvoirs spirituels ; leur réserve de PP vaut le triple des PP investis."
+   },
+   {
+    "d": "9+",
+    "t": "Proto : un prototype des labos de Jean à tester sur le terrain (voiture à bave de crapaud, fusil lance-crapaud, graines explosives…)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-jean-luc",
+  "nom": "Cadeau bonus : Jean-Luc",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Jean-Luc",
+  "usage": "Quand l'Administration veut récompenser un PJ de Jean-Luc au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (mots fléchés) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Insigne honorable : blason cousu sur un vêtement, protection 1."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange détecte les armes à feu dans un rayon égal à leur portée, donc celles qui peuvent l'atteindre."
+   },
+   {
+    "d": "7-8",
+    "t": "Lors d'un Sacrifice ultime, la blessure transférée est réduite d'un cran."
+   },
+   {
+    "d": "9+",
+    "t": "Médaille de saint Antoine : +2 au seuil de blessure légère d'un humain normal (pas d'ange, démon ou créature étrange) ; recalculer les autres seuils."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-jesus",
+  "nom": "Cadeau bonus : Jésus",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "",
+  "sup": "Jésus",
+  "usage": "Jésus n'a pas de serviteurs mais fait parfois des cadeaux aux anges d'autres supérieurs, voire à des démons ou des humains : lancez 1d6 modifié (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (charpenterie) au niveau 2, avec marteau et scie."
+   },
+   {
+    "d": "3-4",
+    "t": "Faux saint suaire à l'image du Christ, sans pouvoir, qui sent la lavande."
+   },
+   {
+    "d": "5-6",
+    "t": "Clefs de chez Régis : permettent de trouver automatiquement Chez Régis."
+   },
+   {
+    "d": "7-8",
+    "t": "Jésus utilise une fois Miracle en faveur du personnage, effets laissés au MJ."
+   },
+   {
+    "d": "9+",
+    "t": "Véritable saint suaire : un cadavre de moins de 12 heures enseveli dedans ressuscite trois jours plus tard."
+   }
+  ],
+  "note": "Jésus n'existe pas dans js/data/superieurs.js : table à rattacher à la main (aucun camp)."
+ },
+ {
+  "id": "of-cadeau-jordi",
+  "nom": "Cadeau bonus : Jordi",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Jordi",
+  "usage": "Quand l'Administration veut récompenser un PJ de Jordi au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (réalisateur de documentaires animaliers) au niveau 2, avec une caméra."
+   },
+   {
+    "d": "3-4",
+    "t": "Lapin nain de poche, adorable, sauf quand il fait ses besoins dans la poche."
+   },
+   {
+    "d": "5-6",
+    "t": "Les animaux de toutes races le considèrent comme l'un des leurs et ne l'attaquent jamais, sauf dressés ou contrôlés."
+   },
+   {
+    "d": "7-8",
+    "t": "Appel des animaux convoque l'espèce choisie par l'ange plutôt que celles du coin (tigres, éléphants, tique géante…)."
+   },
+   {
+    "d": "9+",
+    "t": "Cape de transformation : le porteur prend la forme animale de son choix (comme Transformation niveau 6), sans limite de durée."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-joseph",
+  "nom": "Cadeau bonus : Joseph",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Joseph",
+  "usage": "Quand l'Administration veut récompenser un PJ de Joseph au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (jouer de l'orgue) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Feutre mou : tant que l'ange le porte, personne ne se souvient de son visage."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant quelqu'un, l'ange sait précisément à quand remonte sa dernière confession."
+   },
+   {
+    "d": "7-8",
+    "t": "Les réponses obtenues par Torture ne sont plus limitées en temps (leur nombre reste le même)."
+   },
+   {
+    "d": "9+",
+    "t": "Martinet de rectitude : utilisé régulièrement sur soi, maintient dans les commandements divins et protège de tout contrôle mental ou corruption."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-khalid",
+  "nom": "Cadeau bonus : Khalid",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Khalid",
+  "usage": "Quand l'Administration veut récompenser un PJ de Khalid au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (professeur en école coranique) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Boussole divine qui indique infailliblement la direction de La Mecque."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant quelqu'un dans les yeux, l'ange sait si Colère de Dieu peut l'affecter (démon ou non-musulman)."
+   },
+   {
+    "d": "7-8",
+    "t": "Pour 3 PP, l'ange active Colère divine lors d'une attaque : dégâts augmentés de 3 fois le niveau du pouvoir."
+   },
+   {
+    "d": "9+",
+    "t": "Lame sainte : cimeterre béni (précision +4, puissance +6) ; tenu en main, protection 5 contre démons et non-musulmans."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-kobal",
+  "nom": "Cadeau bonus : Kobal",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 95",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Kobal",
+  "usage": "Quand l'Administration veut récompenser un PJ de Kobal au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (clown blanc) au niveau 4, avec un nez rouge."
+   },
+   {
+    "d": "3-4",
+    "t": "Coussin péteur invisible tant qu'on ne s'est pas assis dessus."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon apprend ses goûts en matière d'humour."
+   },
+   {
+    "d": "7-8",
+    "t": "À partir du 4e round de Gag absurde, les victimes doivent réussir chaque round un test standard de Volonté ou mourir de rire."
+   },
+   {
+    "d": "9+",
+    "t": "Blague fatale : quiconque l'entend meurt aussitôt, y compris le démon quand il en prend connaissance (avec le sourire)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-kronos",
+  "nom": "Cadeau bonus : Kronos",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Kronos",
+  "usage": "Quand l'Administration veut récompenser un PJ de Kronos au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (horloger) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Montre mondiale à 24 aiguilles de couleurs différentes, une par fuseau horaire."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon sait toujours l'heure exacte."
+   },
+   {
+    "d": "7-8",
+    "t": "Projection temporelle peut envoyer dans le passé plutôt que le futur (une chance sur deux) : gare aux paradoxes."
+   },
+   {
+    "d": "9+",
+    "t": "Sablier de la fin des temps (voir le Système de jeu, p. 86)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-laurent",
+  "nom": "Cadeau bonus : Laurent",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 91-92",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Laurent",
+  "usage": "Quand l'Administration veut récompenser un PJ de Laurent au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (forge) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Médaille plaquée or à ruban rouge, sans pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Toute arme que l'ange tient en main au moins une minute redevient comme neuve (lame affûtée, arme à feu propre et chargée)."
+   },
+   {
+    "d": "7-8",
+    "t": "Juste lame fonctionne sur n'importe quelle arme manufacturée, armes à feu comprises."
+   },
+   {
+    "d": "9+",
+    "t": "Épée fabuleuse : épée courte bénie majeure (précision +5, puissance +5), visible des seuls anges et démons ; les humains croient que l'ange frappe à mains nues."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-majuj",
+  "nom": "Cadeau bonus : Majûj",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Majùj",
+  "usage": "Quand l'Administration veut récompenser un PJ de Majûj au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (tags subversifs illicites) au niveau 2."
+   },
+   {
+    "d": "3-4",
+    "t": "T-shirt « Mangez du porc ! » qui énerve les anges de Khalid ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon apprend quelles pulsions primaires il réprime."
+   },
+   {
+    "d": "7-8",
+    "t": "Bestialité fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Brise-lames de Laurent : armure maudite (protection 7, couverture partielle) ; toute arme d'un ange de Laurent qui la frappe est détruite."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-malphas",
+  "nom": "Cadeau bonus : Malphas",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Malphas",
+  "usage": "Quand l'Administration veut récompenser un PJ de Malphas au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (conseiller conjugal) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Table carrée : −2 colonnes en Discussion à tous ceux qui y sont assis."
+   },
+   {
+    "d": "5-6",
+    "t": "En regardant deux personnes, le démon connaît la nature du conflit qui les oppose."
+   },
+   {
+    "d": "7-8",
+    "t": "Discorde peut toucher un nombre quelconque de personnes."
+   },
+   {
+    "d": "9+",
+    "t": "Anneaux multiples : chacun donne +5 PP à son porteur (deux anneaux n'en donnent pas plus) ; le démon en reçoit autant que son équipe compte de membres moins deux."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-malthus",
+  "nom": "Cadeau bonus : Malthus",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Malthus",
+  "usage": "Quand l'Administration veut récompenser un PJ de Malthus au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (ostéopathe) au niveau 2."
+   },
+   {
+    "d": "3-4",
+    "t": "Stéthoscope divinatoire : diagnostique presque n'importe quelle maladie."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon rend des médicaments inopérants en les touchant."
+   },
+   {
+    "d": "7-8",
+    "t": "L'Infection s'étend d'elle-même de 1d6 mètres par jour, sauf mesures sanitaires."
+   },
+   {
+    "d": "9+",
+    "t": "Pierre d'épidémie : empêche toute guérison naturelle dans le bâtiment où elle se trouve."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-mammon",
+  "nom": "Cadeau bonus : Mammon",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Mammon",
+  "usage": "Quand l'Administration veut récompenser un PJ de Mammon au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (golf) au niveau 3, avec clubs, tees et balles."
+   },
+   {
+    "d": "3-4",
+    "t": "Manager de l'année : le démon reçoit ce titre d'un magazine et quelques numéros avec sa tête en couverture."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon estime son salaire."
+   },
+   {
+    "d": "7-8",
+    "t": "Corruption fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "www.tes-comptes.com : site réservé donnant accès aux comptes de n'importe quel particulier ou entreprise."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-marc",
+  "nom": "Cadeau bonus : Marc",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 92",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Marc",
+  "usage": "Quand l'Administration veut récompenser un PJ de Marc au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (jouer au Monopoly) au niveau 4, boîte du jeu comprise."
+   },
+   {
+    "d": "3-4",
+    "t": "Stylo hypocrite : les clauses qu'il écrit ont une chance sur deux de ne pas être lues ; interdit avec un Contrat divin."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange oblige toute personne avec qui il discute au moins une heure à donner 1 % de ses biens à l'Église."
+   },
+   {
+    "d": "7-8",
+    "t": "Contrat divin reste valide même si une partie a été contrainte (matériellement ou magiquement)."
+   },
+   {
+    "d": "9+",
+    "t": "Voiture chimérique : couleur et modèle changent au gré du conducteur ; elle gagne toute course ou poursuite."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-marie-jolie",
+  "nom": "Cadeau bonus : Marie-Jolie",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Marie-Jolie",
+  "usage": "Quand l'Administration veut récompenser un PJ de Marie-Jolie au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (entretien du cuir et du latex) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Vaseline enchantée : fait entrer n'importe quoi n'importe où."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant le nombril d'un humain, le démon multiplie sa capacité de jouissance par 10 ou l'annule complètement."
+   },
+   {
+    "d": "7-8",
+    "t": "Fantasme touche plusieurs personnes à la fois ou à la suite (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Bandeau de perversion : l'humain qui le porte sur les yeux accepte sans broncher toutes les propositions du démon, même indécentes."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-mathias",
+  "nom": "Cadeau bonus : Mathias",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 92",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Mathias",
+  "usage": "Quand l'Administration veut récompenser un PJ de Mathias au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (histoire de la Guerre froide) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Coccinelle-espionne : enregistre les conversations d'une pièce et revient vers l'ange après un délai fixé."
+   },
+   {
+    "d": "5-6",
+    "t": "Familier démoniaque, qui croit servir un démon (attention aux gaffes)."
+   },
+   {
+    "d": "7-8",
+    "t": "L'ange parle parfaitement la langue démoniaque et gagne deux pouvoirs démoniaques : un membre exotique et un autre au niveau 3 (Douleur, Éventration, Poison…)."
+   },
+   {
+    "d": "9+",
+    "t": "Gemme d'infiltration : noire, elle rougeoie quand la couverture de l'ange est percée à jour (sans autre détail)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-michel",
+  "nom": "Cadeau bonus : Michel",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 92",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Michel",
+  "usage": "Quand l'Administration veut récompenser un PJ de Michel au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan du comics Thor) au niveau 3, belle collection comprise."
+   },
+   {
+    "d": "3-4",
+    "t": "Couteau suisse anodin qui contient une hache, une épée et un petit calibre."
+   },
+   {
+    "d": "5-6",
+    "t": "L'ange peut déclarer un duel : personne d'autre ne peut intervenir jusqu'à la mort ou la reddition de l'un d'eux."
+   },
+   {
+    "d": "7-8",
+    "t": "Sur un test incroyable en Maîtrise martiale, la blessure est aggravée de deux crans (malus de Force contre la mort subite non divisé par deux)."
+   },
+   {
+    "d": "9+",
+    "t": "Hache-tonnerre bénie majeure (précision +2, puissance +11) : détruit automatiquement murs, portes et armures qu'elle frappe, avec fracas."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-morax",
+  "nom": "Cadeau bonus : Morax",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Morax",
+  "usage": "Quand l'Administration veut récompenser un PJ de Morax au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (négociant en art moderne) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Galerie d'art : le démon en a la charge, expose qui il veut et organise des vernissages aux petits-fours périmés."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant une œuvre une minute, le démon estime son prix et sait si c'est un faux."
+   },
+   {
+    "d": "7-8",
+    "t": "Œuvre d'art touche plusieurs personnes à la fois ou à la suite (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Peintures réalistes inépuisables : ce que le démon peint avec se réalise dans les jours suivants, selon l'interprétation du MJ (encore faut-il savoir peindre)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-nisroch",
+  "nom": "Cadeau bonus : Nisroch",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 96-97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Nisroch",
+  "usage": "Quand l'Administration veut récompenser un PJ de Nisroch au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (porter des chaînes en or) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Boîte de space-cachous inépuisable : le démon change les cachous en presque n'importe quelle drogue."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon change n'importe quelle quantité de drogue en sucre ou farine en touchant son récipient."
+   },
+   {
+    "d": "7-8",
+    "t": "Accoutumance touche un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Valise à biftons : laissée fermée un mois, elle se remplit d'une montagne de billets de banque."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-nog",
+  "nom": "Cadeau bonus : Nog",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Nog",
+  "usage": "Quand l'Administration veut récompenser un PJ de Nog au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (ronfler mélodieusement) au niveau 4."
+   },
+   {
+    "d": "3-4",
+    "t": "Arrêt maladie à durée illimitée."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant un humain une minute, le démon apprend ce qui le fatigue le plus."
+   },
+   {
+    "d": "7-8",
+    "t": "Le démon n'est plus affecté par son propre Glandage."
+   },
+   {
+    "d": "9+",
+    "t": "Doudou voyageur : en dormant avec cette peluche, le démon se réveille dans un autre lit ailleurs dans le monde (il choisit la ville, pas l'endroit exact)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-novalis",
+  "nom": "Cadeau bonus : Novalis",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 92",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Novalis",
+  "usage": "Quand l'Administration veut récompenser un PJ de Novalis au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (symbolique des fleurs) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Bouquet de violettes qui rafraîchit et parfume la pièce."
+   },
+   {
+    "d": "5-6",
+    "t": "Main verte : toute plante touchée reste en bonne santé pendant l'année à venir."
+   },
+   {
+    "d": "7-8",
+    "t": "Pollen fonctionne à portée moyenne et sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Rameau d'olivier : crée une Aura de pacification niveau 8 dans la pièce."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-nybbas",
+  "nom": "Cadeau bonus : Nybbas",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Nybbas",
+  "usage": "Quand l'Administration veut récompenser un PJ de Nybbas au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (animateur télé) au niveau 2, avec un poste sur France 3 région."
+   },
+   {
+    "d": "3-4",
+    "t": "Parabole portable de 5 cm qui capte toutes les émissions télé du monde et des environs."
+   },
+   {
+    "d": "5-6",
+    "t": "En observant quelqu'un, le démon sait à peu près combien de temps il a passé devant la télévision."
+   },
+   {
+    "d": "7-8",
+    "t": "Message subliminal touche plusieurs personnes à la fois ou à la suite (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Émetteur pirate : modifie un programme télé ou impose le sien, sans risque de détection ni de coupure."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-ouikka",
+  "nom": "Cadeau bonus : Ouikka",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Ouikka",
+  "usage": "Quand l'Administration veut récompenser un PJ de Ouikka au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (écrire du rap politique) au niveau 2."
+   },
+   {
+    "d": "3-4",
+    "t": "Cerf-volant qui vole même sans vent."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon ne peut jamais être blessé par une explosion ; il s'en sort toujours indemne."
+   },
+   {
+    "d": "7-8",
+    "t": "Martyre (voir p. 104) fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Sac anodin : grand sac de sport jamais fouillé par les gardes, dont le contenu échappe aux détecteurs."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-samigina",
+  "nom": "Cadeau bonus : Samigina",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Samigina",
+  "usage": "Quand l'Administration veut récompenser un PJ de Samigina au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (jouer à Vampire) au niveau 4, avec un exemplaire de Requiem."
+   },
+   {
+    "d": "3-4",
+    "t": "Cercueil rembourré tout confort à fermetures plaquées or ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Le démon sait à tout instant où se trouve la dernière personne qu'il a mordue (avec ou sans Baiser vampirique)."
+   },
+   {
+    "d": "7-8",
+    "t": "Un humain dépendant du Baiser vampirique et tué par lui se relève en vampire la nuit suivant son inhumation (sauf tête tranchée et bouche pleine d'ail)."
+   },
+   {
+    "d": "9+",
+    "t": "Immortel : tué, le démon devient brume, rejoint son cercueil et s'y reforme en 1d6 jours (sauf cercueil détruit ou non atteint en 1 heure) ; aucune faiblesse de vampire."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-scox",
+  "nom": "Cadeau bonus : Scox",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 97",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Scox",
+  "usage": "Quand l'Administration veut récompenser un PJ de Scox au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (astrologue) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Statue de 5 m à l'effigie du démon, qu'il peut réduire pour la mettre en poche."
+   },
+   {
+    "d": "5-6",
+    "t": "En serrant la main d'un humain, le démon décèle ses failles émotionnelles (chagrin d'amour, parents…) pour le convertir."
+   },
+   {
+    "d": "7-8",
+    "t": "Possession crée aussi des familiers (1 PP permanent) ; 1 PP permanent suffit pour un démon mineur par niveau du pouvoir."
+   },
+   {
+    "d": "9+",
+    "t": "Autel de sacrifice : tout humain consentant ou vierge qui y est sacrifié donne 1 PP permanent, utilisable seulement pour Possession."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-shaytan",
+  "nom": "Cadeau bonus : Shaytan",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Shaytan",
+  "usage": "Quand l'Administration veut récompenser un PJ de Shaytan au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (chirurgien esthétique) au niveau 3, avec scalpel et réserve de silicone."
+   },
+   {
+    "d": "3-4",
+    "t": "Appareil flouto : appareil photo dont tous les clichés sont mal éclairés, mal cadrés, moches."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant le front d'un humain une minute, le démon lui donne définitivement une apparence quelconque, ni belle ni laide."
+   },
+   {
+    "d": "7-8",
+    "t": "Décrépitude fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Peinture en aérosol : tout objet tagué devient vieux et laid en quelques heures (couleurs ternes, matériaux en béton brut)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-uphir",
+  "nom": "Cadeau bonus : Uphir",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Uphir",
+  "usage": "Quand l'Administration veut récompenser un PJ de Uphir au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (gardien de décharge) au niveau 2, avec sa décharge."
+   },
+   {
+    "d": "3-4",
+    "t": "Compteur Geiger miniaturisé et fonctionnel ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "En touchant quelqu'un, le démon sait s'il est allergique, et à quoi."
+   },
+   {
+    "d": "7-8",
+    "t": "Allergie (voir p. 99) fonctionne sur un groupe d'humains (jusqu'à 2 par niveau du pouvoir)."
+   },
+   {
+    "d": "9+",
+    "t": "Pierre polluante : détruit peu à peu ce sur ou dans quoi elle est posée (voiture rouillée en une semaine, immeuble effondré en un mois)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-valefor",
+  "nom": "Cadeau bonus : Valefor",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Valefor",
+  "usage": "Quand l'Administration veut récompenser un PJ de Valefor au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Langues (langue des signes, argot des voleurs)."
+   },
+   {
+    "d": "3-4",
+    "t": "Balance numismatique : affiche le prix (ou une bonne estimation) de l'objet posé plutôt que son poids."
+   },
+   {
+    "d": "5-6",
+    "t": "En serrant la main d'un humain, le démon apprend l'objet auquel il tient le plus et, vaguement, où il se trouve."
+   },
+   {
+    "d": "7-8",
+    "t": "Ouverture fonctionne à portée moyenne et sur toutes les serrures d'un même bâtiment à la fois."
+   },
+   {
+    "d": "9+",
+    "t": "Matraque de Lupin bénie (précision +5, puissance +4) : si elle inflige au moins une blessure légère, la victime perd tous ses PF d'un coup."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-vapula",
+  "nom": "Cadeau bonus : Vapula",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Vapula",
+  "usage": "Quand l'Administration veut récompenser un PJ de Vapula au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan de romans cyberpunk) au niveau 3."
+   },
+   {
+    "d": "3-4",
+    "t": "Portable tout-en-un : téléphone, ordinateur, appareil photo, il fait presque le café."
+   },
+   {
+    "d": "5-6",
+    "t": "Toute arme à feu utilisée contre le démon s'enraye, toujours."
+   },
+   {
+    "d": "7-8",
+    "t": "Les objets créés par Invention peuvent avoir des pouvoirs spirituels ; leur réserve de PP vaut le triple des PP investis."
+   },
+   {
+    "d": "9+",
+    "t": "Annihilateur grand comme un four à micro-ondes : ce qu'on y met disparaît définitivement."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-vephar",
+  "nom": "Cadeau bonus : Vephar",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Vephar",
+  "usage": "Quand l'Administration veut récompenser un PJ de Vephar au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan de Bibifoc) au niveau 3, avec le 45 tours du générique."
+   },
+   {
+    "d": "3-4",
+    "t": "Bonnet rouge authentique du commandant Cousteau ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Les animaux aquatiques n'attaquent jamais le démon, sauf dressés ou contrôlés ; il peut se nourrir de plancton en mer."
+   },
+   {
+    "d": "7-8",
+    "t": "Vie aquatique transforme des humains consentants en requins (comme Transformation) pour la durée du pouvoir."
+   },
+   {
+    "d": "9+",
+    "t": "Poudre de récifs : saupoudrée sur l'océan, crée des récifs affleurants qui font échouer les navires ; se renouvelle en une semaine."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-victor",
+  "nom": "Cadeau bonus : Victor",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 92-93",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Victor",
+  "usage": "Quand l'Administration veut récompenser un PJ de Victor au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (œuvre de Shakespeare) au niveau 3, avec l'intégrale traduite en latin."
+   },
+   {
+    "d": "3-4",
+    "t": "Thermomètre frontal qui mesure la foi en Dieu plutôt que la température."
+   },
+   {
+    "d": "5-6",
+    "t": "D'un regard, l'ange sait à quelle religion appartient un humain (la plupart des démons n'en ont aucune)."
+   },
+   {
+    "d": "7-8",
+    "t": "Embrasement fonctionne à portée moyenne et inflige une blessure grave par round si la victime a plus de 20 PP."
+   },
+   {
+    "d": "9+",
+    "t": "Guerrier elfe : l'ange reçoit un guerrier elfe comme serviteur (caractéristiques dans Les Petites Apocalypses, p. 42)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-walther",
+  "nom": "Cadeau bonus : Walther",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 93",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Walther",
+  "usage": "Quand l'Administration veut récompenser un PJ de Walther au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (comparer les bibles latine, grecque et hébraïque) au niveau 5, un exemplaire de chaque compris."
+   },
+   {
+    "d": "3-4",
+    "t": "Soutane impeccable, résistante aux taches de vomi."
+   },
+   {
+    "d": "5-6",
+    "t": "En traçant une croix sur le front d'un humain, l'ange sait s'il abrite un démon et où est l'âme d'origine (Paradis, Enfer ou Purgatoire)."
+   },
+   {
+    "d": "7-8",
+    "t": "Exorcisme ne prend qu'une minute au lieu d'une heure et fonctionne aussi sur les corps d'accueil de héros païens."
+   },
+   {
+    "d": "9+",
+    "t": "Crucifix de Torquemada : effet proche de Protection de l'âme et Protection de l'esprit, mais seulement pendant un exorcisme."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-yves",
+  "nom": "Cadeau bonus : Yves",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 93",
+  "de": "d6",
+  "camp": "ange",
+  "sup": "Yves",
+  "usage": "Quand l'Administration veut récompenser un PJ de Yves au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Métier (relieur) au niveau 3, avec colle et ciseaux."
+   },
+   {
+    "d": "3-4",
+    "t": "Lunettes de lecture : permettent de lire dans le noir, et rien d'autre."
+   },
+   {
+    "d": "5-6",
+    "t": "Bibliothèque : l'ange a la garde d'une bibliothèque municipale de d66 milliers de livres."
+   },
+   {
+    "d": "7-8",
+    "t": "Philosophie fonctionne même si l'ange ne croit pas à ce qu'il explique."
+   },
+   {
+    "d": "9+",
+    "t": "Livre blanc : livre de poche dont le texte devient celui de presque n'importe quel livre passé ou présent (même Intervention divine)."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "of-cadeau-zanag",
+  "nom": "Cadeau bonus : Zanag",
+  "groupe": "Cadeaux bonus",
+  "livre": "On Ferme !",
+  "ref": "p. 98",
+  "de": "d6",
+  "camp": "demon",
+  "sup": "Zanag",
+  "usage": "Quand l'Administration veut récompenser un PJ de Zanag au-delà des PA : lancez 1d6 modifié sur cette table (ou choisissez).",
+  "mods": "+1 si le cadeau vient du supérieur lui-même (et non de son Administration) ; +1 si la mission est une réussite retentissante ; +1 si le MJ est de bonne humeur (total possible 1 à 9).",
+  "lignes": [
+   {
+    "d": "1-2",
+    "t": "Talent Hobby (fan de 24 heures chrono) au niveau 3, avec l'intégrale (sans les pubs)."
+   },
+   {
+    "d": "3-4",
+    "t": "Veste réversible, aussi jolie des deux côtés ; aucun pouvoir."
+   },
+   {
+    "d": "5-6",
+    "t": "Soldats de Dieu : une escouade qui croit servir un ange (attention aux gaffes)."
+   },
+   {
+    "d": "7-8",
+    "t": "Le démon parle parfaitement la langue angélique et gagne un pouvoir angélique au niveau 4 (Bénédiction, Lueur insoutenable… mais pas Jet d'eau bénite)."
+   },
+   {
+    "d": "9+",
+    "t": "Dague du traître maudite (précision +5, puissance +3) : attaque dans le dos et par surprise, blessure aggravée de deux crans."
+   }
+  ],
+  "note": ""
+ },
+ {
+  "id": "incidents-centre-de-tri",
+  "nom": "Incidents errants au Centre de Tri",
+  "groupe": "Campagne Fire and Ice",
+  "livre": "Fire and Ice volume 1",
+  "ref": "p. 27-28",
+  "de": "d6",
+  "camp": "demon",
+  "usage": "Entre deux missions, quand les PJ traînent au Centre de Tri, pour animer le quotidien du lieu.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Solidarité avec la CGT : un afflux de courrier venu du grand centre régional en panne fait monter la grogne ; Fabien charge Gilbert et les PJ d'éviter la grève des humains."
+   },
+   {
+    "d": "2",
+    "t": "Dominus vobiscatchoum : Christian invite tout le Centre à la grande messe de son frère Jean-Charles ; il faut beaucoup de diplomatie pour ne pas devoir y aller."
+   },
+   {
+    "d": "3",
+    "t": "Vitraux : cinq ouvriers restaurent pendant une quinzaine les vitraux du hall ; leur chef est un serviteur de Dieu au service d'Yves qui ignore où il se trouve."
+   },
+   {
+    "d": "4",
+    "t": "Rouge banlieue : après une bavure, deux ou trois nuits d'émeutes ; un camion de la Poste est caillassé ou brûlé, les murs du Centre tagués."
+   },
+   {
+    "d": "5",
+    "t": "The Booklover : un prof d'histoire retraité fouille les lettres égarées, franchit sans le savoir une Marche vers la bibliothèque d'Yves et repart paniqué ; toute enquête reste stérile."
+   },
+   {
+    "d": "6",
+    "t": "Colis piégé : un petit paquet explose dans les mains de Lucette (brûlures légères) ; l'expéditeur, un très vieux démon de Ouikka, voulait fêter l'anniversaire de Fabien."
+   }
+  ],
+  "note": "Le livre n'indique pas de dé, mais les incidents sont numérotés de 1 à 6."
+ },
+ {
+  "id": "trouver-chez-regis",
+  "nom": "Trouver Chez Régis (Jésus est un fils à papa)",
+  "groupe": "Campagne Fire and Ice",
+  "livre": "Fire and Ice volume 1",
+  "ref": "p. 141",
+  "de": "ref",
+  "camp": "",
+  "usage": "Quand des anges ou démons cherchent le bar Chez Régis : le MJ fait en secret un test incroyable sur le talent « Trouver Chez Régis » (moyenne de Foi et Perception du chercheur) avec les colonnes ci-dessous.",
+  "mods": "+1 par autre chercheur ; −2 par présent dont le supérieur est indésirable ; +1 par présent au supérieur sympa ; −2 par intégriste ; −2 par mauvais esprit ; +1 par présent qui annonce vouloir boire un coup ; +3 par renégat ; +2 par ancien du Bureau, membre de la Maison ou ange d'Ange ; +0,5 par présent déjà venu.",
+  "lignes": [
+   {
+    "d": "réussite",
+    "t": "Le personnage aperçoit un bar qui a l'air sympa : c'est Chez Régis (on peut y tomber par hasard)."
+   },
+   {
+    "d": "échec",
+    "t": "Aucun bar accueillant en vue ; Chez Régis reste introuvable cette fois."
+   }
+  ],
+  "note": "Ce n'est pas une table à plages mais une liste de modificateurs pour un test incroyable ; les lignes réussite/échec sont à adapter par l'appli. Indésirables (ne le trouvent jamais eux-mêmes) : Dominique, Joseph, Walther, Laurent, Michel, Baal, Belial, Bifrons, Crocell, Andromalius. Sympas : Alain, Guy, Jean-Luc, Novalis, Blandine, Didier, Marc, Yves, Janus, Francis, Emmanuel/Mathias, Daniel, Abalam, Andrealphus, Asmodée, Baalberith, Beleth, Haagenti, Kobal, Kronos, Malthus, Morax, Scox, Valefor. Intégriste et mauvais esprit sont laissés à l'appréciation du MJ (malus obligatoire pour un intégrisme forcé)."
+ },
+ {
+  "id": "theories-pink-queens",
+  "nom": "Théories fumeuses sur les Pink Queens",
+  "groupe": "Campagne Jésus Reviens !",
+  "livre": "Jésus Reviens !",
+  "ref": "p. 52",
+  "de": "3d6",
+  "camp": "ange",
+  "usage": "Scénario « Can't Stop the Music » (New York) : quand les PJ interrogent des proches ou des bavards sur le projet des Pink Queens, tirer la rumeur qu'ils entendent.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "3",
+    "t": "Elles comptent repeindre la statue de la Liberté en drag-queen."
+   },
+   {
+    "d": "4-6",
+    "t": "Un site web gay les paie pour une pub géante sur l'Empire State Building."
+   },
+   {
+    "d": "7-9",
+    "t": "Elles veulent piéger le maire de New York en pleine aventure homosexuelle et diffuser les images sur l'écran géant de Times Square."
+   },
+   {
+    "d": "10-11",
+    "t": "Elles veulent attaquer le défilé annuel des nazis new-yorkais et les peindre en rose."
+   },
+   {
+    "d": "12-14",
+    "t": "Elles veulent se venger atrocement, avec un doberman, du policier homophobe qui a tué plusieurs homosexuels à coups de matraque."
+   },
+   {
+    "d": "15-17",
+    "t": "Elles préparent une orgie géante à Ground Zero avec Liza Minnelli et un sosie de Frank Sinatra."
+   },
+   {
+    "d": "18",
+    "t": "Elles vont faire sauter la statue de la Liberté (la vérité : l'opération Big Queen)."
+   }
+  ],
+  "note": "Seul le 18 est exact ; les autres sont plus ou moins fausses."
+ },
+ {
+  "id": "girouette-zanag",
+  "nom": "Girouette (blâme de Zanag) : humeur du jour",
+  "groupe": "Hiérarchie",
+  "livre": "Bible à Dudule – Démons",
+  "ref": "p. 77",
+  "de": "d6",
+  "camp": "demon",
+  "usage": "Chaque matin, pour un démon affligé du blâme « Girouette » de Zanag.",
+  "mods": "",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Il reprend des habitudes d'ange pour la journée."
+   },
+   {
+    "d": "2-5",
+    "t": "Il se conduit en démon ordinaire."
+   },
+   {
+    "d": "6",
+    "t": "Il devient démon intégriste pour la journée."
+   }
+  ],
+  "note": ""
+ }
+];

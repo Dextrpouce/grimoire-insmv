@@ -1,0 +1,159 @@
+[
+  {
+    "id": "mort-purgatoire",
+    "nom": "Mourir au Purgatoire",
+    "groupe": "Morts et Marches",
+    "livre": "Les Petites Apocalypses", "ref": "p. 118",
+    "de": "d666",
+    "camp": "",
+    "usage": "Quand une âme (autochtone, ou âme d'un être mort avec son corps physique sur place) est tuée au Purgatoire : tirer pour savoir où et quand elle se reconstitue.",
+    "mods": "",
+    "lignes": [
+      { "d": "111", "t": "L'âme glisse hors de la marche et arrive aux portes du Paradis ; les gardiens méfiants peuvent la renvoyer, la jeter entre les marches ou la laisser entrer. Discussion à jouer." },
+      { "d": "112-136", "t": "Perte de cohésion sans expulsion : l'âme se reconstitue peu à peu en 1d6 heures, jusqu'à pouvoir se refaire un avatar." },
+      { "d": "141-436", "t": "Même chose, reconstitution en 1d6 jours." },
+      { "d": "441-566", "t": "Même chose, reconstitution en 1d66 jours." },
+      { "d": "611-633", "t": "Reconstitution en 1d666 jours et perte de 1d6 rangs de Chance/Foi ; à 0 ou moins, mort définitive." },
+      { "d": "634-665", "t": "Test Très difficile de Chance/Foi : réussi, l'âme rate une marche (une âme forte est plus facilement éjectée) ; raté, elle se reconstitue en 1d6 ans." },
+      { "d": "666", "t": "L'âme rate une marche et échoue aux portes de l'Enfer ; les gardiens la font souvent entrer de force, mais peuvent la jeter entre les marches ou la renvoyer au Purgatoire. Discussion à jouer." }
+    ],
+    "note": "Si l'âme rate une marche, enchaîner sur les deux tables « Rater une marche ». Le livre précise que les chances d'atterrir au Paradis ou en Enfer sont exagérées pour le jeu. Un corps physique emmené au Purgatoire meurt normalement ; seule l'âme utilise la table."
+  },
+  {
+    "id": "mort-paradis-enfer",
+    "nom": "Mourir au Paradis, en Enfer ou sur une marche intermédiaire",
+    "groupe": "Morts et Marches",
+    "livre": "Les Petites Apocalypses", "ref": "p. 118",
+    "de": "d666",
+    "camp": "",
+    "usage": "Quand un personnage meurt sur une marche peu matérielle (Paradis, Enfer, Asgard, Faërie…) : tirer le sort de son âme.",
+    "mods": "",
+    "lignes": [
+      { "d": "111", "t": "Avatar reconstitué en 1d6 heures ; l'épreuve le renforce : +1 rang de Chance/Foi." },
+      { "d": "112-116", "t": "Avatar reconstitué en 1d6 jours." },
+      { "d": "121-136", "t": "Avatar reconstitué en 1d66 jours." },
+      { "d": "141-366", "t": "Avatar reconstitué en 1d666 jours." },
+      { "d": "411-665", "t": "Test standard de Chance/Foi : réussi, l'âme rate une marche ; raté, elle se reconstitue en 1d6 ans." },
+      { "d": "666", "t": "Chute à travers les marches jusqu'en Enfer, 1d6 ans plus tard : Chance/Foi divisée par 3, mémoire en grande partie perdue, il devient un simple damné tout en bas de la hiérarchie." }
+    ],
+    "note": "Les damnés torturés à mort en Enfer s'y reconstituent généralement grâce à leur Chance très basse. Si l'âme rate une marche, enchaîner sur les tables « Rater une marche »."
+  },
+  {
+    "id": "chute-marches-duree",
+    "nom": "Rater une marche : durée de la chute",
+    "groupe": "Morts et Marches",
+    "livre": "Les Petites Apocalypses", "ref": "p. 119",
+    "de": "d666",
+    "camp": "",
+    "usage": "Quand une âme est expulsée hors de sa marche : tirer la durée de sa chute dans le Rien, puis la table du résultat de la chute.",
+    "mods": "",
+    "lignes": [
+      { "d": "111", "t": "1d6 heures." },
+      { "d": "112-113", "t": "1d6 jours." },
+      { "d": "114-136", "t": "1d66 jours." },
+      { "d": "141-166", "t": "1d666 jours." },
+      { "d": "211-366", "t": "1d66 ans." },
+      { "d": "411-665", "t": "1d66 siècles." },
+      { "d": "666", "t": "1d66 millénaires." }
+    ],
+    "note": "Pendant la chute, l'âme n'a ni corps ni avatar et ne peut rien faire. Retrouver quelqu'un dans le Rien exige un pouvoir de grade adapté de niveau 7+."
+  },
+  {
+    "id": "chute-marches-resultat",
+    "nom": "Rater une marche : résultat de la chute",
+    "groupe": "Morts et Marches",
+    "livre": "Les Petites Apocalypses", "ref": "p. 119",
+    "de": "d666",
+    "camp": "",
+    "usage": "À tirer avec la durée de la chute pour savoir où l'âme finit.",
+    "mods": "",
+    "lignes": [
+      { "d": "111", "t": "Elle arrive sur une marche connue au choix du MJ (Terre, Faërie, MRC…), peut-être secourue par une âme charitable." },
+      { "d": "112", "t": "Elle échoue seule sur une marche inconnue et déserte, pour quelques millénaires de solitude." },
+      { "d": "113-665", "t": "Perte d'1 rang de Chance/Foi et nouvelle chute : relancer les deux tables. À 0, l'âme se dissout ; ses restes tombent dans le Compost après une dernière durée tirée." },
+      { "d": "666", "t": "Elle plonge dans le Compost : destruction définitive." }
+    ],
+    "note": ""
+  },
+  {
+    "id": "mort-en-reve",
+    "nom": "Mort en rêve (MRC)",
+    "groupe": "Morts et Marches",
+    "livre": "Les Petites Apocalypses", "ref": "p. 123",
+    "de": "d666",
+    "camp": "",
+    "usage": "Quand un rêveur subit un coup fatal dans la MRC sans plus avoir de substance rêve pour l'éviter : son témoin est détruit, tirer les conséquences.",
+    "mods": "",
+    "lignes": [
+      { "d": "111", "t": "Réveil, renforcé : +2 rangs en Narcolepsie (+4 s'il n'avait pas le talent) et +1 rang en Chance/Foi." },
+      { "d": "112-116", "t": "Réveil avec des souvenirs étranges : +1 rang en Narcolepsie (+2 s'il n'avait pas le talent)." },
+      { "d": "121-166", "t": "Réveil sans gravité : il perd la moitié de ses PF et ne les récupère qu'après une nuit complète de sommeil." },
+      { "d": "211-366", "t": "Réveil très diminué : −1d6 rangs dans son meilleur talent (pas sous le niveau de base) et −1 rang dans une caractéristique tirée au hasard." },
+      { "d": "411-566", "t": "Mort dans son sommeil ; l'âme part vers sa destination comme pour une mort sur Terre." },
+      { "d": "611-665", "t": "Même mort, mais l'âme est amoindrie : Chance/Foi divisée par 2 (ne compte que pour un ange ou un démon qui peut se réincarner)." },
+      { "d": "666", "t": "L'âme est entièrement aspirée dans la MRC et y devient autochtone ; le corps meurt ou reste dans un coma profond (une chance sur deux, ou choix du MJ)." }
+    ],
+    "note": "Le livre imprime « 661–665 » pour l'avant-dernière ligne, ce qui laisse 611 à 656 sans résultat ; ici la ligne est étendue à 611-665 (coquille probable). Avant d'en arriver là, 1 point de SR suffit à survivre à un coup fatal (test difficile de Volonté pour ne pas se réveiller)."
+  },
+  {
+    "id": "reincarnation",
+    "nom": "Mort et délai de réincarnation (table 26)",
+    "groupe": "Morts et Marches",
+    "livre": "Livret de règles (INS/MV 4e)", "ref": "p. 51",
+    "de": "d6",
+    "camp": "",
+    "usage": "Quand le corps d'un ange ou d'un démon meurt sur Terre : Foi (sans les +) + grade + 1d6, modifié, donne le temps avant sa prochaine incarnation.",
+    "mods": "Ajouter Foi (sans les +) et grade au d6. Corps précédent « gâché » −3 ; par blâme actuel −1 ; PA < 0 −2 ; PA > 10 +1 ; PA > 20 +2 ; coup de pouce du supérieur +1 ; coup de pouce du MJ +1.",
+    "lignes": [
+      { "d": "0-2", "t": "Jamais de retour sur Terre." },
+      { "d": "3-5", "t": "Nouvelle incarnation dans 1d6 millénaires." },
+      { "d": "6-7", "t": "Dans 1d6 siècles." },
+      { "d": "8-9", "t": "Dans 1d6 décennies." },
+      { "d": "10-11", "t": "Dans 1d6 années." },
+      { "d": "12+", "t": "Dans 1d6 mois." }
+    ],
+    "note": "Les deux modificateurs de PA (> 10 et > 20) ne se cumulent sans doute pas : prendre le plus haut. Un total négatif tombe dans 0-2. Le supérieur peut rappeler plus tôt un agent précieux pour une mission."
+  },
+  {
+    "id": "aura",
+    "nom": "Couleur d'aura (table 27)",
+    "groupe": "Morts et Marches",
+    "livre": "Livret de règles (INS/MV 4e)", "ref": "p. 54",
+    "de": "",
+    "camp": "",
+    "usage": "Pour décrire l'aura d'un ange, d'un démon ou d'un supérieur selon son total maximal de PP (pas le total actuel) : bleue pour le bien, rouge pour le mal, noir et blanc pour Lecture d'aura.",
+    "mods": "",
+    "lignes": [
+      { "d": "1-10", "t": "Bénéfique : bleu aquarelle. Maléfique : rouge aquarelle. Noir et blanc : blanc cassé." },
+      { "d": "11-20", "t": "Bénéfique : bleu ciel. Maléfique : rose. Noir et blanc : gris clair." },
+      { "d": "21-40", "t": "Bénéfique : bleu « moyen ». Maléfique : rouge « moyen ». Noir et blanc : gris « moyen »." },
+      { "d": "41-60", "t": "Bénéfique : bleu marine. Maléfique : rouille. Noir et blanc : gris foncé." },
+      { "d": "61+", "t": "Bénéfique : bleu nuit. Maléfique : pourpre foncé. Noir et blanc : gris anthracite." }
+    ],
+    "note": "Pas de jet de dé : table de correspondance indexée sur le total maximal de PP (champ « de » laissé vide). Humains : petite aura blanche (~30 cm) ; autres créatures surnaturelles : aura grise (~50 cm) ; anges et démons : environ 1 m."
+  },
+  {
+    "id": "evenements-guerre",
+    "nom": "Événements aléatoires en temps de guerre",
+    "groupe": "Événements",
+    "livre": "Livret Magna Veritas (INS/MV 4e)", "ref": "p. 89",
+    "de": "2d6",
+    "camp": "",
+    "usage": "Pendant les déplacements des PJ dans une zone en guerre (conçue pour la Tchétchénie du scénario « Notre peuple vaincra ») : tirer un incident d'ambiance ou de danger.",
+    "mods": "",
+    "lignes": [
+      { "d": "2", "t": "Tir d'artillerie raté (mortier, obusier, roquettes…) qui tombe tout près : au gré du MJ, blessure de dommage 1d6+3." },
+      { "d": "3", "t": "Descente de collabos ou de mercenaires prorusses, parfois encadrés par le FSB : contrôle des papiers, suspects abattus ou arrêtés." },
+      { "d": "4", "t": "Un imam de rue harangue la foule contre les infidèles, les États-Unis et la Russie ; si on le laisse parler, la foule cherche vite un bouc émissaire à lyncher." },
+      { "d": "5", "t": "Convoi de la Croix-Rouge ou du Croissant-Rouge, parfois escorté par des Russes, des collabos ou des boïviki." },
+      { "d": "6", "t": "Croisade orthodoxe : des Russes menés par un pope s'en prennent à l'hérétique dans leur quartier." },
+      { "d": "7", "t": "Combats de rue entre factions ennemies, avec balles perdues." },
+      { "d": "8", "t": "Enterrement russe ou tchétchène : ambiance lourde, la moindre provocation déclenche l'émeute." },
+      { "d": "9", "t": "Convoi ou poste d'une ONG humanitaire, menacé par une population qui manque de tout." },
+      { "d": "10", "t": "Rafle séparatiste : boïviki ou moudjahidin bouclent le secteur, contrôlent les motivations de chacun et exécutent sommairement." },
+      { "d": "11", "t": "Les PJ découvrent les suites d'une rafle de collabos ou d'un raid punitif de moudjahidin : survivantes blessées et endeuillées." },
+      { "d": "12", "t": "Un tireur embusqué, ou une faction ennemie, attaque sans prévenir." }
+    ],
+    "note": "Table du scénario « Notre peuple vaincra » (Grozny) ; réutilisable pour toute zone de conflit en adaptant les factions."
+  }
+]

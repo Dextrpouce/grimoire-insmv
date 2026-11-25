@@ -19,3 +19,8 @@ Quelques corrections ont été faites directement dans les JSON après générat
 ## Hiérarchie
 
 `tools/hierarchie/build-hierarchie.mjs` reconstruit `js/data/hierarchie.js` (règles du ch. 4 et fiches de hiérarchie des 63 supérieurs) à partir des relevés de `tools/hierarchie/sources/` : `node tools/hierarchie/build-hierarchie.mjs .`
+
+## Pouvoirs et tables du MJ
+
+- `tools/pouvoirs/merge-pouvoirs.mjs` ajoute à `js/data/pouvoirs.js` les nouveaux pouvoirs et les résumés de `tools/pouvoirs/sources/` (sans doublon, relançable) : `node tools/pouvoirs/merge-pouvoirs.mjs .`
+- `tools/tables/build-tables.mjs` reconstruit `js/data/tables-mj.js` à partir de `tools/tables/sources/` et signale les plages manquantes ou en double : `node tools/tables/build-tables.mjs .`

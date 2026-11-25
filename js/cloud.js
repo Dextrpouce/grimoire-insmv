@@ -20,10 +20,26 @@ export function init(config) {
   return readyPromise;
 }
 export const user = () => auth?.currentUser || null;
-export async function signIn() {
+// L'interface fournit une fenêtre de connexion (Google ou e-mail) qui se résout une fois connecté
+// et échoue avec le code « auth/popup-closed-by-user » si on la ferme.
+let loginUI = null;
+export const setLoginUI = (fn) => { loginUI = fn; };
+export async function signIn() { if (loginUI) return loginUI(); return signInGoogle(); }
+export async function signInGoogle() {
   const provider = new fb.GoogleAuthProvider();
   provider.setCustomParameters({ prompt: 'select_account' });
   await fb.signInWithPopup(auth, provider);
+}
+export async function signInEmail(email, password) {
+  await fb.signInWithEmailAndPassword(auth, email.trim(), password);
+}
+export async function signUpEmail(email, password, name) {
+  const cred = await fb.createUserWithEmailAndPassword(auth, email.trim(), password);
+  if (name && name.trim()) await fb.updateProfile(cred.user, { displayName: name.trim() });
+}
+export async function resetPassword(email) {
+  auth.languageCode = 'fr';
+  await fb.sendPasswordResetEmail(auth, email.trim());
 }
 export async function signOut() { if (auth) await fb.signOut(auth); }
 function col() {

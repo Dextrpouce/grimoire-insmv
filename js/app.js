@@ -1,10 +1,12 @@
 import * as R from './rules.js';
 import { store } from './store.js';
+import * as cloud from './cloud.js';
 import { table, errText } from './table.js';
 import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice, QUICK, quickNpc } from './scenario.js';
 import { QUICK_PP } from './data/pnjrapides.js';
 import { SCENARIOS_LIVRES } from './data/scenarios-livres.js';
 import { HIERARCHIE, SUP_HIER } from './data/hierarchie.js';
+import { TABLES_MJ } from './data/tables-mj.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -113,7 +115,7 @@ function renderHome() {
       <button class="btn" data-act="import">Importer un fichier</button>
     </div>
     <div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>
-    ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (compte Google)</button>
+    ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (se connecter)</button>
       <p class="small muted d">${store.status.state === 'needauth' ? 'Tes personnages créés sur un autre appareil apparaîtront ici après connexion.' : esc(store.status.message || '')}</p></div>` : ''}
     <div class="row" style="justify-content:center;margin-top:24px;gap:24px">
       <img src="img/mv.webp" style="width:min(300px,42vw);border-radius:8px" alt="Magna Veritas">
@@ -1123,6 +1125,65 @@ function cloudDialog() {
     <div class="field"><label>Configuration</label><textarea id="fbcfg" style="min-height:140px">${esc(store.meta.firebase ? JSON.stringify(store.meta.firebase, null, 2) : '')}</textarea></div>`,
   `${store.userEmail ? '<button class="btn" data-dact="logout">Déconnexion</button>' : ''}<button class="btn pri" data-dact="cfgsave">Enregistrer et se connecter</button>`);
 }
+// ----- Connexion : compte Google ou e-mail + mot de passe (utile sur iPad / sans compte Google) -----
+const authErr = (e) => ({
+  'auth/invalid-credential': 'E-mail ou mot de passe incorrect',
+  'auth/wrong-password': 'E-mail ou mot de passe incorrect',
+  'auth/user-not-found': 'Aucun compte avec cet e-mail',
+  'auth/invalid-email': 'Adresse e-mail invalide',
+  'auth/missing-password': 'Mot de passe manquant',
+  'auth/email-already-in-use': 'Un compte existe déjà avec cet e-mail : connecte-toi',
+  'auth/weak-password': 'Mot de passe trop court (6 caractères minimum)',
+  'auth/too-many-requests': 'Trop d’essais : réessaie dans quelques minutes',
+  'auth/network-request-failed': 'Pas de connexion internet',
+  'auth/operation-not-allowed': 'Connexion par e-mail non activée dans Firebase (voir README)',
+  'auth/popup-blocked': 'Fenêtre Google bloquée par le navigateur',
+  'auth/unauthorized-domain': 'Domaine non autorisé dans Firebase (voir README)',
+}[e?.code] || e?.message || 'Erreur de connexion');
+function loginDialog() {
+  return new Promise((resolve, reject) => {
+    let mode = 'login', done = false;
+    const st = { email: '', pw: '', name: '' };
+    const draw = (msg = '') => {
+      const isNew = mode === 'new';
+      dialog(isNew ? 'Créer un compte' : 'Connexion', `
+        <p class="small muted">Le compte sert à retrouver tes personnages sur tous tes appareils et à rejoindre une table de jeu.</p>
+        ${isNew ? '' : `<button class="btn" id="lg-google" style="width:100%;justify-content:center">Continuer avec Google</button>
+        <p class="small muted" style="text-align:center;margin:12px 0 4px">ou avec ton e-mail (iCloud, Gmail, Outlook…)</p>`}
+        ${isNew ? `<div class="field"><label>Pseudo (affiché au maître de jeu)</label><input id="lg-name" autocomplete="nickname" value="${esc(st.name)}"></div>` : ''}
+        <div class="field"><label>E-mail</label><input id="lg-email" type="email" autocomplete="email" autocapitalize="off" value="${esc(st.email)}"></div>
+        <div class="field"><label>Mot de passe${isNew ? ' (6 caractères minimum)' : ''}</label><input id="lg-pw" type="password" autocomplete="${isNew ? 'new-password' : 'current-password'}" value="${esc(st.pw)}"></div>
+        ${msg ? `<p class="small" id="lg-msg" style="color:#ff8a8f">${esc(msg)}</p>` : ''}
+        <p class="small" style="margin-bottom:0">${isNew
+          ? '<a href="#" id="lg-mode">J’ai déjà un compte</a>'
+          : '<a href="#" id="lg-mode">Créer un compte</a> · <a href="#" id="lg-reset">Mot de passe oublié</a>'}</p>`,
+      `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="lg-ok">${isNew ? 'Créer le compte' : 'Se connecter'}</button>`);
+      const $ = (id) => dlg.querySelector('#' + id);
+      const keep = () => { st.email = $('lg-email').value; st.pw = $('lg-pw').value; if ($('lg-name')) st.name = $('lg-name').value; };
+      const busy = (on) => dlg.querySelectorAll('button, input').forEach((el) => { if (el.dataset.dact !== 'close') el.disabled = on; });
+      const finish = () => { done = true; closeDlg(); resolve(); };
+      const run = async (fn) => {
+        keep(); busy(true);
+        try { await fn(); finish(); } catch (e) { busy(false); draw(authErr(e)); }
+      };
+      const submit = () => run(() => (isNew ? cloud.signUpEmail(st.email, st.pw, st.name) : cloud.signInEmail(st.email, st.pw)));
+      $('lg-ok').onclick = submit;
+      $('lg-pw').onkeydown = (e) => { if (e.key === 'Enter') submit(); };
+      if ($('lg-google')) $('lg-google').onclick = () => run(() => cloud.signInGoogle());
+      $('lg-mode').onclick = (e) => { e.preventDefault(); keep(); mode = isNew ? 'login' : 'new'; draw(); };
+      if ($('lg-reset')) $('lg-reset').onclick = async (e) => {
+        e.preventDefault(); keep();
+        if (!st.email.trim()) return draw('Saisis d’abord ton e-mail');
+        try { await cloud.resetPassword(st.email); toast('E-mail de réinitialisation envoyé (vérifie aussi les spams)'); }
+        catch (err) { draw(authErr(err)); }
+      };
+      (isNew ? $('lg-name') : $('lg-email')).focus();
+    };
+    draw();
+    onRealClose(() => { if (!done) reject(Object.assign(new Error('Connexion annulée'), { code: 'auth/popup-closed-by-user' })); });
+  });
+}
+cloud.setLoginUI(loginDialog);
 function download(name, text) {
   const a = document.createElement('a');
   a.href = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -1181,9 +1242,9 @@ function enterMJ() {
 function renderMJ() {
   const t = table.current; const openId = store.configured ? table.openId : null;
   const s = ui.mjSec === 'scen' ? scen.get(ui.scenId) : null;
-  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
-  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'scen' ? renderScen(s)
-    : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google.</p>
+  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'alea' ? 'Tables aléatoires' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'alea' ? renderAlea() : ui.mjSec === 'scen' ? renderScen(s)
+    : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google ou un e-mail et un mot de passe.</p>
       <div class="row"><button class="btn pri" data-act="mj-cloud">${icon('cloud')} Configurer la sauvegarde en ligne</button></div>
       <p class="small muted" style="margin-bottom:0">Les <b>scénarios</b> (scènes, combats préparés, PNJ) fonctionnent sans connexion.</p></section>`
     : openId ? renderMJTable() : renderMJTables();
@@ -1192,7 +1253,62 @@ function renderMJ() {
     <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+  <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+}
+// ---- Tables aléatoires du MJ (js/data/tables-mj.js) ----
+// Jet selon le dé de la table ; mod : modificateur ajouté aux jets additionnés (d6, 2d6, 3d6)
+function rollTable(t, mod = 0) {
+  const d6 = () => 1 + Math.floor(Math.random() * 6);
+  const pick = (n) => 1 + Math.floor(Math.random() * n);
+  switch (t.de) {
+    case 'd66': return d6() * 10 + d6();
+    case 'd666': return d6() * 100 + d6() * 10 + d6();
+    case '2d6': return d6() + d6() + mod;
+    case '3d6': return d6() + d6() + d6() + mod;
+    case 'd6': return d6() + mod;
+    default: return pick(t.lignes.length); // d26, liste : une ligne au hasard (rang)
+  }
+}
+// Ligne correspondant au jet : « 3 », « 1-2 », « 11-14 », « 12+ », « -1 » ; pour une liste, le rang
+function tableRow(t, v) {
+  if (!['d6', '2d6', '3d6', 'd66', 'd666'].includes(t.de)) return t.lignes[v - 1];
+  const rows = t.lignes.map((r) => {
+    const s = String(r.d).trim(); let m;
+    if ((m = s.match(/^(-?\d+)\s*\+$/))) return [r, +m[1], Infinity];
+    if ((m = s.match(/^(-?\d+)\s*[-–à]\s*(-?\d+)$/))) return [r, +m[1], +m[2]];
+    if ((m = s.match(/^(-?\d+)\s*-$|^-\s*(\d+)$/))) return [r, -Infinity, +(m[1] || -m[2])];
+    return [r, +s, +s];
+  });
+  const hit = rows.find(([, a, b]) => v >= a && v <= b);
+  if (hit) return hit[0];
+  // hors table (modificateurs) : première ou dernière ligne
+  return v < rows[0][1] ? rows[0][0] : rows[rows.length - 1][0];
+}
+function renderAlea() {
+  const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp || '';
+  const ok = (t) => (!camp || !t.camp || t.camp === camp) && (!q || norm(`${t.nom} ${t.groupe} ${t.livre} ${t.usage || ''} ${t.sup || ''}`).includes(q));
+  const list = TABLES_MJ.filter((t) => !t.sup && ok(t));
+  const supTables = TABLES_MJ.filter((t) => t.sup && ok(t));
+  const groups = [...new Set([...list.map((t) => t.groupe), ...(supTables.length ? [supTables[0].groupe] : [])])];
+  const res = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` <span class="tag">${esc(r.row.camp)}</span>` : ''}
+      <div class="row" style="margin-top:6px"><button class="btn sm" data-act="mj-alea-roll" data-key="${esc(t.id)}">Relancer</button><button class="btn sm ghost" data-act="mj-alea-note" data-key="${esc(t.id)}">Noter dans le journal</button></div></div>` : ''; };
+  const ref = (t) => t.de === 'ref';
+  const card = (t) => `<div class="pow"><div class="ph"><div class="pn">${esc(t.nom)}</div><span class="small muted">${esc(ref(t) ? 'consultation' : t.de)}</span>
+      ${t.mods && !ref(t) ? `<input class="inp" type="number" style="width:64px" placeholder="mod." value="${esc(String(ui.aleaMod?.[t.id] ?? ''))}" data-alea-mod="${esc(t.id)}" title="Modificateur au jet">` : ''}
+      ${ref(t) ? '' : `<button class="btn sm pri" data-act="mj-alea-roll" data-key="${esc(t.id)}">Tirer</button>`}</div>
+    <div class="meta">${esc(t.livre)}${t.ref ? ', ' + esc(t.ref) : ''}${t.camp ? ` · <span class="badge">${esc(t.camp === 'ange' ? 'anges' : 'démons')}</span>` : ''}</div>
+    ${t.usage ? `<div class="psum">${esc(t.usage)}</div>` : ''}${t.mods ? `<div class="small muted">Modificateurs : ${esc(t.mods)}</div>` : ''}
+    ${res(t)}
+    ${ref(t) ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="al${esc(t.id)}">${ui.open['al' + t.id] ? 'Masquer la table' : 'Voir la table'}</button>`}
+    ${ui.open['al' + t.id] || ref(t) ? `<div class="small" style="margin-top:6px">${t.lignes.map((r) => `<div><b>${esc(String(r.d))}</b> ${esc(r.t)}</div>`).join('')}${t.note ? `<p class="muted">${esc(t.note)}</p>` : ''}</div>` : ''}</div>`;
+  const supSel = ui.aleaSup && supTables.find((t) => t.sup === ui.aleaSup) ? ui.aleaSup : supTables[0]?.sup;
+  return `<section class="card"><h2>Tables aléatoires <span class="tag">${TABLES_MJ.length} tables</span></h2>
+    <div class="row"><input class="inp" id="alea-q" placeholder="Rechercher une table…" value="${esc(ui.aleaQ || '')}" style="flex:1;min-width:160px">
+      <select class="inp" id="alea-camp" style="max-width:150px">${[['', 'Tous les camps'], ['ange', 'Anges'], ['demon', 'Démons']].map(([v, l]) => `<option value="${v}" ${camp === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+    <p class="small muted" style="margin-bottom:0">Tables relevées dans les livres. Le résultat peut être noté dans le journal de la campagne (onglet « Choix des joueurs »).</p></section>
+    ${groups.map((g) => `<section class="card"><h2>${esc(g)}</h2>
+      ${g === supTables[0]?.groupe ? `<div class="row" style="margin-bottom:8px"><select class="inp" id="alea-sup">${supTables.map((t) => `<option ${t.sup === supSel ? 'selected' : ''}>${esc(t.sup)}</option>`).join('')}</select></div>${supTables.filter((t) => t.sup === supSel).map(card).join('')}` : ''}
+      ${list.filter((t) => t.groupe === g).map(card).join('')}</section>`).join('') || '<section class="card"><div class="empty">Aucune table</div></section>'}`;
 }
 function renderMJTables() {
   return `<section class="card">
@@ -1203,7 +1319,7 @@ function renderMJTables() {
     <div class="row"><input class="inp" id="mj-name" placeholder="Nom de la campagne ou du groupe" style="flex:1;min-width:160px"><button class="btn pri" data-act="mj-create">${icon('plus')} Créer</button></div>
     <h3>Retrouver une table sur cet appareil</h3>
     <div class="row"><input class="inp" id="mj-code" placeholder="Code" style="max-width:150px;text-transform:uppercase"><button class="btn" data-act="mj-add">Ajouter</button></div>
-    <p class="small muted" style="margin-bottom:0">Crée une table et donne son code à tes joueurs. Dans le <b>Carnet</b> de leur personnage, carte « Table de jeu », ils saisissent le code et touchent « Partager ma fiche ». Leurs fiches apparaissent alors ici et se mettent à jour en direct. Chacun doit être connecté avec son compte Google.</p>
+    <p class="small muted" style="margin-bottom:0">Crée une table et donne son code à tes joueurs. Dans le <b>Carnet</b> de leur personnage, carte « Table de jeu », ils saisissent le code et touchent « Partager ma fiche ». Leurs fiches apparaissent alors ici et se mettent à jour en direct. Chacun doit être connecté (compte Google ou e-mail).</p>
   </section>`;
 }
 function mjBar(cur, max, cls = '') {
@@ -1969,6 +2085,15 @@ async function mjAction(act, b) {
   try {
     switch (act) {
       case 'mj-enter': return enterMJ();
+      case 'mj-alea-roll': {
+        const t = TABLES_MJ.find((x) => x.id === key); if (!t) return;
+        const v = rollTable(t, +(ui.aleaMod?.[t.id]) || 0);
+        (ui.aleaRes ||= {})[t.id] = { v, row: tableRow(t, v) }; return render();
+      }
+      case 'mj-alea-note': {
+        const t = TABLES_MJ.find((x) => x.id === key); const r = ui.aleaRes?.[key]; if (!t || !r) return;
+        return memoDialog(newEntry({ kind: 'choix', txt: `${t.nom}${['liste', 'd26'].includes(t.de) ? '' : ` (${r.v})`} : ${r.row?.t || ''}` }));
+      }
       case 'mj-sec': ui.mjSec = b.dataset.v; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
       case 'mj-cloud': return cloudDialog();
       case 'mj-exit': ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
@@ -2233,6 +2358,9 @@ document.addEventListener('change', (e) => {
   if (dlg.contains(el)) return;
   if (el.id === 'mj-note') { table.setNote(el.dataset.key, el.value); return; }
   if (el.id === 'memo-pj' || el.id === 'memo-scen') { ui.memoF[el.id.slice(5)] = el.value; return render(); }
+  if (el.id === 'alea-camp') { ui.aleaCamp = el.value; return render(); }
+  if (el.id === 'alea-sup') { ui.aleaSup = el.value; return render(); }
+  if (el.dataset.aleaMod) { (ui.aleaMod ||= {})[el.dataset.aleaMod] = el.value; return; }
   if (el.closest('[data-scform]')) return scenChange(el);
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;
@@ -2248,6 +2376,11 @@ document.addEventListener('input', (e) => {
     ui.q = e.target.value; const pos = e.target.selectionStart; render();
     const n = document.getElementById('bq'); if (n) { n.focus(); n.setSelectionRange(pos, pos); }
   }
+  if (e.target.id === 'alea-q') {
+    ui.aleaQ = e.target.value; const pos = e.target.selectionStart; render();
+    const n = document.getElementById('alea-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); }
+  }
+  if (e.target.dataset?.aleaMod) (ui.aleaMod ||= {})[e.target.dataset.aleaMod] = e.target.value;
 });
 
 store.onStatus((s, info) => {

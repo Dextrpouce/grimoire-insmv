@@ -1,0 +1,200 @@
+[
+ {
+  "id": "pasteurs-d66",
+  "nom": "Catégorie de pasteur",
+  "groupe": "PNJ et ambiance",
+  "livre": "Bible à Dudule – Anges",
+  "ref": "p. 41-42",
+  "de": "d66",
+  "camp": "",
+  "usage": "Quand les PJ croisent un pasteur protestant improvisé (synode, office, enquête de quartier), tirer sa vraie nature.",
+  "lignes": [
+   {
+    "d": "11-13",
+    "t": "Le bon apôtre : croyant sincère et irréprochable. Les anges le protègent, peuvent le mettre dans la confidence, voire en faire un serviteur de Dieu."
+   },
+   {
+    "d": "14-41",
+    "t": "L'entre-deux-eaux : pécheur ordinaire mais foi sincère. C'est le cas le plus courant ; on le laisse en place."
+   },
+   {
+    "d": "42-46",
+    "t": "Le délirant : prêche n'importe quoi mais de bonne foi. Il faut le recadrer ou le décourager, délicat car certains illuminés belliqueux plaisent à Dominique."
+   },
+   {
+    "d": "51-56",
+    "t": "Le mauvais apôtre : ambitieux cynique qui use de son ascendant sur les fidèles pour nuire. Les anges cherchent à l'écarter, fermement mais sans violence."
+   },
+   {
+    "d": "61-65",
+    "t": "L'apôtre malfaisant : hypocrite qui détourne ses ouailles par blasphème ou cynisme, parfois manipulé par une créature du Malin. Le corriger physiquement serait toléré."
+   },
+   {
+    "d": "66",
+    "t": "Le loup dans la bergerie : un démon déguisé en pasteur pour amuser ses collègues. Abattable à vue."
+   }
+  ],
+  "note": "La plage 14-41 englobe 14-16, 21-26, 31-36 et 41. Accroche liée (p. 42) : un nouveau pasteur qui serait un démon de Marie-Jolie, des dealers qui disparaissent."
+ },
+ {
+  "id": "citations-bibliques-errantes",
+  "nom": "Citation biblique errante",
+  "groupe": "PNJ et ambiance",
+  "livre": "Bible à Dudule – Anges",
+  "ref": "p. 47",
+  "de": "d6",
+  "camp": "",
+  "usage": "Pour fabriquer une fausse citation biblique dans la bouche d'un prédicateur évangélique ou d'un ange : un d6 par morceau (ouverture, sujet, fin, livre cité) et on assemble.",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Ouverture « En vérité, je vous le dis » ; sujet : la volonté du Tout-Puissant ; fin : vaincra les ténèbres de la mort, ou châtiera les sodomites ; source : Apocalypse."
+   },
+   {
+    "d": "2",
+    "t": "Ouverture « Car viendra le jour où » ; sujet : le Seigneur frappera les infidèles comme la foudre le figuier du désert, ou les mènera en son royaume ; source : Ézéchiel."
+   },
+   {
+    "d": "3",
+    "t": "Ouverture « Alors il répondit que » ; sujet : l'Éternel séchera leurs larmes, ou partagera le pain de la vie éternelle ; source : Nombres."
+   },
+   {
+    "d": "4",
+    "t": "Ouverture « Et tous sauront que » ; sujet : Dieu récompensera le juste, ou ne manque jamais de paraboles ; source : Proverbes."
+   },
+   {
+    "d": "5",
+    "t": "Ouverture « Leur cœur sera saisi d'effroi » ; sujet : en voyant que le fils de Dieu ne les a pas oubliés, ou qu'il les écrase de sa vengeance ; source : Genèse."
+   },
+   {
+    "d": "6",
+    "t": "Ouverture « Celui qui doute de moi saura » ; sujet : que l'ange du Seigneur ressemble à un kiwi (poilu dehors, vert dedans), ou qu'il n'est pas avec nous et déteste les crétins de ton espèce ; source : Foutaises."
+   }
+  ],
+  "note": "Le livre présente une grille de 6 lignes en colonnes (ouverture, sujet, deux fins au choix séparées par « / », livre cité) : on peut tirer chaque colonne séparément puis accorder les temps. Résumés reformulés, fins à garder courtes."
+ },
+ {
+  "id": "girouette-zanag",
+  "nom": "Girouette (blâme de Zanag) : humeur du jour",
+  "groupe": "Hiérarchie",
+  "livre": "Bible à Dudule – Démons",
+  "ref": "p. 77",
+  "de": "d6",
+  "camp": "demon",
+  "usage": "Chaque matin, pour un démon affligé du blâme « Girouette » de Zanag.",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Il reprend des habitudes d'ange pour la journée."
+   },
+   {
+    "d": "2-5",
+    "t": "Il se conduit en démon ordinaire."
+   },
+   {
+    "d": "6",
+    "t": "Il devient démon intégriste pour la journée."
+   }
+  ]
+ },
+ {
+  "id": "incidents-centre-de-tri",
+  "nom": "Incidents errants au Centre de Tri",
+  "groupe": "Campagne Fire and Ice",
+  "livre": "Fire and Ice volume 1",
+  "ref": "p. 27-28",
+  "de": "d6",
+  "camp": "demon",
+  "usage": "Entre deux missions, quand les PJ traînent au Centre de Tri, pour animer le quotidien du lieu.",
+  "lignes": [
+   {
+    "d": "1",
+    "t": "Solidarité avec la CGT : un afflux de courrier venu du grand centre régional en panne fait monter la grogne ; Fabien charge Gilbert et les PJ d'éviter la grève des humains."
+   },
+   {
+    "d": "2",
+    "t": "Dominus vobiscatchoum : Christian invite tout le Centre à la grande messe de son frère Jean-Charles ; il faut beaucoup de diplomatie pour ne pas devoir y aller."
+   },
+   {
+    "d": "3",
+    "t": "Vitraux : cinq ouvriers restaurent pendant une quinzaine les vitraux du hall ; leur chef est un serviteur de Dieu au service d'Yves qui ignore où il se trouve."
+   },
+   {
+    "d": "4",
+    "t": "Rouge banlieue : après une bavure, deux ou trois nuits d'émeutes ; un camion de la Poste est caillassé ou brûlé, les murs du Centre tagués."
+   },
+   {
+    "d": "5",
+    "t": "The Booklover : un prof d'histoire retraité fouille les lettres égarées, franchit sans le savoir une Marche vers la bibliothèque d'Yves et repart paniqué ; toute enquête reste stérile."
+   },
+   {
+    "d": "6",
+    "t": "Colis piégé : un petit paquet explose dans les mains de Lucette (brûlures légères) ; l'expéditeur, un très vieux démon de Ouikka, voulait fêter l'anniversaire de Fabien."
+   }
+  ],
+  "note": "Le livre n'indique pas de dé, mais les incidents sont numérotés de 1 à 6."
+ },
+ {
+  "id": "trouver-chez-regis",
+  "nom": "Trouver Chez Régis (Jésus est un fils à papa)",
+  "groupe": "Campagne Fire and Ice",
+  "livre": "Fire and Ice volume 1",
+  "ref": "p. 141",
+  "de": "",
+  "camp": "",
+  "usage": "Quand des anges ou démons cherchent le bar Chez Régis : le MJ fait en secret un test incroyable sur le talent « Trouver Chez Régis » (moyenne de Foi et Perception du chercheur) avec les colonnes ci-dessous.",
+  "mods": "+1 par autre chercheur ; −2 par présent dont le supérieur est indésirable ; +1 par présent au supérieur sympa ; −2 par intégriste ; −2 par mauvais esprit ; +1 par présent qui annonce vouloir boire un coup ; +3 par renégat ; +2 par ancien du Bureau, membre de la Maison ou ange d'Ange ; +0,5 par présent déjà venu.",
+  "lignes": [
+   {
+    "d": "réussite",
+    "t": "Le personnage aperçoit un bar qui a l'air sympa : c'est Chez Régis (on peut y tomber par hasard)."
+   },
+   {
+    "d": "échec",
+    "t": "Aucun bar accueillant en vue ; Chez Régis reste introuvable cette fois."
+   }
+  ],
+  "note": "Ce n'est pas une table à plages mais une liste de modificateurs pour un test incroyable ; les lignes réussite/échec sont à adapter par l'appli. Indésirables (ne le trouvent jamais eux-mêmes) : Dominique, Joseph, Walther, Laurent, Michel, Baal, Belial, Bifrons, Crocell, Andromalius. Sympas : Alain, Guy, Jean-Luc, Novalis, Blandine, Didier, Marc, Yves, Janus, Francis, Emmanuel/Mathias, Daniel, Abalam, Andrealphus, Asmodée, Baalberith, Beleth, Haagenti, Kobal, Kronos, Malthus, Morax, Scox, Valefor. Intégriste et mauvais esprit sont laissés à l'appréciation du MJ (malus obligatoire pour un intégrisme forcé)."
+ },
+ {
+  "id": "theories-pink-queens",
+  "nom": "Théories fumeuses sur les Pink Queens",
+  "groupe": "Campagne Jésus Reviens !",
+  "livre": "Jésus Reviens !",
+  "ref": "p. 52",
+  "de": "3d6",
+  "camp": "ange",
+  "usage": "Scénario « Can't Stop the Music » (New York) : quand les PJ interrogent des proches ou des bavards sur le projet des Pink Queens, tirer la rumeur qu'ils entendent.",
+  "lignes": [
+   {
+    "d": "3",
+    "t": "Elles comptent repeindre la statue de la Liberté en drag-queen."
+   },
+   {
+    "d": "4-6",
+    "t": "Un site web gay les paie pour une pub géante sur l'Empire State Building."
+   },
+   {
+    "d": "7-9",
+    "t": "Elles veulent piéger le maire de New York en pleine aventure homosexuelle et diffuser les images sur l'écran géant de Times Square."
+   },
+   {
+    "d": "10-11",
+    "t": "Elles veulent attaquer le défilé annuel des nazis new-yorkais et les peindre en rose."
+   },
+   {
+    "d": "12-14",
+    "t": "Elles veulent se venger atrocement, avec un doberman, du policier homophobe qui a tué plusieurs homosexuels à coups de matraque."
+   },
+   {
+    "d": "15-17",
+    "t": "Elles préparent une orgie géante à Ground Zero avec Liza Minnelli et un sosie de Frank Sinatra."
+   },
+   {
+    "d": "18",
+    "t": "Elles vont faire sauter la statue de la Liberté (la vérité : l'opération Big Queen)."
+   }
+  ],
+  "note": "Seul le 18 est exact ; les autres sont plus ou moins fausses."
+ }
+]
