@@ -1,8 +1,8 @@
 // Service worker : l'appli fonctionne hors connexion.
-const CACHE = 'insmv-v18';
+const CACHE = 'insmv-v19';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
-  'js/app.js', 'js/rules.js', 'js/store.js', 'js/table.js', 'js/scenario.js', 'js/cloud.js', 'js/config.js', 'js/mjlock.js', 'js/data/superieurs.js', 'js/data/descriptions.js', 'js/data/pouvoirs.js', 'js/data/bestiaire.js', 'js/data/pnjrapides.js', 'js/data/scenarios-livres.js', 'js/data/hierarchie.js', 'js/data/tables-mj.js',
+  'js/app.js', 'js/rules.js', 'js/store.js', 'js/table.js', 'js/scenario.js', 'js/cloud.js', 'js/config.js', 'js/mjlock.js', 'js/manuel.js', 'js/data/superieurs.js', 'js/data/descriptions.js', 'js/data/pouvoirs.js', 'js/data/bestiaire.js', 'js/data/pnjrapides.js', 'js/data/scenarios-livres.js', 'js/data/hierarchie.js', 'js/data/tables-mj.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/favicon-64.png',
   'img/cover.webp', 'img/mv.webp', 'img/ins.webp', 'img/deepee.webp', 'img/serpent.webp',
 ];

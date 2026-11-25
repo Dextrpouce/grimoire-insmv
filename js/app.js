@@ -2,6 +2,7 @@ import * as R from './rules.js';
 import { store } from './store.js';
 import * as cloud from './cloud.js';
 import { mjLock } from './mjlock.js';
+import { MANUEL_JOUEUR, MANUEL_MJ } from './manuel.js';
 import { table, errText } from './table.js';
 import { scen, newNpc, newScene, npcChar, npcStats, gravite, npcFromCharacter, startLive, BOOK, KINDS, newEntry, newChoice, QUICK, quickNpc } from './scenario.js';
 import { QUICK_PP } from './data/pnjrapides.js';
@@ -27,6 +28,7 @@ const ICONS = {
   dots: '<circle cx="12" cy="5" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="12" cy="19" r="1.3"/>',
   die: '<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2"/><circle cx="15" cy="15" r="1.2"/><circle cx="15" cy="9" r="1.2"/><circle cx="9" cy="15" r="1.2"/>',
   x: '<path d="M6 6l12 12M18 6L6 18"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 0 1 4.8.9c0 1.7-2.4 2.2-2.4 3.8"/><circle cx="12" cy="17.2" r=".6"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
   trash: '<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
   undo: '<path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/>',
@@ -98,6 +100,7 @@ function render() {
     <button class="ibtn" data-act="chars" title="Personnages">${icon('folder')}</button>
     <div class="who"><h1>${esc(c.nom || 'Sans nom')}</h1><div class="sub">${esc(sub)}</div></div>
     ${store.configured ? `<button class="ibtn" data-act="sync" title="${esc(store.status.message)}"><span class="sync ${st}"></span></button>` : ''}
+    <button class="ibtn" data-act="help" data-v="joueur" title="Manuel du joueur">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
     ${ui.mode === 'crea' ? '<span class="mode-btn crea">Création</span>' : `<button class="mode-btn ${ui.mode}" data-act="mode">${icon(MODES[ui.mode].icon)}${MODES[ui.mode].label}</button>`}
     <button class="ibtn" data-act="menu" title="Menu">${icon('dots')}</button>
@@ -114,6 +117,7 @@ function renderHome() {
     <div class="row" style="justify-content:center;margin-top:14px">
       <button class="btn pri" data-act="new">${icon('plus')} Créer un personnage</button>
       <button class="btn" data-act="import">Importer un fichier</button>
+      <button class="btn" data-act="help" data-v="joueur">${icon('help')} Manuel</button>
     </div>
     <div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>
     ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (se connecter)</button>
@@ -561,6 +565,25 @@ function renderRegles() {
   <p class="small">Échec : RU 1–3 faible, 4–5 fort, 6 catastrophe. <b>111</b> : Dieu intervient (réussite critique des anges avec RU 12, échec terrible des démons). <b>666</b> : Satan s'en mêle (réussite des démons avec RU 8, échec des anges).</p>
   <h3>Tests opposés et résistés</h3>
   <p class="small">Opposé : différence de niveaux sur la ligne relative (≥ 5 : on bloque aux extrémités). Résisté : chacun fait un test standard ; si les deux réussissent, MR finale = MR attaquant – MR défenseur.</p>
+  <p class="small muted">Exemple : Régis (Discrétion 4+) passe derrière un garde (Perception 3). Les « + » valent 0,5 : 4,5 – 3 = +1,5 sur la ligne relative, soit un seuil de 53. Le MJ peut garder secret le score du PNJ.</p>
+  <h3>Combat</h3>
+  <p class="small"><b>Initiative</b> : jet au premier tour seulement, ensuite on joue chacun son tour dans le sens des aiguilles d'une montre. Le MJ choisit la caractéristique ou le talent selon la situation : Agilité en général, Volonté si le combat s'ouvre sur une attaque mentale, Perception sur une attaque à distance, un trait comme Survie (Jungle) selon le terrain…</p>
+  <table class="ref">
+    <tr><td>Duel</td><td>Jet d'Agilité opposé.</td></tr>
+    <tr><td>Surprise des deux camps</td><td>Agilité Très difficile au premier tour. En cas d'échec, on ne joue pas ce tour et il faut réussir un test d'Agilité Difficile au deuxième tour pour agir.</td></tr>
+    <tr><td>Embuscade</td><td>Les victimes font un test de Perception opposé à la Discrétion des embusqués (le moins discret du groupe). En cas d'échec, elles ne jouent pas ce tour et doivent réussir un test d'Agilité Difficile au deuxième tour pour agir.</td></tr>
+  </table>
+  <p class="small"><b>Actions du tour</b> : déplacement, attaque, activation de pouvoir (pas de jet sauf si le pouvoir le précise). On peut se déplacer en attaquant ou en utilisant un pouvoir, avec un malus selon la situation : –4 colonnes au tir ; une charge donne –2 colonnes, ou +2 colonnes avec une arme « adaptée à la charge ».</p>
+  <p class="small"><b>Attaque</b> : l'attaquant fait un test de son talent (la précision de l'arme décale les colonnes), le défenseur un jet de défense. <b>MR de résolution</b> = MR de l'attaquant – MR du défenseur ; l'attaque touche si elle vaut 0 ou plus.</p>
+  <table class="ref"><tr><th>Attaque</th><th>Dégâts finaux</th></tr>
+    <tr><td>Corps à corps</td><td>MR de résolution + Force – Protection du défenseur</td></tr>
+    <tr><td>Arme de contact</td><td>MR de résolution + Force + Puissance de l'arme – Protection du défenseur</td></tr>
+    <tr><td>Arme à distance</td><td>MR de résolution + Puissance de l'arme – Protection du défenseur</td></tr></table>
+  <p class="small">On compare les dégâts aux seuils de blessure du défenseur (BL, BG, BF, MS) et on coche la ligne correspondante. Une créature surnaturelle peut survivre à une mort subite en réussissant un test de Force.</p>
+  <table class="ref"><tr><th>Blessure</th>${Object.keys(R.BLESSURES).map((k) => `<th>${k}</th>`).join('')}</tr>
+    <tr><td>Perte de PF</td>${Object.entries(R.BLESSURES).map(([k, b]) => `<td>${k === 'MS' ? 'mort ou ' + b.pf : b.pf}</td>`).join('')}</tr>
+    <tr><td>Malus</td>${Object.values(R.BLESSURES).map((b) => `<td>${b.malus ? b.malus + ' col.' : '–'}</td>`).join('')}</tr></table>
+  <p class="small">Un ange ou un démon perd des points de fatigue (PF) à chaque nouvelle blessure ; à 0 PF, c'est l'inconscience.</p>
   <h3>Grades</h3><table class="ref"><tr><th>Grade</th><th>Caracs</th><th>Talents</th><th>Pouvoirs</th><th>PP</th></tr>${R.GRADES.map((g) => `<tr><td>${g.g}</td><td>${L(g.car)}</td><td>${L(g.tal)}</td><td>${L(g.pow)}</td><td>${g.pp}</td></tr>`).join('')}</table>`;
 }
 
@@ -1235,6 +1258,14 @@ function renderTableCard(c) {
 }
 
 // ================= Table de jeu : écran du maître de jeu =================
+// Manuel utilisateur : rubriques repliables, version joueur ou maître de jeu
+function helpDialog(who) {
+  const mj = who === 'mj';
+  const list = mj ? MANUEL_MJ : MANUEL_JOUEUR;
+  dialog(mj ? 'Manuel du maître de jeu' : 'Manuel du joueur', `<div class="manuel">
+    ${list.map((r, i) => `<details${i === 0 ? ' open' : ''}><summary>${r.titre}</summary><div class="manuel-b">${r.html}</div></details>`).join('')}
+  </div>`);
+}
 // Mot de passe du mode MJ (si un verrou est défini dans config.js), demandé une fois par appareil
 function mjPasswordDialog() {
   return new Promise((resolve) => {
@@ -1276,6 +1307,7 @@ function renderMJ() {
     <button class="ibtn" data-act="mj-exit" title="Retour à mes personnages">${icon('folder')}</button>
     <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
     ${mjLock.enabled ? `<button class="ibtn" data-act="mj-lock" title="Verrouiller le mode MJ sur cet appareil">${icon('x')}</button>` : ''}
+    <button class="ibtn" data-act="help" data-v="mj" title="Manuel du maître de jeu">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
   <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
@@ -2199,6 +2231,7 @@ document.addEventListener('click', async (e) => {
     case 'menu': return menuDialog();
     case 'freeroll': return freeRoll();
     case 'sync': return store.sync({ interactive: true });
+    case 'help': return helpDialog(b.dataset.v);
     case 'mode': {
       dialog('Mode de la fiche', Object.entries(MODES).map(([k, m]) => `<button class="choice ${ui.mode === k ? 'on' : ''}" data-dact="setmode" data-v="${k}">${icon(m.icon)}<span><b>${m.label === 'PA' ? 'Progression (PA)' : m.label === 'Jeu' ? 'Jeu' : 'Libre'}</b><small>${m.desc}</small></span></button>`).join(''));
       return;
