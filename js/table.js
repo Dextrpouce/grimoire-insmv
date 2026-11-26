@@ -27,6 +27,26 @@ export const table = {
   get current() { return cur; },
   get error() { return curError; },
   get uid() { return cloud.user()?.uid || ''; },
+  // Toutes mes tables, comme les groupes de Dragonbane : celles où je suis MJ, puis celles de mes personnages
+  list() {
+    const out = new Map();
+    for (const [id, t] of Object.entries(data.mine)) out.set(id, { id, name: t.name, mj: true });
+    for (const c of store.list()) if (c.table && !out.has(c.table)) out.set(c.table, { id: c.table, name: c.tableName || c.table, mj: false });
+    return [...out.values()].sort((a, b) => (b.mj - a.mj) || String(a.name).localeCompare(String(b.name), 'fr'));
+  },
+  // Retrouve mes tables de MJ enregistrées sur Firebase (créées depuis un autre appareil) ; renvoie le nombre ajouté
+  async discover() {
+    if (!store.configured || !cloud.user()) return 0;
+    let n = 0;
+    try {
+      for (const t of await cloud.myTables()) {
+        if (t.gm && !data.mine[t.id]) { data.mine[t.id] = { name: t.name, createdAt: Date.now() }; n++; }
+        else if (data.mine[t.id] && data.mine[t.id].name !== t.name) data.mine[t.id].name = t.name;
+      }
+    } catch { /* hors ligne ou requête refusée : on garde la liste de l'appareil */ }
+    if (n) { persist(); emit(); }
+    return n;
+  },
 
   // ================= Joueur =================
   async share(c, code) {

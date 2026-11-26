@@ -100,6 +100,16 @@ export async function updateTable(id, fn) {
     return true;
   });
 }
+// Tables INS/MV dont je suis membre : retrouvées sur tous mes appareils, sans ressaisir de code
+export async function myTables() {
+  const u = me();
+  const snap = await fb.getDocs(fb.query(fb.collection(db, 'groups'), fb.where('members', 'array-contains', u.uid)));
+  const out = [];
+  snap.forEach((d) => {
+    try { const st = JSON.parse(d.data().json || '{}'); if (st.kind === 'insmv') out.push({ id: d.id, name: d.data().name || d.id, gm: st.gm?.uid === u.uid }); } catch { /* document illisible */ }
+  });
+  return out;
+}
 export function watchTable(id, onData, onError) {
   return fb.onSnapshot(tableDoc(id), (snap) => {
     if (!snap.exists()) { onError?.(new Error('Table introuvable')); return; }

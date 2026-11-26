@@ -6,7 +6,7 @@ export const MANUEL_JOUEUR = [
     <p>Le Grimoire crée et gère tes personnages d'<b>In Nomine Satanis / Magna Veritas</b> (4<sup>e</sup> édition). Tout est enregistré <b>sur ton appareil</b> et l'appli fonctionne <b>sans internet</b> une fois ouverte une première fois.</p>
     <ul>
       <li><b>Créer un personnage</b> : sur l'accueil, ou menu ⋮ › Nouveau personnage.</li>
-      <li><b>Changer de personnage</b> : icône dossier en haut à gauche.</li>
+      <li><b>Changer de personnage</b> : touche le nom en haut (ou l'icône dossier). Tes personnages sont rangés <b>par table de jeu</b>, puis « Sans table » ; « Nouveau personnage dans cette table » le crée et le partage tout de suite avec le MJ.</li>
       <li><b>Menu ⋮</b> (en haut à droite) : export, import, impression, mode maître de jeu, sauvegarde en ligne, suppression.</li>
       <li>En bas, les onglets <b>Fiche</b>, <b>Combat</b>, <b>Pouvoirs</b>, <b>Carnet</b> et <b>Biblio</b>.</li>
     </ul>
@@ -91,16 +91,17 @@ export const MANUEL_MJ = [
       <li>Bouton <b>Mode maître de jeu</b> sur l'accueil, ou menu ⋮ › Mode maître de jeu.</li>
       <li>Si un <b>mot de passe MJ</b> est défini, il est demandé une seule fois par appareil.</li>
       <li>La <b>croix</b> en haut du mode MJ le reverrouille sur cet appareil : pratique avant de prêter sa tablette à un joueur.</li>
-      <li>L'icône dossier en haut à gauche ramène à tes personnages.</li>
+      <li>Le <b>nom de la table</b> en haut (ou l'icône dossier) ouvre le sélecteur : « Mener la partie » sur une autre de tes tables, ou retour à un de tes personnages. « Quitter le mode MJ » ramène à l'écran joueur.</li>
+      <li>Depuis l'écran joueur, le même sélecteur propose <b>Mener la partie</b> sur chaque table dont tu es le MJ.</li>
     </ul>
     <p class="small muted">Choisir ou changer le mot de passe : <code>node tools/mj-motdepasse.mjs</code> dans le dossier du projet, puis publier (voir le README).</p>` },
   { id: 'table', titre: 'Créer une table et inviter les joueurs', html: `
     <ol>
       <li>Connecte-toi (pastille en haut de l'écran joueur, compte Google ou e-mail).</li>
-      <li>Onglet <b>Table</b> : donne un nom (campagne ou groupe) et touche <b>Créer</b>.</li>
+      <li>Onglet <b>Joueurs</b> (sans table ouverte) : donne un nom (campagne ou groupe) et touche <b>Créer</b>.</li>
       <li>Donne le <b>code</b> affiché (bouton <b>Copier</b>) à tes joueurs : ils le saisissent dans le Carnet de leur personnage, carte « Table de jeu », puis « Partager ma fiche ».</li>
     </ol>
-    <p><b>Retrouver une de ses tables</b> sur un autre appareil : saisis son code dans « Ajouter ». Ça ne marche qu'avec le compte qui a créé la table.</p>` },
+    <p><b>Sur un autre appareil</b>, tes tables de MJ réapparaissent toutes seules dans le sélecteur une fois connecté avec le même compte. Sinon, saisis le code dans « Retrouver une table » (seulement avec le compte qui a créé la table).</p>` },
   { id: 'suivi', titre: 'Suivre les fiches en direct', html: `
     <ul>
       <li><b>Vue d'ensemble</b> : PF et PP actuels, blessures ouvertes et malus, Défense, Perception, Volonté, Foi, seuils de blessure, limitations.</li>
@@ -111,7 +112,7 @@ export const MANUEL_MJ = [
     </ul>` },
   { id: 'scenarios', titre: 'Scénarios et scènes', html: `
     <ul>
-      <li>Onglet <b>Scénarios &amp; combats</b> : synopsis, secrets du MJ, scènes (lieu, déroulement) et combats préparés. Tout fonctionne <b>sans connexion</b> et reste sur ton appareil.</li>
+      <li>Onglet <b>Scénarios</b> : synopsis, secrets du MJ, scènes (lieu, déroulement) et combats préparés. Tout fonctionne <b>sans connexion</b> et reste sur ton appareil.</li>
       <li><b>Scénarios des livres</b> : la bibliothèque des scénarios publiés, classés par livre avec recherche ; un toucher en ajoute une copie à « Mes scénarios ».</li>
       <li>Dans une scène, prépare les <b>choix possibles</b> (dilemme et options) : le jour de la partie, touche l'option choisie et elle est notée dans la mémoire de la campagne.</li>
       <li>Export / import d'un scénario en fichier JSON (il emporte les choix qui le concernent).</li>
@@ -120,21 +121,23 @@ export const MANUEL_MJ = [
     <ul>
       <li>Chaque combat liste ses adversaires : attaques, Défense, Volonté, Foi, Perception, seuils BL/BG/BF/MS et PF (calculés selon le type, modifiables), PP, protection, pouvoirs, talents utiles.</li>
       <li>Un PNJ peut être repris d'un personnage du Grimoire.</li>
-      <li>Le <b>bestiaire</b> garde les types d'ennemis réutilisables : prépare-les une fois, puis ajoute-les à une scène en choisissant combien il en faut.</li>
+      <li>Le <b>bestiaire</b> (onglet <b>Outils</b>) garde les types d'ennemis réutilisables : prépare-les une fois, puis ajoute-les à une scène en choisissant combien il en faut.</li>
       <li><b>PNJ rapide</b> : un ange ou un démon type de n'importe quel supérieur, de 10 PP (grade 0) à 40 PP (grade 3).</li>
       <li><b>Bestiaire des livres</b> : plus d'une centaine d'adversaires prêts à l'emploi, avec la page de référence.</li>
       <li>Le bestiaire s'exporte et s'importe en fichier.</li>
     </ul>` },
   { id: 'combat', titre: 'Mener un combat', html: `
     <ol>
-      <li>Dans une scène, touche <b>Lancer le combat</b> : une fiche de suivi est créée pour chaque adversaire.</li>
+      <li>Onglet <b>Combat</b> : reprends un combat en cours, lance un combat préparé, ou un <b>combat improvisé</b> (adversaires tirés du bestiaire ou PNJ rapide). Depuis une scène, <b>Lancer le combat</b> ouvre aussi cet onglet.</li>
+      <li><b>Initiative</b> : Agilité, Volonté ou Perception, situation de surprise ; l'ordre du tour s'affiche avec les PJ de la table, <b>Tour suivant</b> passe au suivant (et au round suivant). Touche un résultat pour saisir la MR annoncée par un joueur.</li>
       <li>Pour chaque adversaire : jets d'attaque (niveau de dommage calculé) et de défense, pouvoirs (PP dépensés), <b>Encaisser un coup</b> (gravité et PF retirés d'après ses seuils).</li>
       <li>Compteur de rounds, <b>renforts</b> à ajouter en cours de route, rappel des PJ de la table ouverte.</li>
       <li><b>Noter un choix</b> pendant le combat, pour la mémoire de la campagne.</li>
     </ol>
     <p class="small muted">Pense à prévenir les joueurs des PNJ à Esquive acrobatique ou Volonté supra-normale (rappel affiché). Les règles de combat sont sur l'écran joueur, Biblio › Règles.</p>` },
-  { id: 'memoire', titre: 'Choix des joueurs (mémoire de la campagne)', html: `
+  { id: 'memoire', titre: 'Journal (choix des joueurs)', html: `
     <ul>
+      <li>Onglet <b>Journal</b> : la mémoire de la campagne, <b>propre à chaque table</b>. Les choix notés quand une table est ouverte lui sont rattachés ; « Toutes les tables » montre tout le journal.</li>
       <li>Note ce que les PJ ont fait ou décidé : choix, promesse, dette ou faveur, ennemi, allié, secret découvert, affaire avec le supérieur, mort.</li>
       <li>Indique les personnages concernés et la <b>suite</b> à leur faire vivre : tant qu'elle n'est pas refermée, c'est un <b>fil en suspens</b>.</li>
       <li>Choisis le scénario où le faire ressortir : il s'affichera en tête de ce scénario.</li>
@@ -143,7 +146,7 @@ export const MANUEL_MJ = [
     </ul>` },
   { id: 'tables', titre: 'Tables aléatoires', html: `
     <ul>
-      <li>Onglet <b>Tables</b> : les tables des livres, classées par rubrique, avec recherche et filtre par camp.</li>
+      <li>Onglet <b>Outils</b>, carte Tables aléatoires : les tables des livres, classées par rubrique, avec recherche et filtre par camp.</li>
       <li><b>Tirer</b> donne le résultat (avec le modificateur au jet quand la table en prévoit), <b>Relancer</b> pour un autre tirage.</li>
       <li><b>Noter dans le journal</b> ajoute le résultat à la mémoire de la campagne.</li>
     </ul>` },

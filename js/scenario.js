@@ -8,6 +8,7 @@ const KEY = 'insmv.scenarios';
 const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; } };
 // types : bestiaire (types d'ennemis réutilisables) ; journal : mémoire des choix des joueurs
 const data = Object.assign({ list: {}, types: {}, journal: [] }, load());
+let ctxTable = null;
 const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(data)); } catch { /* stockage plein ou bloqué */ } };
 const clone = (o) => JSON.parse(JSON.stringify(o));
 export const uid =() => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
@@ -177,7 +178,9 @@ export const scen = {
   // ---- Journal des choix (commun à toute la campagne) ----
   journal() { return [...data.journal].sort((a, b) => b.at - a.at); },
   entry(id) { return data.journal.find((e) => e.id === id) || null; },
-  saveEntry(e) { if (!data.journal.includes(e)) { const i = data.journal.findIndex((x) => x.id === e.id); if (i >= 0) data.journal[i] = e; else data.journal.push(e); } persist(); return e; },
+  // Table de jeu ouverte par le MJ : les nouveaux choix du journal lui sont rattachés (journal par campagne)
+  setTable(id) { ctxTable = id || null; },
+  saveEntry(e) { if (!data.journal.includes(e) && !data.journal.some((x) => x.id === e.id) && e.table === undefined) e.table = ctxTable; if (!data.journal.includes(e)) { const i = data.journal.findIndex((x) => x.id === e.id); if (i >= 0) data.journal[i] = e; else data.journal.push(e); } persist(); return e; },
   removeEntry(id) {
     data.journal = data.journal.filter((e) => e.id !== id);
     Object.values(data.list).forEach((s) => s.scenes.forEach((sc) => (sc.choix || []).forEach((ch) => { if (ch.entry === id) ch.entry = null; })));

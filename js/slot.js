@@ -84,13 +84,16 @@ const REEL_CLS = ['', 'd2', 'u'];
 // Effet du tirage : bandeau et classe de la machine
 export function outcome(res, camp) {
   if (!res) return { cls: '', banner: '' };
-  if (res.divin === 'unique') return { cls: 'fx-ange', banner: `✦ JACKPOT DIVIN ✦${camp === 'demon' ? '<small>… pas pour toi</small>' : ''}`, kind: 'angel' };
-  if (res.divin === 'bete') return { cls: 'fx-demon', banner: `☠ JACKPOT INFERNAL ☠${camp === 'ange' ? '<small>… pas pour toi</small>' : ''}`, kind: 'devil' };
-  if (res.ok === false && res.ru === 6) return { cls: 'fx-tilt', banner: 'TILT', kind: 'tilt' };
-  if (res.triple) return { cls: 'fx-triple', banner: 'TRIPLE !!!', kind: 'triple' };
-  if (res.double) return { cls: 'fx-double', banner: 'DOUBLE !', kind: 'double' };
-  if (res.ok === true) return { cls: 'fx-win', banner: 'GAGNÉ', kind: 'win' };
-  if (res.ok === false) return { cls: 'fx-lose', banner: 'PERDU', kind: 'lose' };
+  // Le bandeau dit aussi Réussite ou Échec (plus de verdict sous la machine)
+  const verdict = res.ok === true ? 'Réussite' : res.ok === false ? 'Échec' : '';
+  const sub = (t) => (t ? `<small>${t}</small>` : '');
+  if (res.divin === 'unique') return { cls: 'fx-ange', banner: `✦ JACKPOT DIVIN ✦${sub(camp === 'demon' ? `${verdict}… pas pour toi` : verdict)}`, kind: 'angel' };
+  if (res.divin === 'bete') return { cls: 'fx-demon', banner: `☠ JACKPOT INFERNAL ☠${sub(camp === 'ange' ? `${verdict}… pas pour toi` : verdict)}`, kind: 'devil' };
+  if (res.ok === false && res.ru === 6) return { cls: 'fx-tilt', banner: `TILT${sub('Échec')}`, kind: 'tilt' };
+  if (res.ok === false) return { cls: 'fx-lose', banner: 'ÉCHEC', kind: 'lose' };
+  if (res.triple) return { cls: 'fx-triple', banner: `${verdict ? 'RÉUSSITE' : ''} TRIPLE !!!`.trim(), kind: 'triple' };
+  if (res.double) return { cls: 'fx-double', banner: `${verdict ? 'RÉUSSITE' : ''} DOUBLE !`.trim(), kind: 'double' };
+  if (res.ok === true) return { cls: 'fx-win', banner: 'RÉUSSITE', kind: 'win' };
   return { cls: '', banner: '' };
 }
 // dice : valeurs finales (null = machine au repos) ; spin : rouleaux prêts à tourner ; n : nombre de rouleaux
@@ -105,7 +108,7 @@ export function machine({ dice = null, n = 3, spin = false, tag = '', fx = null,
     <div class="bulbs">${bulbs}</div>
     <div class="slot-sign">${esc(tag)}</div>
     <div class="slot-body"><div class="slot-reels">${reels}<div class="payline"></div></div>
-      ${lever ? `<button class="slot-lever ${spin ? 'pulled' : ''}" ${lever} aria-label="Tirer la manette" title="Tirer la manette"><i></i></button>` : ''}</div>
+      ${lever ? `<button class="slot-lever ${spin ? 'pulled' : ''}" ${lever} aria-label="Tirer la manette" title="Tirer la manette"><span class="arm"><i></i></span><span class="hub"></span></button>` : ''}</div>
     <div class="slot-banner">${spin ? '· · ·' : fx?.banner || '&nbsp;'}</div>
     <div class="bulbs">${bulbs}</div>
   </div>`;

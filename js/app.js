@@ -70,7 +70,8 @@ const ui = {
   biblio: 'pouvoirs', q: '', onlyAccess: true, talFilter: 'tous', open: {},
   screen: (localStorage.getItem('insmv.screen') === 'mj' && mjLock.unlocked) ? 'mj' : 'perso', // perso | mj
   mjTab: 'vue', mjChar: null,
-  mjSec: localStorage.getItem('insmv.mjsec') || (store.configured ? 'table' : 'scen'), // table | scen | memo
+  // joueurs | combat | scen | journal | outils (anciens noms : table, memo, alea)
+  mjSec: ({ table: 'joueurs', memo: 'journal', alea: 'outils' })[localStorage.getItem('insmv.mjsec')] || localStorage.getItem('insmv.mjsec') || (store.configured ? 'joueurs' : 'scen'),
   memoF: { open: false, pj: '', scen: '' }, // filtres du journal des choix
   scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
   live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
@@ -99,7 +100,7 @@ function render() {
   $app.innerHTML = `
   <header class="top">
     <button class="ibtn" data-act="chars" title="Personnages">${icon('folder')}</button>
-    <div class="who"><h1>${esc(c.nom || 'Sans nom')}</h1><div class="sub">${esc(sub)}</div></div>
+    <div class="who click" data-act="chars" title="Personnages et tables"><h1>${esc(c.nom || 'Sans nom')} <span class="caret">▾</span></h1><div class="sub">${esc(sub)}${c.table ? ` · <span class="tbl">${esc(c.tableName || c.table)}</span>` : ''}</div></div>
     ${store.configured ? `<button class="ibtn" data-act="sync" title="${esc(store.status.message)}"><span class="sync ${st}"></span></button>` : ''}
     <button class="ibtn" data-act="help" data-v="joueur" title="Manuel du joueur">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
@@ -620,30 +621,45 @@ function showRoll() {
   }
   if (res && !s.spin) {
     const cls = res.divin && (res.ok !== undefined) && (res.divin === 'unique' ? R.typeOf(c).camp === 'ange' : R.typeOf(c).camp === 'demon') ? 'divin' : res.ok ? 'ok' : 'ko';
-    out = (out || `<div class="dice">${res.dice.map((d, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${d}</div>`).join('')}</div>`) + `
-      <div class="verdict ${cls}">${res.divin === 'unique' ? '111 — Dieu s\'en mêle ! ' : res.divin === 'bete' ? '666 — le Nombre de la Bête ! ' : ''}${res.ok ? 'Réussite' : 'Échec'}</div>
+    // Avec le bandit manchot, le bandeau de la machine dit déjà Réussite ou Échec
+    out = (out || `<div class="dice">${res.dice.map((d, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${d}</div>`).join('')}</div>
+      <div class="verdict ${cls}">${res.divin === 'unique' ? '111 — Dieu s\'en mêle ! ' : res.divin === 'bete' ? '666 — le Nombre de la Bête ! ' : ''}${res.ok ? 'Réussite' : 'Échec'}</div>`) + `
       <div class="vsub">Résultat ${res.res} / seuil ${res.seuil ?? '×'} · RU ${res.ru}${res.triple ? ' · TRIPLE' : res.double ? ' · double' : ''}</div>
       <div class="vsub" style="color:#fff;font-size:17px;margin-top:4px">${res.ok ? `MR <b>${res.mr}</b> — ${R.MR_TXT(res.mr)}` : R.ECHEC_TXT(res.ru)}</div>
       ${res.ok && s.after ? `<div class="vsub" style="margin-top:6px">${s.after(res)}</div>` : ''}`;
   }
-  const lvlSel = s.levels ? `<div class="seg" style="margin-bottom:8px">${s.levels.map(([lab, r]) => `<button class="${s.r === r ? 'on' : ''}" data-ract="lvl" data-v="${r}">${esc(lab)} ${L(r)}</button>`).join('')}</div>` : '';
+  const lvlSel = s.levels ? `<div class="seg" style="margin-bottom:10px">${s.levels.map(([lab, r]) => `<button class="${s.r === r ? 'on' : ''}" data-ract="lvl" data-v="${r}">${esc(lab)} ${L(r)}</button>`).join('')}</div>` : '';
+  // Difficulté : sélecteur ‹ › et barre de progression (de Triviale à Impossible)
+  const di = R.DIFFICULTES.findIndex((d) => d.k === s.diff);
+  const diffCtl = `<div class="rt-car"><button data-ract="dstep" data-v="-1" ${di <= 0 ? 'disabled' : ''} aria-label="Plus facile">‹</button><b>${esc(diff.n)}</b><button data-ract="dstep" data-v="1" ${di >= R.DIFFICULTES.length - 1 ? 'disabled' : ''} aria-label="Plus difficile">›</button></div>
+    <div class="rt-bar">${R.DIFFICULTES.map((d, i) => `<i class="${i <= di ? 'on' : ''}" data-ract="diff" data-v="${d.k}" title="${esc(d.n)}"></i>`).join('')}</div>`;
+  // Ajustements (repliés) : modificateur, prise de risque, malus de blessure ; résumé quand quelque chose est réglé
+  const wm = R.woundMalus(c);
+  const adjSum = [s.shift ? `Mod ${sgn(s.shift)}` : '', s.risk ? `Risque ${s.risk}` : '', s.prec ? `Précision ${sgn(s.prec)}` : '', wm && s.wound ? `Blessures ${wm}` : ''].filter(Boolean).join(' · ') || 'aucun';
+  const toggle = (act, on) => `<button class="rt-sw ${on ? 'on' : ''}" data-ract="${act}" role="switch" aria-checked="${on}"><span></span></button>`;
+  const stepper = (act, val) => `<span class="stepper"><button data-ract="${act}" data-v="-1">–</button><b>${val}</b><button data-ract="${act}" data-v="1">+</button></span>`;
+  // Seuil de base : niveau et difficulté seuls (sans modificateur, prise de risque ni blessure)
+  const base = s.opp ? R.seuilOppose(s.r - s.oppR) : s.diff === 'triviale' ? 66 : s.diff === 'impossible' ? null : R.seuilStandard(s.r, diff.s || 0).seuil;
   dlg.innerHTML = `<div class="dlg-h"><h2>${esc(s.label)}</h2><button class="ibtn" data-ract="close">${icon('x')}</button></div>
-  <div class="dlg-b">
+  <div class="dlg-b rt">
     ${lvlSel}
-    <div class="row"><span>Niveau</span><span class="stepper"><button data-ract="r" data-v="-1">–</button><b>${L(s.r)}</b><button data-ract="r" data-v="1">+</button></span>
-      <span class="spacer"></span><span>Seuil <b style="font-size:22px">${seuilInfo ?? '×'}</b></span></div>
-    <div class="list-h">Difficulté</div>
-    <div class="seg">${R.DIFFICULTES.map((d) => `<button class="${s.diff === d.k && !s.opp ? 'on' : ''}" data-ract="diff" data-v="${d.k}">${d.n}</button>`).join('')}<button class="${s.opp ? 'on' : ''}" data-ract="opp">Opposé</button></div>
-    ${s.opp ? `<div class="row" style="margin-top:8px"><span>Niveau adverse</span><span class="stepper"><button data-ract="oppR" data-v="-1">–</button><b>${L(s.oppR)}</b><button data-ract="oppR" data-v="1">+</button></span></div>` : ''}
-    <div class="row" style="margin-top:10px;gap:18px">
-      <span>Modificateur <span class="stepper"><button data-ract="shift" data-v="-1">–</button><b>${sgn(s.shift)}</b><button data-ract="shift" data-v="1">+</button></span></span>
-      <span>Prise de risque <span class="stepper"><button data-ract="risk" data-v="-1">–</button><b>${s.risk}</b><button data-ract="risk" data-v="1">+</button></span></span>
-    </div>
-    ${s.prec ? `<div class="small muted" style="margin-top:6px">Précision de l'arme : ${sgn(s.prec)} colonne(s)</div>` : ''}
-    ${R.woundMalus(c) ? `<label class="small" style="display:block;margin-top:6px"><input type="checkbox" data-ract="wound" ${s.wound ? 'checked' : ''}> Appliquer le malus des blessures (${R.woundMalus(c)})</label>` : ''}
+    <div class="rt-row"><span>Niveau</span>${s.free ? stepper('r', L(s.r)) : `<b class="rt-lvl">${L(s.r)}</b>`}</div>
+    <div class="rt-row"><span>Jet opposé</span>${toggle('opp', s.opp)}</div>
+    ${s.opp ? `<div class="rt-row"><span>Niveau adverse</span>${stepper('oppR', L(s.oppR))}</div>` : `<div class="rt-lab">Difficulté</div>${diffCtl}`}
+    <button class="rt-row rt-adj" data-ract="adj"><span>Ajustements</span><span class="muted">${esc(adjSum)} <i class="rt-chev ${s.adjOpen ? 'open' : ''}">⌄</i></span></button>
+    ${s.adjOpen ? `<div class="rt-adjb">
+      <div class="rt-row"><span>Modificateur <small class="muted">colonnes</small></span>${stepper('shift', sgn(s.shift))}</div>
+      <div class="rt-row"><span>Prise de risque <small class="muted">max ${R.lvlInt(s.r)}</small></span>${stepper('risk', s.risk)}</div>
+      ${wm ? `<div class="rt-row"><span>Malus des blessures <small class="muted">${wm}</small></span>${toggle('wound', s.wound)}</div>` : ''}
+      ${s.prec ? `<div class="small muted">Précision de l'arme : ${sgn(s.prec)} colonne(s), toujours appliquée</div>` : ''}
+    </div>` : ''}
     ${out}
   </div>
-  <div class="dlg-f"><button class="btn pri" data-ract="go" ${s.spin ? 'disabled' : ''}>${icon('die')} ${slot.slotOn() ? 'Tirer la manette' : 'Lancer d66+6'}</button></div>`;
+  <div class="dlg-f rt-foot">
+    <div class="rt-seuil"><small>Seuil</small><b>${seuilInfo ?? '×'}</b></div>
+    <span class="rt-detail">Base ${base ?? '×'} · Mod ${sgn(s.shift + s.prec + (s.wound ? wm : 0))} · Risque ${s.risk}</span>
+    ${slot.slotOn() ? '' : `<button class="btn pri" data-ract="go">${icon('die')} Lancer d66+6</button>`}
+  </div>`;
   if (!dlg.open) dlg.showModal();
 }
 function doRoll() {
@@ -659,10 +675,15 @@ function doRoll() {
   s.result = R.resolve(R.rollD666(), { seuil, mrLevel: R.lvlInt(eff), risk: s.risk, foi: c.car.foi, camp: R.typeOf(c).camp });
   if (!slot.slotOn()) { showRoll(); return slot.celebrate(null, slot.outcome(s.result, R.typeOf(c).camp)); }
   // Bandit manchot : les rouleaux tournent, puis le verdict s'affiche
-  s.spin = true; slot.sfx.unlock(); slot.sfx.pull(); showRoll();
+  // La machine (puis le verdict) reste visible même quand la fenêtre défile (petit écran, ajustements ouverts)
+  const reveal = (sel) => dlg.querySelector(sel)?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  s.spin = true; slot.sfx.unlock(); slot.sfx.pull(); showRoll(); reveal('.slot');
   slot.spin(dlg, () => {
     if (rollState !== s || !dlg.open) return;
     s.spin = false; showRoll();
+    // Jusqu'au verdict et à la MR : selon la mise en page, c'est le contenu ou la fenêtre entière qui défile
+    const body = dlg.querySelector('.dlg-b'); const box = body && body.scrollHeight > body.clientHeight ? body : dlg;
+    box.scrollTo({ top: box.scrollHeight, behavior: 'smooth' });
     slot.celebrate(dlg, slot.outcome(s.result, R.typeOf(c).camp));
   });
 }
@@ -949,7 +970,8 @@ const TYPE_DESC = {
   renegat_a: 'Ange qui a quitté sa hiérarchie. 100 à 120 PA.', renegat_d: 'Démon qui a quitté sa hiérarchie. 80 à 120 PA.',
   fee: 'Lutin, elfe, nymphe… réfugié de Faërie. 40 à 120 PA.', monstre: 'Fantôme, expérience ratée, créature mythologique. 60 à 120 PA.',
 };
-function startGenerator() { gen = { step: 'type' }; drawGen(); }
+// table : code d'une table de jeu à rejoindre une fois le personnage créé (« Nouveau personnage dans cette table »)
+function startGenerator(tableId = null) { gen = { step: 'type', table: tableId }; drawGen(); }
 function drawGen() {
   const g = gen;
   let body = '', foot = '', title = 'Nouveau personnage';
@@ -1072,6 +1094,10 @@ function genClick(e) {
     c.pfCur = R.annexes(c).pf; c.ppCur = R.ppMax(c);
     c.updatedAt = Date.now();
     store.add(c); closeDlg(); gen = null;
+    if (g.table) {
+      table.share(c, g.table).then((name) => { store.save(); render(); toast(`${c.nom} rejoint la table « ${name} »`); })
+        .catch((e) => { c.tableErr = errText(e); toast('Partage avec la table impossible : ' + errText(e)); });
+    }
     ui.tab = 'fiche';
     ui.mode = c.creation === 'crea' ? 'crea' : 'normal';
     render();
@@ -1147,10 +1173,29 @@ function customCreate(g) {
 }
 
 // ================= Menus =================
+// Sélecteur hiérarchique (comme Dragonbane) : un bloc par table — mener la partie si j'en suis le MJ,
+// mes personnages qui y jouent, nouveau personnage dans cette table — puis les personnages sans table.
 function charsDialog() {
-  const list = store.list();
-  dialog('Personnages', list.map((c) => `<button class="choice ${c.id === C()?.id ? 'on' : ''}" data-dact="sel" data-id="${c.id}"><span><b>${esc(c.nom || 'Sans nom')}</b><small>${esc(R.typeOf(c).n)}${c.superieur ? ' · ' + esc(c.superieur) : ''}</small></span></button>`).join('') || '<div class="empty">Aucun</div>',
-    `<button class="btn pri" data-dact="new">${icon('plus')} Nouveau</button>`);
+  const list = store.list(); const tables = table.list();
+  const inMJ = ui.screen === 'mj'; const cur = inMJ ? null : C();
+  const row = (c) => `<button class="choice ${c.id === cur?.id ? 'on' : ''}" data-dact="sel" data-id="${c.id}"><span class="crest">${esc((c.nom || '?').charAt(0).toUpperCase())}</span><span><b>${esc(c.nom || 'Sans nom')}</b><small>${esc(R.typeOf(c).n)}${c.superieur ? ' · ' + esc(c.superieur) : ''}</small></span></button>`;
+  const blocks = tables.map((t) => {
+    const chars = list.filter((c) => c.table === t.id); const active = inMJ && table.openId === t.id;
+    return `<section class="pick-group ${active || chars.some((c) => c.id === cur?.id) ? 'active' : ''}">
+      <div class="pick-head"><b>${esc(t.name)}</b><small>code ${esc(t.id)}${t.mj ? ' · 👑 tu es le MJ' : ''}</small></div>
+      ${t.mj ? `<button class="choice ${active ? 'on' : ''}" data-dact="mjt" data-id="${esc(t.id)}"><span class="crest">👑</span><span><b>Mener la partie</b><small>Joueurs, Combat, Scénarios, Journal, Outils</small></span></button>` : ''}
+      ${chars.map(row).join('')}
+      ${t.mj ? '' : `<button class="pick-add" data-dact="newin" data-id="${esc(t.id)}">${icon('plus')} Nouveau personnage dans cette table</button>`}
+    </section>`;
+  }).join('');
+  const loose = list.filter((c) => !c.table);
+  dialog('Personnages et tables', `${blocks}
+    ${loose.length || !tables.length ? `<section class="pick-group ${loose.some((c) => c.id === cur?.id) ? 'active' : ''}"><div class="pick-head"><b>${tables.length ? 'Sans table' : 'Mes personnages'}</b>${tables.length ? '<small>pas partagés avec un MJ</small>' : ''}</div>
+      ${loose.map(row).join('') || '<p class="small muted">Aucun personnage.</p>'}</section>` : ''}
+    <p class="small muted">Un personnage rejoint une table depuis son Carnet (carte « Table de jeu ») ou avec « Nouveau personnage dans cette table ».</p>`,
+  `<button class="btn ghost" data-dact="mjhome">👑 ${inMJ ? 'Mes tables de MJ' : 'Maître de jeu…'}</button>${inMJ ? '<button class="btn ghost" data-dact="mjquit">Quitter le mode MJ</button>' : ''}<button class="btn pri" data-dact="new">${icon('plus')} Nouveau</button>`);
+  // Tables de MJ créées depuis un autre appareil : on les ajoute puis on redessine le sélecteur
+  table.discover().then((n) => { if (n && dlg.open && dlg.querySelector('.pick-group, .pick-head')) charsDialog(); });
 }
 function menuDialog() {
   const c = C();
@@ -1312,29 +1357,43 @@ function mjPasswordDialog() {
     onRealClose(() => { if (!ok) resolve(false); });
   });
 }
-function enterMJ() {
-  if (!mjLock.unlocked) { mjPasswordDialog().then((ok) => { if (ok) enterMJ(); }); return; }
+function enterMJ(opts = {}) {
+  if (!mjLock.unlocked) { mjPasswordDialog().then((ok) => { if (ok) enterMJ(opts); }); return; }
   ui.screen = 'mj'; localStorage.setItem('insmv.screen', 'mj');
+  if (opts.table && store.configured) {
+    if (table.openId !== opts.table) { table.open(opts.table); ui.mjChar = null; ui.mjTab = 'vue'; }
+    ui.mjSec = 'joueurs'; localStorage.setItem('insmv.mjsec', 'joueurs');
+  }
+  table.discover();
   if (store.configured && table.openId && !table.current) table.open(table.openId);
   render(); window.scrollTo(0, 0);
 }
+const MJ_SECS = [['joueurs', 'Joueurs'], ['combat', 'Combat'], ['scen', 'Scénarios'], ['journal', 'Journal'], ['outils', 'Outils']];
+// Outils du MJ : tables aléatoires et bestiaire (types d'ennemis réutilisables)
+function renderOutils() {
+  if (ui.npcEdit?.type) { const t = scen.getType(ui.npcEdit.type); if (t) return renderNpcEdit(null, null, t); ui.npcEdit = null; }
+  return `${renderAlea()}${renderBestiaire()}`;
+}
 function renderMJ() {
   const t = table.current; const openId = store.configured ? table.openId : null;
+  if (!MJ_SECS.some(([k]) => k === ui.mjSec)) ui.mjSec = 'joueurs';
+  scen.setTable(openId); // les choix notés au journal sont rattachés à la table ouverte
   const s = ui.mjSec === 'scen' ? scen.get(ui.scenId) : null;
-  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'alea' ? 'Tables aléatoires' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : ui.mjSec === 'combat' ? 'Combat' : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
-  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'alea' ? renderAlea() : ui.mjSec === 'scen' ? renderScen(s) : ui.mjSec === 'combat' ? renderMJCombat()
+  const tName = openId ? (t?.name || table.list().find((x) => x.id === openId)?.name || 'Connexion…') : null;
+  const sub = openId ? `Maître de jeu · code ${openId}` : store.configured ? 'Maître de jeu · aucune table ouverte' : 'Maître de jeu · hors ligne';
+  const body = ui.mjSec === 'journal' ? renderMemo() : ui.mjSec === 'outils' ? renderOutils() : ui.mjSec === 'scen' ? renderScen(s) : ui.mjSec === 'combat' ? renderMJCombat()
     : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google ou un e-mail et un mot de passe.</p>
       <div class="row"><button class="btn pri" data-act="mj-cloud">${icon('cloud')} Configurer la sauvegarde en ligne</button></div>
       <p class="small muted" style="margin-bottom:0">Les <b>scénarios</b> (scènes, combats préparés, PNJ) fonctionnent sans connexion.</p></section>`
     : openId ? renderMJTable() : renderMJTables();
   return `<header class="top">
-    <button class="ibtn" data-act="mj-exit" title="Retour à mes personnages">${icon('folder')}</button>
-    <div class="who"><h1>Maître de jeu</h1><div class="sub">${esc(sub)}</div></div>
+    <button class="ibtn" data-act="chars" title="Personnages et tables">${icon('folder')}</button>
+    <div class="who click" data-act="chars" title="Changer de table ou de personnage"><h1>👑 ${esc(tName || 'Maître de jeu')} <span class="caret">▾</span></h1><div class="sub">${esc(sub)}</div></div>
     ${mjLock.enabled ? `<button class="ibtn" data-act="mj-lock" title="Verrouiller le mode MJ sur cet appareil">${icon('x')}</button>` : ''}
     <button class="ibtn" data-act="help" data-v="mj" title="Manuel du maître de jeu">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main><div class="seg mjnav">${[['table', 'Table'], ['combat', 'Combat'], ['scen', 'Scénarios'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+  <main><div class="seg mjnav">${MJ_SECS.map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
 }
 // ---- Tables aléatoires du MJ (js/data/tables-mj.js) ----
 // Jet selon le dé de la table ; mod : modificateur ajouté aux jets additionnés (d6, 2d6, 3d6)
@@ -1579,8 +1638,8 @@ function renderScenList() {
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
     <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-library">${icon('book')} Scénarios des livres (${SCENARIOS_LIVRES.length})</button><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
     <p class="small muted" style="margin-bottom:0">Découpe ton scénario en scènes et prépare à l'avance les adversaires de chaque combat : attaque, défense, Volonté, Foi, seuils de blessure, PF, PP, pouvoirs. Le jour de la partie, « Lancer le combat » crée une fiche de suivi par adversaire (PF, PP, blessures et malus) avec les jets d'attaque et de défense à portée de main.</p>
-  </section>
-  ${renderBestiaire()}`;
+    <p class="small muted" style="margin-bottom:0">Les types d'ennemis réutilisables sont rangés dans <b data-act="mj-sec" data-v="outils" style="cursor:pointer;text-decoration:underline">Outils › Bestiaire</b>.</p>
+  </section>`;
 }
 function renderBestiaire() {
   const types = scen.types();
@@ -1772,7 +1831,10 @@ function memoItem(e, here = null) {
   </div>`;
 }
 function renderMemo() {
-  const all = scen.journal(); const f = ui.memoF; const names = memoPjNames(); const scens = scen.all();
+  const tid = store.configured ? table.openId : null; const f = ui.memoF;
+  const tName = tid && (table.current?.name || table.list().find((x) => x.id === tid)?.name || tid);
+  // Journal par table : les choix de cette table et ceux notés sans table ; « Toutes les tables » montre tout
+  const all = scen.journal().filter((e) => !tid || f.allTables || !e.table || e.table === tid); const names = memoPjNames(); const scens = scen.all();
   if (f.pj && !names.includes(f.pj)) f.pj = '';
   if (f.scen && !scen.get(f.scen)) f.scen = '';
   const open = all.filter(isOpen);
@@ -1783,6 +1845,7 @@ function renderMemo() {
         <button class="btn sm pri" data-act="sc-memo-new">${icon('plus')} Noter un choix</button></div>
     </section>
     <section class="card">
+      ${tid ? `<div class="seg" style="margin-bottom:8px">${[['0', `Table « ${tName} »`], ['1', 'Toutes les tables']].map(([v, l]) => `<button class="${(f.allTables ? '1' : '0') === v ? 'on' : ''}" data-act="sc-memo-t" data-v="${v}">${esc(l)}</button>`).join('')}</div>` : ''}
       <div class="seg">${[['0', 'Tout le journal'], ['1', `Fils en suspens (${open.length})`]].map(([v, l]) => `<button class="${(f.open ? '1' : '0') === v ? 'on' : ''}" data-act="sc-memo-f" data-v="${v}">${l}</button>`).join('')}</div>
       <div class="grid g2" style="margin-top:8px">${sel('memo-pj', 'Personnage', f.pj, [['', 'Tous'], ...names.map((p) => [p, p])])}${sel('memo-scen', 'Scénario', f.scen, [['', 'Tous'], ...scens.map((x) => [x.id, x.nom])])}</div>
       <div style="margin-top:6px">${list.map((e) => memoItem(e)).join('') || `<div class="empty">${all.length ? 'Rien avec ces filtres' : 'Aucun choix noté pour l\'instant'}</div>`}</div>
@@ -2186,7 +2249,7 @@ async function scenAction(act, b) {
       return `${r.types} type(s) d'ennemis ajouté(s) au bestiaire${r.already ? ` (${r.already} déjà présent(s))` : ''}`;
     });
     // ---- mémoire des choix ----
-    case 'sc-memo-new': return memoDialog(newEntry({ scen: b.dataset.sid || (ui.mjSec === 'memo' && ui.memoF.scen) || null, scene: b.dataset.scene || null }));
+    case 'sc-memo-new': return memoDialog(newEntry({ scen: b.dataset.sid || (ui.mjSec === 'journal' && ui.memoF.scen) || null, scene: b.dataset.scene || null }));
     case 'sc-memo-edit': { const e = scen.entry(key); return e && memoDialog(e); }
     case 'sc-memo-done': {
       const e = scen.entry(key); if (!e) return;
@@ -2195,7 +2258,8 @@ async function scenAction(act, b) {
       if (res === null) return;
       e.done = true; e.res = res.trim(); scen.saveEntry(e); toast('Fil refermé'); return render();
     }
-    case 'sc-memo-all': ui.mjSec = 'memo'; ui.memoF = { open: true, pj: '', scen: '' }; localStorage.setItem('insmv.mjsec', 'memo'); render(); return window.scrollTo(0, 0);
+    case 'sc-memo-t': ui.memoF.allTables = b.dataset.v === '1'; return render();
+    case 'sc-memo-all': ui.mjSec = 'journal'; ui.memoF = { ...ui.memoF, open: true, pj: '', scen: '' }; localStorage.setItem('insmv.mjsec', 'journal'); render(); return window.scrollTo(0, 0);
     case 'sc-memo-f': ui.memoF.open = b.dataset.v === '1'; return render();
     case 'sc-memo-export': return download('memoire-campagne-insmv.json', scen.exportJournal());
     case 'sc-memo-import': return pickJSON((txt) => { const r = scen.importJournal(txt); return `${r.memo} choix ajouté(s) au journal${r.already ? ` (${r.already} déjà présent(s))` : ''}`; });
@@ -2383,7 +2447,7 @@ async function mjAction(act, b) {
         ui.scenId = s.id; ui.live = sc.id; ui.npcEdit = null; localStorage.setItem('insmv.scen', s.id); localStorage.setItem('insmv.live', sc.id);
         render(); return window.scrollTo(0, 0);
       }
-      case 'mj-sec': ui.mjSec = b.dataset.v; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
+      case 'mj-sec': ui.mjSec = b.dataset.v; ui.npcEdit = null; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
       case 'mj-cloud': return cloudDialog();
       case 'mj-exit': ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
       case 'mj-lock': mjLock.lock(); ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); toast('Mode MJ verrouillé sur cet appareil'); return render();
@@ -2611,11 +2675,13 @@ function handleDlgClick(e) {
       case 'r': s.r = Math.max(0, s.r + v); break;
       case 'lvl': s.r = v; break;
       case 'diff': s.diff = r.dataset.v; s.opp = false; break;
+      case 'dstep': { const i = R.DIFFICULTES.findIndex((d) => d.k === s.diff) + v; if (R.DIFFICULTES[i]) s.diff = R.DIFFICULTES[i].k; break; }
+      case 'adj': s.adjOpen = !s.adjOpen; return showRoll(); // n'efface pas le résultat affiché
       case 'opp': s.opp = !s.opp; break;
       case 'oppR': s.oppR = Math.max(0, s.oppR + v); break;
       case 'shift': s.shift += v; break;
       case 'risk': s.risk = Math.max(0, Math.min(R.lvlInt(s.r), s.risk + v)); break;
-      case 'wound': s.wound = r.checked; break;
+      case 'wound': s.wound = !s.wound; break;
     }
     s.result = null;
     return showRoll();
@@ -2624,7 +2690,11 @@ function handleDlgClick(e) {
   const c = C();
   switch (d.dataset.dact) {
     case 'close': return closeDlg();
-    case 'sel': store.select(d.dataset.id); closeDlg(); ui.mode = 'normal'; return render();
+    case 'sel': store.select(d.dataset.id); closeDlg(); ui.mode = 'normal'; ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
+    case 'mjt': closeDlg(); return enterMJ({ table: d.dataset.id });
+    case 'mjhome': closeDlg(); if (store.configured && table.openId) table.close(); ui.mjSec = 'joueurs'; localStorage.setItem('insmv.mjsec', 'joueurs'); return enterMJ();
+    case 'mjquit': closeDlg(); ui.screen = 'perso'; localStorage.setItem('insmv.screen', 'perso'); return render();
+    case 'newin': closeDlg(); return startGenerator(d.dataset.id);
     case 'new': closeDlg(); return startGenerator();
     case 'export1': closeDlg(); return download((c.nom || 'personnage').replace(/\W+/g, '_') + '.json', store.exportOne(c));
     case 'exportAll': closeDlg(); return download('insmv-personnages.json', store.exportAll());
