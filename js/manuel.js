@@ -8,7 +8,7 @@ export const MANUEL_JOUEUR = [
       <li><b>Créer un personnage</b> : sur l'accueil, ou menu ⋮ › Nouveau personnage.</li>
       <li><b>Changer de personnage</b> : touche le nom en haut (ou l'icône dossier). Tes personnages sont rangés <b>par table de jeu</b>, puis « Sans table » ; « Nouveau personnage dans cette table » le crée et le partage tout de suite avec le MJ.</li>
       <li><b>Menu ⋮</b> (en haut à droite) : export, import, impression, mode maître de jeu, sauvegarde en ligne, suppression.</li>
-      <li>En bas, les onglets <b>Fiche</b>, <b>Combat</b>, <b>Pouvoirs</b>, <b>Carnet</b> et <b>Biblio</b>.</li>
+      <li>En bas, les onglets <b>Fiche</b>, <b>Combat</b>, <b>Sac</b>, <b>Pouvoirs</b>, <b>Carnet</b> et <b>Biblio</b>.</li>
     </ul>
     <p class="small muted">Le mode maître de jeu est réservé au MJ ; il a son propre manuel (bouton « ? » dans le mode MJ).</p>` },
   { id: 'installer', titre: 'Installer l\'appli sur l\'écran d\'accueil', html: `
@@ -42,14 +42,16 @@ export const MANUEL_JOUEUR = [
     <p class="small muted">Les règles complètes (table Unique-Multiple, difficultés, MR, combat) sont dans l'onglet <b>Biblio › Règles</b>.</p>` },
   { id: 'combat', titre: 'Combat, blessures et pouvoirs', html: `
     <ul>
-      <li><b>Combat</b> : jauges de PF et de PP, armes avec niveau de dommage calculé, armures.</li>
+      <li><b>Combat</b> : jauges de PF et de PP, blessures, attaque avec les armes <b>en main</b> (niveau de dommage calculé), défense, protection portée et <b>pouvoirs de combat</b> (attaques, protections, bonus) avec leur coût en PP.</li>
+      <li><b>Effets actifs</b> : « Activer » sur Armure corporelle, Furie, Feu prométhéen, Esquive acrobatique… crée un effet en cours, affiché dans la carte État (Renouveler, Arrêter). Chaque carte montre en violet ce qui s'y applique et l'applique : puissance, précision et Force dans Attaques, colonnes de Défense au jet de défense (Esquive : seulement le prochain), protection dans la carte Protection et dans « Encaisser un coup » (décoche un pouvoir qui ne protège pas contre ce type de coup). États : étourdi à 0 PF, assommé à −5.</li>
+      <li><b>Sac</b> : ajouter ou retirer des armes (« En main » ou « Rangée »), des armures et boucliers (« Portée » ou « Rangée »), l'équipement avec sa quantité, et les possessions (biens, planques, contacts).</li>
       <li><b>Encaisser un coup</b> : saisis les dégâts reçus, l'appli trouve la gravité d'après tes seuils, coche la blessure et retire les PF.</li>
       <li>Une blessure se referme par la Médecine ou en dépensant des PP.</li>
       <li><b>Pouvoirs</b> : description de chaque pouvoir, bouton <b>Activer</b> qui dépense les PP, test de pouvoir.</li>
     </ul>` },
   { id: 'carnet', titre: 'Carnet et supérieur', html: `
     <ul>
-      <li>Identité, supérieur, grade, possessions et notes.</li>
+      <li>Identité, supérieur, grade et notes (les possessions sont dans le Sac).</li>
       <li>Bouton <b>Invoquer</b> : test de Foi contre la difficulté de ton supérieur, avec les modificateurs du livre.</li>
       <li>Points d'administration avec historique, avertissements et blâmes (avec les tirages du livre).</li>
       <li>Carte <b>Table de jeu</b> : pour partager ta fiche avec le maître de jeu (voir plus bas).</li>

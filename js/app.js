@@ -38,6 +38,7 @@ const ICONS = {
   check: '<path d="M5 12l5 5L20 7"/>',
   cloud: '<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9.5 4.3 4.3 0 0 0 7 18z"/>',
   heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
+  bag: '<path d="M6 8h12l1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 12h6"/>',
 };
 const icon = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
 let toastTimer;
@@ -76,7 +77,7 @@ const ui = {
   scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
   live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
 };
-const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
+const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['sac', 'Sac', 'bag'], ['pouvoirs', 'Pouvoirs', 'wing'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
 const MODES = {
   normal: { label: 'Jeu', icon: 'die', desc: 'Pour jouer : tout est verrouillé, toucher une valeur lance un test.' },
   prog: { label: 'PA', icon: 'star', desc: 'Dépenser les points d\'administration (PA) gagnés : caractéristique 2 PA/rang, talent 1 PA (principal + 1 secondaire offert), pouvoir selon son coût, PP 1 PA.' },
@@ -153,6 +154,7 @@ function renderBudget(c) {
 function renderTab(c) {
   switch (ui.tab) {
     case 'combat': return renderCombat(c);
+    case 'sac': return renderSac(c);
     case 'pouvoirs': return renderPouvoirs(c);
     case 'carnet': return renderCarnet(c);
     case 'biblio': return renderBiblio(c);
@@ -261,17 +263,34 @@ function renderCombat(c) {
   const malus = R.woundMalus(c);
   const prot = c.armures.filter((x) => x.portee !== false && !/bouclier/i.test(x.n + x.q)).reduce((s, x) => s + (+x.p || 0), 0);
   const fo = R.lvlInt(c.car.fo);
-  const weapons = c.armes.map((w, i) => {
-    const tl = weaponLevel(c, w);
+  const inHand = c.armes.map((w, i) => ({ w, i })).filter(({ w }) => w.main !== false);
+  const weapons = inHand.map(({ w, i }) => {
+    const tl = weaponLevel(c, w); const wf = weaponFx(c, w); const fo = effFo(c);
     return `<div class="trow">
-      <div class="tn"><b>${esc(w.n)}</b><br><small>${esc(w.talent)}${w.spe ? ' (' + esc(w.spe) + ')' : ''} ${L(tl)} · précision ${sgn(+w.prec || 0)} · puissance ${sgn(+w.puis || 0)}${w.melee ? ` + Force ${fo}` : ''}${w.q ? ' · ' + esc(w.q) : ''}</small></div>
+      <div class="tn"><b>${esc(w.n)}</b><br><small>${esc(w.talent)}${w.spe ? ' (' + esc(w.spe) + ')' : ''} ${L(tl)} · précision ${sgn((+w.prec || 0) + wf.prec)} · puissance ${sgn((+w.puis || 0) + wf.puis)}${w.melee ? ` + Force ${fo}` : ''}${w.q ? ' · ' + esc(w.q) : ''}</small>
+        ${fxLine([...wf.list.map((f) => `${esc(f.n)} : ${[f.prec ? `précision +${f.prec}` : '', f.puis ? `puissance +${f.puis}` : ''].filter(Boolean).join(', ')}`), ...wf.force.map((f) => `${esc(f.n)} : Force +${f.force} rang(s)`)])}</div>
       <button class="btn sm pri" data-act="attack" data-i="${i}">Attaquer</button>
-      ${ui.mode !== 'normal' ? `<button class="ibtn" style="width:32px;height:32px" data-act="weapon-del" data-i="${i}">${icon('trash')}</button>` : ''}
     </div>`;
   }).join('');
+  const stowed = c.armes.length - inHand.length;
+  const worn = c.armures.filter((x) => x.portee !== false);
+  const combatPows = c.pouvoirs.map((p, i) => ({ p, i })).filter(({ p }) => isCombatPower(p.n));
+  const fx = activeFx(c);
+  const human = t.camp === 'neutre' && c.chance;
+  const etats = [c.pfCur <= -5 || (human && c.pfCur <= 0) ? 'Assommé' : c.pfCur <= 0 ? 'Étourdi (garde ses facultés mentales)' : ''].filter(Boolean);
+  const fxCard = fx.length || etats.length ? `<div class="fx-box">
+      ${etats.map((e) => `<span class="pill" style="background:var(--red)">${esc(e)}</span>`).join(' ')}
+      ${fx.map((f) => { const i = c.pouvoirs.findIndex((x) => x.n === f.n); const d = R.powerDef(f.n) || {};
+        return `<div class="fx-row"><div class="tn"><b>✦ ${esc(f.n)}</b><br><small>${esc(fxText(f))}${d.act ? ` · <span class="muted">${esc(d.act)}</span>` : ''}</small></div>
+          ${f.once ? '' : `<button class="btn sm" data-act="pow-use" data-i="${i}" title="Repayer le coût pour prolonger">Renouveler</button>`}
+          <button class="btn sm ghost" data-act="fx-off" data-key="${esc(f.n)}">Arrêter</button></div>`; }).join('')}
+    </div>` : '';
+  const dfx = defFx(c); const supM = fx.find((f) => f.n === 'Supériorité martiale');
+  const pfx = protFx(c);
   return `
   <section class="card">
     <h2>État <span class="tag">${malus ? `malus des blessures ouvertes ${malus} col.` : 'aucun malus'}</span></h2>
+    ${fxCard}
     <div class="tracker"><span class="lab">PF</span>${bar(c.pfCur, a.pf, 'pf')}<span class="pm"><button data-act="pf" data-v="-1">–</button><button class="plus" data-act="pf" data-v="1">+</button></span></div>
     ${t.nopp ? '' : `<div class="tracker" style="margin-top:8px"><span class="lab">PP</span>${bar(c.ppCur, ppm)}<span class="pm"><button data-act="pp" data-v="-1">–</button><button class="plus" data-act="pp" data-v="1">+</button></span></div>`}
     <div class="row" style="margin-top:10px">
@@ -297,27 +316,138 @@ function renderCombat(c) {
 
   <section class="card">
     <h2>Attaques <span class="tag">Défense ${L(R.talentLevel(c, 'Défense'))}</span></h2>
-    ${weapons || '<div class="empty">Aucune arme</div>'}
+    ${weapons || `<div class="empty">${c.armes.length ? 'Aucune arme en main' : 'Aucune arme'}</div>`}
     <div class="row" style="margin-top:8px">
       <button class="btn pri" data-act="defense">Se défendre</button>
-      <button class="btn" data-act="weapon-add">${icon('plus')} Arme</button>
+      ${fxLine([...dfx.map((f) => `${esc(f.n)} : Défense ${sgn(f.v)}${f.once ? ' (prochain jet)' : ''}`), ...(supM ? [`Supériorité martiale : adversaires −${half(R.lvlInt(c.pouvoirs.find((x) => x.n === supM.n).r))} col. pour t’attaquer`] : [])])}
+      <span class="spacer"></span>
+      <button class="btn sm ghost" data-act="go-sac">${icon('bag')} ${stowed ? `${stowed} arme(s) rangée(s) · ` : ''}Gérer dans le Sac</button>
     </div>
     <p class="small muted" style="margin-bottom:0">Attaque et défense : test résisté. Si la défense réussit, sa MR est retranchée à celle de l'attaquant ; le coup porte si la MR finale est positive ou nulle. <b>Niveau de dommage</b> = MR finale + puissance de l'arme (+ Force au contact) – protection.</p>
   </section>
 
   <section class="card">
-    <h2>Protections <span class="tag">armure portée : ${prot}</span></h2>
-    ${c.armures.map((x, i) => `<div class="trow"><div class="tn"><b>${esc(x.n)}</b><br><small>${esc(x.q || '')}${x.fmin ? ' · Force min. ' + esc(x.fmin) : ''}</small></div>
-      <div class="tl">${x.p}</div>
-      <button class="btn sm ${x.portee === false ? '' : 'dark'}" data-act="armor-toggle" data-i="${i}">${x.portee === false ? 'Rangée' : 'Portée'}</button>
-      <button class="ibtn" style="width:32px;height:32px" data-act="armor-del" data-i="${i}">${icon('trash')}</button></div>`).join('') || '<div class="empty">Aucune</div>'}
-    <div class="row" style="margin-top:8px"><button class="btn" data-act="armor-add">${icon('plus')} Armure ou bouclier</button></div>
+    <h2>Protection <span class="tag">${prot}${pfx.length ? ` + ${pfx.reduce((t2, f) => t2 + f.prot, 0)} (pouvoirs)` : ''}</span></h2>
+    ${worn.length ? `<div class="small">${worn.map((x) => `<b>${esc(x.n)}</b> ${x.p}${x.q ? ` <span class="muted">(${esc(x.q)})</span>` : ''}`).join('<br>')}</div>` : (pfx.length ? '' : '<div class="empty">Aucune armure portée</div>')}
+    ${fxLine(pfx.map((f) => `${esc(f.n)} : +${f.prot} contre les attaques ${esc(f.vs)}${f.note ? ' · ' + esc(f.note) : ''}`))}
+    <p class="small muted" style="margin:6px 0 0">Couverture partielle : ignorée sur un double ou un triple de l'attaquant ; importante : sur un triple.</p>
+    <div class="row" style="margin-top:6px"><span class="spacer"></span><button class="btn sm ghost" data-act="go-sac">${icon('bag')} Armures dans le Sac</button></div>
   </section>
+
+  ${combatPows.length ? `<section class="card">
+    <h2>Pouvoirs de combat ${t.nopp ? '' : `<span class="tag">${c.ppCur} / ${ppm} PP</span>`}</h2>
+    ${combatPows.map(({ p, i }) => {
+      const d = R.powerDef(p.n) || {}; const par = d.parent ? R.powerDef(d.parent) : null; const pp = ppCostOf(d.act || par?.act);
+      const inv = (d.a && d.a.inv) || !p.r; const q = d.q || par?.q;
+      return `<div class="trow"><div class="tn"><b>${esc(p.n)}</b>${inv ? '' : ` <span class="muted">${L(p.r)}</span>`}<br><small>${esc(d.s || par?.s || '')}${q && q !== '—' ? ' · ' + esc(q) : ''}</small></div>
+        ${!t.nopp && pp ? `<button class="btn sm pri" data-act="pow-use" data-i="${i}" title="Dépense les PP (et lance le test si le pouvoir en demande un)">Activer · ${pp} PP</button>` : ''}
+        ${inv ? '' : `<button class="btn sm" data-act="pow-roll" data-i="${i}" title="Lance le test sans dépenser de PP">Test</button>`}</div>`;
+    }).join('')}
+    <p class="small muted" style="margin-bottom:0">Tous les pouvoirs, avec leur description, sont dans l'onglet Pouvoirs.</p>
+  </section>` : ''}
 
   <section class="card">
     <h2>Modificateurs</h2>
     <table class="ref">${R.MODIFS_ATTAQUE.map(([a2, b]) => `<tr><td>${a2}</td><td>${b}</td></tr>`).join('')}</table>
     <p class="small muted" style="margin-bottom:0">Main gauche (Ag 3) : +1 Combat, +1 Défense, –1 puissance. Deux armes (Fo 3) : +1 Combat, +1 puissance, –1 Défense. Arme à deux mains tenue à une main (Fo 4) : –1 puissance. Talent inférieur à 2 : une attaque tous les deux tours.</p>
+  </section>`;
+}
+// ---- Effets actifs des pouvoirs (texte des pouvoirs, livre de règles chap. 3) ----
+// n = niveau du pouvoir (sans les « + »). prot : protection contre « vs » ; force : rangs de Force ;
+// def : colonnes au test de Défense (once : seulement le prochain) ; prec/puis : bonus aux attaques,
+// scope : all (toutes les armes), contact (armes de contact), mains (Corps à corps, mains nues) ; note : rappel affiché
+const half = (n, up) => (up ? Math.ceil(n / 2) : Math.floor(n / 2));
+const POW_FX = {
+  'Armure corporelle': (n) => ({ prot: n + 1, vs: 'solides et énergie' }),
+  'Champ de force': (n) => ({ prot: n + 1, vs: 'solides' }),
+  'Rebond': (n) => ({ prot: n, vs: 'solides', note: 'blessé : 2 PP pour renvoyer le coup à l’agresseur' }),
+  'Couche de glace': (n) => ({ prot: n + 2, vs: 'solides et feu' }),
+  'Champ magnétique': (n) => ({ prot: n + 2, vs: 'métal et électricité' }),
+  'Graisse': (n) => ({ prot: n, vs: 'solides' }),
+  'Élastique': (n) => ({ prot: n + 1, vs: 'contondantes' }),
+  'Colère divine': (n) => ({ prot: n + 1, vs: 'solides et énergie', puis: n + 2, scope: 'contact' }),
+  'Tourbillon de feu': (n) => ({ prot: n + 3, vs: 'froid et glace', puis: n, scope: 'mains', note: 'qui le touche est brûlé' }),
+  'Champ électrique': (n) => ({ puis: n, scope: 'mains', note: 'qui le touche reçoit un choc électrique' }),
+  'Peau acide': (n) => ({ puis: n, scope: 'mains', note: 'qui le touche est brûlé par l’acide' }),
+  'Furie': (n) => ({ force: n + 1, def: -2 }),
+  'Fureur guerrière': (n) => ({ force: n + 1, def: -2, note: 'impossible d’arrêter tant qu’il reste des ennemis et des PP' }),
+  'Feu prométhéen': (n) => ({ puis: n + 2, scope: 'all' }),
+  'Arme exaltée': (n) => ({ prec: half(n), puis: half(n, true), scope: 'all' }),
+  'Supériorité martiale': (n) => ({ prec: half(n, true), scope: 'all', note: `ses adversaires : −${half(n)} col. pour l’attaquer` }),
+  'Juste-lame': (n) => ({ note: `+${n + 3} puissance contre les forces du mal (épées)` }),
+  'Esquive acrobatique': (n) => ({ def: 2 * n + 3, once: true, note: 'même contre une attaque normalement imparable' }),
+};
+const SCOPE_TXT = { all: 'toutes les armes', contact: 'armes de contact', mains: 'mains nues' };
+// Effets en cours du personnage : pouvoirs activés qui ont un effet connu
+function activeFx(c) {
+  return (c.effets || []).map((e) => {
+    const p = c.pouvoirs.find((x) => x.n === e.n); const f = POW_FX[e.n];
+    return p && f ? { n: e.n, ...f(R.lvlInt(p.r)) } : null;
+  }).filter(Boolean);
+}
+const fxForce = (c) => activeFx(c).reduce((t, f) => t + (f.force || 0), 0);
+const effFo = (c) => R.lvlInt(c.car.fo + fxForce(c)); // niveau de Force ajouté aux dégâts au contact
+function weaponFx(c, w) {
+  const ok = (sc) => sc === 'all' || (sc === 'contact' && w.melee) || (sc === 'mains' && w.talent === 'Corps à corps');
+  const list = activeFx(c).filter((f) => (f.prec || f.puis) && ok(f.scope));
+  const force = w.melee ? activeFx(c).filter((f) => f.force) : [];
+  return { prec: list.reduce((t, f) => t + (f.prec || 0), 0), puis: list.reduce((t, f) => t + (f.puis || 0), 0), list, force };
+}
+const defFx = (c) => activeFx(c).filter((f) => f.def).map((f) => ({ n: f.n, v: f.def, once: !!f.once }));
+const protFx = (c) => activeFx(c).filter((f) => f.prot);
+function fxText(f) {
+  return [f.prot ? `protection +${f.prot} (${f.vs})` : '', f.force ? `Force +${f.force} rang(s)` : '',
+    f.def ? `Défense ${sgn(f.def)} col.${f.once ? ' au prochain jet' : ''}` : '', f.prec ? `précision +${f.prec}` : '',
+    f.puis ? `puissance +${f.puis} (${SCOPE_TXT[f.scope]})` : '', f.note || ''].filter(Boolean).join(' · ');
+}
+// Une ligne « ✦ effet » dans une carte
+const fxLine = (items) => (items.length ? `<div class="fx-line">${items.map((x) => `<span>✦ ${x}</span>`).join('')}</div>` : '');
+// Pouvoirs utiles en combat : attaques physiques, attaques qui blessent, pouvoirs de protection ou de bonus au combat
+const COMBAT_POW = /^(armure corporelle|arme exaltée|art de combat|art de la parade|arts martiaux|augmentation d'agilité|augmentation de force|aura de courage|champ de force|champ électrique|champ magnétique|colère divine|conversion physique|couche de glace|cri de guerre|douleur|élastique|esquive acrobatique|éventration|feu prométhéen|forme de combat|frappe ultime|fureur guerrière|furie|graisse|guérison|juste-lame|maîtrise martiale|maladie|membre blindé|membre exotique|némésis|peau acide|poison|rebond|régénération|sacrifice ultime|supériorité martiale|tourbillon de feu|transfert de blessures|vitesse|volonté supra-normale)/i;
+function isCombatPower(name) {
+  if (COMBAT_POW.test(name)) return true;
+  const d = R.powerDef(name) || {}; const par = d.parent ? R.powerDef(d.parent) : null;
+  const q = d.q || par?.q || ''; const txt = d.s || par?.s || '';
+  return /attaque physique/i.test(q) || (/attaque/i.test(q) && /(dégât|dommage|bless|brûl|électrocut|frapp|\bPF\b)/i.test(txt));
+}
+// ================= Sac : armes, armures et boucliers, équipement, possessions =================
+function renderSac(c) {
+  c.sac ||= [];
+  const fo = R.lvlInt(c.car.fo);
+  const prot = c.armures.filter((x) => x.portee !== false && !/bouclier/i.test(x.n + x.q)).reduce((t, x) => t + (+x.p || 0), 0);
+  const weapons = c.armes.map((w, i) => `<div class="trow ${w.main === false ? 'stowed' : ''}">
+      <div class="tn"><b>${esc(w.n)}</b><br><small>${esc(w.talent)}${w.spe ? ' (' + esc(w.spe) + ')' : ''} ${L(weaponLevel(c, w))} · précision ${sgn(+w.prec || 0)} · puissance ${sgn(+w.puis || 0)}${w.melee ? ` + Force ${fo}` : ''}${w.q ? ' · ' + esc(w.q) : ''}</small></div>
+      <button class="btn sm ${w.main === false ? '' : 'dark'}" data-act="weapon-hand" data-i="${i}" title="Les armes en main apparaissent dans l'onglet Combat">${w.main === false ? 'Rangée' : 'En main'}</button>
+      <button class="ibtn" style="width:32px;height:32px" data-act="weapon-del" data-i="${i}" title="Retirer">${icon('trash')}</button>
+    </div>`).join('');
+  const armors = c.armures.map((x, i) => `<div class="trow ${x.portee === false ? 'stowed' : ''}"><div class="tn"><b>${esc(x.n)}</b><br><small>protection ${x.p}${x.q ? ' · ' + esc(x.q) : ''}${x.fmin ? ' · Force min. ' + esc(x.fmin) : ''}</small></div>
+      <button class="btn sm ${x.portee === false ? '' : 'dark'}" data-act="armor-toggle" data-i="${i}">${x.portee === false ? 'Rangée' : 'Portée'}</button>
+      <button class="ibtn" style="width:32px;height:32px" data-act="armor-del" data-i="${i}" title="Retirer">${icon('trash')}</button></div>`).join('');
+  const items = c.sac.map((it, i) => `<div class="trow sac-item">
+      <input class="inp" value="${esc(it.n)}" data-sac="${i}" aria-label="Objet">
+      <span class="stepper"><button data-act="sac-nb" data-i="${i}" data-v="-1">–</button><b>${it.nb ?? 1}</b><button data-act="sac-nb" data-i="${i}" data-v="1">+</button></span>
+      <button class="ibtn" style="width:32px;height:32px" data-act="sac-del" data-i="${i}" title="Retirer">${icon('trash')}</button></div>`).join('');
+  return `
+  <section class="card">
+    <h2>Armes <span class="tag">${c.armes.filter((w) => w.main !== false).length} en main</span></h2>
+    ${weapons || '<div class="empty">Aucune arme</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn" data-act="weapon-add">${icon('plus')} Arme</button></div>
+    <p class="small muted" style="margin-bottom:0">Les armes <b>en main</b> sont proposées dans l'onglet Combat pour attaquer ; les autres restent rangées ici.</p>
+  </section>
+  <section class="card">
+    <h2>Armures et boucliers <span class="tag">protection portée : ${prot}</span></h2>
+    ${armors || '<div class="empty">Aucune</div>'}
+    <div class="row" style="margin-top:8px"><button class="btn" data-act="armor-add">${icon('plus')} Armure ou bouclier</button></div>
+    <p class="small muted" style="margin-bottom:0">Les protections <b>portées</b> sont retirées des dégâts dans l'onglet Combat. Force minimale non atteinte : −2 colonnes à toutes les actions physiques.</p>
+  </section>
+  <section class="card">
+    <h2>Équipement</h2>
+    ${items || '<div class="empty">Sac vide</div>'}
+    <div class="row" style="margin-top:8px"><input class="inp" id="sac-new" placeholder="Téléphone, crucifix, lampe torche…" style="flex:1;min-width:160px"><button class="btn" data-act="sac-add">${icon('plus')} Ajouter</button></div>
+  </section>
+  <section class="card">
+    <h2>Possessions</h2>
+    <div class="grid" data-form="id">${F.area('possessions', 'Biens, planques, contacts, ressources', c.possessions)}</div>
   </section>`;
 }
 function weaponLevel(c, w) {
@@ -492,8 +622,9 @@ function renderCarnet(c) {
     <p class="small muted" style="margin-bottom:0">Avertissement dès que le total de PA tombe à –5 (retiré quand il remonte à 0) ; blâme infligé par le supérieur pour une grosse faute, jusqu'à ce que le personnage fasse amende honorable.</p>` : ''}
   </section>
   <section class="card">
-    <h2>Possessions et notes</h2>
-    <div class="grid" data-form="id">${F.area('possessions', 'Possessions, planques, contacts, ressources', c.possessions)}${F.area('notes', 'Notes', c.notes)}</div>
+    <h2>Notes</h2>
+    <div class="grid" data-form="id">${F.area('notes', 'Notes', c.notes)}</div>
+    <p class="small muted" style="margin-bottom:0">Possessions, armes, armures et équipement : onglet <b data-act="go-sac" style="cursor:pointer;text-decoration:underline">Sac</b>.</p>
   </section>`;
 }
 
@@ -591,13 +722,30 @@ function renderRegles() {
 
 // ================= Lanceur de dés =================
 let rollState = null;
+// Attaque et défense : test résisté (livre de règles p. 42) — ni jet opposé ni difficulté, seulement des colonnes
+const COMBAT_KINDS = ['attaque', 'defense'];
+// Situations d'attaque du livre (p. 42) : décalages de colonnes à cocher
+const SIT = {
+  charge: { n: 'Charge', v: -2 }, chargeA: { n: 'Charge (arme adaptée)', v: 2 },
+  mouv: { n: 'Tir en mouvement', v: -4 }, sansdef: { n: 'Adversaire sans défense', v: 4 },
+};
+// Situations possibles selon l'arme : charge au contact (+2 si « Adaptée à la charge »), tir en mouvement à distance
+function weaponSits(w) {
+  if (!w) return Object.keys(SIT);
+  if (!w.melee) return ['mouv', 'sansdef'];
+  const adapted = /adaptée à la charge/i.test(w.q || '') || /(^|\s)(lance|baïonnette|hallebarde|hast|pique)/i.test(w.n || '');
+  return [adapted ? 'chargeA' : 'charge', 'sansdef'];
+}
+const fxShift = (s) => (s.fx || []).reduce((t, f) => t + (f.v || 0), 0);
+const sitShift = (s) => (s.sit || []).reduce((t, k) => t + (SIT[k]?.v || 0), 0);
 const NOBODY = { type: 'humain', car: { fo: 4, ag: 4, pe: 4, vo: 4, pr: 4, foi: 4 }, blessures: [] }; // lancer sans personnage (écran MJ)
 function openRoll(opts) {
   const c = C();
   rollState = {
     label: opts.label, r: opts.r ?? 4, levels: opts.levels || null, shift: 0, diff: 'difficile', risk: 0, prec: opts.prec || 0,
     opp: false, oppR: 4, wound: opts.wound !== false, result: null, after: opts.after || null, free: !!opts.free, kind: opts.kind || 'test',
-    char: opts.char || null,
+    char: opts.char || null, sit: [], sits: opts.sits || Object.keys(SIT),
+    fx: opts.fx || [], // effets de pouvoirs appliqués d'office (v : colonnes ; la précision est déjà dans prec)
   };
   if (rollState.levels) rollState.r = rollState.levels[rollState.levels.length - 1][1];
   showRoll();
@@ -606,7 +754,7 @@ function showRoll() {
   const s = rollState; const c = s.char || C() || NOBODY;
   const malus = s.wound ? R.woundMalus(c) : 0;
   const diff = R.DIFFICULTES.find((d) => d.k === s.diff);
-  const totalShift = (diff.s || 0) + s.shift + s.prec + malus;
+  const totalShift = (diff.s || 0) + s.shift + s.prec + malus + sitShift(s) + fxShift(s);
   let seuilInfo;
   if (s.opp) seuilInfo = R.seuilOppose(s.r + s.shift + s.prec + malus - s.oppR, s.risk);
   else if (s.diff === 'triviale') seuilInfo = 66;
@@ -635,20 +783,24 @@ function showRoll() {
     <div class="rt-bar">${R.DIFFICULTES.map((d, i) => `<i class="${i <= di ? 'on' : ''}" data-ract="diff" data-v="${d.k}" title="${esc(d.n)}"></i>`).join('')}</div>`;
   // Ajustements (repliés) : modificateur, prise de risque, malus de blessure ; résumé quand quelque chose est réglé
   const wm = R.woundMalus(c);
+  const combat = COMBAT_KINDS.includes(s.kind);
   const adjSum = [s.shift ? `Mod ${sgn(s.shift)}` : '', s.risk ? `Risque ${s.risk}` : '', s.prec ? `Précision ${sgn(s.prec)}` : '', wm && s.wound ? `Blessures ${wm}` : ''].filter(Boolean).join(' · ') || 'aucun';
   const toggle = (act, on) => `<button class="rt-sw ${on ? 'on' : ''}" data-ract="${act}" role="switch" aria-checked="${on}"><span></span></button>`;
   const stepper = (act, val) => `<span class="stepper"><button data-ract="${act}" data-v="-1">–</button><b>${val}</b><button data-ract="${act}" data-v="1">+</button></span>`;
   // Seuil de base : niveau et difficulté seuls (sans modificateur, prise de risque ni blessure)
-  const base = s.opp ? R.seuilOppose(s.r - s.oppR) : s.diff === 'triviale' ? 66 : s.diff === 'impossible' ? null : R.seuilStandard(s.r, diff.s || 0).seuil;
+  const base = combat ? R.seuilStandard(s.r, 0).seuil : s.opp ? R.seuilOppose(s.r - s.oppR) : s.diff === 'triviale' ? 66 : s.diff === 'impossible' ? null : R.seuilStandard(s.r, diff.s || 0).seuil;
   dlg.innerHTML = `<div class="dlg-h"><h2>${esc(s.label)}</h2><button class="ibtn" data-ract="close">${icon('x')}</button></div>
   <div class="dlg-b rt">
     ${lvlSel}
     <div class="rt-row"><span>Niveau</span>${s.free ? stepper('r', L(s.r)) : `<b class="rt-lvl">${L(s.r)}</b>`}</div>
-    <div class="rt-row"><span>Jet opposé</span>${toggle('opp', s.opp)}</div>
-    ${s.opp ? `<div class="rt-row"><span>Niveau adverse</span>${stepper('oppR', L(s.oppR))}</div>` : `<div class="rt-lab">Difficulté</div>${diffCtl}`}
+    ${combat ? `<div class="small muted">${s.kind === 'attaque' ? 'Test résisté : le défenseur fait ensuite son jet de Défense, sa MR est retranchée.' : 'Test résisté : ta MR de Défense est retranchée à celle de l’attaquant.'}</div>`
+      : `<div class="rt-row"><span>Jet opposé</span>${toggle('opp', s.opp)}</div>
+    ${s.opp ? `<div class="rt-row"><span>Niveau adverse</span>${stepper('oppR', L(s.oppR))}</div>` : `<div class="rt-lab">Difficulté</div>${diffCtl}`}`}
+    ${s.fx.length ? `<div class="rt-lab">Pouvoirs actifs</div>${fxLine(s.fx.map((f) => `${esc(f.n)} : ${esc(f.txt || sgn(f.v))}`))}` : ''}
+    ${s.kind === 'attaque' ? `<div class="rt-lab">Situation</div><div class="rt-chips">${Object.entries(SIT).filter(([k]) => s.sits.includes(k)).map(([k, x]) => `<button class="${s.sit.includes(k) ? 'on' : ''}" data-ract="sit" data-v="${k}">${esc(x.n)} <b>${sgn(x.v)}</b></button>`).join('')}</div>` : ''}
     <button class="rt-row rt-adj" data-ract="adj"><span>Ajustements</span><span class="muted">${esc(adjSum)} <i class="rt-chev ${s.adjOpen ? 'open' : ''}">⌄</i></span></button>
     ${s.adjOpen ? `<div class="rt-adjb">
-      <div class="rt-row"><span>Modificateur <small class="muted">colonnes</small></span>${stepper('shift', sgn(s.shift))}</div>
+      <div class="rt-row"><span>${combat ? 'Bonus de manœuvre' : 'Modificateur'} <small class="muted">${combat ? 'jusqu’à +3 sans justifier' : 'colonnes'}</small></span>${stepper('shift', sgn(s.shift))}</div>
       <div class="rt-row"><span>Prise de risque <small class="muted">max ${R.lvlInt(s.r)}</small></span>${stepper('risk', s.risk)}</div>
       ${wm ? `<div class="rt-row"><span>Malus des blessures <small class="muted">${wm}</small></span>${toggle('wound', s.wound)}</div>` : ''}
       ${s.prec ? `<div class="small muted">Précision de l'arme : ${sgn(s.prec)} colonne(s), toujours appliquée</div>` : ''}
@@ -657,7 +809,7 @@ function showRoll() {
   </div>
   <div class="dlg-f rt-foot">
     <div class="rt-seuil"><small>Seuil</small><b>${seuilInfo ?? '×'}</b></div>
-    <span class="rt-detail">Base ${base ?? '×'} · Mod ${sgn(s.shift + s.prec + (s.wound ? wm : 0))} · Risque ${s.risk}</span>
+    <span class="rt-detail">Base ${base ?? '×'} · Mod ${sgn(s.shift + s.prec + sitShift(s) + fxShift(s) + (s.wound ? wm : 0))} · Risque ${s.risk}</span>
     ${slot.slotOn() ? '' : `<button class="btn pri" data-ract="go">${icon('die')} Lancer d66+6</button>`}
   </div>`;
   if (!dlg.open) dlg.showModal();
@@ -666,13 +818,14 @@ function doRoll() {
   const s = rollState; const c = s.char || C() || NOBODY;
   const malus = s.wound ? R.woundMalus(c) : 0;
   const diff = R.DIFFICULTES.find((d) => d.k === s.diff);
-  const totalShift = (diff.s || 0) + s.shift + s.prec + malus;
+  const totalShift = (diff.s || 0) + s.shift + s.prec + malus + sitShift(s) + fxShift(s);
   let seuil, eff;
   if (s.opp) { seuil = R.seuilOppose(s.r + s.shift + s.prec + malus - s.oppR, s.risk); eff = s.r + s.shift + s.prec + malus; }
   else if (s.diff === 'triviale') { seuil = 66; eff = s.r; }
   else if (s.diff === 'impossible') { seuil = null; eff = s.r; }
   else { const x = R.seuilStandard(s.r, totalShift, s.risk); seuil = x.seuil; eff = x.eff; }
   s.result = R.resolve(R.rollD666(), { seuil, mrLevel: R.lvlInt(eff), risk: s.risk, foi: c.car.foi, camp: R.typeOf(c).camp });
+  if (s.fx.some((f) => f.once) && !s.char && C()) { const ch = C(); ch.effets = (ch.effets || []).filter((e) => !s.fx.some((f) => f.once && f.n === e.n)); commit(); } // la page derrière la fenêtre de jet se met à jour
   if (!slot.slotOn()) { showRoll(); return slot.celebrate(null, slot.outcome(s.result, R.typeOf(c).camp)); }
   // Bandit manchot : les rouleaux tournent, puis le verdict s'affiche
   // La machine (puis le verdict) reste visible même quand la fenêtre défile (petit écran, ajustements ouverts)
@@ -927,8 +1080,11 @@ function armorDialog() {
 
 function hitDialog() {
   const c = C(); const a = R.annexes(c);
-  const prot = c.armures.filter((x) => x.portee !== false && !/bouclier/i.test(x.n + x.q)).reduce((s, x) => s + (+x.p || 0), 0);
+  const armor = c.armures.filter((x) => x.portee !== false && !/bouclier/i.test(x.n + x.q)).reduce((s, x) => s + (+x.p || 0), 0);
+  const pfx = protFx(c); // pouvoirs de protection actifs : cochés d'office contre les attaques solides
+  const prot = armor + pfx.filter((f) => /solides/.test(f.vs)).reduce((s, f) => s + f.prot, 0);
   dialog('Encaisser un coup', `<div class="grid g2">${F.num('dmg', 'Niveau de dommage reçu', '')}${F.num('prot', 'Protection à retirer', prot)}${F.text('note', 'Localisation, arme…', '', 'full')}</div>
+    ${pfx.length ? `<div class="fx-chk"><div class="small muted">Armure portée : ${armor}. Pouvoirs actifs (décoche ceux qui ne protègent pas contre ce coup) :</div>${pfx.map((f, i) => `<label class="chk"><input type="checkbox" data-fxp="${i}" ${/solides/.test(f.vs) ? 'checked' : ''}> ${esc(f.n)} +${f.prot} <span class="muted">(${esc(f.vs)})</span></label>`).join('')}</div>` : ''}
     <div id="hit-res" class="verdict" style="margin-top:10px"></div><p class="small muted">Seuils : BL ${a.bl}, BG ${a.bg}, BF ${a.bf}, MS ${a.ms}. Couverture partielle : armure ignorée sur un double ou un triple ; importante : sur un triple.</p>`,
   `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="hit-ok">Appliquer</button>`);
   const calc = () => {
@@ -938,6 +1094,10 @@ function hitDialog() {
     return g;
   };
   dlg.querySelectorAll('input').forEach((x) => { x.oninput = calc; });
+  dlg.querySelectorAll('[data-fxp]').forEach((x) => { x.onchange = () => {
+    dlg.querySelector('[name=prot]').value = armor + [...dlg.querySelectorAll('[data-fxp]:checked')].reduce((t, y) => t + pfx[+y.dataset.fxp].prot, 0);
+    calc();
+  }; });
   dlg.querySelector('#hit-ok').onclick = () => {
     const g = calc();
     if (g) addWound(g, dlg.querySelector('[name=note]').value);
@@ -1301,7 +1461,7 @@ function printSheet() {
   <p><b>Langues</b> : ${esc(c.langues.join(', ') || '—')}</p>
   <p><b>Pouvoirs</b> : ${esc(c.pouvoirs.map((p) => p.n + (p.r ? ' ' + L(p.r) : '')).join(', '))}</p>
   <p><b>Armes</b> : ${esc(c.armes.map((x) => `${x.n} (préc. ${sgn(x.prec)}, puiss. ${sgn(x.puis)})`).join(', ') || '—')}</p>
-  <p><b>Possessions</b> : ${esc(c.possessions)}</p><p><b>Notes</b> : ${esc(c.notes)}</p>
+  ${(c.sac || []).length ? `<p><b>Équipement</b> : ${esc(c.sac.map((x) => (x.nb ?? 1) > 1 ? `${x.n} ×${x.nb}` : x.n).join(', '))}</p>` : ''}<p><b>Possessions</b> : ${esc(c.possessions)}</p><p><b>Notes</b> : ${esc(c.notes)}</p>
   <script>print()<\/script></body></html>`);
   w.document.close();
 }
@@ -2198,7 +2358,7 @@ function lvHit(s, sc, u, n) {
 }
 function npcAttack(u, n, w) {
   const fo = R.lvlInt(n.car.fo);
-  return openRoll({ label: `${u.label} — ${w.n}`, r: w.att, prec: +w.prec || 0, char: npcChar(n, u.bl), after: (res) => {
+  return openRoll({ label: `${u.label} — ${w.n}`, r: w.att, prec: +w.prec || 0, char: npcChar(n, u.bl), kind: 'attaque', sits: weaponSits(w), after: (res) => {
     const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
     return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense du PJ, puis sa protection.`;
   } });
@@ -2395,7 +2555,7 @@ async function scenAction(act, b) {
     case 'lv-attack': return npcAttack(u, un, un.armes[i]);
     case 'lv-roll': {
       const k = b.dataset.k;
-      if (k === 'def') return openRoll({ label: `${u.label} — Défense`, r: un.def, char: c, after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
+      if (k === 'def') return openRoll({ label: `${u.label} — Défense`, r: un.def, char: c, kind: 'defense', after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
       return openRoll({ label: `${u.label} — ${R.caracName(c, b.dataset.key)}`, r: un.car[b.dataset.key], char: c });
     }
     case 'lv-pow': {
@@ -2412,10 +2572,11 @@ async function scenAction(act, b) {
 
 function mjCharById(id) { return table.characters().find((x) => x.id === id); }
 function attackRoll(c, w, char) {
-  const fo = R.lvlInt(c.car.fo);
-  return openRoll({ label: 'Attaque : ' + w.n, r: weaponLevel(c, w), prec: +w.prec || 0, char, after: (res) => {
-    const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
-    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense adverse${/multiple/i.test(w.q || '') ? ' ; arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)' : ''}.`;
+  const fo = effFo(c); const wf = weaponFx(c, w); const puis = (+w.puis || 0) + wf.puis;
+  return openRoll({ label: 'Attaque : ' + w.n, r: weaponLevel(c, w), prec: (+w.prec || 0) + wf.prec, char, kind: 'attaque', sits: weaponSits(w),
+    fx: [...wf.list, ...wf.force].map((f) => ({ n: f.n, txt: [f.prec ? `précision +${f.prec}` : '', f.puis ? `puissance +${f.puis}` : '', f.force ? `Force +${f.force} rang(s)` : ''].filter(Boolean).join(', ') })), after: (res) => {
+    const dmg = res.mr + puis + (w.melee ? fo : 0);
+    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(puis)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense adverse${/multiple/i.test(w.q || '') ? ' ; arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)' : ''}.`;
   } });
 }
 async function mjAction(act, b) {
@@ -2476,7 +2637,7 @@ async function mjAction(act, b) {
         if (k === 'pow') { const p = c.pouvoirs[+key]; return openRoll({ label: `${c.nom} — ${p.n}`, r: p.r, char: c }); }
         const T = c.tal[key];
         const levels = T?.spe ? [['Général', R.talentLevel(c, key)], [T.spe, R.talentSpe(c, key)]] : null;
-        return openRoll({ label: `${c.nom} — ${key}`, r: R.talentLevel(c, key), levels, char: c });
+        return openRoll({ label: `${c.nom} — ${key}`, r: R.talentLevel(c, key), levels, char: c, kind: key === 'Défense' ? 'defense' : undefined });
       }
       case 'mj-attack': { const x = mjCharById(b.dataset.id); if (x) return attackRoll(x.c, x.c.armes[+key], x.c); return; }
       case 'mj-kick': {
@@ -2540,7 +2701,7 @@ document.addEventListener('click', async (e) => {
     case 'roll-tal': {
       const t = c.tal[key];
       const levels = t?.spe ? [['Général', R.talentLevel(c, key)], [t.spe, R.talentSpe(c, key)]] : null;
-      return openRoll({ label: key, r: R.talentLevel(c, key), levels });
+      return openRoll({ label: key, r: R.talentLevel(c, key), levels, kind: key === 'Défense' ? 'defense' : undefined });
     }
     case 'roll-multi': { const m = c.multi[i]; return openRoll({ label: `${m.t} (${m.label})`, r: 2 + m.r }); }
     case 'spe': {
@@ -2598,20 +2759,31 @@ document.addEventListener('click', async (e) => {
       return showRoll();
     }
     case 'attack': return attackRoll(c, c.armes[i]);
-    case 'defense': return openRoll({ label: 'Défense', r: R.talentLevel(c, 'Défense'), after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
+    case 'defense': return openRoll({ label: 'Défense', r: R.talentLevel(c, 'Défense'), kind: 'defense', fx: defFx(c).map((f) => ({ ...f, txt: `Défense ${sgn(f.v)}${f.once ? ' (ce jet)' : ''}` })), after: (res) => `MR de défense <b>${res.mr}</b> à retrancher à celle de l'attaquant.` });
     case 'weapon-add': return weaponDialog();
     case 'weapon-del': c.armes.splice(i, 1); return commit();
     case 'armor-add': return armorDialog();
     case 'armor-del': c.armures.splice(i, 1); return commit();
     case 'armor-toggle': c.armures[i].portee = c.armures[i].portee === false; return commit();
+    case 'fx-off': c.effets = (c.effets || []).filter((e) => e.n !== key); return commit();
+    case 'weapon-hand': c.armes[i].main = c.armes[i].main === false; return commit();
+    case 'go-sac': ui.tab = 'sac'; localStorage.setItem('insmv.tab', 'sac'); render(); return window.scrollTo(0, 0);
+    case 'sac-add': {
+      const n = document.getElementById('sac-new')?.value.trim(); if (!n) return toast('Nom de l’objet ?');
+      (c.sac ||= []).push({ n, nb: 1 }); return commit();
+    }
+    case 'sac-del': c.sac.splice(i, 1); return commit();
+    case 'sac-nb': { const it = c.sac[i]; it.nb = Math.max(0, (it.nb ?? 1) + +b.dataset.v); return commit(); }
     // ---- pouvoirs ----
     case 'pow-add': return addPowerDialog();
     case 'pow-del': if (await confirmDlg('Retirer', `Retirer ${esc(c.pouvoirs[i].n)} ?`)) { c.pouvoirs.splice(i, 1); commit(); } return;
     case 'pow-use': {
       const p = c.pouvoirs[i]; const d = R.powerDef(p.n) || R.powerDef(R.powerDef(p.n)?.parent); const cost = ppCostOf(d?.act);
       if ((c.ppCur ?? R.ppMax(c)) < cost) return toast('Pas assez de PP');
-      c.ppCur = (c.ppCur ?? R.ppMax(c)) - cost; commit(false);
-      toast(`${p.n} : –${cost} PP (reste ${c.ppCur})`);
+      c.ppCur = (c.ppCur ?? R.ppMax(c)) - cost;
+      if (POW_FX[p.n]) { c.effets = (c.effets || []).filter((e) => e.n !== p.n); c.effets.push({ n: p.n, at: Date.now() }); }
+      commit(); // jauge de PP et effets à jour avant d'ouvrir le test
+      toast(`${p.n} : –${cost} PP (reste ${c.ppCur})${POW_FX[p.n] ? ' · effet actif' : ''}`);
       if (p.r && /attaque|test/.test((d?.q || '') + (d?.d || ''))) {
         const psiT = c.type === 'psi' ? Object.entries(R.PSI_POUVOIRS).find(([, l]) => l.includes(p.n))?.[0] : null;
         if (psiT) return openRoll({ label: `${psiT} (activation de ${p.n})`, r: R.talentLevel(c, psiT) });
@@ -2675,6 +2847,12 @@ function handleDlgClick(e) {
       case 'r': s.r = Math.max(0, s.r + v); break;
       case 'lvl': s.r = v; break;
       case 'diff': s.diff = r.dataset.v; s.opp = false; break;
+      case 'sit': {
+        const k = r.dataset.v; const on = s.sit.includes(k);
+        s.sit = s.sit.filter((x) => x !== k && !(k.startsWith('charge') && x.startsWith('charge'))); // une seule sorte de charge
+        if (!on) s.sit.push(k);
+        break;
+      }
       case 'dstep': { const i = R.DIFFICULTES.findIndex((d) => d.k === s.diff) + v; if (R.DIFFICULTES[i]) s.diff = R.DIFFICULTES[i].k; break; }
       case 'adj': s.adjOpen = !s.adjOpen; return showRoll(); // n'efface pas le résultat affiché
       case 'opp': s.opp = !s.opp; break;
@@ -2727,6 +2905,7 @@ document.addEventListener('change', (e) => {
   if (el.dataset.aleaMod) { (ui.aleaMod ||= {})[el.dataset.aleaMod] = el.value; return; }
   if (el.dataset.lvname) { const s = scen.get(ui.scenId); const sc = curScene(s, el.dataset.lvname); if (sc) { sc.nom = el.value.trim() || sc.nom; scen.save(s); } return; }
   if (el.closest('[data-scform]')) return scenChange(el);
+  if (el.dataset.sac != null) { const c = C(); const it = c?.sac?.[+el.dataset.sac]; if (it) { it.n = el.value.trim() || it.n; commit(false); } return; }
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;
   if (el.name.startsWith('identite.')) c.identite[el.name.slice(9)] = v;

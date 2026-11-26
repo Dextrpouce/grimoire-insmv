@@ -429,3 +429,24 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 .rt-seuil b { font-family: var(--font-title); font-size: 40px; }
 .rt-detail { flex: 1; font-size: 13px; color: var(--on-dark-soft); align-self: flex-end; padding-bottom: 7px; }
 .rt-foot .btn { padding-left: 18px; padding-right: 18px; min-height: 48px; }
+.rt-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; }
+.rt-chips button { border: 1px solid #3a3a44; background: var(--bg3); color: var(--on-dark); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
+.rt-chips button b { font-family: var(--font-title); margin-left: 2px; }
+.rt-chips button.on { background: var(--accent); border-color: var(--accent); }
+
+/* Onglet Sac */
+.trow.stowed .tn { opacity: .55; }
+.sac-item { gap: 8px; }
+.sac-item .inp { flex: 1; min-width: 0; }
+.sac-item .stepper button { width: 30px; height: 30px; }
+
+/* Effets actifs des pouvoirs (onglet Combat, écran de jet) */
+.fx-line { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; font-size: 12.5px; color: #6b3fa0; }
+.dlg-b .fx-line { color: #c9a8f0; }
+.fx-line span { white-space: normal; }
+.fx-box { margin: 4px 0 10px; padding: 6px 10px; border-radius: 10px; background: #efe7f8; border: 1px solid #d9c6ef; }
+.fx-row { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+.fx-row + .fx-row { border-top: 1px dashed #d9c6ef; }
+.fx-row .tn { flex: 1; min-width: 0; }
+.fx-row .tn b { color: #5a2d8c; }
+.fx-chk { margin-top: 8px; padding: 6px 10px; border-radius: 10px; background: var(--bg2); border: 1px solid #2b2b33; }
