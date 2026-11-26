@@ -39,8 +39,91 @@ const ICONS = {
   cloud: '<path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 9.5 4.3 4.3 0 0 0 7 18z"/>',
   heart: '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>',
   bag: '<path d="M6 8h12l1 12H5z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/><path d="M9 12h6"/>',
+  shield: '<path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/>',
+  bolt: '<path d="M13 3L5 14h6l-1 7 8-11h-6z"/>',
+  refresh: '<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8"/><path d="M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.5 4.5L20 16"/><path d="M20 20v-4h-4"/>',
+  stop: '<rect x="6" y="6" width="12" height="12" rx="2"/>',
+  hand: '<path d="M8 13V6.5a1.5 1.5 0 0 1 3 0V11"/><path d="M11 11V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M14 11V6a1.5 1.5 0 0 1 3 0v7a6 6 0 0 1-6 6h-1a5 5 0 0 1-4.3-2.5L4 12.5a1.5 1.5 0 0 1 2.6-1.5L8 13"/>',
+  box: '<path d="M4 7h16v4H4z"/><path d="M6 11v8h12v-8"/><path d="M10 14h4"/>',
+  eye: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+  download: '<path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/>',
+  upload: '<path d="M12 20V9"/><path d="M7 14l5-5 5 5"/><path d="M5 4h14"/>',
+  copy: '<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/>',
+  back: '<path d="M15 6l-6 6 6 6"/>',
+  next: '<path d="M5 6l6 6-6 6"/><path d="M12 6l6 6-6 6"/>',
+  play: '<path d="M7 5l12 7-12 7z"/>',
+  flag: '<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>',
+  crown: '<path d="M3 8l4 4 5-7 5 7 4-4-2 11H5z"/>',
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+  list: '<path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/>',
+  send: '<path d="M4 12l16-8-6 16-3-7z"/><path d="M11 13l9-9"/>',
+  logout: '<path d="M15 4h4v16h-4"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h10"/>',
+  save: '<path d="M5 4h11l3 3v13H5z"/><path d="M8 4v5h7V4"/><rect x="8" y="13" width="8" height="5"/>',
+  print: '<path d="M7 9V4h10v5"/><rect x="4" y="9" width="16" height="7" rx="1"/><path d="M7 14h10v6H7z"/>',
+  sound: '<path d="M4 10v4h4l5 4V6l-5 4z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a7.5 7.5 0 0 1 0 11"/>',
+  medic: '<path d="M10 4h4v6h6v4h-6v6h-4v-6H4v-4h6z"/>',
+  up: '<path d="M12 19V5"/><path d="M6 11l6-6 6 6"/>',
+  skull: '<path d="M12 3a7 7 0 0 0-7 7v3l2 2v3h10v-3l2-2v-3a7 7 0 0 0-7-7z"/><circle cx="9" cy="11" r="1.4"/><circle cx="15" cy="11" r="1.4"/><path d="M10 18v2M14 18v2"/>',
+  gift: '<rect x="4" y="9" width="16" height="11" rx="1"/><path d="M12 9v11M4 13h16"/><path d="M12 9c-2-4-6-3-5 0M12 9c2-4 6-3 5 0"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  camera: '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+  image: '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/>',
+  warn: '<path d="M12 3l10 18H2z"/><path d="M12 10v5"/><circle cx="12" cy="18" r=".6"/>',
 };
 const icon = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
+// ---- Icônes des boutons : posées d'office sur chaque bouton qui n'en a pas (aide l'œil à trouver le bon bouton) ----
+// Clé : data-act / data-ract / data-dact / id du bouton ; sinon d'après son texte. Une fonction choisit selon l'état.
+const BTN_ICON = {
+  // fiche, combat, sac, pouvoirs, carnet
+  attack: 'sword', defense: 'shield', hit: 'heart', 'wound-add': 'plus', 'wound-close': 'check', 'close-med': 'medic', 'close-pp': 'bolt',
+  'pf-full': 'heart', 'pp-full': 'refresh', 'pp-1': 'clock', 'pp-to-pf': 'heart', 'pow-use': 'bolt', 'pow-roll': 'die', 'pow-add': 'plus',
+  'fx-off': 'stop', 'go-sac': 'bag', 'weapon-add': 'plus', 'armor-add': 'plus', 'sac-add': 'plus', toggle: 'eye',
+  'weapon-hand': (b) => (/main/i.test(b.textContent) ? 'hand' : 'box'), 'armor-toggle': (b) => (/port/i.test(b.textContent) ? 'shield' : 'box'),
+  'add-multi': 'plus', 'add-lang': 'plus', 'add-exo': 'plus', 'lim-add': 'plus', 'pa-gain': 'star', 'crea-done': 'check', 'crea-cancel': 'x',
+  'hier-rules': 'book', 'hier-reward': 'gift', 'hier-invoke': 'wing', 'hier-blame': 'warn', 'hier-avert': 'warn', help: 'help',
+  'table-share': 'send', 'table-push': 'send', 'table-stop': 'x', sync: 'cloud', new: 'plus', import: 'upload', go: 'die',
+  // maître de jeu
+  'mj-enter': 'crown', 'mj-create': 'plus', 'mj-add': 'plus', 'mj-copy': 'copy', 'mj-close': 'refresh', 'mj-retry': 'refresh', 'mj-kick': 'x',
+  'mj-cloud': 'cloud', 'mj-char': 'eye', 'mj-roll': 'die', 'mj-attack': 'sword', 'mj-alea-roll': 'die', 'mj-alea-note': 'edit',
+  'mj-cb-impro': 'plus', 'mj-cb-open': 'play', 'mj-sec': 'book',
+  'lv-init': 'die', 'lv-iadd': 'plus', 'lv-inext': 'next', 'lv-attack': 'sword', 'lv-hit': 'heart', 'lv-wclose': 'check', 'lv-out': 'skull',
+  'lv-end': 'flag', 'lv-back': 'back', 'lv-add': 'plus',
+  'sc-back': 'back', 'sc-create': 'plus', 'sc-library': 'book', 'sc-import': 'upload', 'sc-export': 'download', 'sc-dup': 'copy', 'sc-del': 'trash',
+  'sc-live': 'sword', 'sc-scene-add': 'plus', 'sc-scene-del': 'trash', 'sc-scene-up': 'up', 'sc-npc-add': 'plus', 'sc-npc-del': 'trash',
+  'sc-npc-dup': 'copy', 'sc-npc-done': 'back', 'sc-npc-best': 'book', 'sc-npc-tobest': 'book', 'sc-npc-import': 'user',
+  'sc-w-add': 'plus', 'sc-w-free': 'plus', 'sc-w-del': 'trash', 'sc-p-add': 'plus', 'sc-p-del': 'trash',
+  'sc-type-new': 'plus', 'sc-type-quick': 'bolt', 'sc-type-book': 'book', 'sc-type-char': 'user', 'sc-type-import': 'upload',
+  'sc-type-export': 'download', 'sc-type-dup': 'copy', 'sc-type-del': 'trash',
+  'sc-memo-new': 'edit', 'sc-memo-edit': 'edit', 'sc-memo-done': 'check', 'sc-memo-all': 'list', 'sc-memo-import': 'upload', 'sc-memo-export': 'download',
+  'sc-ch-add': 'plus', 'sc-ch-edit': 'edit', 'sc-ch-del': 'trash', 'sc-ch-undo': 'undo',
+  // menus et fenêtres
+  'portrait-pick': (b) => (b.dataset.cam ? 'camera' : 'image'), 'portrait-change': 'image', 'portrait-del': 'trash',
+  close: 'x', export1: 'download', exportAll: 'download', print: 'print', recrea: 'edit', mj: 'crown', cloud: 'cloud', slot: 'die',
+  sound: 'sound', delete: 'trash', mjhome: 'crown', mjquit: 'logout', logout: 'logout', cfgsave: 'save',
+};
+const BTN_TXT = [[/^(annuler|non|fermer)\b/i, 'x'], [/^(oui|ok|valider|appliquer|enregistrer|terminer|confirmer|entrer)\b/i, 'check'],
+  [/^(créer|ajouter|nouveau|nouvelle)\b/i, 'plus'], [/^(lancer|tirer|relancer)\b/i, 'die'], [/(supprim|retirer|effacer|oublier)/i, 'trash'],
+  [/export/i, 'download'], [/import/i, 'upload'], [/copier/i, 'copy'], [/(connexion|se connecter|compte)/i, 'user'], [/(noter|modifier)/i, 'edit']];
+// Boutons concernés : les .btn, et les grands boutons de menu (.choice) qui ont une action
+const NO_ICON = '.seg, .stepper, .pill, .cell, .rt-car, .rt-chips, nav.tabs';
+function decorateButtons(root = document) {
+  root.querySelectorAll('button.btn, button.choice[data-dact]').forEach((b) => {
+    if (b.dataset.ico || b.querySelector('svg, .crest') || b.closest(NO_ICON)) return;
+    if (/^\p{Extended_Pictographic}/u.test(b.textContent.trim())) return; // déjà un pictogramme dans le texte (👑 Maître de jeu…)
+    b.dataset.ico = '1';
+    const k = b.dataset.act || b.dataset.ract || b.dataset.dact || b.id;
+    let n = BTN_ICON[k];
+    if (typeof n === 'function') n = n(b);
+    if (!n) n = BTN_TXT.find(([re]) => re.test(b.textContent.trim()))?.[1];
+    if (n && ICONS[n]) b.insertAdjacentHTML('afterbegin', icon(n));
+  });
+}
+let decoQueued = false;
+new MutationObserver(() => {
+  if (decoQueued) return;
+  decoQueued = true;
+  requestAnimationFrame(() => { decoQueued = false; decorateButtons(); });
+}).observe(document.body, { childList: true, subtree: true });
 let toastTimer;
 function toast(msg) {
   const t = document.getElementById('toast');
@@ -77,7 +160,7 @@ const ui = {
   scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
   live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
 };
-const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['sac', 'Sac', 'bag'], ['pouvoirs', 'Pouvoirs', 'wing'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
+const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['sac', 'Sac', 'bag'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
 const MODES = {
   normal: { label: 'Jeu', icon: 'die', desc: 'Pour jouer : tout est verrouillé, toucher une valeur lance un test.' },
   prog: { label: 'PA', icon: 'star', desc: 'Dépenser les points d\'administration (PA) gagnés : caractéristique 2 PA/rang, talent 1 PA (principal + 1 secondaire offert), pouvoir selon son coût, PP 1 PA.' },
@@ -101,6 +184,7 @@ function render() {
   $app.innerHTML = `
   <header class="top">
     <button class="ibtn" data-act="chars" title="Personnages">${icon('folder')}</button>
+    ${miniOf(c) ? `<button class="avatar" data-act="chars" style="background-image:url('${miniOf(c)}')" aria-label="Personnages et tables"></button>` : ''}
     <div class="who click" data-act="chars" title="Personnages et tables"><h1>${esc(c.nom || 'Sans nom')} <span class="caret">▾</span></h1><div class="sub">${esc(sub)}${c.table ? ` · <span class="tbl">${esc(c.tableName || c.table)}</span>` : ''}</div></div>
     ${store.configured ? `<button class="ibtn" data-act="sync" title="${esc(store.status.message)}"><span class="sync ${st}"></span></button>` : ''}
     <button class="ibtn" data-act="help" data-v="joueur" title="Manuel du joueur">${icon('help')}</button>
@@ -562,6 +646,68 @@ function hierRulesDialog(c) {
     <h3>Blâmes</h3><p>${esc(H.blames.principe)}</p>
     <p class="muted">${esc(H.pages || '')}</p></div>`);
 }
+// ---- Portrait du personnage (comme la fiche Dragonbane) ----
+// Image réduite en JPEG et gardée dans la fiche : elle suit la sauvegarde en ligne et l'export.
+// portrait : 600 × 800 au plus (~200 Ko) ; portraitMini : vignette (~15 Ko) pour la bannière, le sélecteur et la table du MJ
+function readPortrait(file, maxW = 600, maxH = 800, maxLen = 270000) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const k = Math.min(1, maxW / img.width, maxH / img.height);
+      const cv = document.createElement('canvas');
+      cv.width = Math.round(img.width * k); cv.height = Math.round(img.height * k);
+      const g = cv.getContext('2d');
+      g.fillStyle = '#1d1d23'; g.fillRect(0, 0, cv.width, cv.height); // fond des images transparentes
+      g.drawImage(img, 0, 0, cv.width, cv.height);
+      let q = 0.85; let data = cv.toDataURL('image/jpeg', q);
+      while (data.length > maxLen && q > 0.45) { q -= 0.1; data = cv.toDataURL('image/jpeg', q); }
+      resolve(data);
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Image illisible')); };
+    img.src = url;
+  });
+}
+// Téléphone ou tablette : on propose aussi l'appareil photo
+const canCamera = () => matchMedia('(pointer: coarse)').matches;
+function chooseImage(camera, onFile) {
+  const inp = document.createElement('input');
+  inp.type = 'file'; inp.accept = 'image/*';
+  if (camera) inp.setAttribute('capture', 'user');
+  inp.onchange = () => { const f = inp.files[0]; if (f) onFile(f); };
+  inp.click();
+}
+function pickPortrait(camera = false) {
+  const c = C(); if (!c) return;
+  chooseImage(camera, async (f) => {
+    try {
+      c.portrait = await readPortrait(f);
+      c.portraitMini = await readPortrait(f, 160, 200, 20000);
+      commit(); toast('Portrait ajouté');
+    } catch (e) { toast(e.message || 'Image illisible'); }
+  });
+}
+const miniOf = (c) => c?.portraitMini || c?.portrait || '';
+// Pastille ronde : portrait, sinon l'initiale
+const crest = (c, cls = '') => (miniOf(c) ? `<span class="crest photo ${cls}" style="background-image:url('${miniOf(c)}')"></span>`
+  : `<span class="crest ${cls}">${esc((c?.nom || '?').trim().charAt(0).toUpperCase())}</span>`);
+// Colonne portrait de la carte Identité : l'image, ou un cadre vide avec les boutons d'ajout
+function portraitBox(c) {
+  if (!c.portrait) {
+    return `<div class="id-photo empty">
+      <div class="ph-frame">${icon('image')}<small>Portrait</small></div>
+      ${canCamera() ? '<button class="btn sm" data-act="portrait-pick" data-cam="1">Photo</button>' : ''}
+      <button class="btn sm" data-act="portrait-pick">${canCamera() ? 'Image' : 'Ajouter'}</button>
+    </div>`;
+  }
+  return `<div class="id-photo"><button class="portrait" data-act="portrait-view" aria-label="Voir le portrait"><img src="${c.portrait}" alt="Portrait de ${esc(c.nom || 'ton personnage')}"></button></div>`;
+}
+function portraitDialog() {
+  const c = C(); if (!c?.portrait) return;
+  dialog(esc(c.nom || 'Portrait'), `<img class="portrait-full" src="${c.portrait}" alt="Portrait de ${esc(c.nom || 'ton personnage')}">`,
+    `<button class="btn ghost" data-dact="portrait-del">Retirer</button><span class="spacer"></span>${canCamera() ? '<button class="btn" data-dact="portrait-cam">Photo</button>' : ''}<button class="btn pri" data-dact="portrait-change">Changer</button>`);
+}
 function renderCarnet(c) {
   const t = R.typeOf(c); const sup = R.supByName(c.superieur);
   const id = c.identite;
@@ -571,13 +717,16 @@ function renderCarnet(c) {
   return `
   <section class="card">
     <h2>Identité</h2>
-    <div class="grid g2" data-form="id">
-      ${F.text('nom', 'Nom', c.nom, 'full')}
-      ${F.text('identite.corps', 'Corps d\'accueil / identité humaine', id.corps)}
-      ${F.text('identite.age', 'Âge apparent', id.age)}
-      ${F.text('identite.metier', 'Métier / couverture', id.metier)}
-      ${F.text('identite.contact', 'Contact', id.contact)}
-      ${F.area('identite.apparence', 'Apparence, personnalité', id.apparence)}
+    <div class="id-wrap">
+      <div class="grid g2" data-form="id">
+        ${F.text('nom', 'Nom', c.nom, 'full')}
+        ${F.text('identite.corps', 'Corps d\'accueil / identité humaine', id.corps)}
+        ${F.text('identite.age', 'Âge apparent', id.age)}
+        ${F.text('identite.metier', 'Métier / couverture', id.metier)}
+        ${F.text('identite.contact', 'Contact', id.contact)}
+        ${F.area('identite.apparence', 'Apparence, personnalité', id.apparence)}
+      </div>
+      ${portraitBox(c)}
     </div>
   </section>
   <section class="card">
@@ -1338,7 +1487,7 @@ function customCreate(g) {
 function charsDialog() {
   const list = store.list(); const tables = table.list();
   const inMJ = ui.screen === 'mj'; const cur = inMJ ? null : C();
-  const row = (c) => `<button class="choice ${c.id === cur?.id ? 'on' : ''}" data-dact="sel" data-id="${c.id}"><span class="crest">${esc((c.nom || '?').charAt(0).toUpperCase())}</span><span><b>${esc(c.nom || 'Sans nom')}</b><small>${esc(R.typeOf(c).n)}${c.superieur ? ' · ' + esc(c.superieur) : ''}</small></span></button>`;
+  const row = (c) => `<button class="choice ${c.id === cur?.id ? 'on' : ''}" data-dact="sel" data-id="${c.id}">${crest(c)}<span><b>${esc(c.nom || 'Sans nom')}</b><small>${esc(R.typeOf(c).n)}${c.superieur ? ' · ' + esc(c.superieur) : ''}</small></span></button>`;
   const blocks = tables.map((t) => {
     const chars = list.filter((c) => c.table === t.id); const active = inMJ && table.openId === t.id;
     return `<section class="pick-group ${active || chars.some((c) => c.id === cur?.id) ? 'active' : ''}">
@@ -1658,7 +1807,7 @@ function renderMJCard(x) {
   const open = c.blessures.filter((b) => b.ouverte);
   const pill = (lab, val, kind, key) => `<button class="pill light" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${kind}" data-key="${esc(key)}">${lab} <b>${val}</b></button>`;
   return `<section class="card">
-    <h2><span data-act="mj-char" data-key="${esc(x.id)}" style="cursor:pointer;text-decoration:underline dotted">${esc(c.nom || 'Sans nom')}</span><span class="tag">${esc(x.player || '')} · ${esc(ago(x.updatedAt))}</span></h2>
+    <h2>${miniOf(c) ? crest(c, 'mj') : ''}<span data-act="mj-char" data-key="${esc(x.id)}" style="cursor:pointer;text-decoration:underline dotted">${esc(c.nom || 'Sans nom')}</span><span class="tag">${esc(x.player || '')} · ${esc(ago(x.updatedAt))}</span></h2>
     <div class="small muted" style="margin:-4px 0 8px">${esc(supLine(c))}</div>
     ${mjBar(pf, a.pf, 'pf')}${ty.nopp ? '' : `<div style="margin-top:6px">${mjBar(pp, ppm)}</div>`}
     <div class="annexes">
@@ -1772,7 +1921,7 @@ function renderScen(s) {
   if (n) return renderNpcEdit(s, sc, n);
   const nbPnj = s.scenes.reduce((t, x) => t + x.npcs.reduce((u, y) => u + (+y.qty || 1), 0), 0);
   return `<section class="card dark">
-      <div class="row"><button class="btn sm ghost" data-act="sc-back">← Scénarios</button><span class="spacer"></span>
+      <div class="row"><button class="btn sm ghost" data-act="sc-back">Scénarios</button><span class="spacer"></span>
         <button class="btn sm" data-act="sc-export">Exporter</button><button class="btn sm" data-act="sc-dup">Dupliquer</button><button class="btn sm danger" data-act="sc-del">Supprimer</button></div>
       <div class="small muted d" style="margin-top:6px">${s.scenes.length} scène(s) · ${nbPnj} PNJ · modifié ${esc(ago(s.updatedAt))}</div>
     </section>
@@ -1892,7 +2041,7 @@ function renderSceneCard(s, sc, i) {
     <h2>${i + 1}. ${esc(sc.nom)}${sc.live ? '<span class="stamp" style="margin-left:6px">En cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
     ${edit ? `<div class="grid g2" data-scform>${F.text('', 'Nom de la scène', sc.nom, '', `data-scf="nom" data-scene="${esc(sc.id)}"`)}${F.text('', 'Lieu', sc.lieu, '', `data-scf="lieu" data-scene="${esc(sc.id)}"`)}
       <div class="field" style="grid-column:1/-1"><label>Déroulement, indices, réactions des PNJ</label><textarea data-scf="notes" data-scene="${esc(sc.id)}">${esc(sc.notes)}</textarea></div></div>
-      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-scene-up" data-key="${esc(sc.id)}" ${i ? '' : 'disabled'}>↑ Monter</button><button class="btn sm danger" data-act="sc-scene-del" data-key="${esc(sc.id)}">Supprimer la scène</button><span class="spacer"></span><button class="btn sm pri" data-act="toggle" data-key="${k}">Terminé</button></div>`
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-scene-up" data-key="${esc(sc.id)}" ${i ? '' : 'disabled'}>Monter</button><button class="btn sm danger" data-act="sc-scene-del" data-key="${esc(sc.id)}">Supprimer la scène</button><span class="spacer"></span><button class="btn sm pri" data-act="toggle" data-key="${k}">Terminé</button></div>`
     : sc.notes ? `<p class="small" style="white-space:pre-line;margin-top:0">${esc(sc.notes)}</p>` : ''}
     ${sc.npcs.length ? `<div style="overflow-x:auto;margin-top:6px"><table class="ref comp npcs"><tr><th>PNJ (source)</th><th></th><th>Attaque</th><th>Déf.</th><th>Vol.</th><th>Foi</th><th>Per</th><th>BL/BG/BF/MS</th><th>PF</th><th>PP</th><th>Prot.</th></tr>${rows}</table></div>
       ${scenAlerts(sc.npcs)}` : '<div class="empty">Pas d\'adversaire préparé (scène sans combat ?)</div>'}
@@ -1913,7 +2062,7 @@ function renderNpcEdit(s, sc, n) {
   const at = isType ? `data-key="${esc(n.id)}"` : `data-scene="${esc(sc.id)}" data-key="${esc(n.id)}"`;
   const nf = (f) => `data-nf="${f}"`;
   const fromType = !isType && n.typeId && scen.getType(n.typeId);
-  return `<section class="card dark"><div class="row"><button class="btn sm ghost" data-act="sc-npc-done">← ${isType ? 'Bestiaire' : esc(sc.nom)}</button><span class="spacer"></span>
+  return `<section class="card dark"><div class="row"><button class="btn sm ghost" data-act="sc-npc-done">${isType ? 'Bestiaire' : esc(sc.nom)}</button><span class="spacer"></span>
       ${isType ? `<button class="btn sm" data-act="sc-type-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-type-del" ${at}>Supprimer du bestiaire</button>`
         : `<button class="btn sm" data-act="sc-npc-tobest" ${at}>${fromType ? 'Mettre à jour le type du bestiaire' : 'Enregistrer dans le bestiaire'}</button><button class="btn sm" data-act="sc-npc-dup" ${at}>Dupliquer</button><button class="btn sm danger" data-act="sc-npc-del" ${at}>Supprimer</button>`}</div>
       ${isType ? '<div class="small muted d" style="margin-top:6px">Type d\'ennemi du bestiaire : les scènes qui l\'utilisent en ont une copie, modifier le type ne change pas les scènes déjà préparées.</div>'
@@ -2099,7 +2248,7 @@ function renderLive(s, sc) {
   const alive = lv.units.filter((u) => !u.out);
   const pjs = store.configured && table.current ? table.characters() : [];
   return `<section class="card dark">
-      <div class="row"><button class="btn sm ghost" data-act="lv-back">← Combats</button>${s.impro ? '' : `<button class="btn sm ghost" data-act="mj-sec" data-v="scen">${esc(s.nom)}</button>`}<span class="spacer"></span>
+      <div class="row"><button class="btn sm ghost" data-act="lv-back">Combats</button>${s.impro ? '' : `<button class="btn sm ghost" data-act="mj-sec" data-v="scen">${esc(s.nom)}</button>`}<span class="spacer"></span>
         <span>Round</span><span class="stepper"><button data-act="lv-round" data-v="-1">–</button><b>${lv.round}</b><button data-act="lv-round" data-v="1">+</button></span></div>
       <h2 style="margin:10px 0 0">${icon('sword')} ${s.impro ? `<input class="inp" style="max-width:320px" value="${esc(sc.nom)}" data-lvname="${esc(sc.id)}">` : esc(sc.nom)}</h2>
       <div class="small muted d">${alive.length} adversaire(s) debout sur ${lv.units.length}${sc.lieu ? ' · ' + esc(sc.lieu) : ''}</div>
@@ -2211,7 +2360,7 @@ function renderInit(sc) {
     <div class="init-now">${curF ? `Round ${lv.round} · à <b>${esc(curF.nom)}</b> de jouer` : 'Ordre du tour'}</div>
     ${rows}
     ${missing.length ? `<div class="small" style="margin-top:8px"><b>Pas encore placés :</b> ${missing.map((f) => `<button class="pill light" data-act="lv-iroll" data-key="${esc(fKey(f))}">${esc(f.nom)} ${f.r == null ? '· saisir' : '· lancer'}</button>`).join(' ')}</div>` : ''}
-    <div class="row" style="margin-top:10px"><button class="btn pri" data-act="lv-inext">Tour suivant ▸</button><span class="spacer"></span>
+    <div class="row" style="margin-top:10px"><button class="btn pri" data-act="lv-inext">Tour suivant</button><span class="spacer"></span>
       <button class="btn sm" data-act="lv-iadd">${icon('plus')} Participant</button><button class="btn sm ghost" data-act="lv-init">Relancer</button></div>
     <p class="small muted" style="margin-bottom:0">Les PJ sont lancés en secret par le MJ ; touche un résultat pour saisir la MR annoncée par un joueur (vide = échec). Les blessures ouvertes comptent dans le jet.</p>
   </section>`;
@@ -2765,6 +2914,8 @@ document.addEventListener('click', async (e) => {
     case 'armor-add': return armorDialog();
     case 'armor-del': c.armures.splice(i, 1); return commit();
     case 'armor-toggle': c.armures[i].portee = c.armures[i].portee === false; return commit();
+    case 'portrait-pick': return pickPortrait(!!b.dataset.cam);
+    case 'portrait-view': return portraitDialog();
     case 'fx-off': c.effets = (c.effets || []).filter((e) => e.n !== key); return commit();
     case 'weapon-hand': c.armes[i].main = c.armes[i].main === false; return commit();
     case 'go-sac': ui.tab = 'sac'; localStorage.setItem('insmv.tab', 'sac'); render(); return window.scrollTo(0, 0);
@@ -2878,6 +3029,11 @@ function handleDlgClick(e) {
     case 'exportAll': closeDlg(); return download('insmv-personnages.json', store.exportAll());
     case 'import': closeDlg(); return importFile();
     case 'print': closeDlg(); return printSheet();
+    case 'portrait-change': closeDlg(); return pickPortrait(false);
+    case 'portrait-cam': closeDlg(); return pickPortrait(true);
+    case 'portrait-del':
+      closeDlg();
+      return confirmDlg('Retirer le portrait', 'Retirer l’image de ce personnage ?').then((ok) => { if (ok) { delete c.portrait; delete c.portraitMini; commit(); } });
     case 'slot': slot.setSlot(!slot.slotPref()); toast(slot.slotPref() ? 'Bandit manchot activé' : 'Dés classiques'); return menuDialog();
     case 'sound': slot.setSound(!slot.soundOn()); toast(slot.soundOn() ? 'Son des dés activé' : 'Son des dés coupé'); if (slot.soundOn()) { slot.sfx.unlock(); slot.sfx.win(); } return menuDialog();
     case 'recrea': closeDlg(); c.creation = 'crea'; return commit();

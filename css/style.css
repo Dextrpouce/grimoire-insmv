@@ -450,3 +450,49 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 .fx-row .tn { flex: 1; min-width: 0; }
 .fx-row .tn b { color: #5a2d8c; }
 .fx-chk { margin-top: 8px; padding: 6px 10px; border-radius: 10px; background: var(--bg2); border: 1px solid #2b2b33; }
+
+/* Icônes posées d'office dans les boutons */
+.btn.sm .i { width: 17px; height: 17px; }
+.btn .i { margin-left: -2px; }
+.choice > .i { margin-top: 2px; opacity: .85; }
+
+/* Portrait du personnage */
+.portrait-card { padding: 10px; }
+.portrait { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.portrait img { display: block; max-width: 280px; width: 100%; height: auto; margin: 0 auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, .25); }
+.portrait-full { display: block; max-width: 100%; max-height: 70vh; margin: 0 auto; border-radius: 10px; }
+.top .avatar { flex: none; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--accent); background: #2a2a33 center / cover no-repeat; padding: 0; cursor: pointer; }
+.crest.photo { background: #2a2a33 center / cover no-repeat; color: transparent; }
+.crest.mj { display: inline-block; width: 30px; height: 30px; border-radius: 50%; vertical-align: middle; margin-right: 8px; }
+/* Portrait dans la carte Identité */
+.id-wrap { display: flex; gap: 14px; align-items: flex-start; }
+.id-wrap > .grid { flex: 1; min-width: 0; }
+.id-photo { flex: 0 0 150px; display: flex; flex-direction: column; gap: 6px; }
+.id-photo .portrait img { max-width: 100%; }
+.id-photo .ph-frame { aspect-ratio: 3 / 4; border: 2px dashed var(--line); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--ink-soft); background: var(--card2); }
+.id-photo .ph-frame .i { width: 34px; height: 34px; opacity: .6; }
+.id-photo .btn { width: 100%; }
+@media (max-width: 520px) { .id-photo { flex-basis: 104px; } .id-wrap { gap: 10px; } }
+@media (max-width: 520px) {
+  /* La vignette ouvre déjà le sélecteur : l'icône dossier laisse la place au nom */
+  .top:has(.avatar) > .ibtn[data-act="chars"] { display: none; }
+}
+/* Le portrait descend jusqu'en bas de la carte Identité (image recadrée ; entière quand on la touche) */
+.id-wrap { align-items: stretch; }
+.id-photo .portrait { flex: 1; display: flex; min-height: 180px; }
+.id-photo .portrait img { width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center top; }
+.id-photo.empty .ph-frame { flex: 1; aspect-ratio: auto; min-height: 160px; }
+@media (max-width: 520px) {
+  /* Colonne de champs trop haute : le portrait garde sa forme (3:4) en haut plutôt qu'une bande recadrée */
+  .id-wrap { flex-direction: column; }
+  .id-photo { align-self: center; flex-basis: auto; width: min(220px, 70%); }
+  .id-photo .portrait { flex: none; aspect-ratio: 3 / 4; min-height: 0; }
+  .id-photo.empty .ph-frame { flex: none; aspect-ratio: 3 / 4; min-height: 0; }
+}
+@media (max-width: 520px) {
+  /* Sans portrait : un bandeau compact plutôt qu'un grand cadre vide */
+  .id-photo.empty { width: 100%; flex-direction: row; flex-wrap: wrap; align-items: center; }
+  .id-photo.empty .ph-frame { aspect-ratio: auto; height: 44px; flex: 1 1 100%; flex-direction: row; }
+  .id-photo.empty .ph-frame .i { width: 22px; height: 22px; }
+  .id-photo.empty .btn { flex: 1; width: auto; }
+}

@@ -63,6 +63,7 @@ export const table = {
     await store.ensureUser();
     const snapshot = JSON.parse(JSON.stringify(c));
     if (c.notesPrivees) snapshot.notes = '';
+    delete snapshot.portrait; // le document de la table regroupe toutes les fiches (1 Mo au plus) : seule la vignette part
     await cloud.updateTable(c.table, (st, uid, name) => {
       st.chars ||= {};
       const prev = st.chars[c.id];
