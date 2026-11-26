@@ -9,6 +9,7 @@ import { QUICK_PP } from './data/pnjrapides.js';
 import { SCENARIOS_LIVRES } from './data/scenarios-livres.js';
 import { HIERARCHIE, SUP_HIER } from './data/hierarchie.js';
 import { TABLES_MJ } from './data/tables-mj.js';
+import * as slot from './slot.js';
 
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
@@ -612,9 +613,14 @@ function showRoll() {
   else seuilInfo = R.seuilStandard(s.r, totalShift, s.risk).seuil;
   const res = s.result;
   let out = '';
-  if (res) {
+  const camp = R.typeOf(c).camp;
+  if (slot.slotOn()) {
+    s.tag ||= slot.tagline(camp);
+    out = slot.machine({ dice: res?.dice, spin: !!s.spin, tag: s.tag, fx: s.spin ? null : slot.outcome(res, camp) });
+  }
+  if (res && !s.spin) {
     const cls = res.divin && (res.ok !== undefined) && (res.divin === 'unique' ? R.typeOf(c).camp === 'ange' : R.typeOf(c).camp === 'demon') ? 'divin' : res.ok ? 'ok' : 'ko';
-    out = `<div class="dice">${res.dice.map((d, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${d}</div>`).join('')}</div>
+    out = (out || `<div class="dice">${res.dice.map((d, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${d}</div>`).join('')}</div>`) + `
       <div class="verdict ${cls}">${res.divin === 'unique' ? '111 — Dieu s\'en mêle ! ' : res.divin === 'bete' ? '666 — le Nombre de la Bête ! ' : ''}${res.ok ? 'Réussite' : 'Échec'}</div>
       <div class="vsub">Résultat ${res.res} / seuil ${res.seuil ?? '×'} · RU ${res.ru}${res.triple ? ' · TRIPLE' : res.double ? ' · double' : ''}</div>
       <div class="vsub" style="color:#fff;font-size:17px;margin-top:4px">${res.ok ? `MR <b>${res.mr}</b> — ${R.MR_TXT(res.mr)}` : R.ECHEC_TXT(res.ru)}</div>
@@ -637,7 +643,7 @@ function showRoll() {
     ${R.woundMalus(c) ? `<label class="small" style="display:block;margin-top:6px"><input type="checkbox" data-ract="wound" ${s.wound ? 'checked' : ''}> Appliquer le malus des blessures (${R.woundMalus(c)})</label>` : ''}
     ${out}
   </div>
-  <div class="dlg-f"><button class="btn pri" data-ract="go">${icon('die')} Lancer d66+6</button></div>`;
+  <div class="dlg-f"><button class="btn pri" data-ract="go" ${s.spin ? 'disabled' : ''}>${icon('die')} ${slot.slotOn() ? 'Tirer la manette' : 'Lancer d66+6'}</button></div>`;
   if (!dlg.open) dlg.showModal();
 }
 function doRoll() {
@@ -651,7 +657,14 @@ function doRoll() {
   else if (s.diff === 'impossible') { seuil = null; eff = s.r; }
   else { const x = R.seuilStandard(s.r, totalShift, s.risk); seuil = x.seuil; eff = x.eff; }
   s.result = R.resolve(R.rollD666(), { seuil, mrLevel: R.lvlInt(eff), risk: s.risk, foi: c.car.foi, camp: R.typeOf(c).camp });
-  showRoll();
+  if (!slot.slotOn()) { showRoll(); return slot.celebrate(null, slot.outcome(s.result, R.typeOf(c).camp)); }
+  // Bandit manchot : les rouleaux tournent, puis le verdict s'affiche
+  s.spin = true; slot.sfx.unlock(); slot.sfx.pull(); showRoll();
+  slot.spin(dlg, () => {
+    if (rollState !== s || !dlg.open) return;
+    s.spin = false; showRoll();
+    slot.celebrate(dlg, slot.outcome(s.result, R.typeOf(c).camp));
+  });
 }
 function freeRoll() {
   const roll = (n) => Array.from({ length: n }, R.d6);
@@ -666,9 +679,18 @@ function freeRoll() {
     if (b) {
       const k = b.dataset.fr;
       if (k === 'Test') { dlg.onclick = null; openRoll({ label: 'Test libre', r: 4, free: true }); return; }
+      if (dlg.querySelector('.slot.spinning')) return;
       const d = roll({ '1d6': 1, '2d6': 2, d66: 2, d666: 3 }[k]);
       const total = k === '2d6' ? d[0] + d[1] : k === '1d6' ? d[0] : d.join('');
-      show('Dés', `<div class="dice">${d.map((x, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${x}</div>`).join('')}</div><div class="verdict">${k} = ${total}</div>`);
+      const cls = k === '1d6' ? ['u'] : k === '2d6' ? ['u', 'u'] : ['', 'd2', 'u'];
+      const res = k === 'd666' ? { dice: d, divin: d.join('') === '111' ? 'unique' : d.join('') === '666' ? 'bete' : null, triple: d[0] === d[1] && d[1] === d[2], double: d[0] === d[1] && d[1] !== d[2] }
+        : { dice: d, double: d.length === 2 && d[0] === d[1] };
+      const fin = () => show('Dés', `${slot.slotOn() ? slot.machine({ dice: d, n: d.length, tag: 'Dés libres', fx: slot.outcome(res), lever: `data-fr="${k}"`, cls }) : `<div class="dice">${d.map((x, i) => `<div class="die roll ${['', 'd2', 'u'][i]}">${x}</div>`).join('')}</div>`}<div class="verdict">${k} = ${total}</div>`);
+      if (!slot.slotOn()) return fin();
+      slot.sfx.unlock(); slot.sfx.pull();
+      show('Dés', slot.machine({ dice: d, n: d.length, spin: true, tag: 'Dés libres', lever: `data-fr="${k}"`, cls }));
+      slot.spin(dlg, () => { if (!dlg.open) return; fin(); slot.celebrate(dlg, slot.outcome(res)); });
+      return;
     }
     if (e.target.closest('[data-ract="close"]')) { dlg.close(); dlg.onclick = null; }
   };
@@ -1141,6 +1163,8 @@ function menuDialog() {
     ${c && c.creation !== 'crea' ? `<button class="choice" data-dact="recrea"><span><b>Reprendre en création sur mesure</b><small>Affiche le bilan des PA et les quotas</small></span></button>` : ''}
     <button class="choice" data-dact="mj"><span><b>Mode maître de jeu</b><small>Préparer scénarios et combats ; table partagée pour suivre en direct les fiches des joueurs</small></span></button>
     <button class="choice" data-dact="cloud"><span><b>Sauvegarde en ligne</b><small>${store.configured ? esc(store.status.message || 'Configurée') : 'Facultatif : synchronise entre appareils (Firebase gratuit)'}</small></span></button>
+    <button class="choice" data-dact="slot"><span><b>Bandit manchot : ${slot.slotPref() ? 'activé' : 'coupé'}</b><small>Les dés du d666 tournent comme les rouleaux d'une machine à sous</small></span></button>
+    <button class="choice" data-dact="sound"><span><b>Son des dés : ${slot.soundOn() ? 'activé' : 'coupé'}</b><small>Manette, rouleaux, gros lots du 111 et du 666</small></span></button>
     ${c ? `<button class="choice" data-dact="delete" style="border-color:#5a1a1d"><span><b style="color:#ff8a8f">Supprimer ce personnage</b></span></button>` : ''}
     <p class="small muted">Données enregistrées sur l'appareil. Règles : In Nomine Satanis / Magna Veritas 4e édition (Siroz / Asmodée), Les Petites Apocalypses, La Bible à Dudule.</p>`);
 }
@@ -1297,8 +1321,8 @@ function enterMJ() {
 function renderMJ() {
   const t = table.current; const openId = store.configured ? table.openId : null;
   const s = ui.mjSec === 'scen' ? scen.get(ui.scenId) : null;
-  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'alea' ? 'Tables aléatoires' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
-  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'alea' ? renderAlea() : ui.mjSec === 'scen' ? renderScen(s)
+  const sub = ui.mjSec === 'memo' ? 'Choix des joueurs' : ui.mjSec === 'alea' ? 'Tables aléatoires' : ui.mjSec === 'scen' ? (s ? s.nom : 'Scénarios') : ui.mjSec === 'combat' ? 'Combat' : openId ? (t ? `${t.name} · code ${t.id}` : 'Connexion…') : 'Tables de jeu';
+  const body = ui.mjSec === 'memo' ? renderMemo() : ui.mjSec === 'alea' ? renderAlea() : ui.mjSec === 'scen' ? renderScen(s) : ui.mjSec === 'combat' ? renderMJCombat()
     : !store.configured ? `<section class="card"><h2>Table partagée</h2><p>La table de jeu partagée passe par la sauvegarde en ligne (Firebase) : chacun se connecte avec son compte Google ou un e-mail et un mot de passe.</p>
       <div class="row"><button class="btn pri" data-act="mj-cloud">${icon('cloud')} Configurer la sauvegarde en ligne</button></div>
       <p class="small muted" style="margin-bottom:0">Les <b>scénarios</b> (scènes, combats préparés, PNJ) fonctionnent sans connexion.</p></section>`
@@ -1310,7 +1334,7 @@ function renderMJ() {
     <button class="ibtn" data-act="help" data-v="mj" title="Manuel du maître de jeu">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main><div class="seg mjnav">${[['table', 'Table'], ['scen', 'Scénarios & combats'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+  <main><div class="seg mjnav">${[['table', 'Table'], ['combat', 'Combat'], ['scen', 'Scénarios'], ['memo', 'Choix des joueurs'], ['alea', 'Tables']].map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
 }
 // ---- Tables aléatoires du MJ (js/data/tables-mj.js) ----
 // Jet selon le dé de la table ; mod : modificateur ajouté aux jets additionnés (d6, 2d6, 3d6)
@@ -1527,8 +1551,6 @@ function renderScen(s) {
   const sc = ui.npcEdit && curScene(s, ui.npcEdit.scene);
   const n = sc && sc.npcs.find((x) => x.id === ui.npcEdit.npc);
   if (n) return renderNpcEdit(s, sc, n);
-  const live = curScene(s, ui.live);
-  if (live?.live) return renderLive(s, live);
   const nbPnj = s.scenes.reduce((t, x) => t + x.npcs.reduce((u, y) => u + (+y.qty || 1), 0), 0);
   return `<section class="card dark">
       <div class="row"><button class="btn sm ghost" data-act="sc-back">← Scénarios</button><span class="spacer"></span>
@@ -1854,19 +1876,205 @@ function renderLive(s, sc) {
   const alive = lv.units.filter((u) => !u.out);
   const pjs = store.configured && table.current ? table.characters() : [];
   return `<section class="card dark">
-      <div class="row"><button class="btn sm ghost" data-act="lv-back">← ${esc(s.nom)}</button><span class="spacer"></span>
+      <div class="row"><button class="btn sm ghost" data-act="lv-back">← Combats</button>${s.impro ? '' : `<button class="btn sm ghost" data-act="mj-sec" data-v="scen">${esc(s.nom)}</button>`}<span class="spacer"></span>
         <span>Round</span><span class="stepper"><button data-act="lv-round" data-v="-1">–</button><b>${lv.round}</b><button data-act="lv-round" data-v="1">+</button></span></div>
-      <h2 style="margin:10px 0 0">${icon('sword')} ${esc(sc.nom)}</h2>
+      <h2 style="margin:10px 0 0">${icon('sword')} ${s.impro ? `<input class="inp" style="max-width:320px" value="${esc(sc.nom)}" data-lvname="${esc(sc.id)}">` : esc(sc.nom)}</h2>
       <div class="small muted d">${alive.length} adversaire(s) debout sur ${lv.units.length}${sc.lieu ? ' · ' + esc(sc.lieu) : ''}</div>
       ${scenAlerts(sc.npcs.filter((n) => alive.some((u) => u.npc === n.id)))}
-      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="lv-add">${icon('plus')} Renfort</button><button class="btn sm" data-act="sc-memo-new" data-sid="${esc(s.id)}" data-scene="${esc(sc.id)}">${icon('edit')} Noter un choix</button><span class="spacer"></span><button class="btn sm danger" data-act="lv-end">Terminer le combat</button></div>
+      <div class="row" style="margin-top:8px"><button class="btn sm" data-act="lv-add">${icon('plus')} ${lv.units.length ? 'Renfort' : 'Ajouter des adversaires'}</button><button class="btn sm" data-act="sc-memo-new" data-sid="${esc(s.id)}" data-scene="${esc(sc.id)}">${icon('edit')} Noter un choix</button><span class="spacer"></span><button class="btn sm danger" data-act="lv-end">Terminer le combat</button></div>
     </section>
+    ${renderInit(sc)}
     ${pjs.length ? `<section class="card"><h2>Personnages joueurs <span class="tag">toucher pour lancer en secret</span></h2>
       <div style="overflow-x:auto"><table class="ref comp"><tr><th>PJ</th><th>Per</th><th>Vol.</th><th>Foi</th><th>Déf.</th><th>BL/BG/BF/MS</th><th>PF</th><th>Malus</th></tr>
       ${pjs.map((x) => { const c = x.c; const a = R.annexes(c); const cell = (k2, key, v) => `<td><button class="cell" data-act="mj-roll" data-id="${esc(x.id)}" data-k="${k2}" data-key="${esc(key)}">${L(v)}</button></td>`;
         return `<tr><td><b>${esc(c.nom || '?')}</b></td>${cell('car', 'pe', c.car.pe)}${cell('car', 'vo', c.car.vo)}${cell('car', 'foi', c.car.foi)}${cell('tal', 'Défense', R.talentLevel(c, 'Défense'))}
           <td>${a.bl}/${a.bg}/${a.bf}/${a.ms}</td><td>${c.pfCur ?? a.pf}/${a.pf}</td><td>${R.woundMalus(c) || ''}</td></tr>`; }).join('')}</table></div></section>` : ''}
     ${lv.units.map((u) => renderUnit(sc, u)).join('')}`;
+}
+// ---- Onglet Combat du MJ : combats en cours, combats préparés, combat improvisé ----
+function liveCombats() {
+  const out = [];
+  for (const s of scen.all()) for (const sc of s.scenes) if (sc.live) out.push({ s, sc });
+  return out.sort((a, b) => (b.sc.live.started || 0) - (a.sc.live.started || 0));
+}
+function renderMJCombat() {
+  const s = scen.get(ui.scenId); const sc = curScene(s, ui.live);
+  if (sc?.live) return renderLive(s, sc);
+  const live = liveCombats();
+  const ready = [];
+  for (const x of scen.all()) for (const y of x.scenes) if (!y.live && y.npcs.length) ready.push({ s: x, sc: y });
+  const row = ({ s: x, sc: y }, act, lab) => {
+    const lv = y.live; const up = lv ? lv.units.filter((u) => !u.out).length : 0;
+    const info = lv ? `round ${lv.round} · ${up}/${lv.units.length} adversaire(s) debout${lv.init ? ' · initiative lancée' : ''}`
+      : `${y.npcs.reduce((t, n) => t + (+n.qty || 1), 0)} PNJ préparé(s)${y.lieu ? ' · ' + y.lieu : ''}`;
+    return `<div class="init-row"><div style="flex:1;min-width:0"><b>${esc(y.nom)}</b><div class="small muted">${esc(x.impro ? 'Combat improvisé' : x.nom)} · ${esc(info)}</div></div>
+      <button class="btn sm ${lv ? 'pri' : ''}" data-act="${act}" data-sid="${esc(x.id)}" data-scene="${esc(y.id)}">${lab}</button></div>`;
+  };
+  return `<section class="card dark">
+      <h2 style="margin-top:0">${icon('sword')} Combat</h2>
+      <p class="small muted d" style="margin-top:0">Ordre d'initiative, tour en cours, PF et blessures des adversaires, PJ de la table ouverte. Un combat improvisé se lance sans préparer de scénario : ajoute les adversaires depuis le bestiaire ou un PNJ rapide.</p>
+      <div class="row"><button class="btn pri" data-act="mj-cb-impro">${icon('plus')} Combat improvisé</button><button class="btn sm ghost" data-act="mj-sec" data-v="scen">Préparer dans un scénario</button></div>
+    </section>
+    <section class="card"><h2>Combats en cours</h2>${live.length ? live.map((x) => row(x, 'mj-cb-open', 'Reprendre')).join('') : '<div class="empty">Aucun combat en cours</div>'}</section>
+    ${ready.length ? `<section class="card"><h2>Combats préparés <span class="tag">scènes avec des PNJ</span></h2>${ready.slice(0, 15).map((x) => row(x, 'mj-cb-open', 'Lancer')).join('')}</section>` : ''}`;
+}
+// ---- Initiative ----
+// sc.live.init = { k: caractéristique testée, diff, order: [{ t: 'u' | 'pj' | 'x', id, ok, mr, r, dice }], turn }
+// u : adversaire (unité du combat), pj : personnage de la table ouverte, x : participant ajouté à la main
+const INIT_CARS = [['ag', 'Agilité', 'en général'], ['vo', 'Volonté', 'le combat s\'ouvre sur une attaque mentale'], ['pe', 'Perception', 'attaque à distance']];
+function fighters(sc) {
+  const lv = sc.live; const k = lv.init?.k || 'ag'; const out = [];
+  for (const u of lv.units) {
+    const n = sc.npcs.find((x) => x.id === u.npc); if (!n) continue;
+    out.push({ t: 'u', id: u.uid, nom: u.label, r: n.car[k], char: npcChar(n, u.bl), out: u.out, pf: u.pf, pfMax: npcStats(n).pf });
+  }
+  if (store.configured && table.current) for (const x of table.characters()) {
+    const c = x.c; const a = R.annexes(c); const pf = c.pfCur ?? a.pf;
+    out.push({ t: 'pj', id: x.id, nom: c.nom || x.player || 'PJ', r: c.car[k], char: c, out: pf <= 0, pf, pfMax: a.pf });
+  }
+  for (const e of lv.extra || []) out.push({ t: 'x', id: e.id, nom: e.nom, r: null, char: null, out: false });
+  return out;
+}
+const fKey = (f) => f.t + ':' + f.id;
+function initTest(f, ini) {
+  if (f.r == null || !f.char) return { ok: null, mr: null }; // participant ajouté à la main : MR annoncée par le joueur
+  const diff = R.DIFFICULTES.find((d) => d.k === ini.diff)?.s || 0;
+  const st = R.seuilStandard(f.r, diff + R.woundMalus(f.char));
+  const res = R.resolve(R.rollD666(), { seuil: st.seuil, mrLevel: R.lvlInt(st.eff), foi: f.char.car.foi, camp: R.typeOf(f.char).camp });
+  return { ok: !!res.ok, mr: res.ok ? res.mr : null, dice: res.dice.join('') };
+}
+// Réussites d'abord (MR décroissante, puis niveau testé), puis échecs, puis MR pas encore annoncées
+const initRank = (e) => (e.ok ? 2 : e.ok === false ? 1 : 0);
+const initCmp = (a, b) => initRank(b) - initRank(a) || (b.mr ?? -99) - (a.mr ?? -99) || (b.r ?? 0) - (a.r ?? 0);
+function sortInit(ini) {
+  const cur = ini.order[ini.turn];
+  ini.order.sort(initCmp);
+  ini.turn = Math.max(0, cur ? ini.order.indexOf(cur) : 0);
+}
+// Place un seul participant (nouveau ou MR modifiée) sans défaire l'ordre réglé à la main avec ▲▼
+function placeInit(ini, e) {
+  const cur = ini.order[ini.turn];
+  const i = ini.order.indexOf(e); if (i >= 0) ini.order.splice(i, 1);
+  const j = ini.order.findIndex((x) => initCmp(e, x) < 0);
+  ini.order.splice(j < 0 ? ini.order.length : j, 0, e);
+  ini.turn = Math.max(0, cur ? ini.order.indexOf(cur) : 0);
+}
+function renderInit(sc) {
+  const lv = sc.live; const ini = lv.init; const fs = fighters(sc);
+  const byKey = new Map(fs.map((f) => [fKey(f), f]));
+  if (!ini) {
+    return `<section class="card"><h2>Initiative</h2>
+      <p class="small" style="margin-top:0">Jet au premier tour seulement, ensuite chacun joue dans l'ordre. ${fs.length ? `${fs.length} participant(s) : ${esc(fs.map((f) => f.nom).join(', '))}.` : 'Ajoute d\'abord des adversaires.'}</p>
+      <div class="row"><button class="btn pri" data-act="lv-init" ${fs.length ? '' : 'disabled'}>${icon('die')} Lancer l'initiative</button><button class="btn sm" data-act="lv-iadd">${icon('plus')} Participant</button></div></section>`;
+  }
+  const car = INIT_CARS.find(([k]) => k === ini.k);
+  const cur = ini.order[ini.turn]; const curF = cur && byKey.get(fKey(cur));
+  const rows = ini.order.map((e, i) => {
+    const f = byKey.get(fKey(e)); if (!f) return '';
+    const res = e.ok ? `MR <b>${e.mr}</b>` : e.ok === false ? 'échec' : '<i>à annoncer</i>';
+    const pf = f.pfMax ? `<span class="small muted">PF ${f.pf}/${f.pfMax}</span>` : '';
+    return `<div class="init-row ${i === ini.turn ? 'cur' : ''} ${f.out ? 'out' : ''}">
+      <span class="init-n">${i + 1}</span>
+      <div style="flex:1;min-width:0"><b ${f.t === 'u' ? `data-act="lv-igo" data-key="${esc(f.id)}" style="cursor:pointer"` : ''}>${esc(f.nom)}</b> <span class="badge ${f.t === 'u' ? 'no' : ''}">${f.t === 'u' ? 'PNJ' : 'PJ'}</span>${f.out ? ' <span class="small muted">hors de combat</span>' : ''}<div>${pf}</div></div>
+      <button class="pill light" data-act="lv-iset" data-key="${esc(fKey(e))}" title="Saisir la MR annoncée">${res}</button>
+      <span class="stepper"><button data-act="lv-imove" data-key="${esc(fKey(e))}" data-v="-1" title="Monter">▲</button><button data-act="lv-imove" data-key="${esc(fKey(e))}" data-v="1" title="Descendre">▼</button></span>
+      ${f.t === 'x' ? `<button class="ibtn" style="width:30px;height:30px" data-act="lv-idel" data-key="${esc(fKey(e))}" title="Retirer">${icon('x')}</button>` : ''}
+    </div>`;
+  }).join('');
+  const inOrder = new Set(ini.order.map(fKey));
+  const missing = fs.filter((f) => !inOrder.has(fKey(f)));
+  return `<section class="card init">
+    <h2>Initiative <span class="tag">${esc(car ? car[1] : '')}${ini.diff === 'tres' ? ', Très difficile (surprise)' : ''}</span></h2>
+    <div class="init-now">${curF ? `Round ${lv.round} · à <b>${esc(curF.nom)}</b> de jouer` : 'Ordre du tour'}</div>
+    ${rows}
+    ${missing.length ? `<div class="small" style="margin-top:8px"><b>Pas encore placés :</b> ${missing.map((f) => `<button class="pill light" data-act="lv-iroll" data-key="${esc(fKey(f))}">${esc(f.nom)} ${f.r == null ? '· saisir' : '· lancer'}</button>`).join(' ')}</div>` : ''}
+    <div class="row" style="margin-top:10px"><button class="btn pri" data-act="lv-inext">Tour suivant ▸</button><span class="spacer"></span>
+      <button class="btn sm" data-act="lv-iadd">${icon('plus')} Participant</button><button class="btn sm ghost" data-act="lv-init">Relancer</button></div>
+    <p class="small muted" style="margin-bottom:0">Les PJ sont lancés en secret par le MJ ; touche un résultat pour saisir la MR annoncée par un joueur (vide = échec). Les blessures ouvertes comptent dans le jet.</p>
+  </section>`;
+}
+function initDialog(s, sc) {
+  const pjs = fighters(sc).some((f) => f.t !== 'u');
+  dialog('Initiative', `<div class="field"><label>Caractéristique testée</label><select id="in-k">${INIT_CARS.map(([k, n, w]) => `<option value="${k}" ${sc.live.init?.k === k ? 'selected' : ''}>${n} — ${w}</option>`).join('')}</select></div>
+    <div class="field"><label>Situation</label><select id="in-d"><option value="difficile">Normale (Difficile)</option><option value="tres" ${sc.live.init?.diff === 'tres' ? 'selected' : ''}>Surprise des deux camps (Très difficile : qui échoue ne joue pas ce tour)</option></select></div>
+    ${pjs ? '<label class="chk"><input type="checkbox" id="in-pj" checked> Lancer aussi pour les PJ (sinon chaque joueur annonce sa MR)</label>' : ''}
+    <p class="small muted">Embuscade : test de Perception des victimes opposé à la Discrétion des embusqués (le moins discret), à faire avant avec le lanceur de dés. Duel : jet d'Agilité opposé.</p>`,
+  `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="in-ok">Lancer</button>`);
+  dlg.querySelector('#in-ok').onclick = () => {
+    const rollPj = dlg.querySelector('#in-pj')?.checked !== false;
+    const ini = { k: dlg.querySelector('#in-k').value, diff: dlg.querySelector('#in-d').value, order: [], turn: 0 };
+    closeDlg();
+    sc.live.init = ini; // fighters() lit la caractéristique choisie
+    ini.order = fighters(sc).map((f) => ({ t: f.t, id: f.id, r: f.r, ...(f.t === 'pj' && !rollPj ? { ok: null, mr: null } : initTest(f, ini)) }));
+    ini.turn = -1; sortInit(ini); ini.turn = 0;
+    const first = ini.order.find((e) => e.ok);
+    scen.save(s); render();
+    toast(first ? `Initiative lancée : ${fighters(sc).find((f) => fKey(f) === fKey(first))?.nom} commence` : 'Initiative lancée');
+  };
+}
+async function initAction(act, b, s, sc) {
+  const lv = sc.live; const ini = lv.init; const key = b.dataset.key;
+  const save = () => { scen.save(s); render(); };
+  switch (act) {
+    case 'lv-init': return initDialog(s, sc);
+    case 'lv-iadd': {
+      const nom = await ask('Participant', 'Nom (PJ sans table partagée, allié, PNJ joué à part…)'); if (!nom?.trim()) return;
+      const e = { id: newNpc().id, nom: nom.trim() };
+      (lv.extra ||= []).push(e);
+      if (ini) placeInit(ini, { t: 'x', id: e.id, r: null, ok: null, mr: null });
+      return save();
+    }
+    case 'lv-igo': { const el = document.getElementById('u-' + key); return el?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }
+  if (!ini) return;
+  const idx = ini.order.findIndex((e) => fKey(e) === key);
+  switch (act) {
+    case 'lv-iroll': {
+      const f = fighters(sc).find((x) => fKey(x) === key); if (!f) return;
+      const e = { t: f.t, id: f.id, r: f.r, ...initTest(f, ini) }; placeInit(ini, e);
+      if (f.r == null) return save();
+      toast(`${f.nom} : ${e.ok ? 'MR ' + e.mr : 'échec'}`); return save();
+    }
+    case 'lv-iset': {
+      if (idx < 0) return;
+      const f = fighters(sc).find((x) => fKey(x) === key);
+      const v = await ask(f?.nom || 'Initiative', 'MR d\'initiative (vide = échec)', ini.order[idx].mr ?? '');
+      if (v === null) return;
+      const e = ini.order[idx];
+      if (String(v).trim() === '') { e.ok = false; e.mr = null; } else if (Number.isFinite(+v)) { e.ok = true; e.mr = +v; } else return toast('Nombre invalide');
+      placeInit(ini, e); return save();
+    }
+    case 'lv-imove': {
+      const j = idx + +b.dataset.v; if (idx < 0 || j < 0 || j >= ini.order.length) return;
+      const cur = ini.order[ini.turn];
+      [ini.order[idx], ini.order[j]] = [ini.order[j], ini.order[idx]];
+      ini.turn = Math.max(0, ini.order.indexOf(cur)); return save();
+    }
+    case 'lv-idel': {
+      if (idx < 0) return;
+      const cur = ini.order[ini.turn]; const [e] = ini.order.splice(idx, 1);
+      if (e.t === 'x') lv.extra = (lv.extra || []).filter((x) => x.id !== e.id);
+      ini.turn = cur === e ? Math.min(idx, ini.order.length - 1) : ini.order.indexOf(cur);
+      ini.turn = Math.max(0, ini.turn); return save();
+    }
+    case 'lv-inext': {
+      const byKey = new Map(fighters(sc).map((f) => [fKey(f), f]));
+      const n = ini.order.length; if (!n) return;
+      let i = ini.turn; let wrapped = false;
+      for (let step = 0; step < n; step++) {
+        i++; if (i >= n) { i = 0; wrapped = true; }
+        const f = byKey.get(fKey(ini.order[i]));
+        if (f && !f.out) break;
+      }
+      ini.turn = i;
+      if (wrapped) lv.round++;
+      const f = byKey.get(fKey(ini.order[i]));
+      toast(`${wrapped ? `Round ${lv.round} · ` : ''}à ${f?.nom || '?'} de jouer`);
+      save();
+      if (f?.t === 'u') document.getElementById('u-' + f.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
+    }
+  }
 }
 function renderUnit(sc, u) {
   const n = sc.npcs.find((x) => x.id === u.npc);
@@ -1875,8 +2083,10 @@ function renderUnit(sc, u) {
   const at = (extra = '') => `data-u="${esc(u.uid)}" ${extra}`;
   const pill = (lab, r, kind, key) => `<button class="pill light" data-act="lv-roll" ${at(`data-k="${kind}" data-key="${esc(key)}"`)}>${lab} <b>${L(r)}</b></button>`;
   const open = u.bl.map((b, i) => ({ b, i }));
-  return `<section class="card unit ${u.out ? 'out' : ''}">
-    <h2>${esc(u.label)}${u.out ? '<span class="stamp" style="margin-left:6px">Hors de combat</span>' : ''}<span class="tag">${esc(n.source || R.TYPES[n.type]?.n || '')}</span></h2>
+  const ini = sc.live.init; const cur = ini && ini.order[ini.turn];
+  const isCur = cur && cur.t === 'u' && cur.id === u.uid;
+  return `<section class="card unit ${u.out ? 'out' : ''} ${isCur ? 'cur' : ''}" id="u-${esc(u.uid)}">
+    <h2>${isCur ? '▶ ' : ''}${esc(u.label)}${u.out ? '<span class="stamp" style="margin-left:6px">Hors de combat</span>' : ''}<span class="tag">${esc(n.source || R.TYPES[n.type]?.n || '')}</span></h2>
     <div class="tracker"><span class="lab">PF</span>${bar(u.pf, st.pf, 'pf')}<span class="stepper"><button data-act="lv-pf" ${at('data-v="-1"')}>–</button><button data-act="lv-pf" ${at('data-v="1"')}>+</button></span></div>
     ${st.pp ? `<div class="tracker" style="margin-top:6px"><span class="lab">PP</span>${bar(u.pp, st.pp)}<span class="stepper"><button data-act="lv-pp" ${at('data-v="-1"')}>–</button><button data-act="lv-pp" ${at('data-v="1"')}>+</button></span></div>` : ''}
     <div class="annexes">
@@ -2080,27 +2290,34 @@ async function scenAction(act, b) {
     // ---- combat en cours ----
     case 'sc-live':
       if (!sc.live) startLive(sc);
-      ui.live = sc.id; localStorage.setItem('insmv.live', sc.id); scen.save(s); render(); return window.scrollTo(0, 0);
+      ui.live = sc.id; localStorage.setItem('insmv.live', sc.id); ui.mjSec = 'combat'; localStorage.setItem('insmv.mjsec', 'combat'); scen.save(s); render(); return window.scrollTo(0, 0);
     case 'lv-back': ui.live = null; localStorage.removeItem('insmv.live'); render(); return window.scrollTo(0, 0);
     case 'lv-round': sc.live.round = Math.max(1, sc.live.round + +b.dataset.v); return save();
     case 'lv-end':
-      if (!(await confirmDlg('Terminer le combat', 'Effacer le suivi de ce combat (PF, blessures) ? Les PNJ préparés sont conservés et le combat pourra être relancé.'))) return;
+      if (s.impro) {
+        if (!(await confirmDlg('Terminer le combat', 'Effacer ce combat improvisé (adversaires, PF, blessures, initiative) ? Les types ajoutés à ton bestiaire sont conservés.'))) return;
+        s.scenes = s.scenes.filter((x) => x !== sc);
+        if (!s.scenes.length) { scen.remove(s.id); ui.scenId = null; localStorage.removeItem('insmv.scen'); ui.live = null; localStorage.removeItem('insmv.live'); render(); return; }
+      } else if (!(await confirmDlg('Terminer le combat', 'Effacer le suivi de ce combat (PF, blessures, initiative) ? Les PNJ préparés sont conservés et le combat pourra être relancé.'))) return;
       sc.live = null; ui.live = null; localStorage.removeItem('insmv.live'); return save();
     case 'lv-add':
-      return chooseList('Renfort', [
+      return chooseList(sc.live.units.length ? 'Renfort' : 'Adversaires', [
+        { quick: true, label: 'PNJ rapide', sub: 'Ange ou démon type de l’écran du maître, selon son supérieur et ses PP' },
         ...sc.npcs.map((x) => ({ x, label: x.nom, sub: [x.source, 'déjà dans la scène'].filter(Boolean).join(' · ') })),
         ...typeItems((t) => sc.npcs.some((x) => x.typeId === t.id)),
       ], async (it) => {
+        if (it.quick) { const p = await askQuickNpc(); if (!p) return; p.qty = 0; sc.npcs.push(p); it = { x: p, label: p.nom }; }
         if (it.book) it.t = scen.adoptBook(it.t);
         const q = await askQty(it.label); if (!q) return;
         let x = it.x;
         if (!x) { x = scen.instantiate(it.t.id, 0); x.qty = 0; sc.npcs.push(x); }
         const st = npcStats(x); const same = sc.live.units.filter((u) => u.npc === x.id).length;
         for (let k = 1; k <= q; k++) sc.live.units.push({ uid: newNpc().id, npc: x.id, label: `${x.nom} ${same + k}`, pf: st.pf, pp: st.pp, bl: [], out: false });
-        x.qty = (+x.qty || 0) + (it.x ? 0 : q);
+        x.qty = (+x.qty || 0) + (it.x && !it.quick ? 0 : q);
         save();
       });
   }
+  if (['lv-init', 'lv-iadd', 'lv-igo', 'lv-iroll', 'lv-iset', 'lv-imove', 'lv-idel', 'lv-inext'].includes(act)) return sc?.live ? initAction(act, b, s, sc) : undefined;
   if (!act.startsWith('lv-') || !sc?.live) return;
   const { u, n: un, st, c } = liveCtx(s, sc, b.dataset.u); if (!u || !un) return;
   const i = +b.dataset.i;
@@ -2150,6 +2367,21 @@ async function mjAction(act, b) {
       case 'mj-alea-note': {
         const t = TABLES_MJ.find((x) => x.id === key); const r = ui.aleaRes?.[key]; if (!t || !r) return;
         return memoDialog(newEntry({ kind: 'choix', txt: `${t.nom}${['liste', 'd26'].includes(t.de) ? '' : ` (${r.v})`} : ${r.row?.t || ''}` }));
+      }
+      case 'mj-cb-open': case 'mj-cb-impro': {
+        let s = scen.get(b.dataset.sid); let sc = curScene(s, b.dataset.scene);
+        if (act === 'mj-cb-impro') {
+          s = scen.all().find((x) => x.impro);
+          if (!s) { s = scen.create('Combats improvisés'); s.impro = true; s.scenes = []; s.resume = 'Combats lancés depuis l’onglet Combat sans préparation.'; }
+          const d = new Date();
+          sc = newScene(`Combat du ${d.toLocaleDateString('fr-FR')} à ${d.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`);
+          s.scenes.push(sc);
+        }
+        if (!sc) return;
+        if (!sc.live) startLive(sc);
+        scen.save(s);
+        ui.scenId = s.id; ui.live = sc.id; ui.npcEdit = null; localStorage.setItem('insmv.scen', s.id); localStorage.setItem('insmv.live', sc.id);
+        render(); return window.scrollTo(0, 0);
       }
       case 'mj-sec': ui.mjSec = b.dataset.v; localStorage.setItem('insmv.mjsec', ui.mjSec); render(); return window.scrollTo(0, 0);
       case 'mj-cloud': return cloudDialog();
@@ -2372,6 +2604,7 @@ function handleDlgClick(e) {
   const r = e.target.closest('[data-ract]');
   if (r && rollState) {
     const s = rollState; const v = +r.dataset.v;
+    if (s.spin && r.dataset.ract !== 'close') return; // rouleaux en train de tourner
     switch (r.dataset.ract) {
       case 'close': dlg.close(); rollState = null; return;
       case 'go': return doRoll();
@@ -2397,6 +2630,8 @@ function handleDlgClick(e) {
     case 'exportAll': closeDlg(); return download('insmv-personnages.json', store.exportAll());
     case 'import': closeDlg(); return importFile();
     case 'print': closeDlg(); return printSheet();
+    case 'slot': slot.setSlot(!slot.slotPref()); toast(slot.slotPref() ? 'Bandit manchot activé' : 'Dés classiques'); return menuDialog();
+    case 'sound': slot.setSound(!slot.soundOn()); toast(slot.soundOn() ? 'Son des dés activé' : 'Son des dés coupé'); if (slot.soundOn()) { slot.sfx.unlock(); slot.sfx.win(); } return menuDialog();
     case 'recrea': closeDlg(); c.creation = 'crea'; return commit();
     case 'cloud': return cloudDialog();
     case 'cfgsave': try { store.setFirebaseConfig(dlg.querySelector('#fbcfg').value); closeDlg(); store.sync({ interactive: true }); render(); } catch (err) { toast(err.message); } return;
@@ -2420,6 +2655,7 @@ document.addEventListener('change', (e) => {
   if (el.id === 'alea-camp') { ui.aleaCamp = el.value; return render(); }
   if (el.id === 'alea-sup') { ui.aleaSup = el.value; return render(); }
   if (el.dataset.aleaMod) { (ui.aleaMod ||= {})[el.dataset.aleaMod] = el.value; return; }
+  if (el.dataset.lvname) { const s = scen.get(ui.scenId); const sc = curScene(s, el.dataset.lvname); if (sc) { sc.nom = el.value.trim() || sc.nom; scen.save(s); } return; }
   if (el.closest('[data-scform]')) return scenChange(el);
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;

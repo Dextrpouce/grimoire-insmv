@@ -272,6 +272,16 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 .nowrap { white-space: nowrap; }
 .card.unit.out { opacity: .55; }
 .card.unit .tracker .stepper button { width: 30px; height: 30px; }
+.card.unit.cur { outline: 3px solid var(--accent-hi); outline-offset: -1px; }
+/* Onglet Combat : ordre d'initiative */
+.init-row { display: flex; align-items: center; gap: 8px; padding: 7px 6px; border-top: 1px solid var(--line); border-radius: 8px; }
+.init-row:first-of-type { border-top: 0; }
+.init-row.cur { background: var(--card2); box-shadow: inset 4px 0 0 var(--accent); }
+.init-row.out { opacity: .5; }
+.init-row .stepper button { width: 28px; height: 28px; font-size: 11px; }
+.init-n { font-family: var(--font-title); font-size: 18px; width: 1.4em; text-align: center; color: var(--ink-soft); }
+.init-row.cur .init-n { color: var(--accent); }
+.init-now { font-family: var(--font-title); font-size: 16px; margin-bottom: 4px; }
 .card .stepper button { background: #fff; color: var(--ink); border-color: var(--line); }
 .card.dark .stepper button { background: #0e0e11; color: var(--on-dark); border-color: #34343d; }
 .card.dark .btn.ghost { color: var(--on-dark); border-color: #4a4a55; }
@@ -310,3 +320,53 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
   .top .ibtn { width: 34px; height: 34px; }
   .top .mode-btn { height: 34px; padding-left: 8px; padding-right: 8px; }
 }
+
+/* ===== Bandit manchot (js/slot.js) ===== */
+.slot { position: relative; margin: 12px auto 6px; max-width: 340px; padding: 6px 10px 6px; border-radius: 18px 18px 12px 12px;
+  background: linear-gradient(180deg, #5c0d12, #2a0507 60%, #1a0304); border: 3px solid var(--gold);
+  box-shadow: 0 0 0 3px #3a2a08, 0 8px 24px rgba(0, 0, 0, .6), inset 0 2px 0 rgba(255, 255, 255, .15); }
+.slot .bulbs { display: flex; justify-content: space-between; padding: 2px 4px; }
+.slot .bulbs i { width: 9px; height: 9px; border-radius: 50%; background: #ffd76a; box-shadow: 0 0 6px #ffcf40; animation: bulb 1s steps(1) infinite; }
+.slot .bulbs i:nth-child(odd) { animation-delay: .5s; }
+.slot.spinning .bulbs i { animation-duration: .25s; }
+.slot.spinning .bulbs i:nth-child(odd) { animation-delay: .125s; }
+@keyframes bulb { 0% { opacity: 1; } 50% { opacity: .25; box-shadow: none; } }
+.slot-sign { text-align: center; font-family: var(--font-type); font-size: 12px; color: #ffe8a8; letter-spacing: .04em; margin: 2px 0 6px; text-shadow: 0 0 6px #ff9f1a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.slot-body { display: flex; align-items: center; gap: 8px; }
+.slot-reels { position: relative; flex: 1; display: flex; gap: 6px; justify-content: center; padding: 6px; border-radius: 10px; background: #0d0d10; border: 2px solid #8a6d22; box-shadow: inset 0 6px 12px rgba(0, 0, 0, .8); }
+.slot .reel { position: relative; width: 64px; height: 64px; overflow: hidden; border-radius: 8px; background: linear-gradient(180deg, #bbb, #fff 30%, #fff 70%, #bbb); box-shadow: inset 0 8px 10px rgba(0, 0, 0, .35), inset 0 -8px 10px rgba(0, 0, 0, .35); }
+.slot .strip { will-change: transform; }
+.slot .strip b { display: grid; place-items: center; height: 64px; font-family: var(--font-title); font-size: 38px; font-weight: 700; color: var(--red); }
+.slot .reel.d2 .strip b { color: var(--blue); }
+.slot .reel.u .strip b { color: #111; }
+.slot.spinning .reel:not(.stopped) .strip b { filter: blur(1.5px); }
+.slot .reel.stopped { animation: clunk .22s ease-out; }
+@keyframes clunk { 0% { transform: translateY(-4px); } 60% { transform: translateY(2px); } 100% { transform: none; } }
+.payline { position: absolute; left: 2px; right: 2px; top: 50%; height: 2px; background: rgba(255, 40, 40, .55); pointer-events: none; }
+.slot-lever { position: relative; width: 28px; height: 92px; border: 0; background: none; cursor: pointer; padding: 0; flex: none; }
+.slot-lever::before { content: ''; position: absolute; left: 11px; top: 16px; width: 6px; height: 64px; border-radius: 3px; background: linear-gradient(90deg, #888, #eee, #888); transform-origin: 50% 100%; transition: transform .18s; }
+.slot-lever i { position: absolute; left: 3px; top: 0; width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #ff7b7b, #b3141b 60%, #5c0306); box-shadow: 0 2px 4px rgba(0, 0, 0, .6); transition: transform .18s; }
+.slot-lever::after { content: ''; position: absolute; left: 6px; bottom: 0; width: 16px; height: 14px; border-radius: 4px; background: #3a2a08; border: 2px solid var(--gold); }
+.slot-lever.pulled::before { transform: scaleY(-.45); }
+.slot-lever.pulled i { transform: translateY(58px); }
+.slot-lever:not(.pulled):hover i { transform: translateY(4px); }
+.slot-banner { text-align: center; font-family: var(--font-title); font-size: 22px; letter-spacing: .12em; color: #ffd76a; min-height: 30px; margin-top: 4px; text-shadow: 0 0 8px #ff9f1a; }
+.slot-banner small { display: block; font-size: 11px; letter-spacing: .05em; color: #ffe8a8; text-shadow: none; margin-top: -2px; }
+.slot.fx-lose .slot-banner { color: #8d8990; text-shadow: none; }
+.slot.fx-win .slot-banner { color: #8ff0b0; text-shadow: 0 0 8px #2f7a46; }
+.slot.fx-double .slot-banner, .slot.fx-triple .slot-banner { animation: blink .3s steps(1) 6; }
+.slot.fx-triple { animation: shake .4s 2; }
+.slot.fx-tilt { animation: shake .5s 1; }
+.slot.fx-tilt .slot-banner { color: var(--red-hi); text-shadow: 0 0 10px #f00; animation: blink .25s steps(1) 8; }
+.slot.fx-tilt .bulbs i { animation: none; opacity: .15; box-shadow: none; }
+.slot.fx-ange { border-color: #fff4c2; box-shadow: 0 0 0 3px #c9a24a, 0 0 40px 8px rgba(255, 236, 160, .7); background: linear-gradient(180deg, #2e6db3, #11274a 60%, #0a1830); }
+.slot.fx-ange .slot-banner { color: #fff; text-shadow: 0 0 12px #fff, 0 0 24px #ffd76a; animation: blink .4s steps(1) 6; }
+.slot.fx-demon { border-color: #ff3b1f; box-shadow: 0 0 0 3px #5c0306, 0 0 40px 10px rgba(255, 60, 20, .7); animation: shake .35s 3; }
+.slot.fx-demon .slot-banner { color: #ff5a2a; text-shadow: 0 0 10px #f00, 0 0 20px #ff9f1a; animation: blink .3s steps(1) 8; }
+.slot.fx-demon .bulbs i { background: #ff3b1f; box-shadow: 0 0 8px #ff3b1f; }
+@keyframes blink { 50% { opacity: .2; } }
+@keyframes shake { 0%, 100% { transform: none; } 20% { transform: translateX(-5px) rotate(-1deg); } 40% { transform: translateX(5px) rotate(1deg); } 60% { transform: translateX(-3px); } 80% { transform: translateX(3px); } }
+.slot-rain { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
+.slot-rain span { position: absolute; top: -40px; animation: rain 2.2s ease-in forwards; }
+@keyframes rain { to { transform: translateY(110vh) rotate(540deg); } }
+@media (prefers-reduced-motion: reduce) { .slot *, .slot { animation: none !important; transition: none !important; } }
