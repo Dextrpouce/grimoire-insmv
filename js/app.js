@@ -2360,7 +2360,7 @@ function npcAttack(u, n, w) {
   const fo = R.lvlInt(n.car.fo);
   return openRoll({ label: `${u.label} — ${w.n}`, r: w.att, prec: +w.prec || 0, char: npcChar(n, u.bl), kind: 'attaque', sits: weaponSits(w), after: (res) => {
     const dmg = res.mr + (+w.puis || 0) + (w.melee ? fo : 0);
-    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense du PJ, puis sa protection.`;
+    return `Dommages : <b style="font-size:20px;color:#fff">${dmg}</b> <span class="muted">(MR ${res.mr} + puissance ${sgn(+w.puis || 0)}${w.melee ? ' + Force ' + fo : ''})</span>`;
   } });
 }
 function scenChange(el) {
@@ -2576,7 +2576,7 @@ function attackRoll(c, w, char) {
   return openRoll({ label: 'Attaque : ' + w.n, r: weaponLevel(c, w), prec: (+w.prec || 0) + wf.prec, char, kind: 'attaque', sits: weaponSits(w),
     fx: [...wf.list, ...wf.force].map((f) => ({ n: f.n, txt: [f.prec ? `précision +${f.prec}` : '', f.puis ? `puissance +${f.puis}` : '', f.force ? `Force +${f.force} rang(s)` : ''].filter(Boolean).join(', ') })), after: (res) => {
     const dmg = res.mr + puis + (w.melee ? fo : 0);
-    return `Niveau de dommage avant défense : <b style="font-size:20px;color:#fff">${dmg}</b> (MR ${res.mr} + puissance ${sgn(puis)}${w.melee ? ' + Force ' + fo : ''}). Retrancher la MR de la défense adverse${/multiple/i.test(w.q || '') ? ' ; arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)' : ''}.`;
+    return `Dommages : <b style="font-size:20px;color:#fff">${dmg}</b> <span class="muted">(MR ${res.mr} + puissance ${sgn(puis)}${w.melee ? ' + Force ' + fo : ''})</span>${/multiple/i.test(w.q || '') ? '<br><small>Arme multiple : 2 coups sur un double, 3 sur un triple (+4 par coup supplémentaire)</small>' : ''}`;
   } });
 }
 async function mjAction(act, b) {
