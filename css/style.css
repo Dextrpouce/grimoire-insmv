@@ -467,7 +467,7 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 /* Portrait dans la carte Identité */
 .id-wrap { display: flex; gap: 14px; align-items: flex-start; }
 .id-wrap > .grid { flex: 1; min-width: 0; }
-.id-photo { flex: 0 0 150px; display: flex; flex-direction: column; gap: 6px; }
+.id-photo { flex: 0 0 clamp(180px, 28%, 250px); display: flex; flex-direction: column; gap: 6px; }
 .id-photo .portrait img { max-width: 100%; }
 .id-photo .ph-frame { aspect-ratio: 3 / 4; border: 2px dashed var(--line); border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--ink-soft); background: var(--card2); }
 .id-photo .ph-frame .i { width: 34px; height: 34px; opacity: .6; }
@@ -499,7 +499,7 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 
 /* Portrait : l'image remplit son cadre sans jamais imposer sa taille (photos d'appareil comprises) */
 .portrait { position: relative; overflow: hidden; border-radius: 10px; }
-.id-photo { max-width: 260px; }
+.id-photo { max-width: 250px; }
 .id-photo .portrait img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; object-position: center top; }
 .portrait-full { max-width: min(100%, 560px); max-height: 70vh; object-fit: contain; }
 @media (max-width: 520px) {
