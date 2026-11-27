@@ -507,3 +507,69 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
   .g2 { grid-template-columns: minmax(0, 1fr); }
   .id-photo { width: min(240px, 75%); max-height: 60vh; }
 }
+
+/* ===== Création : cartes Ange (arche dorée) et Démon (coins coupés) ===== */
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 4px 0 12px; align-items: stretch; }
+.duo-card { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px;
+  border: 0; padding: 0; margin: 0; font: inherit; cursor: pointer; background: none; transition: transform .15s, filter .15s, box-shadow .15s; }
+.duo-card > * { position: relative; z-index: 1; }
+.duo-card:hover, .duo-card:focus-visible { transform: translateY(-3px); }
+.dc-ico { display: block; margin-top: 30px; line-height: 0; }
+.dc-ico svg { width: 46px; height: auto; }
+.duo-card b { line-height: 1.05; }
+.duo-card small { padding: 0 14px; font-size: 13.5px; line-height: 1.35; min-height: 2.7em; }
+.dc-pa { font-family: var(--font-title); font-weight: 600; font-size: 16px; letter-spacing: .04em; padding: 3px 16px; margin: 2px 0 10px; }
+.dc-img { margin-top: auto; width: 100%; display: flex; justify-content: center; align-items: flex-end; }
+.dc-img img { display: block; width: 100%; max-height: 270px; object-fit: contain; object-position: bottom center; }
+
+/* Ange : arche, liseré doré et filet bleu intérieur, fond crème lumineux */
+.duo-card.ange { border-radius: 50% 50% 16px 16px / 24% 24% 16px 16px; border: 3px solid #c9a24a; overflow: hidden;
+  background: radial-gradient(ellipse at 50% 16%, #fffbea 0%, #f8f2e4 45%, #efe7d6 100%); color: var(--ink); }
+.duo-card.ange::before { content: ''; position: absolute; inset: 7px; z-index: 0; border: 1.5px solid #2e5fb0; border-radius: 50% 50% 11px 11px / 24% 24% 11px 11px; pointer-events: none; }
+.duo-card.ange .dc-ico { color: #c9a24a; }
+.duo-card.ange b { font-family: 'Cinzel', Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 30px; letter-spacing: .1em; text-transform: uppercase; color: #1f4fa0; }
+.duo-card.ange small { color: #4f4c53; }
+.duo-card.ange .dc-pa { background: #1f4fa0; color: #fff; border-radius: 999px; }
+.duo-card.ange .dc-img img { width: 84%; }
+.duo-card.ange:hover, .duo-card.ange:focus-visible { box-shadow: 0 0 24px rgba(201, 162, 74, .55); }
+
+/* Démon : octogone à bord rouge, fond sombre, illustration sur un panneau clair biseauté qui rougeoie en bas */
+.duo-card.demon { --cut: 22px; background: #c8352b; color: #ece2d9;
+  clip-path: polygon(var(--cut) 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, var(--cut) 100%, 0 calc(100% - var(--cut)), 0 var(--cut)); }
+.duo-card.demon::before { content: ''; position: absolute; inset: 2px; z-index: 0; background: linear-gradient(to bottom, #180d0c, #120908 65%, #2b0e0a);
+  clip-path: polygon(calc(var(--cut) - 1px) 0, calc(100% - var(--cut) + 1px) 0, 100% calc(var(--cut) - 1px), 100% calc(100% - var(--cut) + 1px), calc(100% - var(--cut) + 1px) 100%, calc(var(--cut) - 1px) 100%, 0 calc(100% - var(--cut) + 1px), 0 calc(var(--cut) - 1px)); }
+.duo-card.demon .dc-ico { color: #e8553a; }
+.duo-card.demon b { font-family: 'UnifrakturMaguntia', 'Old English Text MT', 'Times New Roman', serif; font-weight: 400; font-size: 36px; color: #e8553a; }
+.duo-card.demon small { color: #ece2d9; }
+.duo-card.demon .dc-pa { background: #e8553a; color: #1a0b09; padding: 4px 24px; clip-path: polygon(14% 0, 86% 0, 100% 50%, 86% 100%, 14% 100%, 0 50%); }
+.duo-card.demon .dc-img { width: 76%; padding-top: 10px; margin-bottom: 2px;
+  background: linear-gradient(to bottom, #f1ece4 0%, #ebe4d8 60%, #8a2c1c 88%, #3a120c 100%);
+  clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%, 0 16px); }
+.duo-card.demon .dc-img img { transform: scaleX(-1); -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); mask-image: linear-gradient(to bottom, #000 80%, transparent 100%); }
+.duo-card.demon:hover, .duo-card.demon:focus-visible { filter: drop-shadow(0 0 12px rgba(232, 85, 58, .6)); }
+
+@media (max-width: 460px) {
+  .duo { gap: 10px; }
+  .dc-ico { margin-top: 22px; }
+  .dc-ico svg { width: 36px; }
+  .duo-card.ange b { font-size: 22px; }
+  .duo-card.demon b { font-size: 28px; }
+  .duo-card small { font-size: 11.5px; padding: 0 10px; }
+  .dc-pa { font-size: 14px; }
+  .dc-img img { max-height: 200px; }
+  .duo-card.demon { --cut: 16px; }
+}
+/* Alignement des deux cartes : icône, titre, description et PA sur les mêmes lignes */
+.dc-ico { height: 30px; display: flex; align-items: flex-end; justify-content: center; }
+.duo-card b { height: 44px; display: flex; align-items: center; justify-content: center; }
+.duo-card small { min-height: 4.1em; display: flex; align-items: flex-start; justify-content: center; }
+.duo-card.ange { border-width: 2px; }
+@media (max-width: 460px) {
+  .dc-ico { height: 24px; }
+  .duo-card b { height: 36px; }
+  .duo-card small { min-height: 4.3em; }
+}
+.duo-card.demon { padding-top: 2px; } /* même décalage que la bordure de l'ange */
+/* Démon sans fond : posé directement sur la carte sombre, détaché par un halo rouge */
+.duo-card.demon .dc-img { width: 100%; padding-top: 0; margin-bottom: 0; background: radial-gradient(ellipse 60% 55% at 50% 60%, rgba(200, 53, 43, .35), transparent 70%); clip-path: none; }
+.duo-card.demon .dc-img img { width: 88%; -webkit-mask-image: none; mask-image: none; filter: drop-shadow(0 0 6px rgba(232, 85, 58, .45)); }

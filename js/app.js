@@ -198,7 +198,7 @@ function render() {
 
 function renderHome() {
   return `<div class="home">
-    <img class="cover" src="img/cover.webp" alt="In Nomine Satanis / Magna Veritas">
+    <img class="cover" src="img/accueil.webp" alt="In Nomine Satanis / Magna Veritas">
     <h1>Grimoire INS/MV</h1>
     <p class="muted d">Feuille de personnage et générateur pour In Nomine Satanis / Magna Veritas, 4<sup>e</sup> édition.</p>
     <div class="row" style="justify-content:center;margin-top:14px">
@@ -209,10 +209,6 @@ function renderHome() {
     <div style="margin-top:10px"><button class="btn dark" style="border:1px solid #4a4a55" data-act="mj-enter">${icon('book')} Mode maître de jeu</button></div>
     ${store.configured ? `<div style="margin-top:12px"><button class="btn ghost" style="color:var(--on-dark);border-color:#4a4a55" data-act="sync">${icon('cloud')} Récupérer mes personnages (se connecter)</button>
       <p class="small muted d">${store.status.state === 'needauth' ? 'Tes personnages créés sur un autre appareil apparaîtront ici après connexion.' : esc(store.status.message || '')}</p></div>` : ''}
-    <div class="row" style="justify-content:center;margin-top:24px;gap:24px">
-      <img src="img/mv.webp" style="width:min(300px,42vw);border-radius:8px" alt="Magna Veritas">
-      <img src="img/ins.webp" style="width:min(300px,42vw);border-radius:8px" alt="In Nomine Satanis">
-    </div>
   </div>`;
 }
 
@@ -1285,9 +1281,17 @@ function drawGen() {
   const g = gen;
   let body = '', foot = '', title = 'Nouveau personnage';
   if (g.step === 'type') {
-    body = GTYPES.map(([h, list]) => `<div class="list-h">${h}</div>` + list.map((k) => `<button class="choice" data-g="type" data-v="${k}">
-      ${k === 'ange' ? '<img src="img/mv.webp" alt="">' : k === 'demon' ? '<img src="img/ins.webp" alt="">' : ''}
-      <span><b>${R.TYPES[k].n}</b><small>${TYPE_DESC[k]}</small></span></button>`).join('')).join('');
+    // Ange et démon : deux grandes cartes illustrées ; les autres types en liste
+    const DUO = { demon: 'img/demon.webp', ange: 'img/ange.webp' };
+    const DUO_ICO = { // auréole et cornes au-dessus du titre
+      ange: '<svg viewBox="0 0 60 18" aria-hidden="true"><ellipse cx="30" cy="9" rx="26" ry="6.5" fill="none" stroke="currentColor" stroke-width="3.2"/></svg>',
+      demon: '<svg viewBox="0 0 60 28" aria-hidden="true"><path d="M14 2c2 9 7 15 13 20-7-2-12-7-15-13zM46 2c-2 9-7 15-13 20 7-2 12-7 15-13z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>',
+    };
+    body = GTYPES.map(([h, list]) => `<div class="list-h">${h}</div>` + (list.every((k) => DUO[k])
+      ? `<div class="duo">${['ange', 'demon'].filter((k) => list.includes(k)).map((k) => `<button class="duo-card ${k}" data-g="type" data-v="${k}">
+          <span class="dc-ico">${DUO_ICO[k]}</span><b>${R.TYPES[k].n}</b><small>${TYPE_DESC[k].replace(/\s*\d+ PA\.?\s*$/, '')}</small>
+          <span class="dc-pa">${R.TYPES[k].pa} PA</span><span class="dc-img"><img src="${DUO[k]}" alt="${R.TYPES[k].n}"></span></button>`).join('')}</div>`
+      : list.map((k) => `<button class="choice" data-g="type" data-v="${k}"><span><b>${R.TYPES[k].n}</b><small>${TYPE_DESC[k]}</small></span></button>`).join(''))).join('');
   } else if (g.step === 'tier') {
     const t = R.TYPES[g.type];
     title = t.n;
