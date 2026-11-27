@@ -1261,7 +1261,7 @@ function addWound(g, note = '') {
 // ================= Générateur de personnage =================
 let gen = null;
 const GTYPES = [
-  ['Livre de base', ['ange', 'demon']],
+  ['', ['ange', 'demon']], // cartes Ange et Démon, sans titre
   ['Autres personnages (livre de base, chap. 5)', ['humain', 'heroique', 'serviteur', 'soldat', 'fils', 'mortvivant', 'familier', 'incube', 'combat']],
   ['Troisième Force (Les Petites Apocalypses)', ['psi', 'paien', 'renegat_a', 'renegat_d', 'fee', 'monstre']],
 ];
@@ -1287,7 +1287,7 @@ function drawGen() {
       ange: '<svg viewBox="0 0 60 18" aria-hidden="true"><ellipse cx="30" cy="9" rx="26" ry="6.5" fill="none" stroke="currentColor" stroke-width="3.2"/></svg>',
       demon: '<svg viewBox="0 0 60 28" aria-hidden="true"><path d="M14 2c2 9 7 15 13 20-7-2-12-7-15-13zM46 2c-2 9-7 15-13 20 7-2 12-7 15-13z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>',
     };
-    body = GTYPES.map(([h, list]) => `<div class="list-h">${h}</div>` + (list.every((k) => DUO[k])
+    body = GTYPES.map(([h, list]) => (h ? `<div class="list-h">${h}</div>` : '') + (list.every((k) => DUO[k])
       ? `<div class="duo">${['ange', 'demon'].filter((k) => list.includes(k)).map((k) => `<button class="duo-card ${k}" data-g="type" data-v="${k}">
           <span class="dc-ico">${DUO_ICO[k]}</span><b>${R.TYPES[k].n}</b><small>${TYPE_DESC[k].replace(/\s*\d+ PA\.?\s*$/, '')}</small>
           <span class="dc-pa">${R.TYPES[k].pa} PA</span><span class="dc-img"><img src="${DUO[k]}" alt="${R.TYPES[k].n}"></span></button>`).join('')}</div>`
