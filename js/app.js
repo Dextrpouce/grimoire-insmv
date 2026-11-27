@@ -560,7 +560,7 @@ function renderPouvoirs(c) {
       <div class="row" style="margin-top:6px">
         ${!t.nopp && pp ? `<button class="btn sm pri" data-act="pow-use" data-i="${i}">Activer (${pp} PP)</button>` : ''}
         ${!inv ? `<button class="btn sm" data-act="pow-roll" data-i="${i}">Test de pouvoir</button>` : ''}
-        <button class="btn sm ghost" data-act="toggle" data-key="p${i}">${open ? 'Masquer' : 'Description'}</button>
+        ${d.rune ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="p${i}">${open ? 'Masquer' : 'Description'}</button>`}
         <span class="spacer"></span>
         ${ui.mode !== 'normal' ? `<button class="ibtn" style="width:32px;height:32px" data-act="pow-del" data-i="${i}">${icon('trash')}</button>` : ''}
       </div>
@@ -572,7 +572,7 @@ function renderPouvoirs(c) {
   <section class="card">
     <h2>Pouvoirs ${t.nopp ? '' : `<span class="tag">${c.ppCur ?? R.ppMax(c)} / ${R.ppMax(c)} PP</span>`}</h2>
     ${list || '<div class="empty">Aucun pouvoir</div>'}
-    ${isEdit() || isProg() ? `<div class="row"><button class="btn" data-act="pow-add">${icon('plus')} Ajouter un pouvoir</button></div>` : ''}
+    ${isEdit() || isProg() ? `<div class="row"><button class="btn" data-act="pow-add">${icon('plus')} ${c.type === 'paien' ? 'Ajouter une rune ou un pouvoir' : 'Ajouter un pouvoir'}</button></div>` : ''}
     <p class="small muted" style="margin-bottom:0">Pouvoir activé : une seconde de concentration. Constant : se renouvelle en repayant le coût. Les PP se récupèrent à raison de 1 toutes les 6 heures sans utiliser de pouvoir.${c.type === 'psi' ? ' Psionique : un test du talent associé est nécessaire avant chaque utilisation.' : ''}</p>
   </section>
   ${t.sup ? `<section class="card">
@@ -1108,7 +1108,10 @@ function adjust(kind, key, d) {
 function dialog(title, body, foot = '') {
   dlg.onclick = null;
   dlg.innerHTML = `<div class="dlg-h"><h2>${title}</h2><button class="ibtn" data-dact="close">${icon('x')}</button></div><div class="dlg-b">${body}</div>${foot ? `<div class="dlg-f">${foot}</div>` : ''}`;
-  if (!dlg.open) dlg.showModal();
+  if (!dlg.open) {
+    dlg.showModal();
+    dlg.querySelector('.dlg-b input[placeholder^="Rechercher"]')?.focus(); // fenêtre avec recherche : on peut taper tout de suite
+  }
 }
 const closeDlg = () => { dlg.close(); dlg.onclick = null; };
 // L'évènement « close » est envoyé en différé : quand une fenêtre se ferme et qu'une autre s'ouvre aussitôt
@@ -1155,10 +1158,12 @@ function chooseList(title, items, onPick, opts = {}) {
 
 function addPowerDialog() {
   const c = C();
-  const items = R.POUVOIRS.filter((p) => !p.multi).map((p) => ({
-    p, label: p.n, sub: `${R.powerAccessible(c, p) ? '' : '[accès restreint] '}${hasPA(p) ? `${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'} · ` : `${accessTxt(p)} · `}${p.nat} · ${p.act}${p.s || R.powerDef(p.parent)?.s ? ' — ' + (p.s || R.powerDef(p.parent).s) : ''}`,
-  })).sort((a, b) => (R.powerAccessible(c, b.p) - R.powerAccessible(c, a.p)) || a.label.localeCompare(b.label, 'fr'));
-  chooseList('Ajouter un pouvoir', items, ({ p }) => {
+  const pool = R.POUVOIRS.filter((p) => !p.multi);
+  const runes = c.type === 'paien' ? R.RUNE_DEFS.filter((r) => !c.pouvoirs.some((p) => p.n === r.n)) : [];
+  const items = runes.map((p) => ({ p, label: p.n, sub: `${p.a.paien} PA · héros viking, à la place des pouvoirs — ${p.d}` })).concat(pool.map((p) => ({
+    p, label: p.n, sub:`${R.powerAccessible(c, p) ? '' : '[accès restreint] '}${hasPA(p) ? `${R.powerUnitCost(c, p)} PA${p.a?.inv ? '' : '/rang'} · ` : `${accessTxt(p)} · `}${p.nat} · ${p.act}${p.s || R.powerDef(p.parent)?.s ? ' — ' + (p.s || R.powerDef(p.parent).s) : ''}`,
+  })).sort((a, b) => (R.powerAccessible(c, b.p) - R.powerAccessible(c, a.p)) || a.label.localeCompare(b.label, 'fr')));
+  chooseList(runes.length ? 'Ajouter une rune ou un pouvoir' : 'Ajouter un pouvoir', items, ({ p }) => {
     const inv = !!p.a?.inv;
     const np = { n: p.n, r: inv ? 0 : 2 };
     if (isProg()) {

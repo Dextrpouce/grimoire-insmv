@@ -169,6 +169,7 @@ dialog .field label { color: var(--on-dark-soft); }
 .pow .desc { font-size: 14.5px; margin-top: 6px; white-space: pre-line; }
 .badge { display: inline-block; font-size: 11px; font-family: var(--font-title); letter-spacing: .05em; text-transform: uppercase; padding: 1px 6px; border-radius: 5px; background: var(--card2); color: var(--ink-soft); margin-right: 3px; }
 .badge.physique { background: #e7d8c8; color: #6b3d12; } .badge.mental { background: #d9e2f2; color: #213e72; } .badge.spirituel { background: #ece0f3; color: #5a2577; }
+.badge.rune { background: #e3e6ea; color: #2b3a4a; }
 .badge.ok { background: #d8efdf; color: #1f5a33; } .badge.no { background: #f6d9da; color: #8a1217; }
 
 /* ---------- Lanceur de dés ---------- */

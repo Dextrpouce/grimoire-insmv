@@ -515,7 +515,9 @@ export const caracCost = (c, t = typeOf(c)) => {
   }
   return pa;
 };
-export function powerDef(n) { return POUVOIRS.find((p) => p.n === n); }
+// Runes vikings : achetées par les héros païens vikings à la place des pouvoirs (coût fixe, sans niveau ni PP)
+export const RUNE_DEFS = RUNES.map(([n, pa, d]) => ({ n: 'Rune ' + n, rune: true, nat: 'rune', act: 'Rune (permanente)', s: d, d, a: { paien: pa, inv: 1 } }));
+export function powerDef(n) { return POUVOIRS.find((p) => p.n === n) || RUNE_DEFS.find((p) => p.n === n); }
 // coût d'acquisition par rang pour ce personnage (le moins cher des accès ouverts)
 export function powerUnitCost(c, def) {
   if (!def) return 3;
