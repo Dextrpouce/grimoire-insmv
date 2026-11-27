@@ -1,10 +1,10 @@
 // Service worker : l'appli fonctionne hors connexion.
-const CACHE = 'insmv-v56';
+const CACHE = 'insmv-v57';
 const SHELL = [
   './', 'index.html', 'manifest.webmanifest', 'css/style.css',
   'js/app.js', 'js/rules.js', 'js/store.js', 'js/table.js', 'js/scenario.js', 'js/cloud.js', 'js/config.js', 'js/mjlock.js', 'js/manuel.js', 'js/slot.js', 'js/data/superieurs.js', 'js/data/descriptions.js', 'js/data/pouvoirs.js', 'js/data/bestiaire.js', 'js/data/pnjrapides.js', 'js/data/scenarios-livres.js', 'js/data/hierarchie.js', 'js/data/tables-mj.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/favicon-64.png',
-  'img/accueil.webp', 'img/ange.webp', 'img/demon.webp', 'img/deepee.webp', 'img/serpent.webp',
+  'img/accueil.webp', 'img/ange.webp', 'img/demon.webp',
 ];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
