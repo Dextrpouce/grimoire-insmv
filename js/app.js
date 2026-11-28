@@ -2169,7 +2169,7 @@ function renderSceneCard(s, sc, i) {
   }).join('');
   const isCur = s.cur === sc.id;
   return `<section class="card scene${isCur ? ' cur' : ''}${sc.done && !isCur ? ' done' : ''}" id="scene-${esc(sc.id)}">
-    <h2>${i + 1}. ${esc(sc.nom)}${isCur ? '<span class="badge cur">Scène en cours</span>' : sc.done ? '<span class="badge">Jouée</span>' : ''}${sc.live ? '<span class="stamp" style="margin-left:6px">Combat en cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
+    <h2>${i + 1}. ${esc(sc.nom.replace(/^\s*\d+\s*[.)–:-]\s*/, '') || sc.nom)}${isCur ? '<span class="badge cur">Scène en cours</span>' : sc.done ? '<span class="badge">Jouée</span>' : ''}${sc.live ? '<span class="stamp" style="margin-left:6px">Combat en cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
     ${edit ? `<div class="grid g2" data-scform>${F.text('', 'Nom de la scène', sc.nom, '', `data-scf="nom" data-scene="${esc(sc.id)}"`)}${F.text('', 'Lieu', sc.lieu, '', `data-scf="lieu" data-scene="${esc(sc.id)}"`)}
       <div class="field" style="grid-column:1/-1"><label>Déroulement, indices, réactions des PNJ</label><textarea data-scf="notes" data-scene="${esc(sc.id)}">${esc(sc.notes)}</textarea></div></div>
       <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-scene-up" data-key="${esc(sc.id)}" ${i ? '' : 'disabled'}>Monter</button><button class="btn sm danger" data-act="sc-scene-del" data-key="${esc(sc.id)}">Supprimer la scène</button><span class="spacer"></span><button class="btn sm pri" data-act="toggle" data-key="${k}">Terminé</button></div>`
