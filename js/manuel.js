@@ -124,7 +124,7 @@ export const MANUEL_MJ = [
       <li>Chaque combat liste ses adversaires : attaques, Défense, Volonté, Foi, Perception, seuils BL/BG/BF/MS et PF (calculés selon le type, modifiables), PP, protection, pouvoirs, talents utiles.</li>
       <li>Un PNJ peut être repris d'un personnage du Grimoire.</li>
       <li>Le <b>bestiaire</b> (onglet <b>Outils</b>) garde les types d'ennemis réutilisables : prépare-les une fois, puis ajoute-les à une scène en choisissant combien il en faut.</li>
-      <li><b>PNJ rapide</b> : un ange ou un démon type de n'importe quel supérieur, de 10 PP (grade 0) à 40 PP (grade 3).</li>
+      <li><b>PNJ rapide</b> : un ange ou un démon type de n'importe quel supérieur, de 10 PP (grade 0) à 40 PP (grade 3), un psionique (par conpsi) ou un héros païen (par panthéon), débutant ou confirmé, ou un humain ou une créature type des livres.</li>
       <li><b>Bestiaire des livres</b> : plus d'une centaine d'adversaires prêts à l'emploi, avec la page de référence.</li>
       <li>Le bestiaire s'exporte et s'importe en fichier.</li>
     </ul>` },

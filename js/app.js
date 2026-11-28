@@ -2013,22 +2013,77 @@ function pickJSON(fn) {
   inp.onchange = async () => { try { toast(fn(await inp.files[0].text())); render(); } catch (e) { toast(e instanceof SyntaxError ? 'Fichier illisible' : 'Import impossible : ' + e.message); } };
   inp.click();
 }
-// Demande un nombre d'exemplaires
-// PNJ rapide de l'écran du maître : camp, supérieur et total de PP → fiche calculée par les tables d'évolution
+// PNJ rapide : ange ou démon de l'écran du maître (supérieur + PP, tables d'évolution),
+// ou profil type des livres pour la troisième Force, les humains et les créatures
+const QK_KINDS = [
+  ['ange', 'Ange'], ['demon', 'Démon'], ['psi', 'Psionique'], ['paien', 'Héros païen'],
+  ['humain', 'Humain', ['humain', 'serviteur', 'soldat']], ['creature', 'Créature', ['monstre', 'fee', 'mortvivant', 'familier', 'combat']],
+];
+// psionique / païen : profils « livre-psi-<groupe>-<PP> » regroupés par conpsi ou panthéon
+function qkGroups(kind) {
+  const g = new Map();
+  for (const t of BOOK) {
+    const m = t.id.match(new RegExp(`^livre-${kind}-(.+)-(\d+)$`)); if (!m) continue;
+    if (!g.has(m[1])) g.set(m[1], { lab: t.nom.replace(/^(Psionique|Héros païen)\s+/, '').replace(/\s*\(\d+ PP\)$/, ''), pp: [] });
+    g.get(m[1]).pp.push([+m[2], t]);
+  }
+  return [...g.values()];
+}
+const qkCopy = (t) => ({ ...JSON.parse(JSON.stringify(t)), id: newNpc().id });
 function askQuickNpc() {
   return new Promise((resolve) => {
-    const opts = (camp) => QUICK[camp].map((p) => `<option>${esc(p[0])}</option>`).join('');
-    dialog('PNJ rapide', `<p class="small muted" style="margin-top:0">Profils du livret de l'écran du maître : un ange ou un démon type par supérieur, de 10 PP (grade 0) à 40 PP (grade 3). Caractéristiques, talents regroupés et pouvoirs suivent les tables d'évolution.</p>
-      <div class="field"><label>Camp</label><select id="qk-camp"><option value="ange">Ange</option><option value="demon">Démon</option></select></div>
-      <div class="field"><label>Supérieur</label><select id="qk-sup">${opts('ange')}</select></div>
-      <div class="field"><label>Total de PP</label><select id="qk-pp">${QUICK_PP.map((p) => `<option value="${p}">${p} PP</option>`).join('')}</select></div>`,
+    const help = {
+      ange: 'Profils du livret de l’écran du maître : un ange type par supérieur, de 10 PP (grade 0) à 40 PP (grade 3).',
+      demon: 'Profils du livret de l’écran du maître : un démon type par prince, de 10 PP (grade 0) à 40 PP (grade 3).',
+      psi: 'Psionique type de chaque conpsi (Les Petites Apocalypses, p. 128), débutant ou confirmé.',
+      paien: 'Héros païen type de chaque panthéon (Les Petites Apocalypses, p. 128), débutant ou confirmé.',
+      humain: 'Humains types des livres : serviteurs, soldats, bandes, mortels ordinaires.',
+      creature: 'Créatures des livres : monstres, fées, morts-vivants, familiers.',
+    };
+    dialog('PNJ rapide', `<p class="small muted" id="qk-help" style="margin-top:0"></p>
+      <div class="field"><label>Type</label><select id="qk-kind">${QK_KINDS.map(([k, l]) => `<option value="${k}">${l}</option>`).join('')}</select></div>
+      <div class="field"><label id="qk-l1">Supérieur</label><select id="qk-a"></select></div>
+      <div class="field" id="qk-f2"><label>Puissance</label><select id="qk-b"></select></div>`,
     `<button class="btn" data-dact="close">Annuler</button><button class="btn pri" id="qk-ok">Créer</button>`);
-    const camp = dlg.querySelector('#qk-camp'); const sup = dlg.querySelector('#qk-sup');
-    camp.onchange = () => { sup.innerHTML = opts(camp.value); };
-    dlg.querySelector('#qk-ok').onclick = () => { const r = quickNpc(camp.value, sup.value, +dlg.querySelector('#qk-pp').value); closeDlg(); resolve(r); };
+    const $ = (id) => dlg.querySelector(id);
+    const kind = $('#qk-kind'); const a = $('#qk-a'); const b = $('#qk-b');
+    const fill = () => {
+      const k = kind.value; const def = QK_KINDS.find((x) => x[0] === k);
+      $('#qk-help').textContent = help[k];
+      if (k === 'ange' || k === 'demon') {
+        $('#qk-l1').textContent = k === 'ange' ? 'Supérieur' : 'Prince';
+        a.innerHTML = QUICK[k].map((p) => `<option>${esc(p[0])}</option>`).join('');
+        b.innerHTML = QUICK_PP.map((p) => `<option value="${p}">${p} PP</option>`).join('');
+        $('#qk-f2').hidden = false;
+      } else if (k === 'psi' || k === 'paien') {
+        const gs = qkGroups(k);
+        $('#qk-l1').textContent = k === 'psi' ? 'Conpsi' : 'Panthéon';
+        a.innerHTML = gs.map((g, i) => `<option value="${i}">${esc(g.lab)}</option>`).join('');
+        const pp = () => { b.innerHTML = gs[+a.value].pp.map(([n], i) => `<option value="${i}">${n} PP${i ? ' (confirmé)' : ''}</option>`).join(''); };
+        a.onchange = pp; pp();
+        $('#qk-f2').hidden = false;
+        return;
+      } else {
+        $('#qk-l1').textContent = 'Profil';
+        const list = BOOK.filter((t) => def[2].includes(t.type)).sort((x, y) => x.nom.localeCompare(y.nom, 'fr'));
+        const dup = (t) => list.filter((x) => x.nom === t.nom).length > 1; // même nom : on précise le livre
+        a.innerHTML = list.map((t) => `<option value="${esc(t.id)}">${esc(t.nom)}${dup(t) ? ` (${esc(String(t.book).split(',')[0])})` : ''}</option>`).join('');
+        $('#qk-f2').hidden = true;
+      }
+      a.onchange = null;
+    };
+    kind.onchange = fill; fill();
+    $('#qk-ok').onclick = () => {
+      const k = kind.value; let r = null;
+      if (k === 'ange' || k === 'demon') r = quickNpc(k, a.value, +b.value);
+      else if (k === 'psi' || k === 'paien') r = qkCopy(qkGroups(k)[+a.value].pp[+b.value][1]);
+      else { const t = BOOK.find((x) => x.id === a.value); r = t && qkCopy(t); }
+      closeDlg(); resolve(r);
+    };
     onRealClose(() => resolve(null));
   });
 }
+// Demande un nombre d'exemplaires
 async function askQty(nom, def = 1) {
   const v = await ask(nom, 'Combien ?', String(def));
   if (v === null) return 0;
@@ -2684,7 +2739,7 @@ async function scenAction(act, b) {
       sc.live = null; ui.live = null; localStorage.removeItem('insmv.live'); return save();
     case 'lv-add':
       return chooseList(sc.live.units.length ? 'Renfort' : 'Adversaires', [
-        { quick: true, label: 'PNJ rapide', sub: 'Ange ou démon type de l’écran du maître, selon son supérieur et ses PP' },
+        { quick: true, label: 'PNJ rapide', sub: 'Ange, démon, psionique, héros païen, humain ou créature type' },
         ...sc.npcs.map((x) => ({ x, label: x.nom, sub: [x.source, 'déjà dans la scène'].filter(Boolean).join(' · ') })),
         ...typeItems((t) => sc.npcs.some((x) => x.typeId === t.id)),
       ], async (it) => {
