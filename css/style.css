@@ -599,3 +599,23 @@ table.alea tr.hit td.d { color: var(--red); }
 .camp-ico.ange { color: #c9a24a; } .camp-ico.demon { color: #d0402f; } .camp-ico.tiers { color: #2f9a76; }
 .camp-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; white-space: nowrap; }
 .camp-tag.ange { color: #9a7a2e; } .camp-tag.demon { color: #b5321f; } .camp-tag.tiers { color: #23795c; }
+
+/* Onglet Vie privée */
+.vie-q { margin: 10px 0 14px; }
+.vie-h { font-family: var(--font-title); font-weight: 600; text-transform: uppercase; letter-spacing: .05em; font-size: 13px; margin-bottom: 4px; }
+.choice.vie-o { padding: 8px 10px; margin: 4px 0; }
+.choice.vie-o span { font-size: 14px; line-height: 1.35; }
+.choice.vie-o.on { border-color: var(--red); background: #5c1d17; box-shadow: inset 4px 0 0 var(--red); }
+.choice.vie-o.on span, .choice.vie-o.on b { color: #fff; }
+.vie-q.sub { margin-left: 14px; padding-left: 10px; border-left: 2px solid var(--line); }
+/* 7 onglets : libellés sur deux lignes au besoin */
+nav.tabs button { line-height: 1.1; text-align: center; padding: 0 2px; }
+.vie-r { border-left: 3px solid var(--line); padding: 4px 0 6px 10px; margin: 6px 0; }
+.vie-who { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 2px; }
+.vie-hook { display: flex; gap: 8px; align-items: center; background: rgba(201, 162, 74, .14); border-radius: 8px; padding: 4px 8px; margin-top: 4px; }
+.vie-hook span { flex: 1; }
+.vie-bg { border-top: 1px solid var(--line); padding: 6px 0; }
+.vie-bg summary { cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.vie-who .pj, .card > div > .pj { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; padding: 2px 9px 2px 2px; border-radius: 12px; background: var(--card2); color: var(--ink); }
+.pj .crest { width: 22px; height: 22px; min-width: 22px; font-size: 11px; }
+.vie-bg summary .crest { width: 24px; height: 24px; min-width: 24px; font-size: 12px; }

@@ -27,6 +27,24 @@ const BOOK_RANK = [[/écran/i, 2], [/règles|livre de base|livret (in nomine|mag
   [/jésus reviens/i, 5], [/petites apocalypses/i, 6], [/angelots/i, 7], [/bible à dudule/i, 8], [/on ferme/i, 9]];
 const bookRank = (s) => BOOK_RANK.find(([re]) => re.test(String(s || '')))?.[1] ?? 99;
 const byBook = (f) => (a, b) => bookRank(f(a)) - bookRank(f(b)); // tri stable : l'ordre du livre est gardé
+// Questionnaires de vie privée (On Ferme !, p. 70) : sortis des tables aléatoires, ils vont dans l'onglet Vie privée
+// une question par ligne, réponses « a. … ; b. … » ; « Si … » : question qui dépend de la réponse précédente
+const VIE_Q = {};
+for (const [id, camp] of [['of-vie-privee-ange', 'ange'], ['of-vie-privee-demon', 'demon']]) {
+  const i = TABLES_MJ.findIndex((t) => t.id === id); if (i < 0) continue;
+  const t = TABLES_MJ.splice(i, 1)[0]; let base = -1;
+  VIE_Q[camp] = { ref: `${t.livre}, ${t.ref}`, qs: t.lignes.map((r, k) => {
+    const opts = r.t.split(/\s*;\s*(?=[a-d]\.\s)/).map((x) => { const m = x.trim().match(/^([a-d])\.\s*([\s\S]*?)\.?$/); return m ? { k: m[1], t: m[2] } : null; }).filter(Boolean);
+    let dep = null;
+    if (/^Si /.test(r.d) && base >= 0) {
+      const cond = r.d.slice(3).trim().toLowerCase();
+      const prevOpts = t.lignes[base].t.toLowerCase();
+      const v = /^[a-d]$/.test(cond) ? cond : (prevOpts.match(new RegExp(`([a-d])\\.\\s*${cond}`)) || [])[1];
+      dep = v ? { q: base, v } : null;
+    } else base = k;
+    return { q: r.d, opts, dep };
+  }) };
+}
 TABLES_MJ.sort(byBook((t) => t.livre));
 SCENARIOS_LIVRES.sort(byBook((x) => x.livre));
 BOOK.sort(byBook((t) => t.book));
@@ -180,7 +198,7 @@ const ui = {
   scenId: localStorage.getItem('insmv.scen') || null, npcEdit: null, // { scene, npc }
   live: localStorage.getItem('insmv.live') || null, // id de la scène dont le combat est affiché
 };
-const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['sac', 'Sac', 'bag'], ['carnet', 'Carnet', 'folder'], ['biblio', 'Biblio', 'book']];
+const TABS = [['fiche', 'Fiche', 'sheet'], ['combat', 'Combat', 'sword'], ['pouvoirs', 'Pouvoirs', 'wing'], ['sac', 'Sac', 'bag'], ['carnet', 'Carnet', 'folder'], ['vie', 'Vie privée', 'user'], ['biblio', 'Biblio', 'book']];
 const MODES = {
   normal: { label: 'Jeu', icon: 'die', desc: 'Pour jouer : tout est verrouillé, toucher une valeur lance un test.' },
   prog: { label: 'PA', icon: 'star', desc: 'Dépenser les points d\'administration (PA) gagnés : caractéristique 2 PA/rang, talent 1 PA (principal + 1 secondaire offert), pouvoir selon son coût, PP 1 PA.' },
@@ -257,6 +275,7 @@ function renderTab(c) {
     case 'sac': return renderSac(c);
     case 'pouvoirs': return renderPouvoirs(c);
     case 'carnet': return renderCarnet(c);
+    case 'vie': return renderVie(c);
     case 'biblio': return renderBiblio(c);
     default: return renderFiche(c);
   }
@@ -723,6 +742,30 @@ function portraitDialog() {
   const c = C(); if (!c?.portrait) return;
   dialog(esc(c.nom || 'Portrait'), `<img class="portrait-full" src="${c.portrait}" alt="Portrait de ${esc(c.nom || 'ton personnage')}">`,
     `<button class="btn ghost" data-dact="portrait-del">Retirer</button><span class="spacer"></span>${canCamera() ? '<button class="btn" data-dact="portrait-cam">Photo</button>' : ''}<button class="btn pri" data-dact="portrait-change">Changer</button>`);
+}
+// ================= Vie privée =================
+// c.vie = { q: { 'ange-0': 'b', … }, bg: 'background' }
+const vieCamp = (c) => (R.TYPES[c.type]?.sup ? R.TYPES[c.type].camp : '');
+function vieAnswers(c) { // [question, réponse choisie] des questions qui s'appliquent
+  const camp = vieCamp(c); const Q = VIE_Q[camp]; const a = c.vie?.q || {};
+  if (!Q) return [];
+  return Q.qs.map((x, i) => [x, a[`${camp}-${i}`], i]).filter(([x]) => !x.dep || a[`${camp}-${x.dep.q}`] === x.dep.v);
+}
+function renderVie(c) {
+  const camp = vieCamp(c); const Q = VIE_Q[camp]; const a = c.vie?.q || {};
+  const qs = vieAnswers(c);
+  const done = qs.filter(([, v]) => v).length;
+  return `${Q ? `<section class="card">
+    <h2>${campIco(camp)} Questionnaire de vie privée <span class="tag">${done}/${qs.length}</span></h2>
+    <p class="small muted" style="margin-top:0">Ce que fait ton ${camp === 'ange' ? 'ange' : 'démon'} quand il n’est pas en mission. Choisis une réponse par question (touche-la de nouveau pour l’enlever). <i>${esc(Q.ref)}</i></p>
+    ${qs.map(([x, v, i]) => `<div class="vie-q${x.dep ? ' sub' : ''}"><div class="vie-h">${esc(x.q)}</div>
+      ${x.opts.map((o) => `<button class="choice vie-o${v === o.k ? ' on' : ''}" data-act="vie-pick" data-key="${camp}-${i}" data-v="${o.k}"><span><b>${o.k}.</b> ${esc(o.t)}</span></button>`).join('')}</div>`).join('')}
+  </section>` : `<section class="card"><h2>Questionnaire de vie privée</h2><p class="small muted" style="margin:0">Le livre en propose un pour les anges et un pour les démons. Pour ton personnage, raconte sa vie privée dans le background ci-dessous.</p></section>`}
+  <section class="card"><h2>Background</h2>
+    <div class="grid" data-form="vie"><div class="field full"><label>Histoire du personnage, avant et depuis son incarnation</label>
+      <textarea name="vie.bg" rows="10" placeholder="D’où il vient, ce qu’il a vécu, ses proches, ses secrets, ce qui le fait avancer…">${esc(c.vie?.bg || '')}</textarea></div></div>
+    <p class="small muted" style="margin-bottom:0">Visible du MJ quand ta fiche est partagée avec une table.</p>
+  </section>`;
 }
 function renderCarnet(c) {
   const t = R.typeOf(c); const sup = R.supByName(c.superieur);
@@ -1636,7 +1679,7 @@ function printSheet() {
   <p><b>Langues</b> : ${esc(c.langues.join(', ') || '—')}</p>
   <p><b>Pouvoirs</b> : ${esc(c.pouvoirs.map((p) => p.n + (p.r ? ' ' + L(p.r) : '')).join(', '))}</p>
   <p><b>Armes</b> : ${esc(c.armes.map((x) => `${x.n} (préc. ${sgn(x.prec)}, puiss. ${sgn(x.puis)})`).join(', ') || '—')}</p>
-  ${(c.sac || []).length ? `<p><b>Équipement</b> : ${esc(c.sac.map((x) => (x.nb ?? 1) > 1 ? `${x.n} ×${x.nb}` : x.n).join(', '))}</p>` : ''}<p><b>Possessions</b> : ${esc(c.possessions)}</p><p><b>Notes</b> : ${esc(c.notes)}</p>
+  ${(c.sac || []).length ? `<p><b>Équipement</b> : ${esc(c.sac.map((x) => (x.nb ?? 1) > 1 ? `${x.n} ×${x.nb}` : x.n).join(', '))}</p>` : ''}<p><b>Possessions</b> : ${esc(c.possessions)}</p>${vieAnswers(c).some(([, v]) => v) ? `<p><b>Vie privée</b> : ${esc(vieAnswers(c).filter(([, v]) => v).map(([x, v]) => `${x.q} : ${x.opts.find((o) => o.k === v)?.t || v}`).join(' ; '))}</p>` : ''}${c.vie?.bg ? `<p><b>Background</b> : ${esc(c.vie.bg)}</p>` : ''}<p><b>Notes</b> : ${esc(c.notes)}</p>
   <script>print()<\/script></body></html>`);
   w.document.close();
 }
@@ -1875,6 +1918,78 @@ function campBar() {
   const c = tableCamp();
   return c ? `<div class="small muted" style="margin:0 0 8px">Camp de la table : ${campIco(c)} <b>${esc(campLabel(c))}</b>${table.camp() ? '' : ' (d’après les fiches)'}</div>` : '';
 }
+// Idées d'accroches pour le MJ, une par réponse (« camp-question-réponse ») : la vie privée qui s'invite dans la partie
+const VIE_HOOKS = {
+  'ange-0-a': 'Son service dans l’Administration le convoque pour une urgence de bureau… le jour de la mission.',
+  'ange-0-b': 'Son métier humain le rattrape : un collègue a besoin de lui, un client important débarque.',
+  'ange-1-a': 'Un client mécontent ou un contrôle fiscal menace son activité au pire moment.',
+  'ange-1-b': 'Son patron exige un justificatif pour sa dernière absence : une de plus et c’est le licenciement.',
+  'ange-2-a': 'Mariage, baptême ou anniversaire : toute la famille compte sur lui ce week-end.',
+  'ange-2-b': 'Garde alternée : il doit récupérer les enfants à 18 h, mission ou pas.',
+  'ange-2-c': 'Un oncle malade ou un cousin dans le pétrin appelle à l’aide.',
+  'ange-3-a': 'Un proche le suit pour comprendre ses absences… et tombe sur une scène surnaturelle.',
+  'ange-3-b': 'Un proche a engagé un détective privé (ou un démon se fait passer pour lui).',
+  'ange-3-c': 'Sa famille sait : un démon l’apprend et menace de s’en servir.',
+  'ange-4-a': 'À l’association, il croise une personne en détresse liée à l’affaire en cours.',
+  'ange-4-b': 'Son samedi tranquille est gâché par un voisin bruyant… peut-être possédé.',
+  'ange-4-c': 'Une soirée qui dérape : trou de mémoire et photos compromettantes sur les réseaux.',
+  'ange-5-a': 'Le curé de sa paroisse lui confie un secret troublant.',
+  'ange-5-b': 'Un serviteur de Dieu zélé lui reproche ses absences à la messe et le signale.',
+  'ange-5-c': 'Ses propos ont été rapportés : un ange de Dominique enquête sur sa loyauté.',
+  'demon-0-a': 'L’enquête sur la disparition de sa famille est rouverte : un inspecteur tenace frappe à sa porte.',
+  'demon-0-b': 'Quelqu’un de son ancienne vie le reconnaît dans la rue.',
+  'demon-0-c': 'Sa famille découvre quelque chose : un objet, une brûlure, un familier.',
+  'demon-1-a': 'Un ange menace sa famille pour le faire plier.',
+  'demon-1-b': 'Un parent sorti de prison ou de l’asile veut se venger.',
+  'demon-1-c': 'Ses serviteurs familiaux font du zèle et attirent l’attention.',
+  'demon-2-a': 'Son poste fait des envieux : un démon ambitieux veut sa place.',
+  'demon-2-b': 'Séminaire obligatoire, promotion en jeu… pendant la mission.',
+  'demon-2-c': 'Son supérieur lui demande un service lié à son travail.',
+  'demon-2-d': 'Les égouts sont inspectés : travaux, police, chasseurs d’alligators.',
+  'demon-3-a': 'Un client douteux propose un contrat trop beau pour être honnête.',
+  'demon-3-b': 'Son patron exige un justificatif, un collègue fouineur pose des questions.',
+  'demon-4-a': 'Témoin d’un crime, il est convoqué au commissariat.',
+  'demon-4-b': 'Un indic l’a balancé : l’enquête se rapproche.',
+  'demon-4-c': 'Un ancien complice réapparaît et le fait chanter.',
+  'demon-4-d': 'Une battue est organisée après des témoignages sur une « bête ».',
+  'demon-5-a': 'Un ami démon lui demande de couvrir une grosse bêtise.',
+  'demon-5-b': 'Quelqu’un s’intéresse sincèrement à lui… ou c’est un piège d’ange.',
+  'demon-5-c': 'Un pote humain est mêlé malgré lui à l’affaire en cours.',
+};
+// ---- Vue MJ : la vie privée des PJ de la table ----
+// réponses regroupées (qui a répondu quoi), accroches, recherche dans les réponses et les backgrounds
+function renderMJVie(list) {
+  const q = norm(ui.vieQ || '');
+  const nm = (x) => x.c.nom || x.player || 'PJ';
+  const txt = (x) => norm([...vieAnswers(x.c).filter(([, v]) => v).map(([y, v]) => `${y.q} ${y.opts.find((o) => o.k === v)?.t || ''}`), x.c.vie?.bg || ''].join(' '));
+  const found = q ? list.filter((x) => txt(x).includes(q)) : [];
+  const empty = list.filter((x) => !vieAnswers(x.c).some(([, v]) => v) && !x.c.vie?.bg);
+  const camps = ['ange', 'demon'].filter((k) => list.some((x) => vieCamp(x.c) === k));
+  const block = (camp) => {
+    const Q = VIE_Q[camp]; const pcs = list.filter((x) => vieCamp(x.c) === camp);
+    return `<section class="card"><h2>${campIco(camp)} Vie privée des ${camp === 'ange' ? 'anges' : 'démons'} <span class="tag">${pcs.length} PJ</span></h2>
+      ${Q.qs.map((y, i) => {
+        const rows = y.opts.map((o) => {
+          const who = pcs.filter((x) => x.c.vie?.q?.[`${camp}-${i}`] === o.k && vieAnswers(x.c).some(([z]) => z === y));
+          if (!who.length) return '';
+          const hook = VIE_HOOKS[`${camp}-${i}-${o.k}`];
+          return `<div class="vie-r"><div class="vie-who">${who.map((x) => `<span class="pj">${crest(x.c)} ${esc(nm(x))}</span>`).join('')}</div>
+            <div class="small"><b>${o.k}.</b> ${esc(o.t)}</div>
+            ${hook ? `<div class="vie-hook small"><span>💡 ${esc(hook)}</span><button class="btn sm ghost" data-act="mj-vie-note" data-key="${camp}-${i}-${o.k}" data-pjs="${esc(who.map(nm).join('|'))}">Noter</button></div>` : ''}</div>`;
+        }).join('');
+        return rows ? `<div class="vie-q"><div class="vie-h">${esc(y.q)}</div>${rows}</div>` : '';
+      }).join('') || '<div class="empty">Aucune réponse pour l’instant</div>'}</section>`;
+  };
+  const bgs = list.filter((x) => x.c.vie?.bg);
+  return `<section class="card">
+      <h2>Vie privée</h2>
+      <input class="inp" id="vie-q" placeholder="Rechercher dans les réponses et les backgrounds (famille, patron, police…)" value="${esc(ui.vieQ || '')}">
+      ${q ? `<div style="margin-top:8px">${found.length ? found.map((x) => `<span class="pj">${crest(x.c)} ${esc(nm(x))}</span>`).join(' ') : '<span class="small muted">Aucun PJ ne correspond</span>'}</div>` : ''}
+      <p class="small muted" style="margin-bottom:0">Les joueurs remplissent l’onglet <b>Vie privée</b> de leur fiche. Ici, leurs réponses sont regroupées avec une idée d’accroche pour chacune : « Noter » la met au journal de la campagne, rattachée aux PJ concernés.${empty.length ? ` Pas encore rempli : ${esc(empty.map(nm).join(', '))}.` : ''}</p>
+    </section>
+    ${camps.map(block).join('')}
+    ${bgs.length ? `<section class="card"><h2>Backgrounds</h2>${bgs.map((x) => `<details class="vie-bg"><summary>${crest(x.c)} <b>${esc(nm(x))}</b></summary><p class="small" style="white-space:pre-line">${esc(x.c.vie.bg)}</p></details>`).join('')}</section>` : ''}`;
+}
 function renderMJTable() {
   const t = table.current;
   if (!t) {
@@ -1884,10 +1999,11 @@ function renderMJTable() {
   const list = table.characters();
   const sel = list.find((x) => x.id === ui.mjChar);
   if (ui.mjTab === 'fiche' && !sel) ui.mjTab = 'vue';
-  const tabs = [['vue', 'Vue d\'ensemble'], ['comp', 'Comparatif'], ...(sel ? [['fiche', sel.c.nom || 'Fiche']] : [])];
+  const tabs = [['vue', 'Vue d\'ensemble'], ['comp', 'Comparatif'], ['vie', 'Vie privée'], ...(sel ? [['fiche', sel.c.nom || 'Fiche']] : [])];
   let body;
   if (!list.length) body = `<section class="card"><div class="empty">Aucune fiche partagée pour l'instant.</div><p class="small muted">Donne le code <b class="type">${esc(t.id)}</b> à tes joueurs : Carnet de leur personnage > Table de jeu > Partager ma fiche.</p></section>`;
   else if (ui.mjTab === 'comp') body = renderMJComp(list);
+  else if (ui.mjTab === 'vie') body = renderMJVie(list);
   else if (ui.mjTab === 'fiche') body = renderMJFiche(sel);
   else body = list.map(renderMJCard).join('');
   return `<section class="card dark">
@@ -1953,6 +2069,8 @@ function renderMJFiche(x) {
     <div class="small">${esc(supLine(c))}${sup ? ` — <i>${esc(sup.titre)}</i>` : ''}</div>
     ${id.corps || id.metier || id.age ? `<div class="small muted" style="margin-top:4px">${esc([id.corps, id.age && id.age + ' ans', id.metier].filter(Boolean).join(' · '))}</div>` : ''}
     ${id.apparence ? `<p class="small" style="white-space:pre-line">${esc(id.apparence)}</p>` : ''}
+    ${vieAnswers(c).some(([, v]) => v) ? `<div class="small" style="margin-top:6px"><b>Vie privée</b> : ${esc(vieAnswers(c).filter(([, v]) => v).map(([x, v]) => `${x.q} : ${x.opts.find((o) => o.k === v)?.t || v}`).join(' · '))}</div>` : ''}
+    ${c.vie?.bg ? `<details class="small" style="margin-top:6px"><summary><b>Background</b></summary><p style="white-space:pre-line;margin:4px 0 0">${esc(c.vie.bg)}</p></details>` : ''}
     ${ty.sup ? `<div class="small" style="margin-top:6px">PA : <b>${c.pa?.total || 0}</b> gagnés, <b>${av}</b> disponibles${sup?.rec ? ` · Récupération : ${esc(sup.rec)}` : ''}</div>` : ''}
   </section>
   <section class="card">
@@ -3004,6 +3122,7 @@ async function mjAction(act, b) {
         return;
       }
       case 'mj-tab': ui.mjTab = b.dataset.v; render(); return window.scrollTo(0, 0);
+      case 'mj-vie-note': return memoDialog(newEntry({ kind: 'choix', txt: 'Vie privée : ' + (VIE_HOOKS[key] || ''), pjs: (b.dataset.pjs || '').split('|').filter(Boolean) }));
       case 'mj-char': ui.mjChar = key; ui.mjTab = 'fiche'; render(); return window.scrollTo(0, 0);
       case 'mj-roll': {
         const x = mjCharById(b.dataset.id); if (!x) return;
@@ -3141,6 +3260,7 @@ document.addEventListener('click', async (e) => {
     case 'armor-del': c.armures.splice(i, 1); return commit();
     case 'armor-toggle': c.armures[i].portee = c.armures[i].portee === false; return commit();
     case 'portrait-pick': return pickPortrait(!!b.dataset.cam);
+    case 'vie-pick': { c.vie ||= {}; c.vie.q ||= {}; const k = b.dataset.key; c.vie.q[k] = c.vie.q[k] === b.dataset.v ? '' : b.dataset.v; return commit(); }
     case 'portrait-view': return portraitDialog();
     case 'fx-off': c.effets = (c.effets || []).filter((e) => e.n !== key); return commit();
     case 'weapon-hand': c.armes[i].main = c.armes[i].main === false; return commit();
@@ -3292,6 +3412,7 @@ document.addEventListener('change', (e) => {
   const form = el.closest('[data-form]'); if (!form || !el.name) return;
   const c = C(); let v = el.value;
   if (el.name.startsWith('identite.')) c.identite[el.name.slice(9)] = v;
+  else if (el.name === 'vie.bg') { (c.vie ||= {}).bg = v; return commit(false); }
   else if (el.name === 'type') { c.type = v; c.tier = 0; c.chance = !!R.TYPES[v].chance; }
   else if (['tier', 'grade'].includes(el.name)) c[el.name] = +v;
   else if (el.name === 'chance' || el.name === 'apostat') c[el.name] = v === '1';
@@ -3299,6 +3420,11 @@ document.addEventListener('change', (e) => {
   commit(['type', 'tier', 'grade', 'superieur', 'chance', 'apostat', 'nom'].includes(el.name));
 });
 document.addEventListener('input', (e) => {
+  if (e.target.id === 'vie-q') {
+    ui.vieQ = e.target.value; const pos = e.target.selectionStart; render();
+    const n = document.getElementById('vie-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); }
+    return;
+  }
   if (e.target.id === 'bq') {
     ui.q = e.target.value; const pos = e.target.selectionStart; render();
     const n = document.getElementById('bq'); if (n) { n.focus(); n.setSelectionRange(pos, pos); }

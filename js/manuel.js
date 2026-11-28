@@ -8,7 +8,7 @@ export const MANUEL_JOUEUR = [
       <li><b>Créer un personnage</b> : sur l'accueil, ou menu ⋮ › Nouveau personnage.</li>
       <li><b>Changer de personnage</b> : touche le nom en haut (ou l'icône dossier). Tes personnages sont rangés <b>par table de jeu</b>, puis « Sans table » ; « Nouveau personnage dans cette table » le crée et le partage tout de suite avec le MJ.</li>
       <li><b>Menu ⋮</b> (en haut à droite) : export, import, impression, mode maître de jeu, sauvegarde en ligne, suppression.</li>
-      <li>En bas, les onglets <b>Fiche</b>, <b>Combat</b>, <b>Sac</b>, <b>Pouvoirs</b>, <b>Carnet</b> et <b>Biblio</b>.</li>
+      <li>En bas, les onglets <b>Fiche</b>, <b>Combat</b>, <b>Pouvoirs</b>, <b>Sac</b>, <b>Carnet</b>, <b>Vie privée</b> (questionnaire de vie privée d'On Ferme ! pour les anges et les démons, et background du personnage) et <b>Biblio</b>.</li>
     </ul>
     <p class="small muted">Le mode maître de jeu est réservé au MJ ; il a son propre manuel (bouton « ? » dans le mode MJ).</p>` },
   { id: 'installer', titre: 'Installer l\'appli sur l\'écran d\'accueil', html: `
@@ -117,6 +117,7 @@ export const MANUEL_MJ = [
       <li>Onglet <b>Scénarios</b> : synopsis, secrets du MJ, scènes (lieu, déroulement) et combats préparés. Tout fonctionne <b>sans connexion</b> et reste sur ton appareil.</li>
       <li><b>Scénarios des livres</b> : la bibliothèque des scénarios publiés, classés par livre avec recherche ; un toucher en ajoute une copie à « Mes scénarios ».</li>
       <li>Dans une scène, prépare les <b>choix possibles</b> (dilemme et options) : le jour de la partie, touche l'option choisie et elle est notée dans la mémoire de la campagne.</li>
+      <li><b>Vie privée</b> (onglet Joueurs d'une table) : les réponses des joueurs au questionnaire de vie privée, regroupées (qui a une famille qui se doute de quelque chose, qui a un patron à qui rendre des comptes…), avec une idée d'accroche par réponse à noter au journal, une recherche dans les réponses et les backgrounds, et la liste de ceux qui n'ont pas encore rempli.</li>
       <li><b>Camp de la table</b> (carte de la table, onglet Joueurs) : Démons, Anges, Troisième Force ou tous ; par défaut il est déduit des fiches des joueurs. La bibliothèque des scénarios, « Mes scénarios » et les tables aléatoires ne proposent alors que ce camp (« Voir tout » pour le reste).</li>
       <li><b>Où en est la partie</b> : <b>Jouer cette scène</b> la marque « en cours » (celles d'avant passent « jouées »), <b>Scène suivante</b> avance d'un cran, <b>Fin du scénario</b> (dernière scène) ou <b>Terminer le scénario</b> (à tout moment) le marque terminé, avec un badge dans la liste ; <b>Rejouer</b> le remet à zéro. La scène en cours s'affiche en tête du scénario, dans la liste des scénarios et en premier dans l'onglet Combat. Lancer le combat d'une scène en fait aussi la scène en cours.</li>
       <li><b>Tables aléatoires</b> : les tables écrites pour un scénario des livres (événements en temps de guerre, incidents du Centre de Tri, Chez Régis, rumeurs sur les Pink Queens) apparaissent d'elles-mêmes dans ce scénario. <b>Table aléatoire</b> accroche n'importe quelle table d'Outils au scénario ou à une scène, pour la tirer sans quitter la partie.</li>
