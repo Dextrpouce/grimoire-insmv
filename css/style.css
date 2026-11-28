@@ -574,3 +574,12 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 /* Démon sans fond : posé directement sur la carte sombre, détaché par un halo rouge */
 .duo-card.demon .dc-img { width: 100%; padding-top: 0; margin-bottom: 0; background: radial-gradient(ellipse 60% 55% at 50% 60%, rgba(200, 53, 43, .35), transparent 70%); clip-path: none; }
 .duo-card.demon .dc-img img { width: 88%; -webkit-mask-image: none; mask-image: none; filter: drop-shadow(0 0 6px rgba(232, 85, 58, .45)); }
+
+/* Progression du scénario : scène en cours, scènes jouées */
+.card.prog.on { border-left: 4px solid var(--red); }
+.card.prog b.click { cursor: pointer; font-size: 17px; }
+.card.scene.cur { box-shadow: 0 0 0 2px var(--red); }
+.card.scene.done { opacity: .62; }
+.card.scene.done:hover, .card.scene.done:focus-within { opacity: 1; }
+.badge.cur { background: var(--red); color: #fff; }
+.card.scene h2 .badge { margin-left: 6px; vertical-align: middle; }

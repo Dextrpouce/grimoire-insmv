@@ -1908,6 +1908,7 @@ function renderMJFiche(x) {
 // ================= Scénarios : préparation des scènes et des combats =================
 const lvlOpts = (max = 16) => Array.from({ length: max + 1 }, (_, r) => [r, L(r)]);
 const GCOL = { BL: '#8a7a3a', BG: '#b0601c', BF: 'var(--red)', MS: '#000' };
+function scrollToScene(id) { requestAnimationFrame(() => document.getElementById('scene-' + id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })); }
 function curScene(s, id) { return s?.scenes.find((x) => x.id === id) || null; }
 function scenAlerts(npcs) {
   const st = npcs.map((n) => [n, npcStats(n)]);
@@ -1922,6 +1923,28 @@ function npcTarget(s) {
   return curScene(s, e.scene)?.npcs.find((x) => x.id === e.npc) || null;
 }
 const npcSummary = (n) => { const st = npcStats(n); const w = n.armes[0]; return `${w ? `Att. ${L(w.att)} (${w.n}) · ` : ''}Déf. ${L(n.def)} · Vo ${L(n.car.vo)} · PF ${st.pf} · ${st.bl}/${st.bg}/${st.bf}/${st.ms}${st.pp ? ` · ${st.pp} PP` : ''}`; };
+// ---- Progression : s.cur = scène en cours, sc.done = scène jouée ----
+const curIdx = (s) => s.scenes.findIndex((x) => x.id === s.cur);
+function scenProgress(s) {
+  const i = curIdx(s); const played = s.scenes.filter((x) => x.done).length;
+  if (i >= 0) return `scène ${i + 1}/${s.scenes.length} en cours`;
+  if (s.scenes.length && played === s.scenes.length) return 'terminé';
+  return played ? `${played}/${s.scenes.length} scène(s) jouée(s)` : 'pas commencé';
+}
+function renderProgress(s) {
+  const i = curIdx(s); const sc = s.scenes[i];
+  if (!s.scenes.length || s.impro) return '';
+  if (!sc) {
+    const fini = s.scenes.every((x) => x.done);
+    return `<section class="card prog"><div class="row"><div style="flex:1;min-width:0"><b>${fini ? 'Scénario terminé' : 'Pas encore commencé'}</b><div class="small muted">${fini ? 'Toutes les scènes ont été jouées.' : 'Marque la scène que vous jouez pour la retrouver à chaque ouverture.'}</div></div>
+      ${fini ? `<button class="btn sm" data-act="sc-reset">Rejouer</button>` : `<button class="btn sm pri" data-act="sc-cur" data-key="${esc((s.scenes.find((x) => !x.done) || s.scenes[0]).id)}">Commencer</button>`}</div></section>`;
+  }
+  const next = s.scenes[i + 1];
+  return `<section class="card prog on"><div class="row"><div style="flex:1;min-width:0"><div class="small muted">Scène en cours · ${i + 1}/${s.scenes.length}</div><b class="click" data-act="sc-goto" data-key="${esc(sc.id)}">${esc(sc.nom)}</b>${sc.lieu ? `<div class="small muted">${esc(sc.lieu)}</div>` : ''}</div>
+    <button class="btn sm ghost" data-act="sc-goto" data-key="${esc(sc.id)}">Voir</button>
+    <button class="btn sm pri" data-act="sc-next">${next ? 'Scène suivante' : 'Fin du scénario'}</button></div>
+    ${next ? `<div class="small muted" style="margin-top:4px">Ensuite : ${esc(next.nom)}</div>` : ''}</section>`;
+}
 function renderScen(s) {
   if (ui.npcEdit?.type) { const t = scen.getType(ui.npcEdit.type); if (t) return renderNpcEdit(s, null, t); ui.npcEdit = null; }
   if (!s) return renderScenList();
@@ -1940,6 +1963,7 @@ function renderScen(s) {
         <div class="field"><label>Résumé (ce que les joueurs vont vivre)</label><textarea data-sf="resume" placeholder="Accroche, enjeux, mission confiée par le supérieur…">${esc(s.resume)}</textarea></div>
         <div class="field"><label>Secrets du MJ</label><textarea data-sf="notes" placeholder="Ce qui se passe vraiment, PNJ importants, fils à tirer…">${esc(s.notes)}</textarea></div></div>
     </section>
+    ${renderProgress(s)}
     ${renderScenMemo(s)}
     ${s.scenes.map((sc, i) => renderSceneCard(s, sc, i)).join('')}
     <div class="row" style="justify-content:center;margin-bottom:12px"><button class="btn pri" data-act="sc-scene-add">${icon('plus')} Ajouter une scène</button></div>`;
@@ -1950,7 +1974,7 @@ function renderScenList() {
     <h2>Mes scénarios <span class="tag">gardés sur cet appareil</span></h2>
     ${list.map((s) => {
       const fights = s.scenes.filter((x) => x.npcs.length).length; const running = s.scenes.filter((x) => x.live).length;
-      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b><br><small>${s.scenes.length} scène(s) · ${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
+      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b><br><small>${s.scenes.length} scène(s) · ${s.impro ? '' : esc(scenProgress(s)) + ' · '}${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
     }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
@@ -2101,8 +2125,9 @@ function renderSceneCard(s, sc, i) {
       <td>${L(n.def)}</td><td>${L(n.car.vo)}</td><td>${L(n.car.foi)}</td><td>${L(n.car.pe)}</td>
       <td class="nowrap">${st.bl}/${st.bg}/${st.bf}/${st.ms}</td><td>${st.pf}</td><td>${st.pp || '—'}</td><td>${+n.prot || ''}</td></tr>`;
   }).join('');
-  return `<section class="card">
-    <h2>${i + 1}. ${esc(sc.nom)}${sc.live ? '<span class="stamp" style="margin-left:6px">En cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
+  const isCur = s.cur === sc.id;
+  return `<section class="card scene${isCur ? ' cur' : ''}${sc.done && !isCur ? ' done' : ''}" id="scene-${esc(sc.id)}">
+    <h2>${i + 1}. ${esc(sc.nom)}${isCur ? '<span class="badge cur">Scène en cours</span>' : sc.done ? '<span class="badge">Jouée</span>' : ''}${sc.live ? '<span class="stamp" style="margin-left:6px">Combat en cours</span>' : ''}<span class="tag">${esc(sc.lieu || '')}</span></h2>
     ${edit ? `<div class="grid g2" data-scform>${F.text('', 'Nom de la scène', sc.nom, '', `data-scf="nom" data-scene="${esc(sc.id)}"`)}${F.text('', 'Lieu', sc.lieu, '', `data-scf="lieu" data-scene="${esc(sc.id)}"`)}
       <div class="field" style="grid-column:1/-1"><label>Déroulement, indices, réactions des PNJ</label><textarea data-scf="notes" data-scene="${esc(sc.id)}">${esc(sc.notes)}</textarea></div></div>
       <div class="row" style="margin-top:8px"><button class="btn sm" data-act="sc-scene-up" data-key="${esc(sc.id)}" ${i ? '' : 'disabled'}>Monter</button><button class="btn sm danger" data-act="sc-scene-del" data-key="${esc(sc.id)}">Supprimer la scène</button><span class="spacer"></span><button class="btn sm pri" data-act="toggle" data-key="${k}">Terminé</button></div>`
@@ -2115,6 +2140,7 @@ function renderSceneCard(s, sc, i) {
       <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ unique</button>
       <button class="btn sm" data-act="sc-npc-import" data-scene="${esc(sc.id)}">Depuis un personnage</button>
       ${edit ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${icon('edit')} Modifier</button>`}
+      ${isCur ? '' : `<button class="btn sm ghost" data-act="sc-cur" data-key="${esc(sc.id)}">Jouer cette scène</button>`}
       <span class="spacer"></span>
       ${sc.npcs.length ? `<button class="btn sm pri" data-act="sc-live" data-scene="${esc(sc.id)}">${icon('sword')} ${sc.live ? `Reprendre (round ${sc.live.round})` : 'Lancer le combat'}</button>` : ''}
     </div>
@@ -2338,12 +2364,13 @@ function renderMJCombat() {
   if (sc?.live) return renderLive(s, sc);
   const live = liveCombats();
   const ready = [];
-  for (const x of scen.all()) for (const y of x.scenes) if (!y.live && y.npcs.length) ready.push({ s: x, sc: y });
+  for (const x of scen.all()) for (const y of x.scenes) if (!y.live && y.npcs.length && !y.done) ready.push({ s: x, sc: y });
+  ready.sort((a, b) => (b.s.cur === b.sc.id) - (a.s.cur === a.sc.id));
   const row = ({ s: x, sc: y }, act, lab) => {
     const lv = y.live; const up = lv ? lv.units.filter((u) => !u.out).length : 0;
     const info = lv ? `round ${lv.round} · ${up}/${lv.units.length} adversaire(s) debout${lv.init ? ' · initiative lancée' : ''}`
       : `${y.npcs.reduce((t, n) => t + (+n.qty || 1), 0)} PNJ préparé(s)${y.lieu ? ' · ' + y.lieu : ''}`;
-    return `<div class="init-row"><div style="flex:1;min-width:0"><b>${esc(y.nom)}</b><div class="small muted">${esc(x.impro ? 'Combat improvisé' : x.nom)} · ${esc(info)}</div></div>
+    return `<div class="init-row"><div style="flex:1;min-width:0"><b>${esc(y.nom)}</b><div class="small muted">${x.cur === y.id && !lv ? '<b style="color:var(--red)">scène en cours</b> · ' : ''}${esc(x.impro ? 'Combat improvisé' : x.nom)} · ${esc(info)}</div></div>
       <button class="btn sm ${lv ? 'pri' : ''}" data-act="${act}" data-sid="${esc(x.id)}" data-scene="${esc(y.id)}">${lab}</button></div>`;
   };
   return `<section class="card dark">
@@ -2693,10 +2720,25 @@ async function scenAction(act, b) {
     case 'sc-dup': toast('Scénario dupliqué'); return go(scen.duplicate(s.id).id);
     case 'sc-del': if (await confirmDlg('Supprimer', `Supprimer définitivement le scénario « ${esc(s.nom)} » ?`)) { scen.remove(s.id); go(null); } return;
     case 'sc-scene-add': { const x = newScene(`Scène ${s.scenes.length + 1}`); s.scenes.push(x); ui.open['scn' + x.id] = true; return save(); }
+    case 'sc-cur': { // cette scène devient la scène en cours ; celles d'avant sont jouées
+      const i = s.scenes.findIndex((x) => x.id === key); if (i < 0) return;
+      s.scenes.forEach((x, j) => { if (j < i) x.done = true; }); s.scenes[i].done = false; s.cur = key;
+      save(); return scrollToScene(key);
+    }
+    case 'sc-next': {
+      const i = curIdx(s); if (i < 0) return;
+      s.scenes[i].done = true; const nx = s.scenes[i + 1]; s.cur = nx ? nx.id : null;
+      if (!nx) toast('Scénario terminé');
+      save(); return nx ? scrollToScene(nx.id) : window.scrollTo(0, 0);
+    }
+    case 'sc-goto': return scrollToScene(key);
+    case 'sc-reset':
+      s.cur = s.scenes[0]?.id || null; s.scenes.forEach((x) => { x.done = false; }); save(); return window.scrollTo(0, 0);
     case 'sc-scene-up': { const i = s.scenes.findIndex((x) => x.id === key); if (i > 0) s.scenes.splice(i - 1, 0, s.scenes.splice(i, 1)[0]); return save(); }
     case 'sc-scene-del': {
       const x = curScene(s, key);
       if (!(await confirmDlg('Supprimer', `Supprimer la scène « ${esc(x.nom)} » et ses ${x.npcs.length} PNJ ?`))) return;
+      if (s.cur === key) s.cur = null;
       s.scenes = s.scenes.filter((y) => y.id !== key); return save();
     }
     case 'sc-npc-add': { const x = newNpc(); sc.npcs.push(x); scen.save(s); ui.npcEdit = { scene: sc.id, npc: x.id }; render(); return window.scrollTo(0, 0); }
@@ -2727,6 +2769,7 @@ async function scenAction(act, b) {
     // ---- combat en cours ----
     case 'sc-live':
       if (!sc.live) startLive(sc);
+      if (!s.impro && !sc.done) s.cur = sc.id;
       ui.live = sc.id; localStorage.setItem('insmv.live', sc.id); ui.mjSec = 'combat'; localStorage.setItem('insmv.mjsec', 'combat'); scen.save(s); render(); return window.scrollTo(0, 0);
     case 'lv-back': ui.live = null; localStorage.removeItem('insmv.live'); render(); return window.scrollTo(0, 0);
     case 'lv-round': sc.live.round = Math.max(1, sc.live.round + +b.dataset.v); return save();
@@ -2817,6 +2860,7 @@ async function mjAction(act, b) {
         }
         if (!sc) return;
         if (!sc.live) startLive(sc);
+        if (!s.impro && !sc.done) s.cur = sc.id;
         scen.save(s);
         ui.scenId = s.id; ui.live = sc.id; ui.npcEdit = null; localStorage.setItem('insmv.scen', s.id); localStorage.setItem('insmv.live', sc.id);
         render(); return window.scrollTo(0, 0);

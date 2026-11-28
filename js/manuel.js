@@ -117,6 +117,7 @@ export const MANUEL_MJ = [
       <li>Onglet <b>Scénarios</b> : synopsis, secrets du MJ, scènes (lieu, déroulement) et combats préparés. Tout fonctionne <b>sans connexion</b> et reste sur ton appareil.</li>
       <li><b>Scénarios des livres</b> : la bibliothèque des scénarios publiés, classés par livre avec recherche ; un toucher en ajoute une copie à « Mes scénarios ».</li>
       <li>Dans une scène, prépare les <b>choix possibles</b> (dilemme et options) : le jour de la partie, touche l'option choisie et elle est notée dans la mémoire de la campagne.</li>
+      <li><b>Où en est la partie</b> : <b>Jouer cette scène</b> la marque « en cours » (celles d'avant passent « jouées »), <b>Scène suivante</b> avance d'un cran. La scène en cours s'affiche en tête du scénario, dans la liste des scénarios et en premier dans l'onglet Combat. Lancer le combat d'une scène en fait aussi la scène en cours.</li>
       <li>Export / import d'un scénario en fichier JSON (il emporte les choix qui le concernent).</li>
     </ul>` },
   { id: 'pnj', titre: 'PNJ et bestiaire', html: `
