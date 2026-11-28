@@ -1984,7 +1984,7 @@ function renderMJVie(list) {
   return `<section class="card">
       <h2>Vie privée</h2>
       <input class="inp" id="vie-q" placeholder="Rechercher dans les réponses et les backgrounds (famille, patron, police…)" value="${esc(ui.vieQ || '')}">
-      ${q ? `<div style="margin-top:8px">${found.length ? found.map((x) => `<span class="pj">${crest(x.c)} ${esc(nm(x))}</span>`).join(' ') : '<span class="small muted">Aucun PJ ne correspond</span>'}</div>` : ''}
+      ${q ? `<div class="vie-found" style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px">${found.length ? found.map((x) => `<span class="pj">${crest(x.c)} ${esc(nm(x))}</span>`).join(' ') : '<span class="small muted">Aucun PJ ne correspond</span>'}</div>` : ''}
       <p class="small muted" style="margin-bottom:0">Les joueurs remplissent l’onglet <b>Vie privée</b> de leur fiche. Ici, leurs réponses sont regroupées avec une idée d’accroche pour chacune : « Noter » la met au journal de la campagne, rattachée aux PJ concernés.${empty.length ? ` Pas encore rempli : ${esc(empty.map(nm).join(', '))}.` : ''}</p>
     </section>
     ${camps.map(block).join('')}
