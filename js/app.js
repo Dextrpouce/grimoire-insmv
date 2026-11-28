@@ -2023,7 +2023,7 @@ const QK_KINDS = [
 function qkGroups(kind) {
   const g = new Map();
   for (const t of BOOK) {
-    const m = t.id.match(new RegExp(`^livre-${kind}-(.+)-(\d+)$`)); if (!m) continue;
+    const m = t.id.startsWith(`livre-${kind}-`) && t.id.slice(kind.length + 7).match(/^(.+)-(\d+)$/); if (!m) continue;
     if (!g.has(m[1])) g.set(m[1], { lab: t.nom.replace(/^(Psionique|Héros païen)\s+/, '').replace(/\s*\(\d+ PP\)$/, ''), pp: [] });
     g.get(m[1]).pp.push([+m[2], t]);
   }
