@@ -262,7 +262,6 @@ table.comp td:first-child, table.comp th:first-child { text-align: left; positio
 .cell:hover { background: var(--card2); }
 #mj-note { min-height: 120px; }
 /* Scénarios et combats préparés */
-.mjnav { margin-bottom: 12px; }
 .alert { margin-top: 8px; padding: 6px 10px; border-radius: 8px; background: #fff3cd; color: #5a4300; border: 1px solid #e6c65c; font-size: 13.5px; }
 .chk { display: flex; align-items: center; gap: 6px; margin-top: 4px; }
 .weap { padding-bottom: 8px; margin-bottom: 8px; border-bottom: 1px dashed var(--line); align-items: end; }

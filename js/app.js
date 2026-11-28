@@ -88,7 +88,7 @@ const BTN_ICON = {
   'mj-cb-impro': 'plus', 'mj-cb-open': 'play', 'mj-sec': 'book',
   'lv-init': 'die', 'lv-iadd': 'plus', 'lv-inext': 'next', 'lv-attack': 'sword', 'lv-hit': 'heart', 'lv-wclose': 'check', 'lv-out': 'skull',
   'lv-end': 'flag', 'lv-back': 'back', 'lv-add': 'plus',
-  'sc-back': 'back', 'sc-create': 'plus', 'sc-library': 'book', 'sc-import': 'upload', 'sc-export': 'download', 'sc-dup': 'copy', 'sc-del': 'trash',
+  'sc-tab-add': 'die', 'sc-tab-del': 'trash', 'sc-back': 'back', 'sc-create': 'plus', 'sc-library': 'book', 'sc-import': 'upload', 'sc-export': 'download', 'sc-dup': 'copy', 'sc-del': 'trash',
   'sc-live': 'sword', 'sc-scene-add': 'plus', 'sc-scene-del': 'trash', 'sc-scene-up': 'up', 'sc-npc-add': 'plus', 'sc-npc-del': 'trash',
   'sc-npc-dup': 'copy', 'sc-npc-done': 'back', 'sc-npc-best': 'book', 'sc-npc-tobest': 'book', 'sc-npc-import': 'user',
   'sc-w-add': 'plus', 'sc-w-free': 'plus', 'sc-w-del': 'trash', 'sc-p-add': 'plus', 'sc-p-del': 'trash',
@@ -1686,7 +1686,7 @@ function enterMJ(opts = {}) {
   if (store.configured && table.openId && !table.current) table.open(table.openId);
   render(); window.scrollTo(0, 0);
 }
-const MJ_SECS = [['joueurs', 'Joueurs'], ['combat', 'Combat'], ['scen', 'Scénarios'], ['journal', 'Journal'], ['outils', 'Outils']];
+const MJ_SECS = [['joueurs', 'Joueurs', 'user'], ['combat', 'Combat', 'sword'], ['scen', 'Scénarios', 'book'], ['journal', 'Journal', 'list'], ['outils', 'Outils', 'box']];
 // Outils du MJ : tables aléatoires et bestiaire (types d'ennemis réutilisables)
 function renderOutils() {
   if (ui.npcEdit?.type) { const t = scen.getType(ui.npcEdit.type); if (t) return renderNpcEdit(null, null, t); ui.npcEdit = null; }
@@ -1711,7 +1711,8 @@ function renderMJ() {
     <button class="ibtn" data-act="help" data-v="mj" title="Manuel du maître de jeu">${icon('help')}</button>
     <button class="ibtn" data-act="freeroll" title="Lancer les dés">${icon('die')}</button>
   </header>
-  <main><div class="seg mjnav">${MJ_SECS.map(([k, l]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${l}</button>`).join('')}</div>${body}</main>`;
+  <main>${body}</main>
+  <nav class="tabs">${MJ_SECS.map(([k, l, ic]) => `<button class="${ui.mjSec === k ? 'on' : ''}" data-act="mj-sec" data-v="${k}">${icon(ic)}${l}</button>`).join('')}</nav>`;
 }
 // ---- Tables aléatoires du MJ (js/data/tables-mj.js) ----
 // Jet selon le dé de la table ; mod : modificateur ajouté aux jets additionnés (d6, 2d6, 3d6)
@@ -1742,31 +1743,71 @@ function tableRow(t, v) {
   // hors table (modificateurs) : première ou dernière ligne
   return v < rows[0][1] ? rows[0][0] : rows[rows.length - 1][0];
 }
+// Tables écrites pour des scénarios des livres : table → fichiers des scénarios (s.livre des copies)
+const FI = (n) => SCENARIOS_LIVRES.filter((x) => /^fire-and-ice-\d+/.test(x.file) && (!n || n.includes(+x.file.match(/\d+/)[0]))).map((x) => x.file);
+const TABLE_SCENS = {
+  'evenements-guerre': ['livret-mv-2-notre-peuple-vaincra'],
+  'incidents-centre-de-tri': FI(),
+  'trouver-chez-regis': FI([6, 11]),
+  'theories-pink-queens': ['jesus-reviens-3-new-york'],
+};
+const scenNom = (file) => SCENARIOS_LIVRES.find((x) => x.file === file)?.nom || file;
+function tableScenTxt(t) {
+  const l = TABLE_SCENS[t.id]; if (!l) return '';
+  const fi = l.length > 2 && l.every((f) => f.startsWith('fire-and-ice'));
+  return ` · <b>scénario${l.length > 1 ? 's' : ''} : ${esc(fi ? 'campagne Fire and Ice' : l.map(scenNom).join(', '))}</b>`;
+}
+// Tables d'un scénario : celles du livre (selon son fichier d'origine) puis celles ajoutées par le MJ
+const bookTables = (s) => (s.livre ? TABLES_MJ.filter((t) => TABLE_SCENS[t.id]?.includes(s.livre)) : []);
+const tableById = (id) => TABLES_MJ.find((t) => t.id === id);
+function renderScenTables(s) {
+  const book = bookTables(s); const mine = (s.tables || []).map(tableById).filter(Boolean).filter((t) => !book.includes(t));
+  if (!book.length && !mine.length) return '';
+  return `<section class="card"><h2>Tables aléatoires <span class="tag">${book.length + mine.length}</span></h2>
+    ${book.map((t) => aleaCard(t)).join('')}
+    ${mine.map((t) => aleaCard(t, `<button class="btn sm ghost" data-act="sc-tab-del" data-key="${esc(t.id)}">Retirer</button>`)).join('')}
+    <div class="row"><button class="btn sm" data-act="sc-tab-add">${icon('plus')} Ajouter une table</button></div>
+    ${book.length ? '<p class="small muted" style="margin-bottom:0">Les tables écrites pour ce scénario sont reliées automatiquement.</p>' : ''}</section>`;
+}
+function sceneTables(s, sc) {
+  const l = (sc.tables || []).map(tableById).filter(Boolean); if (!l.length) return '';
+  return `<div style="margin-top:8px"><div class="small muted" style="margin-bottom:4px">Tables de la scène</div>${l.map((t) => aleaCard(t, `<button class="btn sm ghost" data-act="sc-tab-del" data-scene="${esc(sc.id)}" data-key="${esc(t.id)}">Retirer</button>`)).join('')}</div>`;
+}
+function addTableDialog(s, sc) {
+  const have = new Set([...(sc ? sc.tables || [] : [...(s.tables || []), ...bookTables(s).map((t) => t.id)])]);
+  const items = TABLES_MJ.filter((t) => !have.has(t.id)).map((t) => ({ t, label: t.nom, sub: `${t.groupe} · ${t.livre}${t.usage ? ' — ' + t.usage : ''}` }));
+  chooseList(sc ? `Table pour « ${sc.nom} »` : 'Table pour le scénario', items, ({ t }) => {
+    const o = sc || s; (o.tables ||= []).push(t.id); scen.save(s); render();
+  });
+}
+const aleaRes = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` <span class="tag">${esc(r.row.camp)}</span>` : ''}
+      <div class="row" style="margin-top:6px"><button class="btn sm" data-act="mj-alea-roll" data-key="${esc(t.id)}">Relancer</button><button class="btn sm ghost" data-act="mj-alea-note" data-key="${esc(t.id)}">Noter dans le journal</button></div></div>` : ''; };
+const aleaRef = (t) => t.de === 'ref';
+function aleaCard(t, rm = '') {
+  const res = aleaRes; const ref = aleaRef;
+  return `<div class="pow"><div class="ph"><div class="pn">${esc(t.nom)}</div><span class="small muted">${esc(ref(t) ? 'consultation' : t.de)}</span>
+      ${t.mods && !ref(t) ? `<input class="inp" type="number" style="width:64px" placeholder="mod." value="${esc(String(ui.aleaMod?.[t.id] ?? ''))}" data-alea-mod="${esc(t.id)}" title="Modificateur au jet">` : ''}
+      ${ref(t) ? '' : `<button class="btn sm pri" data-act="mj-alea-roll" data-key="${esc(t.id)}">Tirer</button>`}</div>
+    <div class="meta">${esc(t.livre)}${t.ref ? ', ' + esc(t.ref) : ''}${tableScenTxt(t)}${t.camp ? ` · <span class="badge">${esc(t.camp === 'ange' ? 'anges' : 'démons')}</span>` : ''}</div>
+    ${t.usage ? `<div class="psum">${esc(t.usage)}</div>` : ''}${t.mods ? `<div class="small muted">Modificateurs : ${esc(t.mods)}</div>` : ''}
+    ${res(t)}
+    ${ref(t) ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="al${esc(t.id)}">${ui.open['al' + t.id] ? 'Masquer la table' : 'Voir la table'}</button>`}${rm}
+    ${ui.open['al' + t.id] || ref(t) ? `<div class="small" style="margin-top:6px">${t.lignes.map((r) => `<div><b>${esc(String(r.d))}</b> ${esc(r.t)}</div>`).join('')}${t.note ? `<p class="muted">${esc(t.note)}</p>` : ''}</div>` : ''}</div>`;
+}
 function renderAlea() {
   const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp || '';
   const ok = (t) => (!camp || !t.camp || t.camp === camp) && (!q || norm(`${t.nom} ${t.groupe} ${t.livre} ${t.usage || ''} ${t.sup || ''}`).includes(q));
   const list = TABLES_MJ.filter((t) => !t.sup && ok(t));
   const supTables = TABLES_MJ.filter((t) => t.sup && ok(t));
   const groups = [...new Set([...list.map((t) => t.groupe), ...(supTables.length ? [supTables[0].groupe] : [])])];
-  const res = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` <span class="tag">${esc(r.row.camp)}</span>` : ''}
-      <div class="row" style="margin-top:6px"><button class="btn sm" data-act="mj-alea-roll" data-key="${esc(t.id)}">Relancer</button><button class="btn sm ghost" data-act="mj-alea-note" data-key="${esc(t.id)}">Noter dans le journal</button></div></div>` : ''; };
-  const ref = (t) => t.de === 'ref';
-  const card = (t) => `<div class="pow"><div class="ph"><div class="pn">${esc(t.nom)}</div><span class="small muted">${esc(ref(t) ? 'consultation' : t.de)}</span>
-      ${t.mods && !ref(t) ? `<input class="inp" type="number" style="width:64px" placeholder="mod." value="${esc(String(ui.aleaMod?.[t.id] ?? ''))}" data-alea-mod="${esc(t.id)}" title="Modificateur au jet">` : ''}
-      ${ref(t) ? '' : `<button class="btn sm pri" data-act="mj-alea-roll" data-key="${esc(t.id)}">Tirer</button>`}</div>
-    <div class="meta">${esc(t.livre)}${t.ref ? ', ' + esc(t.ref) : ''}${t.camp ? ` · <span class="badge">${esc(t.camp === 'ange' ? 'anges' : 'démons')}</span>` : ''}</div>
-    ${t.usage ? `<div class="psum">${esc(t.usage)}</div>` : ''}${t.mods ? `<div class="small muted">Modificateurs : ${esc(t.mods)}</div>` : ''}
-    ${res(t)}
-    ${ref(t) ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="al${esc(t.id)}">${ui.open['al' + t.id] ? 'Masquer la table' : 'Voir la table'}</button>`}
-    ${ui.open['al' + t.id] || ref(t) ? `<div class="small" style="margin-top:6px">${t.lignes.map((r) => `<div><b>${esc(String(r.d))}</b> ${esc(r.t)}</div>`).join('')}${t.note ? `<p class="muted">${esc(t.note)}</p>` : ''}</div>` : ''}</div>`;
   const supSel = ui.aleaSup && supTables.find((t) => t.sup === ui.aleaSup) ? ui.aleaSup : supTables[0]?.sup;
   return `<section class="card"><h2>Tables aléatoires <span class="tag">${TABLES_MJ.length} tables</span></h2>
     <div class="row"><input class="inp" id="alea-q" placeholder="Rechercher une table…" value="${esc(ui.aleaQ || '')}" style="flex:1;min-width:160px">
       <select class="inp" id="alea-camp" style="max-width:150px">${[['', 'Tous les camps'], ['ange', 'Anges'], ['demon', 'Démons']].map(([v, l]) => `<option value="${v}" ${camp === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
     <p class="small muted" style="margin-bottom:0">Tables relevées dans les livres. Le résultat peut être noté dans le journal de la campagne (onglet « Choix des joueurs »).</p></section>
     ${groups.map((g) => `<section class="card"><h2>${esc(g)}</h2>
-      ${g === supTables[0]?.groupe ? `<div class="row" style="margin-bottom:8px"><select class="inp" id="alea-sup">${supTables.map((t) => `<option ${t.sup === supSel ? 'selected' : ''}>${esc(t.sup)}</option>`).join('')}</select></div>${supTables.filter((t) => t.sup === supSel).map(card).join('')}` : ''}
-      ${list.filter((t) => t.groupe === g).map(card).join('')}</section>`).join('') || '<section class="card"><div class="empty">Aucune table</div></section>'}`;
+      ${g === supTables[0]?.groupe ? `<div class="row" style="margin-bottom:8px"><select class="inp" id="alea-sup">${supTables.map((t) => `<option ${t.sup === supSel ? 'selected' : ''}>${esc(t.sup)}</option>`).join('')}</select></div>${supTables.filter((t) => t.sup === supSel).map((t) => aleaCard(t)).join('')}` : ''}
+      ${list.filter((t) => t.groupe === g).map((t) => aleaCard(t)).join('')}</section>`).join('') || '<section class="card"><div class="empty">Aucune table</div></section>'}`;
 }
 function renderMJTables() {
   return `<section class="card">
@@ -1954,7 +1995,7 @@ function renderScen(s) {
   const nbPnj = s.scenes.reduce((t, x) => t + x.npcs.reduce((u, y) => u + (+y.qty || 1), 0), 0);
   return `<section class="card dark">
       <div class="row"><button class="btn sm ghost" data-act="sc-back">Scénarios</button><span class="spacer"></span>
-        <button class="btn sm" data-act="sc-export">Exporter</button><button class="btn sm" data-act="sc-dup">Dupliquer</button><button class="btn sm danger" data-act="sc-del">Supprimer</button></div>
+        <button class="btn sm" data-act="sc-export">Exporter</button><button class="btn sm" data-act="sc-tab-add">Table aléatoire</button><button class="btn sm" data-act="sc-dup">Dupliquer</button><button class="btn sm danger" data-act="sc-del">Supprimer</button></div>
       <div class="small muted d" style="margin-top:6px">${s.scenes.length} scène(s) · ${nbPnj} PNJ · modifié ${esc(ago(s.updatedAt))}</div>
     </section>
     <section class="card" data-scform>
@@ -1964,6 +2005,7 @@ function renderScen(s) {
         <div class="field"><label>Secrets du MJ</label><textarea data-sf="notes" placeholder="Ce qui se passe vraiment, PNJ importants, fils à tirer…">${esc(s.notes)}</textarea></div></div>
     </section>
     ${renderProgress(s)}
+    ${renderScenTables(s)}
     ${renderScenMemo(s)}
     ${s.scenes.map((sc, i) => renderSceneCard(s, sc, i)).join('')}
     <div class="row" style="justify-content:center;margin-bottom:12px"><button class="btn pri" data-act="sc-scene-add">${icon('plus')} Ajouter une scène</button></div>`;
@@ -2135,10 +2177,12 @@ function renderSceneCard(s, sc, i) {
     ${sc.npcs.length ? `<div style="overflow-x:auto;margin-top:6px"><table class="ref comp npcs"><tr><th>PNJ (source)</th><th></th><th>Attaque</th><th>Déf.</th><th>Vol.</th><th>Foi</th><th>Per</th><th>BL/BG/BF/MS</th><th>PF</th><th>PP</th><th>Prot.</th></tr>${rows}</table></div>
       ${scenAlerts(sc.npcs)}` : '<div class="empty">Pas d\'adversaire préparé (scène sans combat ?)</div>'}
     ${renderChoices(s, sc, edit)}
+    ${sceneTables(s, sc)}
     <div class="row" style="margin-top:8px">
       <button class="btn sm pri" data-act="sc-npc-best" data-scene="${esc(sc.id)}">${icon('plus')} Depuis le bestiaire</button>
       <button class="btn sm" data-act="sc-npc-add" data-scene="${esc(sc.id)}">${icon('plus')} PNJ unique</button>
       <button class="btn sm" data-act="sc-npc-import" data-scene="${esc(sc.id)}">Depuis un personnage</button>
+      <button class="btn sm" data-act="sc-tab-add" data-scene="${esc(sc.id)}">Table aléatoire</button>
       ${edit ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="${k}">${icon('edit')} Modifier</button>`}
       ${isCur ? '' : `<button class="btn sm ghost" data-act="sc-cur" data-key="${esc(sc.id)}">Jouer cette scène</button>`}
       <span class="spacer"></span>
@@ -2719,6 +2763,8 @@ async function scenAction(act, b) {
     case 'sc-export': return download(s.nom.replace(/\W+/g, '_') + '.scenario.json', scen.exportOne(s.id));
     case 'sc-dup': toast('Scénario dupliqué'); return go(scen.duplicate(s.id).id);
     case 'sc-del': if (await confirmDlg('Supprimer', `Supprimer définitivement le scénario « ${esc(s.nom)} » ?`)) { scen.remove(s.id); go(null); } return;
+    case 'sc-tab-add': return addTableDialog(s, b.dataset.scene ? sc : null);
+    case 'sc-tab-del': { const o = b.dataset.scene ? sc : s; if (o) o.tables = (o.tables || []).filter((x) => x !== key); return save(); }
     case 'sc-scene-add': { const x = newScene(`Scène ${s.scenes.length + 1}`); s.scenes.push(x); ui.open['scn' + x.id] = true; return save(); }
     case 'sc-cur': { // cette scène devient la scène en cours ; celles d'avant sont jouées
       const i = s.scenes.findIndex((x) => x.id === key); if (i < 0) return;
