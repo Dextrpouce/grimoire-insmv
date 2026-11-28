@@ -1820,7 +1820,10 @@ function aleaCard(t, rm = '') {
 }
 function renderAlea() {
   const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp ?? tableCamp();
-  const ok = (t) => (!camp || !t.camp || t.camp === camp) && (!q || norm(`${t.nom} ${t.groupe} ${t.livre} ${t.usage || ''} ${t.sup || ''}`).includes(q));
+  // deux sortes : générales (toute partie) et propres à un scénario des livres ; par défaut, les générales
+  const kind = ui.aleaKind || 'gen'; const isScen = (t) => !!TABLE_SCENS[t.id];
+  const nScen = TABLES_MJ.filter(isScen).length;
+  const ok = (t) => (kind === 'tout' || (kind === 'scen') === isScen(t)) && (!camp || !t.camp || t.camp === camp) && (!q || norm(`${t.nom} ${t.groupe} ${t.livre} ${t.usage || ''} ${t.sup || ''}`).includes(q));
   const list = TABLES_MJ.filter((t) => !t.sup && ok(t));
   const supTables = TABLES_MJ.filter((t) => t.sup && ok(t));
   const groups = [...new Set([...list.map((t) => t.groupe), ...(supTables.length ? [supTables[0].groupe] : [])])];
@@ -1828,7 +1831,8 @@ function renderAlea() {
   return `<section class="card"><h2>Tables aléatoires <span class="tag">${TABLES_MJ.length} tables</span></h2>
     <div class="row"><input class="inp" id="alea-q" placeholder="Rechercher une table…" value="${esc(ui.aleaQ || '')}" style="flex:1;min-width:160px">
       <select class="inp" id="alea-camp" style="max-width:150px">${[['', 'Tous les camps'], ['ange', 'Anges'], ['demon', 'Démons'], ['tiers', 'Troisième Force']].map(([v, l]) => `<option value="${v}" ${camp === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
-    <p class="small muted" style="margin-bottom:0">Tables relevées dans les livres. Le résultat peut être noté dans le journal de la campagne (onglet « Choix des joueurs »).</p></section>
+    <div class="seg" style="margin-top:8px">${[['gen', `Générales (${TABLES_MJ.length - nScen})`], ['scen', `Propres aux scénarios (${nScen})`], ['tout', 'Toutes']].map(([k, l]) => `<button class="${kind === k ? 'on' : ''}" data-act="mj-alea-kind" data-v="${k}">${l}</button>`).join('')}</div>
+    <p class="small muted" style="margin-bottom:0">Tables relevées dans les livres. Les tables propres à un scénario apparaissent aussi d’elles-mêmes dans ce scénario. Le résultat peut être noté dans le journal de la campagne (onglet « Choix des joueurs »).</p></section>
     ${groups.map((g) => `<section class="card"><h2>${esc(g)}</h2>
       ${g === supTables[0]?.groupe ? `<div class="row" style="margin-bottom:8px"><select class="inp" id="alea-sup">${supTables.map((t) => `<option ${t.sup === supSel ? 'selected' : ''}>${esc(t.sup)}</option>`).join('')}</select></div>${supTables.filter((t) => t.sup === supSel).map((t) => aleaCard(t)).join('')}` : ''}
       ${list.filter((t) => t.groupe === g).map((t) => aleaCard(t)).join('')}</section>`).join('') || '<section class="card"><div class="empty">Aucune table</div></section>'}`;
@@ -2953,6 +2957,7 @@ async function mjAction(act, b) {
   try {
     switch (act) {
       case 'mj-enter': return enterMJ();
+      case 'mj-alea-kind': ui.aleaKind = b.dataset.v; return render();
       case 'mj-alea-roll': {
         const t = TABLES_MJ.find((x) => x.id === key); if (!t) return;
         const v = rollTable(t, +(ui.aleaMod?.[t.id]) || 0);
