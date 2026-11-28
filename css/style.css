@@ -582,3 +582,12 @@ table.npcs small { font-family: var(--font-body, inherit); font-size: 11.5px; wh
 .card.scene.done:hover, .card.scene.done:focus-within { opacity: 1; }
 .badge.cur { background: var(--red); color: #fff; }
 .card.scene h2 .badge { margin-left: 6px; vertical-align: middle; }
+
+/* Tables aléatoires en colonnes */
+.alea-tab { margin-top: 6px; overflow-x: auto; }
+table.alea td { vertical-align: top; line-height: 1.35; }
+table.alea td.d { font-weight: 700; white-space: nowrap; width: 1%; padding-right: 10px; font-variant-numeric: tabular-nums; }
+table.alea tr:nth-child(even) td { background: rgba(0, 0, 0, .035); }
+table.alea tr.hit td { background: #fbe3c6; box-shadow: inset 0 0 0 0 transparent; }
+table.alea tr.hit td.d { color: var(--red); }
+.card.prog.fini { border-left: 4px solid #3fae6a; }

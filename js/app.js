@@ -11,6 +11,17 @@ import { HIERARCHIE, SUP_HIER } from './data/hierarchie.js';
 import { TABLES_MJ } from './data/tables-mj.js';
 import * as slot from './slot.js';
 
+// ---- Ordre de parution des livres (gamme INS/MV 4e, Siroz/Asmodée) ----
+// Livre de base fév. 2003 · Écran avr. 2003 · Fire & Ice sept. et nov. 2003 · Jésus Reviens ! janv. 2004 ·
+// Les Petites Apocalypses nov. 2004 · Angelots en gelée juin 2005 · La Bible à Dudule sept. 2005 · On Ferme ! oct. 2006
+const BOOK_RANK = [[/écran/i, 2], [/règles|livre de base|livret (in nomine|magna|ins|mv)/i, 1], [/fire (and|&) ice (2|volume 2)/i, 4], [/fire (and|&) ice/i, 3],
+  [/jésus reviens/i, 5], [/petites apocalypses/i, 6], [/angelots/i, 7], [/bible à dudule/i, 8], [/on ferme/i, 9]];
+const bookRank = (s) => BOOK_RANK.find(([re]) => re.test(String(s || '')))?.[1] ?? 99;
+const byBook = (f) => (a, b) => bookRank(f(a)) - bookRank(f(b)); // tri stable : l'ordre du livre est gardé
+TABLES_MJ.sort(byBook((t) => t.livre));
+SCENARIOS_LIVRES.sort(byBook((x) => x.livre));
+BOOK.sort(byBook((t) => t.book));
+
 // ================= Utilitaires =================
 const $app = document.getElementById('app');
 const dlg = document.getElementById('dlg');
@@ -88,7 +99,7 @@ const BTN_ICON = {
   'mj-cb-impro': 'plus', 'mj-cb-open': 'play', 'mj-sec': 'book',
   'lv-init': 'die', 'lv-iadd': 'plus', 'lv-inext': 'next', 'lv-attack': 'sword', 'lv-hit': 'heart', 'lv-wclose': 'check', 'lv-out': 'skull',
   'lv-end': 'flag', 'lv-back': 'back', 'lv-add': 'plus',
-  'sc-tab-add': 'die', 'sc-tab-del': 'trash', 'sc-back': 'back', 'sc-create': 'plus', 'sc-library': 'book', 'sc-import': 'upload', 'sc-export': 'download', 'sc-dup': 'copy', 'sc-del': 'trash',
+  'sc-finish': 'flag', 'sc-next': 'next', 'sc-reset': 'refresh', 'sc-cur': 'play', 'sc-tab-add': 'die', 'sc-tab-del': 'trash', 'sc-back': 'back', 'sc-create': 'plus', 'sc-library': 'book', 'sc-import': 'upload', 'sc-export': 'download', 'sc-dup': 'copy', 'sc-del': 'trash',
   'sc-live': 'sword', 'sc-scene-add': 'plus', 'sc-scene-del': 'trash', 'sc-scene-up': 'up', 'sc-npc-add': 'plus', 'sc-npc-del': 'trash',
   'sc-npc-dup': 'copy', 'sc-npc-done': 'back', 'sc-npc-best': 'book', 'sc-npc-tobest': 'book', 'sc-npc-import': 'user',
   'sc-w-add': 'plus', 'sc-w-free': 'plus', 'sc-w-del': 'trash', 'sc-p-add': 'plus', 'sc-p-del': 'trash',
@@ -1783,6 +1794,13 @@ function addTableDialog(s, sc) {
 const aleaRes = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` <span class="tag">${esc(r.row.camp)}</span>` : ''}
       <div class="row" style="margin-top:6px"><button class="btn sm" data-act="mj-alea-roll" data-key="${esc(t.id)}">Relancer</button><button class="btn sm ghost" data-act="mj-alea-note" data-key="${esc(t.id)}">Noter dans le journal</button></div></div>` : ''; };
 const aleaRef = (t) => t.de === 'ref';
+// Table en colonnes : jet, résultat (et camp si la table en a) ; la ligne tirée est surlignée
+function aleaTable(t) {
+  const hit = ui.aleaRes?.[t.id]?.row; const camp = t.lignes.some((r) => r.camp);
+  const h = { liste: 'N°', d26: 'Lettre', ref: '' }[t.de] ?? t.de;
+  return `<div class="alea-tab"><table class="ref alea">${h !== '' || camp ? `<tr><th>${esc(h || 'Cas')}</th><th>Résultat</th>${camp ? '<th>Camp</th>' : ''}</tr>` : ''}
+    ${t.lignes.map((r) => `<tr${r === hit ? ' class="hit"' : ''}><td class="d">${esc(String(r.d))}</td><td>${esc(r.t)}</td>${camp ? `<td class="small">${esc(r.camp || '')}</td>` : ''}</tr>`).join('')}</table></div>`;
+}
 function aleaCard(t, rm = '') {
   const res = aleaRes; const ref = aleaRef;
   return `<div class="pow"><div class="ph"><div class="pn">${esc(t.nom)}</div><span class="small muted">${esc(ref(t) ? 'consultation' : t.de)}</span>
@@ -1792,7 +1810,7 @@ function aleaCard(t, rm = '') {
     ${t.usage ? `<div class="psum">${esc(t.usage)}</div>` : ''}${t.mods ? `<div class="small muted">Modificateurs : ${esc(t.mods)}</div>` : ''}
     ${res(t)}
     ${ref(t) ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="al${esc(t.id)}">${ui.open['al' + t.id] ? 'Masquer la table' : 'Voir la table'}</button>`}${rm}
-    ${ui.open['al' + t.id] || ref(t) ? `<div class="small" style="margin-top:6px">${t.lignes.map((r) => `<div><b>${esc(String(r.d))}</b> ${esc(r.t)}</div>`).join('')}${t.note ? `<p class="muted">${esc(t.note)}</p>` : ''}</div>` : ''}</div>`;
+    ${ui.open['al' + t.id] || ref(t) ? `${aleaTable(t)}${t.note ? `<p class="small muted">${esc(t.note)}</p>` : ''}` : ''}</div>`;
 }
 function renderAlea() {
   const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp || '';
@@ -1966,25 +1984,27 @@ function npcTarget(s) {
 const npcSummary = (n) => { const st = npcStats(n); const w = n.armes[0]; return `${w ? `Att. ${L(w.att)} (${w.n}) · ` : ''}Déf. ${L(n.def)} · Vo ${L(n.car.vo)} · PF ${st.pf} · ${st.bl}/${st.bg}/${st.bf}/${st.ms}${st.pp ? ` · ${st.pp} PP` : ''}`; };
 // ---- Progression : s.cur = scène en cours, sc.done = scène jouée ----
 const curIdx = (s) => s.scenes.findIndex((x) => x.id === s.cur);
+const isFini = (s) => !s.impro && s.scenes.length > 0 && curIdx(s) < 0 && (s.fini || s.scenes.every((x) => x.done));
 function scenProgress(s) {
   const i = curIdx(s); const played = s.scenes.filter((x) => x.done).length;
   if (i >= 0) return `scène ${i + 1}/${s.scenes.length} en cours`;
-  if (s.scenes.length && played === s.scenes.length) return 'terminé';
+  if (isFini(s)) return 'terminé';
   return played ? `${played}/${s.scenes.length} scène(s) jouée(s)` : 'pas commencé';
 }
 function renderProgress(s) {
   const i = curIdx(s); const sc = s.scenes[i];
   if (!s.scenes.length || s.impro) return '';
   if (!sc) {
-    const fini = s.scenes.every((x) => x.done);
-    return `<section class="card prog"><div class="row"><div style="flex:1;min-width:0"><b>${fini ? 'Scénario terminé' : 'Pas encore commencé'}</b><div class="small muted">${fini ? 'Toutes les scènes ont été jouées.' : 'Marque la scène que vous jouez pour la retrouver à chaque ouverture.'}</div></div>
+    const fini = isFini(s); const played = s.scenes.filter((x) => x.done).length;
+    return `<section class="card prog${fini ? ' fini' : ''}"><div class="row"><div style="flex:1;min-width:0"><b>${fini ? 'Scénario terminé' : 'Pas encore commencé'}</b><div class="small muted">${fini ? (played === s.scenes.length ? 'Toutes les scènes ont été jouées.' : `Terminé avant la fin : ${played}/${s.scenes.length} scène(s) jouée(s).`) : 'Marque la scène que vous jouez pour la retrouver à chaque ouverture.'}</div></div>
       ${fini ? `<button class="btn sm" data-act="sc-reset">Rejouer</button>` : `<button class="btn sm pri" data-act="sc-cur" data-key="${esc((s.scenes.find((x) => !x.done) || s.scenes[0]).id)}">Commencer</button>`}</div></section>`;
   }
   const next = s.scenes[i + 1];
   return `<section class="card prog on"><div class="row"><div style="flex:1;min-width:0"><div class="small muted">Scène en cours · ${i + 1}/${s.scenes.length}</div><b class="click" data-act="sc-goto" data-key="${esc(sc.id)}">${esc(sc.nom)}</b>${sc.lieu ? `<div class="small muted">${esc(sc.lieu)}</div>` : ''}</div>
     <button class="btn sm ghost" data-act="sc-goto" data-key="${esc(sc.id)}">Voir</button>
     <button class="btn sm pri" data-act="sc-next">${next ? 'Scène suivante' : 'Fin du scénario'}</button></div>
-    ${next ? `<div class="small muted" style="margin-top:4px">Ensuite : ${esc(next.nom)}</div>` : ''}</section>`;
+    <div class="row" style="margin-top:4px"><div class="small muted" style="flex:1">${next ? `Ensuite : ${esc(next.nom)}` : 'Dernière scène'}</div>
+      ${next ? '<button class="btn sm ghost" data-act="sc-finish">Terminer le scénario</button>' : ''}</div></section>`;
 }
 function renderScen(s) {
   if (ui.npcEdit?.type) { const t = scen.getType(ui.npcEdit.type); if (t) return renderNpcEdit(s, null, t); ui.npcEdit = null; }
@@ -2016,7 +2036,7 @@ function renderScenList() {
     <h2>Mes scénarios <span class="tag">gardés sur cet appareil</span></h2>
     ${list.map((s) => {
       const fights = s.scenes.filter((x) => x.npcs.length).length; const running = s.scenes.filter((x) => x.live).length;
-      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b><br><small>${s.scenes.length} scène(s) · ${s.impro ? '' : esc(scenProgress(s)) + ' · '}${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
+      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b>${isFini(s) ? ' <span class="badge ok">Terminé</span>' : curIdx(s) >= 0 ? ' <span class="badge cur">En cours</span>' : ''}<br><small>${s.scenes.length} scène(s) · ${s.impro ? '' : esc(scenProgress(s)) + ' · '}${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
     }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
@@ -2131,7 +2151,7 @@ function askQuickNpc() {
         return;
       } else {
         $('#qk-l1').textContent = 'Profil';
-        const list = BOOK.filter((t) => def[2].includes(t.type)).sort((x, y) => x.nom.localeCompare(y.nom, 'fr'));
+        const list = BOOK.filter((t) => def[2].includes(t.type)); // ordre de parution des livres
         const dup = (t) => list.filter((x) => x.nom === t.nom).length > 1; // même nom : on précise le livre
         a.innerHTML = list.map((t) => `<option value="${esc(t.id)}">${esc(t.nom)}${dup(t) ? ` (${esc(String(t.book).split(',')[0])})` : ''}</option>`).join('');
         $('#qk-f2').hidden = true;
@@ -2768,6 +2788,7 @@ async function scenAction(act, b) {
     case 'sc-scene-add': { const x = newScene(`Scène ${s.scenes.length + 1}`); s.scenes.push(x); ui.open['scn' + x.id] = true; return save(); }
     case 'sc-cur': { // cette scène devient la scène en cours ; celles d'avant sont jouées
       const i = s.scenes.findIndex((x) => x.id === key); if (i < 0) return;
+      s.fini = false;
       s.scenes.forEach((x, j) => { if (j < i) x.done = true; }); s.scenes[i].done = false; s.cur = key;
       save(); return scrollToScene(key);
     }
@@ -2778,8 +2799,13 @@ async function scenAction(act, b) {
       save(); return nx ? scrollToScene(nx.id) : window.scrollTo(0, 0);
     }
     case 'sc-goto': return scrollToScene(key);
+    case 'sc-finish': { // fin anticipée : la scène en cours compte comme jouée, les suivantes restent non jouées
+      if (!(await confirmDlg('Terminer le scénario', `Marquer « ${esc(s.nom)} » comme terminé ? Les scènes suivantes resteront non jouées.`))) return;
+      const i = curIdx(s); if (i >= 0) s.scenes[i].done = true;
+      s.cur = null; s.fini = true; toast('Scénario terminé'); save(); return window.scrollTo(0, 0);
+    }
     case 'sc-reset':
-      s.cur = s.scenes[0]?.id || null; s.scenes.forEach((x) => { x.done = false; }); save(); return window.scrollTo(0, 0);
+      s.fini = false; s.cur = s.scenes[0]?.id || null; s.scenes.forEach((x) => { x.done = false; }); save(); return window.scrollTo(0, 0);
     case 'sc-scene-up': { const i = s.scenes.findIndex((x) => x.id === key); if (i > 0) s.scenes.splice(i - 1, 0, s.scenes.splice(i, 1)[0]); return save(); }
     case 'sc-scene-del': {
       const x = curScene(s, key);

@@ -173,7 +173,7 @@ export const scen = {
   save(s) { if (s) s.updatedAt = Date.now(); persist(); },
   duplicate(id) {
     const s = JSON.parse(JSON.stringify(data.list[id])); s.id = uid(); s.nom += ' (copie)'; s.createdAt = s.updatedAt = Date.now();
-    s.cur = null; s.scenes.forEach((sc) => { sc.live = null; sc.done = false; (sc.choix || []).forEach((ch) => { ch.entry = null; }); }); data.list[s.id] = s; persist(); return s;
+    s.cur = null; s.fini = false; s.scenes.forEach((sc) => { sc.live = null; sc.done = false; (sc.choix || []).forEach((ch) => { ch.entry = null; }); }); data.list[s.id] = s; persist(); return s;
   },
   // ---- Journal des choix (commun à toute la campagne) ----
   journal() { return [...data.journal].sort((a, b) => b.at - a.at); },
