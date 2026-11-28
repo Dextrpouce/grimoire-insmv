@@ -591,3 +591,11 @@ table.alea tr:nth-child(even) td { background: rgba(0, 0, 0, .035); }
 table.alea tr.hit td { background: #fbe3c6; box-shadow: inset 0 0 0 0 transparent; }
 table.alea tr.hit td.d { color: var(--red); }
 .card.prog.fini { border-left: 4px solid #3fae6a; }
+
+/* Icônes de camp (auréole, cornes, œil) */
+.camp-ico { display: inline-flex; align-items: center; vertical-align: -0.12em; line-height: 0; }
+.camp-ico svg { height: 1.05em; width: auto; }
+.camp-ico.ange svg { height: .8em; }
+.camp-ico.ange { color: #c9a24a; } .camp-ico.demon { color: #d0402f; } .camp-ico.tiers { color: #2f9a76; }
+.camp-tag { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.camp-tag.ange { color: #9a7a2e; } .camp-tag.demon { color: #b5321f; } .camp-tag.tiers { color: #23795c; }

@@ -138,6 +138,9 @@ export const table = {
       delete st.chars[charId];
     });
   },
+  // Camp joué à la table ouverte (réglé par le MJ, gardé sur cet appareil) : demon, ange, tiers, tous ; '' = pas réglé
+  camp() { return data.mine[data.open]?.camp || ''; },
+  setCamp(v) { if (!data.mine[data.open]) return; data.mine[data.open].camp = v; persist(); emit(); },
   note(charId) { return data.notes[data.open]?.[charId] || ''; },
   setNote(charId, txt) { (data.notes[data.open] ||= {})[charId] = txt; persist(); },
   // Pour les tests et la démonstration hors ligne

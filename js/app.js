@@ -14,6 +14,15 @@ import * as slot from './slot.js';
 // ---- Ordre de parution des livres (gamme INS/MV 4e, Siroz/Asmodée) ----
 // Livre de base fév. 2003 · Écran avr. 2003 · Fire & Ice sept. et nov. 2003 · Jésus Reviens ! janv. 2004 ·
 // Les Petites Apocalypses nov. 2004 · Angelots en gelée juin 2005 · La Bible à Dudule sept. 2005 · On Ferme ! oct. 2006
+// ---- Icônes de camp : auréole (anges), cornes (démons), œil ouvert (Troisième Force) ----
+const CAMP_ICO = {
+  ange: '<svg viewBox="0 0 60 18" aria-hidden="true"><ellipse cx="30" cy="9" rx="26" ry="6.5" fill="none" stroke="currentColor" stroke-width="3.2"/></svg>',
+  demon: '<svg viewBox="0 0 60 28" aria-hidden="true"><path d="M14 2c2 9 7 15 13 20-7-2-12-7-15-13zM46 2c-2 9-7 15-13 20 7-2 12-7 15-13z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>',
+  tiers: '<svg viewBox="0 0 60 28" aria-hidden="true"><path d="M4 14C14 3 46 3 56 14 46 25 14 25 4 14z" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><circle cx="30" cy="14" r="6.5" fill="none" stroke="currentColor" stroke-width="2.8"/><circle cx="30" cy="14" r="2.4" fill="currentColor"/></svg>',
+};
+const CAMP_TXT = { ange: 'anges', demon: 'démons', tiers: 'Troisième Force' };
+const campIco = (k) => (CAMP_ICO[k] ? `<span class="camp-ico ${k}" title="${CAMP_TXT[k]}">${CAMP_ICO[k]}</span>` : '');
+const campTag = (k) => (CAMP_ICO[k] ? `<span class="camp-tag ${k}">${campIco(k)}${CAMP_TXT[k]}</span>` : '');
 const BOOK_RANK = [[/écran/i, 2], [/règles|livre de base|livret (in nomine|magna|ins|mv)/i, 1], [/fire (and|&) ice (2|volume 2)/i, 4], [/fire (and|&) ice/i, 3],
   [/jésus reviens/i, 5], [/petites apocalypses/i, 6], [/angelots/i, 7], [/bible à dudule/i, 8], [/on ferme/i, 9]];
 const bookRank = (s) => BOOK_RANK.find(([re]) => re.test(String(s || '')))?.[1] ?? 99;
@@ -1279,7 +1288,7 @@ let gen = null;
 const GTYPES = [
   ['', ['ange', 'demon']], // cartes Ange et Démon, sans titre
   ['Autres personnages (livre de base, chap. 5)', ['humain', 'heroique', 'serviteur', 'soldat', 'fils', 'mortvivant', 'familier', 'incube', 'combat']],
-  ['Troisième Force (Les Petites Apocalypses)', ['psi', 'paien', 'renegat_a', 'renegat_d', 'fee', 'monstre']],
+  [`${campIco('tiers')} Troisième Force (Les Petites Apocalypses)`, ['psi', 'paien', 'renegat_a', 'renegat_d', 'fee', 'monstre']],
 ];
 const TYPE_DESC = {
   ange: 'Serviteur d\'un archange, incarné dans un corps humain. 100 PA.', demon: 'Serviteur d\'un prince-démon, incarné dans un corps humain. 80 PA.',
@@ -1299,10 +1308,7 @@ function drawGen() {
   if (g.step === 'type') {
     // Ange et démon : deux grandes cartes illustrées ; les autres types en liste
     const DUO = { demon: 'img/demon.webp', ange: 'img/ange.webp' };
-    const DUO_ICO = { // auréole et cornes au-dessus du titre
-      ange: '<svg viewBox="0 0 60 18" aria-hidden="true"><ellipse cx="30" cy="9" rx="26" ry="6.5" fill="none" stroke="currentColor" stroke-width="3.2"/></svg>',
-      demon: '<svg viewBox="0 0 60 28" aria-hidden="true"><path d="M14 2c2 9 7 15 13 20-7-2-12-7-15-13zM46 2c-2 9-7 15-13 20 7-2 12-7 15-13z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg>',
-    };
+    const DUO_ICO = CAMP_ICO; // auréole et cornes au-dessus du titre
     body = GTYPES.map(([h, list]) => (h ? `<div class="list-h">${h}</div>` : '') + (list.every((k) => DUO[k])
       ? `<div class="duo">${['ange', 'demon'].filter((k) => list.includes(k)).map((k) => `<button class="duo-card ${k}" data-g="type" data-v="${k}">
           <span class="dc-ico">${DUO_ICO[k]}</span><b>${R.TYPES[k].n}</b><small>${TYPE_DESC[k].replace(/\s*\d+ PA\.?\s*$/, '')}</small>
@@ -1791,7 +1797,7 @@ function addTableDialog(s, sc) {
     const o = sc || s; (o.tables ||= []).push(t.id); scen.save(s); render();
   });
 }
-const aleaRes = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` <span class="tag">${esc(r.row.camp)}</span>` : ''}
+const aleaRes = (t) => { const r = ui.aleaRes?.[t.id]; return r ? `<div class="alea-res"><b>${esc(t.de === 'liste' || t.de === 'd26' ? String(r.row?.d ?? '') : String(r.v))}</b> ${esc(r.row?.t || '—')}${r.row?.camp ? ` ${campTag(r.row.camp)}` : ''}
       <div class="row" style="margin-top:6px"><button class="btn sm" data-act="mj-alea-roll" data-key="${esc(t.id)}">Relancer</button><button class="btn sm ghost" data-act="mj-alea-note" data-key="${esc(t.id)}">Noter dans le journal</button></div></div>` : ''; };
 const aleaRef = (t) => t.de === 'ref';
 // Table en colonnes : jet, résultat (et camp si la table en a) ; la ligne tirée est surlignée
@@ -1799,21 +1805,21 @@ function aleaTable(t) {
   const hit = ui.aleaRes?.[t.id]?.row; const camp = t.lignes.some((r) => r.camp);
   const h = { liste: 'N°', d26: 'Lettre', ref: '' }[t.de] ?? t.de;
   return `<div class="alea-tab"><table class="ref alea">${h !== '' || camp ? `<tr><th>${esc(h || 'Cas')}</th><th>Résultat</th>${camp ? '<th>Camp</th>' : ''}</tr>` : ''}
-    ${t.lignes.map((r) => `<tr${r === hit ? ' class="hit"' : ''}><td class="d">${esc(String(r.d))}</td><td>${esc(r.t)}</td>${camp ? `<td class="small">${esc(r.camp || '')}</td>` : ''}</tr>`).join('')}</table></div>`;
+    ${t.lignes.map((r) => `<tr${r === hit ? ' class="hit"' : ''}><td class="d">${esc(String(r.d))}</td><td>${esc(r.t)}</td>${camp ? `<td class="small">${campTag(r.camp)}</td>` : ''}</tr>`).join('')}</table></div>`;
 }
 function aleaCard(t, rm = '') {
   const res = aleaRes; const ref = aleaRef;
   return `<div class="pow"><div class="ph"><div class="pn">${esc(t.nom)}</div><span class="small muted">${esc(ref(t) ? 'consultation' : t.de)}</span>
       ${t.mods && !ref(t) ? `<input class="inp" type="number" style="width:64px" placeholder="mod." value="${esc(String(ui.aleaMod?.[t.id] ?? ''))}" data-alea-mod="${esc(t.id)}" title="Modificateur au jet">` : ''}
       ${ref(t) ? '' : `<button class="btn sm pri" data-act="mj-alea-roll" data-key="${esc(t.id)}">Tirer</button>`}</div>
-    <div class="meta">${esc(t.livre)}${t.ref ? ', ' + esc(t.ref) : ''}${tableScenTxt(t)}${t.camp ? ` · <span class="badge">${esc(t.camp === 'ange' ? 'anges' : 'démons')}</span>` : ''}</div>
+    <div class="meta">${esc(t.livre)}${t.ref ? ', ' + esc(t.ref) : ''}${tableScenTxt(t)}${t.camp ? ` · ${campTag(t.camp)}` : ''}</div>
     ${t.usage ? `<div class="psum">${esc(t.usage)}</div>` : ''}${t.mods ? `<div class="small muted">Modificateurs : ${esc(t.mods)}</div>` : ''}
     ${res(t)}
     ${ref(t) ? '' : `<button class="btn sm ghost" data-act="toggle" data-key="al${esc(t.id)}">${ui.open['al' + t.id] ? 'Masquer la table' : 'Voir la table'}</button>`}${rm}
     ${ui.open['al' + t.id] || ref(t) ? `${aleaTable(t)}${t.note ? `<p class="small muted">${esc(t.note)}</p>` : ''}` : ''}</div>`;
 }
 function renderAlea() {
-  const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp || '';
+  const q = norm(ui.aleaQ || ''); const camp = ui.aleaCamp ?? tableCamp();
   const ok = (t) => (!camp || !t.camp || t.camp === camp) && (!q || norm(`${t.nom} ${t.groupe} ${t.livre} ${t.usage || ''} ${t.sup || ''}`).includes(q));
   const list = TABLES_MJ.filter((t) => !t.sup && ok(t));
   const supTables = TABLES_MJ.filter((t) => t.sup && ok(t));
@@ -1821,7 +1827,7 @@ function renderAlea() {
   const supSel = ui.aleaSup && supTables.find((t) => t.sup === ui.aleaSup) ? ui.aleaSup : supTables[0]?.sup;
   return `<section class="card"><h2>Tables aléatoires <span class="tag">${TABLES_MJ.length} tables</span></h2>
     <div class="row"><input class="inp" id="alea-q" placeholder="Rechercher une table…" value="${esc(ui.aleaQ || '')}" style="flex:1;min-width:160px">
-      <select class="inp" id="alea-camp" style="max-width:150px">${[['', 'Tous les camps'], ['ange', 'Anges'], ['demon', 'Démons']].map(([v, l]) => `<option value="${v}" ${camp === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+      <select class="inp" id="alea-camp" style="max-width:150px">${[['', 'Tous les camps'], ['ange', 'Anges'], ['demon', 'Démons'], ['tiers', 'Troisième Force']].map(([v, l]) => `<option value="${v}" ${camp === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
     <p class="small muted" style="margin-bottom:0">Tables relevées dans les livres. Le résultat peut être noté dans le journal de la campagne (onglet « Choix des joueurs »).</p></section>
     ${groups.map((g) => `<section class="card"><h2>${esc(g)}</h2>
       ${g === supTables[0]?.groupe ? `<div class="row" style="margin-bottom:8px"><select class="inp" id="alea-sup">${supTables.map((t) => `<option ${t.sup === supSel ? 'selected' : ''}>${esc(t.sup)}</option>`).join('')}</select></div>${supTables.filter((t) => t.sup === supSel).map((t) => aleaCard(t)).join('')}` : ''}
@@ -1842,6 +1848,29 @@ function renderMJTables() {
 function mjBar(cur, max, cls = '') {
   return `<div class="tracker"><span class="lab">${cls === 'pf' ? 'PF' : 'PP'}</span>${bar(cur, max, cls)}</div>`;
 }
+// ---- Camp de la table : les scénarios et tables des livres proposés s'y limitent ----
+const CAMPS = [['demon', 'Démons (INS)'], ['ange', 'Anges (MV)'], ['tiers', 'Troisième Force (Petites Apocalypses)'], ['tous', 'Tous les camps']];
+const campLabel = (k) => CAMPS.find((x) => x[0] === k)?.[1] || '';
+const TIERS = ['psi', 'paien', 'fee', 'monstre'];
+const charCamp = (c) => (TIERS.includes(c.type) ? 'tiers' : ['ange', 'demon'].includes(R.TYPES[c.type]?.camp) ? R.TYPES[c.type].camp : '');
+// camp déduit des fiches partagées : tous les PJ du même camp
+function autoCamp() {
+  const l = [...new Set(table.characters().map((x) => charCamp(x.c)).filter(Boolean))];
+  return l.length === 1 ? l[0] : '';
+}
+// camp en vigueur : réglé par le MJ, sinon déduit des fiches ; '' = pas de filtre
+function tableCamp() {
+  if (!store.configured || !table.openId) return '';
+  const c = table.camp() || (table.current ? autoCamp() : '');
+  return c === 'tous' ? '' : c;
+}
+const LIB_CAMP = { INS: 'demon', MV: 'ange', '3e Force': 'tiers' };
+const libCamp = (x) => LIB_CAMP[x?.camp] || '';
+const scenCamp = (s) => libCamp(SCENARIOS_LIVRES.find((x) => x.file === s.livre));
+function campBar() {
+  const c = tableCamp();
+  return c ? `<div class="small muted" style="margin:0 0 8px">Camp de la table : ${campIco(c)} <b>${esc(campLabel(c))}</b>${table.camp() ? '' : ' (d’après les fiches)'}</div>` : '';
+}
 function renderMJTable() {
   const t = table.current;
   if (!t) {
@@ -1861,6 +1890,10 @@ function renderMJTable() {
       <div class="row"><div style="flex:1"><div class="small muted d">Code à donner aux joueurs</div><div class="type" style="font-size:28px;letter-spacing:.15em">${esc(t.id)}</div></div>
         <button class="btn sm" data-act="mj-copy">Copier</button><button class="btn sm" data-act="mj-close">Changer de table</button></div>
       <div class="small muted d" style="margin-top:4px">${list.length} fiche(s) partagée(s) · mise à jour ${esc(ago(t.updatedAt))}${table.error ? ' · ⚠ ' + esc(table.error) : ''}</div>
+      <div class="field" style="margin:10px 0 0"><label class="d">Camp de la table ${campIco(tableCamp())}</label><select id="mj-camp">
+        <option value="" ${table.camp() ? '' : 'selected'}>Automatique${autoCamp() ? ` : ${esc(campLabel(autoCamp()))}` : ' (d’après les fiches)'}</option>
+        ${CAMPS.map(([k, l]) => `<option value="${k}" ${table.camp() === k ? 'selected' : ''}>${esc(l)}</option>`).join('')}</select>
+        <div class="small muted d" style="margin-top:4px">Les scénarios des livres et les tables aléatoires proposés se limitent à ce camp.</div></div>
     </section>
     <div class="seg" style="margin-bottom:10px">${tabs.map(([k, l]) => `<button class="${ui.mjTab === k ? 'on' : ''}" data-act="mj-tab" data-v="${k}">${esc(l)}</button>`).join('')}</div>
     ${body}`;
@@ -2031,13 +2064,18 @@ function renderScen(s) {
     <div class="row" style="justify-content:center;margin-bottom:12px"><button class="btn pri" data-act="sc-scene-add">${icon('plus')} Ajouter une scène</button></div>`;
 }
 function renderScenList() {
-  const list = scen.all();
+  const camp = tableCamp(); const all = scen.all();
+  const other = camp ? all.filter((s) => scenCamp(s) && scenCamp(s) !== camp) : [];
+  const list = all.filter((s) => !other.includes(s));
+  const row = (s) => {
+      const fights = s.scenes.filter((x) => x.npcs.length).length; const running = s.scenes.filter((x) => x.live).length;
+      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${scenCamp(s) ? campIco(scenCamp(s)) + ' ' : ''}${esc(s.nom)}</b>${isFini(s) ? ' <span class="badge ok">Terminé</span>' : curIdx(s) >= 0 ? ' <span class="badge cur">En cours</span>' : ''}<br><small>${s.scenes.length} scène(s) · ${s.impro ? '' : esc(scenProgress(s)) + ' · '}${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
+  };
   return `<section class="card">
     <h2>Mes scénarios <span class="tag">gardés sur cet appareil</span></h2>
-    ${list.map((s) => {
-      const fights = s.scenes.filter((x) => x.npcs.length).length; const running = s.scenes.filter((x) => x.live).length;
-      return `<div class="trow click" data-act="sc-open" data-key="${esc(s.id)}"><div class="tn"><b>${esc(s.nom)}</b>${isFini(s) ? ' <span class="badge ok">Terminé</span>' : curIdx(s) >= 0 ? ' <span class="badge cur">En cours</span>' : ''}<br><small>${s.scenes.length} scène(s) · ${s.impro ? '' : esc(scenProgress(s)) + ' · '}${fights} combat(s) préparé(s)${running ? ` · <b style="color:var(--red)">${running} en cours</b>` : ''} · ${esc(ago(s.updatedAt))}</small></div><div class="tl">›</div></div>`;
-    }).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
+    ${campBar()}
+    ${list.map(row).join('') || '<div class="empty">Aucun scénario pour l\'instant</div>'}
+    ${other.length ? `<button class="btn sm ghost" data-act="toggle" data-key="scOther" style="margin-top:6px">${ui.open.scOther ? 'Masquer' : 'Voir'} les scénarios d’un autre camp (${other.length})</button>${ui.open.scOther ? other.map(row).join('') : ''}` : ''}
     <h3>Nouveau scénario</h3>
     <div class="row"><input class="inp" id="sc-name" placeholder="Titre du scénario" style="flex:1;min-width:160px"><button class="btn pri" data-act="sc-create">${icon('plus')} Créer</button></div>
     <div class="row" style="margin-top:8px"><button class="btn sm pri" data-act="sc-library">${icon('book')} Scénarios des livres (${SCENARIOS_LIVRES.length})</button><button class="btn sm" data-act="sc-import">Importer un scénario (fichier)</button></div>
@@ -2063,16 +2101,19 @@ function typeItems(exclude = () => false) {
 }
 // Bibliothèque des scénarios des livres : classée par livre, chargée à la demande depuis scenarios/
 function libraryDialog(go) {
-  let q = '';
+  let q = ''; let all = false;
   const draw = () => {
-    const list = SCENARIOS_LIVRES.filter((x) => !q || norm(`${x.nom} ${x.livre} ${x.camp} ${x.resume}`).includes(norm(q)));
+    const camp = all ? '' : tableCamp();
+    const list = SCENARIOS_LIVRES.filter((x) => (!camp || libCamp(x) === camp) && (!q || norm(`${x.nom} ${x.livre} ${x.camp} ${x.resume}`).includes(norm(q))));
     const livres = [...new Set(list.map((x) => x.livre))];
     dialog('Scénarios des livres', `<input class="inp" id="lib-q" placeholder="Rechercher (titre, livre, INS, MV…)" value="${esc(q)}" style="margin-bottom:8px">
       <p class="small muted" style="margin-top:0">Scènes, PNJ chiffrés, choix possibles et récompenses, résumés pour le MJ. Les PNJ restent dans le scénario ; « Enregistrer dans le bestiaire » sur une fiche pour la réutiliser ailleurs.</p>
+      ${tableCamp() ? `<div class="row small" style="margin:0 0 6px"><span class="muted" style="flex:1">${all ? 'Tous les camps' : `Camp de la table : ${campIco(tableCamp())} <b>${esc(campLabel(tableCamp()))}</b>`}</span><button class="btn sm ghost" id="lib-all">${all ? 'Seulement ce camp' : 'Voir tout'}</button></div>` : ''}
       ${livres.map((l) => `<h3>${esc(l)}</h3>${list.filter((x) => x.livre === l).map((x) => {
         const had = scen.all().some((s) => s.livre === x.file);
-        return `<button class="choice" data-lib="${esc(x.file)}"><span><b>${had ? '✓ ' : ''}${esc(x.nom.replace(/^[^–]*– /, ''))}</b><small>${esc([x.camp, `${x.scenes} scènes`, `${x.pnj} PNJ`, `${x.combats} combat(s)`, `${x.choix} choix`].filter(Boolean).join(' · '))}</small><small>${esc(x.resume.length > 220 ? x.resume.slice(0, 220) + '…' : x.resume)}</small></span></button>`;
+        return `<button class="choice" data-lib="${esc(x.file)}"><span><b>${had ? '✓ ' : ''}${campIco(libCamp(x))} ${esc(x.nom.replace(/^[^–]*– /, ''))}</b><small>${esc([x.camp, `${x.scenes} scènes`, `${x.pnj} PNJ`, `${x.combats} combat(s)`, `${x.choix} choix`].filter(Boolean).join(' · '))}</small><small>${esc(x.resume.length > 220 ? x.resume.slice(0, 220) + '…' : x.resume)}</small></span></button>`;
       }).join('')}`).join('') || '<div class="empty">Rien</div>'}`);
+    const la = dlg.querySelector('#lib-all'); if (la) la.onclick = () => { all = !all; draw(); };
     const inp = dlg.querySelector('#lib-q');
     inp.oninput = () => { q = inp.value; const pos = inp.selectionStart; draw(); const n = dlg.querySelector('#lib-q'); n.focus(); n.setSelectionRange(pos, pos); };
     dlg.onclick = async (e) => {
@@ -3237,6 +3278,7 @@ document.addEventListener('change', (e) => {
   if (el.id === 'mj-note') { table.setNote(el.dataset.key, el.value); return; }
   if (el.id === 'memo-pj' || el.id === 'memo-scen') { ui.memoF[el.id.slice(5)] = el.value; return render(); }
   if (el.id === 'alea-camp') { ui.aleaCamp = el.value; return render(); }
+  if (el.id === 'mj-camp') { table.setCamp(el.value); ui.aleaCamp = undefined; return render(); }
   if (el.id === 'alea-sup') { ui.aleaSup = el.value; return render(); }
   if (el.dataset.aleaMod) { (ui.aleaMod ||= {})[el.dataset.aleaMod] = el.value; return; }
   if (el.dataset.lvname) { const s = scen.get(ui.scenId); const sc = curScene(s, el.dataset.lvname); if (sc) { sc.nom = el.value.trim() || sc.nom; scen.save(s); } return; }
